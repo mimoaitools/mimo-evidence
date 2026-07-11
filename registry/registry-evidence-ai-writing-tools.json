@@ -1,0 +1,528 @@
+{
+  "_meta": {
+    "flow_id": "evidence-ai-writing-tools-2026-07-10",
+    "protocol_version": "MEP-1.0",
+    "target_slug": "/evidence/ai-writing-tools",
+    "target_keyword": "ai writing tools user reports",
+    "run_date": "2026-07-10",
+    "collector": "evidence-curator",
+    "flow_counter": {
+      "identified": 91,
+      "screened": 91,
+      "excluded": 78,
+      "excluded_by_reason": {
+        "no-methodology-affiliate": 39,
+        "unverifiable-this-run": 27,
+        "off-topic": 12
+      },
+      "included_sources": 13,
+      "registry_entries": 15
+    },
+    "query_census": [
+      {
+        "q": "site:reddit.com koala.sh koala ai writer review",
+        "candidates": 0,
+        "note": "site: operator unsupported by search tool"
+      },
+      {
+        "q": "site:reddit.com seowriting.ai review",
+        "candidates": 0,
+        "note": "site: operator unsupported"
+      },
+      {
+        "q": "site:reddit.com jasper ai cancel subscription refund",
+        "candidates": 0,
+        "note": "site: operator unsupported"
+      },
+      {
+        "q": "site:reddit.com writesonic review credits",
+        "candidates": 0,
+        "note": "site: operator unsupported"
+      },
+      {
+        "q": "koala ai writer koala.sh review reddit",
+        "candidates": 3
+      },
+      {
+        "q": "seowriting.ai review reddit experience",
+        "candidates": 0
+      },
+      {
+        "q": "jasper ai reddit cancel subscription problem",
+        "candidates": 6
+      },
+      {
+        "q": "writesonic reddit review credits complaint",
+        "candidates": 4
+      },
+      {
+        "q": "copy.ai review reddit disappointed",
+        "candidates": 3
+      },
+      {
+        "q": "rytr review reddit worth it",
+        "candidates": 1
+      },
+      {
+        "q": "claude vs chatgpt for writing reddit which is better",
+        "candidates": 0
+      },
+      {
+        "q": "large language model hallucination rate study arxiv AI-generated text factual errors",
+        "candidates": 10
+      },
+      {
+        "q": "seowriting.ai user review test",
+        "candidates": 9
+      },
+      {
+        "q": "ChatGPT writing quality study peer-reviewed evaluation",
+        "candidates": 8
+      },
+      {
+        "q": "AI article writer head-to-head test 2025 methodology compared",
+        "candidates": 10
+      },
+      {
+        "q": "Trustpilot jasper.ai reviews",
+        "candidates": 10
+      },
+      {
+        "q": "Claude Anthropic creative writing evaluation study 2025 benchmark long-form",
+        "candidates": 9
+      },
+      {
+        "q": "quora \"jasper ai\" OR \"copy.ai\" OR \"rytr\" worth it experience",
+        "candidates": 10
+      },
+      {
+        "q": "DIRECT: https://old.reddit.com/search.json?q=koala+ai+writer",
+        "candidates": 0,
+        "note": "fetch blocked (environment cannot fetch reddit.com/old.reddit.com)"
+      },
+      {
+        "q": "DIRECT: https://www.reddit.com/search.json?q=koala+ai+writer",
+        "candidates": 0,
+        "note": "fetch blocked"
+      },
+      {
+        "q": "DIRECT vendor-primary targets: koala.sh/pricing, rytr.me/pricing, writesonic.com/pricing, jasper.ai/pricing, seowriting.ai/, seowriting.ai/pricing, claude.com/pricing, openai.com/chatgpt/pricing/",
+        "candidates": 8
+      }
+    ],
+    "exclusion_log_notes": [
+      "unverifiable-this-run (27) includes: all trustpilot.com pages (6, HTTP 403), all quora.com pages (3, HTTP 403), help.jasper.ai cancel+pause (2, HTTP 403), g2.com/products/jasper-ai/reviews (403), openai.com/chatgpt/pricing (403), seowriting.ai/pricing (JS-rendered, empty), link.springer.com 10.1007/s10639-025-13775-3 (cookie-wall redirect loop), plus 12 academic/leaderboard candidates not fetched within run budget (arxiv 2403.04307, 2510.15977, 2401.03205, 2606.01629, 2503.05244; PMC12518350, PMC11548250; asu.elsevierpure; openreview 3A71qNKWAS; anthropic.com/claude-opus-4-5-system-card; llm-stats.com; awesomeagents.ai).",
+      "off-topic (12): tiktok cancel-jasper video (no codable text); originality.ai/blog/seowriting-ai-review (AI-detector vendor, detection-centric — owned-border adjacency); ilampadmanabhan.medium.com (methodology = AI-detection scores — border category); medrxiv clinical hallucination attacks; arxiv 2503.14797 (verification-tool paper); arxiv 2605.17007 HalluScore (FETCHED: Arabic-LLM QA benchmark, abstract contains NO model hallucination-rate figures — search-snippet figures 'GPT-5 25.15% / Claude Opus 33.01%' FAILED verification, must never be cited); sciencedirect S1871402124000079, PMC10524821, arxiv 2409.16695, arxiv 2411.09768, arxiv 2506.12317 (ChatGPT-as-peer-reviewer/research-evaluation, not writing tools); morphllm.com (API benchmark aggregator).",
+      "no-methodology-affiliate (39): affiliate reviews/listicles without disclosed methodology (subscribed.fyi, jasperaiblog, subdelete, youraisoft, smartpubtools [also astroturf-suspect: 'Reddit reviews' page funneling to own 'RankFlow' alternative — single site, not confirmed network], stacklighthouse, deeperinsights, autoposting.ai, reviewmytools, automateed, rohitbadgal, inboundblogging, wpthink, bymilliepham, wolfheart, eyesift, demandsage, essaydone, onsaas, blogginglift, aiprodsuite, seoptimer, imnights, kripeshadwani, imeanmarketing, clippie, egcreativecontent, rankdots, cybernews, officechai, buildmvpfast) + vendor-authored competitor comparisons/testimonial pages excluded per MEP §1 vendor-primary-only rule (sudowrite blog, eesel.ai x3, jasper.ai/blog/copy-ai-alternatives, rytr.me/comparisons/rytr-vs-jasper-ai, koala.sh/pages/reviews, yomu.ai)."
+    ]
+  },
+  "entries": [
+    {
+      "id": "EV-evidence-ai-writing-tools-01",
+      "claim": "Hallucination — fluent, syntactically correct but factually inaccurate output — is a documented field-wide failure mode of the LLMs underlying all AI writing tools (2025 comprehensive survey).",
+      "source_url": "https://arxiv.org/abs/2510.06265",
+      "source_date": "2025-10-05",
+      "quote": "Hallucination refers to the generation of content by an LLM that is fluent and syntactically correct but factually inaccurate or unsupported by external evidence.",
+      "platform": "arXiv (survey; Alansari & Luqman, 'Large Language Models Hallucination: A Comprehensive Survey')",
+      "target_slug": "/evidence/ai-writing-tools",
+      "collected_at": "2026-07-10",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-writing-tools-2026-07-10",
+      "screening": "included",
+      "label": "research-finding",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "LLMs (field-wide, underlying all AI writing tools)",
+        "aspect": "hallucination / factual accuracy of generated text (failure-mode definition)",
+        "stance": "negative",
+        "plan_tier_if_stated": null,
+        "item_date": "2025-10-05"
+      }
+    },
+    {
+      "id": "EV-evidence-ai-writing-tools-02",
+      "claim": "A 2025 peer-reviewed study of ~3 million user reviews of 90 AI mobile apps (1,000 manually annotated; 350 confirmed hallucination reports) found factual incorrectness the most frequently user-reported hallucination type, at 38% of confirmed instances — defined sample, not a population rate.",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12365265/",
+      "source_date": "2025-08-19",
+      "quote": "Factual Incorrectness (H1) emerged as the most frequently reported type, accounting for 38% of instances",
+      "platform": "Scientific Reports (peer-reviewed; '“My AI is Lying to Me”: User-reported LLM hallucinations in AI mobile apps reviews')",
+      "target_slug": "/evidence/ai-writing-tools",
+      "collected_at": "2026-07-10",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-writing-tools-2026-07-10",
+      "screening": "included",
+      "label": "research-finding",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "AI mobile apps (LLM-based, field-wide; 90-app review corpus)",
+        "aspect": "user-reported hallucination — factual incorrectness most frequent type (38% of 350 confirmed instances)",
+        "stance": "negative",
+        "plan_tier_if_stated": null,
+        "item_date": "2025-08-19"
+      }
+    },
+    {
+      "id": "EV-evidence-ai-writing-tools-03",
+      "claim": "In a 2024 peer-reviewed test (Croatian Medical Journal), 65% of references ChatGPT produced for medical case reports were non-existent and 87% of the valid ones were over 10 years old — dated GPT-3.5/4-era evidence; models have changed since, and the page must say so.",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11074943/",
+      "source_date": "2024-04",
+      "quote": "Examination of the references produced by ChatGPT showed that 65% were non-existent, and that 87% of the valid references were older than 10 years.",
+      "platform": "Croatian Medical Journal (peer-reviewed, via PMC)",
+      "target_slug": "/evidence/ai-writing-tools",
+      "collected_at": "2026-07-10",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-writing-tools-2026-07-10",
+      "screening": "included",
+      "label": "research-finding",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "ChatGPT",
+        "aspect": "reference/citation fabrication in medical case reports (65% non-existent; dated GPT-3.5/4-era)",
+        "stance": "negative",
+        "plan_tier_if_stated": null,
+        "item_date": "2024-04"
+      }
+    },
+    {
+      "id": "EV-evidence-ai-writing-tools-04",
+      "claim": "One long-term independent reviewer (Jon Dykstra, affiliate-disclosed, months of hands-on use, updated 2026-04-08) describes Koala AI one-shot drafts as well-structured — intro answers the query, relevant additions, auto-generated table — a single positive anecdote, not a population claim.",
+      "source_url": "https://fatstacksblog.com/koala-writer-review/",
+      "source_date": "2026-04-08",
+      "quote": "It creates a compelling introduction and answers the query quickly. But then it adds relevant information and added the benefits of consuming watermelon seeds. It even added a table, all by itself.",
+      "platform": "fatstacksblog.com (independent blog, affiliate links disclosed)",
+      "target_slug": "/evidence/ai-writing-tools",
+      "collected_at": "2026-07-10",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-writing-tools-2026-07-10",
+      "screening": "included",
+      "label": "independent-test",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Koala AI",
+        "aspect": "one-shot draft quality and structure (intro, relevant additions, auto table)",
+        "stance": "positive",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-04-08"
+      }
+    },
+    {
+      "id": "EV-evidence-ai-writing-tools-05",
+      "claim": "An independent 10+ article test of Koala AI (Victoria Kurichenko, affiliate-disclosed, updated 2026-01-03) reports the tool consistently delivers articles shorter than the requested length setting.",
+      "source_url": "https://behindrankings.com/koala-writer-review/",
+      "source_date": "2026-01-03",
+      "quote": "Even if you choose to write the longest article with 10–12 paragraphs and 2,350–2,940 words, Koala AI Writer will anyway create a shorter article",
+      "platform": "behindrankings.com (independent blog, disclosed methodology: 10+ generated articles; affiliate-disclosed)",
+      "target_slug": "/evidence/ai-writing-tools",
+      "collected_at": "2026-07-10",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-writing-tools-2026-07-10",
+      "screening": "included",
+      "label": "independent-test",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Koala AI",
+        "aspect": "output length vs requested length setting (consistently shorter)",
+        "stance": "negative",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-01-03"
+      }
+    },
+    {
+      "id": "EV-evidence-ai-writing-tools-06",
+      "claim": "The same tester reports Koala AI output on specialist topics (SEO) was too shallow for client delivery — single-tester anecdote.",
+      "source_url": "https://behindrankings.com/koala-writer-review/",
+      "source_date": "2026-01-03",
+      "quote": "Whenever I ask KoalaWriter to generate an article about SEO, I get shallow answers. I can't deliver this content to my clients.",
+      "platform": "behindrankings.com (independent blog, disclosed methodology; affiliate-disclosed)",
+      "target_slug": "/evidence/ai-writing-tools",
+      "collected_at": "2026-07-10",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-writing-tools-2026-07-10",
+      "screening": "included",
+      "label": "independent-test",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Koala AI",
+        "aspect": "content depth on specialist topics (SEO) — too shallow for client delivery",
+        "stance": "negative",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-01-03"
+      }
+    },
+    {
+      "id": "EV-evidence-ai-writing-tools-07",
+      "claim": "A disclosed-methodology three-way test (60+ days, 400+ content pieces on live client work; affiliate-disclosed; pseudonymous author 'NTH Editor'; dated only to 2025) rated Jasper's long-form drafts highest of Jasper/Writesonic/Copy.ai — one test, coding flagged ambiguous.",
+      "source_url": "https://neuraltoolhub.com/jasper-vs-writesonic-vs-copy-ai/",
+      "source_date": "2025",
+      "quote": "Jasper consistently produced the highest-quality long-form content of the three tools",
+      "platform": "neuraltoolhub.com (independent test with disclosed methodology; affiliate-disclosed; author pseudonymous)",
+      "target_slug": "/evidence/ai-writing-tools",
+      "collected_at": "2026-07-10",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-writing-tools-2026-07-10",
+      "screening": "included",
+      "label": "independent-test",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Jasper",
+        "aspect": "long-form content quality vs Writesonic/Copy.ai (single three-way test; pseudonymous author, year-only date)",
+        "stance": "positive",
+        "plan_tier_if_stated": null,
+        "item_date": "2025"
+      }
+    },
+    {
+      "id": "EV-evidence-ai-writing-tools-08",
+      "claim": "The same three-way test rated Writesonic best of the three for short-form social/ad copy — one test, coding flagged ambiguous (same caveats as EV-07).",
+      "source_url": "https://neuraltoolhub.com/jasper-vs-writesonic-vs-copy-ai/",
+      "source_date": "2025",
+      "quote": "For social media and ad copy, Writesonic was arguably the best of the three, consistently producing punchy, conversion-oriented short copy with strong hook variety.",
+      "platform": "neuraltoolhub.com (independent test with disclosed methodology; affiliate-disclosed; author pseudonymous)",
+      "target_slug": "/evidence/ai-writing-tools",
+      "collected_at": "2026-07-10",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-writing-tools-2026-07-10",
+      "screening": "included",
+      "label": "independent-test",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Writesonic",
+        "aspect": "short-form social/ad copy quality vs Jasper/Copy.ai (same single test, same caveats)",
+        "stance": "positive",
+        "plan_tier_if_stated": null,
+        "item_date": "2025"
+      }
+    },
+    {
+      "id": "EV-evidence-ai-writing-tools-09",
+      "claim": "The vendor states Koala AI's Essentials plan is $9/month for 15,000 KoalaWriter words (GPT-5.2 and Claude 4.5 Sonnet available), with a conditional 15-day refund limited to accounts under 15,000 words / 100 messages of usage.",
+      "source_url": "https://koala.sh/pricing",
+      "source_date": "2026-07-10",
+      "quote": "If you aren't satisfied and you've used less than 15,000 words and 100 messages please contact us within 15 days for a prompt refund.",
+      "platform": "koala.sh (vendor pricing page — self-interested)",
+      "target_slug": "/evidence/ai-writing-tools",
+      "collected_at": "2026-07-10",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-writing-tools-2026-07-10",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Koala AI",
+        "aspect": "pricing and conditional refund policy (vendor-stated)",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Essentials — $9/month, 15,000 KoalaWriter words",
+        "item_date": "2026-07-10"
+      }
+    },
+    {
+      "id": "EV-evidence-ai-writing-tools-10",
+      "claim": "The vendor states Rytr's free plan allows 10K characters per month, the 'Unlimited' plan is $7.50/month (annual billing) and Premium is $24.16/month.",
+      "source_url": "https://rytr.me/pricing",
+      "source_date": "2026-07-10",
+      "quote": "10K characters per month",
+      "platform": "rytr.me (vendor pricing page — self-interested)",
+      "target_slug": "/evidence/ai-writing-tools",
+      "collected_at": "2026-07-10",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-writing-tools-2026-07-10",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Rytr",
+        "aspect": "pricing and free-plan character limit (vendor-stated)",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Free — 10K characters/month; Unlimited — $7.50/month annual; Premium — $24.16/month",
+        "item_date": "2026-07-10"
+      }
+    },
+    {
+      "id": "EV-evidence-ai-writing-tools-11",
+      "claim": "The vendor now positions Writesonic as an AI-visibility/GEO platform: Starter at $79/month billed annually including 15 AI articles/month; as of capture the pricing page does not state whether unused credits roll over.",
+      "source_url": "https://writesonic.com/pricing",
+      "source_date": "2026-07-10",
+      "quote": "Starter: $79/month (billed annually)",
+      "platform": "writesonic.com (vendor pricing page — self-interested)",
+      "target_slug": "/evidence/ai-writing-tools",
+      "collected_at": "2026-07-10",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-writing-tools-2026-07-10",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Writesonic",
+        "aspect": "pricing and GEO/AI-visibility repositioning; credit rollover unstated at capture (vendor-stated)",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Starter — $79/month billed annually, 15 AI articles/month",
+        "item_date": "2026-07-10"
+      }
+    },
+    {
+      "id": "EV-evidence-ai-writing-tools-12",
+      "claim": "The vendor states Jasper Pro is $69/month/seat ($59 with annual billing) with a 7-day free trial; cancellation stops future charges with access through the billing cycle — no money-back window is stated on the pricing page.",
+      "source_url": "https://www.jasper.ai/pricing",
+      "source_date": "2026-07-10",
+      "quote": "You can cancel your subscription at any time and you will no longer be charged. After canceling, you will be able to continue generating content and have access to your account until the end of your billing cycle.",
+      "platform": "jasper.ai (vendor pricing page — self-interested)",
+      "target_slug": "/evidence/ai-writing-tools",
+      "collected_at": "2026-07-10",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-writing-tools-2026-07-10",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Jasper",
+        "aspect": "pricing, trial, and cancellation policy; no money-back window stated (vendor-stated)",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Pro — $69/month/seat ($59 annual); 7-day free trial",
+        "item_date": "2026-07-10"
+      },
+      "resolver_note": "Coders A and B agreed on all coding dimensions; B placed the 7-day trial in the tier field while A placed it in the aspect — field-placement variance only, merged by resolver."
+    },
+    {
+      "id": "EV-evidence-ai-writing-tools-13",
+      "claim": "The vendor states SEOWriting generates and publishes an article from just a title in 1 click, supports 48 languages, and markets bulk generation of '1000+ articles in hours' with auto-posting — scale claims are vendor marketing, not independently verified.",
+      "source_url": "https://seowriting.ai/",
+      "source_date": "2026-07-10",
+      "quote": "Create the perfect article using only Title, generate and publish it in 1 click",
+      "platform": "seowriting.ai (vendor homepage — self-interested)",
+      "target_slug": "/evidence/ai-writing-tools",
+      "collected_at": "2026-07-10",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-writing-tools-2026-07-10",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "SEOWriting",
+        "aspect": "vendor feature/scale marketing claims (1-click generate+publish, 48 languages, bulk 1000+ articles) — unverified vendor marketing",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-07-10"
+      }
+    },
+    {
+      "id": "EV-evidence-ai-writing-tools-14",
+      "claim": "SEOWriting holds 4.8/5 from 78 reviews on Capterra as of 2026-07-10 capture — review-platform figure; Capterra's own incentive structures apply (defined platform sample, not a population claim).",
+      "source_url": "https://www.capterra.com/p/10017894/SEOWRITING-AI/reviews/",
+      "source_date": "2025-08-15",
+      "quote": "Great tools to save a lot of time and money, generating very nice, good and beautiful and optimum SEO contents",
+      "platform": "Capterra (review platform; quoted review by 'Roberto G., CEO', 2025-08-15)",
+      "target_slug": "/evidence/ai-writing-tools",
+      "collected_at": "2026-07-10",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-writing-tools-2026-07-10",
+      "screening": "included",
+      "label": "community-report",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "SEOWriting",
+        "aspect": "Capterra aggregate rating (4.8/5, n=78) plus quoted single positive user review",
+        "stance": "positive",
+        "plan_tier_if_stated": null,
+        "item_date": "2025-08-15"
+      },
+      "resolver_note": "Curator flagged positive-vs-n/a outcome coding as ambiguous, but coders A and B independently both coded stance=positive — agreement stands, no resolution needed; claim text already frames it as a defined platform sample."
+    },
+    {
+      "id": "EV-evidence-ai-writing-tools-15",
+      "claim": "The vendor states Claude Pro is $17/month with annual billing ($200 up front; $20 monthly) and Max starts from $100/month with 5x or 20x more usage; usage limits apply per linked policy.",
+      "source_url": "https://claude.com/pricing",
+      "source_date": "2026-07-10",
+      "quote": "$17 Per month with annual subscription discount ($200 billed up front). $20 if billed monthly.",
+      "platform": "claude.com (vendor pricing page — self-interested)",
+      "target_slug": "/evidence/ai-writing-tools",
+      "collected_at": "2026-07-10",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-writing-tools-2026-07-10",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Claude (Anthropic)",
+        "aspect": "pricing and usage limits per linked policy (vendor-stated)",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Pro — $17/month annual ($200 up front; $20 monthly); Max — from $100/month, 5x/20x usage",
+        "item_date": "2026-07-10"
+      }
+    }
+  ]
+}

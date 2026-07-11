@@ -1,0 +1,171 @@
+{
+  "_meta": {
+    "flow_id": "koala-ai-vs-seowriting-ai-undefined",
+    "protocol_version": "MEP-1.0",
+    "target_slug": "/vs/koala-ai-vs-seowriting-ai",
+    "target_keyword": "koala ai vs seowriting ai",
+    "run_date": "2026-07-10",
+    "collector": "evidence-curator",
+    "flow_id_note": "Orchestrator instructed flow_id 'koala-ai-vs-seowriting-ai-undefined'; the '-undefined' is an unsubstituted run-date variable (templating artifact), same as the sibling koala-ai-review shard. Real run date = 2026-07-10 (see run_date). Per MEP §8/§10 (flow_id encodes the run date) a human should reconcile to 'koala-ai-vs-seowriting-ai-2026-07-10' before the gate; kept literal here so the parallel-pipeline shard-merge keys match the orchestrator's string.",
+    "page_class": "vs (comparison-satellite; launch_queue order 4)",
+    "sweep_strategy": "REUSE-FIRST. This is a two-tool comparison page and both tools already have dedicated review shards built the same day (registry-koala-ai-review.json, registry-seowriting-ai-review.json) plus the cornerstone registry-evidence-ai-writing-tools.json. Most comparison axes (both pricing structures, both Capterra ratings, output-quality reports, production-model/feature claims, refund policies, hallucination context) are ALREADY verified there and are REUSED as-is (see entries_reused), NOT re-fetched. The THIS-RUN discovery sweep below targets only the genuine vs-page gaps the review shards left open: (1) SEOWriting.ai's full pricing TABLE — the cost-math differentiator's blocker (its live pricing page is JS-rendered and returned title-only on 2026-07-10, same failure as both prior runs); (2) a named-author DIRECT head-to-head (wolfheart) for labeled single-source comparison observations; (3) SEOWriting free-plan terms.",
+    "flow_counter": {
+      "identified": 13,
+      "screened": 13,
+      "excluded": 11,
+      "excluded_by_reason": {
+        "no-methodology-affiliate": 4,
+        "unverifiable-this-run": 3,
+        "off-topic": 3,
+        "duplicate": 1
+      },
+      "included_sources": 2,
+      "registry_entries_new": 4,
+      "registry_entries_reused": 24,
+      "included_sources_note": "2 NEW included sources this run — (a) the Wayback Machine archived capture of seowriting.ai/pricing dated 2026-04-16 (vendor-primary pricing config, fetched + verified live this run via curl; yields EV-...-01) and (b) wolfheart.co.uk's named-author head-to-head (yields EV-...-02/03/04). The reused evidence base (24 entries across 3 shards) is tracked separately in entries_reused, per the sibling-shard convention — reused entries are NOT re-counted in the this-run census."
+    },
+    "coder_agreement_rate_provisional": 0.5,
+    "coder_agreement_note": "Provisional curator coding only; dual-independent coding + resolver are orchestrated ABOVE the curator (MEP §5) and supersede these values. Of the 4 NEW entries: EV-...-01 (vendor pricing, stance n/a) and EV-...-02 (KoalaLinks disabled, clean first-person negative) are coded unambiguously (agreement true). EV-...-03 (both tools need 10-15 min editing) and EV-...-04 (SEOWriting repetitive + author's Koala preference) carry genuine coding tension and are FLAGGED coding-ambiguous for the orchestrated resolver (coder_agreement:false) — see each entry's resolver_note. Provisional clean rate 2/4 = 0.5; the orchestrated coders will set the authoritative rate.",
+    "coder_agreement_rate": 1.0,
+    "coder_agreement_resolved": true,
+    "coder_agreement_resolved_by": "resolver",
+    "coder_agreement_resolved_note": "AUTHORITATIVE — supersedes coder_agreement_rate_provisional. Orchestrated dual-independent coding (MEP §5): coders A and B produced IDENTICAL stance vectors on all 4 included entries — 01 n/a, 02 negative, 03 negative, 04 negative. The two curator-flagged entries CONVERGED under independent coding: 03 (curator provisional 'mixed' superseded — both coders read the required originality/warmth editing pass as a negative limitation) and 04 (both coders coded the 'repetitive drivel' outcome negative-on-SEOWriting and held the author's KoalaWriter switch as a labeled single-author preference, not an independent capability finding). Inter-coder agreement = 4/4 = 1.0; ambiguous_count = 0; 0 resolver-forced resolutions (coders agreed on every entry, so no per-entry resolved_by is set, per §8 which reserves resolved_by for disagreements). The coders' agreement — not the curator's provisional guess — is authoritative here.",
+    "query_census": [
+      { "q": "DIRECT vendor-primary retry: WebFetch https://seowriting.ai/pricing", "candidates": 1, "urls": ["seowriting.ai/pricing"], "note": "unverifiable-this-run — JS-rendered; body returned title only ('SEOWriting Pricing – Flexible Plans…'), NO pricing numbers in DOM. Same failure as the seowriting-ai-review run and the evidence-ai-writing-tools run. The live tier prices could NOT be captured as static text on 2026-07-10." },
+      { "q": "Wayback availability API (archive.org/wayback/available) for seowriting.ai/pricing @ 20260701 + 20260101, then curl the closest snapshot", "candidates": 1, "urls": ["web.archive.org/web/20260416073200/https://seowriting.ai/pricing"], "note": "INCLUDED. Closest snapshot = 2026-04-16 (no snapshot existed near 2026-01). WebFetch is blocked for web.archive.org in this environment ('unable to fetch from web.archive.org'), so fetched via curl (Bash) instead. The archived HTML embeds the vendor's full pricing in a window.sw.tariffs config object — 4 article-metered tiers with monthly+yearly prices — captured verbatim (EV-...-01). Dated + linkable + re-fetched this run = MEP-compliant; source_date pinned to the ARCHIVE capture (2026-04-16), NOT today." },
+      { "q": "DIRECT named-author head-to-head: WebFetch https://wolfheart.co.uk/koalawriter-vs-seowriting-ai/", "candidates": 1, "urls": ["wolfheart.co.uk/koalawriter-vs-seowriting-ai"], "note": "INCLUDED (rank-3 SERP competitor per 1-competitor.json). Verified live: named author Jan Barley, 'Last Updated November 27, 2025', real affiliate disclosure present, first-person hands-on testing. Yields 3 labeled single-author comparison entries (EV-...-02/03/04). Qualifies under MEP §3(c) via 'first-person experience' (NOT disclosed-methodology — she states no sample size), so labeled community-report, not independent-test." },
+      { "q": "WebSearch: koala ai vs seowriting ai head to head test compared which is better", "candidates": 10, "urls": ["seowritingaireview.com/seowriting-ai-vs-koala-writer", "capterra.com/compare/10011831-10017894/Koala-AI-vs-SEOWRITING-AI", "seo.ai/blog/koalawriter-alternatives", "fuelyourdigital.com/post/koala-ai-vs-seowriting-ai-which-one-is-better", "aitoolsinsights.com/articles/koala-ai-vs-best-ai-writers-seo", "zuliewrites.com/blog/koalawriter-review", "wolfheart.co.uk/koalawriter-vs-seowriting-ai (dup of prior query)", "toolify.ai/ai-news/seowritingai-vs-koalawriter", "originality.ai/blog/koalawriter-ai-review", "aiflowreview.com/koalawriter-review-2025"], "note": "Census of the vs SERP. wolfheart = dup (already fetched). The search tool ALSO synthesized head-to-head 'scores' (e.g. '7.5/10 vs 7.1/10 factual accuracy', '100 articles per batch') — these are UNVERIFIED search-snippet synthesis; the numeric scores trace to aitoolsinsights, which is 403 (see below). They FAILED verification and must NEVER be cited. The bulk/48-language figures are already banked as vendor-claim EV-13, not re-registered from the snippet." },
+      { "q": "DIRECT census: WebFetch https://fuelyourdigital.com/post/koala-ai-vs-seowriting-ai-which-one-is-better/ (rank-2 head-to-head)", "candidates": 0, "note": "already in the WebSearch census above; fetched to verify exclusion status live. EXCLUDED no-methodology-affiliate: NO affiliate disclosure anywhere, but outbound links carry affiliate params to BOTH tools (koala.sh/?via=tin, seowriting.ai?fp_ref=tin-hunold14); no disclosed method ('tested for a few weeks', no sample/criteria/dates); company byline; 505 days stale (2025-02-20). Its Koala prices (Essentials $9 / Starter $20 / Professional $39) DISAGREE with wolfheart's Koala tiers ($9/15k, $49/100k) — documents the SERP's undated Koala-price conflict but is NOT registrable. Its SEOWriting tiers (Free $0 / Starter $19 / Professional $79) independently corroborate the archived vendor tiers in EV-...-01." },
+      { "q": "DIRECT census: WebFetch https://aitoolsinsights.com/articles/koala-ai-vs-best-ai-writers-seo", "candidates": 0, "note": "already in the WebSearch census; fetched to verify. EXCLUDED unverifiable-this-run — HTTP 403 Forbidden (matches 1-competitor.json's 'bot-blocked' flag). The '7.5/10 vs 7.1/10 factual-accuracy' scores surfaced in the search synthesis originate here and could NOT be verified — they are barred from the page (see evidence_gaps)." },
+      { "q": "Wayback availability API for seowriting.ai/ homepage @ 20260701 (for free-plan terms)", "candidates": 1, "urls": ["web.archive.org/web/20260603013342/https://seowriting.ai/"], "note": "EXCLUDED off-topic for a NEW claim — the archived pricing config (EV-...-01) itemizes NO free tier (tariffs start at Starter $19); homepage free-start marketing is already banked (EV-13 / EV-seowriting-ai-review-05). SEOWriting's specific free-plan article/word cap remains vendor-UNVERIFIED this run (affiliate sources conflict: 3 vs 5 articles) — logged as an evidence gap, not registered." }
+    ],
+    "exclusion_log_notes": [
+      "no-methodology-affiliate (4): fuelyourdigital.com (rank-2 head-to-head; undisclosed affiliate links to BOTH tools + no disclosed method — verified live, see census); seo.ai/blog/koalawriter-alternatives (competitor vendor's alternatives listicle, no SEOWriting head-to-head test); toolify.ai/ai-news/seowritingai-vs-koalawriter (aggregator, no method; also a competitor_praise_vocab_avoid domain — never named on-page); aiflowreview.com/koalawriter-review-2025 (single-tool affiliate review, no disclosed method).",
+      "unverifiable-this-run (3): seowriting.ai/pricing (live — JS-rendered, body = title only on 2026-07-10; live tier prices uncapturable, hence the Wayback fallback in EV-...-01); aitoolsinsights.com/koala-ai-vs-best-ai-writers-seo (HTTP 403 — the 7.5/10-vs-7.1/10 scores fail verification, barred); seowritingaireview.com/seowriting-ai-vs-koala-writer (DNS-dead per 1-competitor.json — dead-domain hygiene: its 'more human-like output' claim, still circulating in LLM answers, is NEVER repeated, laundered, or 'reported').",
+      "off-topic (3): zuliewrites.com/blog/koalawriter-review (single-tool Koala review, no SEOWriting comparison — Koala side already covered by banked entries); originality.ai/blog/koalawriter-ai-review (AI-DETECTOR VENDOR — owned-category border adjacency, detection-centric, single-tool; excluded as in both prior runs); web.archive.org/.../seowriting.ai/ homepage snapshot (no NEW registrable claim — free tier not itemized; homepage marketing already banked).",
+      "duplicate (1): capterra.com/compare/10011831-10017894/Koala-AI-vs-SEOWRITING-AI (the rank-1 template compare page — its only load-bearing data is the two Capterra aggregate ratings, already banked verbatim as EV-koala-ai-review-07 (4.5/70) and EV-evidence-ai-writing-tools-14 (4.8/78); it runs no independent test, so it adds no new claim)."
+    ],
+    "entries_reused": [
+      { "id": "EV-koala-ai-review-01", "shard": "registry-koala-ai-review.json", "source": "koala.sh/pricing", "axis": "PRICING/cost-math — Koala side: full nine-tier WORD-metered table ($9/15k … $2,000/10M; annual −20%), captured 2026-07-10. The Koala half of the per-1,500-word cost table." },
+      { "id": "EV-koala-ai-review-02", "shard": "registry-koala-ai-review.json", "source": "koala.sh/pricing", "axis": "PRICING/plan-model — Koala premium-model 2x word multiplier (GPT-5.2 / Claude 4.5 Sonnet count double); the fine print that bends Koala's cost curve upward." },
+      { "id": "EV-koala-ai-review-03", "shard": "registry-koala-ai-review.json", "source": "koala.sh/pricing", "axis": "PRICING/plan-model — Koala monthly word credits expire end-of-month (no rollover) vs annual up-front. Contrast row: SEOWriting's archived config shows NO expiry language (do not invent symmetry)." },
+      { "id": "EV-evidence-ai-writing-tools-09", "shard": "registry-evidence-ai-writing-tools.json", "source": "koala.sh/pricing", "axis": "PRICING/refund — Koala Essentials $9/15k words + conditional 15-day refund (<15,000 words/100 messages). Koala side of the refund row." },
+      { "id": "EV-seowriting-ai-review-02", "shard": "registry-seowriting-ai-review.json", "source": "seowriting.ai/terms-of-service", "axis": "PRICING/refund — SEOWriting 14-day conditional refund (<50,000 words + 5 generations). SEOWriting side of the refund row." },
+      { "id": "EV-seowriting-ai-review-03", "shard": "registry-seowriting-ai-review.json", "source": "seowriting.ai/terms-of-service", "axis": "PRICING/billing — SEOWriting recurring auto-renew, no lifetime option in ToS (documented ABSENCE, not a vendor denial — frame per that entry's resolver_note)." },
+      { "id": "EV-seowriting-ai-review-08", "shard": "registry-seowriting-ai-review.json", "source": "capterra.com/p/10017894/SEOWRITING-AI/", "axis": "PRICING/inconsistency — Capterra lists SEOWriting at '$19.00 Flat Rate, no free version', contradicting vendor free-start marketing; documents the SERP-wide pricing inconsistency. Pairs with the archived $19 Starter in EV-...-01." },
+      { "id": "EV-koala-ai-review-04", "shard": "registry-koala-ai-review.json", "source": "koala.sh/pricing", "axis": "FREE-PATH — Koala free trial capped at 5,000 words / 25 chat messages, no card. Koala side of the free-path row (SEOWriting free-plan terms are an evidence gap this run)." },
+      { "id": "EV-koala-ai-review-07", "shard": "registry-koala-ai-review.json", "source": "capterra.com/p/10011831/Koala-AI/reviews/", "axis": "RATINGS + QUALITY — Koala Capterra 4.5/5 (n=70, captured 2026-07-10) + the 'more robotic and weird' at length review. Koala side of the dated side-by-side rating; NOT our score, never aggregateRating." },
+      { "id": "EV-evidence-ai-writing-tools-14", "shard": "registry-evidence-ai-writing-tools.json", "source": "capterra.com/p/10017894/SEOWRITING-AI/reviews/", "axis": "RATINGS — SEOWriting Capterra 4.8/5 (n=78, captured 2026-07-10) + one quoted positive review. SEOWriting side of the dated side-by-side rating." },
+      { "id": "EV-koala-ai-review-05", "shard": "registry-koala-ai-review.json", "source": "koala.sh/", "axis": "PRODUCTION-MODEL + Koala-only feature — homepage SEO-first marketing incl. Amazon-affiliate articles with live Amazon data (the Koala-only Amazon Product Roundups boundary), real-time SERP analysis, 1-click WP/Shopify publishing, '19,000+' self-reported users. Vendor marketing, labeled." },
+      { "id": "EV-evidence-ai-writing-tools-13", "shard": "registry-evidence-ai-writing-tools.json", "source": "seowriting.ai/", "axis": "PRODUCTION-MODEL — SEOWriting throughput marketing: 1-click generate+publish from a title, 48 languages, bulk '1000+ articles in hours'. Vendor scale claims, labeled; the SEOWriting side of the production-model axis." },
+      { "id": "EV-seowriting-ai-review-05", "shard": "registry-seowriting-ai-review.json", "source": "seowriting.ai/", "axis": "PRODUCTION-MODEL/workflow — SEOWriting 1-click WordPress auto-post ('autopilot for your blog'); what bulk auto-publish skips. Vendor-stated; publish reliability not independently tested." },
+      { "id": "EV-seowriting-ai-review-01", "shard": "registry-seowriting-ai-review.json", "source": "docs.seowriting.ai/article/ai-models", "axis": "FEATURE/AI-models — SEOWriting's 16-model user-selectable, credit-weighted menu (GPT-5.2, Claude 4.5 Sonnet, Llama 4, DeepSeek…). Answers the 'which model writes my article' row; note both tools expose comparable frontier models (shared, not a differentiator)." },
+      { "id": "EV-evidence-ai-writing-tools-04", "shard": "registry-evidence-ai-writing-tools.json", "source": "fatstacksblog.com/koala-writer-review", "axis": "QUALITY — Koala one-shot draft structure positive (Jon Dykstra, affiliate-disclosed, 2026-04-08). Single positive anecdote, Koala side." },
+      { "id": "EV-evidence-ai-writing-tools-05", "shard": "registry-evidence-ai-writing-tools.json", "source": "behindrankings.com/koala-writer-review", "axis": "QUALITY — Koala outputs consistently SHORTER than the requested length (disclosed 10+ article test, 2026-01-03). Interacts with Koala's word metering." },
+      { "id": "EV-evidence-ai-writing-tools-06", "shard": "registry-evidence-ai-writing-tools.json", "source": "behindrankings.com/koala-writer-review", "axis": "QUALITY/client-risk — Koala too shallow on specialist (SEO) topics for client delivery (same disclosed test). The freelance-writer 'will a client notice' anecdote; stays a single-tester anecdote." },
+      { "id": "EV-koala-ai-review-10", "shard": "registry-koala-ai-review.json", "source": "juliety.com/koala-writer-review", "axis": "QUALITY/time — Koala big time-saver but a skilled writer could improve the draft (disclosed 200k+ words, updated 2025-07-06); independently corroborates the 2x premium-model credit cost. Coded mixed." },
+      { "id": "EV-koala-ai-review-08", "shard": "registry-koala-ai-review.json", "source": "capterra.com/p/10011831/Koala-AI/reviews/", "axis": "BULK-WORKFLOW/quality — Koala Bulk Writer output disconnected from SERPs + slow support (dated Capterra review 2024-09-04). The bulk-mode-quality counterpoint on the Koala side." },
+      { "id": "EV-seowriting-ai-review-06", "shard": "registry-seowriting-ai-review.json", "source": "capterra.com/p/10017894/SEOWRITING-AI/reviews/", "axis": "LIMITATIONS — SEOWriting AI-image feature caps images below request + inserts irrelevant images (dated Capterra review 2025-09-04). SEOWriting side of the dedicated limitations section." },
+      { "id": "EV-seowriting-ai-review-07", "shard": "registry-seowriting-ai-review.json", "source": "capterra.com/p/10017894/SEOWRITING-AI/reviews/", "axis": "EDITING-BURDEN — SEOWriting fast/structured but repetitive, needs human polishing before publish (dated Capterra review 2025-01-21). Corroborated INDEPENDENTLY by the new wolfheart entry EV-...-04." },
+      { "id": "EV-evidence-ai-writing-tools-01", "shard": "registry-evidence-ai-writing-tools.json", "source": "arxiv.org/abs/2510.06265", "axis": "SCALED-CONTENT RISK — field-wide LLM hallucination definition; factual-accuracy caution behind bulk auto-publishing on BOTH tools. Not a tool-specific rate." },
+      { "id": "EV-evidence-ai-writing-tools-02", "shard": "registry-evidence-ai-writing-tools.json", "source": "pmc.ncbi.nlm.nih.gov/articles/PMC12365265", "axis": "SCALED-CONTENT RISK — peer-reviewed user-reported hallucination study (defined sample, factual-incorrectness the top type). Supports the June-2026 spam-update / editing-pass framing; denominator-anchored, never a population rate." },
+      { "id": "EV-evidence-ai-writing-tools-15", "shard": "registry-evidence-ai-writing-tools.json", "source": "claude.com/pricing", "axis": "BASELINE — Claude Pro/Max pricing for the 'what does each add over the chat subscription you already pay' section (both tools add SERP research; SEOWriting adds bulk + WP auto-publish). No-commission-bias baseline." }
+    ],
+    "entries_reused_optional_note": "Also available if a section needs them (not in the core reuse set to avoid over-citation): EV-evidence-ai-writing-tools-03 (ChatGPT reference-fabrication, dated GPT-3.5/4-era — accuracy caveat for the ChatGPT-baseline aside), EV-koala-ai-review-09 (Koala 'works best section-by-section' Capterra review), EV-seowriting-ai-review-04 (SEOWriting 30-day data retention). EV-koala-ai-review-06 (Koala ToS non-disparagement clause) is review-specific and NOT recommended for the vs page."
+  },
+  "entries": [
+    {
+      "id": "EV-koala-ai-vs-seowriting-ai-01",
+      "claim": "SEOWriting.ai meters ARTICLE credits (not words): the vendor's pricing config, captured in the Wayback Machine archive dated 2026-04-16 (the live page is JavaScript-rendered and returned no pricing text on 2026-07-10), lists four tiers — Starter $19/mo for 50 article credits ($14/mo billed yearly, $168), Professional $79/mo for 250 ($59/mo yearly, $708), Professional Plus 1 $159/mo for 500 ($119/mo yearly, $1,428) and Professional Plus 2 $307/mo for 1,000 ($230/mo yearly, $2,760); one credit equals one article and the vendor markets words-per-article as uncapped. This is the SEOWriting half of the per-1,500-word cost table; it is archive-dated 2026-04-16, so current live pricing was NOT re-verified on the capture date.",
+      "source_url": "http://web.archive.org/web/20260416073200/https://seowriting.ai/pricing",
+      "source_date": "2026-04-16",
+      "quote": "\"articles\":50,\"prices\":{\"monthly\":{\"tariffId\":40,\"price\":19,\"pricePerMonth\":19},\"yearly\":{\"tariffId\":41,\"price\":168,\"pricePerMonth\":14}} … \"articles\":250,\"prices\":{\"monthly\":{\"tariffId\":28,\"price\":79,\"pricePerMonth\":79},\"yearly\":{\"tariffId\":29,\"price\":708,\"pricePerMonth\":59}}",
+      "platform": "seowriting.ai/pricing via Wayback Machine archive (vendor pricing config window.sw.tariffs — self-interested; archive-captured 2026-04-16; live page JS-rendered/unfetchable 2026-07-10; fetched + verified this run via curl)",
+      "target_slug": "/vs/koala-ai-vs-seowriting-ai",
+      "collected_at": "2026-07-10",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "koala-ai-vs-seowriting-ai-undefined",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": { "tool": "SEOWriting.ai", "aspect": "full pricing table — 4 ARTICLE-credit-metered tiers ($19/50, $79/250, $159/500, $307/1,000 monthly; yearly lowers effective rate) from the archived vendor config; the article-cap side of the production-model thesis and the SEOWriting half of the cost-math table", "stance": "n/a", "plan_tier_if_stated": "Starter $19/50 credits · Professional $79/250 · Prof Plus 1 $159/500 · Prof Plus 2 $307/1,000 (monthly); yearly $14/$59/$119/$230 per-month-equivalent", "item_date": "2026-04-16" },
+      "honesty_notes": [
+        "SOURCE IS ARCHIVED, NOT LIVE-TODAY: date this to 2026-04-16 and present as 'SEOWriting's pricing as captured in the Wayback Machine archive dated 2026-04-16 (its live pricing page was JavaScript-rendered and could not be re-captured on 2026-07-10)'. Do NOT imply the prices are confirmed current.",
+        "NO FREE TIER in the archived tariff config (tariffs begin at Starter $19); SEOWriting's free-start marketing exists on the homepage (banked EV-13 / EV-seowriting-ai-review-05) but the free-plan article/word cap is NOT vendor-verified this run — see evidence_gaps.",
+        "NO credit-expiry / no-rollover language in this snapshot (unlike Koala's vendor-stated monthly expiry, EV-koala-ai-review-03) — do NOT claim SEOWriting credits expire; that is unverified. Do not invent plan-model symmetry.",
+        "'unlimited words per article' is corroborated by the dated third-party report EV-...-04 (wolfheart: '50 articles with unlimited words'), NOT by this config, which meters 'Credits'/articles — attribute accordingly.",
+        "CORROBORATION: wolfheart (2025-11-27, EV-...-04 context) independently states SEOWriting '$19 monthly for 50 articles' and '$79 monthly for 250'; the excluded fuelyourdigital (2025-02-20) independently lists 'Starter $19 / Professional $79' — two third-party sources match the archived vendor figures, strengthening this capture."
+      ]
+    },
+    {
+      "id": "EV-koala-ai-vs-seowriting-ai-02",
+      "claim": "In a named-author head-to-head (Jan Barley, wolfheart.co.uk, updated 2025-11-27, affiliate-disclosed), the author reports that during her own hands-on use she turned OFF KoalaWriter's automatic internal-linking feature because the links it inserted were sometimes not relevant to the article — one blogger's first-person experience with the internal-linking feature, not a measured relevance rate.",
+      "source_url": "https://wolfheart.co.uk/koalawriter-vs-seowriting-ai/",
+      "source_date": "2025-11-27",
+      "quote": "I switched this functionality off because the links were occasionally not relevant to the article.",
+      "platform": "wolfheart.co.uk (named-author independent blog head-to-head — Jan Barley, 'freelance blogger & AI filmmaker'; first-person hands-on, affiliate-disclosed; no formal methodology/sample size stated)",
+      "target_slug": "/vs/koala-ai-vs-seowriting-ai",
+      "collected_at": "2026-07-10",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "koala-ai-vs-seowriting-ai-undefined",
+      "screening": "included",
+      "label": "community-report",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": { "tool": "Koala AI", "aspect": "internal-linking (KoalaLinks) relevance — one named tester disabled auto-internal-linking for occasionally-irrelevant links (realistic-expectations point; single first-person account, not a rate)", "stance": "negative", "plan_tier_if_stated": null, "item_date": "2025-11-27" },
+      "honesty_notes": [
+        "Labeled single-author anecdote — 'one named blogger who tested both disabled KoalaWriter's auto-internal-linking for poor relevance', never 'KoalaLinks is unreliable' as a general claim.",
+        "MEP §3(c) inclusion basis = first-person experience (she discloses no sample size), hence label community-report, not independent-test — do not present as a measured finding."
+      ]
+    },
+    {
+      "id": "EV-koala-ai-vs-seowriting-ai-03",
+      "claim": "The same named-author head-to-head reports that BOTH tools' drafts needed roughly 10-15 minutes of editing per piece for originality and 'warmth' before publishing — one author's experience applied to both KoalaWriter and SEOWriting.ai, dated 2025-11-27; an editing pass is required whichever tool a reader picks, not a quantified population figure.",
+      "source_url": "https://wolfheart.co.uk/koalawriter-vs-seowriting-ai/",
+      "source_date": "2025-11-27",
+      "quote": "For both options, you'll need to spend 10-15 minutes editing each piece for originality and warmth.",
+      "platform": "wolfheart.co.uk (named-author independent blog head-to-head — Jan Barley; first-person hands-on, affiliate-disclosed; no formal methodology/sample size)",
+      "target_slug": "/vs/koala-ai-vs-seowriting-ai",
+      "collected_at": "2026-07-10",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "koala-ai-vs-seowriting-ai-undefined",
+      "screening": "included",
+      "label": "community-report",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": { "tool": "Koala AI + SEOWriting.ai (both)", "aspect": "post-generation editing burden — one author reports ~10-15 min/piece editing on BOTH tools before publish (shared limitation)", "stance": "negative", "plan_tier_if_stated": null, "item_date": "2025-11-27" },
+      "resolver_note": "RESOLVED by orchestrated resolver (MEP §5). Both independent coders (A and B) coded this NEGATIVE: the quote states a REQUIRED remediation pass for two named deficiencies (originality, warmth) on both tools with no explicit offsetting positive marker, and modest magnitude ('10-15 min') does not convert a stated limitation into mixed. The dual-coders CONVERGED on negative, so coder_agreement=true and the item is NOT coding-ambiguous — no resolver-forced resolution was needed. The curator's provisional 'mixed' is SUPERSEDED; agreed stance = negative. SHARED limitation applying to both tools equally — the writer must use it symmetrically (the 'editing pass required whichever wins' point / cognitive_conflict_hook #4), never as a differentiator.",
+      "honesty_notes": [
+        "Applies to BOTH tools equally — do not attach it to only one side.",
+        "Single-author anecdote; '10-15 minutes' is her experience, never a per-user average or a percentage."
+      ]
+    },
+    {
+      "id": "EV-koala-ai-vs-seowriting-ai-04",
+      "claim": "The same author reports she moved from SEOWriting.ai to KoalaWriter partly because SEOWriting's output was sometimes repetitive, and states KoalaWriter is her personal preference for her own site — a single named blogger's experience and preference, not a quality verdict for all users. This independently corroborates a separate dated Capterra report that SEOWriting output can be repetitive and needs human polishing (EV-seowriting-ai-review-07).",
+      "source_url": "https://wolfheart.co.uk/koalawriter-vs-seowriting-ai/",
+      "source_date": "2025-11-27",
+      "quote": "I switched to KoalaWriter because SEOWriting AI sometimes produced a lot of repetitive drivel.",
+      "platform": "wolfheart.co.uk (named-author independent blog head-to-head — Jan Barley; first-person hands-on, affiliate-disclosed; no formal methodology/sample size)",
+      "target_slug": "/vs/koala-ai-vs-seowriting-ai",
+      "collected_at": "2026-07-10",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "koala-ai-vs-seowriting-ai-undefined",
+      "screening": "included",
+      "label": "community-report",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": { "tool": "SEOWriting.ai (with a labeled Koala preference)", "aspect": "output character — one named tester found SEOWriting sometimes repetitive and switched to KoalaWriter (her stated preference); corroborates the dated Capterra 'repetitive / needs polishing' report", "stance": "negative", "plan_tier_if_stated": null, "item_date": "2025-11-27" },
+      "resolver_note": "RESOLVED by orchestrated resolver (MEP §5). Both independent coders (A and B) coded the PRIMARY, codable outcome NEGATIVE-on-SEOWriting (explicit 'repetitive drivel'); both treated the author's move to KoalaWriter as a secondary single-author PREFERENCE, not an independent Koala capability finding, so it does not convert the item to mixed. The dual-coders CONVERGED on negative, so coder_agreement=true and the item is NOT coding-ambiguous — no resolver-forced resolution was needed; agreed stance = negative. CRITICAL for the writer: her 'personal preference is KoalaWriter' MUST stay a labeled single-author preference — it may NOT be rendered as 'Koala is better' or fold into a verdict; that is exactly the anecdote-to-verdict slide the persona/competitor briefs warn wolfheart's own page commits.",
+      "honesty_notes": [
+        "Use for the SEOWriting-repetitiveness point (corroborating EV-seowriting-ai-review-07 from an independent source), NOT as a Koala endorsement.",
+        "Her Koala preference is one blogger's choice for her own dog-behaviour blog — label it as such or omit; never a population claim."
+      ]
+    }
+  ]
+}

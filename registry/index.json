@@ -1,0 +1,34 @@
+{
+  "protocol": "MEP-1.0",
+  "site": "mimoaitools.com",
+  "captured": "2026-07-10",
+  "note": "Per-page evidence shards. Each EV id is cited inline in the matching Mimo article. See README.",
+  "shards": [
+    {
+      "file": "registry-evidence-ai-writing-tools.json",
+      "page": "/evidence/ai-writing-tools",
+      "entries": 15
+    },
+    {
+      "file": "registry-jasper-alternatives.json",
+      "page": "/jasper-alternatives",
+      "entries": 6
+    },
+    {
+      "file": "registry-koala-ai-review.json",
+      "page": "/koala-ai",
+      "entries": 10
+    },
+    {
+      "file": "registry-koala-ai-vs-seowriting-ai.json",
+      "page": "/koala-ai-vs-seowriting-ai",
+      "entries": 4
+    },
+    {
+      "file": "registry-seowriting-ai-review.json",
+      "page": "/seowriting-ai",
+      "entries": 8
+    }
+  ],
+  "total_entries": 43
+}
