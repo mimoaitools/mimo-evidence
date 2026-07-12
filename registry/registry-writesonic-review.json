@@ -1,0 +1,195 @@
+{
+  "_meta": {
+    "flow_id": "writesonic-review-2026-07-12",
+    "protocol_version": "MEP-1.0",
+    "target_slug": "/tools/writesonic",
+    "target_keyword": "writesonic review",
+    "run_date": "2026-07-12",
+    "collector": "evidence-curator",
+    "orchestrator_flow_id_token_received": "writesonic-review-2026-07-12 — the run-date variable arrived unsubstituted ('undefined'); resolved to 2026-07-12 per system currentDate to satisfy MEP §8 (flow_id encodes run date) and match the sibling-shard convention. Orchestrator should reconcile on merge.",
+    "flow_counter": {
+      "identified": 24,
+      "screened": 24,
+      "excluded": 19,
+      "excluded_by_reason": {
+        "no-methodology-affiliate": 15,
+        "unverifiable-this-run": 2,
+        "off-topic-or-duplicative-vendor": 2
+      },
+      "included_sources": 5,
+      "registry_entries_new": 6,
+      "entries_reused_from_other_shard": 2,
+      "note": "5 distinct included URLs yield 6 registry entries (behindrankings.com carries two independent findings — EV-04 content-quality + EV-05 GEO/pricing — registered separately)."
+    },
+    "coder_agreement_rate": "6/6 included registry entries: coders A and B agree on tool, aspect, and stance (rate 1.0 = 100%; ambiguous_count 0). EV-writesonic-review-03 (aigeniusoptimizer.com) was pre-flagged coder_agreement:false by the curator placeholder anticipating an independent-test-vs-no-methodology-affiliate SCREENING split; the resolver (2026-07-12) found the two independent coders' ACTUAL outputs coded the same tuple (stance POSITIVE, Standard plan, item_date 2026-06-09, factual-accuracy-vs-late-2024-baseline aspect), so it resolves as AGREED — not coding-ambiguous. The low-trust-domain / possible-persona concern is a screening caveat (preserved in the entry's resolver_note + platform label), NOT a coding-stance disagreement, and does not lower the rate. The other five were never in dispute: EV-01/02/06 n/a (vendor-primary), EV-04/05 negative (behindrankings). Parallels the seowriting-ai-review EV-08 / jasper-alternatives EV-03 false-flag corrections.",
+    "query_census": [
+      { "q": "WebFetch https://writesonic.com/pricing (vendor pricing — fresh re-capture)", "candidates": 1, "note": "included → EV-01. Full tier ladder Starter $79 / Basic $199 / Growth $399 (annual), per-tier AI-article caps, rollover unstated on the pricing page itself." },
+      { "q": "WebSearch: writesonic review 2026 hands-on test methodology accuracy", "candidates": 10, "note": "aigeniusoptimizer (fetched → EV-03). amrytt, themarketingagency.ca, kripeshadwani, youraisoft, thetopaigear, digioffly, saascrmreview, nogood.io, slatehq → excluded no-methodology-affiliate (not fetched/verified as disclosed-method independent tests this run)." },
+      { "q": "WebSearch: writesonic reddit review experience content quality 2025", "candidates": 4, "note": "behindrankings (fetched → EV-04 + EV-05). g2.com/products/writesonic/reviews (fetched → 403, unverifiable). juma.ai, thetopaigear (dup) → excluded no-methodology-affiliate." },
+      { "q": "WebSearch: site:reddit.com writesonic charged after cancelling billing \"shady\"", "candidates": 6, "note": "search tool ignored the site: operator and returned NON-reddit URLs: trustpilot (fetched → 403), help.writesonic refund (fetched → EV-02), docs.writesonic cancellation-mid-cycle (fetched → EV-06), help.writesonic/article/31-cancel-your-account + docs guide-to-cancelling (duplicative vendor cancel docs, not separately registered), juma.ai (dup). Zero reddit.com URLs surfaced." },
+      { "q": "WebSearch: writesonic trustpilot rating reviews number", "candidates": 10, "note": "trustpilot (+paginated variants) → 403 unverifiable; aiwritingpick, copy.ai, eesel.ai, contentellect, aisoftwarematch, g2 (dup) → excluded no-methodology-affiliate/off-topic. NO Trustpilot score/count registered — page blocked, snippet numbers (4.x / ~5,800) NOT registerable." },
+      { "q": "WebFetch https://aigeniusoptimizer.com/writesonic-review-2026/ (verify methodology + findings)", "candidates": 1, "note": "included → EV-03 (dup of Q2 candidate; two fetches for methodology-audit then verbatim findings)." },
+      { "q": "WebFetch https://www.trustpilot.com/review/writesonic.com", "candidates": 1, "note": "HTTP 403 — unverifiable-this-run. TrustScore/review-count NOT captured." },
+      { "q": "WebFetch https://help.writesonic.com/article/29-refund-policy", "candidates": 1, "note": "included → EV-02 (7-day / <25,000 Premium-word refund window; last updated 2023-07-17)." },
+      { "q": "WebFetch https://www.g2.com/products/writesonic/reviews", "candidates": 1, "note": "HTTP 403 — unverifiable-this-run. G2 star/count NOT captured (snippet '1900+ reviews' NOT registerable)." },
+      { "q": "WebFetch https://behindrankings.com/writesonic-review/ (Victoria Kurichenko — methodology + findings)", "candidates": 1, "note": "included → EV-04 + EV-05. Named SEO reviewer, updated 2026-02-05, Professional plan $249/mo tested Jan 2026." },
+      { "q": "WebSearch: reddit.com/r writesonic \"shady business practices\" OR \"charged after\" cancel experience", "candidates": 0, "note": "no links returned." },
+      { "q": "WebFetch https://docs.writesonic.com/docs/understanding-subscription-cancellation-mid-cycle", "candidates": 1, "note": "included → EV-06. Vendor states credits EXPIRE at cycle end (resolves EV-11's 'rollover unstated' open question at the docs level), no additional charges after cancel, no partial refund." },
+      { "q": "WebSearch: writesonic worth it credits reddit r/juststart r/SEO blogging", "candidates": 2, "note": "amrytt + eesel.ai (both dup) → excluded no-methodology-affiliate. Reddit r/juststart / r/entrepreneur threads exist only second-hand inside these affiliate aggregators — NOT registerable as primary." }
+    ],
+    "reddit_access_note": "PRIMARY Reddit threads were NOT obtainable this run: the search tool surfaced zero reddit.com URLs across three Reddit-targeted queries (site: operator unsupported / ignored), and direct reddit.com fetch is blocked in this environment (same failure documented in the seowriting-ai-review and evidence-ai-writing-tools shards). The 'bad product, shady business practices, rude customer service' and 'charged after cancelling' complaints appear ONLY inside affiliate-review aggregators (juma.ai, eesel.ai) with no dated primary link — the writer must NOT attribute those quotes to named/dated Reddit threads. Route the billing-friction theme through vendor primary sources instead: EV-02 (refund window) + EV-06 (credits expire, cancel = no further charge but no partial refund), framed as documented policy, not as a prevalence claim.",
+    "exclusion_log_notes": [
+      "unverifiable-this-run (2): trustpilot.com/review/writesonic.com (HTTP 403) and g2.com/products/writesonic/reviews (HTTP 403). Consequence: NO third-party review-platform score or review count is registered. Search-snippet numbers (Trustpilot ~4.x / ~5,800 reviews; G2 '1900+ reviews') are NOT registerable and must not be echoed on the page as verified.",
+      "no-methodology-affiliate (15): affiliate/aggregator reviews without a disclosed reproducible methodology verified this run — amrytt.com, themarketingagency.ca, kripeshadwani.com, youraisoft.com, thetopaigear.com, digioffly.com, saascrmreview.com, nogood.io, slatehq.com, juma.ai (Team-GPT), aiwritingpick.com, copy.ai (competitor-authored), eesel.ai (vendor-adjacent, second-hand Reddit sentiment), contentellect.com, aisoftwarematch.com. Several were not individually fetched; excluded on the affiliate-roundup rule (topical-map evidence_policy: affiliate roundups with no disclosed method are not evidence).",
+      "off-topic-or-duplicative-vendor (2): help.writesonic.com/article/31-cancel-your-account and docs.writesonic.com/docs/a-comprehensive-guide-to-cancelling-your-subscription — duplicative of the cancellation/refund coverage already captured in EV-02 + EV-06; no additional distinct claim.",
+      "PRICING CONFLICT logged (not an exclusion): the current vendor pricing page (EV-01, captured 2026-07-12) shows a Starter/Basic/Growth ladder at $79/$199/$399. behindrankings tested a 'Professional plan at $249/month' (Jan 2026) and amrytt's title cites '$99/mo'. These are different/legacy tier names — the writer should cite EV-01 as the current public ladder and treat the $99/$249 figures as reviewer-reported tiers at their stated dates, not as the current price."
+    ]
+  },
+  "entries": [
+    {
+      "id": "EV-writesonic-review-01",
+      "claim": "On its current pricing page (re-captured 2026-07-12) the vendor lists three published tiers billed annually — Starter $79/mo, Basic $199/mo, Growth $399/mo ('Most popular') — plus custom Enterprise, with monthly AI-article caps of 15/25/50 respectively and a Growth add-on of +20 articles for $100/mo. A free start ('No credit card needed') is offered; the pricing page itself states no rollover policy for unused credits.",
+      "source_url": "https://writesonic.com/pricing",
+      "source_date": "2026-07-12",
+      "quote": "Starter $79/month · 15 AI articles per month; Growth $399/month · 50 AI articles per month (Most popular)",
+      "platform": "writesonic.com (vendor pricing page — self-interested)",
+      "target_slug": "/tools/writesonic",
+      "collected_at": "2026-07-12",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "writesonic-review-2026-07-12",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Writesonic",
+        "aspect": "current published pricing ladder + per-tier AI-article caps; positioned as an 'AI Search Visibility Platform' (GEO), not a pure writer (vendor-stated)",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Starter $79 / Basic $199 / Growth $399 per month, billed annually",
+        "item_date": "2026-07-12"
+      }
+    },
+    {
+      "id": "EV-writesonic-review-02",
+      "claim": "The vendor's refund policy (help center article, last updated 2023-07-17) limits refunds to a 7-day window from purchase AND to accounts that have used fewer than 25,000 Premium-quality words; it also states cancellations default to the end of the current billing cycle. So a refund is neither unconditional nor time-open — both a date gate and a usage gate apply (vendor-stated).",
+      "source_url": "https://help.writesonic.com/article/29-refund-policy",
+      "source_date": "2023-07-17",
+      "quote": "The refund request should be made within seven (7) days of the original purchase ... usage of our services must be less than 25,000 Premium quality words.",
+      "platform": "help.writesonic.com (vendor help center — self-interested; article last updated 2023-07-17)",
+      "target_slug": "/tools/writesonic",
+      "collected_at": "2026-07-12",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "writesonic-review-2026-07-12",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Writesonic",
+        "aspect": "refund terms — 7-day + <25,000-Premium-word double gate (vendor-documented); relevant to reader due-diligence on money-back risk",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2023-07-17"
+      }
+    },
+    {
+      "id": "EV-writesonic-review-03",
+      "claim": "A disclosed-methodology single test (4 weeks; 12 long-form articles + 34 short-form pieces + 8 Chatsonic sessions; Standard plan; named author 'Alex Rivera'; affiliate-disclosed; published 2026-06-09) reported Writesonic's factual accuracy improved versus the same reviewer's late-2024 experience, crediting Article Writer 6.0's real-time web research. One low-trust-domain test — coding flagged ambiguous; not evidence of prevalence.",
+      "source_url": "https://aigeniusoptimizer.com/writesonic-review-2026/",
+      "source_date": "2026-06-09",
+      "quote": "factual accuracy noticeably better than what I had seen from the tool in late 2024",
+      "platform": "aigeniusoptimizer.com (independent test with disclosed methodology; affiliate-disclosed; low-trust domain, author may be a persona)",
+      "target_slug": "/tools/writesonic",
+      "collected_at": "2026-07-12",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "writesonic-review-2026-07-12",
+      "screening": "included",
+      "label": "independent-test",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "resolver_note": "RESOLVED (resolver, 2026-07-12): the curator placeholder pre-set coder_agreement:false anticipating an independent-test-vs-no-methodology-affiliate split. That flag is a SCREENING / inclusion-label concern, NOT a §5 coding-stance disagreement — the two independent coders' ACTUAL outputs BOTH coded the tuple identically: tool=Writesonic, stance=POSITIVE, plan=Standard, item_date=2026-06-09, aspect=factual-accuracy-vs-the-same-reviewer's-late-2024-baseline. No genuine A/B coding disagreement exists, so coder_agreement is corrected to true and the 'unresolved' resolved_by is dropped (per MEP §8, resolved_by is set only for a real coding disagreement; cf. seowriting-ai-review EV-08 / jasper-alternatives EV-03). The screening caveat is REAL and preserved: low-trust domain, affiliate-disclosed links, byline may be a persona — kept INCLUDED with label 'independent-test' on the neuraltoolhub precedent (disclosed 4-week method: 12 long-form + 34 short-form + 8 Chatsonic sessions, named author, dated 2026-06-09). Writer must attribute strictly to this one dated low-trust test — never as prevalence, and pair it with the opposing named quality read (EV-04) rather than presenting accuracy as settled.",
+      "coding": {
+        "tool": "Writesonic",
+        "aspect": "factual accuracy vs the same reviewer's late-2024 baseline, attributed to Article Writer 6.0 real-time web research (single low-trust test)",
+        "stance": "positive",
+        "plan_tier_if_stated": "Standard plan",
+        "item_date": "2026-06-09"
+      }
+    },
+    {
+      "id": "EV-writesonic-review-04",
+      "claim": "A named SEO reviewer (Victoria Kurichenko, behindrankings.com, updated 2026-02-05) who tested the Writesonic Professional plan in January 2026 reported the AI-drafted content did not clear her editorial bar despite detailed prompts and writing samples — a first-person negative quality read, while she acknowledged many users would publish the output as-is.",
+      "source_url": "https://behindrankings.com/writesonic-review/",
+      "source_date": "2026-02-05",
+      "quote": "I didn't end up using content generated by Writesonic. It didn't meet my personal quality bar.",
+      "platform": "behindrankings.com (named-author first-person review; page carries a Semrush affiliate banner — note self-interest; updated 2026-02-05)",
+      "target_slug": "/tools/writesonic",
+      "collected_at": "2026-07-12",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "writesonic-review-2026-07-12",
+      "screening": "included",
+      "label": "community-report",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Writesonic",
+        "aspect": "long-form content quality — first-person, did not meet reviewer's editorial bar (single named test, Professional plan)",
+        "stance": "negative",
+        "plan_tier_if_stated": "Professional plan (~$249/mo, reviewer-stated Jan 2026)",
+        "item_date": "2026-02-05"
+      }
+    },
+    {
+      "id": "EV-writesonic-review-05",
+      "claim": "The same reviewer (behindrankings.com, updated 2026-02-05) found Writesonic's GEO / AI-search-visibility tracking inconsistent with other tools on the same brand — she reported it surfaced 1 cited page where Semrush showed 179 — and judged the ~$249/mo Professional tier a weak value against Semrush One (~$199/mo). One reviewer's comparison, not a benchmark.",
+      "source_url": "https://behindrankings.com/writesonic-review/",
+      "source_date": "2026-02-05",
+      "quote": "the numbers don't match what I see in other tools",
+      "platform": "behindrankings.com (named-author first-person review; Semrush affiliate banner present — note self-interest; updated 2026-02-05)",
+      "target_slug": "/tools/writesonic",
+      "collected_at": "2026-07-12",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "writesonic-review-2026-07-12",
+      "screening": "included",
+      "label": "community-report",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Writesonic",
+        "aspect": "GEO / AI-visibility tracking accuracy vs Semrush (1 vs 179 cited pages) and price-value verdict at the Professional tier (single reviewer; affiliate-adjacent to the comparator)",
+        "stance": "negative",
+        "plan_tier_if_stated": "Professional (~$249/mo) vs Semrush One (~$199/mo), reviewer-stated",
+        "item_date": "2026-02-05"
+      }
+    },
+    {
+      "id": "EV-writesonic-review-06",
+      "claim": "The vendor's own cancellation documentation states unused credits EXPIRE at the end of the billing cycle (they do not roll over), that access continues until the cycle ends, that no additional charges are made after cancellation, and that no refund is issued for the remaining period of the cycle. This resolves at the docs level the 'rollover unstated' open question left by the pricing page (EV-01 / reused EV-11).",
+      "source_url": "https://docs.writesonic.com/docs/understanding-subscription-cancellation-mid-cycle",
+      "source_date": "2026-07-12",
+      "quote": "You retain full access to all features and credits until the end of your current billing cycle ... No additional charges will be made after cancellation.",
+      "platform": "docs.writesonic.com (vendor documentation — self-interested; doc undated, captured 2026-07-12)",
+      "target_slug": "/tools/writesonic",
+      "collected_at": "2026-07-12",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "writesonic-review-2026-07-12",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Writesonic",
+        "aspect": "credit rollover (credits expire at cycle end — no rollover) + post-cancellation billing (no further charge, no partial refund) — vendor-documented",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-07-12"
+      }
+    }
+  ]
+}
