@@ -1,0 +1,408 @@
+{
+  "_meta": {
+    "flow_id": "neuronwriter-review-2026-07-13",
+    "protocol_version": "MEP-1.0",
+    "target_slug": "/tools/neuronwriter",
+    "target_keyword": "neuronwriter review",
+    "run_date": "2026-07-13",
+    "collector": "evidence-curator",
+    "page_class": "review (single-tool VERDICT; zone-2 AI SEO content-optimization tool, NOT a writing-generation/humanizer/detector/paraphraser tool; post_launch_queue week-3, 'zone-2 satellite #1')",
+    "sweep_strategy": "FRESH sweep — no prior banked NeuronWriter evidence exists in any other shard (checked via grep across Data/seo/evidence/*.json, zero hits). Executed the full documented query set (below) across Reddit-targeted queries (5 subreddits requested: r/juststart, r/SEO, r/bigseo, r/content_marketing, r/Blogging), Quora, third-party head-to-head SEO-tool tests, and the vendor site + pricing page. REDDIT WAS STRUCTURALLY UNREACHABLE THIS RUN: every reddit.com-targeted WebSearch query returned zero real reddit.com URLs (only paraphrased/synthesized text with no linkable thread), and direct WebFetch of reddit.com and old.reddit.com is blocked in this environment (same inherited limitation documented in the jasper-review / writesonic-review / jasper-alternatives shards from 2026-07-10/12). No Reddit claim is registered as a result — see evidence_gaps. Quora surfaced a cluster of persona-named 'Space' subdomains (vakireview.quora.com, honestreview5.quora.com, appsumosoftwaredeals.quora.com, affiliateguides.quora.com x2, saaslifetimedeal1.quora.com, digitalmarketingtipspromotion.quora.com) — templated single-topic pages each funneling to NeuronWriter's affiliate/LTD program from a different throwaway persona name; screened as ASTROTURF per protocol §3.1 and excluded entirely (never cited/linked/paraphrased). The sweep instead found strong non-Reddit evidence: a live-fetched vendor pricing page (worked directly, no bot-wall), a live-fetched Trustpilot profile with two dated individual reviews (2023 and 2026), one rigorous third-party correlation study (Ahrefs, disclosed Spearman/Kendall methodology across 20 keywords x 5 tools), two further disclosed practitioner tests (LADS Media 20-articles/3-months; Tested.media 12-months-live-client benchmark), and four independent named-blogger first-person accounts spanning 2025-01 to 2026-02.",
+    "flow_counter": {
+      "identified": 69,
+      "screened": 69,
+      "excluded": 58,
+      "excluded_by_reason": {
+        "no-methodology-affiliate": 29,
+        "duplicate": 11,
+        "off-topic": 8,
+        "astroturf": 7,
+        "unverifiable-this-run": 2,
+        "unlinkable": 1
+      },
+      "included_sources": 11,
+      "registry_entries_new": 12,
+      "counter_note": "identified = 69 DISTINCT candidate URLs surfaced across 26 documented queries (24 WebSearch + 2 direct reddit.com/old.reddit.com WebFetch attempts, census before screening; repeat hits across queries folded into their single distinct URL). 11 DISTINCT sources were included; one of them (trustpilot.com/review/neuronwriter.com) carries two independently dated individual reviews (2023-12-03 and 2026-06-21) that were each registered as their own entry, producing 12 registry entries from 11 included sources. Every excluded URL carries a recorded reason code (below); none were silently dropped."
+    },
+    "coder_agreement_rate": "CURATOR-PROVISIONAL single-pass coding across all 12 included entries (this run did not receive a separate resolver pass back). Stance calls: 3 n/a (vendor-primary, no sentiment to code), 2 negative, 2 positive, 5 mixed. FLAGGED FOR ORCHESTRATED DUAL-CODING / RESOLVER ATTENTION: (1) EV-neuronwriter-review-06 (Ahrefs study) — stance coded 'mixed' here (weak-correlation caveat) but could reasonably code 'positive' under a relative-best-of-5 framing; (2) EV-neuronwriter-review-04 (Trustpilot, Tobias F.) — stance coded 'mixed' (5-star rating + a real complaint) but could code 'positive' if 5-star ratings are treated as the controlling signal. Both should be independently coded by coders A/B and resolved before publish; all other 10 entries have a single, low-ambiguity stance reading.",
+    "query_census": [
+      { "q": "WebSearch: site:reddit.com neuronwriter review", "candidates": 0, "note": "No links found." },
+      { "q": "WebSearch: site:reddit.com neuronwriter r/SEO", "candidates": 0, "note": "No links found." },
+      { "q": "WebSearch: neuronwriter reddit r/juststart", "candidates": 1, "note": "metadatamarketer.com/neuronwriter-intelligence-report/ — a paraphrased 'r/juststart support is one guy' quote surfaced with NO reddit.com URL attached. Fetched later (see below) → excluded unlinkable." },
+      { "q": "WebSearch: neuronwriter reddit worth it", "candidates": 0, "note": "No links found; response was generic synthesis with no real URLs." },
+      { "q": "WebSearch: neuronwriter reddit content score", "candidates": 7, "note": "neuronwriter.com content-score FAQ, kripeshadwani.com, neuronwriter.com (home), bloggingden.com, neuronwriter.com readability FAQ, searchendurance.com, metadatamarketer.com (dup). Zero reddit.com URLs." },
+      { "q": "WebSearch: \"neuronwriter\" reddit.com/r/bigseo", "candidates": 0, "note": "No links found." },
+      { "q": "WebSearch: neuronwriter vs surfer seo reddit", "candidates": 3, "note": "neuronwriter.com/neuronwriter-vs-surferseo/ (vendor), getspike.ai (fetched → no-methodology-affiliate), eesel.ai/blog/neuronwriter-vs-surfer-seo (fetched → no-methodology-affiliate). Zero reddit.com URLs." },
+      { "q": "WebSearch: neuronwriter quora review", "candidates": 10, "note": "searchendurance.com (dup), kripeshadwani.com (dup), originality.ai (fetched → INCLUDED EV-11), trustpilot.com (fetched → INCLUDED EV-04/05), dailyaireviews.com/neuronwriter-review-2026, kristian-larsen.com/reviews/neuronwriter-review, vakireview.quora.com (astroturf), capterra.com/p/10011393 (fetched → 403 unverifiable-this-run), busymomsidehustle.com (fetched → INCLUDED EV-12), honestreview5.quora.com (astroturf)." },
+      { "q": "WebSearch: \"neuronwriter\" site:reddit.com", "candidates": 0, "note": "No links found." },
+      { "q": "WebSearch: neuronwriter credits ran out reddit", "candidates": 5, "note": "neuronwriter.com AI-credits FAQ (fetched → INCLUDED EV-02), dailyaireviews.com/how-to-use-neuronwriter (off-topic how-to guide), bloggingunplugged.com/neuronwriter-lifetime-deal (no-methodology-affiliate, LTD promo), vrid.ai/blog/neuronwriter-review (no-methodology-affiliate), kripeshadwani.com (dup). Zero reddit.com URLs." },
+      { "q": "WebSearch: neuronwriter cancel subscription reddit", "candidates": 1, "note": "trustpilot.com/review/neuronwriter.com (dup, already fetched). Zero reddit.com URLs." },
+      { "q": "WebSearch: neuronwriter case study rankings results", "candidates": 8, "note": "7 neuronwriter.com case-study/category pages (one fetched: case-study-pure-honey → INCLUDED EV-03; the other 6 screened duplicate vendor-claim content, not separately fetched) + neuronwriter.com/2024/ (blog archive, off-topic)." },
+      { "q": "DIRECT: WebFetch https://www.reddit.com/search/?q=neuronwriter", "candidates": 0, "note": "Blocked — 'Claude Code is unable to fetch from www.reddit.com'. Confirms the inherited environment limitation from prior Mimo shards." },
+      { "q": "DIRECT: WebFetch https://www.google.com/search?q=neuronwriter+site:reddit.com", "candidates": 0, "note": "Fetched a Google error/consent page with no real results." },
+      { "q": "WebSearch: neuronwriter \"r/content_marketing\"", "candidates": 0, "note": "No links found." },
+      { "q": "WebSearch: neuronwriter \"r/Blogging\"", "candidates": 0, "note": "No links found." },
+      { "q": "WebSearch: neuronwriter reddit factual errors", "candidates": 1, "note": "botvistaa.com/neuronwriter-mistakes-to-avoid-in-content-writing/ (generic tips listicle, off-topic — not a specific claim). Zero reddit.com URLs." },
+      { "q": "WebSearch: neuronwriter reddit scam", "candidates": 2, "note": "trustpilot.com (dup), kripeshadwani.com (dup). Zero reddit.com URLs; the search summary's 'affiliate commission not paid' claim traces to no linkable source and is NOT registered." },
+      { "q": "WebSearch: neuronwriter switched from surfer seo reddit", "candidates": 3, "note": "getspike.ai (dup), eesel.ai (dup), neuronwriter.com/neuronwriter-vs-surfer-seo-a-complete-comparison-for-content-creators-in-2026/ (vendor, dup-category). Zero reddit.com URLs." },
+      { "q": "DIRECT: WebFetch https://old.reddit.com/search.json?q=neuronwriter", "candidates": 0, "note": "Blocked — 'Claude Code is unable to fetch from old.reddit.com'." },
+      { "q": "WebSearch: Ahrefs \"content score correlation\" study NeuronWriter Surfer 2025", "candidates": 10, "note": "ahrefs.com/blog/seo-content-score-study/ (fetched → INCLUDED EV-06), metadatamarketer.com (dup), surferseo.com/blog/surfer-content-score-study/ (Surfer's own study on Surfer, off-topic for this page), fahimai.com, getspike.ai (dup), inboundblogging.com, ladsmedia.com (fetched → INCLUDED EV-07), eesel.ai/blog/ahrefs-vs-neuronwriter, rankability.com/blog/neuronwriter-vs-ahrefs-vs-rankability, kristian-larsen.com/reviews/surferseo-review (off-topic, about Surfer)." },
+      { "q": "WebSearch: \"Tested.media\" neuronwriter benchmark", "candidates": 10, "note": "metadatamarketer.com (dup), dailyaireviews.com/neuronwriter-review-2026 (dup), searchendurance.com (dup), capterra.com (dup), undetectable.ai/blog/neuronwriter-review, smartpubtools.com, neuronwriterreview.com/exploring-neuronwriter-test-features-in-trial, scalenut.com/blogs/neuronwriter-review (competitor-vendor COI), phillipstemann.com, vrid.ai (dup). tested.media itself found via the follow-up query below." },
+      { "q": "WebSearch: \"LADS Media\" neuronwriter test 20 articles", "candidates": 7, "note": "ladsmedia.com (dup, already fetched), metadatamarketer.com (dup), linkedin.com/pulse/neuronwriter-review-here-3-months-growth-nlp-link-building-kumar-cwxic (not fetched — narrative duplicate of the LADS Media position-gain finding), blackbearmedia.io (fetched → no-methodology-affiliate, keyword names withheld/no control group), capterra.com (dup), juliety.com/neuronwriter-review (fetched → INCLUDED EV-09), agilitywriter.ai/content-creation/neuronwriter-workflow (competitor-vendor COI), g2.com/products/neuronwriter/reviews (fetched → 403 unverifiable-this-run)." },
+      { "q": "WebSearch: \"Learnwire\" neuronwriter review four year", "candidates": 9, "note": "learnwirepro.com/neuronwriter-review/ (fetched → INCLUDED EV-10), metadatamarketer.com (dup), trustpilot.com (dup), capterra.com (dup), kripeshadwani.com (dup), originality.ai (dup), kristian-larsen.com/reviews/neuronwriter-review (dup), searchatlas.com/blog/neuronwriter-alternatives, g2.com (dup)." },
+      { "q": "WebSearch: neuronwriter opinions inurl:reddit.com/r", "candidates": 0, "note": "No links found." },
+      { "q": "WebSearch: \"neuronwriter\" quora.com -inurl:quora.com/profile answer", "candidates": 10, "note": "quora.com/What-is-the-price-of-NeuronWriter (generic Q&A, off-topic/duplicate of vendor pricing), neuronwriter.com (dup), roadmap.neuronwriter.com/p/add-q-a-s-from-other-sources-quora-and-reddit-h2HHGA (vendor product roadmap, off-topic), appsumosoftwaredeals.quora.com (astroturf), affiliateguides.quora.com x2 (astroturf), saaslifetimedeal1.quora.com (astroturf), searchendurance.com (dup), kripeshadwani.com (dup), digitalmarketingtipspromotion.quora.com (astroturf)." },
+      { "q": "WebFetch https://tested.media/ai-seo-tools/ (targeted primary fetch for the Tested.media benchmark named by metadatamarketer.com)", "candidates": 1, "note": "INCLUDED → EV-08. IMPORTANT: this direct fetch found NO 'Ryan Whitton' byline and NO explicit numeric score for NeuronWriter (metadatamarketer.com's claimed '80/100 vs Surfer 94' figures and 'Ryan Whitton' attribution do NOT appear on the live page, whose stated author is Victor Smushkevich) — the numeric score is therefore NOT registered; only the directly-verified 'budget pick' qualitative language is." },
+      { "q": "WebFetch each of: neuronwriter.com/pricing, neuronwriter.com/faqs/what-is-ai-credits-in-neuronwriter, neuronwriter.com/case-study-pure-honey-800-traffic-growth-without-ads, trustpilot.com/review/neuronwriter.com, ahrefs.com/blog/seo-content-score-study, ladsmedia.com/surfer-seo-vs-neuronwriter-which-tool-helps-writers-rank-better, juliety.com/neuronwriter-review, learnwirepro.com/neuronwriter-review, originality.ai/blog/neuronwriter-ai-review, busymomsidehustle.com/neuronwriter-review, getspike.ai/blog/surfer-seo-vs-neuronwriter-comparison, eesel.ai/blog/neuronwriter-vs-surfer-seo, blackbearmedia.io/neuronwriter-review, kripeshadwani.com/neuronwriter-review, metadatamarketer.com/neuronwriter-intelligence-report, capterra.com/p/10011393/NeuronWriter/reviews, g2.com/products/neuronwriter/reviews, vakireview.quora.com/..., honestreview5.quora.com/... (verification/screening fetches, not new discovery queries)", "candidates": 0, "note": "Direct verification fetches of already-identified URLs — not counted again in 'identified' (no new distinct URLs surfaced)." }
+    ],
+    "reddit_access_note": "PRIMARY Reddit threads were NOT obtainable this run across 5 dedicated reddit-targeted WebSearch queries + 2 direct reddit.com/old.reddit.com WebFetch attempts — zero real reddit.com URLs surfaced (search summaries occasionally PARAPHRASED alleged Reddit sentiment with no attached link, e.g. the r/juststart 'support is one guy' line via metadatamarketer.com — these are NOT registered; MEP bars unlinkable/unverified secondhand paraphrase). This matches the same environment-level Reddit-fetch block documented in the jasper-review, writesonic-review, and jasper-alternatives shards (2026-07-10/12). CONSEQUENCE for title_policy: the social-proof archetype (which requires live-verified Reddit/Quora EV entries) is NOT available for /tools/neuronwriter from Reddit — and the only Quora candidates found were an astroturf cluster (excluded, never cited). Community sentiment on this page must route through the dated named-blogger accounts (EV-09/10/11/12) and the Trustpilot reviews (EV-04/05) instead.",
+    "astroturf_note": "Detected and excluded a 7-URL Quora 'Space' cluster (vakireview.quora.com, honestreview5.quora.com, appsumosoftwaredeals.quora.com, affiliateguides.quora.com x2, saaslifetimedeal1.quora.com, digitalmarketingtipspromotion.quora.com): each is a differently-named persona-branded single-topic Quora Space whose sole content is a NeuronWriter (often specifically 'NeuronWriter Lifetime Deal') promotional write-up, funneling to the same vendor/affiliate program. This matches MEP §3.1 astroturf signals (templated look-alike pages across a low-trust platform pattern, recurring fresh 'expert' personas, every thread funneling to the same vendor) — screened out entirely, never linked, cited, or paraphrased on the reader-facing page, and described here only generically per protocol.",
+    "exclusion_log_notes": [
+      "no-methodology-affiliate (29): the large population of AI-tool-review-mill blogs and 'best AI SEO tools' listicles surfaced across queries (kripeshadwani.com, bloggingden.com, searchendurance.com, getspike.ai, eesel.ai x2, fahimai.com, inboundblogging.com, rankability.com/blog/neuronwriter-vs-ahrefs-vs-rankability, kristian-larsen.com/reviews/neuronwriter-review, dailyaireviews.com/neuronwriter-review-2026, bloggingunplugged.com, vrid.ai, blackbearmedia.io, agilitywriter.ai, searchatlas.com, undetectable.ai, smartpubtools.com, neuronwriterreview.com, scalenut.com, phillipstemann.com, whatagraph.com, freddiechatt.com, behindrankings.com, onelittleweb.com, onfolio.com, rankability.com/blog/best-ai-seo-tools, get-ryze.ai, writesonic.com/blog/ai-seo-tools) — no disclosed reproducible test protocol verified, several carry an undisclosed conflict of interest (Scalenut, Search Atlas, Rankability, Agility Writer, and Writesonic are themselves competing SEO/writing-tool vendors reviewing a rival). getspike.ai and eesel.ai were individually fetched and directly confirmed no-method; the rest were pattern-screened by title/domain (review-mill convention) without a full fetch, consistent with prior Mimo shard practice (only INCLUDED items require this-run re-fetch per protocol §4).",
+      "duplicate (11): 10 neuronwriter.com vendor sub-pages whose content is redundant with the registered vendor-claim entries (content-score FAQ, readability-score FAQ, homepage, 2 vendor vs-Surfer comparison pages, 4 additional case-study pages, the case-study category index) + linkedin.com/pulse/neuronwriter-review-here-3-months-growth-nlp-link-building-kumar-cwxic (a LinkedIn practitioner post whose '3-month ranking growth' narrative duplicates the already-included, already-fetched LADS Media test; not separately fetched to avoid redundant registration).",
+      "off-topic (8): neuronwriter.com/2024/ (blog archive index, not a claim), roadmap.neuronwriter.com/... (product roadmap, not a review claim), kristian-larsen.com/reviews/surferseo-review (about Surfer, not NeuronWriter), dailyaireviews.com/how-to-use-neuronwriter (how-to guide, not a claim), botvistaa.com/neuronwriter-mistakes-to-avoid-in-content-writing (generic tips listicle, no specific claim), surferseo.com/blog/surfer-content-score-study (Surfer's own vendor study about Surfer's own score), searchinfluence.com/blog/ai-seo-tracking-tools-2026-analysis-platforms (rank-tracking tools, different sub-category), quora.com/What-is-the-price-of-NeuronWriter (generic price Q&A duplicating vendor pricing, no new claim).",
+      "astroturf (7): the Quora 'Space' cluster — see astroturf_note above. Never cited/linked/named beyond this generic description.",
+      "unverifiable-this-run (2): g2.com/products/neuronwriter/reviews and capterra.com/p/10011393/NeuronWriter/reviews/ both returned HTTP 403 on direct fetch this run (same bot-wall pattern seen against G2/Capterra/TrustRadius/Gartner in the jasper-review shard). Any circulating G2/Capterra star ratings for NeuronWriter are search-snippet-only and NOT registered.",
+      "unlinkable (1): metadatamarketer.com/neuronwriter-intelligence-report/ — fetched and found to (a) attribute Reddit sentiment ('r/juststart: support is one guy') with no reddit.com URL ever surfacing, and (b) misattribute the Tested.media benchmark to a byline ('Ryan Whitton') and specific numeric scores ('NeuronWriter 80/100') that this run's direct fetch of tested.media/ai-seo-tools/ could not confirm (the live page's stated author is Victor Smushkevich; no such numeric score appears). Because a claim from this source was directly contradicted by re-fetching its cited primary, the entire source is excluded and none of its content is registered or repeated — its ONLY function this run was pointing to the real tested.media URL, which was then independently verified.",
+      "OWNED-BORDER held (0 registered): no AI-humanizer/AI-detector/paraphraser claim registered or cited as fact. Originality.ai's own AI-detection result (EV-11) is registered strictly as 'this generated sample was flagged by Originality.ai's detector', a single dated third-party test finding about NeuronWriter's OUTPUT — not a detector-accuracy claim, not scored, and not compared across detectors (that whole category stays structurally out of Mimo's scope)."
+    ],
+    "entries_reused": []
+  },
+  "entries": [
+    {
+      "id": "EV-neuronwriter-review-01",
+      "claim": "On its current pricing page (captured 2026-07-13) NeuronWriter lists five monthly tiers — Bronze $23, Silver $45, Gold $69, Platinum $93, Diamond $117 — each bundling a fixed project/folder count, a fixed monthly 'content writer analyses' allowance (25 to 150), and a fixed AI-credit allowance (15,000 to 75,000), plus a 7-day free trial under Gold-plan terms and a 30-day refund window on the first plan purchased. Vendor-stated, self-interested.",
+      "source_url": "https://neuronwriter.com/pricing",
+      "source_date": "2026-07-13",
+      "quote": "Bronze – $23/month: 2 projects/folders, 25 content writer analyses, 15,000 AI credits. Gold – $69/month: 10 projects/folders, 75 content writer analyses, 45,000 AI credits. 7-day free trial under Gold plan terms. Refund available within the first 30 days.",
+      "platform": "neuronwriter.com/pricing (vendor pricing page — self-interested; captured 2026-07-13)",
+      "target_slug": "/tools/neuronwriter",
+      "collected_at": "2026-07-13",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "neuronwriter-review-2026-07-13",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "NeuronWriter",
+        "aspect": "current 5-tier pricing ladder + AI-credit/analysis allowances + trial/refund terms (vendor-stated)",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Bronze $23/mo – Diamond $117/mo (5 tiers)",
+        "item_date": "2026-07-13"
+      },
+      "honesty_notes": [
+        "Annual pricing (20% discount) is also stated on the same page (Bronze $19x12 ... Diamond $97x12) — not the primary quote here but confirmed live.",
+        "The credit ALLOWANCE is vendor-stated; how far it stretches per full article is NOT stated on this page — see EV-neuronwriter-review-02 (documented absence) and EV-neuronwriter-review-10 (independent complaint that credits run out fast)."
+      ]
+    },
+    {
+      "id": "EV-neuronwriter-review-02",
+      "claim": "NeuronWriter's own FAQ on AI credits (captured 2026-07-13) states credits are consumed by AI Templates/Content Designer/Neuro Assistant text generation, AI image generation, Auto Insert Terms and AI Optimisation, and that usage 'varies based on the number of words you generate' — but the page does NOT state how many credits a typical full article consumes, deferring to a separate cost page. Vendor-stated, self-interested; a documented open question, not a vendor denial of the cost.",
+      "source_url": "https://neuronwriter.com/faqs/what-is-ai-credits-in-neuronwriter/",
+      "source_date": "2026-07-13",
+      "quote": "AI credits are dedicated specifically to using AI-powered features... The usage of AI credits depends on the specific AI-powered features you use and it also varies based on the number of words you generate using specific LLM model.",
+      "platform": "neuronwriter.com/faqs (vendor FAQ page — self-interested; captured 2026-07-13)",
+      "target_slug": "/tools/neuronwriter",
+      "collected_at": "2026-07-13",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "neuronwriter-review-2026-07-13",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "NeuronWriter",
+        "aspect": "AI-credit consumption mechanics — vendor discloses WHAT consumes credits but not a per-article cost estimate",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-07-13"
+      },
+      "honesty_notes": [
+        "This documented absence of a per-article credit estimate is the vendor-side half of the 'credits run out fast' complaint independently reported in EV-neuronwriter-review-10 (learnwirepro.com) — pair both, frame as vendor-doesn't-quantify-it rather than vendor-denies-it."
+      ]
+    },
+    {
+      "id": "EV-neuronwriter-review-03",
+      "claim": "NeuronWriter publishes customer case studies on its own site; its 'Pure Honey' case study (captured 2026-07-13) states the customer's first NeuronWriter-optimized article 'ranked #1 on Google after only 2 weeks', citing an 800% increase in organic traffic over one year and a 70% increase in sales attributed to the resulting traffic. Vendor-published customer case study, self-interested, no independent verification of the underlying site or traffic data.",
+      "source_url": "https://neuronwriter.com/case-study-pure-honey-800-traffic-growth-without-ads/",
+      "source_date": "2026-07-13",
+      "quote": "The first article written using NEURONwriter ranked #1 on Google after only 2 weeks... an 800% increase in organic traffic in only 1 year... a 70% increase in sales as a result of increased traffic.",
+      "platform": "neuronwriter.com (vendor case study — self-interested; captured 2026-07-13)",
+      "target_slug": "/tools/neuronwriter",
+      "collected_at": "2026-07-13",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "neuronwriter-review-2026-07-13",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "NeuronWriter",
+        "aspect": "vendor-published customer case study — ranking speed + traffic + sales-lift claims, unverified independently",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-07-13"
+      },
+      "honesty_notes": [
+        "No independent traffic-tool or search-console verification exists for this case study; frame strictly as 'the vendor's own case study claims', never adopt the percentages as fact.",
+        "Several similar vendor case studies exist on the same site (business coaching, barbershop, WebWave, SlotsWise) — this one was fetched as representative; the others were screened as duplicate vendor-claim content and not separately registered."
+      ]
+    },
+    {
+      "id": "EV-neuronwriter-review-04",
+      "claim": "NeuronWriter's Trustpilot profile (captured 2026-07-13) shows an aggregate 4.9/5 from 17 reviews; a 5-star review dated 2026-06-21 (Tobias F., Marketing Specialist) praises the research-time savings but flags the interface as dated. Review-platform rating; Trustpilot's own incentive structure (businesses can invite reviewers) noted.",
+      "source_url": "https://www.trustpilot.com/review/neuronwriter.com",
+      "source_date": "2026-06-21",
+      "quote": "The research time it saves me is the biggest win — tasks that used to eat up an hour now take ten minutes... The interface feels a bit dated and takes some getting used to.",
+      "platform": "Trustpilot (review-platform; aggregate 4.9/5, n=17 as of capture 2026-07-13; this individual review dated 2026-06-21)",
+      "target_slug": "/tools/neuronwriter",
+      "collected_at": "2026-07-13",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "neuronwriter-review-2026-07-13",
+      "screening": "included",
+      "label": "community-report",
+      "coders": ["A", "B"],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "NeuronWriter",
+        "aspect": "time-saved-on-research praise + interface-polish complaint",
+        "stance": "mixed",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-06-21"
+      },
+      "honesty_notes": [
+        "FLAGGED for resolver: stance coded 'mixed' here (5-star rating + a real complaint) but a coder could reasonably call this 'positive' if the star rating is treated as controlling. Needs an independent second pass.",
+        "Aggregate 4.9/5 (n=17) is a SMALL, platform-specific sample — report only as 'NeuronWriter's 17 Trustpilot reviews average 4.9/5 as of 2026-07-13', never generalized further.",
+        "Paired with EV-neuronwriter-review-05 (Joachim K., 2023-12-03) to show the rating's full date range, not just its most recent entry."
+      ]
+    },
+    {
+      "id": "EV-neuronwriter-review-05",
+      "claim": "An earlier Trustpilot review of NeuronWriter (Joachim K., CEO, 4 stars, dated 2023-12-03, still visible on the profile as of the 2026-07-13 capture) states the tool's content generation was 'still in its infancy' with no usable one-click output — an older, dated data point inside the same aggregate rating as EV-neuronwriter-review-04.",
+      "source_url": "https://www.trustpilot.com/review/neuronwriter.com",
+      "source_date": "2023-12-03",
+      "quote": "Content generation is still in its infancy...there is no one-click generation of content that's usable.",
+      "platform": "Trustpilot (review-platform; individual review dated 2023-12-03, visible as of capture 2026-07-13)",
+      "target_slug": "/tools/neuronwriter",
+      "collected_at": "2026-07-13",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "neuronwriter-review-2026-07-13",
+      "screening": "included",
+      "label": "community-report",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "NeuronWriter",
+        "aspect": "AI content-generation maturity (2023 snapshot) — no one-click usable output",
+        "stance": "mixed",
+        "plan_tier_if_stated": null,
+        "item_date": "2023-12-03"
+      },
+      "honesty_notes": [
+        "Nearly 3 years stale relative to the capture date — frame explicitly as a 2023 snapshot, not current-state; NeuronWriter's AI writer has plausibly changed since (2026 vendor marketing references newer LLM models, not independently verified this run)."
+      ]
+    },
+    {
+      "id": "EV-neuronwriter-review-06",
+      "claim": "In a disclosed-methodology study (Ahrefs, published 2025-05-21, author Si Quan Ong) testing 20 random keywords across five content-optimization tools (Surfer, Frase, NeuronWriter, Clearscope, Ahrefs' own AI Content Helper) using Spearman/Kendall rank correlations between each tool's content score and actual Google ranking position, NeuronWriter and Ahrefs' AI Content Helper showed the least-weak correlations of the five — but the study's own top-line conclusion is that correlations were weak across all five tools, including NeuronWriter.",
+      "source_url": "https://ahrefs.com/blog/seo-content-score-study/",
+      "source_date": "2025-05-21",
+      "quote": "We found weak correlations everywhere... out of the five tools I tested, NeuronWriter and AI Content Helper fared the best. The other three only had very weak correlations.",
+      "platform": "ahrefs.com/blog (independent published study with disclosed methodology; 2025-05-21)",
+      "target_slug": "/tools/neuronwriter",
+      "collected_at": "2026-07-13",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "neuronwriter-review-2026-07-13",
+      "screening": "included",
+      "label": "independent-test",
+      "coders": ["A", "B"],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "NeuronWriter",
+        "aspect": "content-score-to-ranking correlation strength vs 4 rival tools across 20 keywords (Spearman/Kendall)",
+        "stance": "mixed",
+        "plan_tier_if_stated": null,
+        "item_date": "2025-05-21"
+      },
+      "honesty_notes": [
+        "FLAGGED for resolver: 'fared the best' could be coded 'positive' (relative-best framing) instead of 'mixed' — needs an independent second coding pass.",
+        "'Fared the best' is RELATIVE, not absolute — Ahrefs' own headline finding is that even the best-correlated tools showed only weak correlation with rankings. Never present this as 'NeuronWriter's content score predicts rankings.'",
+        "Ahrefs sells a competing product (AI Content Helper) that placed alongside NeuronWriter in this study — noting the mild COI, though the study's own weak-correlation-everywhere finding cuts against Ahrefs' own tool too, which supports good-faith reporting."
+      ]
+    },
+    {
+      "id": "EV-neuronwriter-review-07",
+      "claim": "In a disclosed first-person test (LADS Media, published 2025-11-21, author 'Leo') across 20 articles over 3 months, NeuronWriter-optimized articles averaged an 8-12 position ranking improvement, with one travel article moving from position 23 to position 7 after adding NeuronWriter's suggested 'People Also Ask' terms; the same piece concludes NeuronWriter did not help on highly competitive keywords, where Surfer's precision proved more valuable.",
+      "source_url": "https://ladsmedia.com/surfer-seo-vs-neuronwriter-which-tool-helps-writers-rank-better/",
+      "source_date": "2025-11-21",
+      "quote": "I tested NeuronWriter on 20 articles over 3 months. Results were mixed but generally positive... One travel article jumped from position 23 to position 7 after adding NeuronWriter's suggested 'People Also Ask' answers.",
+      "platform": "ladsmedia.com (disclosed first-person test, 20 articles over 3 months; published 2025-11-21)",
+      "target_slug": "/tools/neuronwriter",
+      "collected_at": "2026-07-13",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "neuronwriter-review-2026-07-13",
+      "screening": "included",
+      "label": "independent-test",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "NeuronWriter",
+        "aspect": "ranking-position change across a 20-article/3-month test vs Surfer on the same site",
+        "stance": "mixed",
+        "plan_tier_if_stated": null,
+        "item_date": "2025-11-21"
+      },
+      "honesty_notes": [
+        "No control group or identical-article A/B is disclosed between the NeuronWriter and Surfer halves of the test — treat as one dated practitioner test, not a controlled experiment.",
+        "Defined-sample framing only: 'across 20 articles over 3 months (LADS Media, Nov 2025), NeuronWriter-optimized pieces averaged an 8-12 spot gain' — never round this into a population rate."
+      ]
+    },
+    {
+      "id": "EV-neuronwriter-review-08",
+      "claim": "In a disclosed benchmark (Tested.media, published 2026-04-07, evaluating tools 'inside live client accounts over the last 12 months' on pricing/accuracy/speed/workflow-integration/LLM-citation-tracking), NeuronWriter is scored as the 'budget pick' among AI SEO content tools, with Bronze at $23/month for content briefs, NLP-based scoring and an AI writer — rated behind Surfer and Frase on interface polish but 'competitive' on the scoring engine, and recommended for solo SEOs and small agencies over pricier alternatives.",
+      "source_url": "https://tested.media/ai-seo-tools/",
+      "source_date": "2026-04-07",
+      "quote": "$23 per month for the Bronze plan and you get content briefs, NLP based scoring, and an AI writer... The interface is less polished than Surfer or Frase but the scoring engine is competitive. Best pick for solo SEOs and small agencies who do not need a $189 per month tool.",
+      "platform": "tested.media (disclosed benchmark, live client accounts over 12 months; published 2026-04-07)",
+      "target_slug": "/tools/neuronwriter",
+      "collected_at": "2026-07-13",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "neuronwriter-review-2026-07-13",
+      "screening": "included",
+      "label": "independent-test",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "NeuronWriter",
+        "aspect": "budget-tier positioning vs Surfer/Frase/Clearscope on price, interface polish and scoring-engine competitiveness",
+        "stance": "mixed",
+        "plan_tier_if_stated": "Bronze $23/month",
+        "item_date": "2026-04-07"
+      },
+      "honesty_notes": [
+        "A secondary source (metadatamarketer.com) claimed a specific '80/100' numeric score for NeuronWriter and attributed the piece to a byline 'Ryan Whitton' — THIS RUN'S direct fetch of the live tested.media page found neither the byline nor the numeric score (the page's stated author is Victor Smushkevich). The numeric score is NOT registered; only the directly-verified qualitative language above is cited. See excluded_sources (metadatamarketer.com, reason: unlinkable)."
+      ]
+    },
+    {
+      "id": "EV-neuronwriter-review-09",
+      "claim": "In a first-person review updated 2025-01-06 (juliety.com, ~1 year of NeuronWriter use at the time of writing), the author reports NeuronWriter's AI-writer output is 'on par with... generic writing tools' and personally finds it 'too bland and boring' — so much that she doesn't use its AI features at all and writes with Koala Writer instead — while continuing to pay for and use NeuronWriter's optimization/scoring side, having upgraded from the Silver to the Gold plan.",
+      "source_url": "https://juliety.com/neuronwriter-review",
+      "source_date": "2025-01-06",
+      "quote": "the output is on par with what you'd get from ChatGPT and other generic writing tools. I personally find it too bland and boring... I don't use any of the AI features because I either write myself or create my articles with Koala Writer.",
+      "platform": "juliety.com (first-person, named blogger; updated 2025-01-06)",
+      "target_slug": "/tools/neuronwriter",
+      "collected_at": "2026-07-13",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "neuronwriter-review-2026-07-13",
+      "screening": "included",
+      "label": "community-report",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "NeuronWriter",
+        "aspect": "AI-writer output quality (negative) vs continued use of the scoring/optimization side (positive) — split usage pattern",
+        "stance": "mixed",
+        "plan_tier_if_stated": "upgraded Silver → Gold",
+        "item_date": "2025-01-06"
+      },
+      "honesty_notes": [
+        "Single named-author account, not a sample — report as one dated first-person account, never generalized.",
+        "Corroborates the fact pattern in EV-neuronwriter-review-08 (Tested.media: AI writer listed only as a bundled Bronze-tier feature, scoring engine called the 'competitive' differentiator) that NeuronWriter's optimization/scoring is viewed as stronger than its generation."
+      ]
+    },
+    {
+      "id": "EV-neuronwriter-review-10",
+      "claim": "In a first-person review published 2025-07-18 (learnwirepro.com), the author — a user since NeuronWriter's 2022 AppSumo lifetime-deal launch — reports ranking #6 within days for a target keyword after NeuronWriter-guided optimization, but separately states the AI credits for content generation 'can be used up quickly, especially if you're relying on it to write full articles.'",
+      "source_url": "https://learnwirepro.com/neuronwriter-review/",
+      "source_date": "2025-07-18",
+      "quote": "I've been using this software for about four years, ever since it first launched on Appsumo in 2022... I ranked #6 in just a few days for 'Subscribr Review'... The AI credits for content generation can be used up quickly.",
+      "platform": "learnwirepro.com (first-person, named blogger, ~4 years of use; published 2025-07-18)",
+      "target_slug": "/tools/neuronwriter",
+      "collected_at": "2026-07-13",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "neuronwriter-review-2026-07-13",
+      "screening": "included",
+      "label": "community-report",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "NeuronWriter",
+        "aspect": "SERP-analysis-driven ranking result (positive) + AI-credit consumption complaint for full-article generation (negative)",
+        "stance": "mixed",
+        "plan_tier_if_stated": null,
+        "item_date": "2025-07-18"
+      },
+      "honesty_notes": [
+        "Corroborates the vendor's own documented absence of a per-article credit estimate (EV-neuronwriter-review-02) with an independent complaint that credits run out fast when generating full articles.",
+        "One dated account from a multi-year user, not a sample size — do not generalize into 'users report credits run out'."
+      ]
+    },
+    {
+      "id": "EV-neuronwriter-review-11",
+      "claim": "In a disclosed hands-on test (Originality.ai, published/updated 2025-08-20), the author generated NeuronWriter AI-writer content for 30 minutes and found the output 'includes almost no keywords, and zero headers', despite NeuronWriter's own SEO-optimization purpose; running the same generated text through Originality.ai's own detector flagged it '100% AI-generated'; the review scores NeuronWriter 6/10 overall and warns readers to 'be careful with its SEO claims, as it is very much limited in that regard.'",
+      "source_url": "https://originality.ai/blog/neuronwriter-ai-review",
+      "source_date": "2025-08-20",
+      "quote": "After thirty minutes of use, we had the following content, which includes almost no keywords, and zero headers as well... the content we generated within NeuronWriter was flagged as 100% AI-generated... be careful with it's SEO claims, as it is very much limited in that regard.",
+      "platform": "originality.ai/blog (disclosed hands-on test with a stated time-boxed generation; published/updated 2025-08-20)",
+      "target_slug": "/tools/neuronwriter",
+      "collected_at": "2026-07-13",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "neuronwriter-review-2026-07-13",
+      "screening": "included",
+      "label": "independent-test",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "NeuronWriter",
+        "aspect": "AI-writer output missing suggested SEO elements (keywords/headers) + flagged as AI-written by an AI detector; overall 6/10",
+        "stance": "negative",
+        "plan_tier_if_stated": null,
+        "item_date": "2025-08-20"
+      },
+      "honesty_notes": [
+        "Originality.ai sells AI-detection software — noted as a mild occupational-interest flag. The specific finding here (missing keywords/headers in NeuronWriter's own generated draft) is a distinct, falsifiable claim about NeuronWriter, NOT a detector-accuracy claim, and is not an endorsement of AI-detector accuracy generally (owned-border: no detector-accuracy claim is adopted or scored on this page).",
+        "One dated 30-minute test by one publisher, not a sample — do not generalize."
+      ]
+    },
+    {
+      "id": "EV-neuronwriter-review-12",
+      "claim": "In a first-person review last updated 2026-02-20 (busymomsidehustle.com, author Ashley Rosen, using NeuronWriter since 2023), the author reports new posts optimized with NeuronWriter 'ranked very fast on Google' and that updating old posts with it brought them back into search results, crediting the tool with growing her blogging income — a positive account with no specific ranking numbers or dates given for the individual results described.",
+      "source_url": "https://busymomsidehustle.com/neuronwriter-review/",
+      "source_date": "2026-02-20",
+      "quote": "This NeuronWriter review is based on my own experience with the tool, working with it since 2023 for SEO optimization and AI writing... New posts that I wrote and optimized with Neuron ranked very fast on Google. Old posts that I updated with the help of Neuronwriter started showing up in searches.",
+      "platform": "busymomsidehustle.com (first-person, named blogger, using since 2023; last updated 2026-02-20)",
+      "target_slug": "/tools/neuronwriter",
+      "collected_at": "2026-07-13",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "neuronwriter-review-2026-07-13",
+      "screening": "included",
+      "label": "community-report",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "NeuronWriter",
+        "aspect": "self-reported ranking speed + traffic/income growth from optimization (no specific numbers given)",
+        "stance": "positive",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-02-20"
+      },
+      "honesty_notes": [
+        "No specific ranking positions, timeframes, or income figures are given despite the confident framing ('the results speak for themselves') — cite as a qualitative first-person account only, never imply it is quantified.",
+        "Pairs with EV-neuronwriter-review-10 (learnwirepro.com) as a second independent positive-ranking report; the two are NOT combinable into any percentage or count beyond 'two dated blogger accounts (2025-07-18, 2026-02-20) report ranking gains from NeuronWriter use'."
+      ]
+    }
+  ]
+}
