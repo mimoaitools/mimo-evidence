@@ -1,7 +1,7 @@
 {
   "protocol": "MEP-1.0",
   "site": "mimoaitools.com",
-  "updated": "2026-07-13",
+  "updated": "2026-07-16",
   "note": "Per-page evidence shards. Each EV id is cited inline in the matching Mimo article. See README.",
   "shards": [
     {
@@ -40,10 +40,15 @@
       "entries": 8
     },
     {
+      "file": "registry-surfer-seo-review.json",
+      "page": "/surfer-seo-review",
+      "entries": 9
+    },
+    {
       "file": "registry-writesonic-review.json",
       "page": "/writesonic-review",
       "entries": 6
     }
   ],
-  "total_entries": 64
+  "total_entries": 73
 }
