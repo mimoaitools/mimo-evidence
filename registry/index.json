@@ -1,7 +1,7 @@
 {
   "protocol": "MEP-1.0",
   "site": "mimoaitools.com",
-  "updated": "2026-07-16",
+  "updated": "2026-07-18",
   "note": "Per-page evidence shards. Each EV id is cited inline in the matching Mimo article. See README.",
   "shards": [
     {
@@ -35,6 +35,11 @@
       "entries": 12
     },
     {
+      "file": "registry-neuronwriter-vs-surfer-seo.json",
+      "page": "/neuronwriter-vs-surfer-seo",
+      "entries": 2
+    },
+    {
       "file": "registry-seowriting-ai-review.json",
       "page": "/seowriting-ai-review",
       "entries": 8
@@ -50,5 +55,5 @@
       "entries": 6
     }
   ],
-  "total_entries": 73
+  "total_entries": 75
 }
