@@ -1,0 +1,418 @@
+{
+  "_meta": {
+    "flow_id": "frase-review-2026-07-20",
+    "protocol_version": "MEP-1.0",
+    "target_slug": "/tools/frase",
+    "target_keyword": "frase review",
+    "run_date": "2026-07-20",
+    "collector": "evidence-curator",
+    "page_class": "review (single-tool VERDICT; zone-2 AI SEO content tool built around SERP research + AI-generated briefs/outlines + a content-optimization score + a bundled AI writer; the 'research and briefs' specialist of the trio alongside NeuronWriter (budget scorer, reviewed) and Surfer (premium editor, reviewed); NOT a pure writing-generation tool, NOT a humanizer/detector/paraphraser)",
+    "sweep_strategy": "FRESH sweep — grepped registry.json first: 5 existing mentions of 'frase' surfaced, all incidental inside OTHER tools' claims (EV-neuronwriter-review-06/08 framed for NeuronWriter, EV-surfer-seo-review-07/09 framed for Surfer) — none is a Frase-target_slug entry, so no direct reuse-by-reference was possible; every plausible reuse candidate (the Ahrefs 5-tool study) required a Frase-specific extraction not present in either sibling entry, so it was RE-FETCHED this run and registered as its own new entry, consistent with how the neuronwriter and surfer shards each created their own per-tool-framed entry for that same study. entries_reused is therefore empty by design, not by omission. Executed 21 documented WebSearch queries + 2 direct reddit.com/old.reddit.com WebFetch attempts + 1 direct WebFetch of frase.io/pricing + 1 direct targeted re-fetch of the known Ahrefs study (URL known from the neuronwriter/surfer shards, re-fetched fresh for a Frase-specific quote) + verification fetches of every included URL. REDDIT WAS STRUCTURALLY UNREACHABLE THIS RUN, same inherited environment limitation documented in every prior 2026-07 Mimo shard: zero real reddit.com URLs surfaced from any reddit-targeted WebSearch query (8 dedicated queries + 2 direct reddit.com/old.reddit.com WebFetch attempts, both blocked outright by the tool). One WebSearch result did surface a SECONDHAND, UNLINKED paraphrase of an alleged r/seogrowth thread ('Are you guys still using content optimization tools like Frase, Surfer, Scalenut?') via Frase's own blog post (frase.io/blog/content-optimization-is-dead) — the underlying reddit.com URL was never produced by either the search or a direct fetch of that blog post, so per protocol the Reddit sentiment itself is NOT registered (unlinkable secondhand paraphrase); only the vendor blog post's own dated, directly-fetched content is registered, labeled vendor-claim. Quora was similarly unreachable: no genuine quora.com question/answer URL about Frase surfaced from any query (search results returned only generic 'how Quora works' meta pages, logged off-topic). Capterra, AppSumo, and one Trustpilot-adjacent data point (via WebSearch summary only, not a live fetch) were the workable review-platform tier this run: Capterra fetched successfully (aggregate 4.8/5, n=335, two dated individual reviews registered) and AppSumo fetched successfully (aggregate 4.5/5, n=166, surfaced a genuinely dated 3-review pattern about lifetime-deal accounts breaking during a 2026 'V2' migration). Trustpilot (2 direct URL-variant attempts) and G2 (1 direct attempt) both returned HTTP 403 — logged unverifiable-this-run, matching the same intermittent bot-wall documented in the Surfer shard 4 days earlier; a WebSearch summary describing a 4.8/5 (G2) vs 1.4/5 (Trustpilot) rating gap and AppSumo-LTD billing complaints is NOT registered as evidence in its own right (search-snippet paraphrase, not a this-run live fetch) but the AppSumo page's own directly-fetched reviews independently corroborate the same LTD-migration complaint pattern. The sweep's strongest non-community evidence is a direct, this-run re-fetch of the independent Ahrefs 5-tool correlation study, which yields a Frase-specific, highly concrete example ('Scoring 100 on Frase after shoehorning all the suggested keywords without any semblance of a draft') not previously captured in the neuronwriter or surfer shards. Three further disclosed-methodology practitioner tests were found and fetched: getspike.ai's 6-month/15-article Surfer-vs-Frase test (rival-vendor COI flagged, same source as EV-surfer-seo-review-09 but a different Frase-specific quote extracted this run), an IndieHackers first-person 5-site/63-keyword/25-day test (JC, 2026-04-28), and behindrankings.com's one-month published-article ranking comparison (Victoria Kurichenko, originally 2021, updated 2026-01-11). tested.media's 12-month live-client benchmark (already used for NeuronWriter in EV-neuronwriter-review-08) was re-fetched for a DIFFERENT, Frase-specific quote ('the brief generator is the fastest in the category'). A live capture of frase.io/pricing (2026-07-20) surfaced a THIRD distinct pricing/tier-naming scheme (Starter/Professional/Scale) compared to the tier names and prices reported by three independent dated sources from earlier in 2026 (tested.media: 'Basic $45/mo'; kripeshadwani.com: 'Basic $45/mo, Growth $120/mo'; originality.ai, 2025: 'Team Plan $115/month') — a documented pricing/tier-name drift pattern, flagged throughout for the writer.",
+    "flow_counter": {
+      "identified": 86,
+      "screened": 86,
+      "excluded": 75,
+      "excluded_by_reason": {
+        "no-methodology-affiliate": 44,
+        "off-topic": 24,
+        "duplicate": 5,
+        "unverifiable-this-run": 2
+      },
+      "included_sources": 11,
+      "registry_entries_new": 12,
+      "counter_note": "identified = 86 DISTINCT candidate URLs surfaced across 21 documented WebSearch queries + 2 direct reddit.com/old.reddit.com WebFetch attempts (both 0 results, blocked outright) + 1 direct WebFetch of frase.io/pricing (not surfaced by any search query) + 1 direct targeted re-fetch of the known Ahrefs study; repeat appearances across queries were folded into their first distinct-URL occurrence and NOT re-counted (marked duplicate only when a genuinely different URL is a variant of an already-included source, e.g. Trustpilot page-2/page-3/www-prefix variants of the same profile, or a Capterra product-listing/pagination page duplicating the already-fetched reviews page). 11 DISTINCT sources were included; Capterra (capterra.com/p/197955/Frase/reviews/) carries two independently dated individual reviews (Kira K., 2023-10-09; Denise M., 2025-07-29) each registered as its own entry, producing 12 registry entries from 11 included sources. Every excluded URL carries a recorded reason code (see exclusion_log_notes); none were silently dropped. Zero astroturf-pattern sources were detected this run (see astroturf_note)."
+    },
+    "coder_agreement_rate": "CURATOR-PROVISIONAL single-pass coding across all 12 included entries (dual-independent coding + resolver pass is orchestrated above this run). Stance calls: 2 n/a (vendor-primary, no sentiment to code), 5 mixed, 3 negative, 2 positive-leaning-mixed. FLAGGED FOR ORCHESTRATED DUAL-CODING / RESOLVER ATTENTION: (1) EV-frase-review-02 (Ahrefs study) — coded 'negative' for the specific keyword-stuffing example but the study's group-level finding (grouped among 'the other three' weak-correlated tools) could be softened to 'mixed' by the same logic flagged in the sibling neuronwriter/surfer entries — even the best-correlated tools showed only weak correlation; (2) EV-frase-review-03 (getspike.ai test) — same rival-vendor COI already flagged in EV-surfer-seo-review-09, PLUS this run found the article's headline ('200+ Articles') is NOT supported by its own body text (which describes a 15-article test) — a headline-vs-methodology mismatch a resolver should weigh when deciding how much confidence the piece deserves; (3) EV-frase-review-07 (AppSumo defined-sample) — coded 'negative' from 3 dated reviews out of 166 total; a resolver should confirm the denominator-anchored framing survives rewriting and is never rounded to a rate.",
+    "query_census": [
+      { "q": "WebSearch: site:reddit.com frase.io review", "candidates": 0, "note": "No links found." },
+      { "q": "WebSearch: frase seo reddit worth it 2026", "candidates": 1, "note": "diyai.io/ai-tools/seo/reviews/frase-review/. Zero reddit.com URLs." },
+      { "q": "WebSearch: frase seo reddit r/juststart", "candidates": 2, "note": "skipblast.com/best-subreddits-awesome-seo-discussions/, ibeamconsulting.com/blog/reddit-seo-topics-questions-answers/ — both generic 'which subreddits exist' pages, not Frase-specific, zero reddit.com URLs." },
+      { "q": "WebSearch: frase seo reddit r/bigseo", "candidates": 0, "note": "No links found." },
+      { "q": "WebSearch: \"frase\" content brief site:reddit.com", "candidates": 0, "note": "No links found." },
+      { "q": "WebSearch: frase seo credits ran out reddit complaint", "candidates": 1, "note": "frase.io/blog/content-optimization-is-dead — surfaced because the post itself references an unlinked r/seogrowth thread. Zero reddit.com URLs." },
+      { "q": "WebSearch: reddit r/seogrowth \"still using content optimization tools\" Frase Surfer Scalenut", "candidates": 0, "note": "Same frase.io blog post resurfaced (duplicate, not counted again). Response paraphrased alleged Reddit top-comments ('make content less readable', 'don't account for LLMs', 'lack a LLM/Rankbrain/Gemini friendliness metric') but NO reddit.com URL was ever produced — confirmed via a direct fetch of the blog post itself (see verification note below). NOT registered." },
+      { "q": "WebSearch: frase cancelled subscription reddit", "candidates": 0, "note": "No links found." },
+      { "q": "WebSearch: frase vs surfer reddit switched", "candidates": 0, "note": "No links found." },
+      { "q": "WebSearch: frase vs neuronwriter reddit switched", "candidates": 5, "note": "eesel.ai/blog/frase-ai-vs-neuronwriter, kripeshadwani.com/neuronwriter-review/, neuronwriter.com/neuronwriter-vs-frase-io/, neuronwriter.com/neuronwriter-vs-frase/, neuronwriterreview.com/frase-vs-neuronwriter-key-differences/. Zero reddit.com URLs." },
+      { "q": "WebSearch: frase quora review experience", "candidates": 10, "note": "demandsage.com/frase-review/, smartcustomer.com/reviews/quora.com, quorablog.quora.com/Reviews-on-Quora, kripeshadwani.com/frase-review/, nichepursuits.com/frase-review/, quora.com/How-do-you-write-a-review-based-on-a-given-topic, quora.com/Reviews-Quora-feature-How-do-I-create-a-review-question, quora.com/How-do-I-give-a-review, quorareview.com/, thedoublethink.com/frase-review/. No genuine quora.com Q&A about Frase — only generic 'how Quora works' meta pages." },
+      { "q": "WebSearch: frase seo scam overpriced reddit", "candidates": 0, "note": "No links found." },
+      { "q": "DIRECT: WebFetch https://www.reddit.com/search/?q=frase%20seo", "candidates": 0, "note": "Blocked — 'Claude Code is unable to fetch from www.reddit.com'. Confirms the inherited environment limitation from every prior Mimo shard." },
+      { "q": "DIRECT: WebFetch https://old.reddit.com/search.json?q=frase.io", "candidates": 0, "note": "Blocked — 'Claude Code is unable to fetch from old.reddit.com'." },
+      { "q": "WebSearch: frase seo capterra reviews", "candidates": 10, "note": "capterra.com/p/197955/Frase/reviews/, capterra.com/p/197955/Frase/, frase.io/reviews, youraisoft.com/frase-review/, frase.io/, amrytt.com/frase-review/, capterra.com/compare/197955-231656/Frase-vs-Outranking, capterra.com/compare/197955-212333/Frase-vs-Contentpace, capterra.com/p/197955/Frase/reviews/?page=2, capterra.com/compare/197955-217242/Frase-vs-Jasper." },
+      { "q": "WebSearch: frase seo g2 reviews", "candidates": 6, "note": "g2.com/products/frase-io/reviews, frase.io/features/seo-content-optimization, compareaitools.org/frase-review/, vettedthis.com/software/marketing/seo-tools/frase-io-review-details-pricing-features/, computertech.co/frase-review/, seoptimer.com/blog/frase-vs-surfer-seo/." },
+      { "q": "DIRECT: WebFetch https://www.trustpilot.com/review/frase.io", "candidates": 1, "note": "HTTP 403 Forbidden — unverifiable-this-run." },
+      { "q": "WebSearch: getspike.ai frase review test", "candidates": 10, "note": "getspike.ai/blog/frase-vs-clearscope/, getspike.ai/blog/frase-vs-marketmuse/, getspike.ai/, getspike.ai/blog/frase-alternatives/, getspike.ai/casestudies/, getspike.ai/blog/writesonic-alternatives/, getspike.ai/about, getspike.ai/blog/author/shrestha/, getspike.ai/blog/surfer-seo-vs-frase/, getspike.ai/pricing." },
+      { "q": "WebSearch: frase review hands-on test months using", "candidates": 7, "note": "dailyaireviews.com/frase-io-review-2026/, geekflare.com/reviews/frase-review/, searchendurance.com/frase-review/, fahimai.com/frase, aitoolblaze.com/blog/frase-review-2026, aiflowreview.com/frase-review-2025/, originality.ai/blog/frase-io-review." },
+      { "q": "WebSearch: tested.media ai seo tools frase budget pick research", "candidates": 10, "note": "tested.media/ai-seo-tools/, rankability.com/blog/best-seo-content-optimization-tools/, onelittleweb.com/top-tools/best-ai-seo-tools/, vezadigital.com/post/best-ai-seo-tools, xseek.io/blogs/articles/which-ai-tool-is-best-for-seo-optimization, contextrankings.com/rankings/2026-06-17-the-best-ai-seo-content-optimization-tools/, atlasmarketing.ai/seo-tools/best-ai-seo-tools/, whatagraph.com/blog/articles/ai-seo-tools, cited.so/blog/best-ai-seo-tools-for-small-business, indiehackers.com/post/best-ai-seo-software-2026-i-burned-900-and-six-weeks-testing-tools-so-you-dont-have-to-519ffecae1." },
+      { "q": "DIRECT: WebFetch https://ahrefs.com/blog/seo-content-score-study/ (targeted re-fetch of a study already known from registry-neuronwriter-review.json and registry-surfer-seo-review.json, this run extracting Frase's own data point)", "candidates": 1, "note": "INCLUDED → EV-frase-review-02. Confirmed this run the study names Frase as one of the 5 tools tested and includes a Frase-specific illustrative screenshot/example about gaming the content score." },
+      { "q": "WebSearch: \"frase.io\" reddit content_marketing", "candidates": 3, "note": "firdaussyazwani.com/reviews/frase-review, frase.io/blog/frase-vs-copy-ai-the-best-ai-for-content-marketing-and-copywriting, frase.io/content-marketing/. Zero reddit.com URLs." },
+      { "q": "WebSearch: frase ai writer generic reddit", "candidates": 1, "note": "seoptimer.com/blog/frase-review/. Zero reddit.com URLs." },
+      { "q": "WebSearch: Is Frase worth it quora", "candidates": 4, "note": "passiveincomesuperstars.com/frase-review/, bloggingwizard.com/frase-review/, contentellect.com/frase-ai-review/, ddiy.co/frase-ai-review/. No genuine quora.com URL." },
+      { "q": "WebSearch: frase seo alternative switched reddit r/SEO", "candidates": 1, "note": "rankup.so/academy/frase-alternatives. Zero reddit.com URLs." },
+      { "q": "WebSearch: frase.io trustpilot rating reviews", "candidates": 5, "note": "trustpilot.com/review/www.frase.io, uk.trustpilot.com/review/www.frase.io?page=3, behindrankings.com/frase-io-review/, trustpilot.com/review/www.frase.io?page=2, linkedin.com/pulse/frase-ai-reviews-pros-cons-verdict-holly-inna. Search summary reported a 4.8/5 (G2) vs 1.4/5 (Trustpilot) rating gap and AppSumo-LTD billing complaints — NOT registered on its own (secondhand search-snippet, not a this-run live fetch); the same underlying complaint pattern is independently corroborated by the directly-fetched AppSumo page (EV-frase-review-07)." },
+      { "q": "WebSearch: demandsage frase review rating verdict", "candidates": 7, "note": "demandsage.com/category/reviews/, slashdot.org/software/p/Demand-Sage/, demandsage.com/frase-alternatives/, demandsage.com/frase-io-vs-jasper-ai/, demandsage.com/surfer-seo-vs-frase/, demandsage.com/surfer-seo-review/, appsumo.com/products/frase-black-friday-2020/reviews/." },
+      { "q": "DIRECT: WebFetch https://www.frase.io/pricing", "candidates": 1, "note": "INCLUDED → EV-frase-review-01. Not surfaced by any search query this run; fetched directly as the vendor primary source for current pricing." },
+      { "q": "VERIFICATION FETCHES (not new discovery queries): frase.io/blog/content-optimization-is-dead, capterra.com/p/197955/Frase/reviews/ (x2 passes), g2.com/products/frase-io/reviews, trustpilot.com/review/www.frase.io, getspike.ai/blog/surfer-seo-vs-frase/ (x2 passes), kripeshadwani.com/frase-review/, tested.media/ai-seo-tools/, indiehackers.com/post/best-ai-seo-software-2026-...-519ffecae1, originality.ai/blog/frase-io-review, ahrefs.com/blog/seo-content-score-study/, behindrankings.com/frase-io-review/, appsumo.com/products/frase-black-friday-2020/reviews/", "candidates": 0, "note": "Direct verification/screening fetches of already-identified URLs — not counted again in 'identified' (no new distinct URLs surfaced). A second capterra.com/p/197955/Frase/reviews/ pass (requesting 2026-dated reviews specifically) failed with a transient 529 upstream error on two attempts and was not retried further; the two Capterra reviews registered below are from the FIRST successful pass this run, both live-fetched and quote-verified."
+      }
+    ],
+    "reddit_access_note": "PRIMARY Reddit threads were NOT obtainable this run across 8 dedicated reddit-targeted WebSearch queries + 2 direct reddit.com/old.reddit.com WebFetch attempts — zero real reddit.com URLs surfaced, and both direct fetches were blocked outright by the tool. One WebSearch result surfaced a SECONDHAND, UNLINKED paraphrase of an alleged r/seogrowth thread via Frase's own blog post (frase.io/blog/content-optimization-is-dead, published 2026-04-02); a direct fetch of that blog post confirmed it names the subreddit and paraphrases 'top answers' but contains NO reddit.com URL anywhere on the page — per protocol this is NOT registered as Reddit evidence (unlinkable secondhand paraphrase); only the blog post's own directly-fetched, self-interested content is registered (EV-frase-review-12), labeled vendor-claim. Quora was ALSO unreachable: no genuine quora.com question/answer URL about Frase surfaced from any of the queries run (only generic 'how Quora works' meta pages appeared, logged off-topic). This matches the same environment-level block documented in every prior 2026-07 Mimo shard (NeuronWriter, Surfer). CONSEQUENCE: community sentiment for /tools/frase must route through Capterra (2 verified entries) and AppSumo (1 defined-sample entry) instead of Reddit or Quora this run.",
+    "astroturf_note": "The astroturf screen (§3.1: templated look-alike threads, recurring fresh personas, all funneling to one vendor) was applied to every low-trust-forum/listicle candidate surfaced this run. No comparable astroturf pattern was detected for Frase this run — the large 'no-methodology-affiliate' bucket (44 URLs) consists of independent review-mill blogs pointing readers toward Frase's OWN affiliate program (a diffuse, decentralized pattern, not a coordinated single-vendor-funneling network), and no persona-branded promotional cluster (like the NeuronWriter shard's Quora 'Space' cluster) was found. Zero astroturf exclusions this run; documented per protocol regardless of the null result.",
+    "exclusion_log_notes": [
+      "no-methodology-affiliate (44): the large population of 'Frase review 2026' SEO-tool review-mill blogs and roundup/comparison listicles with no disclosed personal-test methodology visible without a full fetch — diyai.io, youraisoft.com, amrytt.com, compareaitools.org, vettedthis.com, computertech.co, seoptimer.com (both /blog/frase-review/ and /blog/frase-vs-surfer-seo/), dailyaireviews.com, geekflare.com, searchendurance.com, fahimai.com, aitoolblaze.com, aiflowreview.com, firdaussyazwani.com, passiveincomesuperstars.com, bloggingwizard.com, contentellect.com, ddiy.co, thedoublethink.com, nichepursuits.com, demandsage.com (x6 pages: /frase-review/, /frase-alternatives/, /frase-io-vs-jasper-ai/, /surfer-seo-vs-frase/, /surfer-seo-review/, /category/reviews/), rankup.so/academy/frase-alternatives, eesel.ai/blog/frase-ai-vs-neuronwriter, neuronwriterreview.com/frase-vs-neuronwriter-key-differences/, linkedin.com/pulse/frase-ai-reviews-pros-cons-verdict-holly-inna, getspike.ai (x4 rival-vendor comparison posts: /blog/frase-vs-clearscope/, /blog/frase-vs-marketmuse/, /blog/frase-alternatives/, /blog/writesonic-alternatives/ — distinct from the INCLUDED getspike.ai/blog/surfer-seo-vs-frase/, which was fetched and does disclose a first-person test), rankability.com, onelittleweb.com, vezadigital.com, xseek.io, contextrankings.com, atlasmarketing.ai, whatagraph.com, cited.so. Pattern-screened by title/domain/URL convention (review-mill, roundup, or vendor-vs-vendor comparison listicle) without a full fetch, consistent with prior Mimo shard practice — only INCLUDED items require this-run re-fetch per protocol §4.",
+      "off-topic (24): pages that surfaced on a documented query but do not make a claim about Frase — skipblast.com/best-subreddits-awesome-seo-discussions/ and ibeamconsulting.com/blog/reddit-seo-topics-questions-answers/ (generic 'which subreddits exist' guides, not Frase-specific); 6 generic Quora meta-pages about how Quora itself works (smartcustomer.com/reviews/quora.com, quorablog.quora.com/Reviews-on-Quora, quora.com/How-do-you-write-a-review-based-on-a-given-topic, quora.com/Reviews-Quora-feature-How-do-I-create-a-review-question, quora.com/How-do-I-give-a-review, quorareview.com/); kripeshadwani.com/neuronwriter-review/ (about NeuronWriter, not Frase); slashdot.org/software/p/Demand-Sage/ (about the company 'Demand Sage', unrelated to Frase); neuronwriter.com/neuronwriter-vs-frase-io/ and neuronwriter.com/neuronwriter-vs-frase/ (a rival vendor's self-serving comparison pages, not a neutral claim about Frase); frase.io/features/seo-content-optimization, frase.io/reviews, frase.io/content-marketing/, frase.io/blog/frase-vs-copy-ai-the-best-ai-for-content-marketing-and-copywriting (Frase's own marketing/navigational pages, no specific dated claim beyond what the included pricing/blog entries already capture); getspike.ai/, getspike.ai/about, getspike.ai/casestudies/, getspike.ai/blog/author/shrestha/, getspike.ai/pricing (rival-vendor navigational pages, not Frase claims); capterra.com/compare/197955-231656/Frase-vs-Outranking, capterra.com/compare/197955-212333/Frase-vs-Contentpace, capterra.com/compare/197955-217242/Frase-vs-Jasper (Capterra's auto-generated tool-comparison pages, no disclosed review content, different sub-topic).",
+      "duplicate (5): trustpilot.com/review/www.frase.io, uk.trustpilot.com/review/www.frase.io?page=3, and trustpilot.com/review/www.frase.io?page=2 (URL variants of the same Trustpilot profile as the primary trustpilot.com/review/frase.io attempt, which itself 403'd — see unverifiable-this-run); capterra.com/p/197955/Frase/ (product-listing page duplicating the content of the already-fetched .../Frase/reviews/ page); capterra.com/p/197955/Frase/reviews/?page=2 (pagination of the same reviews page already fetched).",
+      "unverifiable-this-run (2): trustpilot.com/review/frase.io returned HTTP 403 Forbidden on direct fetch (same intermittent Trustpilot bot-wall documented in the Surfer shard 4 days earlier — no Trustpilot quote is registered for Frase this run); g2.com/products/frase-io/reviews returned HTTP 403 Forbidden on direct fetch. No claim from either is registered; the widely-repeated secondhand figure of a 'G2 4.8/5 vs Trustpilot 1.4/5' rating gap appeared only in WebSearch summary text, never in a live fetch this run, and is therefore NOT registered as evidence — flagged in evidence_gaps instead.",
+      "OWNED-BORDER held (0 registered): no AI-humanizer/AI-detector/paraphraser claim was found, registered, or cited as fact anywhere in this sweep — Frase's category (AI SEO research/briefs/content-optimization) does not touch that border. Originality.ai (EV-frase-review-09) is itself an AI-detection vendor, but it is cited here only for its disclosed hands-on TEST of Frase's writing feature, not as an owned-product or detector-category claim about Frase."
+    ],
+    "entries_reused": []
+  },
+  "entries": [
+    {
+      "id": "EV-frase-review-01",
+      "claim": "On its current pricing page (captured 2026-07-20) Frase lists four plans — Starter $49/mo ($39/mo billed yearly, 10 articles, 50 audit pages, 25 AI generations/month, 1 seat/1 site), Professional $129/mo ($103/mo yearly, 40 articles, 250 audit pages, 100 AI generations/month, 3 seats/5 sites, 'Most Popular'), Scale $299/mo ($239/mo yearly, 100 articles, 1,000 audit pages, 350 AI generations/month, 5 seats/up to 10 domains), and custom-priced Enterprise. Vendor-stated, self-interested.",
+      "source_url": "https://www.frase.io/pricing",
+      "source_date": "2026-07-20",
+      "quote": "Starter $49/mo: 10 articles, 50 audit pages, 25 AI generations monthly, 1 seat, 1 site. Professional $129/mo (Most Popular): 40 articles, 250 audit pages, 100 AI generations monthly, 3 seats, 5 sites. Scale $299/mo: 100 articles, 1,000 audit pages, 350 AI generations monthly, 5 seats, up to 10 domains.",
+      "platform": "frase.io/pricing (vendor pricing page — self-interested; captured 2026-07-20)",
+      "target_slug": "/tools/frase",
+      "collected_at": "2026-07-20",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "frase-review-2026-07-20",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Frase",
+        "aspect": "current 4-tier pricing ladder + article/audit/AI-generation allowances (vendor-stated)",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Starter $49/mo – Enterprise custom (4 tiers)",
+        "item_date": "2026-07-20"
+      },
+      "honesty_notes": [
+        "This 'Starter/Professional/Scale' naming and these prices do NOT match three independent dated sources from earlier in 2026: tested.media (2026-04-07) reports 'Basic $45/mo' (10 articles); kripeshadwani.com (2026-06-25) reports 'Basic $45/mo (30 documents), Growth $120/mo (unlimited)'; originality.ai (2025-08-20) reports a 'Team Plan $115/month'. Frase's plan NAMES and PRICES appear to have shifted at least once between mid-2025 and this Jul-2026 capture — treat any older community complaint about a specific price point as dated to its own month, never as describing current pricing (the same drift pattern documented for Surfer's Essential-to-Discovery rename in EV-surfer-seo-review-01/07).",
+        "Cheaper than Surfer's ladder (Discovery $49-Enterprise $999+, EV-surfer-seo-review-01) at the entry tier but the SAME $49/mo starting price; more expensive than NeuronWriter's $23/mo Bronze entry (EV-neuronwriter-review-01) — a factual three-way pricing contrast, not an adopted value judgment."
+      ]
+    },
+    {
+      "id": "EV-frase-review-02",
+      "claim": "In the same disclosed-methodology Ahrefs study already cited for NeuronWriter and Surfer (published/updated 2025-05-21, author Si Quan Ong, 20 random keywords across 5 content-optimization tools using averaged Spearman/Kendall rank correlation between content score and Google ranking position), Frase is named as one of the 5 tools tested and grouped among 'the other three' with 'very weak' correlations (not among the two best-correlated); the article separately illustrates how Frase's score can be gamed, showing a screenshot captioned about scoring 100 on Frase by keyword-stuffing a document with no real draft.",
+      "source_url": "https://ahrefs.com/blog/seo-content-score-study/",
+      "source_date": "2025-05-21",
+      "quote": "Scoring 100 on Frase after shoehorning all the suggested keywords without any semblance of a draft.",
+      "platform": "ahrefs.com/blog (independent published study with disclosed methodology; 2025-05-21)",
+      "target_slug": "/tools/frase",
+      "collected_at": "2026-07-20",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "frase-review-2026-07-20",
+      "screening": "included",
+      "label": "independent-test",
+      "coders": ["A", "B"],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "Frase",
+        "aspect": "content-score gameability (illustrated example) + group-level correlation strength vs 4 rival tools across 20 keywords",
+        "stance": "negative",
+        "plan_tier_if_stated": null,
+        "item_date": "2025-05-21"
+      },
+      "honesty_notes": [
+        "FLAGGED for resolver: 'negative' could be softened to 'mixed' for the group-level correlation finding specifically — the study's own headline is that even the BEST-correlated tools (NeuronWriter, Ahrefs' own AI Content Helper) showed only weak correlation, so Frase being in the weaker group is relative. The keyword-stuffing SCREENSHOT EXAMPLE, however, is a concrete, Frase-specific illustration and stays coded negative regardless.",
+        "The article does not give Frase's individual Spearman/Kendall coefficient in the text extracted this run, only its group placement plus the one illustrative screenshot — do not invent a specific number for Frase.",
+        "Cross-references EV-neuronwriter-review-06 (NeuronWriter-side framing) and EV-surfer-seo-review-08 (Surfer-side framing) of the SAME underlying study — present all three tools' placements together on any page that compares them, never Frase's group placement in isolation.",
+        "Ahrefs sells a competing product (AI Content Helper) that placed in the 'best' group in this same study — mild COI noted, though the study's weak-correlation-everywhere finding cuts against Ahrefs' own tool too."
+      ]
+    },
+    {
+      "id": "EV-frase-review-03",
+      "claim": "In a disclosed first-person test (getspike.ai, a rival content-tool vendor, published 2026-06-12, author Tanmay P), a self-described 3-person B2B SaaS marketing team paid for both Surfer SEO and Frase for 6 months; the piece credits Frase's research automation ('analyzes the top 20 results, extracts their H2/H3 structures, pulls questions from Reddit and Quora') but reports its content-score-to-ranking correlation felt like 'essentially noise' and that Frase has no post-publish monitoring or content-decay tracking (no Google Search Console integration).",
+      "source_url": "https://getspike.ai/blog/surfer-seo-vs-frase/",
+      "source_date": "2026-06-12",
+      "quote": "Frase automates this entirely. It analyzes the top 20 results, extracts their H2/H3 structures, pulls questions from Reddit and Quora... Frase has no equivalent functionality. It does not connect to GSC for post-publish monitoring, track content decay, or alert you when an asset needs a refresh.",
+      "platform": "getspike.ai/blog (disclosed first-person practitioner test, 6-month/15-article test; published 2026-06-12, byline Tanmay P)",
+      "target_slug": "/tools/frase",
+      "collected_at": "2026-07-20",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "frase-review-2026-07-20",
+      "screening": "included",
+      "label": "independent-test",
+      "coders": ["A", "B"],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "Frase",
+        "aspect": "research/brief-automation strength vs content-score reliability and post-publish-monitoring gap, over a 6-month/15-article practitioner test",
+        "stance": "mixed",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-06-12"
+      },
+      "honesty_notes": [
+        "FLAGGED for resolver / COI: getspike.ai publishes Spike AI, a competing content-ops product, and the same domain runs near-identical 'Frase vs X' comparison posts against Clearscope and MarketMuse — a resolver should weigh whether the framing systematically favors switching away from Frase toward Spike.",
+        "FLAGGED for resolver / data-quality: this page's HEADLINE promises '200+ Articles' but its own body text describes a 15-article test ('rewriting 15 articles to hit Surfer scores of 80+, nine saw ranking improvements, but six stayed flat' — see the Surfer-side sibling entry EV-surfer-seo-review-09 for that specific figure, which is about Surfer's scoring, not Frase's). The headline-vs-methodology mismatch is a genuine data-quality caution, not proof of fabrication, but it should soften how much weight this source carries.",
+        "Same underlying source and 6-month/15-article test as EV-surfer-seo-review-09, but this entry captures a DIFFERENT quote (Frase's research automation + the GSC/content-decay gap) not present in that sibling entry.",
+        "'~0.1 correlation with rankings' for Frase's content score is the article's own informal claim, not from a disclosed statistical method — report as the practitioner's impression, not a measured coefficient (contrast with EV-frase-review-02's actual Spearman/Kendall study)."
+      ]
+    },
+    {
+      "id": "EV-frase-review-04",
+      "claim": "In a disclosed practitioner test (IndieHackers, published 2026-04-28, author 'JC'), the author ran identical article outlines through several content-optimization tools across 5 live websites tracking 63 keywords, publishing on different subdomains and measuring rankings after 25 days; Frase specifically is credited with automating research ('pulls together everything the top-ranking pages cover') and generating briefs that would take a human roughly two hours, but is described as limited beyond research/briefs — lacking keyword clustering, AI-visibility tracking, and local-ranking capability.",
+      "source_url": "https://www.indiehackers.com/post/best-ai-seo-software-2026-i-burned-900-and-six-weeks-testing-tools-so-you-dont-have-to-519ffecae1",
+      "source_date": "2026-04-28",
+      "quote": "You enter a keyword, and Frase pulls together everything the top-ranking pages cover.",
+      "platform": "IndieHackers (disclosed first-person practitioner test, 5 sites/63 keywords/25-day measurement; published 2026-04-28)",
+      "target_slug": "/tools/frase",
+      "collected_at": "2026-07-20",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "frase-review-2026-07-20",
+      "screening": "included",
+      "label": "independent-test",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Frase",
+        "aspect": "research/brief automation strength vs narrow single-purpose scope (no keyword clustering, AI-visibility tracking, or local ranking)",
+        "stance": "mixed",
+        "plan_tier_if_stated": "Entry plan $15/month (as reported by this source)",
+        "item_date": "2026-04-28"
+      },
+      "honesty_notes": [
+        "The '$15/month' entry-plan figure this source reports does NOT match this run's live-captured vendor pricing (Starter $49/mo, $39/mo annual) or any of the other three dated third-party price points found this run ($45/mo Basic across two other sources) — a fourth distinct pricing figure, compounding the pricing-drift caution already noted on EV-frase-review-01. Possibly an older/legacy or promotional tier; do not present as current.",
+        "The 25-day ranking-measurement window is short for SEO outcome claims — the source's own methodology does not claim statistical significance; report as one dated practitioner's process, not a validated ranking-impact study.",
+        "Site/keyword scope is broader than most single-tool tests found this run (5 sites, 63 keywords) — still one practitioner's account, not a population sample."
+      ]
+    },
+    {
+      "id": "EV-frase-review-05",
+      "claim": "A dated Capterra review (Kira K., CEO, Marketing & Advertising, 3 stars, 2023-10-09), inside Frase's Capterra aggregate of 4.8/5 from 335 reviews (as of capture 2026-07-20), reports the tool 'felt less intuitive, buggy, and glitchy' compared to competitors, cites non-responsive buttons, ignored required keywords, and AI-writer malfunctions, and states a refund request was declined shortly after the trial ended.",
+      "source_url": "https://www.capterra.com/p/197955/Frase/reviews/",
+      "source_date": "2023-10-09",
+      "quote": "It felt less intuitive, buggy, and glitchy, especially when compared to its competitors.",
+      "platform": "Capterra (review-platform; aggregate 4.8/5, n=335 as of capture 2026-07-20; this individual review dated 2023-10-09)",
+      "target_slug": "/tools/frase",
+      "collected_at": "2026-07-20",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "frase-review-2026-07-20",
+      "screening": "included",
+      "label": "community-report",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Frase",
+        "aspect": "product stability/UX complaint (bugginess, AI-writer malfunctions) + a declined refund request",
+        "stance": "negative",
+        "plan_tier_if_stated": null,
+        "item_date": "2023-10-09"
+      },
+      "honesty_notes": [
+        "This review is nearly 3 years old relative to this run's capture date — flag as HISTORICAL when citing; the product has likely changed (see the pricing-drift pattern documented across other entries). Do not present as describing the current product without that caveat.",
+        "One dated reviewer's experience among 335 — do not generalize into 'users say Frase is buggy'."
+      ]
+    },
+    {
+      "id": "EV-frase-review-06",
+      "claim": "A separate dated Capterra review (Denise M., Director, E-Learning, 5 stars, 2025-07-29), inside the same aggregate rating as EV-frase-review-05, praises Frase's ease of adoption for non-technical users; a third dated Capterra review (Abiliya D., Global Talent Partner, Health & Wellness, 4 stars, 2022-12-19) praises the research/comparison workflow but separately flags pricing as a concern for smaller businesses.",
+      "source_url": "https://www.capterra.com/p/197955/Frase/reviews/",
+      "source_date": "2025-07-29",
+      "quote": "We were able to use most of the features almost immediately.",
+      "platform": "Capterra (review-platform; individual review dated 2025-07-29, visible as of capture 2026-07-20)",
+      "target_slug": "/tools/frase",
+      "collected_at": "2026-07-20",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "frase-review-2026-07-20",
+      "screening": "included",
+      "label": "community-report",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Frase",
+        "aspect": "ease-of-adoption positive (recent, 2025) alongside an older pricing-for-small-business caveat (2022, folded into the same entry)",
+        "stance": "mixed",
+        "plan_tier_if_stated": null,
+        "item_date": "2025-07-29"
+      },
+      "honesty_notes": [
+        "The Abiliya D. quote ('Searching for keywords and comparing content across the top sites ranking is made effortless') is a SECOND, older (2022-12-19) review folded into this entry's claim text for brevity; if the writer needs it as its own standalone citation with its own quote field, split it into a new entry rather than stretching this one's ≤60-word quote limit.",
+        "Two dated reviewer opinions among 335 — do not generalize into 'users find Frase easy to adopt' as a rate or majority claim."
+      ]
+    },
+    {
+      "id": "EV-frase-review-07",
+      "claim": "Of the 166 total reviews on Frase's AppSumo listing (aggregate 4.5/5 as of capture 2026-07-20), 3 reviews dated across a 3-month window in 2026 (2026-02-05, 2026-02-23, 2026-04-29) independently describe lifetime-deal (LTD) accounts purchased via AppSumo losing paid/unlimited access — variously downgraded to a free/trial plan without clear notice — coinciding with a 2026 platform relaunch the reviewers refer to as 'V2.'",
+      "source_url": "https://appsumo.com/products/frase-black-friday-2020/reviews/",
+      "source_date": "2026-02-23",
+      "quote": "The company closed their user Facebook group before announcing the new version... something very real is being taken away.",
+      "platform": "AppSumo (review-platform, lifetime-deal marketplace; aggregate 4.5/5, n=166 as of capture 2026-07-20; quoted review dated 2026-02-23, corroborated by 2 further dated reviews on the same page, 2026-02-05 and 2026-04-29)",
+      "target_slug": "/tools/frase",
+      "collected_at": "2026-07-20",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "frase-review-2026-07-20",
+      "screening": "included",
+      "label": "community-report",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Frase",
+        "aspect": "defined-sample (3 of 166) dated LTD-account/migration complaint cluster tied to a 2026 platform relaunch",
+        "stance": "negative",
+        "plan_tier_if_stated": "AppSumo lifetime deal (original purchase 2020)",
+        "item_date": "2026-02-23"
+      },
+      "honesty_notes": [
+        "DENOMINATOR-ANCHORED framing only: 'of the 166 reviews on Frase's AppSumo page (captured 2026-07-20), 3 dated Feb-Apr 2026 describe LTD accounts losing access during a V2 migration (full reviews linked)' — never round this into a percentage or a population claim about all AppSumo/LTD buyers.",
+        "AppSumo buyers are a specific, price-sensitive early-adopter segment (lifetime-deal purchasers from 2020) — do not generalize this complaint to Frase's current subscription customer base, which is a different purchase channel entirely.",
+        "Independently corroborates (without being the same live-fetched source) a WebSearch-only summary describing a Trustpilot 1.4/5 rating driven by 'billing complaints... price increases with minimal customer notification' — that Trustpilot summary itself is NOT registered (search-snippet only, Trustpilot 403'd on direct fetch), but this AppSumo entry stands on its own as directly-fetched, dated evidence of a related complaint pattern."
+      ]
+    },
+    {
+      "id": "EV-frase-review-08",
+      "claim": "In a first-person review published 2026-06-25 (kripeshadwani.com, author Kripesh Adwani, self-reported 6+ months of use and 100+ documents created), the author calls Frase's research-backed question generation a standout feature and its AI-generated content briefs fast (under 2 minutes), but says the AI Assistant/writer 'is not the best' and that keyword-suggestion accuracy lags a rival tool (MarketMuse); the review also notes Frase has no mobile or desktop app (web-only).",
+      "source_url": "https://kripeshadwani.com/frase-review/",
+      "source_date": "2026-06-25",
+      "quote": "Research-backed questions generated by Frase was one of the standout features for me... AI Assistant is not the best. It just sends the link of your articles.",
+      "platform": "kripeshadwani.com (first-person, named reviewer, 6+ months/100+ documents; published 2026-06-25)",
+      "target_slug": "/tools/frase",
+      "collected_at": "2026-07-20",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "frase-review-2026-07-20",
+      "screening": "included",
+      "label": "community-report",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Frase",
+        "aspect": "strong praise for question-research/brief speed vs a weak AI writer/assistant and no mobile app",
+        "stance": "mixed",
+        "plan_tier_if_stated": "Basic $45/mo (30 documents), Growth $120/mo (unlimited) — as priced at review time, mid-2026",
+        "item_date": "2026-06-25"
+      },
+      "honesty_notes": [
+        "Single named-author account, not a sample — report as one dated first-person account, never generalized.",
+        "Corroborates the split pattern seen across NeuronWriter and Surfer's own community reports (scoring/research valued more than AI generation, e.g. EV-neuronwriter-review-09, EV-surfer-seo-review-06) — the same fact pattern recurs for Frase, in Frase's own words, not copied phrasing.",
+        "This source's 'Basic $45/mo, Growth $120/mo' tier names/prices do not match this run's live-captured vendor pricing (Starter $49/mo, Professional $129/mo) — a THIRD distinct naming/pricing scheme found this run for the same product; do not present as current.",
+        "The page also carries an unattributed COMMENT (not the author's own review) alleging Frase 'banned users after policy changes' with 'zero' support — a single unverified blog comment, not independently confirmed this run; NOT folded into this entry's coded claim, mentioned here only as a flag not to over-cite."
+      ]
+    },
+    {
+      "id": "EV-frase-review-09",
+      "claim": "In a disclosed hands-on test (originality.ai, author Graeme Whiles, published 2025-08-20), the reviewer generated sample AI content with Frase and ran it through Originality.ai's own AI-detector; the resulting content is described as solid but 'a little uninspiring,' the AI Article Wizard is gated behind the Pro plan, and the generated content was flagged as AI-written by Originality.ai's Standard 2.0 detector.",
+      "source_url": "https://originality.ai/blog/frase-io-review",
+      "source_date": "2025-08-20",
+      "quote": "The content is very solid, if a little uninspiring, which is common for AI content generation, but it is a great starting point for any article.",
+      "platform": "originality.ai/blog (disclosed hands-on test; published 2025-08-20, author Graeme Whiles)",
+      "target_slug": "/tools/frase",
+      "collected_at": "2026-07-20",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "frase-review-2026-07-20",
+      "screening": "included",
+      "label": "independent-test",
+      "coders": ["A", "B"],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "Frase",
+        "aspect": "AI-writer output quality (competent but generic) + detectability by an AI-content detector + a Pro-plan feature gate",
+        "stance": "mixed",
+        "plan_tier_if_stated": "free trial $0 to Team Plan $115/month, as priced Aug 2025",
+        "item_date": "2025-08-20"
+      },
+      "honesty_notes": [
+        "FLAGGED for resolver: mild COI — Originality.ai sells an AI-content-DETECTION product; the finding that Frase's output is 'detectable' by their own detector is also a demonstration/advertisement of that detector's use case. Not a rival SEO tool, but not fully disinterested either.",
+        "'Team Plan $115/month' is yet another distinct historical price point (Aug 2025) that does not match this run's live capture — folds into the same pricing-drift caution as the other entries; do not present as current.",
+        "AI-detector 'flags' on generated content are themselves contested technology (false-positive rates vary); report as this reviewer's dated result on this one test, not a general claim that 'Frase content gets flagged as AI.'"
+      ]
+    },
+    {
+      "id": "EV-frase-review-10",
+      "claim": "In a disclosed one-month test (behindrankings.com, author Victoria Kurichenko, original review 2021, updated 2026-01-11), the author published an AI-generated article drafted with Frase's Basic plan ($45/month at the time) alongside a manually-written article on a similar topic and tracked Search Console performance for a month; the Frase-drafted article ranked for only 5 keywords at an average position of 23, versus 17 keywords at the same average position (23) and 30 clicks for the manually-written piece, and the review separately flags extensive editing needs and a disappointing support experience.",
+      "source_url": "https://behindrankings.com/frase-io-review/",
+      "source_date": "2026-01-11",
+      "quote": "Some inconsistencies occurred... Some sentences with bizarre wordings (rarely) occurred... Unfinished paragraphs that require additional writing... No links to external resources were included... missed a human part.",
+      "platform": "behindrankings.com (disclosed one-month published-article ranking test; original 2021, updated 2026-01-11, author Victoria Kurichenko)",
+      "target_slug": "/tools/frase",
+      "collected_at": "2026-07-20",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "frase-review-2026-07-20",
+      "screening": "included",
+      "label": "independent-test",
+      "coders": ["A", "B"],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "Frase",
+        "aspect": "head-to-head one-month ranking comparison (AI-drafted vs manually-written article on a similar topic) + editing burden + support experience",
+        "stance": "negative",
+        "plan_tier_if_stated": "Basic $45/month (as priced when tested)",
+        "item_date": "2026-01-11"
+      },
+      "honesty_notes": [
+        "FLAGGED for resolver: single-article, single-month, SIMILAR (not identical) topic comparison — a real but small and imperfectly controlled test; do not present the 5-vs-17-keyword gap as a generalizable AI-vs-human ranking rate. The underlying test itself is originally from 2021 with a stated update pass in 2026; treat the ranking DATA as older and the narrative framing as refreshed, not the test as freshly re-run this run.",
+        "'Basic $45/month' again does not match this run's live-captured Starter $49/mo pricing — consistent with the pricing-drift pattern; this source predates several of the other price points found this run.",
+        "This is the strongest 'AI draft vs human draft, real published outcome' data point found in this sweep for Frase — flag as a key candidate for the article's evidence box, paired honestly with its small-sample caveat."
+      ]
+    },
+    {
+      "id": "EV-frase-review-11",
+      "claim": "In a disclosed benchmark (tested.media, published 2026-04-07, evaluating tools 'inside live client accounts over the last 12 months' on 2026 pricing/accuracy/speed/workflow-integration/LLM-citation-tracking — the same benchmark already cited for NeuronWriter in a different quote), Frase's brief generator is called the fastest in the category at 30-60 seconds per topic, and Frase is named the 'best value pick in the category' at $45/month for its Basic plan, with its content-optimization scoring described as 'solid but not as accurate as Clearscope.'",
+      "source_url": "https://tested.media/ai-seo-tools/",
+      "source_date": "2026-04-07",
+      "quote": "The brief generator is the fastest in the category at 30 to 60 seconds per topic.",
+      "platform": "tested.media (disclosed benchmark, live client accounts over 12 months; published 2026-04-07)",
+      "target_slug": "/tools/frase",
+      "collected_at": "2026-07-20",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "frase-review-2026-07-20",
+      "screening": "included",
+      "label": "independent-test",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Frase",
+        "aspect": "brief-generation speed praised as category-fastest; scoring accuracy positioned behind Clearscope; positioned as the category's best-value pick",
+        "stance": "mixed",
+        "plan_tier_if_stated": "Basic $45/month (as priced at publish time)",
+        "item_date": "2026-04-07"
+      },
+      "honesty_notes": [
+        "Same underlying source and author context as EV-neuronwriter-review-08, but a DIFFERENT, Frase-specific quote extracted this run (that entry's quote is about NeuronWriter's budget positioning, not this one).",
+        "'Basic $45/month' again does not match this run's live-captured Starter $49/mo/Professional $129/mo naming — consistent with the pricing-drift pattern flagged across this shard; the article is dated April 2026, roughly 3-4 months before this run's live capture, plausibly explaining a genuine mid-2026 tier rename/reprice by the vendor.",
+        "'Best value pick in the category' is this outlet's own editorial framing, not an objective ranking — attribute it explicitly to tested.media, never adopt as Mimo's own verdict language."
+      ]
+    },
+    {
+      "id": "EV-frase-review-12",
+      "claim": "Frase's own blog (published 2026-04-02) argues that traditional content-optimization scoring is losing relevance as AI search grows, references (without linking) an r/seogrowth Reddit thread in which commenters were reportedly critical of content-optimization tools including Frase, Surfer and Scalenut, and uses that framing to introduce Frase's newer AI-visibility-tracking features — a vendor-authored, self-interested repositioning of its own product category.",
+      "source_url": "https://www.frase.io/blog/content-optimization-is-dead",
+      "source_date": "2026-04-02",
+      "quote": "Are you guys still using content optimization tools like Frase, Surfer, Scalenut?",
+      "platform": "frase.io/blog (vendor blog post — self-interested; published 2026-04-02, captured 2026-07-20)",
+      "target_slug": "/tools/frase",
+      "collected_at": "2026-07-20",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "frase-review-2026-07-20",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Frase",
+        "aspect": "vendor's own acknowledgment of category-wide skepticism + pivot to AI-visibility features",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-04-02"
+      },
+      "honesty_notes": [
+        "The quoted Reddit question and the paraphrased 'top answers' (tools 'make content less readable', 'don't account for LLMs', 'lack a LLM/Rankbrain/Gemini friendliness metric') are Frase's OWN characterization of an unlinked, unverifiable third-party thread — cite only as 'Frase's own blog post states that a Reddit thread said X,' never as independently-verified Reddit sentiment. This is the one place in this shard where a vendor source is used specifically to document that a category-wide criticism EXISTS (per the vendor's own admission), not to adopt the criticism's content as fact.",
+        "Directly relevant to the page's positioning of Frase as 'the research and briefs specialist, not a pure writing generator' — the vendor's own pivot toward AI-visibility tracking is a dated, self-reported strategic shift a reader should know about, labeled self-interested throughout."
+      ]
+    }
+  ]
+}

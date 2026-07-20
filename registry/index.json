@@ -1,13 +1,18 @@
 {
   "protocol": "MEP-1.0",
   "site": "mimoaitools.com",
-  "updated": "2026-07-18",
+  "updated": "2026-07-20",
   "note": "Per-page evidence shards. Each EV id is cited inline in the matching Mimo article. See README.",
   "shards": [
     {
       "file": "registry-evidence-ai-writing-tools.json",
       "page": "/evidence-ai-writing-tools",
       "entries": 15
+    },
+    {
+      "file": "registry-frase-review.json",
+      "page": "/frase-review",
+      "entries": 12
     },
     {
       "file": "registry-jasper-alternatives.json",
@@ -55,5 +60,5 @@
       "entries": 6
     }
   ],
-  "total_entries": 75
+  "total_entries": 87
 }
