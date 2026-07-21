@@ -1,0 +1,675 @@
+{
+  "_meta": {
+    "flow_id": "best-ai-voice-generators-2026-07-21",
+    "protocol_version": "MEP-1.0",
+    "target_slug": "/best/ai-voice-generators",
+    "target_keyword": "best ai voice generator",
+    "run_date": "2026-07-21",
+    "collector": "evidence-curator",
+    "page_class": "best/hub (ranked listicle; NEW cluster — AI voice/text-to-speech generation, zone-outside the current AI-writing/SEO wedge but within the aitoolspolice-style broad revenue model; not yet in topical-map.json cornerstones, slug provisional). Candidates swept: ElevenLabs, Murf, PlayHT, Speechify, WellSaid Labs, LOVO, Resemble AI, plus a free/no-affiliate baseline (TTSMaker). Voice GENERATION only — no AI humanizer/detector/paraphraser border was approached (owned-products border N/A to this category).",
+    "sweep_strategy": "FRESH multi-tool sweep (no prior Mimo shard mentions any of these 7 tools — confirmed by grep before starting). Ran 7 parallel tool-specific vendor-pricing WebSearch queries, then direct WebFetch verification of each vendor pricing page (successful for ElevenLabs, WellSaid, Resemble, Speechify [partial], Murf [API tier only]; PlayHT domain does not resolve at all in this environment — DNS failure across 3 distinct URL attempts, later explained by an independent finding that PlayHT was acquired by Meta and permanently shut down Dec 31 2025; LOVO's marketing pricing page is JS-rendered and returned no extractable pricing content across 2 attempts, and its help-center pricing article 403'd twice). Ran 4 broad third-party-test/methodology queries (naturalness/MOS benchmarks, blind comparisons, academic TTS/deepfake-detection papers) — found one genuine disclosed-methodology hands-on comparison (visme.co, but the publisher ranks its own product #1 in the same list — registered with a heavy COI flag) and one genuine disclosed-methodology blind test (fish.audio) that turned out to be EXCLUDED as off-topic (self-published by a rival TTS vendor, and it does not test any of the 7 candidate tools except ElevenLabs against the publisher's own model, not against our other candidates). A widely-repeated '89.6% naturalness' ElevenLabs stat was traced across 10 search results with NO identifiable original disclosed-methodology source — treated as an uncredited copied number and NOT registered (flagged in evidence_gaps). Ran Reddit-targeted queries per tool (6 queries) plus 2 direct reddit.com/old.reddit.com WebFetch attempts — REDDIT WAS STRUCTURALLY UNREACHABLE THIS RUN, same inherited environment block documented in every prior Mimo shard since 2026-07-10. Quora (2 direct WebFetch attempts), G2 (3 attempts), and Trustpilot (2 attempts) all returned HTTP 403. Capterra, by contrast, fetched successfully for all 6 live tools and produced 10 dated, named individual reviews across ElevenLabs/Murf/Speechify/WellSaid/LOVO (Resemble AI's Capterra listing shows 0 reviews — logged as an evidence gap, not fabricated). archive.org/web.archive.org was tried as a fallback for the two JS-blocked vendor pages (Murf Studio pricing, LOVO pricing) — the availability-check API worked but the actual web.archive.org page fetch is tool-blocked in this environment, so no historical snapshot content could be retrieved either.",
+    "flow_counter": {
+      "identified": 247,
+      "screened": 247,
+      "excluded": 226,
+      "excluded_by_reason": {
+        "no-methodology-affiliate": 134,
+        "duplicate": 35,
+        "off-topic": 34,
+        "unverifiable-this-run": 23
+      },
+      "included_sources": 15,
+      "registry_entries_new": 21,
+      "counter_note": "identified = 247 distinct candidate URLs surfaced across 32 documented WebSearch queries (7 vendor-pricing, 4 pricing-page-direct, 4 methodology/benchmark, 6 Reddit-targeted, 3 Quora/dev-experience, 5 Capterra-targeted, 3 misc [PlayHT-shutdown, naturalness-stat, free-baseline]) + ~15 direct verification/DIRECT-navigation WebFetch attempts (2 of which surfaced genuinely new URLs not returned by any search: artificialanalysis.ai/text-to-speech and the pattern-derived Capterra /reviews/ subpages for LOVO and Resemble AI). 15 DISTINCT sources were included; 3 of them (the ElevenLabs, Speechify, and WellSaid Capterra review pages) each carry 2 independently dated individual reviews registered as separate entries, and visme.co/blog/best-ai-voice-generator/ (one COI-flagged hands-on test) supplies 3 separate per-tool entries (Murf, WellSaid, LOVO) — producing 21 registry entries from 15 included sources. Every excluded URL falls under a recorded reason code; astroturf screening was applied to every low-trust-forum/listicle candidate and found zero matching patterns this run (see astroturf_note)."
+      },
+    "coder_agreement_rate": "CURATOR-PROVISIONAL single-pass coding across all 21 included entries (dual-independent coding + resolver pass is orchestrated above this run). Stance calls: 6 n/a (vendor-primary pricing/business-model facts, no sentiment to code), 9 mixed or split-signal (paired positive/negative Capterra reviews + the 3 COI-flagged Visme entries), 4 negative, 2 positive. FLAGGED FOR ORCHESTRATED DUAL-CODING / RESOLVER ATTENTION: (1) all 3 EV-best-ai-voice-generators visme.co entries (06, 13, 16) — a coder could reasonably discount them entirely given the publisher ranks its own product #1 in the same article, vs. treating the specific per-tool critical details (Murf 'a bit robotic', WellSaid 'not the cheapest') as still informative despite the COI; (2) EV-best-ai-voice-generators-04 (Murf) — coded against the API pay-as-you-go tier only because the Studio subscription tier could not be vendor-verified this run; a resolver should confirm this doesn't overstate Murf's pricing transparency relative to tools with fully-verified tiers.",
+    "query_census": [
+      { "q": "WebSearch: ElevenLabs pricing 2026 plans character limit", "candidates": 10, "note": "flexprice.io, elevenlabs.io/pricing/api, photonpay.com, elevenlabs.io/pricing, top50aitools.com, vendr.com, cekura.ai, bigvu.tv, shelby-ai.com, aistackpicks.com. elevenlabs.io/pricing INCLUDED (direct-fetched → EV-01)." },
+      { "q": "WebSearch: Murf AI pricing 2026 plans minutes limit", "candidates": 10, "note": "fish.audio/vs/pricing, murf.ai/pricing, checkthat.ai, help.murf.ai/murf-api-plans-and-limits, autogpt.net, thespeakr.com, g2.com/products/murf-ai/pricing, smallest.ai (x2), youraisoft.com. help.murf.ai INCLUDED (direct-fetched → EV-04)." },
+      { "q": "WebSearch: PlayHT pricing 2026 plans word limit", "candidates": 8, "note": "alternatives.co, trustradius.com, voice.ai, qcall.ai/play-ht-review, lawrencebros.com, softwarefinder.com, softwaresuggest.com, capterra.com/p/253019/Playht. None fetchable — PlayHT's own domain never resolved this run (see below)." },
+      { "q": "WebSearch: Speechify pricing 2026 plans", "candidates": 7, "note": "fish.audio/vs/pricing (dup domain), top50aitools.com (dup), aisotools.com, costbench.com, checkthat.ai (dup), texttolab.com, fluxnote.io." },
+      { "q": "WebSearch: WellSaid Labs pricing 2026 plans", "candidates": 10, "note": "vendr.com (dup), aisotools.com (dup), costbench.com (dup), spendhound.com, wellsaid.io/ai-voice-pricing, khaby.ai, propicked.com, qcall.ai/wellsaid-labs-review, g2.com/products/wellsaid-studio/pricing, codaone.ai. wellsaid.io/ai-voice-pricing INCLUDED (direct-fetched → EV-10)." },
+      { "q": "WebSearch: LOVO AI pricing 2026 plans", "candidates": 9, "note": "coldiq.com, cybernews.com, g2.com/products/lovo/pricing, capterra.com/p/211776/LOVO, qcall.ai/lovo-ai-review, youraisoft.com/lovo-ai-review, thephilcollective.com, aisotools.com (dup), anvevoice.app." },
+      { "q": "WebSearch: Resemble AI pricing 2026 plans", "candidates": 8, "note": "spotsaas.com, softwaresuggest.com (dup), softwareadvice.com, voiceflow.com/blog/resemble-ai, getapp.com, softwarefinder.com (dup), checkthat.ai (dup), capterra.com/p/237568/Resemble-AI/alternatives. voiceflow.com/blog/resemble-ai INCLUDED (direct-fetched → EV-18)." },
+      { "q": "WebSearch: play.ht pricing page site:play.ht", "candidates": 9, "note": "play.ht/studio/pricing, play.ht/pricing/, play.ht/terms/, play.ht/non-profits-and-educators, play.ht/pricing/?via=play1034 (dup domain), play.ht/, play.ht/blog/cartesia-ai-pricing, play.ht/blog/resemble-ai-pricing, play.ht/products. ALL play.ht/* URLs returned 'getaddrinfo ENOTFOUND' on direct WebFetch — domain-wide DNS failure in this environment, 3 distinct URL variants attempted (play.ht/pricing/, www.play.ht/pricing/, play.ht/studio/pricing)." },
+      { "q": "WebSearch: speechify.com pricing page official", "candidates": 8, "note": "spotsaas.com (dup), speechify.com/pricing-api, fish.audio (dup), saasworthy.com, top50aitools.com (dup), speechify.com/pricing/, checkthat.ai (dup), speechify.com/pricing-studio. speechify.com/pricing/ INCLUDED (direct-fetched → EV-07)." },
+      { "q": "WebSearch: lovo.ai pricing page official genny", "candidates": 10, "note": "cybernews.com (dup), youraisoft.com (dup), help.lovo.ai/hc/en-us/sections/21880935798425, lovo.ai/pricing, rankmarket.org, help.lovo.ai/hc/en-us, help.lovo.ai/hc/en-us/articles/22141257915417, genny.lovo.ai/signin, speechify.com/blog/lovo-ai-pricing-2023, groupbuy.tools. lovo.ai/pricing fetched twice (both times: no extractable pricing content, JS-rendered); both help.lovo.ai article/section URLs returned HTTP 403." },
+      { "q": "WebSearch: resemble.ai pricing page official flex", "candidates": 10, "note": "resemble.ai/pricing, checkthat.ai (dup), voiceflow.com (dup), apis.io, softwarefinder.com (dup), checkthat.ai/brands/resemble-ai (new sub-page), softwareadvice.com (dup), topai.tools, getapp.com (dup), spotsaas.com (dup). resemble.ai/pricing INCLUDED (direct-fetched → EV-17)." },
+      { "q": "DIRECT: WebFetch https://murf.ai/pricing (and /pricing/ variant)", "candidates": 0, "note": "3 attempts total across both URL variants — page returns only the word 'Murf' with no pricing table content (client-rendered React app not captured by this tool). Logged unverifiable-this-run; only the API pay-as-you-go tier (help.murf.ai) could be verified." },
+      { "q": "DIRECT: WebFetch https://www.play.ht/pricing/ and https://play.ht/studio/pricing", "candidates": 0, "note": "Both errored 'getaddrinfo ENOTFOUND' — confirms domain-wide DNS block, not a page-specific issue." },
+      { "q": "DIRECT: WebFetch https://lovo.ai/pricing/ and https://help.lovo.ai/... (2 article/section URLs)", "candidates": 0, "note": "lovo.ai/pricing/ returned no pricing content (JS-rendered); both help.lovo.ai URLs returned HTTP 403." },
+      { "q": "DIRECT: WebFetch https://www.g2.com/products/murf-ai/pricing, /play-ht/pricing, /lovo/pricing", "candidates": 0, "note": "All 3 returned HTTP 403 — consistent with every prior Mimo shard's G2 block." },
+      { "q": "DIRECT: WebFetch archive.org wayback-availability API for murf.ai/pricing, play.ht/pricing, lovo.ai/pricing", "candidates": 0, "note": "Availability API responded (found a June 2025 PlayHT snapshot and an April 2026 LOVO snapshot, no Murf snapshot); but the actual web.archive.org page fetch is tool-blocked ('Claude Code is unable to fetch from web.archive.org') — no archived content retrievable this run." },
+      { "q": "WebSearch: ElevenLabs vs Murf vs PlayHT voice quality test comparison blind test 2026", "candidates": 10, "note": "jankoch.co/en/blog/elevenlabs-murf-playht-comparison-2026, genesysgrowth.com, aiunveiled.io, aitoolkitpro.blog, techno-pulse.com, theplanettools.ai/compare/elevenlabs-vs-murf, youtube.com/watch?v=8sMf3ii-j8A, masteraiwithme.com, aitoolbolt.com, notevibes.com. jankoch.co fetched directly — EXCLUDED (author claims 'tested all three extensively' but discloses no sample count or test inputs; no-methodology-affiliate)." },
+      { "q": "WebSearch: best AI voice generator 2026 tested comparison methodology naturalness MOS score", "candidates": 10, "note": "vocalis-ai.org, aitoolranked.com, notevibes.com (dup), visme.co/blog/best-ai-voice-generator, soloa.ai, flixly.ai, gradually.ai, marktechpost.com/2026/05/30/..., wellsaid.io/resources/blog/best-ai-voice-generator, aimlapi.com. visme.co INCLUDED (direct-fetched, disclosed per-tool hands-on methodology → EV-06, EV-13, EV-16, heavy COI flag). marktechpost.com fetched — EXCLUDED off-topic (covers Inworld/Gemini/Cartesia/MiniMax/Hume/OpenAI/Deepgram/Fish/Kokoro; none of our 7 candidates except a passing, data-free ElevenLabs mention)." },
+      { "q": "WebSearch: text to speech benchmark study naturalness MOS academic paper 2025 2026", "candidates": 9, "note": "arxiv.org/html/2510.00743v1 (MOS-RMBench), marktechpost.com (dup), arxiv.org/pdf/2407.12707 (TTSDS), arxiv.org/pdf/2507.10859 (MultiVox), mdpi.com/2073-431X/14/10/406, arxiv.org/pdf/2411.12719 (MUSHRA rethink), preprints.org, arxiv.org/pdf/2603.01467, arxiv.org/pdf/2601.18438 (UrgentMOS). All EXCLUDED off-topic — general TTS-evaluation methodology papers that do not name or test any of the 7 candidate commercial tools." },
+      { "q": "WebSearch: AI voice cloning deepfake detection study accuracy paper", "candidates": 8, "note": "arxiv.org/abs/2308.12734, biomedeng.jmir.org/2024/1/e56245, dl.acm.org/doi/10.1145/3745812.3745895, ijert.org, link.springer.com/10.1007/s00034-025-03464-4, arxiv.org/pdf/2607.03418, arxiv.org/pdf/2602.20061 (404 on direct fetch), ncbi.nlm.nih.gov/pmc/PMC11041410. All EXCLUDED off-topic (deepfake-DETECTION accuracy studies, not evaluations of our 7 voice-GENERATION tools) or unverifiable-this-run (the arxiv 2602.20061 PDF 404'd)." },
+      { "q": "DIRECT: WebFetch https://artificialanalysis.ai/text-to-speech", "candidates": 1, "note": "New URL, not from a search result — followed up on marktechpost's mention of the 'Artificial Analysis Speech Arena'. Confirmed ElevenLabs and Murf appear on an 87-model ELO blind-A/B leaderboard; Speechify referenced in quality-for-price analysis; PlayHT/WellSaid/LOVO/Resemble not present. EXCLUDED off-topic for registration purposes — the interactive chart data (actual Elo numbers) is not rendered as extractable text by this tool, only narrative summary was retrievable, insufficient for a verbatim-quote registry entry." },
+      { "q": "WebSearch: \"Speech Arena\" leaderboard ElevenLabs PlayHT Murf ELO ranking", "candidates": 10, "note": "speecharena.org/leaderboard, siliconflow.com, huggingface.co/spaces/ArtificialAnalysis/Speech-Arena-Leaderboard, artificialanalysis.ai/text-to-speech/leaderboard (dup), huggingface.co/spaces/TTS-AGI/TTS-Arena, artificialanalysis.ai/text-to-speech/model-families/elevenlabs, offlinetts.com, theairankings.com, awesomeagents.ai, gradium.ai. artificialanalysis.ai/text-to-speech/model-families/elevenlabs fetched directly — EXCLUDED unverifiable-this-run (page's numeric Elo/speed/price data is chart-rendered, not extractable as text; confirmed this independently, a second failed extraction attempt). CRITICAL SIDE-FINDING from this query: search summary reported 'PlayHT shut down permanently after Meta's acquihire of the PlayAI team in December 2025' — triggered the dedicated PlayHT-shutdown query below." },
+      { "q": "WebSearch: PlayHT shut down Meta acquihire PlayAI December 2025", "candidates": 7, "note": "fliki.ai/blog/playht-alternative, notevibes.com/alternative/play-ht, theplanettools.ai/tools/playht, infrabase.ai/audio/playht, sonicker.com/compare/playht-alternative, gaga.art/blog/playht, finance.yahoo.com/news/meta-strengthens-portfolio-playai-acquisition. infrabase.ai/audio/playht AND theplanettools.ai/tools/playht both INCLUDED (direct-fetched, independently corroborating dated shutdown timeline → EV-19, EV-20)." },
+      { "q": "WebSearch: ElevenLabs Eleven v3 89.6% naturalness independent testing score", "candidates": 10, "note": "fahimai.com, computertech.co, elevenlabs.io/v3, solounicorn.club, wavespeed.ai, cartesia.ai/vs/elevenlabs-vs-speechify, cartesia.ai/vs/elevenlabs-vs-smallest, oguzhankocakli.medium.com, fal.ai, fish.audio/blog/blind-tts-provider-comparison-2026. The '89.6%' figure recurs across multiple sites with NO identifiable original disclosed-methodology source — NOT registered (see evidence_gaps). fish.audio blog fetched directly — genuine disclosed methodology (5,098 preference pairs, Bradley-Terry model, 95% CI) but EXCLUDED off-topic: self-published by a rival TTS vendor (Fish Audio) that ranks itself #1, and it tests ElevenLabs against Fish's OWN models only, not against any other candidate in our 7-tool set." },
+      { "q": "WebSearch: best completely free ai voice generator no affiliate no signup 2026", "candidates": 8, "note": "noiz.ai, gradually.ai (dup), fliki.ai/blog/best-free-ai-voice-generator (dup domain), viralmint.net, notegpt.io, finevoice.ai, aivoicegenerator.com, template.net. Established TTSMaker as a recurring no-signup free-baseline candidate mentioned across multiple independent listicles." },
+      { "q": "WebSearch: TTSMaker free text to speech no signup character limit", "candidates": 8, "note": "theresanaiforthat.com, scribd.com, ttsmaker.com/, freetts.ai/blog/best-free-text-to-speech-tools-2026, luvvoice.com, voicecreator.pro, toolmage.com, readaloud.net. ttsmaker.com and ttsmaker.com/ both direct-fetched — HTTP 403 both times (unverifiable-this-run, vendor's own page unreachable). freetts.ai INCLUDED (direct-fetched, third-party confirmation with exact quote and date → EV-21)." },
+      { "q": "WebSearch: \"best ai voice generator\" 2026 listicle ranking top tools", "candidates": 10, "note": "curiousrefuge.com, wellsaid.io/resources/blog/best-ai-voice-generator (dup), gradually.ai (dup), thesoftwarescout.com, visme.co (dup — already included), masteraiwithme.com (dup), theairankings.com (dup), rasa.com/blog/best-ai-voice-generator, popularaitools.ai, jaiportal.com." },
+      { "q": "WebSearch: site:reddit.com ElevenLabs review worth it credits", "candidates": 8, "note": "devopscube.com/elevenlabs-review, feisworld.com, qcall.ai/elevenlabs-review, trustpilot.com/review/elevenlabs.io, rozekwrites.com, aiworthit.com, jess-writes-about-tech.medium.com, g2.com/products/elevenlabsio/reviews. ZERO reddit.com URLs despite the site: operator. devopscube.com fetched directly (genuine first-person account) but contained NO verifiable credit-multiplier claim (the search-summary's alleged '2.8x effective cost' figure could not be located in the actual page text) — not registered, confirms the value of re-fetch-before-registering." },
+      { "q": "WebSearch: site:reddit.com Murf AI review robotic voice", "candidates": 0, "note": "No links found at all." },
+      { "q": "WebSearch: site:reddit.com Speechify review worth it", "candidates": 7, "note": "aiedusimplified.substack.com, newegg.com, ie.trustpilot.com/review/speechify.com, wondertools.substack.com, fi.trustpilot.com (dup domain), g2.com/products/speechify-api/reviews, g2.com/sellers/speechify. ZERO reddit.com URLs. ie.trustpilot.com/review/speechify.com direct-fetched — HTTP 403." },
+      { "q": "WebSearch: site:reddit.com WellSaid Labs review", "candidates": 9, "note": "cbinsights.com, g2.com/sellers/wellsaid-labs-inc, businesswire.com (x5 press-release URLs), g2.com/compare/elevenlabsio-vs-wellsaid-studio, cbinsights.com/company/wellsaid-labs/financials. ZERO reddit.com URLs." },
+      { "q": "WebSearch: site:reddit.com LOVO AI genny review", "candidates": 6, "note": "g2.com/products/lovo/reviews?page=9, g2.com/products/lovo/reviews, g2.com/sellers/lovo, saashub.com, g2.com/products/lovo/features, g2.com/products/lovo/pricing (dup). ZERO reddit.com URLs." },
+      { "q": "WebSearch: site:reddit.com Resemble AI voice cloning review", "candidates": 0, "note": "No links found at all." },
+      { "q": "WebSearch: site:reddit.com best free ai voice generator no watermark", "candidates": 9, "note": "dev.to, stackshare.io (x3 variants), saashub.com (dup), goodreads.com, slideshare.net. ZERO reddit.com URLs — search summary paraphrased unlinked options (Voicemaker, Clear Speak) not separately verified." },
+      { "q": "DIRECT: WebFetch https://www.reddit.com/search/?q=elevenlabs%20review", "candidates": 0, "note": "Blocked — 'Claude Code is unable to fetch from www.reddit.com'." },
+      { "q": "DIRECT: WebFetch https://old.reddit.com/search.json?q=elevenlabs+credits", "candidates": 0, "note": "Blocked — 'Claude Code is unable to fetch from old.reddit.com'." },
+      { "q": "WebSearch: site:quora.com Speechify worth it", "candidates": 10, "note": "quora.com/How-much-is-a-Speechify-subscription, quora.com/Is-using-text-to-speech-like-Speechify-good-for-auditory-learners, quora.com/What-is-the-best-Speechify-alternatives, quora.com/Is-there-any-free-alternative-to-Speechify, outtloud.quora.com, fiverrjobs1.quora.com, speechify.quora.com, b2bandb2c.quora.com, paulhawessaffiliateprograms.quora.com, quora.com/Is-there-any-free-alternative-to-Speechelo. quora.com/How-much-is-a-Speechify-subscription direct-fetched — HTTP 403." },
+      { "q": "WebSearch: Resemble AI review developer experience voice cloning API 2025 2026", "candidates": 10, "note": "voiceflow.com (dup, already included), g2.com/products/resemble-ai/reviews, toolsforhumans.ai, resemble.ai/resources/best-open-source-ai-voice-cloning-tools, finevoice.ai, softwareadvice.com (dup), toolindex.ai, resemble.ai/descript-resemble-ai-audio-editing-voice-generation, revoyant.com, resemble.ai/resources/voice-cloning-ai-software." },
+      { "q": "WebSearch: site:quora.com ElevenLabs voice cloning experience", "candidates": 10, "note": "quora.com/If-I-wanted-to-clone..., quora.com/Where-can-I-hire-a-voiceover-person..., quora.com/Which-is-better-for-AI-voice-generation-PlayHT-or-ElevenLabs, quora.com/Which-is-the-best-voice-to-monetize-in-Eleven-Labs, quora.com/How-does-the-business-model-of-ElevenLabs-work, insanedigitaltools.quora.com, poeai.quora.com, quora.com/Do-audio-generating-sites-like-elvenlab..., quora.com/Is-it-possible-to-clone-someones-voice..., quora.com/What-are-the-rules-for-using-a-copyright-characters-name-on-Elevenlabs. quora.com/Which-is-better-for-AI-voice-generation-PlayHT-or-ElevenLabs direct-fetched — HTTP 403." },
+      { "q": "WebSearch: capterra ElevenLabs reviews", "candidates": 5, "note": "capterra.com/p/10013392/ElevenLabs/, hackceleration.com/labs/review/elevenlabs, capterra.com/p/10013392/ElevenLabs/reviews/6048802, capterra.com/p/10013392/ElevenLabs/alternatives, capterra.com/p/10013392/ElevenLabs/reviews/. The reviews/ page INCLUDED (direct-fetched, 3 dated reviews found → EV-02, EV-03 registered; a 3rd Nishant T. June 2025 review found but not separately registered, folded into notes)." },
+      { "q": "WebSearch: capterra Murf reviews", "candidates": 10, "note": "capterra.com/p/216058/Murf-Studio/, capterra.com/p/216058/Murf-Studio/reviews/, topratedaisoftware.com, youraisoft.com (dup), tekpon.com, geniusfirms.com, aitoolbox360.com, wavel.ai, trustpilot.com/review/murf.ai, capterra.ae/alternatives/216058/murf-studio. The reviews/ page INCLUDED (direct-fetched → EV-05)." },
+      { "q": "WebSearch: capterra Speechify reviews", "candidates": 8, "note": "capterra.com/p/253466/Speechify/alternatives, capterra.com/p/10011537/Speechify-Voice-Cloning, capterra.com/p/10011544/Speechify-AI-Dubbing, capterra.com/p/253466/Speechify, capterra.com/p/10011535/Voice-Over-Studio, capterra.com/p/253466/Speechify/reviews/, capterra.com/p/264704/Speechactors, checkthat.ai/brands/speechify/reviews (dup). The reviews/ page INCLUDED (direct-fetched → EV-08, EV-09)." },
+      { "q": "WebSearch: capterra WellSaid reviews", "candidates": 10, "note": "capterra.com/p/238211/Wellsaid/alternatives, capterra.com/p/238211/Wellsaid/reviews/, capterra.com/p/198045/Enact/reviews?page=3 (off-topic — this is Synthesia's product ID, not WellSaid), slashdot.org, marketingv20.ai, capterra.com/text-to-speech-software/compare/216058-238211, trustradius.com, g2.com/products/wellsaid-studio/reviews (dup), toolradar.com, capterra.com/p/253466/Speechify/alternatives (dup). The reviews/ page INCLUDED (direct-fetched → EV-11, EV-12)." },
+      { "q": "WebSearch: capterra Resemble AI reviews", "candidates": 10, "note": "capterra.com/p/237568/Resemble-AI/, g2.com/products/resemble-ai/reviews (dup), resemble.ai/voice-over-website-review, capterra.com/p/211776/LOVO/alternatives (off-topic — different product), capterra.com/ (homepage, off-topic), originality.ai, aisosystem.com, browse.ai (x2). No Resemble-specific Capterra reviews page distinct from the /p/237568/Resemble-AI/ listing surfaced here." },
+      { "q": "DIRECT: WebFetch https://www.capterra.com/p/211776/LOVO/reviews/ (pattern-derived from the /p/211776/LOVO/ listing URL)", "candidates": 1, "note": "New URL, not directly returned by search. INCLUDED (direct-fetched, 2 dated reviews → EV-14, EV-15)." },
+      { "q": "DIRECT: WebFetch https://www.capterra.com/p/237568/Resemble-AI/reviews/ (pattern-derived)", "candidates": 1, "note": "New URL. Fetched successfully but returned '0 user reviews... no overall rating available... as of the June 3, 2026 update' — confirmed empty, logged as an evidence gap (not a registry entry; there is no content to cite)." },
+      { "q": "DIRECT: WebFetch https://qcall.ai/lovo-ai-review", "candidates": 0, "note": "Already-identified URL (queries 6, 10). Fetched fully: claims a 30-day first-person test, but its 'voice deletion' complaint quote is verbatim-identical to the Sarah E. Capterra review already captured independently (EV-14) — i.e. it appears to have lifted a Capterra review into a synthetic 'personal test' narrative rather than reporting an independent experience, and it heavily promotes rival tools with specific pricing but no disclosure. EXCLUDED no-methodology-affiliate." },
+      { "q": "DIRECT: WebFetch https://youraisoft.com/lovo-ai-review/", "candidates": 0, "note": "Already-identified URL (query 6). Fetched fully: explicitly NOT a hands-on test (compiled from Trustpilot/G2/Capterra/Reddit + vendor docs), carries an explicit affiliate disclosure, and contains unrendered '[AFFILIATE_LINK: lovo]' placeholder text — a template/content-mill artifact. EXCLUDED no-methodology-affiliate." },
+      { "q": "VERIFICATION FETCHES (not new discovery queries): elevenlabs.io/pricing, help.murf.ai/murf-api-plans-and-limits, wellsaid.io/ai-voice-pricing, speechify.com/pricing/, resemble.ai/pricing, voiceflow.com/blog/resemble-ai, infrabase.ai/audio/playht, theplanettools.ai/tools/playht, freetts.ai/blog/best-free-text-to-speech-tools-2026, visme.co/blog/best-ai-voice-generator/ (x2 passes for exact-quote extraction), devopscube.com/elevenlabs-review, capterra.com reviews pages (x6), marktechpost.com, jankoch.co, fish.audio/blog/blind-tts-provider-comparison-2026, artificialanalysis.ai/text-to-speech and /model-families/elevenlabs", "candidates": 0, "note": "Direct re-fetch/verification of already-identified URLs per protocol §4 — not counted again in 'identified'." }
+    ],
+    "reddit_access_note": "PRIMARY Reddit threads were NOT obtainable this run across 6 dedicated reddit-targeted WebSearch queries (one per tool + one free-generator query) + 2 direct reddit.com/old.reddit.com WebFetch attempts — ZERO real reddit.com URLs surfaced for any of the 7 tools. This matches the identical environment-level block documented in every prior Mimo shard since 2026-07-10. Quora was also unreachable: 2 direct-fetch attempts (of the two most promising Quora question URLs identified) both returned HTTP 403. CONSEQUENCE: community sentiment for this listicle routes entirely through Capterra (which fetched successfully for 6/7 tools) rather than Reddit/Quora — this is a genuine platform-coverage gap, not a cherry-picked choice, and should be disclosed in the page's limitations paragraph.",
+    "astroturf_note": "The astroturf screen (§3.1: templated look-alike threads, recurring fresh personas, all funneling to one vendor) was applied to every low-trust listicle/review-mill candidate surfaced this run (roughly 100+ 'X Review 2026' / 'X Pricing 2026' domain-pattern sites). No templated-persona-network pattern was detected. The closest adjacent finding was NOT astroturf in the canonical sense but a related integrity problem: qcall.ai/lovo-ai-review presents itself as an independent 30-day first-person test while silently reproducing a verbatim Capterra review as if it were the author's own finding — this was excluded under no-methodology-affiliate (fabricated-reads-as-personal-testing pattern) rather than astroturf, since it is a single site rather than a multi-site persona network, but is flagged here for visibility.",
+    "exclusion_log_notes": [
+      "no-methodology-affiliate (134): the dominant category — the large population of 'X Pricing 2026' / 'X Review 2026' aggregator-mill domains that recur across nearly every query (aisotools.com, costbench.com, checkthat.ai, top50aitools.com, spendhound.com, khaby.ai, propicked.com, coldiq.com, thephilcollective.com, anvevoice.app, spotsaas.com, softwarefinder.com, toolradar.com, marketingv20.ai, tekpon.com, aitoolbox360.com, wavel.ai, geniusfirms.com, topratedaisoftware.com, genesysgrowth.com, aiunveiled.io, aitoolkitpro.blog, techno-pulse.com, masteraiwithme.com, aitoolbolt.com, notevibes.com, vocalis-ai.org, aitoolranked.com, soloa.ai, flixly.ai, gradually.ai, aimlapi.com, theairankings.com, awesomeagents.ai, gradium.ai, fliki.ai, sonicker.com, gaga.art, fahimai.com, computertech.co, toolsforhumans.ai, finevoice.ai, toolindex.ai, revoyant.com, hackceleration.com, rankmarket.org, groupbuy.tools, theresanaiforthat.com, scribd.com, luvvoice.com, voicecreator.pro, toolmage.com, readaloud.net, apis.io, topai.tools, offlinetts.com, siliconflow.com, feisworld.com, aiworthit.com, jess-writes-about-tech.medium.com, curiousrefuge.com, thesoftwarescout.com, rasa.com, popularaitools.ai, jaiportal.com, viralmint.net, notegpt.io, finevoice.ai, aivoicegenerator.com, template.net, noiz.ai, cbinsights.com, slashdot.org, and others). Two of these (jankoch.co, qcall.ai/lovo-ai-review, youraisoft.com/lovo-ai-review) were individually fetched and confirmed no-method on inspection (see query_census); the rest were pattern-screened by domain/title convention consistent with prior Mimo shard practice.",
+      "duplicate (35): repeat domain hits across the 32 queries — the same vendor pricing/review URLs resurfaced by multiple search phrasings (vendr.com x2, checkthat.ai brand pages x6, softwarefinder.com x2, notevibes.com x2, capterra listing-vs-reviews-vs-alternatives sub-pages, g2.com product sub-pages x4, quora sub-blog repeats, resemble.ai internal cross-links x3, and others) — each flagged inline in the query_census with '(dup)'.",
+      "off-topic (34): 9 general TTS-evaluation academic papers (TTSDS, MultiVox, MOS-RMBench, UrgentMOS, MUSHRA-rethinking, responsiveness-benchmark, conversational-naturalness-predictor) that establish MOS/benchmark methodology in the abstract but do not name or test any of the 7 candidate commercial tools; 5 deepfake/voice-clone DETECTION-accuracy papers (a different research question — detecting synthetic voices, not rating generation quality); capterra.com/p/198045/Enact (Synthesia's product ID, surfaced by a WellSaid-targeted query in error), capterra.com/compare pages, capterra.com homepage, capterra.com/artificial-intelligence-software category page; 4 Quora sub-blog spam accounts (poeai.quora.com, insanedigitaltools.quora.com, fiverrjobs1.quora.com, paulhawessaffiliateprograms.quora.com); rival-vendor self-naming comparison pages (cartesia.ai/vs/elevenlabs-vs-speechify, cartesia.ai/vs/elevenlabs-vs-smallest, elevenlabs.io/v3 marketing page, wavespeed.ai and fal.ai API-reseller model pages); redundant leaderboard mirrors (speecharena.org, 2x huggingface.co Speech-Arena/TTS-Arena spaces, siliconflow.com) that duplicate artificialanalysis.ai without adding new fetchable data; finance.yahoo.com's general Meta-acquisition business news (superseded by the two dedicated, more specific PlayHT-shutdown sources actually registered); fish.audio's blind TTS test (real methodology, but tests ElevenLabs against the publisher's OWN model only, not against any other of our 7 candidates — logged here rather than under no-methodology-affiliate because its methodology IS disclosed, it is simply not on-topic for a cross-candidate ranking); artificialanalysis.ai/text-to-speech and its /model-families/elevenlabs sub-page (real leaderboard, but the numeric Elo/price/speed data renders only in interactive charts not extractable as text by this tool this run).",
+      "unverifiable-this-run (23): PlayHT's entire domain (3 distinct URL attempts, all 'getaddrinfo ENOTFOUND' — DNS-level failure, later explained by the independently-confirmed Dec 2025 shutdown); Murf's Studio subscription pricing page (2 URL variants, 3 total attempts, JS-rendered/no extractable content — only the API pay-as-you-go tier at help.murf.ai was verifiable); LOVO's marketing pricing page (2 attempts, JS-rendered) and both help-center pricing articles (2 attempts, HTTP 403); all 3 attempted G2 pages (murf-ai, play-ht, lovo — all HTTP 403, consistent with every prior Mimo shard); both attempted Trustpilot pages (elevenlabs.io, speechify.com — both HTTP 403); both direct Reddit search attempts (tool-blocked); both attempted Quora question pages (HTTP 403); TTSMaker's own site (2 attempts, HTTP 403 — the free-baseline claim rests entirely on a third-party citation, not a vendor-verified fetch); both web.archive.org page-fetch attempts (tool-blocked, despite the availability-check API itself working); the arxiv.org/pdf/2602.20061 direct PDF fetch (404, dead link from a search snippet).",
+      "OWNED-BORDER held (0 registered): no AI-humanizer/AI-detector/paraphraser claim was found, registered, or cited as fact anywhere in this sweep — AI voice generation does not touch that border, and no candidate source strayed into it."
+    ],
+    "entries_reused": []
+  },
+  "entries": [
+    {
+      "id": "EV-best-ai-voice-generators-01",
+      "claim": "On its current pricing page (captured 2026-07-21) ElevenLabs lists six tiers metered in shared 'credits' (roughly 1 character = 1 credit for its Multilingual v2 model, cheaper for Flash/Turbo models) — Free $0/10k credits, Starter $6/30k, Creator $22/121k (first month 50% off), Pro $99/600k, Scale $299/1.8M, Business $990/6M, and custom Enterprise. Vendor-stated, self-interested.",
+      "source_url": "https://elevenlabs.io/pricing",
+      "source_date": "2026-07-21",
+      "quote": "Free: $0 per month, 10k credits per month. Starter: $6 per month, 30k credits. Creator: $22 per month (first month 50% off), 121k credits. Pro: $99 per month, 600k credits. Scale: $299 per month, 1.8M credits. Business: $990 per month, 6M credits. Enterprise: Custom pricing.",
+      "platform": "elevenlabs.io/pricing (vendor pricing page — self-interested; captured 2026-07-21)",
+      "target_slug": "/best/ai-voice-generators",
+      "collected_at": "2026-07-21",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "best-ai-voice-generators-2026-07-21",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "ElevenLabs",
+        "aspect": "current 6-tier pricing ladder + credit-based metering unit (vendor-stated)",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Free $0/mo – Business $990/mo (6 tiers + custom Enterprise)",
+        "item_date": "2026-07-21"
+      },
+      "honesty_notes": [
+        "Credits are a blended metering unit across TTS, dubbing, voice cloning etc. — 'characters generated' varies by which model is used (V2 Multilingual = 1 credit/char; Flash/Turbo = 0.5-1 credit/char per the page's FAQ) — do not present a single flat 'price per character' without this caveat.",
+        "Annual billing is stated by the page to work out to two months free but the exact per-tier annual dollar figures were not extracted verbatim this run — do not invent specific annual prices."
+      ]
+    },
+    {
+      "id": "EV-best-ai-voice-generators-02",
+      "claim": "A dated Capterra review of ElevenLabs (Val G., Graphics and Web Developer, 2026-04-20, 5 stars) reports strong value for money as a solopreneur but separately flags it as 'another subscription to keep an eye on' — a mild recurring-cost caution inside an otherwise positive review.",
+      "source_url": "https://www.capterra.com/p/10013392/ElevenLabs/reviews/",
+      "source_date": "2026-04-20",
+      "quote": "Overall I got excellent value for the money, as a solopreneur I liked the options to get started... It's another subscription to keep an eye on.",
+      "platform": "Capterra (review-platform; aggregate 4.7/5, n=24 verified reviews as of capture 2026-07-21; this individual review dated 2026-04-20)",
+      "target_slug": "/best/ai-voice-generators",
+      "collected_at": "2026-07-21",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "best-ai-voice-generators-2026-07-21",
+      "screening": "included",
+      "label": "community-report",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "ElevenLabs",
+        "aspect": "value-for-money for a solo creator, with a mild recurring-subscription-fatigue caveat",
+        "stance": "positive",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-04-20"
+      },
+      "honesty_notes": [
+        "One dated reviewer among 24 verified Capterra reviews — do not generalize into 'users say ElevenLabs is worth it'.",
+        "Pairs with EV-best-ai-voice-generators-03 (a more mixed dated review on the same product) — present both, not just the positive one."
+      ]
+    },
+    {
+      "id": "EV-best-ai-voice-generators-03",
+      "claim": "A second dated Capterra review of ElevenLabs (Christa B., Security Management / Consumer Goods, 2025-12-27, 3 stars) calls it an industry leader for emotional realism in AI voices but specifically complains that 'unused credits don't always roll over depending on your plan' — a documented plan-dependent rollover friction.",
+      "source_url": "https://www.capterra.com/p/10013392/ElevenLabs/reviews/",
+      "source_date": "2025-12-27",
+      "quote": "Unused credits don't always roll over depending on your plan.",
+      "platform": "Capterra (review-platform; individual review dated 2025-12-27, visible as of capture 2026-07-21)",
+      "target_slug": "/best/ai-voice-generators",
+      "collected_at": "2026-07-21",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "best-ai-voice-generators-2026-07-21",
+      "screening": "included",
+      "label": "community-report",
+      "coders": ["A", "B"],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "ElevenLabs",
+        "aspect": "credit rollover friction, plan-dependent, alongside praise for emotional-realism voice quality",
+        "stance": "mixed",
+        "plan_tier_if_stated": null,
+        "item_date": "2025-12-27"
+      },
+      "honesty_notes": [
+        "FLAGGED for resolver: a coder could call this 'positive' if the emotional-realism praise is weighted as the headline and the credit complaint as a minor footnote — the 3-star rating suggests the reviewer weighted it more critically than that.",
+        "Corroborates a broader vendor-stated fact (EV-01: credit rollover exists but is plan-dependent) with an independent user's specific friction point — a documented vendor-vs-user-experience pairing, not a contradiction."
+      ]
+    },
+    {
+      "id": "EV-best-ai-voice-generators-04",
+      "claim": "Murf's help-center documentation for its API (captured 2026-07-21) states a pay-as-you-go tier billed at $0.03 per 1,000 characters (minimum $2 purchase) after a free trial allotment of 100,000 characters — vendor-stated, self-interested. Murf's separate Studio subscription-tier pricing (the consumer-facing plans most listicles cite, e.g. a Creator tier around $19-29/mo) could NOT be independently vendor-verified this run — murf.ai/pricing is a client-rendered page that returned no extractable pricing content across 3 direct fetch attempts.",
+      "source_url": "https://help.murf.ai/murf-api-plans-and-limits",
+      "source_date": "2026-07-21",
+      "quote": "Free Trial: 100,000 characters to try our voices and API services... Pay-as-you-go: purchase 1000 characters at $0.03 (minimum $2 purchase)... Custom Plan: for more extensive character/concurrency/rate limit requirements, contact the Sales team.",
+      "platform": "help.murf.ai (vendor help-center doc, API pricing — self-interested; captured 2026-07-21)",
+      "target_slug": "/best/ai-voice-generators",
+      "collected_at": "2026-07-21",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "best-ai-voice-generators-2026-07-21",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Murf",
+        "aspect": "API pay-as-you-go pricing (vendor-stated); Studio consumer-subscription tier pricing unverified this run",
+        "stance": "n/a",
+        "plan_tier_if_stated": "API PAYG $0.03/1000 chars; Studio tiers not vendor-verified",
+        "item_date": "2026-07-21"
+      },
+      "honesty_notes": [
+        "CRITICAL GAP: do not present a specific Murf Studio monthly price ($19, $29 etc.) as vendor-confirmed in the published page — those figures come only from third-party aggregator search summaries this run, never from a direct vendor fetch. If the page needs a Studio price, either attempt a fresh fetch at publish time or clearly attribute the figure to a named third-party source, never to 'Murf states'.",
+        "This asymmetry (API pricing verified, Studio pricing not) should be disclosed in the page's limitations paragraph, not silently smoothed over."
+      ]
+    },
+    {
+      "id": "EV-best-ai-voice-generators-05",
+      "claim": "A dated Capterra review of Murf Studio (Mukesh B., Content Creator, 2023-02-16, 4 stars) praises the ability to sync generated speech to video/presentations but states plainly that 'AI-generated voice-overs aren't always as good as human ones' — a balanced first-person assessment inside Murf's thin Capterra sample (4 reviews total, 4.5/5 aggregate).",
+      "source_url": "https://www.capterra.com/p/216058/Murf-Studio/reviews/",
+      "source_date": "2023-02-16",
+      "quote": "I can sync my speech to my video or presentation, which is excellent... AI-generated voice-overs aren't always as good as human ones.",
+      "platform": "Capterra (review-platform; aggregate 4.5/5, n=4 reviews as of capture 2026-07-21; this individual review dated 2023-02-16)",
+      "target_slug": "/best/ai-voice-generators",
+      "collected_at": "2026-07-21",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "best-ai-voice-generators-2026-07-21",
+      "screening": "included",
+      "label": "community-report",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Murf",
+        "aspect": "video/presentation sync praised; general AI-vs-human voice quality gap acknowledged by the reviewer",
+        "stance": "mixed",
+        "plan_tier_if_stated": null,
+        "item_date": "2023-02-16"
+      },
+      "honesty_notes": [
+        "Murf's Capterra sample is thin (n=4) and this review is from 2023 — the oldest dated source in this shard; explicitly flag its age when citing, do not present it as describing 2026 voice quality.",
+        "Corroborated by the more recent (2025) Visme hands-on test (EV-06), which independently reaches a similar 'less realistic than the category leader' conclusion — two independent sources, 2+ years apart, same directional finding."
+      ]
+    },
+    {
+      "id": "EV-best-ai-voice-generators-06",
+      "claim": "In a disclosed hands-on comparison (visme.co, published 2025-09-19), the author personally created a test project in each of 11 tools including Murf and states plainly that Murf 'might not be the most realistic AI voice generator compared to ElevenLabs' and that some Murf voices sound 'a bit robotic' — but the SAME article ranks the publisher's own product (Visme) #1 in the list, a direct conflict of interest.",
+      "source_url": "https://visme.co/blog/best-ai-voice-generator/",
+      "source_date": "2025-09-19",
+      "quote": "Murf might not be the most realistic AI voice generator compared to ElevenLabs.",
+      "platform": "visme.co/blog (disclosed-methodology hands-on test, published by a company that ranks its own competing product #1 in the same article — self-interested; published 2025-09-19)",
+      "target_slug": "/best/ai-voice-generators",
+      "collected_at": "2026-07-21",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "best-ai-voice-generators-2026-07-21",
+      "screening": "included",
+      "label": "independent-test",
+      "coders": ["A", "B"],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "Murf",
+        "aspect": "voice realism vs. ElevenLabs, per a disclosed (but COI-compromised) hands-on test",
+        "stance": "negative",
+        "plan_tier_if_stated": null,
+        "item_date": "2025-09-19"
+      },
+      "honesty_notes": [
+        "FLAGGED for resolver / heavy COI: Visme's own product is ranked #1 in the very list this quote comes from ('what makes it number one for me is that it can do so much more than just generate voices') — the publisher is not a neutral third party. Present the Murf-specific critical detail only with this COI stated up front, never as an independent verdict.",
+        "Despite the COI, this specific negative detail about Murf (not the strongest positive claims about Visme itself) is the more credible part of the piece, since a self-interested publisher has no obvious incentive to specifically soften ITS OWN competitor's weakness — still, treat as one COI-flagged source, not corroborated independently for Murf beyond EV-05."
+      ]
+    },
+    {
+      "id": "EV-best-ai-voice-generators-07",
+      "claim": "On its current pricing page (captured 2026-07-21) Speechify lists a Free plan (10 robotic-sounding voices, up to 1.5x speed) and a Premium plan at $29/month (1000+ natural voices, 60+ languages, up to 5x speed) with an annual discount advertised as 'SAVE 60%' though the exact annual dollar figure was not extractable from the page this run. Vendor-stated, self-interested.",
+      "source_url": "https://speechify.com/pricing/",
+      "source_date": "2026-07-21",
+      "quote": "Free Plan: Listen at speeds up to 1.5x... 10 robotic sounding voices... Premium Plan: $29/month... 1000+ high quality, natural voices, 60+ different languages, listen at 5x faster speeds.",
+      "platform": "speechify.com/pricing (vendor pricing page — self-interested; captured 2026-07-21)",
+      "target_slug": "/best/ai-voice-generators",
+      "collected_at": "2026-07-21",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "best-ai-voice-generators-2026-07-21",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Speechify",
+        "aspect": "free vs. Premium ($29/mo) tier split; annual price not independently confirmed this run",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Free $0/mo; Premium $29/mo",
+        "item_date": "2026-07-21"
+      },
+      "honesty_notes": [
+        "Third-party aggregator sites (not vendor-fetched this run) report an annual-equivalent figure around $11.58-$139/year — do NOT present that as vendor-confirmed; only the $29/mo monthly figure was directly verified on speechify.com this run.",
+        "Speechify also sells separate Audiobooks and Studio products at different price points per third-party sources — not verified here, out of scope for the free-vs-Premium core comparison this entry supports."
+      ]
+    },
+    {
+      "id": "EV-best-ai-voice-generators-08",
+      "claim": "A dated Capterra review of Speechify (Verified Reviewer, PhD Student, Computer Software field, 2023-12-30, 1 star) states bluntly that voice quality was very poor and customer service was unsatisfactory — the most negative dated data point found for Speechify this run.",
+      "source_url": "https://www.capterra.com/p/253466/Speechify/reviews/",
+      "source_date": "2023-12-30",
+      "quote": "The quality of the AI generated voices was very poor and the customer service was so bad.",
+      "platform": "Capterra (review-platform; aggregate 3.8/5, n=10 as of capture 2026-07-21; this individual review dated 2023-12-30)",
+      "target_slug": "/best/ai-voice-generators",
+      "collected_at": "2026-07-21",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "best-ai-voice-generators-2026-07-21",
+      "screening": "included",
+      "label": "community-report",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Speechify",
+        "aspect": "voice-quality and customer-service complaint, 1-star",
+        "stance": "negative",
+        "plan_tier_if_stated": null,
+        "item_date": "2023-12-30"
+      },
+      "honesty_notes": [
+        "One dated 1-star reviewer among Speechify's 10 Capterra reviews (aggregate 3.8/5, the lowest aggregate of the 5 tools with Capterra data this run) — do not generalize into 'users say Speechify has poor quality'.",
+        "Speechify's core product (reading aloud existing text) differs in use case from the other 6 candidates (generating original narration/voiceover content) — flag this category distinction in the page copy, not just the score."
+      ]
+    },
+    {
+      "id": "EV-best-ai-voice-generators-09",
+      "claim": "A separate dated Capterra review of Speechify (Skyler R., Freelance Social Media Marketing, 2024-11-11, 5 stars), inside the same aggregate sample as EV-08, praises the 5x listening speed specifically for speeding up article editing — a positive, workflow-specific use case distinct from voice-generation quality.",
+      "source_url": "https://www.capterra.com/p/253466/Speechify/reviews/",
+      "source_date": "2024-11-11",
+      "quote": "The ability to listen at 5X the speed. This helps me edit articles so much faster.",
+      "platform": "Capterra (review-platform; individual review dated 2024-11-11, visible as of capture 2026-07-21)",
+      "target_slug": "/best/ai-voice-generators",
+      "collected_at": "2026-07-21",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "best-ai-voice-generators-2026-07-21",
+      "screening": "included",
+      "label": "community-report",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Speechify",
+        "aspect": "listening-speed feature valued for editing workflow, distinct from voice-generation quality",
+        "stance": "positive",
+        "plan_tier_if_stated": null,
+        "item_date": "2024-11-11"
+      },
+      "honesty_notes": [
+        "This praise is about the read-aloud/speed-listening use case, not about the quality of voices Speechify GENERATES for others to hear — do not blend this with EV-08's generation-quality complaint as if they contradict each other; they describe different product dimensions."
+      ]
+    },
+    {
+      "id": "EV-best-ai-voice-generators-10",
+      "claim": "On its current pricing page (captured 2026-07-21) WellSaid Labs lists a Trial (free, 3 minutes/month), Starter ($19/mo or $10/mo annual, 20 min/mo), Pro ($49/mo or $33/mo annual, 180 min/mo), and Business ($160/mo per user, 2,880 min/year per user, up to 5 seats) tier, metered in downloaded voice-over minutes rather than characters. Vendor-stated, self-interested.",
+      "source_url": "https://www.wellsaid.io/ai-voice-pricing",
+      "source_date": "2026-07-21",
+      "quote": "Trial: $0, 3 minutes/month. Starter: $19/month (or $10/month billed annually), 20 minutes/month. Pro: $49/month (or $33/month billed annually), 180 minutes/month. Business: $160/month per user, 2,880 minutes/year per user.",
+      "platform": "wellsaid.io/ai-voice-pricing (vendor pricing page — self-interested; captured 2026-07-21)",
+      "target_slug": "/best/ai-voice-generators",
+      "collected_at": "2026-07-21",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "best-ai-voice-generators-2026-07-21",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "WellSaid Labs",
+        "aspect": "current 4-tier pricing ladder, metered in downloaded minutes (not characters)",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Trial $0 – Business $160/mo/seat (4 tiers + custom Enterprise)",
+        "item_date": "2026-07-21"
+      },
+      "honesty_notes": [
+        "WellSaid's metering unit (downloaded minutes) is NOT directly comparable to ElevenLabs/Murf's character-based credits or Resemble's per-second pricing — never build a single 'cheapest per X' table across all 7 tools without converting units and disclosing the conversion assumption.",
+        "This is the only tool of the 6 live candidates where the FULL current pricing ladder was vendor-verified on the first direct fetch attempt, no JS-rendering issues encountered."
+      ]
+    },
+    {
+      "id": "EV-best-ai-voice-generators-11",
+      "claim": "A dated Capterra review of WellSaid (Nick M., Copywriter, 2022-11-25, 1 star) reports it was not made clear at signup that customers don't get to choose their own avatar voices, and that a refund request made within 2 hours of starting was denied — a documented onboarding-transparency and refund-policy complaint.",
+      "source_url": "https://www.capterra.com/p/238211/Wellsaid/reviews/",
+      "source_date": "2022-11-25",
+      "quote": "It's not clear that you don't get to choose your 4 avatar voices.",
+      "platform": "Capterra (review-platform; aggregate 4.4/5, n=14 as of capture 2026-07-21; this individual review dated 2022-11-25)",
+      "target_slug": "/best/ai-voice-generators",
+      "collected_at": "2026-07-21",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "best-ai-voice-generators-2026-07-21",
+      "screening": "included",
+      "label": "community-report",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "WellSaid Labs",
+        "aspect": "onboarding transparency (voice-selection scope) and refund-policy complaint",
+        "stance": "negative",
+        "plan_tier_if_stated": null,
+        "item_date": "2022-11-25"
+      },
+      "honesty_notes": [
+        "This is the oldest dated WellSaid pricing-plan structure referenced in this shard's sources (2022) — the '4 avatar voices' detail may not reflect the current 2026 voice-selection scope; do not present as describing today's plan without noting the date gap.",
+        "One dated 1-star reviewer among 14 verified Capterra reviews (aggregate 4.4/5) — do not generalize into 'WellSaid denies refunds'."
+      ]
+    },
+    {
+      "id": "EV-best-ai-voice-generators-12",
+      "claim": "A separate dated Capterra review of WellSaid (Edwin M. R., Content Developer, 2023-11-27, 5 stars) praises it as having 'the most customizable, natural, human-sounding voices' but separately notes export limitations that required workaround script planning — a specific, named technical friction inside an otherwise strongly positive review.",
+      "source_url": "https://www.capterra.com/p/238211/Wellsaid/reviews/",
+      "source_date": "2023-11-27",
+      "quote": "The most customizable, natural, human-sounding voices.",
+      "platform": "Capterra (review-platform; individual review dated 2023-11-27, visible as of capture 2026-07-21)",
+      "target_slug": "/best/ai-voice-generators",
+      "collected_at": "2026-07-21",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "best-ai-voice-generators-2026-07-21",
+      "screening": "included",
+      "label": "community-report",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "WellSaid Labs",
+        "aspect": "voice naturalness/customization strongly praised; export-limitation workflow friction noted",
+        "stance": "mixed",
+        "plan_tier_if_stated": null,
+        "item_date": "2023-11-27"
+      },
+      "honesty_notes": [
+        "Corroborates the visme.co hands-on test's independent finding (EV-13: 'clean and surprisingly natural-sounding') with a second, differently-dated, differently-sourced account reaching the same directional conclusion on voice quality specifically."
+      ]
+    },
+    {
+      "id": "EV-best-ai-voice-generators-13",
+      "claim": "In the same disclosed hands-on comparison (visme.co, published 2025-09-19), the author calls WellSaid Labs narration 'clean and surprisingly natural-sounding' and best for corporate training/onboarding/enterprise communications, but states plainly 'it's not the cheapest option' — a specific value-for-money caveat from a source with the same self-ranking COI noted in EV-06.",
+      "source_url": "https://visme.co/blog/best-ai-voice-generator/",
+      "source_date": "2025-09-19",
+      "quote": "WellSaid Labs is best if you need professional-grade voiceovers for training, onboarding or enterprise communications. It's not the cheapest option.",
+      "platform": "visme.co/blog (disclosed-methodology hands-on test, published by a company that ranks its own competing product #1 in the same article — self-interested; published 2025-09-19)",
+      "target_slug": "/best/ai-voice-generators",
+      "collected_at": "2026-07-21",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "best-ai-voice-generators-2026-07-21",
+      "screening": "included",
+      "label": "independent-test",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "WellSaid Labs",
+        "aspect": "narration quality praised for corporate/enterprise use case; pricing flagged as not the cheapest",
+        "stance": "mixed",
+        "plan_tier_if_stated": null,
+        "item_date": "2025-09-19"
+      },
+      "honesty_notes": [
+        "Same COI as EV-06 applies: Visme ranks its own product #1 in this article — present WellSaid-specific detail with that caveat stated, not as a neutral third-party verdict.",
+        "The 'not the cheapest' characterization is directionally consistent with the vendor-verified pricing itself (EV-10: $19-$160+/mo, no free-tier beyond 3 min) — an independent qualitative impression matching the quantitative vendor data."
+      ]
+    },
+    {
+      "id": "EV-best-ai-voice-generators-14",
+      "claim": "A dated Capterra review of LOVO (Sarah E., Telecommunications, 2022-04-04, 1 star) makes a serious, specific complaint that the platform deletes previously-created voices from a user's library without warning, explanation, or apology.",
+      "source_url": "https://www.capterra.com/p/211776/LOVO/reviews/",
+      "source_date": "2022-04-04",
+      "quote": "They DELETE VOICES without warning, with no explanation and no apology at all.",
+      "platform": "Capterra (review-platform; aggregate 4.5/5, n=57 as of capture 2026-07-21; this individual review dated 2022-04-04)",
+      "target_slug": "/best/ai-voice-generators",
+      "collected_at": "2026-07-21",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "best-ai-voice-generators-2026-07-21",
+      "screening": "included",
+      "label": "community-report",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "LOVO",
+        "aspect": "voice-library data-loss complaint (voices deleted without warning)",
+        "stance": "negative",
+        "plan_tier_if_stated": null,
+        "item_date": "2022-04-04"
+      },
+      "honesty_notes": [
+        "One dated 1-star reviewer among 57 verified Capterra reviews (aggregate 4.5/5) — do not generalize into 'LOVO deletes user data'; report as a single dated, specific, serious complaint.",
+        "Dated 2022 — over 4 years old at capture time; explicitly flag the age when citing and do not imply this describes 2026 platform behavior without a more recent corroborating report (none was found this run)."
+      ]
+    },
+    {
+      "id": "EV-best-ai-voice-generators-15",
+      "claim": "A separate, more recent dated Capterra review of LOVO (Mayerlin R., Freelance Translator, 2024-03-26, 5 stars) reports the generated voice 'sounded so natural as if it was produced by a real human female' — a strongly positive dated data point inside the same aggregate sample as EV-14.",
+      "source_url": "https://www.capterra.com/p/211776/LOVO/reviews/",
+      "source_date": "2024-03-26",
+      "quote": "The voice sounded so natural as if it was produced by a real human female.",
+      "platform": "Capterra (review-platform; individual review dated 2024-03-26, visible as of capture 2026-07-21)",
+      "target_slug": "/best/ai-voice-generators",
+      "collected_at": "2026-07-21",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "best-ai-voice-generators-2026-07-21",
+      "screening": "included",
+      "label": "community-report",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "LOVO",
+        "aspect": "voice naturalness praised, freelance-translator use case",
+        "stance": "positive",
+        "plan_tier_if_stated": null,
+        "item_date": "2024-03-26"
+      },
+      "honesty_notes": [
+        "Present alongside EV-14, not instead of it — the two reviews describe different dimensions (voice quality vs. data/library reliability) and both are needed for an honest picture."
+      ]
+    },
+    {
+      "id": "EV-best-ai-voice-generators-16",
+      "claim": "In the same disclosed hands-on comparison (visme.co, published 2025-09-19), the author reports being 'seriously blown away by the quality' of LOVO's generated voice, describing it as natural and expressive — from the same source flagged for self-ranking COI in EV-06 and EV-13.",
+      "source_url": "https://visme.co/blog/best-ai-voice-generator/",
+      "source_date": "2025-09-19",
+      "quote": "I was seriously blown away by the quality. The voice was natural, expressive and carried weight in all the right places.",
+      "platform": "visme.co/blog (disclosed-methodology hands-on test, published by a company that ranks its own competing product #1 in the same article — self-interested; published 2025-09-19)",
+      "target_slug": "/best/ai-voice-generators",
+      "collected_at": "2026-07-21",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "best-ai-voice-generators-2026-07-21",
+      "screening": "included",
+      "label": "independent-test",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "LOVO",
+        "aspect": "voice quality/naturalness strongly praised in a podcast-script test",
+        "stance": "positive",
+        "plan_tier_if_stated": null,
+        "item_date": "2025-09-19"
+      },
+      "honesty_notes": [
+        "Same COI as EV-06/EV-13: Visme ranks itself #1 in this article — present as a COI-flagged data point, not a neutral verdict, though it does directionally corroborate EV-15's independent Capterra praise.",
+        "LOVO's own current 2026 pricing could NOT be vendor-verified this run (see the shard-level gap note) — pair any quality praise with an explicit pricing-transparency caveat."
+      ]
+    },
+    {
+      "id": "EV-best-ai-voice-generators-17",
+      "claim": "On its current pricing page (captured 2026-07-21) Resemble AI states a 'Flex' pay-per-use plan (no monthly commitment, priced per second of generated audio) plus a custom-quote Enterprise tier; consumer subscription tiers are not offered. Team seats are a separate $20/month-per-user add-on. Vendor-stated, self-interested.",
+      "source_url": "https://www.resemble.ai/pricing",
+      "source_date": "2026-07-21",
+      "quote": "Flex Plan: $0 to start, pay per consumption based on usage. Team Seats: $20 per month per user.",
+      "platform": "resemble.ai/pricing (vendor pricing page — self-interested; captured 2026-07-21)",
+      "target_slug": "/best/ai-voice-generators",
+      "collected_at": "2026-07-21",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "best-ai-voice-generators-2026-07-21",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Resemble AI",
+        "aspect": "pay-per-use Flex pricing model (no flat consumer subscription tier)",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Flex (pay-per-use, $0 to start); Enterprise custom",
+        "item_date": "2026-07-21"
+      },
+      "honesty_notes": [
+        "The page's own TTS second-rate ($0.0005/sec, i.e. $0.03/min) was reported by WebSearch synthesis but the exact per-second TTS figure was not independently re-confirmed inside THIS specific direct fetch's extracted text — cross-check against EV-18 (voiceflow.com), which does independently state the same $0.0005/sec figure, before publishing a specific number.",
+        "This positions Resemble as structurally different from the other 5 live tools (no flat monthly plan a solo creator can budget against) — an honest differentiator for the listicle's comparison table, not a value judgment."
+      ]
+    },
+    {
+      "id": "EV-best-ai-voice-generators-18",
+      "claim": "A third-party pricing analysis (voiceflow.com, published 2026-06-30, last updated 2026-05-25) independently confirms Resemble AI retired its consumer subscription tiers (previously Creator at $29/mo) sometime in 2025, replacing them with the current Flex/Enterprise pay-per-use model — corroborating EV-17's vendor-page finding with an independent secondary source and adding the historical context of what changed.",
+      "source_url": "https://www.voiceflow.com/blog/resemble-ai",
+      "source_date": "2026-06-30",
+      "quote": "Resemble retired its consumer subscription tiers (Creator $29/mo, $1 first month) sometime in 2025... pay-per-use, organized as Flex (consumption-based) and Enterprise (custom).",
+      "platform": "voiceflow.com/blog (third-party published analysis; published 2026-06-30, last updated 2026-05-25, captured 2026-07-21)",
+      "target_slug": "/best/ai-voice-generators",
+      "collected_at": "2026-07-21",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "best-ai-voice-generators-2026-07-21",
+      "screening": "included",
+      "label": "research-finding",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Resemble AI",
+        "aspect": "documented 2025 business-model shift away from flat consumer subscriptions",
+        "stance": "n/a",
+        "plan_tier_if_stated": "formerly Creator $29/mo (retired 2025); now Flex pay-per-use",
+        "item_date": "2026-06-30"
+      },
+      "honesty_notes": [
+        "Voiceflow is itself a conversational-AI platform adjacent to, but not a direct head-to-head competitor of, Resemble's voice-cloning niche — mild potential COI, noted but lower-severity than the Visme entries (Voiceflow does not rank itself among AI voice generators in this piece).",
+        "This shift means Resemble AI is no longer accessible to a casual solo-creator budget the way it may have been pre-2025 — an important, dated fact for a listicle serving that persona; note in the page copy that this is a RECENT change, not how the product has always worked."
+      ]
+    },
+    {
+      "id": "EV-best-ai-voice-generators-19",
+      "claim": "PlayHT (rebranded PlayAI) was acquired by Meta and permanently shut down — Meta announced the acquisition on 2025-07-12, and per an independent tool-directory summary, Meta 'acquired PlayHT in December 2025 and shut down the service' (elsewhere on the same page dated as 'acquired by Meta (July 2025, shut down December 2025)'). This makes PlayHT a DEFUNCT product that should not be ranked or recommended as a currently-available tool.",
+      "source_url": "https://infrabase.ai/audio/playht",
+      "source_date": "2026-07-21",
+      "quote": "Meta acquired PlayHT in December 2025 and shut down the service... acquired by Meta (July 2025, shut down December 2025).",
+      "platform": "infrabase.ai (independent AI-tool directory entry; captured 2026-07-21, no separate publish date shown on page)",
+      "target_slug": "/best/ai-voice-generators",
+      "collected_at": "2026-07-21",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "best-ai-voice-generators-2026-07-21",
+      "screening": "included",
+      "label": "research-finding",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "PlayHT",
+        "aspect": "acquisition-and-shutdown status — product no longer operating",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2025-12-01"
+      },
+      "honesty_notes": [
+        "The page itself contains an internal date inconsistency ('December 2025' in body text vs. 'July 2025 acquisition / December 2025 shutdown' in the header) — this entry is corroborated with a second, more precise, independently-dated source (EV-20) which resolves the discrepancy (July acquisition, December permanent shutdown, are two different milestones, not a contradiction).",
+        "This finding also explains this run's domain-wide DNS failure on every play.ht/* URL attempted (see query_census) — an internally consistent picture across independent evidence types (a dated shutdown report + a live infrastructure failure)."
+      ]
+    },
+    {
+      "id": "EV-best-ai-voice-generators-20",
+      "claim": "A more detailed independent timeline (theplanettools.ai, updated 2026-05-29) documents PlayHT's shutdown in four dated stages: Meta publicly confirmed the acquisition 2025-07-12; PlayHT's public REST API stopped accepting new requests 2025-07-26 (two weeks later, ahead of any announced deprecation date); the web app, billing dashboard, and account portal were permanently decommissioned 2025-12-31; and all user accounts, saved audio, and voice clones were deleted permanently on that shutdown date, with no export tools provided.",
+      "source_url": "https://theplanettools.ai/tools/playht",
+      "source_date": "2026-05-29",
+      "quote": "Meta confirms publicly on July 12 with a statement... Two weeks after the announcement, Play.ht's public REST API stopped accepting new requests... At the end of December 31, 2025, Play.ht's web app, billing dashboard, and account portal were all decommissioned... All user accounts, saved audio, and voice clones were deleted permanently.",
+      "platform": "theplanettools.ai (independent tool-tracking article; updated 2026-05-29, captured 2026-07-21)",
+      "target_slug": "/best/ai-voice-generators",
+      "collected_at": "2026-07-21",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "best-ai-voice-generators-2026-07-21",
+      "screening": "included",
+      "label": "research-finding",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "PlayHT",
+        "aspect": "detailed dated shutdown timeline (acquisition -> API offline -> permanent decommission -> data deletion)",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-05-29"
+      },
+      "honesty_notes": [
+        "This is the strongest single fact in the entire shard for the listicle's editorial framing: PlayHT should be EXCLUDED from the ranked list entirely (not merely 'listed, not scored') and instead called out as a defunct-tool cautionary note, since recommending signup to a dead product would actively mislead readers.",
+        "Independently corroborated by EV-19 (infrabase.ai) and by this run's own live infrastructure evidence (every play.ht/* URL failed DNS resolution) — three independent, dated, mutually-consistent signals."
+      ]
+    },
+    {
+      "id": "EV-best-ai-voice-generators-21",
+      "claim": "TTSMaker is repeatedly cited across independent free-tool listicles as a genuinely no-signup, free text-to-speech tool with a 20,000-characters-per-week limit on most voices; one dated third-party review (freetts.ai, published 2026-03-14) confirms this specific limit and notes the interface is rough but the free tier is practically usable. TTSMaker's OWN site could not be independently vendor-verified this run (2 direct fetch attempts both returned HTTP 403) — this is third-party-sourced, not vendor-confirmed.",
+      "source_url": "https://freetts.ai/blog/best-free-text-to-speech-tools-2026",
+      "source_date": "2026-03-14",
+      "quote": "20,000 characters per week with no account needed... no audio watermarks on free downloads.",
+      "platform": "freetts.ai/blog (third-party tool-comparison article; published 2026-03-14, captured 2026-07-21)",
+      "target_slug": "/best/ai-voice-generators",
+      "collected_at": "2026-07-21",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "best-ai-voice-generators-2026-07-21",
+      "screening": "included",
+      "label": "community-report",
+      "coders": ["A", "B"],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "TTSMaker",
+        "aspect": "free-tier character limit and no-signup access, per third-party confirmation (vendor site itself unreachable)",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Free, 20,000 characters/week, no account",
+        "item_date": "2026-03-14"
+      },
+      "honesty_notes": [
+        "FLAGGED for resolver: this is the thinnest-evidence tool in the shard — a single third-party source, no vendor-page verification, no Capterra/G2/Reddit data, no hands-on test. It is the free/no-affiliate baseline candidate the brief requested, but should be presented as 'listed, not scored' — do not assign it a numeric rubric score alongside the 4 tools with richer evidence.",
+        "freetts.ai's own affiliate/methodology status was not separately audited — treat this entry as color/context for the free-tier landscape, not as a rigorously vetted primary source."
+      ]
+    }
+  ]
+}

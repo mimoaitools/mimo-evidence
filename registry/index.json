@@ -1,7 +1,7 @@
 {
   "protocol": "MEP-1.0",
   "site": "mimoaitools.com",
-  "updated": "2026-07-20",
+  "updated": "2026-07-21",
   "note": "Per-page evidence shards. Each EV id is cited inline in the matching Mimo article. See README.",
   "shards": [
     {
@@ -58,6 +58,11 @@
       "file": "registry-writesonic-review.json",
       "page": "/writesonic-review",
       "entries": 6
+    },
+    {
+      "file": "registry-best-ai-voice-generators.json",
+      "page": "/best/ai-voice-generators",
+      "entries": 21
     }
   ],
   "total_entries": 87
