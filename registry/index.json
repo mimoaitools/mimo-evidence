@@ -1,7 +1,7 @@
 {
   "protocol": "MEP-1.0",
   "site": "mimoaitools.com",
-  "updated": "2026-07-21",
+  "updated": "2026-07-22",
   "note": "Per-page evidence shards. Each EV id is cited inline in the matching Mimo article. See README.",
   "shards": [
     {
@@ -63,6 +63,11 @@
       "file": "registry-best-ai-voice-generators.json",
       "page": "/best/ai-voice-generators",
       "entries": 21
+    },
+    {
+      "file": "registry-elevenlabs-review.json",
+      "page": "/tools/elevenlabs",
+      "entries": 17
     }
   ],
   "total_entries": 87

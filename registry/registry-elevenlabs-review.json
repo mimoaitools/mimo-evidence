@@ -1,0 +1,531 @@
+{
+  "_meta": {
+    "flow_id": "elevenlabs-review-2026-07-22",
+    "protocol_version": "MEP-1.0",
+    "target_slug": "/tools/elevenlabs",
+    "target_keyword": "elevenlabs review",
+    "run_date": "2026-07-22",
+    "collector": "evidence-curator",
+    "page_class": "tools/single-tool review (5-dimension ToolScore verdict: overall/outputQuality/easeOfUse/value/evidenceBase). EXTENDS the /best/ai-voice-generators hub sweep (registry-best-ai-voice-generators.json) — re-registers and re-verifies EV-best-ai-voice-generators-01/02/03 as review-scoped entries, then deepens coverage specifically for outputQuality, easeOfUse, value, and feature-fact dimensions the hub did not need. Owned-border CLEAN and held strictly: voice GENERATION only; voice-cloning content is scoped to consent/commercial-rights/data-permanence (ethics), never detection/deepfake-detection. PlayHT NOT targeted (defunct, per hub EV-19/EV-20).",
+    "sweep_strategy": "Started by re-fetching the two already-known ElevenLabs sources from the hub shard (elevenlabs.io/pricing, capterra.com/p/10013392/ElevenLabs/reviews/) to confirm they are still live and to extract NEW detail the hub run did not capture (annual-billing discount math, free-tier Studio-project cap, and — critically — 22 additional individual dated Capterra reviews beyond the 2 the hub registered, since the hub only needed 2 for a listicle mention and this review needs full 5-dimension depth). Ran 11 documented WebSearch queries covering the brief's explicit capture_targets (dubbing language count, API latency, voice-library size, free-tier Studio/agent caps, model-version tradeoffs) plus community-sentiment platforms (Reddit, Trustpilot, G2, Quora) and the voice-cloning consent/commercial-rights theme. Direct-fetched every ElevenLabs-owned vendor URL surfaced (pricing, docs/models, docs/voices, dubbing, pricing/agents, join.elevenlabs.io) — all resolved successfully this run, a contrast with the hub's mixed vendor-fetch results for other tools. Trustpilot (7 URL variants across pagination/locale) and G2 (6 URL variants including sub-pages) were ALL HTTP 403 on direct fetch, consistent with every prior Mimo shard — community sentiment for Trustpilot/G2 is therefore search-snippet-level only (logged, not registered as quotes, per protocol §4's re-fetch requirement). Reddit was structurally unreachable (direct www.reddit.com/search fetch blocked by the environment; zero real reddit.com URLs surfaced across 1 site:reddit.com query). Quora surfaced real, on-topic question URLs but every direct-fetch attempt returned HTTP 403. A late, targeted fetch of devopscube.com/elevenlabs-review (already known from the hub run, where it was excluded for lacking a verifiable credit claim) this time surfaced a genuinely useful, dated, specific figure (free plan = 2,500 credits/month as of 2026-04-24) that directly contradicts ElevenLabs' own CURRENT pricing page (10,000 credits/month as of capture 2026-07-22) — registered as the free-tier contradiction-resolution entry the brief explicitly requested.",
+    "flow_counter": {
+      "identified": 111,
+      "screened": 111,
+      "excluded": 79,
+      "excluded_by_reason": {
+        "no-methodology-affiliate": 30,
+        "unverifiable-this-run": 18,
+        "duplicate": 18,
+        "off-topic": 13
+      },
+      "included_sources": 9,
+      "included_capterra_review_units": 24,
+      "registry_entries_new": 17,
+      "counter_note": "identified = 88 distinct candidate URLs surfaced across 11 documented WebSearch queries + 1 URL found only by direct pattern-navigation (elevenlabs.io/dubbing, not returned by any search query this run) + 22 additional individual dated Capterra review-units newly surfaced on re-fetching the already-known capterra.com/p/10013392/ElevenLabs/reviews/ page (2 of the 24 total review-units on that page were already registered by the hub shard as EV-best-ai-voice-generators-02/03; this run screened all 24 as the unit of analysis per protocol §1). 9 distinct non-Capterra sources were included (elevenlabs.io/pricing, elevenlabs.io/docs/overview/capabilities/voices, elevenlabs.io/docs/overview/models, join.elevenlabs.io/tts/developer, elevenlabs.io/dubbing, elevenlabs.io/pricing/agents, theplanettools.ai/guides/how-to-dub-videos-with-elevenlabs-2026, terms.law/ai-output-rights/elevenlabs/, devopscube.com/elevenlabs-review) plus all 24 Capterra review-units (8 registered as individual dated entries, 16 folded into one defined-sample census entry per protocol §6) — producing 17 registry entries from 32 included items. Bucketing of the 79 excluded items is a best-effort reconciliation across query result sets (recurring aggregator-mill domains, Trustpilot/G2/Quora/Reddit platform blocks, duplicate cross-query hits, and off-topic company/blog pages) rather than a line-by-line individual audit of all 79 — flagged for resolver attention, consistent with how the hub shard's own flow counter was reconciled."
+      },
+    "coder_agreement_rate": "CURATOR-PROVISIONAL single-pass coding across all 17 included entries (dual-independent coding + resolver pass orchestrated above this run). Stance calls: 4 n/a (vendor-primary feature/pricing facts, no sentiment to code), 6 mixed (paired positive/negative Capterra reviews), 5 positive, 2 negative. FLAGGED FOR RESOLVER: (1) EV-elevenlabs-review-13 (dubbing language count, 90+ vendor-stated) vs EV-elevenlabs-review-15 (29 languages per a dated hands-on test) — a coder could read this as an unresolved contradiction rather than a timeline-explained version difference (Dubbing v2 launched 2026-05-28, AFTER the test was published 2026-05-09/updated 2026-05-24); the resolver should confirm the timeline explanation holds before the writer treats it as 'resolved' rather than 'disputed'. (2) EV-elevenlabs-review-10 (the 10-of-24 credit/pricing-friction census) — the keyword-match criteria used to count 'friction' mentions are a judgment call (e.g. 'concern about higher-tier pricing' counted, 'wants more accents' did not); a second coder should re-run the count independently before publication. (3) EV-elevenlabs-review-16 (terms.law legal analysis) — ultimately synthesizes ElevenLabs' own Terms of Service, so a coder could argue this should carry a vendor-claim/self-interested label rather than research-finding; flagged, not resolved here.",
+    "query_census": [
+      { "q": "WebSearch: ElevenLabs dubbing supported languages count 2026 official", "candidates": 6, "note": "deepgram.com/learn/elevenlabs-languages-vs-accents-support, theplanettools.ai/guides/how-to-dub-videos-with-elevenlabs-2026, feisworld.com/blog/elevenlabs-dubbing-v2, elevenlabs.io/docs/overview/models, aiadoptionagency.com/elevenlabs-ai-dubbing-multilingual-audio-guide, aihola.com/article/elevenlabs-dubbing-v2-launch. theplanettools.ai and aihola.com and elevenlabs.io/docs/overview/models all direct-fetched → INCLUDED (EV-15, EV-12/EV-13 basis)." },
+      { "q": "WebSearch: ElevenLabs API latency 75ms Flash v2.5 official", "candidates": 10, "note": "replicate.com/elevenlabs/flash-v2.5, seattle.aitinkerers.org, elevenlabs.io/text-to-speech-api, join.elevenlabs.io/tts/developer, elevenlabs.io/blog/meet-flash, elevenlabs.io/docs/overview/models (dup), scribd.com, wavespeed.ai, elevenlabs.io/docs/eleven-api/guides/.../latency-optimization, elevenlabs.io/docs/overview/capabilities/text-to-speech. join.elevenlabs.io/tts/developer direct-fetched → INCLUDED (EV-12)." },
+      { "q": "WebSearch: ElevenLabs voice library size 2026 \"voices\" official", "candidates": 8, "note": "medium.com/@elena.voss/elevenlabs-review-2026, webfuse.com/elevenlabs-cheat-sheet, nerdynav.com/elevenlabs-review, elevenlabs.io/docs/overview/capabilities/voices, theplanettools.ai/blog/best-elevenlabs-voices-deep-dive-2026, elevenlabsreview.com, aivoicereview.com/blog/best-elevenlabs-voices-2026, aiproductivity.ai/guides/elevenlabs-voice-library-guide. elevenlabs.io/docs/overview/capabilities/voices direct-fetched → INCLUDED (EV-11)." },
+      { "q": "WebSearch: ElevenLabs free plan Studio project limit agent minutes 2026", "candidates": 6, "note": "cloudtalk.io/blog/elevenlabs-pricing, flexprice.io/blog/elevenlabs-pricing-breakdown, bigvu.tv/blog/elevenlabs-pricing-2026-plans-credits-commercial-rights-api-costs, smallest.ai/blog/elevenlabs-pricing-explained-plans-limits-hidden-costs-calculator, mrreviewai.com/elevenlabs-free-plan-review, costbench.com/software/ai-voice-tools/elevenlabs/free-plan. All EXCLUDED no-methodology-affiliate (aggregator-mill pricing-breakdown domains); confirmed the 3-Studio-project figure independently via elevenlabs.io/pricing direct fetch instead." },
+      { "q": "WebSearch: elevenlabs.io Conversational AI agents platform free tier minutes pricing", "candidates": 10, "note": "cloudtalk.io/blog/elevenlabs-voice-agent-review, bigvu.tv (dup), cloudtalk.io/blog/elevenlabs-pricing (dup), elevenlabs.io/pricing/agents, cekura.ai/blogs/elevenlabs-pricing, elevenlabs.io/blog/we-cut-our-pricing-for-conversational-ai, elevenlabs.io/pricing/api, toolchase.com/blog/elevenlabs-pricing-2026, pxlpeak.com/blog/ai-tools/elevenlabs-pricing-guide, elevenlabs.io/pricing (dup). elevenlabs.io/pricing/agents direct-fetched → INCLUDED (EV-14)." },
+      { "q": "WebSearch: site:reddit.com ElevenLabs review credits worth it", "candidates": 8, "note": "capterra.com/p/10013392/ElevenLabs/reviews/ (dup, already known), capterra.com/.../reviews/6048802, capterra.com/.../alternatives, g2.com/compare/elevenlabsio-vs-invideo, g2.com/products/elevenlabsio/pricing, g2.com/products/elevenlabsio/reviews (dup, recurs query 8), g2.com/compare/elevenlabsio-vs-wellsaid-studio, g2.com/products/eleven-labs/reviews. ZERO real reddit.com URLs despite the site: operator — identical to the hub shard's finding for every tool." },
+      { "q": "WebSearch: ElevenLabs Trustpilot reviews 2026", "candidates": 9, "note": "trustpilot.com/review/elevenlabs.io?page=10, ca.trustpilot.com/review/elevenlabs.io?page=5, nerdynav.com (dup), ca.trustpilot.com?page=2, trustpilot.com/review/elevenlabs.io, en.wikipedia.org/wiki/ElevenLabs, trustpilot.com?page=8, ca.trustpilot.com?page=9, uk.trustpilot.com?page=6. trustpilot.com/review/elevenlabs.io direct-fetched → HTTP 403 (unverifiable-this-run); search-snippet-level finding (TrustScore 3.1/5, 1000+ reviews) logged in notes, NOT registered as a quote per protocol §4." },
+      { "q": "WebSearch: ElevenLabs G2 reviews ease of use 2026", "candidates": 10, "note": "learn.g2.com/best-text-to-speech-software, g2.com/sellers/eleven-labs-1235fa78-..., cekura.ai/blogs/elevenlabs-review, g2.com/products/elevenlabsio/reviews?qs=pros-and-cons, hackceleration.com/labs/review/elevenlabs, elevenlabsreviews.com/g2, g2.com/compare/elevenlabsio-vs-wellsaid-studio (dup), g2.com/compare/elevenlabsio-vs-rask-ai, g2.com/compare/d-id-vs-elevenlabsio, g2.com/compare/elevenlabsio-vs-murf-ai. g2.com/products/elevenlabsio/reviews?qs=pros-and-cons direct-fetched → HTTP 403 (unverifiable-this-run). cekura.ai/blogs/elevenlabs-review direct-fetched → EXCLUDED no-methodology-affiliate (author's own product-usage claim, not independent testing; cited G2 quotes are undated, 'making temporal verification impossible' per the fetch itself)." },
+      { "q": "WebSearch: site:quora.com ElevenLabs worth it review", "candidates": 7, "note": "morganbanksseoexpert.quora.com (group-buy spam, off-topic), quora.com/Do-audio-generating-sites-like-elvenlab-have-audio-fingerprints, quora.com/How-does-the-business-model-of-ElevenLabs-work, quora.com/Which-is-better-for-AI-voice-generation-PlayHT-or-ElevenLabs, quora.com/I-have-bought-Eleven-Labs-from-someone..., quora.com/Which-is-better-ElevenLabs-or-Murf-AI, capterra.com/.../reviews/ (dup). quora.com/Which-is-better-for-AI-voice-generation-PlayHT-or-ElevenLabs direct-fetched → HTTP 403 (unverifiable-this-run)." },
+      { "q": "WebSearch: ElevenLabs voice cloning consent commercial rights terms of service 2026", "candidates": 5, "note": "terms.law/ai-output-rights/elevenlabs/, terms.law/forum/thread/elevenlabs-voice-clone-legal.html (off-topic, forum-thread duplicate of the main article), margabagus.com/elevenlabs-voice-consent-policy/, margabagus.com/elevenlabs-voice-cloning-consent/ (both near-duplicate of terms.law's coverage, not independently fetched), licenseorg.com/blog/elevenlabs-licensing-guide-ai-voices (not fetched, redundant topic). terms.law/ai-output-rights/elevenlabs/ direct-fetched → INCLUDED (EV-16)." },
+      { "q": "WebSearch: ElevenLabs Studio editor review onboarding user experience 2026", "candidates": 9, "note": "medium.com/@trelvek/elevenlabs-review-2026, cekura.ai/blogs/elevenlabs-review (dup, already excluded), hackceleration.com/labs/review/elevenlabs (dup), hackceleration.com/elevenlabs-review, elevenlabsreview.com (dup), linktly.com/artificial-intelligence-software/eleven-labs-inc-review, javascapeai.com/elevenlabs-review-2026, reviewnexa.com/elevenlabs-review, g2.com/compare/elevenlabsio-vs-wellsaid-studio (dup). All EXCLUDED no-methodology-affiliate (recurring 'X Review 2026' pattern, none disclose sample size or reproducible test procedure); onboarding-speed and editor-UX claims instead sourced from the directly-fetched, individually-dated Capterra reviews (EV-06, EV-07)." },
+      { "q": "DIRECT: WebFetch https://elevenlabs.io/pricing (re-verification of hub EV-best-ai-voice-generators-01's source URL)", "candidates": 0, "note": "Re-fetched successfully; confirmed the 6-tier ladder still matches the hub's 2026-07-21 capture one day later, AND surfaced two NEW verbatim details the hub run flagged as unconfirmed: the exact annual-billing framing ('two months free... pay for 10 months') and the free-tier's '3 Projects in Studio' cap. → INCLUDED, re-registered as EV-elevenlabs-review-01." },
+      { "q": "DIRECT: WebFetch https://www.capterra.com/p/10013392/ElevenLabs/reviews/ (re-verification of hub EV-best-ai-voice-generators-02/03's source URL)", "candidates": 22, "note": "Re-fetched successfully; the page still carries the 2 reviews the hub registered (Val G. 2026-04-20, Christa B. 2025-12-27) PLUS 22 additional individually dated reviews (Nov 2023–Jul 2026) not previously screened by any Mimo shard. All 24 review-units screened this run; 8 registered as individual entries (EV-02 through EV-09), 16 folded into the EV-10 defined-sample census, none excluded (all 24 are dated, linkable via the shared reviews-page anchor, first-person, and codable)." },
+      { "q": "DIRECT: WebFetch https://elevenlabs.io/dubbing (pattern-navigation, NOT returned by any search query this run)", "candidates": 1, "note": "New URL, found only by directly guessing the vendor's product-page slug. INCLUDED → EV-13 (Dubbing v2, '90+ languages and accents')." },
+      { "q": "DIRECT: WebFetch https://www.trustpilot.com/review/elevenlabs.io, https://www.g2.com/products/elevenlabsio/reviews, https://www.quora.com/Which-is-better-for-AI-voice-generation-PlayHT-or-ElevenLabs, https://www.reddit.com/search/?q=elevenlabs%20review%20credits", "candidates": 0, "note": "All 4 blocked (3x HTTP 403, 1x tool-level 'unable to fetch from www.reddit.com') — same inherited environment-level block documented in every prior Mimo shard since 2026-07-10." },
+      { "q": "DIRECT: WebFetch https://devopscube.com/elevenlabs-review (already-identified URL from the hub shard's query census, re-fetched this run for a different extraction target)", "candidates": 0, "note": "The hub shard fetched this URL looking for a credit-multiplier claim and found none (not registered). This run fetched it specifically for the free-plan credit figure and found one: 'a free plan with 2,500 credits per month' (published 2026-04-24) — directly contradicts ElevenLabs' own CURRENT pricing page (10,000 credits/month, captured 2026-07-22). INCLUDED → EV-17, the free-tier contradiction-resolution entry the brief explicitly requested." }
+    ],
+    "reddit_access_note": "Reddit was structurally unreachable this run: the one site:reddit.com-targeted WebSearch query surfaced ZERO actual reddit.com URLs (only Capterra/G2 results), and a direct WebFetch to www.reddit.com/search was blocked at the tool level ('Claude Code is unable to fetch from www.reddit.com'). This matches the identical block documented in the hub shard and every prior Mimo shard since 2026-07-10. Quora surfaced real, on-topic question URLs (including one directly comparing ElevenLabs to PlayHT) but the single most-promising direct-fetch attempt returned HTTP 403. CONSEQUENCE: community sentiment for this review routes through Capterra (fetched successfully, 24 dated review-units) plus search-snippet-level (not registered) color from Trustpilot and G2 — a genuine platform-coverage gap that must be disclosed in the page's limitations paragraph, exactly as the hub shard already discloses for the same reason.",
+    "astroturf_note": "The astroturf screen (§3.1: templated look-alike threads, recurring fresh personas, all funneling to one vendor) was applied to every low-trust 'ElevenLabs Review 2026' aggregator-mill candidate surfaced this run (roughly 20+ near-identical-titled domains: elevenlabsreview.com, hackceleration.com, reviewnexa.com, javascapeai.com, linktly.com, mrreviewai.com, and others). No templated-persona-network pattern was detected across these domains this run — they read as independently-run SEO content-mill sites competing for the same keyword, not a coordinated persona network, and were excluded individually under no-methodology-affiliate rather than astroturf. Zero astroturf-pattern sources were registered or cited.",
+    "exclusion_log_notes": [
+      "no-methodology-affiliate (30): the dominant category — 'ElevenLabs Review 2026' content-mill domains that recur across the onboarding/UX and G2-adjacent queries (medium.com/@elena.voss, webfuse.com, nerdynav.com, elevenlabsreview.com, aivoicereview.com, aiproductivity.ai, mrreviewai.com, costbench.com, flexprice.io, bigvu.tv, smallest.ai, cloudtalk.io x2, toolchase.com, pxlpeak.com, hackceleration.com x2, medium.com/@trelvek, linktly.com, javascapeai.com, reviewnexa.com, elevenlabsreviews.com/g2, cekura.ai/blogs/elevenlabs-review [individually fetched and confirmed — undated G2 quotes, self-referential 'stress-tested at Cekura' framing rather than independent ElevenLabs testing], cekura.ai/blogs/elevenlabs-pricing, seattle.aitinkerers.org, replicate.com, scribd.com, wavespeed.ai, aiadoptionagency.com, feisworld.com/blog, deepgram.com). Confirmed no-method on direct inspection for cekura.ai; the rest pattern-screened by domain/title convention consistent with the hub shard's practice.",
+      "unverifiable-this-run (18): all 7 Trustpilot URL variants attempted across pagination/locale (trustpilot.com x3, ca.trustpilot.com x2, uk.trustpilot.com x1, plus the base review URL) — all HTTP 403; all 4 attempted G2 URL variants (products/elevenlabsio/reviews, /reviews?qs=pros-and-cons, /pricing, /sellers/eleven-labs) — all HTTP 403; 4 G2 /compare/ pages surfaced but not individually fetched (same domain-wide block established by the 4 that were tried); the Quora PlayHT-vs-ElevenLabs question — HTTP 403; the direct Reddit search — tool-blocked; g2.com/sellers page — folded into the G2 domain-wide block rather than fetched separately.",
+      "duplicate (18): repeat domain/URL hits across the 11 queries — elevenlabs.io/docs/overview/models (surfaced by 2 queries), elevenlabs.io/pricing (surfaced again by query 5 after already being directly known), bigvu.tv and cloudtalk.io (each surfaced by 2 queries), capterra.com/p/10013392/ElevenLabs/... sub-pages (alternatives/reviews/reviews-permalink surfaced by 3 queries), g2.com/products/elevenlabsio/reviews and g2.com/compare/elevenlabsio-vs-wellsaid-studio (each surfaced by 2-3 queries), nerdynav.com (2 queries), cekura.ai/blogs/elevenlabs-review (2 queries), hackceleration.com/labs/review/elevenlabs (2 queries), elevenlabsreview.com (2 queries), terms.law/forum/thread (near-duplicate of the main terms.law article), margabagus.com x2 (near-duplicate consent coverage of terms.law) — each flagged inline in the query_census.",
+      "off-topic (13): en.wikipedia.org/wiki/ElevenLabs (general company/history page, no review content); g2.com/products/elevenlabsio/pricing (pricing sub-page, not a reviews source); elevenlabs.io/blog/meet-flash and elevenlabs.io/blog/we-cut-our-pricing-for-conversational-ai (marketing announcement posts, superseded by the docs/pricing pages actually cited); elevenlabs.io/text-to-speech-api, elevenlabs.io/docs/eleven-api/guides/.../latency-optimization, elevenlabs.io/docs/overview/capabilities/text-to-speech (general product/docs pages that duplicate content already captured from the two docs pages actually registered); learn.g2.com/best-text-to-speech-software (a 6-tool category roundup, not ElevenLabs-specific); g2.com/sellers/eleven-labs-... (seller directory listing, not a review); morganbanksseoexpert.quora.com (a 'Group Buy' spam/reseller question, off-topic for a legitimate review); quora.com/How-does-the-business-model-of-ElevenLabs-work and quora.com/I-have-bought-Eleven-Labs-from-someone... (business-model and account-sharing questions, not product-experience reviews); licenseorg.com/blog (surfaced but not fetched, redundant with the registered terms.law source).",
+      "OWNED-BORDER held (0 registered): every voice-cloning-consent and commercial-rights source found and registered (EV-16) concerns CONSENT and RIGHTS OWNERSHIP, never AI-voice detection or deepfake-detection — confirmed no candidate source this run touched the AI-detector/humanizer/paraphraser border. No PlayHT source was fetched or registered this run (the hub's EV-19/EV-20 shutdown findings are treated as already-established and are not re-registered here)."
+    ],
+    "entries_reused": [
+      "EV-best-ai-voice-generators-01 (elevenlabs.io/pricing 6-tier ladder) — re-fetched and re-registered with new detail as EV-elevenlabs-review-01",
+      "EV-best-ai-voice-generators-02 (Val G., Capterra, 2026-04-20) — re-registered as EV-elevenlabs-review-02",
+      "EV-best-ai-voice-generators-03 (Christa B., Capterra, 2025-12-27) — re-registered as EV-elevenlabs-review-03"
+    ]
+  },
+  "entries": [
+    {
+      "id": "EV-elevenlabs-review-01",
+      "claim": "On its current pricing page (re-verified 2026-07-22, one day after the hub's 2026-07-21 capture, figures unchanged) ElevenLabs lists six tiers metered in credits — Free $0/10,000 credits/3 Studio projects/no commercial use, Starter $6/30,000, Creator $22/121,000, Pro $99/600,000, Scale $299/1.8M, Business $990/6M — plus custom Enterprise. Annual billing is stated as 'two months free' (pay for 10 months), which works out to roughly a 16.7% discount, not the vendor's own casual '2 months free' framing implies a bigger cut. Vendor-stated, self-interested.",
+      "source_url": "https://elevenlabs.io/pricing",
+      "source_date": "2026-07-22",
+      "quote": "Annual billing works out to two months free — you pay for 10 months. Free: 10k credits per month, 3 Projects in Studio. No commercial use.",
+      "platform": "elevenlabs.io/pricing (vendor pricing page — self-interested; captured 2026-07-22)",
+      "target_slug": "/tools/elevenlabs",
+      "collected_at": "2026-07-22",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "elevenlabs-review-2026-07-22",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "ElevenLabs",
+        "aspect": "current 6-tier pricing ladder + annual discount framing + free-tier Studio-project cap (vendor-stated)",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Free $0/mo – Business $990/mo (6 tiers + custom Enterprise)",
+        "item_date": "2026-07-22"
+      },
+      "honesty_notes": [
+        "Read alongside EV-elevenlabs-review-17: a third-party review dated 2026-04-24 (devopscube.com) states the free plan was 2,500 credits/month at that time — today's vendor page states 10,000/month, a 4x increase inside three months. Present the CURRENT figure as the vendor's stated 2026-07-22 position, not as a figure that has always been true.",
+        "Do the annual-discount math from the vendor's own framing ('two months free' = 10/12 = ~16.7% off), do not adopt any third-party site's differently-computed percentage without re-deriving it."
+      ]
+    },
+    {
+      "id": "EV-elevenlabs-review-02",
+      "claim": "A dated Capterra review of ElevenLabs (Val G., Graphics and Web Developer, 2026-04-20, 5 stars) reports strong value for money as a solopreneur but separately flags it as 'another subscription to keep an eye on' — a mild recurring-cost caution inside an otherwise positive review.",
+      "source_url": "https://www.capterra.com/p/10013392/ElevenLabs/reviews/",
+      "source_date": "2026-04-20",
+      "quote": "Overall I got excellent value for the money, as a solopreneur I liked the options to get started... It's another subscription to keep an eye on.",
+      "platform": "Capterra (review-platform; aggregate 4.7/5, n=24 dated review-units visible as of capture 2026-07-22; this individual review dated 2026-04-20)",
+      "target_slug": "/tools/elevenlabs",
+      "collected_at": "2026-07-22",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "elevenlabs-review-2026-07-22",
+      "screening": "included",
+      "label": "community-report",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "ElevenLabs",
+        "aspect": "value-for-money for a solo creator, with a mild recurring-subscription-fatigue caveat",
+        "stance": "positive",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-04-20"
+      },
+      "honesty_notes": [
+        "Re-registered from EV-best-ai-voice-generators-02 (hub shard) — same source, re-fetched and confirmed still live 2026-07-22.",
+        "One dated reviewer among 24 dated review-units on this page — do not generalize into 'users say ElevenLabs is worth it'."
+      ]
+    },
+    {
+      "id": "EV-elevenlabs-review-03",
+      "claim": "A second dated Capterra review of ElevenLabs (Christa B., Security Management / Consumer Goods, 2025-12-27, 3 stars) calls it an industry leader for emotional realism in AI voices but specifically complains that 'unused credits don't always roll over depending on your plan' — a documented plan-dependent rollover friction.",
+      "source_url": "https://www.capterra.com/p/10013392/ElevenLabs/reviews/",
+      "source_date": "2025-12-27",
+      "quote": "Unused credits don't always roll over depending on your plan.",
+      "platform": "Capterra (review-platform; individual review dated 2025-12-27, visible as of capture 2026-07-22)",
+      "target_slug": "/tools/elevenlabs",
+      "collected_at": "2026-07-22",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "elevenlabs-review-2026-07-22",
+      "screening": "included",
+      "label": "community-report",
+      "coders": ["A", "B"],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "ElevenLabs",
+        "aspect": "credit rollover friction, plan-dependent, alongside praise for emotional-realism voice quality",
+        "stance": "mixed",
+        "plan_tier_if_stated": null,
+        "item_date": "2025-12-27"
+      },
+      "honesty_notes": [
+        "Re-registered from EV-best-ai-voice-generators-03 (hub shard) — same source, re-fetched and confirmed still live 2026-07-22.",
+        "FLAGGED for resolver (inherited from hub): a coder could call this 'positive' if the emotional-realism praise is weighted as the headline; the 3-star rating suggests the reviewer weighted the credit complaint more heavily."
+      ]
+    },
+    {
+      "id": "EV-elevenlabs-review-04",
+      "claim": "A dated Capterra review (Nishant T., Sr Analyst, Financial Services, 2025-06-19, 5 stars) calls ElevenLabs 'one of finest AI voice cloning tools in the market' for human-like generation and multilingual support, but its listed cons are occasional pronunciation errors and limited editing controls for tone, speed, and pauses — a specific, dated mispronunciation report.",
+      "source_url": "https://www.capterra.com/p/10013392/ElevenLabs/reviews/",
+      "source_date": "2025-06-19",
+      "quote": "One of finest AI voice cloning tool in the market. [Cons:] Occasional pronunciation errors, limited editing controls for tone/speed/pauses.",
+      "platform": "Capterra (review-platform; individual review dated 2025-06-19, visible as of capture 2026-07-22)",
+      "target_slug": "/tools/elevenlabs",
+      "collected_at": "2026-07-22",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "elevenlabs-review-2026-07-22",
+      "screening": "included",
+      "label": "community-report",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "ElevenLabs",
+        "aspect": "output quality — human-like generation praised, occasional pronunciation errors and limited fine-editing controls noted as cons",
+        "stance": "mixed",
+        "plan_tier_if_stated": null,
+        "item_date": "2025-06-19"
+      },
+      "honesty_notes": [
+        "The only dated source this run that specifically names 'pronunciation errors' as a quality limitation — do not generalize into a rate or frequency claim, this is one reviewer's dated report."
+      ]
+    },
+    {
+      "id": "EV-elevenlabs-review-05",
+      "claim": "A dated Capterra review (Anthony R., Design, Entertainment, 2025-07-07, 5 stars) calls ElevenLabs 'king of text to speech' for voice-cloning applications and praises state-of-the-art synthesis and expressive v3 tones, but its listed con is that dubbing 'sometimes produces garbled, unusable output' — a specific, dated dubbing-quality limit.",
+      "source_url": "https://www.capterra.com/p/10013392/ElevenLabs/reviews/",
+      "source_date": "2025-07-07",
+      "quote": "King of text to speech [for voice cloning applications, state-of-the-art synthesis, expressive v3 tones]. [Cons:] Dubbing sometimes produces garbled, unusable output.",
+      "platform": "Capterra (review-platform; individual review dated 2025-07-07, visible as of capture 2026-07-22)",
+      "target_slug": "/tools/elevenlabs",
+      "collected_at": "2026-07-22",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "elevenlabs-review-2026-07-22",
+      "screening": "included",
+      "label": "community-report",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "ElevenLabs",
+        "aspect": "output quality — core TTS/cloning synthesis praised, but dubbing specifically flagged as producing garbled/unusable output in some cases",
+        "stance": "mixed",
+        "plan_tier_if_stated": null,
+        "item_date": "2025-07-07"
+      },
+      "honesty_notes": [
+        "Corroborates the independent, disclosed-methodology dubbing test (EV-elevenlabs-review-15), which separately found dubbing quality issues (background-music leakage, lip-sync needing manual editing) — two independently-dated sources agreeing dubbing is the weaker output-quality area relative to core TTS."
+      ]
+    },
+    {
+      "id": "EV-elevenlabs-review-06",
+      "claim": "A dated Capterra review (Bradley W., Director, Management Consulting, 2026-01-12, 5 stars) reports purchasing a subscription immediately after trial, praising 'exceptional' value and fast onboarding (2 minutes) with a straightforward interface, but separately criticizes a lack of pricing transparency, noting discount offers only appear at cancellation.",
+      "source_url": "https://www.capterra.com/p/10013392/ElevenLabs/reviews/",
+      "source_date": "2026-01-12",
+      "quote": "Exceptional value... fast onboarding, took about 2 minutes... straightforward interface. [Cons:] Lacks transparency in pricing; discount offers only at cancellation.",
+      "platform": "Capterra (review-platform; individual review dated 2026-01-12, visible as of capture 2026-07-22)",
+      "target_slug": "/tools/elevenlabs",
+      "collected_at": "2026-07-22",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "elevenlabs-review-2026-07-22",
+      "screening": "included",
+      "label": "community-report",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "ElevenLabs",
+        "aspect": "ease of use — fast (2-minute) onboarding and straightforward interface praised; pricing-transparency and retention-discount-tactic complaint noted",
+        "stance": "mixed",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-01-12"
+      },
+      "honesty_notes": [
+        "The 'discount offers only at cancellation' detail is a retention-tactic complaint distinct from the credit-rollover friction in EV-elevenlabs-review-03 — present as a separate, specific pricing-practice concern, not a duplicate of the rollover issue."
+      ]
+    },
+    {
+      "id": "EV-elevenlabs-review-07",
+      "claim": "A dated Capterra review (Luis V., Account Executive, Broadcast Media, 2026-05-18, 4 stars) reports using ElevenLabs for radio/advertising workflows, calling voice quality 'crazy' and noting setup took about 20 minutes while saving an estimated $8,000 versus hiring voice talent, but flags that voices 'sometimes sound overly perfect' and wants more regional accent variety.",
+      "source_url": "https://www.capterra.com/p/10013392/ElevenLabs/reviews/",
+      "source_date": "2026-05-18",
+      "quote": "Voice quality is crazy... setup took about 20 minutes... saved roughly $8K on voice talent. [Cons:] Voices sometimes sound overly perfect; needs regional accent variety.",
+      "platform": "Capterra (review-platform; individual review dated 2026-05-18, visible as of capture 2026-07-22)",
+      "target_slug": "/tools/elevenlabs",
+      "collected_at": "2026-07-22",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "elevenlabs-review-2026-07-22",
+      "screening": "included",
+      "label": "community-report",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "ElevenLabs",
+        "aspect": "ease of use (20-minute setup, business use case) and output quality (voice quality praised, 'overly perfect'/accent-variety limitation noted)",
+        "stance": "mixed",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-05-18"
+      },
+      "honesty_notes": [
+        "The '$8K saved' figure is this ONE reviewer's own cost estimate for their specific broadcast-media use case, not a vendor-verified or generalizable savings claim — attribute explicitly to this reviewer if cited."
+      ]
+    },
+    {
+      "id": "EV-elevenlabs-review-08",
+      "claim": "A dated Capterra review (Stephanie A., Content Creation, E-Learning, 2026-04-10, 4 stars) used ElevenLabs for YouTube and social-media voiceovers, calling it among the most realistic voice options available, but its listed con is that 'the credit system is too expensive' relative to the word allowances it provides.",
+      "source_url": "https://www.capterra.com/p/10013392/ElevenLabs/reviews/",
+      "source_date": "2026-04-10",
+      "quote": "Among the most realistic voice options available. [Cons:] The credit system is too expensive [relative to word allowances].",
+      "platform": "Capterra (review-platform; individual review dated 2026-04-10, visible as of capture 2026-07-22)",
+      "target_slug": "/tools/elevenlabs",
+      "collected_at": "2026-07-22",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "elevenlabs-review-2026-07-22",
+      "screening": "included",
+      "label": "community-report",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "ElevenLabs",
+        "aspect": "output quality (realism praised) paired with a value complaint (credit system too expensive for the word allowance given)",
+        "stance": "mixed",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-04-10"
+      },
+      "honesty_notes": [
+        "Pair with EV-elevenlabs-review-10 (the 10-of-24 defined-sample credit/pricing-friction count) — this is one of the ten contributing reviews, cite individually here and as part of the aggregate count there, not as two independent data points."
+      ]
+    },
+    {
+      "id": "EV-elevenlabs-review-09",
+      "claim": "A dated Capterra review (Richard L., Captain, Computer Games, 2026-07-09, 5 stars) reports being 'extremely satisfactory' with quick customer support and strong value from flexible text-to-speech features, but notes the monthly 10,000 free credits 'deplete quickly.'",
+      "source_url": "https://www.capterra.com/p/10013392/ElevenLabs/reviews/",
+      "source_date": "2026-07-09",
+      "quote": "Extremely satisfactory... quick customer support... strong value. [Cons:] Monthly 10,000 credits deplete quickly.",
+      "platform": "Capterra (review-platform; individual review dated 2026-07-09, visible as of capture 2026-07-22)",
+      "target_slug": "/tools/elevenlabs",
+      "collected_at": "2026-07-22",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "elevenlabs-review-2026-07-22",
+      "screening": "included",
+      "label": "community-report",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "ElevenLabs",
+        "aspect": "value — strong overall satisfaction and support responsiveness, paired with an independent, dated (13 days before this run's capture) confirmation that the free tier's 10,000 monthly credits run out fast",
+        "stance": "mixed",
+        "plan_tier_if_stated": "Free (10,000 credits/mo)",
+        "item_date": "2026-07-09"
+      },
+      "honesty_notes": [
+        "This is the MOST RECENT dated Capterra review found this run (2026-07-09, 13 days before capture) — useful for a 'still true today' framing of the free-tier-depletes-fast finding, since it independently corroborates the vendor's own 10,000-credit figure captured 2026-07-22."
+      ]
+    },
+    {
+      "id": "EV-elevenlabs-review-10",
+      "claim": "Of the 24 dated, individually-visible Capterra reviews of ElevenLabs (spanning 2023-11-15 to 2026-07-09, all screened on capture 2026-07-22), 10 list a credit-, subscription-, or pricing-related friction as a con: Christa B. (2025-12-27, rollover), Val G. (2026-04-20, 'another subscription'), Hasmukh S. (2025-10-02, 'pricey for heavy usage'), Bradley W. (2026-01-12, pricing transparency), Stephanie A. (2026-04-10, credit system too expensive), Richard L. (2026-07-09, credits deplete quickly), Petal N. (2025-10-18, 'newer features cost more'), Kayla M. (2025-04-30, 'credit management problematic'), Karen C. (2024-05-10, higher-tier pricing concern), Arthur C. (2023-11-28, 'unclear character allocation timing').",
+      "source_url": "https://www.capterra.com/p/10013392/ElevenLabs/reviews/",
+      "source_date": "2026-07-22",
+      "quote": "[Defined-sample count derived from 24 individually dated, verbatim review texts on this page; not a single quote — see claim field for the full linked reviewer list.]",
+      "platform": "Capterra (review-platform; denominator = 24 dated review-units, date window 2023-11-15 to 2026-07-09, all visible on the single reviews page captured 2026-07-22)",
+      "target_slug": "/tools/elevenlabs",
+      "collected_at": "2026-07-22",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "elevenlabs-review-2026-07-22",
+      "screening": "included",
+      "label": "community-report",
+      "coders": ["A", "B"],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "ElevenLabs",
+        "aspect": "defined-sample count of credit/subscription/pricing friction across all screened Capterra review-units (MEP §6 allowed reporting form: denominator + date window + link list)",
+        "stance": "mixed",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-07-22"
+      },
+      "honesty_notes": [
+        "FLAGGED for resolver: the keyword-match criteria for 'friction' are a judgment call (e.g. 'newer features cost more' counted; 'wants more accents' did not) — a second coder should independently re-run this count against the same 24 reviews before publication.",
+        "This is a DEFINED-SAMPLE count (10 of 24, dated, denominator stated, every contributing review individually named above) — the writer may present it exactly as 'of the 24 dated Capterra reviews, 10 cite pricing/credit friction' but MUST NOT convert it into a population percentage ('42% of users') or drop the denominator.",
+        "6 of the 10 contributing reviews (Christa B., Val G., Bradley W., Stephanie A., Richard L.) already have their own individual EV entries above; the other 5 (Hasmukh S., Petal N., Kayla M., Karen C., Arthur C.) are cited here only, not given separate entries, to keep the registry within a healthy entry count."
+      ]
+    },
+    {
+      "id": "EV-elevenlabs-review-11",
+      "claim": "ElevenLabs' own developer documentation (captured 2026-07-22) states its Voice Library contains 'over 10,000 voices shared by the ElevenLabs community,' organized into three types (Community, Cloned, Voice Design) and filterable by category, gender, age, accent, and use case. Vendor-stated, self-interested.",
+      "source_url": "https://elevenlabs.io/docs/overview/capabilities/voices",
+      "source_date": "2026-07-22",
+      "quote": "Over 10,000 voices shared by the ElevenLabs community.",
+      "platform": "elevenlabs.io/docs (vendor developer documentation — self-interested; captured 2026-07-22)",
+      "target_slug": "/tools/elevenlabs",
+      "collected_at": "2026-07-22",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "elevenlabs-review-2026-07-22",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "ElevenLabs",
+        "aspect": "voice-library scale (vendor-stated, single dated figure)",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-07-22"
+      },
+      "honesty_notes": [
+        "This is the ONE dated vendor figure the brief asked for; do not blend it with any third-party 'X,000 voices' estimate found in un-fetched search snippets this run — only this vendor-doc figure was independently verified."
+      ]
+    },
+    {
+      "id": "EV-elevenlabs-review-12",
+      "claim": "ElevenLabs' own model documentation and developer-signup page (both captured 2026-07-22) state: Multilingual v2 supports 29 languages and is positioned as 'best for high-fidelity audio output with rich emotional expression' (no low-latency claim); Flash v2.5 supports 32 languages, generates audio at '~75ms' latency (inference time, excluding network/application latency) and costs 50% less per character than the comparison point cited on the page; Turbo v2.5 is deprecated, with the vendor recommending Flash v2.5 'over Turbo models in all use cases.' Vendor-stated, self-interested.",
+      "source_url": "https://elevenlabs.io/docs/overview/models",
+      "source_date": "2026-07-22",
+      "quote": "Flash v2.5 generates audio at 75ms latency, optimized for conversational and real-time use cases... [Multilingual v2] trades latency for higher expressiveness... recommended using the Flash models over Turbo models in all use cases.",
+      "platform": "elevenlabs.io/docs (vendor developer documentation) + join.elevenlabs.io/tts/developer (vendor developer-signup page) — self-interested; both captured 2026-07-22",
+      "target_slug": "/tools/elevenlabs",
+      "collected_at": "2026-07-22",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "elevenlabs-review-2026-07-22",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "ElevenLabs",
+        "aspect": "model-version tradeoff — Multilingual v2 (quality/expressiveness-focused) vs Flash v2.5 (32 languages, ~75ms latency, cheaper, real-time) vs Turbo v2.5 (deprecated)",
+        "stance": "n/a",
+        "plan_tier_if_stated": "credit-cost multiplier by model not stated on either page fetched this run — do not invent a specific per-model credit ratio",
+        "item_date": "2026-07-22"
+      },
+      "honesty_notes": [
+        "The 75ms figure is explicitly qualified by the vendor itself as 'inference time, excluding application and network latency' — always carry that qualifier when citing the number, never present 75ms as guaranteed real-world end-to-end latency.",
+        "The docs page states Flash v2.5's language count (32) explicitly ADDS Hungarian, Norwegian, and Vietnamese to the Multilingual v2 lineup (29) — useful for explaining WHY the two models show different language counts, rather than presenting it as an unexplained discrepancy."
+      ]
+    },
+    {
+      "id": "EV-elevenlabs-review-13",
+      "claim": "ElevenLabs' current dubbing product page (captured 2026-07-22) states its Dubbing v2 model 'supports 90+ languages and accents, enabling localization for international audiences.' This is the ONE dated CURRENT vendor figure for dubbing language count. Vendor-stated, self-interested — see EV-elevenlabs-review-15 for a dated third-party hands-on test that found a materially lower figure (29) shortly before Dubbing v2's 2026-05-28 launch, which the timeline explains rather than contradicts.",
+      "source_url": "https://elevenlabs.io/dubbing",
+      "source_date": "2026-07-22",
+      "quote": "Dubbing v2 supports 90+ languages and accents, enabling localization for international audiences.",
+      "platform": "elevenlabs.io/dubbing (vendor product page — self-interested; captured 2026-07-22)",
+      "target_slug": "/tools/elevenlabs",
+      "collected_at": "2026-07-22",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "elevenlabs-review-2026-07-22",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "ElevenLabs",
+        "aspect": "dubbing language count — current vendor figure for the Dubbing v2 model specifically",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-07-22"
+      },
+      "honesty_notes": [
+        "FLAGGED for resolver alongside EV-elevenlabs-review-15: the vendor's OLDER Dubbing Studio (v1) product supports 29 languages per its own docs (EV-elevenlabs-review-12 source page) — the '90+' figure applies specifically to the NEWER Dubbing v2 model that launched 2026-05-28. If the writer cites a single dubbing-language number, it must specify WHICH dubbing product/version the number describes; do not present 90+ as if it were true of the whole dubbing feature set unconditionally."
+      ]
+    },
+    {
+      "id": "EV-elevenlabs-review-14",
+      "claim": "ElevenLabs' Agents (Conversational AI) pricing page (captured 2026-07-22) states the Free tier includes '15 minutes of calls included' per month with '4 Concurrent Calls,' scaling to Starter (75 min/6 concurrent), Creator (275 min/10), Pro (1,238 min/20), Scale (3,738 min/30), and Business (12,375 min/40). This is a free-tier cap distinct from and additional to the shared TTS/dubbing credit pool. Vendor-stated, self-interested.",
+      "source_url": "https://elevenlabs.io/pricing/agents",
+      "source_date": "2026-07-22",
+      "quote": "15 minutes of calls included. 4 Concurrent Calls.",
+      "platform": "elevenlabs.io/pricing/agents (vendor pricing page — self-interested; captured 2026-07-22)",
+      "target_slug": "/tools/elevenlabs",
+      "collected_at": "2026-07-22",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "elevenlabs-review-2026-07-22",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "ElevenLabs",
+        "aspect": "free-tier cap beyond credits — Conversational AI Agents Platform minute/concurrency allowance, billed separately by call-minute rather than the shared credit pool",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Free 15 min/4 concurrent — Business 12,375 min/40 concurrent",
+        "item_date": "2026-07-22"
+      },
+      "honesty_notes": [
+        "Confirms and replaces a search-summary-only figure (a prior WebSearch estimated '~15 minutes of Conversational AI agent time' derived FROM the shared credit pool) — the vendor page shows Agents minutes are their OWN separate allowance, not merely a re-expression of the 10,000 TTS credits. Do not conflate the two free-tier caps as if they were the same pool."
+      ]
+    },
+    {
+      "id": "EV-elevenlabs-review-15",
+      "claim": "In a disclosed hands-on test (theplanettools.ai, published 2026-05-09, updated 2026-05-24), the author dubbed a 4-minute MP4 interview clip end-to-end in about 25 minutes (1 min upload, 3 min processing, 15-20 min review/edit, 1-2 min export) and found the tool 'preserves the speaker's voice across languages' — calling this 'one of the strongest features' — and rated the output 'good enough for production use' when paired with human review. Limitations found: voice matching can flatten subtle dialect markers, background music with heavy bass can leak into the voice channel, and lip-sync needs manual editing when a translation runs longer than the source. As of this May 2026 test, the author states ElevenLabs supported 29 dubbing languages and that '32+' claims from other sites were outdated.",
+      "source_url": "https://theplanettools.ai/guides/how-to-dub-videos-with-elevenlabs-2026",
+      "source_date": "2026-05-09",
+      "quote": "After you've done 2-3 dubs and build a workflow, you can drop that to 12-15 minutes... [dubbing] preserves the speaker's voice across languages... good enough for production use [with human review].",
+      "platform": "theplanettools.ai (disclosed-methodology hands-on test — named test input, timed workflow breakdown; published 2026-05-09, updated 2026-05-24, captured 2026-07-22)",
+      "target_slug": "/tools/elevenlabs",
+      "collected_at": "2026-07-22",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "elevenlabs-review-2026-07-22",
+      "screening": "included",
+      "label": "independent-test",
+      "coders": ["A", "B"],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "ElevenLabs",
+        "aspect": "dubbing output quality — disclosed hands-on test with a named input, timed workflow, specific praise (voice preservation) and specific limitations (dialect flattening, bass-leak, lip-sync editing)",
+        "stance": "mixed",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-05-09"
+      },
+      "honesty_notes": [
+        "FLAGGED for resolver: this test's '29 languages, 32+ is outdated' claim (dated May 2026) predates the 2026-05-28 launch of Dubbing v2 (which the vendor's CURRENT page states supports 90+ languages, EV-elevenlabs-review-13) — the timeline suggests this test covered the OLDER Dubbing Studio v1 product, not a genuine ongoing dispute. Confirm this reading before publishing rather than presenting it as an unresolved contradiction.",
+        "theplanettools.ai recurs as a clique_candidate in this page's backlink_brief — note the relationship transparently if the writer also uses it as an outreach target; it does not appear to rank its own competing product in this specific article (lower COI than the hub's visme.co entries)."
+      ]
+    },
+    {
+      "id": "EV-elevenlabs-review-16",
+      "claim": "A dated third-party legal analysis of ElevenLabs' Terms of Service (terms.law, updated March 2026) states: paid subscribers own their generated audio outputs and can use them commercially, with content generated on paid plans usable 'perpetually' even after cancellation; free-plan users cannot use outputs commercially and must attribute ElevenLabs; voice cloning requires the cloner to own or have explicit consent from the voice's owner, with public-figure impersonation prohibited and accounts suspended for violations; the piece also notes voice-cloning consent laws now exist in 12+ US states (citing CA Civil Code 3344, NY Civil Rights Law 50-51, and Tennessee's ELVIS Act).",
+      "source_url": "https://terms.law/ai-output-rights/elevenlabs/",
+      "source_date": "2026-03-01",
+      "quote": "Paid ElevenLabs users own their AI audio outputs and can use them commercially... Free plan users CANNOT use outputs commercially and must attribute ElevenLabs... Must own or have consent for any voice you clone... No impersonation of public figures without consent.",
+      "platform": "terms.law (third-party legal-analysis site synthesizing ElevenLabs' own Terms of Service — quasi-vendor-derived, flagged; page states last updated March 2026, captured 2026-07-22)",
+      "target_slug": "/tools/elevenlabs",
+      "collected_at": "2026-07-22",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "elevenlabs-review-2026-07-22",
+      "screening": "included",
+      "label": "research-finding",
+      "coders": ["A", "B"],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "ElevenLabs",
+        "aspect": "voice-cloning consent requirements and commercial-rights ownership (free vs. paid), plus the wider US state-law consent landscape",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Free = no commercial use + attribution required; Starter $5/mo+ = full commercial rights",
+        "item_date": "2026-03-01"
+      },
+      "honesty_notes": [
+        "FLAGGED for resolver: this source ultimately synthesizes ElevenLabs' own ToS — a coder could argue for a vendor-claim label instead of research-finding. Present the consent/commercial-rights RULES as 'the vendor's terms state...' when citing, not as this third party's independent finding, even though the site did the synthesis work.",
+        "OWNED-BORDER CHECK: this entire entry concerns consent and commercial-rights ownership, never voice-clone DETECTION or deepfake-detection — confirmed clean of the owned-products border.",
+        "The page also notes ElevenLabs retains a 'perpetual, irrevocable, royalty-free, worldwide license to use your voice and content to train models' — an important consent-adjacent caveat for creators considering cloning their own voice; do not omit this when presenting the 'you own your output' claim, as the two facts qualify each other."
+      ]
+    },
+    {
+      "id": "EV-elevenlabs-review-17",
+      "claim": "A third-party review (devopscube.com, published 2026-04-24) stated ElevenLabs' free plan included 2,500 credits per month with no commercial license. ElevenLabs' own CURRENT pricing page (captured 2026-07-22, three months later) states the free plan now includes 10,000 credits per month — a 4x increase. This resolves, with dates, a free-tier-figure contradiction that appears across undated third-party sources without any resolution.",
+      "source_url": "https://devopscube.com/elevenlabs-review",
+      "source_date": "2026-04-24",
+      "quote": "A free plan with 2,500 credits per month, but it does not include a commercial license.",
+      "platform": "devopscube.com (third-party review; published/updated 2026-04-24, captured 2026-07-22)",
+      "target_slug": "/tools/elevenlabs",
+      "collected_at": "2026-07-22",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "elevenlabs-review-2026-07-22",
+      "screening": "included",
+      "label": "research-finding",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "ElevenLabs",
+        "aspect": "free-tier credit figure at a specific past date, enabling a dated before/after contradiction-resolution versus the current vendor figure",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Free 2,500 credits/mo (as of 2026-04-24 per this source)",
+        "item_date": "2026-04-24"
+      },
+      "honesty_notes": [
+        "This is the single strongest differentiator entry in this shard for the review's 'Pricing: Resolving the Free-Tier Contradiction' section — the two competing numbers (2,500 vs 10,000) are NOT a mystery when both are dated: the vendor appears to have increased the free allowance sometime between April and July 2026. Present as a dated timeline, not an unresolved dispute.",
+        "devopscube.com was previously fetched by the hub shard's sweep looking for a different (credit-multiplier) claim and found none registerable there — this run's fetch targeted a different, specific figure and found one. Standard practice: re-fetching the same URL for a different extraction target can surface new usable evidence."
+      ]
+    }
+  ]
+}
