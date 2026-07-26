@@ -1,0 +1,550 @@
+{
+  "_meta": {
+    "flow_id": "wellsaid-labs-review-2026-07-26",
+    "protocol_version": "MEP-1.0",
+    "target_slug": "/tools/wellsaid-labs",
+    "target_keyword": "wellsaid labs review",
+    "run_date": "2026-07-26",
+    "collector": "evidence-curator",
+    "page_class": "tools/single-tool review (5-dimension ToolScore verdict: overall/outputQuality/easeOfUse/value/evidenceBase). EXTENDS the /best/ai-voice-generators hub sweep (registry-best-ai-voice-generators.json) — re-registers and re-verifies EV-best-ai-voice-generators-10/11/12/13 as review-scoped entries (pricing, the 2022 refund/avatar complaint, the 2023 customization/export-limit review, and the COI-flagged visme.co 'not the cheapest' finding), then sweeps NEW dated evidence for company/trust facts, the HINTS word-level control feature, the consenting-paid-voice-actor licensing model, the current voice-library/language scope, the enterprise-sticker-vs-real-contract gap (Vendr), two independent disclosed-methodology hands-on tests, and three additional Capterra defined-sample counts. Owned-border CLEAN and held strictly: voice GENERATION/narration only; the consent/licensing material concerns paid voice-actor compensation and buyer commercial-use rights (ethics), never voice-clone detection or deepfake detection.",
+    "sweep_strategy": "Ran 9 documented WebSearch queries covering the brief's explicit must_sweep list (company founding/Allen Institute for AI origin, CEO transition, named enterprise customers, compliance certifications, avatar voice-count, HINTS/AI-Director word-level control, English-only-vs-multilingual language scope, Vendr enterprise-contract data, and site:reddit.com/site:quora.com community-sentiment probes). Direct-fetched every WellSaid-owned vendor URL surfaced (wellsaid.io homepage, /ai-voice-pricing, /features/ai-voices, /features/features-security, /resources/case-studies, /resources/blog/soc2-type-2, /resources/blog/introducing-hints, /resources/blog/building-the-future-of-ai-voice, hi.wellsaidlabs.com/snowflake-case-study) — all resolved successfully. Re-fetched the three already-known hub sources (wellsaid.io/ai-voice-pricing, capterra.com/p/238211/Wellsaid/reviews/, visme.co/blog/best-ai-voice-generator/) to confirm still-live status and extract deeper detail: the Capterra reviews page surfaced 14 individually dated review-units total (2 already registered by the hub as EV-11/EV-12, 12 newly screened this run). Business-press sources for company history/CEO (builtinseattle.com, aijourn.com) and independent tech journalism for the HINTS feature (siliconangle.com) resolved successfully; several adjacent business-press mirrors (businesswire.com primary press release — timeout; geekwire.com, fuse.vc, multilingual.com, help.wellsaid.io, venturebeat.com — 403/500/429) did NOT resolve this run and are logged unverifiable-this-run rather than cited from search-snippet memory. Trustpilot, G2 (4 sub-page variants), and both Reddit/Quora site:-scoped queries surfaced ZERO fetchable/real community-platform URLs — the identical structural block documented in every prior Mimo shard since 2026-07-10 (see reddit_access_note). Two disclosed-methodology independent hands-on tests were found and verified (unite.ai, fahimai.com); two competitor-run/no-methodology review pages (playhtai.com — a PlayHT-branded competitor domain; qcall.ai — reproduces unattributed 'user complaint' quotes with no source disclosure) were excluded. CRITICAL FINDING: the page brief's semantic_brief assumed WellSaid's catalog is 'English-only' — this run's direct vendor fetch shows that assumption is now OUTDATED (current page: 240+ voices, 25+ languages), dated and explained by a 2025-10-24 vendor blog documenting an active multilingual expansion; the writer must not carry the English-only framing forward without dating it to the pre-expansion period.",
+    "flow_counter": {
+      "identified": 79,
+      "screened": 79,
+      "excluded": 66,
+      "excluded_by_reason": {
+        "no-methodology-affiliate": 25,
+        "duplicate": 15,
+        "off-topic": 14,
+        "unverifiable-this-run": 12
+      },
+      "included_sources": 13,
+      "included_capterra_review_units": 14,
+      "registry_entries_new": 13,
+      "entries_reused": 4,
+      "counter_note": "identified = 79 distinct candidate URLs surfaced across the 9 documented WebSearch queries (8 topical + 1 pattern-derived direct fetch of g2.com/products/wellsaid-studio/reviews, folded into the count per the same convention used in prior Mimo shards) — a best-effort reconciliation across overlapping query result sets (recurring 'X Review/Pricing 2026' aggregator-mill domains, generic SOC2/HIPAA/GDPR explainer sites with no WellSaid mention, duplicate press-release mirrors, and platform-wide G2/Trustpilot/Reddit/Quora blocks) rather than a line-by-line individual audit of all 66 excluded items, consistent with how the hub and elevenlabs-review shards' own flow counters were reconciled. Separately, re-fetching the already-known hub-identified capterra.com/p/238211/Wellsaid/reviews/ page (not counted in the 79, per protocol §4's re-verification convention) surfaced 14 individually dated review-units as the unit of analysis: 2 were already registered by the hub shard (Nick M. 2022-11-25, Edwin M.R. 2023-11-27; re-registered here as EV-02/EV-03) and 12 were newly screened this run, none excluded (all dated, linkable via the shared reviews-page anchor, first-person, codable) — 4 contribute to a mispronunciation defined-sample (EV-15), 2 to a refund/customer-service defined-sample (EV-16, one of which — Nick M. — is also EV-02), 2 to a price-too-high defined-sample (EV-17), and the remaining 4 (Martin C., Verified Reviewer/Instructional Designer already used in EV-17, Shivasish S., Ashlee A., Brayan C. already used in EV-15, Katie F. already used in EV-15, Trisha C. already used in EV-15 and EV-16-adjacent, Jennifer H., Tricia H.) are named in the honesty_notes/claim fields of the defined-sample entries but not given individual IDs, to keep the registry within the healthy entry-count range. 13 distinct new (non-Capterra) sources were included, producing 13 new registry entries (EV-05 through EV-17) plus 4 re-registered hub entries (EV-01 through EV-04) — 17 entries total in this shard."
+    },
+    "coder_agreement_rate": "CURATOR-PROVISIONAL single-pass coding across all 17 entries (dual-independent coding + resolver pass orchestrated above this run). Stance calls: 6 n/a (vendor-primary company/pricing/compliance/feature facts, no sentiment to code), 7 mixed (paired positive/negative Capterra reviews + defined-sample entries + the two independent tests), 2 positive, 2 negative (n/a). FLAGGED FOR RESOLVER: (1) EV-08 (compliance) — a coder could read the page's ADA/WCAG line ('working towards compliance... by 2025', still live in 2026) as either an honest still-in-progress disclosure or a stale claim the vendor has not updated; flagged rather than resolved. (2) EV-09 (HINTS/SiliconANGLE) — the source is independently published but relays vendor announcement language uncritically; a coder could argue for a vendor-claim label instead of research-finding. (3) EV-12 (Vendr) — reports a date window ('Last updated: February 2026') but NO disclosed sample size (n=); MEP §6 requires denominator+date-window for defined-sample framing — a resolver should confirm whether this entry may be cited at all without an n=, or must be presented strictly as 'Vendr's own aggregated estimate' with no implied statistical weight. (4) EV-14 (fahimai.com) — contains an internal 90-vs-60-day self-contradiction on the SAME page and is a competing content-mill review site; a coder could argue for exclusion entirely rather than inclusion-with-caveats. (5) EV-15/16/17 (Capterra defined-samples) — keyword-match criteria for what counts as a 'mispronunciation', 'refund/customer-service', or 'price-too-high' complaint are judgment calls; a second coder should independently re-run these three counts against the same 14 reviews before publication.",
+    "query_census": [
+      { "q": "WebSearch: WellSaid Labs founded 2018 Allen Institute for AI spinout", "candidates": 10, "note": "builtinseattle.com/articles/wellsaid-labs-raises-10m-series-a-funding-hiring, speechify.com/blog/wellsaid-labs-funding-team-investors/, speechify.com/blog/wellsaid-labs-founded/, medium.com/@vanessa_marketing10/..., unite.ai/wellsaid-labs-review/, scribecount.com/..., qualcommventures.com/insights/blog/..., startupintros.com/orgs/wellsaidlabs-com, businessmodelcanvastemplate.com/blogs/brief-history/..., costbench.com/software/ai-voice-tools/wellsaid-labs/. builtinseattle.com direct-fetched → INCLUDED (EV-05); unite.ai flagged for a later dedicated fetch (→ EV-13)." },
+      { "q": "WebSearch: WellSaid Labs CEO Brian Cook 2024", "candidates": 9, "note": "geekwire.com/2024/tech-moves-nintex-founder-named-ceo-at-wellsaid-labs..., go.gale.com (x2 paywalled mirrors of the same press release), aijourn.com/brian-cook-appointed-as-ceo-of-wellsaid-labs..., newsnreleases.com/2024/01/22/..., linkedin.com/posts/austinguyette_..., fuse.vc/blog/welcome-brian-cook-ceo-of-wellsaid-labs, linkedin.com/posts/fusevc_..., markets.financialcontent.com/bpas/article/bizwire-2024-1-22-.... aijourn.com direct-fetched → INCLUDED (EV-06); geekwire.com (403) and fuse.vc (500) both unverifiable-this-run." },
+      { "q": "WebSearch: WellSaid Labs customers Intel Snowflake FedEx case study", "candidates": 8, "note": "hi.wellsaidlabs.com/snowflake-case-study, boringbusinessnerd.com/startups/wellsaid-labs, wellsaid.io/resources/case-studies, businesswire.com/news/home/20240122158216/en/... (dup of the CEO press release, query 2), fahimai.com/wellsaid-labs, languages.oup.com/about-us/case-studies/wellsaid-labs/, unite.ai/wellsaid-labs-review/ (dup), aiexpert.network/wellsaid-labs-1-enterprise-level-ai-voice-generator/. hi.wellsaidlabs.com and wellsaid.io/resources/case-studies both direct-fetched → INCLUDED (EV-07); fahimai.com flagged for a later dedicated fetch (→ EV-14)." },
+      { "q": "WebSearch: WellSaid Labs SOC2 GDPR HIPAA ADA compliance security", "candidates": 9, "note": "vanta.com, scrut.io, securityboulevard.com, novelvista.com, secureframe.com, dsalta.com, phala.com, censinet.com — all generic SOC2/HIPAA/GDPR explainer sites with no WellSaid-specific content, EXCLUDED off-topic; fahimai.com/wellsaid-labs (dup). None of these 8 explainer sites individually fetched — pattern-screened as off-topic by title/domain convention (none mention WellSaid). A dedicated follow-up query (below) found WellSaid's own security page instead." },
+      { "q": "WebSearch: WellSaid Labs \"120+\" voices avatar voice library size", "candidates": 8, "note": "heygen.com/blog/wellsaid-labs-alternatives, fahimai.com/how-to-use-wellsaid-labs, fahimai.com/wellsaid-labs (dup), aigearbase.com/tool/wellsaid-labs, aifounderkit.com/ai-tools/wellsaidlabs-review-features-pricing/, wellsaid.io/ (homepage), workspacetool.com/softwares/wellsaid/, businesswire.com/news/home/20240801191851/en (a different, Aug-2024 'Verbal Cues/Phonetic Respellings' release). wellsaid.io/ homepage direct-fetched — surfaced a preliminary '120+ voices... 280+ total voices' figure later SUPERSEDED by the more specific /features/ai-voices page (see query 7); homepage fetch itself EXCLUDED duplicate/superseded, not separately registered." },
+      { "q": "WebSearch: WellSaid Labs HINTS AI Director word-level pitch pace loudness control", "candidates": 9, "note": "markets.financialcontent.com/stocks/article/tokenring-2025-10-20-... (dup content of siliconangle.com, below), fahimai.com/wellsaid-labs (dup), fahimai.com/how-to-use-wellsaid-labs (dup), wellsaid.io/resources/blog/wellsaid-sets-new-ai-voice-standard, siliconangle.com/2025/10/20/wellsaid-pushes-ai-speech-forward-faster-natural-voice-production/, wellsaid.io/resources/blog/building-the-future-of-ai-voice, wellsaid.io/resources/blog/introducing-hints, wellsaid.io/resources/blog/new-features-in-well-said, markets.financialcontent.com/lightport.../bizwire-2025-10-20-... (dup mirror). siliconangle.com, wellsaid.io/resources/blog/introducing-hints, and wellsaid.io/resources/blog/building-the-future-of-ai-voice all direct-fetched → INCLUDED (EV-09, EV-11)." },
+      { "q": "WebSearch: WellSaid Labs voice library English only language support multilingual", "candidates": 9, "note": "multilingual.com/wellsaid-labs-collaborates-with-oxford-languages-..., freetts.org/freetts-vs-wellsaid, heygen.com (dup), help.wellsaid.io/hc/en-us/articles/39079854241299-Exploring-Languages-Accents-and-Styles, wellsaid.io/resources/blog/building-the-future-of-ai-voice (dup, already included), fahimai.com/wellsaid-labs (dup), wellsaid.io/features/ai-voices, wellsaidlabs.com/ (redirect, dup of homepage), help.wellsaidlabs.com/what-languages-do-you-offer. wellsaid.io/features/ai-voices direct-fetched → INCLUDED (EV-10, the critical English-only-is-now-outdated finding); multilingual.com (403) and help.wellsaid.io (403) both unverifiable-this-run." },
+      { "q": "WebSearch: Vendr WellSaid Labs pricing enterprise contract cost data", "candidates": 7, "note": "vendr.com/marketplace/wellsaidlabs, speechify.com/blog/wellsaid-labs-pricing-2023/, speechactors.com/article/wellsaid-labs-pricing-and-plans, g2.com/products/wellsaid-studio/pricing, spendhound.com/marketplace/wellsaid-labs-pricing, costbench.com (dup), aisotools.com/pricing/wellsaid. vendr.com direct-fetched → INCLUDED (EV-12)." },
+      { "q": "WebSearch: site:reddit.com WellSaid Labs review", "candidates": 6, "note": "speechify.com/blog/wellsaid-labs-reddit/, fahimai.com (dup), playhtai.com/wellsaid-labs-review/, g2.com/sellers/wellsaid-labs-inc, g2.com/compare/elevenlabsio-vs-wellsaid-studio, g2.com/products/wellsaid-studio. ZERO real reddit.com URLs despite the site: operator — identical to the hub shard's finding for this same tool." },
+      { "q": "WebSearch: site:quora.com WellSaid Labs review worth it", "candidates": 7, "note": "fineshare.com/reviews/wellsaid-labs.html, fahimai.com (dup), qcall.ai/wellsaid-labs-review, yetiai.com/wellsaid-labs-review-pros-and-cons/, aitoolrush.com/reviews/wellsaid-labs, textospeech.net/wellsaid-labs-review/, playhtai.com/wellsaid-labs-review/ (dup). ZERO real quora.com URLs. qcall.ai and playhtai.com both individually fetched and EXCLUDED (see below)." },
+      { "q": "WebSearch: WellSaid Labs Trustpilot reviews", "candidates": 7, "note": "trustpilot.com/review/www.wellsaid.io, fineshare.com (dup), trustradius.com/products/wellsaid/reviews, glassdoor.com/Reviews/WellSaid-Labs-Reviews-E4418821.htm (employee reviews, off-topic for a product review), qcall.ai (dup), playhtai.com (dup), toolradar.com/tools/wellsaid-labs. trustpilot.com direct-fetched → HTTP 403, unverifiable-this-run." },
+      { "q": "WebSearch: wellsaid.io trust security compliance SOC2 Type 2 GDPR HIPAA ADA page", "candidates": 9, "note": "wellsaid.io/resources/blog/soc2-type-2, wellsaid.io/features/features-security, strac.io, trycomp.ai, vanta.com (dup), secureframe.com (dup), cloudeagle.ai, getsecureslate.com, getastra.com. Both wellsaid.io URLs direct-fetched → INCLUDED (EV-08); the 7 generic compliance-explainer sites EXCLUDED off-topic (no WellSaid-specific content)." },
+      { "q": "DIRECT: WebFetch https://www.businesswire.com/news/home/20240122158216/en/Brian-Cook-Appointed-as-CEO-of-WellSaid-Labs-Matthew-Hocking-Transitions-to-Executive-Chairman (the primary press release, already identified query 2/3)", "candidates": 0, "note": "Timed out (60s) — unverifiable-this-run. Same story independently confirmed instead via aijourn.com (EV-06)." },
+      { "q": "DIRECT: WebFetch https://www.geekwire.com/2024/tech-moves-nintex-founder-named-ceo-at-wellsaid-labs-f5-hires-ciso-slalom-appoints-execs/ (already identified query 2)", "candidates": 0, "note": "HTTP 403 — unverifiable-this-run." },
+      { "q": "DIRECT: WebFetch https://fuse.vc/blog/welcome-brian-cook-ceo-of-wellsaid-labs (already identified query 2)", "candidates": 0, "note": "HTTP 500 — unverifiable-this-run." },
+      { "q": "DIRECT: WebFetch https://www.wellsaidlabs.com (root domain, testing whether the old vendor domain still resolves)", "candidates": 0, "note": "301 redirect to https://www.wellsaid.io/ — confirms the vendor's current primary domain is wellsaid.io, not wellsaidlabs.com; re-fetched at the redirect target instead (folded into the homepage fetch, EXCLUDED duplicate/superseded per query 5)." },
+      { "q": "DIRECT: WebFetch https://venturebeat.com/ai/wellsaid-labs-unveils-hints-setting-new-bar-for-ai-voice-customization (already identified query 6)", "candidates": 0, "note": "HTTP 403 on first attempt, HTTP 429 (rate-limited) on retry — unverifiable-this-run both times. Independent HINTS coverage obtained instead from siliconangle.com (EV-09)." },
+      { "q": "DIRECT: WebFetch https://help.wellsaid.io/hc/en-us/articles/39079854241299-Exploring-Languages-Accents-and-Styles (already identified query 7)", "candidates": 0, "note": "HTTP 403 — unverifiable-this-run. Language-scope claim obtained instead from wellsaid.io/features/ai-voices (EV-10)." },
+      { "q": "DIRECT: WebFetch https://www.multilingual.com/wellsaid-labs-collaborates-with-oxford-languages-to-enhance-ai-voice-generation/ (already identified query 7)", "candidates": 0, "note": "HTTP 403 — unverifiable-this-run." },
+      { "q": "DIRECT: WebFetch https://www.trustpilot.com/review/www.wellsaid.io (already identified query 11)", "candidates": 0, "note": "HTTP 403 — unverifiable-this-run, consistent with every prior Mimo shard's Trustpilot block." },
+      { "q": "DIRECT: WebFetch https://www.g2.com/products/wellsaid-studio/reviews (pattern-derived from the /pricing sub-page identified query 8, NOT itself returned by any search query this run)", "candidates": 1, "note": "New URL, found only by directly guessing the G2 reviews sub-page pattern. HTTP 403 — unverifiable-this-run, consistent with every prior Mimo shard's G2 block. Counted in the 79 identified per the pattern-derived-URL convention." },
+      { "q": "DIRECT: WebFetch https://www.reddit.com/search/?q=wellsaid%20labs%20review and https://old.reddit.com/search.json?q=wellsaid+labs", "candidates": 0, "note": "Both blocked at the tool level ('Claude Code is unable to fetch from www.reddit.com' / 'old.reddit.com') — same inherited environment-level block documented in every prior Mimo shard since 2026-07-10." },
+      { "q": "DIRECT: WebFetch https://playhtai.com/wellsaid-labs-review/ (already identified queries 9 and 10)", "candidates": 0, "note": "Fetched fully: no disclosed methodology ('I tested several content styles' with no sample size or reproducible protocol), hosted on a direct TTS-competitor's own domain (PlayHT), extensively cross-promotes PlayHT's own product with no upfront COI disclosure. EXCLUDED no-methodology-affiliate (competitor-COI compounding the lack of method)." },
+      { "q": "DIRECT: WebFetch https://qcall.ai/wellsaid-labs-review (already identified query 10)", "candidates": 0, "note": "Fetched fully: claims '30 Days with WellSaid Labs' but no sample size/dated inputs; presents unattributed 'user complaint' quotes (e.g. a $550-renewal complaint) with no link to Capterra/Trustpilot/G2 source; heavily promotes Qcall.ai's own product via the reviewer's own Qcall.ai profile link, no affiliate disclosure. EXCLUDED no-methodology-affiliate — same integrity pattern the hub shard found for this domain's LOVO AI review." },
+      { "q": "DIRECT (re-verification, not new discovery): WebFetch https://www.wellsaid.io/ai-voice-pricing, https://www.capterra.com/p/238211/Wellsaid/reviews/, https://visme.co/blog/best-ai-voice-generator/", "candidates": 0, "note": "Re-fetch of the 3 already hub-identified URLs per protocol §4 — not counted again in 'identified'. All 3 confirmed still live 2026-07-26: pricing figures unchanged from the hub's 2026-07-21 capture (EV-01); the Capterra reviews page surfaced 14 individually dated review-units, 2 already known (EV-02, EV-03) and 12 newly screened (feeding EV-15/16/17); the visme.co WellSaid section and its #1-self-ranking COI both confirmed unchanged (EV-04)." },
+      { "q": "VERIFICATION FETCHES (successful, not new discovery queries): builtinseattle.com, aijourn.com, hi.wellsaidlabs.com/snowflake-case-study, wellsaid.io/resources/case-studies, wellsaid.io/features/features-security, wellsaid.io/resources/blog/soc2-type-2, siliconangle.com, wellsaid.io/resources/blog/introducing-hints, wellsaid.io/resources/blog/building-the-future-of-ai-voice, wellsaid.io/features/ai-voices, vendr.com/marketplace/wellsaidlabs, unite.ai/wellsaid-labs-review/, fahimai.com/wellsaid-labs", "candidates": 0, "note": "Direct verification fetches of URLs already surfaced in the query census above — not double-counted in 'identified'." }
+    ],
+    "reddit_access_note": "Reddit was structurally unreachable this run: the one site:reddit.com-targeted WebSearch query surfaced ZERO actual reddit.com URLs (only Capterra/G2/aggregator results), and two direct WebFetch attempts (www.reddit.com/search and old.reddit.com/search.json) were both blocked at the tool level. This exactly matches the identical block documented in the hub shard and every prior Mimo shard since 2026-07-10 — confirmed AGAIN for this specific tool five days later. Quora surfaced zero real quora.com URLs across its dedicated query. Trustpilot (1 URL) and G2 (4 URL variants: /pricing, /reviews [pattern-derived], /sellers, /compare) were ALL HTTP 403. CONSEQUENCE: community sentiment for this review routes entirely through Capterra (14 dated review-units, fetched successfully) plus two independent disclosed-methodology third-party tests (unite.ai, fahimai.com) — a genuine platform-coverage gap that must be disclosed in the page's limitations paragraph, exactly as the hub shard already discloses for the same reason.",
+    "astroturf_note": "The astroturf screen (§3.1: templated look-alike threads, recurring fresh personas, all funneling to one vendor) was applied to every low-trust 'WellSaid Labs Review 2026' aggregator-mill candidate surfaced this run (heygen.com, aigearbase.com, aifounderkit.com, workspacetool.com, fineshare.com, yetiai.com, aitoolrush.com, textospeech.net, toolradar.com, speechactors.com, spendhound.com, aisotools.com, costbench.com, and others). No templated-persona-network pattern was detected — these read as independently-run SEO content-mill sites competing for the same keyword, not a coordinated persona network, and were pattern-excluded under no-methodology-affiliate rather than astroturf. The two individually-fetched exclusions (playhtai.com, qcall.ai) are single-site COI/no-methodology problems, not multi-site persona networks — flagged for visibility but not astroturf in the canonical MikeAppsReviewer-network sense. Zero astroturf-pattern sources were registered or cited.",
+    "exclusion_log_notes": [
+      "no-methodology-affiliate (25): the dominant category — recurring 'WellSaid Labs Review/Pricing 2026' aggregator-mill domains across nearly every query (speechify.com blog x4, medium.com/@vanessa_marketing10, scribecount.com, startupintros.com, businessmodelcanvastemplate.com, costbench.com, boringbusinessnerd.com, aiexpert.network, heygen.com, aigearbase.com, aifounderkit.com, workspacetool.com, speechactors.com, spendhound.com, aisotools.com, fineshare.com, yetiai.com, aitoolrush.com, textospeech.net, toolradar.com) plus the two individually-fetched-and-confirmed COI/no-method sources: playhtai.com (competitor-run TTS vendor's own domain, no disclosed methodology, undisclosed COI) and qcall.ai (unattributed 'user complaint' quotes with no source link, undisclosed self-promotion of the reviewer's own Qcall.ai product).",
+      "duplicate (15): near-duplicate press-release mirrors and redundant-topic pages not independently fetched — go.gale.com (x2 paywalled mirrors of the Brian Cook press release), linkedin.com posts (x2, same announcement), markets.financialcontent.com/bpas (bizwire-2024-1-22, redundant with aijourn.com), qualcommventures.com (redundant funding story with builtinseattle.com), markets.financialcontent.com/lightport (x2 mirrors of the Aug-2024 and Oct-2025 WellSaid product-announcement releases, both superseded by directly-fetched originals/siliconangle.com), wellsaid.io/ homepage (superseded by the more specific /features/ai-voices and /features/features-security pages), wellsaidlabs.com/ (301-redirects to the same wellsaid.io homepage), help.wellsaidlabs.com/what-languages-do-you-offer (redundant with /features/ai-voices), businesswire.com/news/home/20240801191851 (Aug-2024 'Verbal Cues' release, superseded by the Oct-2025 blog posts actually fetched), wellsaid.io/resources/blog/wellsaid-sets-new-ai-voice-standard and /new-features-in-well-said (redundant product-announcement coverage of the same Oct-2025 HINTS/Studio relaunch already sourced via siliconangle.com + introducing-hints + building-the-future-of-ai-voice), languages.oup.com (Oxford Languages' own case-study page, redundant with the multilingual.com coverage of the same partnership, neither independently fetched), fahimai.com/how-to-use-wellsaid-labs (a separate feature-guide page on a domain whose main review page was already fetched for EV-14).",
+      "off-topic (14): 8 generic SOC2/HIPAA/GDPR/ISO compliance-explainer sites that never mention WellSaid Labs specifically (vanta.com, scrut.io, securityboulevard.com, novelvista.com, secureframe.com, dsalta.com, phala.com, censinet.com) plus 4 more surfaced by the dedicated security-page query (strac.io, trycomp.ai, cloudeagle.ai, getsecureslate.com, getastra.com — 5 total, bringing this sub-bucket to 13) and glassdoor.com/Reviews/WellSaid-Labs-Reviews-E4418821.htm (employee/workplace reviews, off-topic for a product review of the tool itself).",
+      "unverifiable-this-run (12): businesswire.com's primary Brian Cook press release (60s timeout), geekwire.com (403), fuse.vc (500), multilingual.com (403), help.wellsaid.io (403), venturebeat.com (403 then 429 on retry), trustpilot.com/review/www.wellsaid.io (403), g2.com/products/wellsaid-studio/reviews (403, pattern-derived), g2.com/sellers/wellsaid-labs-inc (not individually re-tested, folded into the established G2 domain-wide block from prior shards), g2.com/compare/elevenlabsio-vs-wellsaid-studio (same), g2.com/products/wellsaid-studio/pricing (same), trustradius.com/products/wellsaid/reviews (not individually tested, review-platform consistent with the Trustpilot/G2 block pattern), both direct Reddit search attempts (tool-blocked).",
+      "OWNED-BORDER held (0 registered): every consent/licensing source found and registered (EV-08, EV-10) concerns paid voice-actor compensation and buyer commercial-use rights, never voice-clone DETECTION or deepfake-detection — confirmed no candidate source this run touched the AI-detector/humanizer/paraphraser border."
+    ],
+    "entries_reused": [
+      "EV-best-ai-voice-generators-10 (wellsaid.io/ai-voice-pricing, 4-tier pricing ladder) — re-fetched and re-registered with new commercial-rights-per-tier detail as EV-wellsaid-labs-review-01",
+      "EV-best-ai-voice-generators-11 (Nick M., Capterra, 2022-11-25) — re-registered as EV-wellsaid-labs-review-02",
+      "EV-best-ai-voice-generators-12 (Edwin M.R., Capterra, 2023-11-27) — re-registered as EV-wellsaid-labs-review-03",
+      "EV-best-ai-voice-generators-13 (visme.co, 2025-09-19, COI-flagged) — re-registered as EV-wellsaid-labs-review-04"
+    ]
+  },
+  "entries": [
+    {
+      "id": "EV-wellsaid-labs-review-01",
+      "claim": "On its current pricing page (re-verified 2026-07-26, five days after the hub's 2026-07-21 capture, figures unchanged) WellSaid Labs lists Trial (free, 3 min/mo, non-commercial), Starter ($10/mo billed annually or $19/mo monthly, 20 min/mo, full commercial rights), Pro ($33/mo annual or $49/mo monthly, 180 min/mo, full commercial rights), Business ($160/mo/seat billed annually, 2,880 min/yr/seat, full commercial rights), and custom Enterprise — all metered in DOWNLOADED minutes, with unlimited in-app generation attempts (only exported/downloaded audio counts against the cap). Vendor-stated, self-interested.",
+      "source_url": "https://www.wellsaid.io/ai-voice-pricing",
+      "source_date": "2026-07-26",
+      "quote": "Trial: $0, 3 minutes/month... Starter: $10/mo (billed annually) / $19/mo, 20 minutes/month, full commercial rights... Pro: $33/mo (billed annually) / $49/mo, 180 minutes/month, full commercial rights... Business: $160/mo/user (billed annually), 2,880 minutes/year/user, full commercial rights.",
+      "platform": "wellsaid.io/ai-voice-pricing (vendor pricing page — self-interested; captured 2026-07-26, re-verifying hub capture 2026-07-21)",
+      "target_slug": "/tools/wellsaid-labs",
+      "collected_at": "2026-07-26",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "wellsaid-labs-review-2026-07-26",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "WellSaid Labs",
+        "aspect": "current 4-tier pricing ladder, metered in downloaded minutes, plus per-tier commercial-rights terms and the unlimited-generation-attempts detail",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Trial $0/mo – Business $160/mo/seat (4 tiers + custom Enterprise)",
+        "item_date": "2026-07-26"
+      },
+      "honesty_notes": [
+        "Re-registered from EV-best-ai-voice-generators-10 (hub shard) — figures confirmed unchanged 5 days later. NEW detail this run: commercial usage rights are explicitly granted on ALL paid tiers per the vendor's own wording, and only DOWNLOADED/exported audio consumes the minute allocation — unlimited in-app generation/preview attempts do not count against the cap.",
+        "Do not conflate 'generation' with 'download' when computing any per-minute cost math — the vendor page draws this distinction explicitly."
+      ]
+    },
+    {
+      "id": "EV-wellsaid-labs-review-02",
+      "claim": "A dated Capterra review of WellSaid (Nick M., Copywriter, 2022-11-25, 1 star) reports it was not made clear at signup that customers don't get to choose their own avatar voices, and that a refund request made within 2 hours of starting was denied — a documented onboarding-transparency and refund-policy complaint. Re-confirmed still live on Capterra as of this run's 2026-07-26 capture.",
+      "source_url": "https://www.capterra.com/p/238211/Wellsaid/reviews/",
+      "source_date": "2022-11-25",
+      "quote": "It's not clear that you don't get to choose your 4 avatar voices.",
+      "platform": "Capterra (review-platform; aggregate 4.4/5, n=14 dated review-units, independently re-tallied this run and consistent with the hub shard's stated figure; this individual review dated 2022-11-25, visible as of capture 2026-07-26)",
+      "target_slug": "/tools/wellsaid-labs",
+      "collected_at": "2026-07-26",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "wellsaid-labs-review-2026-07-26",
+      "screening": "included",
+      "label": "community-report",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "WellSaid Labs",
+        "aspect": "onboarding transparency (voice-selection scope) and refund-policy complaint",
+        "stance": "negative",
+        "plan_tier_if_stated": null,
+        "item_date": "2022-11-25"
+      },
+      "honesty_notes": [
+        "Re-registered from EV-best-ai-voice-generators-11 (hub shard) — same source, re-fetched and confirmed still live 2026-07-26.",
+        "Pairs with EV-wellsaid-labs-review-16, a defined-sample count that adds a second, independently-dated refund/customer-service complaint (Ryan S., 2023-05-08) — present as a 2-of-14 defined-sample pattern, not as an isolated single complaint."
+      ]
+    },
+    {
+      "id": "EV-wellsaid-labs-review-03",
+      "claim": "A second dated Capterra review of WellSaid (Edwin M.R., Content Developer, 2023-11-27, 5 stars) praises it as having 'the most customizable, natural, human-sounding voices' but separately notes limitations on how much can be exported as a single clip — a specific, named technical friction inside an otherwise strongly positive review. Re-confirmed still live on Capterra as of this run's 2026-07-26 capture.",
+      "source_url": "https://www.capterra.com/p/238211/Wellsaid/reviews/",
+      "source_date": "2023-11-27",
+      "quote": "The most customizable, natural, human-sounding voices.",
+      "platform": "Capterra (review-platform; individual review dated 2023-11-27, visible as of capture 2026-07-26)",
+      "target_slug": "/tools/wellsaid-labs",
+      "collected_at": "2026-07-26",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "wellsaid-labs-review-2026-07-26",
+      "screening": "included",
+      "label": "community-report",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "WellSaid Labs",
+        "aspect": "voice naturalness/customization strongly praised; single-clip export-length limitation noted",
+        "stance": "mixed",
+        "plan_tier_if_stated": null,
+        "item_date": "2023-11-27"
+      },
+      "honesty_notes": [
+        "Re-registered from EV-best-ai-voice-generators-12 (hub shard) — same source, re-fetched and confirmed still live 2026-07-26.",
+        "Corroborated by both EV-04 (visme.co, 2025-09-19) and EV-13 (unite.ai, 2023-10-14) — three independently-dated sources reach the same directional finding on voice naturalness."
+      ]
+    },
+    {
+      "id": "EV-wellsaid-labs-review-04",
+      "claim": "In a disclosed hands-on comparison (visme.co, published 2025-09-19, re-confirmed still live 2026-07-26), the author calls WellSaid Labs narration 'clean and surprisingly natural-sounding' and best for corporate training/onboarding/enterprise communications, but states plainly 'it's not the cheapest option' — a specific value-for-money caveat from a source with a heavy conflict of interest (the SAME article ranks the publisher's own competing product, Visme, #1).",
+      "source_url": "https://visme.co/blog/best-ai-voice-generator/",
+      "source_date": "2025-09-19",
+      "quote": "The narration was clean and surprisingly natural-sounding... it's not the cheapest option, but the quality and consistency make it a strong contender for businesses that need professional-sounding narration at scale.",
+      "platform": "visme.co/blog (disclosed-methodology hands-on test, published by a company that ranks its own competing product #1 in the same article — self-interested; published 2025-09-19, re-verified live 2026-07-26)",
+      "target_slug": "/tools/wellsaid-labs",
+      "collected_at": "2026-07-26",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "wellsaid-labs-review-2026-07-26",
+      "screening": "included",
+      "label": "independent-test",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "WellSaid Labs",
+        "aspect": "narration quality praised for corporate/enterprise use case; pricing flagged as not the cheapest",
+        "stance": "mixed",
+        "plan_tier_if_stated": null,
+        "item_date": "2025-09-19"
+      },
+      "honesty_notes": [
+        "Re-registered from EV-best-ai-voice-generators-13 (hub shard) — same source, re-fetched and confirmed still live and unchanged 2026-07-26, including the COI (Visme's own product still ranked #1 in the same article).",
+        "The 'not the cheapest' characterization is corroborated by EV-17 (2 independently-dated Capterra reviews separately flagging price as too high) — an independent qualitative impression matching a separate community pattern."
+      ]
+    },
+    {
+      "id": "EV-wellsaid-labs-review-05",
+      "claim": "WellSaid Labs was founded in Seattle in 2018, spinning out of the Allen Institute for AI (AI2) — an AI-startup incubator also linked to companies like Lexion — by Matt Hocking (CEO) and Michael Petrochuk (CTO); the company closed a $10M Series A round led by FUSE, with Qualcomm Ventures, GoodFriends, and prior investor Voyager participating.",
+      "source_url": "https://www.builtinseattle.com/articles/wellsaid-labs-raises-10m-series-a-funding-hiring",
+      "source_date": "2021-07-08",
+      "quote": "Founded in 2018, WellSaid Labs spun out of the Allen Institute for AI, which is also responsible for Lexion and other AI-oriented startups.",
+      "platform": "builtinseattle.com (regional tech/business press outlet; article dated 2021-07-08, captured 2026-07-26)",
+      "target_slug": "/tools/wellsaid-labs",
+      "collected_at": "2026-07-26",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "wellsaid-labs-review-2026-07-26",
+      "screening": "included",
+      "label": "research-finding",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "WellSaid Labs",
+        "aspect": "company founding/origin story (Allen Institute for AI spinout) plus $10M Series A funding",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2021-07-08"
+      },
+      "honesty_notes": [
+        "This is a 2021 article reporting a fixed historical fact (2018 founding), not current operations — corroborated indirectly by co-founder Matthew Hocking's 2024 quote in EV-06 ('after a fulfilling five years building WellSaid Labs'), consistent with a 2018-2019 founding window."
+      ]
+    },
+    {
+      "id": "EV-wellsaid-labs-review-06",
+      "claim": "In January 2024, WellSaid Labs appointed Brian Cook — previously CEO of workflow-software company Nintex for 14 years (growing it to 5,000+ customers across 90+ countries) and founder of investment fund Incredible Capital — as CEO; co-founder Matthew Hocking transitioned to the role of Executive Chairman.",
+      "source_url": "https://aijourn.com/brian-cook-appointed-as-ceo-of-wellsaid-labs-matthew-hocking-transitions-to-executive-chairman/",
+      "source_date": "2024-01-22",
+      "quote": "In Cook's new role, he will guide WellSaid Labs into the next growth phase focused on enterprise teams to produce at scale and build their brands with ethical and authentic voice experiences... After a fulfilling five years building WellSaid Labs, I'm looking forward to taking on a new role to facilitate the company's success in its next chapter.",
+      "platform": "aijourn.com (AI trade-press outlet, republishing a dated 2024-01-22 press release; captured 2026-07-26) — note: businesswire.com's own primary press release URL timed out this run",
+      "target_slug": "/tools/wellsaid-labs",
+      "collected_at": "2026-07-26",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "wellsaid-labs-review-2026-07-26",
+      "screening": "included",
+      "label": "research-finding",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "WellSaid Labs",
+        "aspect": "CEO transition (Brian Cook, ex-Nintex) and explicit enterprise-focus reorientation",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2024-01-22"
+      },
+      "honesty_notes": [
+        "businesswire.com's own primary press release timed out this run (unverifiable-this-run) — this aijourn.com republication carries matching, independently checkable quotes; retry businesswire.com at publish time if a fresher primary-source link is preferred.",
+        "Cook's explicit enterprise-focus mandate directly supports the page's persona_brief (55% enterprise-L&D-buyer) — cite as company direction, not as a guarantee of any specific current feature."
+      ]
+    },
+    {
+      "id": "EV-wellsaid-labs-review-07",
+      "claim": "WellSaid's current case-studies page (captured 2026-07-26) lists FedEx among roughly 20 named enterprise customer logos (also including Microsoft, Adobe, Amazon, American Airlines, Google, LinkedIn, T-Mobile, and the U.S. Dept. of Homeland Security); a separate, dated vendor case-study page describes Snowflake's Learning & Development team adopting WellSaid to cut voiceover-update time to 'just minutes.' Intel was NOT independently confirmed on any WellSaid-owned page fetched this run.",
+      "source_url": "https://www.wellsaid.io/resources/case-studies",
+      "source_date": "2026-07-26",
+      "quote": "Creating with AI voice from WellSaid, the Snowflake team was able to update content quickly and consistently, using the same Voice Avatar used to create it.",
+      "platform": "wellsaid.io/resources/case-studies (vendor case-studies page) + hi.wellsaidlabs.com/snowflake-case-study (vendor landing page) — both self-interested; both captured 2026-07-26",
+      "target_slug": "/tools/wellsaid-labs",
+      "collected_at": "2026-07-26",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "wellsaid-labs-review-2026-07-26",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "WellSaid Labs",
+        "aspect": "named enterprise customer logos + a dated Snowflake L&D case study",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-07-26"
+      },
+      "honesty_notes": [
+        "FedEx and Snowflake are DIRECTLY vendor-confirmed via this run's own fetches — cite these two, not the wider un-fetched aggregator claim that Intel and Peloton are also customers (that claim comes only from third-party search-summary snippets never independently verified this run); logged as an evidence_gap, not registered as fact.",
+        "The case-studies page does not date any individual case study — do not present the Snowflake story as recent without qualification; it is undated on the page itself."
+      ]
+    },
+    {
+      "id": "EV-wellsaid-labs-review-08",
+      "claim": "WellSaid's security page (captured 2026-07-26) states SOC2 Type I and Type II certification (Type II specifically dated to 2023-08-15 per the vendor's own blog post, quoting CEO Matt Hocking) and GDPR compliance; it separately states infrastructure is 'deployed on FINRA, HIPAA and ISO-compliant services' (an infrastructure-hosting claim, not a stated HIPAA certification of WellSaid itself), and that WCAG 2.1/accessibility work was, in the page's own current wording, still 'working towards compliance... by 2025' — a target date that has already passed as of this 2026-07-26 capture.",
+      "source_url": "https://www.wellsaid.io/features/features-security",
+      "source_date": "2026-07-26",
+      "quote": "SOC2 Type II certified and maintain compliance with the General Data Protection Regulation (GDPR)... All our infrastructure is deployed on FINRA, HIPAA and ISO-compliant services... We are committed to meet WCAG 2.1 and other national standards, working towards compliance in these areas by 2025.",
+      "platform": "wellsaid.io/features/features-security (vendor page) + wellsaid.io/resources/blog/soc2-type-2 (vendor blog, dated 2023-08-15) — both self-interested; both captured 2026-07-26",
+      "target_slug": "/tools/wellsaid-labs",
+      "collected_at": "2026-07-26",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "wellsaid-labs-review-2026-07-26",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": ["A", "B"],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "WellSaid Labs",
+        "aspect": "compliance certifications — SOC2 Type II confirmed with a specific 2023 date and GDPR stated as current/complete; HIPAA framed as infrastructure-level rather than a WellSaid certification; ADA/WCAG stated as an unmet, overdue-looking 2025 target",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-07-26"
+      },
+      "honesty_notes": [
+        "Do NOT round this up to 'WellSaid Labs is HIPAA-compliant' or 'ADA-compliant' as flat certifications — the vendor's own wording is softer than that shorthand: SOC2 Type II and GDPR are the only two claims stated as current and complete.",
+        "FLAGGED for resolver: the ADA/WCAG line's stated 2025 deadline has already passed as of this 2026-07-26 capture with no update visible on the page — a coder could read this as an honest still-in-progress disclosure or as a stale, un-refreshed claim; present it as a direct quote with the date discrepancy flagged, not as evidence WellSaid is or isn't ADA-compliant today."
+      ]
+    },
+    {
+      "id": "EV-wellsaid-labs-review-09",
+      "claim": "WellSaid's HINTS system ('Highly Intuitive Naturally Tailored Speech') lets users fine-tune pitch, pace, and loudness at the word level inside a script — initially launched with loudness/tempo cues (vendor blog, 2024-02-13) and highlighted again in an October 2025 Studio relaunch covered by independent tech-news outlet SiliconANGLE.",
+      "source_url": "https://siliconangle.com/2025/10/20/wellsaid-pushes-ai-speech-forward-faster-natural-voice-production/",
+      "source_date": "2025-10-20",
+      "quote": "Users can fine-tune pitch, pace and loudness of voices at the word-level, while also adding multiple voices in one script or dialogue.",
+      "platform": "siliconangle.com (independent tech-news outlet, reporting WellSaid's own product announcement; published 2025-10-20) + wellsaid.io/resources/blog/introducing-hints (vendor blog, original HINTS launch, published 2024-02-13, self-interested) — both captured 2026-07-26",
+      "target_slug": "/tools/wellsaid-labs",
+      "collected_at": "2026-07-26",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "wellsaid-labs-review-2026-07-26",
+      "screening": "included",
+      "label": "research-finding",
+      "coders": ["A", "B"],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "WellSaid Labs",
+        "aspect": "word-level pitch/pace/loudness control (HINTS), a stated product differentiator",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2025-10-20"
+      },
+      "honesty_notes": [
+        "FLAGGED for resolver: SiliconANGLE's coverage relays WellSaid's own announcement language rather than independently testing the feature — a coder could argue for a vendor-claim label instead of research-finding. Present as 'independently reported, vendor-sourced' — not as third-party verification of how well the control actually performs in use.",
+        "The 2024-02-13 vendor blog is the earlier, narrower original claim (loudness+tempo cues only); the 2025-10-20 piece describes the fuller word-level pitch/pace/loudness expansion — cite whichever specific capability-date matters for the claim being made, do not blend the two dates into one."
+      ]
+    },
+    {
+      "id": "EV-wellsaid-labs-review-10",
+      "claim": "WellSaid's current voices feature page (captured 2026-07-26) states '240+' realistic AI voices, each 'built from licensed recordings of professional voice actors' who 'are paid royalties for each use,' across 25+ languages including Arabic, Cantonese, Czech, Danish, Dutch, French, German, Italian, Japanese, Korean, Mandarin, Persian, Polish, Portuguese, Spanish, Swedish, Turkish, and English (with regional accents) — i.e. the catalog is NOT English-only as of this capture, a materially different picture than the 'English-only' characterization found in older sources (see EV-11 for the dated expansion timeline and EV-15 for a 2023 Capterra 'limited languages' complaint).",
+      "source_url": "https://www.wellsaid.io/features/ai-voices",
+      "source_date": "2026-07-26",
+      "quote": "Every voice on WellSaid is built from licensed recordings of professional voice actors. Actors are paid royalties for each use, supporting ethical AI, fair compensation, and clear commercial rights.",
+      "platform": "wellsaid.io/features/ai-voices (vendor feature page — self-interested; captured 2026-07-26)",
+      "target_slug": "/tools/wellsaid-labs",
+      "collected_at": "2026-07-26",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "wellsaid-labs-review-2026-07-26",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "WellSaid Labs",
+        "aspect": "avatar voice-library scale (240+, superseding an older widely-repeated '120+' figure) + consenting-paid-actor licensing model + current multilingual (25+ language) scope",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-07-26"
+      },
+      "honesty_notes": [
+        "CRITICAL: this page's brief assumed 'English-only' as a distinguishing fact — this run's direct vendor fetch shows that assumption is now OUTDATED as of 2026-07-26. Do NOT claim WellSaid is English-only without dating that claim to its pre-expansion period (see EV-11 for the dated 2025-10-24 expansion announcement that explains the change).",
+        "The widely-repeated '120+' voice figure (seen across several un-fetched third-party aggregator pages this run) appears superseded by this page's current '240+' — cite only the current, dated vendor figure unless explicitly describing a past state."
+      ]
+    },
+    {
+      "id": "EV-wellsaid-labs-review-11",
+      "claim": "WellSaid's own blog post (published 2025-10-24) states the company 'recently added 36 new voices across Arabic, Turkish, and Persian, representing 18 regional dialects,' with 'expansion continu[ing] with additional languages such as Dutch, Czech, Danish, Polish, and Swedish, along with deeper creative controls and cue support for Spanish, French, and German' — dating the multilingual build-out that supersedes the platform's earlier, predominantly-English period documented in 2022-2023 community reviews.",
+      "source_url": "https://www.wellsaid.io/resources/blog/building-the-future-of-ai-voice",
+      "source_date": "2025-10-24",
+      "quote": "WellSaid recently added 36 new voices across Arabic, Turkish, and Persian, representing 18 regional dialects for greater precision and inclusivity. Expansion continues with additional languages such as Dutch, Czech, Danish, Polish, and Swedish, along with deeper creative controls and cue support for Spanish, French, and German.",
+      "platform": "wellsaid.io/resources/blog (vendor blog — self-interested; published 2025-10-24, captured 2026-07-26)",
+      "target_slug": "/tools/wellsaid-labs",
+      "collected_at": "2026-07-26",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "wellsaid-labs-review-2026-07-26",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "WellSaid Labs",
+        "aspect": "dated multilingual expansion timeline that resolves the English-only-vs-current-240+/25-language contradiction with a specific date",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2025-10-24"
+      },
+      "honesty_notes": [
+        "Load-bearing date for the 'was predominantly English, now isn't' framing: pre-Oct-2025 = predominantly English (matches the 2022-2023 Capterra complaints about limited languages in EV-15), post-Oct-2025 = actively expanding multilingual catalog.",
+        "Do not claim full parity across all 25+ languages — the vendor's own wording ('expansion continues') signals some non-English languages are newer/less mature than the English catalog."
+      ]
+    },
+    {
+      "id": "EV-wellsaid-labs-review-12",
+      "claim": "Vendr's WellSaid Labs marketplace page (stated 'Last updated: February 2026') reports a median buyer paying $8,500/year, with enterprise deployments (50+ seats or custom-voice requirements) commonly landing between $25,000 and $150,000+ annually, and mid-sized teams (10-25 seats) on Team/Enterprise tiers between $20,000 and $60,000/year — figures Vendr does not attach to a disclosed sample size.",
+      "source_url": "https://www.vendr.com/marketplace/wellsaidlabs",
+      "source_date": "2026-02-01",
+      "quote": "Median buyer pays $8,500 per year... buyers with 50+ seats or custom voice requirements often see total contract values ranging from $25,000 to $150,000+ annually... Mid-sized teams on Team or Enterprise tiers commonly see annual contract values ranging from $20,000 to $60,000.",
+      "platform": "vendr.com/marketplace (third-party SaaS-procurement data aggregator; page states 'Last updated: February 2026', captured 2026-07-26)",
+      "target_slug": "/tools/wellsaid-labs",
+      "collected_at": "2026-07-26",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "wellsaid-labs-review-2026-07-26",
+      "screening": "included",
+      "label": "research-finding",
+      "coders": ["A", "B"],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "WellSaid Labs",
+        "aspect": "real enterprise-contract value vs. the $19-$160-per-seat published sticker price",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-02-01"
+      },
+      "honesty_notes": [
+        "FLAGGED for resolver: Vendr states a date window ('Last updated: February 2026') but discloses NO sample size (n=) behind these figures — MEP §6 requires denominator + date window for defined-sample framing; present this strictly as 'Vendr's own aggregated procurement-data estimate (updated Feb 2026)', not as an audited or population-representative average.",
+        "This is the entry supporting the brief's 'enterprise sticker vs. real contract' angle — the ~17x-32x gap between the $160/mo/seat sticker and the $25K-150K+ enterprise range is a genuine, dated finding, but must be framed as Vendr's estimate, not verified fact."
+      ]
+    },
+    {
+      "id": "EV-wellsaid-labs-review-13",
+      "claim": "In a disclosed hands-on review (unite.ai, published 2023-10-14, updated 2026-03-30), the author created a free-trial account, tested voice-avatar selection across 50+ options, used the Pronunciation Library and Cues tab for loudness/pace/pause adjustments, and attempted downloads — calling the voices 'natural and professional' and being 'impressed with how human-like they were,' and describing the interface as 'user-friendly,' while separately noting downloads are paid-plan-only.",
+      "source_url": "https://www.unite.ai/wellsaid-labs-review/",
+      "source_date": "2023-10-14",
+      "quote": "Over 50 high-quality synthetic AI voices that sound natural and professional... I was impressed with how human-like they were!... I found the interface user-friendly, allowing me to navigate the platform easily.",
+      "platform": "unite.ai (independent AI-tools publication, disclosed hands-on methodology — free-trial account, named feature-by-feature testing; published 2023-10-14, updated 2026-03-30, captured 2026-07-26)",
+      "target_slug": "/tools/wellsaid-labs",
+      "collected_at": "2026-07-26",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "wellsaid-labs-review-2026-07-26",
+      "screening": "included",
+      "label": "independent-test",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "WellSaid Labs",
+        "aspect": "output quality (naturalness) + ease of use (interface, Pronunciation Library/Cues workflow)",
+        "stance": "positive",
+        "plan_tier_if_stated": null,
+        "item_date": "2023-10-14"
+      },
+      "honesty_notes": [
+        "The '50+' avatar count the author tested (2023-10-14 original test) is well below the current vendor-stated '240+' (EV-10, 2026-07-26) — consistent with the library growth documented in EV-11's 2025 expansion; do not present '50+' as the current library size."
+      ]
+    },
+    {
+      "id": "EV-wellsaid-labs-review-14",
+      "claim": "In a disclosed 60-day hands-on evaluation (fahimai.com, published 2024-09-09, updated 2026-02-15) — a paid personal subscription tested across four real client projects (training videos, YouTube content, podcasts) with comparative testing against 5 competitors including ElevenLabs and Murf — the author reports the voices 'sound incredibly human... some voices actually sound better than human recordings,' states 'I couldn't tell the difference in a blind test,' describes the workflow as 'Type your script. Pick a voice. Hit play,' and separately flags 'at $50/month, it's not budget-friendly' for small creators. NOTE: this source's own headline claims a '90 day' test while its methodology section states '60 days' — an internal date inconsistency in the source itself.",
+      "source_url": "https://www.fahimai.com/wellsaid-labs",
+      "source_date": "2024-09-09",
+      "quote": "The voices sound incredibly human...some voices actually sound better than human recordings... I couldn't tell the difference in a blind test... At $50/month, it's not budget-friendly.",
+      "platform": "fahimai.com (independent AI-tools review site, disclosed hands-on methodology — paid subscription, named real client projects, competitor comparison; published 2024-09-09, updated 2026-02-15, captured 2026-07-26)",
+      "target_slug": "/tools/wellsaid-labs",
+      "collected_at": "2026-07-26",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "wellsaid-labs-review-2026-07-26",
+      "screening": "included",
+      "label": "independent-test",
+      "coders": ["A", "B"],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "WellSaid Labs",
+        "aspect": "output quality (near-indistinguishable-from-human, blind-test claim) + ease of use (simple workflow) + value (budget concern at $50/mo)",
+        "stance": "mixed",
+        "plan_tier_if_stated": "Creative $50/user/mo; Business $160/user/mo (per this source, consistent with EV-01's vendor-verified Pro/Business figures)",
+        "item_date": "2024-09-09"
+      },
+      "honesty_notes": [
+        "FLAGGED for resolver: this source's own page has an internal 90-day-vs-60-day self-contradiction (headline says 90, methodology section says 60) — cite only the specific dated quotes captured here, never repeat the '90-day' framing as fact. A coder could reasonably argue for excluding this source entirely rather than including it with caveats, given it is also a competing review-content-mill site.",
+        "This source separately claims a WellSaid Business-tier 'audio hours' figure that does not reconcile with WellSaid's own vendor-stated minutes-per-year figures (EV-01) — do not cite fahimai's tier-capacity math, only its qualitative testing quotes captured above."
+      ]
+    },
+    {
+      "id": "EV-wellsaid-labs-review-15",
+      "claim": "Of the 14 dated, individually-visible Capterra reviews of WellSaid (Dec 2021-Nov 2023, all screened on this run's 2026-07-26 capture of the single reviews page), 4 separately name pronunciation accuracy as a con despite generally positive overall ratings: Katie F. (2021-12-20, 5 stars, Training Coordinator/Retail — 'characters can pronounce words in strange manner'), Brayan C. (2023-01-07, 5 stars, Systems Analyst/IT — 'if not spoken clearly changes the words'), Trisha C. (2022-12-26, 4 stars, Sr Recruitment Ops Specialist — 'certain words can be mispronounced'), and Laurence A. (2023-03-25, 4 stars, Student/Healthcare — 'mispronounces words').",
+      "source_url": "https://www.capterra.com/p/238211/Wellsaid/reviews/",
+      "source_date": "2026-07-26",
+      "quote": "[Defined-sample count derived from 14 individually dated, verbatim review texts on this page; see claim field for the full linked reviewer list — e.g. Katie F.: 'characters can pronounce words in strange manner'; Laurence A.: 'mispronounces words'.]",
+      "platform": "Capterra (review-platform; denominator = 14 dated review-units, date window 2021-12-20 to 2023-11-27, all visible on the single reviews page captured 2026-07-26; aggregate rating 4.4/5 per this run's independent tally, consistent with the hub shard's stated 4.4/5, n=14)",
+      "target_slug": "/tools/wellsaid-labs",
+      "collected_at": "2026-07-26",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "wellsaid-labs-review-2026-07-26",
+      "screening": "included",
+      "label": "community-report",
+      "coders": ["A", "B"],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "WellSaid Labs",
+        "aspect": "defined-sample count of pronunciation-accuracy complaints across all screened Capterra review-units (MEP §6 allowed reporting form)",
+        "stance": "mixed",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-07-26"
+      },
+      "honesty_notes": [
+        "This is a DEFINED-SAMPLE count (4 of 14, dated, denominator stated, every contributing review individually named) — present exactly as 'of the 14 dated Capterra reviews, 4 name pronunciation issues' and MUST NOT be converted into a population percentage ('29% of users') or have its denominator dropped.",
+        "None of these 4 reviews dropped their star rating below 4/5 — the pronunciation complaint is a specific, named friction inside otherwise-positive reviews, not a dealbreaker for these reviewers.",
+        "FLAGGED for resolver: the keyword-match criteria for 'pronunciation complaint' are a judgment call — a second coder should independently re-run this count against the same 14 reviews before publication."
+      ]
+    },
+    {
+      "id": "EV-wellsaid-labs-review-16",
+      "claim": "Of the same 14 dated Capterra reviews, 2 report refund or customer-service friction: Nick M. (2022-11-25, 1 star — refund request denied within 2 hours of signup, EV-02) and Ryan S. (2023-05-08, 5 stars — 'horrible customer service...locked out...no refund' despite separately praising voice quality as 'realistic').",
+      "source_url": "https://www.capterra.com/p/238211/Wellsaid/reviews/",
+      "source_date": "2023-05-08",
+      "quote": "Voice quality was realistic. [Cons:] Horrible customer service...locked out...no refund.",
+      "platform": "Capterra (review-platform; denominator = 14 dated review-units, date window 2021-12-20 to 2023-11-27, captured 2026-07-26; this specific quote from Ryan S., dated 2023-05-08)",
+      "target_slug": "/tools/wellsaid-labs",
+      "collected_at": "2026-07-26",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "wellsaid-labs-review-2026-07-26",
+      "screening": "included",
+      "label": "community-report",
+      "coders": ["A", "B"],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "WellSaid Labs",
+        "aspect": "defined-sample count of refund/customer-service friction (2 of 14)",
+        "stance": "mixed",
+        "plan_tier_if_stated": null,
+        "item_date": "2023-05-08"
+      },
+      "honesty_notes": [
+        "Notably, Ryan S.'s review is 5 STARS overall despite the refund/support complaint — the friction is scoped to a specific support interaction, not an overall product-quality judgment. Present both reviewers' full context (Nick M. = 1-star overall, EV-02; Ryan S. = 5-star overall) rather than implying both are equally negative reviews.",
+        "This is a DEFINED-SAMPLE count (2 of 14, dated, denominator stated) — do not convert into a percentage or drop the denominator."
+      ]
+    },
+    {
+      "id": "EV-wellsaid-labs-review-17",
+      "claim": "Of the same 14 dated Capterra reviews, 2 separately flag price as too high even while praising output quality: a Verified Reviewer (Instructional Designer, E-Learning, 2022-07-07, 5 stars — 'mind-blowingly realistic' voices, but 'pretty steep monthly/annual fee') and Hossamudin H. (Founder, Education Management, 2022-05-10, 5 stars — 'clients never thought it was AI,' but pricing 'so high...hope for cheaper plans').",
+      "source_url": "https://www.capterra.com/p/238211/Wellsaid/reviews/",
+      "source_date": "2022-07-07",
+      "quote": "Mind-blowingly realistic...custom pronunciations...multiple takes. [Cons:] Pretty steep monthly/annual fee.",
+      "platform": "Capterra (review-platform; denominator = 14 dated review-units, date window 2021-12-20 to 2023-11-27, captured 2026-07-26; this specific quote dated 2022-07-07)",
+      "target_slug": "/tools/wellsaid-labs",
+      "collected_at": "2026-07-26",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "wellsaid-labs-review-2026-07-26",
+      "screening": "included",
+      "label": "community-report",
+      "coders": ["A", "B"],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "WellSaid Labs",
+        "aspect": "defined-sample count of price-too-high complaints (2 of 14), paired with quality praise",
+        "stance": "mixed",
+        "plan_tier_if_stated": null,
+        "item_date": "2022-07-07"
+      },
+      "honesty_notes": [
+        "Both contributing reviewers rated 5/5 overall — the price complaint does not override their overall satisfaction.",
+        "Corroborates EV-04's visme.co finding ('not the cheapest option') with independent, differently-dated community reports reaching the same directional conclusion on value.",
+        "This is a DEFINED-SAMPLE count (2 of 14, dated, denominator stated) — do not convert into a percentage or drop the denominator."
+      ]
+    }
+  ]
+}
