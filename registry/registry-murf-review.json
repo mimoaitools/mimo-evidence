@@ -1,0 +1,586 @@
+{
+  "_meta": {
+    "flow_id": "murf-review-2026-08-08",
+    "protocol_version": "MEP-1.0",
+    "target_slug": "/tools/murf",
+    "target_keyword": "murf review",
+    "run_date": "2026-08-08",
+    "collector": "evidence-curator",
+    "page_class": "tools/single-tool review (5-dimension ToolScore verdict: overall/outputQuality/easeOfUse/value/evidenceBase; overall pinned ~3.5 per hub's #3 ranking of Murf in /best/ai-voice-generators). EXTENDS the hub sweep (registry-best-ai-voice-generators.json) — re-verifies and re-registers EV-best-ai-voice-generators-04/05/06 as review-scoped entries, then sweeps NEW dated evidence to resolve the hub's flagged Studio-pricing gap and to build out all five scoring dimensions. Owned-border CLEAN and held strictly: voice GENERATION only; the one consent/licensing fact registered (ToS AI-training restriction) concerns Murf's own commercial-rights terms, never voice-clone detection or deepfake detection. Murf Electric Bikes never mentioned or searched.",
+    "sweep_strategy": "TOP-PRIORITY sub-goal: resolve the hub's unresolved Murf Studio subscription-pricing gap (murf.ai/pricing is client-rendered; 3 failed fetches in the hub run, a 4th failed fetch this run — still unverifiable-this-run at the vendor's own marketing URL). Pivoted to Murf's help-center subdomain (help.murf.ai), which resolves as static/fetchable content unlike the marketing pricing page: found and direct-fetched help.murf.ai/increasing-your-vgt (vendor-confirmed CURRENT tier order 'Creator > Growth > Business' plus a flat 33% annual-billing discount — a genuinely new finding, since NOT ONE of the third-party pricing write-ups surfaced this run mentions a 'Growth' tier), help.murf.ai/is-murf-free-to-use (vendor-confirmed free-trial scope: 300+ voices/33 languages, 10 min voice generation, 10 min transcription, no downloads, no card required), and help.murf.ai/murf-dub-pricing (vendor-confirmed Murf Dub PAYG $1/credit). Dollar figures for the Studio Creator/Business tiers themselves remain NOT vendor-verified after this run's attempts (help.murf.ai's subscription-upgrade pages describe mechanics but never restate the $ prices, which live only on the unfetchable murf.ai/pricing page) — the gap is partially closed (tier NAMES + free-tier mechanics + annual-discount rate are now vendor-confirmed) but not fully closed (paid-tier $ amounts are still third-party-sourced only). Two independent, differently-dated third-party pricing compilations (smallest.ai, published 2026-07-20, itself a direct competing voice-AI/TTS API vendor — heavy COI flag; checkthat.ai, last updated 2026-03-30, an AI-visibility tracking site with no disclosed pricing methodology) were direct-fetched and found to independently converge on the same Creator $19/$29 and Business $66/$99 figures 3.5 months apart — registered as clearly attributed third-party claims, never as 'Murf states'. Beyond pricing: direct-fetched murf.ai/legal/terms-of-service (commercial-rights definition + restrictions), murf.ai/text-to-speech (200+ voices/35+ languages — found to CONFLICT with help.murf.ai's own 300+/33 figure, both fetched the same day, logged as an internal vendor inconsistency rather than silently resolved), murf.ai/integrations/google-slides (confirms duration-based slide sync, not lip-sync), and murf.ai/benchmarks/tts-benchmark (Murf's own disclosed-methodology blind naturalness/pronunciation-accuracy benchmark run by a third-party staffing agency — self-interested but methodologically transparent, and in direct tension with community 'robotic' complaints, a genuinely useful mixed picture for a 3.5/5 verdict). Re-fetched capterra.com/p/216058/Murf-Studio/reviews/ (still exactly 4 reviews, unchanged from the hub's July capture) and surfaced 3 NEW individually dated reviews beyond the hub's already-registered Mukesh B. entry. Swept for independent (non-Visme) corroboration of the 'a bit robotic' realism gap and found two: a Capterra reviewer (Hayzweb T., 2022-12-29, no COI) and a disclosed-methodology affiliate-monetized hands-on test (mrreviewai.com, 2026-05-30/updated 2026-06-27) that ran identical scripts through Murf and ElevenLabs and scored Murf 4.3/5 vs. ElevenLabs 4.8/5 on naturalness. A second affiliate-monetized disclosed-methodology test (fahimai.com/murf-ai, 2026-02-14) was registered for its ease-of-use/value claims only; its headline '99.38% pronunciation accuracy' figure was deliberately NOT quoted into the registry because the vendor's own benchmark page (fetched directly this run) states a range (98.70%-99.75% across languages) rather than one flat figure, and the precise '99.38%' number recurs verbatim across multiple third-party sites with no clear original derivation on this page — the same uncredited-copied-number pattern the hub flagged for ElevenLabs's '89.6%' claim. hackceleration.com/labs/review/murf (a commercial agency site with its own AI-tooling COI) was included as a SECONDARY route to individually dated G2/Trustpilot/TrustRadius quotes, since G2 and Trustpilot themselves are blocked for direct fetch (see below) — flagged as relayed-not-independently-verified-at-source. Reddit and Quora were swept with 3 and 1 dedicated site:-scoped queries respectively (robotic-voice, worth-it, credits-ran-out for Reddit; review-worth for Quora) — ZERO real reddit.com URLs and ZERO substantive independent quora.com threads surfaced (only vendor cross-posts, spam 'Space' accounts, and generic AI-tool listicle questions), matching the identical structural block documented in every prior Mimo shard since 2026-07-10. G2 (g2.com/products/murf-ai/reviews and 3 related sub-page variants) returned HTTP 403 on direct fetch, also consistent with the established block. Trustpilot was not separately re-tested this run (established block from every prior shard); Murf-specific Trustpilot content was not sought as a distinct query given the 100% historical failure rate.",
+    "flow_counter": {
+      "identified": 108,
+      "screened": 108,
+      "excluded": 93,
+      "excluded_by_reason": {
+        "no-methodology-affiliate": 24,
+        "duplicate": 30,
+        "off-topic": 28,
+        "unverifiable-this-run": 11
+      },
+      "included_sources": 15,
+      "registry_entries_new": 15,
+      "entries_reused": 3,
+      "counter_note": "identified = 108 distinct new candidate URLs surfaced across 22 documented WebSearch queries + 3 pattern-derived direct-navigation attempts (murf.ai/text-to-speech/canva, murf.ai/text-to-speech, the wayback-availability API check) — a best-effort reconciliation across heavily overlapping result sets (the same ~15 'Murf AI Pricing/Review 2026' aggregator-mill domains resurface across nearly every query; G2 compare-pages and Quora spam-Space sub-accounts recur repeatedly), consistent with how the hub, elevenlabs-review, and wellsaid-labs-review shards' own flow counters were reconciled — not a line-by-line individual audit of all 93 excluded items. Re-fetches of already-known URLs (the hub's 3 Murf sources, plus this run's own help.murf.ai/is-murf-free-to-use, help.murf.ai/increasing-your-vgt, help.murf.ai/murf-dub-pricing, smallest.ai, checkthat.ai, murf.ai/legal/terms-of-service, mrreviewai.com, fahimai.com/murf-ai, murf.ai/benchmarks/tts-benchmark, murf.ai/integrations/google-slides — verification fetches per protocol §4) are NOT double-counted in 'identified'. 15 distinct sources were included (3 reused from the hub + 12 newly identified this run), producing 15 NEW registry entries (EV-04 through EV-18) plus 3 re-registered hub entries (EV-01 through EV-03) — 18 entries total in this shard. One included source (capterra.com/p/216058/Murf-Studio/reviews/) contributes 4 separate review-unit entries (EV-02 reused + EV-13, EV-14, EV-15 new) from its full n=4 review sample, unchanged since the hub's capture."
+    },
+    "coder_agreement_rate": "CURATOR-PROVISIONAL single-pass coding across all 18 entries (dual-independent coding + resolver pass orchestrated above this run). Stance calls: 7 n/a (vendor-primary pricing/ToS/feature facts, no sentiment to code), 6 mixed (paired positive/negative Capterra + benchmark-vs-community tension + hackceleration compiled quotes), 3 negative, 2 positive. FLAGGED FOR RESOLVER: (1) EV-07/EV-08 (smallest.ai, checkthat.ai third-party Studio $ figures) — neither source discloses a hands-on test or a documented pricing-verification methodology; a coder could argue for exclusion under no-methodology-affiliate despite the two-source convergence, since convergence alone does not establish disclosed method. Currently included on the strength of (a) the task's explicit instruction that a clearly attributed third-party price is preferable to silence once vendor verification is exhausted, and (b) independent, differently-dated corroboration. A resolver should confirm this reasoning holds. (2) EV-10 (voice/language-count vendor inconsistency) — a coder could read this as trivial marketing-copy drift (200+ vs 300+ 'rounds down/up') rather than a substantive finding worth its own entry; flagged rather than resolved. (3) EV-12 (murf.ai/benchmarks/tts-benchmark) — self-published vendor benchmark using a third-party staffing agency for evaluation; a coder could argue this deserves an 'independent-test' label rather than 'vendor-claim' given the arm's-length evaluator, but the test DESIGN, word list, and competitor selection are all Murf's own choices, so this curator kept the vendor-claim/self-interested label — a resolver should weigh in. (4) EV-17 (fahimai.com) — same publisher's WellSaid Labs article was flagged in the wellsaid-labs-review shard for an internal date self-contradiction; THIS Murf article shows no equivalent internal contradiction on inspection this run, but the publisher's general reliability concern is carried forward as a caveat rather than a fresh finding. (5) EV-18 (hackceleration.com) — relays quotes it attributes to G2/Trustpilot/TrustRadius reviewers that this curator could NOT independently verify at the origin platform (both blocked); a coder could argue for exclusion entirely on chain-of-custody grounds rather than inclusion-with-caveats.",
+    "query_census": [
+      { "q": "WebSearch: murf.ai pricing 2026 Creator Business plans minutes per year", "candidates": 8, "note": "smallest.ai/blog/murf-ai-pricing-plans-cost-what-you-get-in-2026, fish.audio/vs/pricing/murf-ai, autogpt.net/murf-ai-pricing, g2.com/products/murf-ai/pricing, layer3labs.io/guides/is-murf-ai-worth-it, dynalord.com/blog/murf-pricing, youraisoft.com/murf-ai-review, checkthat.ai/brands/murf-ai/pricing. smallest.ai and checkthat.ai both later direct-fetched and INCLUDED (EV-07, EV-08)." },
+      { "q": "WebSearch: Murf AI Studio pricing Free Creator Business Enterprise 2026", "candidates": 8, "note": "Identical result set to the prior query (full duplicate) — 0 new candidates." },
+      { "q": "WebSearch: help.murf.ai pricing plans Studio subscription", "candidates": 9, "note": "fish.audio (dup), help.murf.ai/murf-dub-pricing (NEW), help.murf.ai/murf-api-plans-and-limits (already hub-known, re-identified), smallest.ai (dup), g2.com/products/murf-ai/pricing (dup), autogpt.net (dup), elegantthemes.com/blog/business/murf-ai-review (NEW), saasworthy.com/product/murf-ai/pricing (NEW), checkthat.ai (dup). help.murf.ai/murf-dub-pricing direct-fetched → INCLUDED (EV-06)." },
+      { "q": "DIRECT: WebFetch https://murf.ai/pricing", "candidates": 0, "note": "4th attempt across two runs (hub tried 3x). Page returns only the word 'Murf', no pricing content — client-rendered React app not captured by this tool. Logged unverifiable-this-run again; the top-priority gap is only PARTIALLY closed via the help-center subdomain pivot (see sweep_strategy)." },
+      { "q": "WebSearch: site:help.murf.ai studio pricing plans", "candidates": 9, "note": "help.murf.ai/murf-dub-pricing (dup), help.murf.ai/upgrading-a-subscription (NEW), help.murf.ai/increasing-your-vgt (NEW), help.murf.ai/murf-dub-pay-as-you-go (NEW), help.murf.ai/is-murf-free-to-use (NEW), help.murf.ai/murf-dub (NEW), help.murf.ai/what-is-a-workspace (NEW), help.murf.ai/working-with-the-studio (NEW), help.murf.ai/billing-affect-on-adding-and-removing-users (NEW). help.murf.ai/increasing-your-vgt and help.murf.ai/is-murf-free-to-use both direct-fetched → INCLUDED (EV-04, EV-05); help.murf.ai/upgrading-a-subscription direct-fetched but yielded only mechanics (no new $ figures) — folded into EV-04's honesty_notes, not separately registered." },
+      { "q": "DIRECT: WebFetch https://help.murf.ai/is-murf-free-to-use, https://help.murf.ai/increasing-your-vgt, https://help.murf.ai/upgrading-a-subscription", "candidates": 0, "note": "Verification fetches of the 3 candidates surfaced by the prior query — not counted again in 'identified'." },
+      { "q": "DIRECT: WebFetch http://archive.org/wayback/available?url=murf.ai/pricing", "candidates": 0, "note": "Availability API responded but returned an EMPTY archived_snapshots object for murf.ai/pricing — unlike the hub's LOVO/PlayHT wayback checks, no historical snapshot exists at all for this specific URL. Logged unverifiable-this-run (no snapshot to even attempt fetching)." },
+      { "q": "WebSearch: murf.ai blog announcing new pricing Growth plan 2026", "candidates": 8, "note": "smallest.ai (dup) plus smallest.ai/blog/murf-ai-review-2026-pricing-features-api-limits (NEW), fish.audio (dup), todaytesting.com/murf-ai-promo-codes-and-review (NEW), autogpt.net (dup), dynalord.com (dup), checkthat.ai (dup), youraisoft.com (dup). No official Murf blog post about a 'Growth' tier surfaced — the vendor confirmation for that tier name came only from the help-center mechanics page (EV-04), not a announcement post." },
+      { "q": "WebSearch: \"Murf\" \"Growth plan\" pricing voice generation", "candidates": 9, "note": "autogpt.net (dup), smallest.ai (dup), fish.audio (dup), tekpon.com/software/murf-ai/pricing (NEW), g2.com/products/murf-ai/pricing (dup), layer3labs.io (dup), dynalord.com (dup), youraisoft.com (dup), checkthat.ai (dup). Confirms: none of the third-party pricing aggregators mention a Growth tier by name, even when directly queried for it — corroborates the honesty_note that this is a vendor-only-confirmed, third-party-unnoticed structural detail." },
+      { "q": "DIRECT: WebFetch https://smallest.ai/blog/murf-ai-pricing-plans-cost-what-you-get-in-2026, https://checkthat.ai/brands/murf-ai/pricing", "candidates": 0, "note": "Verification fetches of query-1 candidates — not counted again." },
+      { "q": "DIRECT: WebFetch https://smallest.ai/ and https://checkthat.ai/ (COI/business-model checks, root domains)", "candidates": 0, "note": "Confirmed smallest.ai is itself a competing voice-AI/TTS API platform (Lightning TTS, Pulse STT, Hydra speech-to-speech, voice cloning) — heavy COI on its Murf pricing article, flagged in EV-07. Confirmed checkthat.ai is an AI-answer-visibility tracking platform, not a competing voice product, but discloses no specific pricing-verification methodology on its brand pages — flagged in EV-08." },
+      { "q": "WebSearch: site:reddit.com Murf AI review robotic voice", "candidates": 8, "note": "g2.com/sellers/murf-inc (NEW), g2.com/products/murf-ai/reviews (NEW), g2.com/sellers/murf (NEW), g2.com/products/murf-ai/reviews?page=9 (dup pagination), alternativeto.net/software/murf-ai-voiceovers/about (NEW), g2.com/products/murf-ai/reviews?page=2/10/5 (dup pagination x3). ZERO real reddit.com URLs despite the site: operator — same block pattern the hub found for this exact tool+query five weeks ago." },
+      { "q": "WebSearch: site:reddit.com Murf AI worth it", "candidates": 9, "note": "digestafrica.com/vintage-brief (NEW), youraisoft.com (dup), aiblogfirst.com/murf-ai-review (NEW), aitooltier.com/tools/murf-ai (NEW), g2.com/compare/murf-ai-vs-tess-ai (NEW), g2.com/compare/murf-ai-vs-descript (NEW), g2.com/compare/anyword-vs-murf-ai (NEW), alternativeto.net (dup), saashub.com/compare-paperflite-vs-murf-ai (NEW). ZERO real reddit.com URLs." },
+      { "q": "WebSearch: site:reddit.com \"Murf\" credits ran out cancel subscription", "candidates": 10, "note": "community.adobe.com (x3 distinct URLs, Adobe Stock credits — wrong product), docs.surferseo.com, teamblind.com, scribd.com, afrothinktank.substack.com, community.spotify.com, tvmaze.com. ZERO Murf-relevant or reddit.com results at all — the query surfaced only unrelated other-platform subscription-cancellation threads, confirming this is a genuinely empty search rather than a scoping error." },
+      { "q": "WebSearch: site:quora.com Murf AI review worth", "candidates": 10, "note": "quora.com/What-is-MURF-AI, ainewesttechhub.quora.com (promotional Space post), quora.com/Are-there-any-websites-that-use-artificial-intelligence..., youtubeshare.quora.com (promotional Space post), d3vsinghsspace.quora.com (promotional Space post), ewrite.quora.com (promotional Space post), digitalmoneyspacesspace.quora.com (promotional Space post), quora.com/Which-is-better-ElevenLabs-or-Murf-AI, quora.com/Which-recent-AI-tools-are-free-for-text-to-voice, quora.com/What-free-AI-voiceover-software-is-there-that-sounds-like-humans. None individually fetched — all are either generic multi-tool listicle questions with no Murf-specific dated first-person detail, or vendor-promotional 'Space' cross-posts (a recurring low-trust pattern on Quora for this category, consistent with prior shards, though not rising to the coordinated-persona astroturf definition since each Space appears to be a single-account promotional account rather than a network)." },
+      { "q": "WebSearch: G2 Murf AI reviews voice quality", "candidates": 9, "note": "murf.ai/blog/g2-momentum-leader (NEW, vendor blog — self-interested marketing framing of G2 standing, not registered), murf.ai/resources/g2-high-performer (NEW, vendor), geniusfirms.com/blog/murf-ai-review-my-honest-take (NEW), digiinvent.com/murf-ai-review (NEW), layer3labs.io/guides/murf-ai-review (NEW path), qcall.ai/murf-ai-review (NEW), blogrecode.com/murf-ai-review-generated-voiceovers-the-truth (NEW), g2.com/compare/murf-ai-vs-voicemaker (NEW), g2.com/compare/murf-ai-vs-veed (NEW)." },
+      { "q": "DIRECT: WebFetch https://www.g2.com/products/murf-ai/reviews", "candidates": 0, "note": "HTTP 403 — unverifiable-this-run, consistent with every prior Mimo shard's G2 block." },
+      { "q": "WebSearch: Murf AI Canva integration Google Slides add-on voice sync", "candidates": 9, "note": "medium.com/@nicolasgalvi8/introducing-murf-ai-integration-in-canva, murf.ai/blog/voice-over-google-slides-with-add-on, murf.ai/integrations/google-slides, help.murf.ai/products, murf.ai/integrations, murf.ai/blog/launching-murf-voice-over-google-slides, topvox.ai/blog/murf-ai (competitor-run domain per the page brief's explicit flag — not fetched), kripeshadwani.com/murf-ai-review, workspace.google.com/marketplace/app/murf. murf.ai/integrations/google-slides direct-fetched → INCLUDED (EV-11)." },
+      { "q": "WebSearch: Murf Studio timeline sync video review ease of use", "candidates": 10, "note": "fahimai.com/murf-ai (NEW), digiinvent.com (dup), fritz.ai/murf-ai-review (NEW), layer3labs.io/guides/murf-ai-review (dup), qcall.ai/murf-ai-review (dup), aitoolnotes.com/review/murf-ai-review (NEW), blogrecode.com (dup), hackceleration.com/labs/review/murf (NEW), aiblogfirst.com (dup), g2.com/products/murf-ai/reviews (dup). fahimai.com/murf-ai and hackceleration.com/labs/review/murf both direct-fetched → INCLUDED (EV-17, EV-18)." },
+      { "q": "DIRECT: WebFetch https://murf.ai/text-to-speech/canva", "candidates": 1, "note": "New URL, pattern-guessed (not returned by any search) — HTTP 404. Confirms this specific path does not exist; the Canva integration lives at a different URL structure entirely (murf.ai/integrations, per the query above)." },
+      { "q": "DIRECT: WebFetch https://murf.ai/integrations/google-slides, https://www.fahimai.com/murf-ai, https://hackceleration.com/labs/review/murf", "candidates": 0, "note": "Verification fetches of already-identified candidates — not counted again." },
+      { "q": "WebSearch: help.murf.ai commercial use rights license voice over", "candidates": 9, "note": "speechify.com/blog/murf-ai-terms-service-commercial-rights-voice-over (NEW), cybernews.com/ai-tools/murf-ai-review (NEW), murf.ai/legal/terms-of-service (NEW), murf.ai/ (NEW, homepage), aiseesoft.com/resource/murf-ai-voice.html (NEW), murf.ai/ai-voice-generator (NEW), elegantthemes.com (dup), blogrecode.com (dup), alternativeto.net (dup). murf.ai/legal/terms-of-service direct-fetched → INCLUDED (EV-09)." },
+      { "q": "WebSearch: Murf AI free plan limitations no download credits ran out complaint", "candidates": 9, "note": "fish.audio (dup), help.murf.ai/murf-api-plans-and-limits (dup), autogpt.net (dup), mrreviewai.com/murf-ai-free-plan-review (NEW), thespeakr.com/murf-ai (NEW), help.murf.ai/projects (NEW), aibrainjet.com/murf-ai-pricing-explained (NEW), layer3labs.io (dup), aiblogfirst.com (dup). mrreviewai.com/murf-ai-free-plan-review direct-fetched → INCLUDED (EV-16)." },
+      { "q": "DIRECT: WebFetch https://murf.ai/legal/terms-of-service, https://mrreviewai.com/murf-ai-free-plan-review/", "candidates": 0, "note": "Verification fetches of already-identified candidates — not counted again." },
+      { "q": "DIRECT: WebFetch https://murf.ai/text-to-speech", "candidates": 1, "note": "New URL, pattern-derived from mentions in prior query results rather than itself returned by a search query. Direct-fetched → INCLUDED (EV-10), and found to state a DIFFERENT voice/language count (200+ voices/35+ languages) than help.murf.ai/is-murf-free-to-use (300+ voices/33 languages, EV-05) — both fetched the same day, an internal vendor inconsistency logged rather than silently resolved." },
+      { "q": "DIRECT: WebFetch https://visme.co/blog/best-ai-voice-generator/ (re-verification of the hub's EV-06 source)", "candidates": 0, "note": "Re-fetch per protocol §4 — confirmed still live, publish date unchanged (2025-09-19), the 'a bit robotic' language confirmed present in a slightly different sentence than the hub's originally-captured quote but same section/same COI (Visme ranks its own product #1 in the same article)." },
+      { "q": "WebSearch: academic study text-to-speech Murf AI evaluation naturalness paper", "candidates": 9, "note": "murf.ai/benchmarks/tts-benchmark (NEW), murf.ai/text-to-speech (dup), cybernews.com (dup), murf.ai/api (NEW), murf.ai/ (dup), murf.ai/text-to-speech-gen-2 (NEW), arxiv.org/pdf/2312.11563 (NEW), a USPTO patent-application PDF (NEW, off-topic), wellsaid.io/resources/blog/murf-ai-alternatives (NEW, a direct competitor's own comparison page). murf.ai/benchmarks/tts-benchmark direct-fetched → INCLUDED (EV-12); arxiv.org/pdf/2312.11563 direct-fetched and confirmed EXCLUDED off-topic (a general TTS-technology review paper with zero mentions of Murf anywhere in the text)." },
+      { "q": "WebSearch: murf.ai blog pronunciation accuracy benchmark blind test native speaker", "candidates": 9, "note": "murf.ai/api/docs/introduction/models (NEW), murf.ai/benchmarks/tts-benchmark (dup), autogpt.net/ai-tool/murf-ai (NEW path), murf.ai/api (dup), tooliverse.ai/tools/murf-ai (NEW), qcall.ai/murf-ai-review (dup), murf.ai/ai-voice-generator (dup), blogrecode.com (dup), youraisoft.com (dup). Confirmed the benchmark page URL and its headline figures via search-summary triangulation before the direct fetch above." },
+      { "q": "WebSearch: \"Murf\" \"99.38%\" OR \"99%\" pronunciation accuracy", "candidates": 10, "note": "murf.ai/api/dashboard (NEW, login page, no content), murf.ai/text-to-speech/accent-generator (NEW), murf.ai/api (dup), murf.ai/text-to-speech (dup), tooliverse.ai/tools/murf-ai (dup), aitoolradar.io/guides/murf-ai (NEW), thespeakr.com/murf-ai (dup), blogrecode.com (dup), layer3labs.io/guides/murf-ai-review (dup), youraisoft.com (dup). Confirmed the '99.38%' figure recurs across multiple third-party sites without matching the vendor's own current page verbatim (which states a 98.70%-99.75% per-language range, not one flat number) — the same uncredited-copied-number pattern the hub flagged for ElevenLabs; NOT registered as a standalone quoted figure (see EV-17's honesty_notes)." },
+      { "q": "DIRECT: WebFetch https://murf.ai/benchmarks/tts-benchmark, https://arxiv.org/pdf/2312.11563", "candidates": 0, "note": "Verification fetches of already-identified candidates — not counted again." }
+    ],
+    "reddit_access_note": "Reddit was structurally unreachable this run: 3 dedicated site:reddit.com-targeted WebSearch queries (robotic-voice, worth-it, credits-ran-out) surfaced ZERO actual reddit.com URLs across 27 total candidate links — the same identical block documented in the hub shard for this exact tool five weeks ago and in every prior Mimo shard since 2026-07-10. Quora surfaced ten candidate URLs for one dedicated query, none a substantive independent first-person thread (a mix of generic multi-tool listicle Q&As and single-account promotional 'Space' cross-posts) — none were individually fetched given this pattern's 100% historical failure rate for yielding registrable content in prior shards. G2 (4 URL variants: /reviews base, /reviews?page=2/5/9/10 pagination, /sellers/murf-inc, /sellers/murf) returned HTTP 403 on the one directly-tested variant, consistent with the established domain-wide block; the others were pattern-excluded rather than individually re-tested. Trustpilot was not separately queried this run given its 100% historical failure rate in every prior shard. CONSEQUENCE: community sentiment for this review routes through Capterra (4 dated reviews, fully re-verified), a secondary relay of G2/Trustpilot/TrustRadius quotes via hackceleration.com (flagged as unverified-at-origin), and two disclosed-methodology affiliate-monetized hands-on tests (mrreviewai.com, fahimai.com) — a narrower community base than ElevenLabs or WellSaid Labs enjoyed in their own Mimo reviews, and this must be disclosed plainly in the page's limitations paragraph and reflected conservatively in the evidenceBase sub-score.",
+    "astroturf_note": "The astroturf screen (§3.1: templated look-alike threads, recurring fresh personas, all funneling to one vendor) was applied to every low-trust 'Murf AI Review/Pricing 2026' aggregator-mill candidate surfaced this run (youraisoft.com, dynalord.com, layer3labs.io, autogpt.net, aitooltier.com, aiblogfirst.com, digiinvent.com, blogrecode.com, geniusfirms.com, aitoolnotes.com, fritz.ai, thespeakr.com, aibrainjet.com, elegantthemes.com, aiseesoft.com, tekpon.com, tooliverse.ai, aitoolradar.io, digestafrica.com, and others). No templated-persona-network pattern was detected — these read as independently-run SEO content-mill/affiliate sites competing for the same keyword, not a coordinated persona network. The closest adjacent finding was the cluster of single-account promotional 'Space' cross-posts on Quora (ainewesttechhub, youtubeshare, d3vsinghsspace, ewrite, digitalmoneyspacesspace) — flagged for visibility but treated as isolated promotional accounts rather than a coordinated network, since each posts independently-worded content to a single Quora Space rather than templated near-identical text across multiple forums. Zero astroturf-pattern sources were registered or cited. The MikeAppsReviewer-network canonical case pattern was not observed anywhere in this sweep.",
+    "exclusion_log_notes": [
+      "no-methodology-affiliate (24): the dominant category — recurring 'Murf AI Review/Pricing 2026' aggregator-mill and comparison-shopping domains across nearly every query (youraisoft.com, dynalord.com, layer3labs.io x2 paths, autogpt.net x2 paths, aitooltier.com, aiblogfirst.com, digiinvent.com, blogrecode.com, geniusfirms.com, aitoolnotes.com, fritz.ai, thespeakr.com, aibrainjet.com, elegantthemes.com, aiseesoft.com, tekpon.com x2 paths, tooliverse.ai, aitoolradar.io, digestafrica.com, speechify.com/blog, cybernews.com, topvox.ai — the last individually flagged by the page brief itself as a competitor-run domain and deliberately not fetched).",
+      "duplicate (30): repeat domain/path hits across the 22 queries — fish.audio recurred 6x, checkthat.ai 4x, smallest.ai 3x beyond the included article, g2.com/products/murf-ai/pricing 3x, autogpt.net 3x, plus single repeats of layer3labs.io, dynalord.com, youraisoft.com, digiinvent.com, blogrecode.com, qcall.ai, aiblogfirst.com, alternativeto.net, and several G2/Capterra pagination or comparison sub-page variants of already-counted base URLs.",
+      "off-topic (28): 5 g2.com/compare/* head-to-head pages (murf-ai-vs-tess-ai, murf-ai-vs-descript, anyword-vs-murf-ai, murf-ai-vs-voicemaker, murf-ai-vs-veed — comparison-tool pages, not Murf-specific reviews); 10 completely unrelated other-platform community threads surfaced by the 'credits ran out' Reddit query (Adobe Stock x3, SurferSEO docs, TeamBlind, Scribd, a Substack comment thread, Spotify Community, TVmaze — none mention Murf at all, confirming a genuinely empty result rather than a missed find); 4 Quora generic multi-tool listicle questions with no Murf-specific first-person detail; a USPTO patent-application PDF (pronunciation-assessment apparatus, unrelated invention); arxiv.org/pdf/2312.11563 (a general TTS-technology review paper, individually fetched and confirmed to contain zero mentions of Murf); wellsaid.io/resources/blog/murf-ai-alternatives (a direct competitor's own comparison page); workspace.google.com/marketplace/app/murf (a bare app-store listing, no review content); capterra.com/artificial-intelligence-software/compare/216058-216466 and -86955, capterra.ca/compare, capterra.com/text-to-speech-software/compare/216058-238211, capterra.com/text-to-speech-software/?page=2, capterra.ae/alternatives/216058/murf-studio (feature/pricing-matrix comparison pages, not review content distinct from the already-included /reviews/ page); saashub.com/compare-paperflite-vs-murf-ai and alternativeto.net/software/murf-ai-voiceovers/about (directory listing pages, no dated review content).",
+      "unverifiable-this-run (11): murf.ai/pricing (4th failed attempt across two runs — client-rendered, no extractable content); murf.ai/text-to-speech/canva (HTTP 404, path does not exist); the wayback-availability API for murf.ai/pricing (responded but returned zero archived snapshots — no historical content exists to even attempt); g2.com/products/murf-ai/reviews (HTTP 403, one directly-tested pattern representative of the whole g2.com/products/murf-ai/* and g2.com/sellers/murf* family, consistent with the established domain-wide block); murf.ai/blog/g2-momentum-leader and murf.ai/resources/g2-high-performer (both vendor marketing pages restating a self-reported '98% satisfaction'-style G2 standing with no disclosed sample or methodology — not fetched for registration, logged here as a source this curator deliberately declined to verify further given its content is transparently promotional regardless of fetch success); the remaining items represent G2 sub-pages pattern-excluded rather than individually re-tested this run.",
+      "OWNED-BORDER held (0 registered): the one consent/licensing-adjacent source registered (EV-09, murf.ai's Terms of Service on commercial rights and an AI-model-training restriction) concerns Murf's OWN commercial-use and resale terms for its own generated voices, never voice-clone DETECTION or deepfake-detection — confirmed no candidate source this run touched that border. Murf Electric Bikes was never searched, mentioned, or surfaced by any query."
+    ],
+    "entries_reused": [
+      "EV-best-ai-voice-generators-04 (help.murf.ai/murf-api-plans-and-limits, API PAYG pricing) — re-fetched and re-registered, figures unchanged from the hub's 2026-07-21 capture, as EV-murf-review-01",
+      "EV-best-ai-voice-generators-05 (Mukesh B., Capterra, 2023-02-16) — re-registered as EV-murf-review-02",
+      "EV-best-ai-voice-generators-06 (visme.co, 2025-09-19, COI-flagged) — re-registered as EV-murf-review-03"
+    ]
+  },
+  "entries": [
+    {
+      "id": "EV-murf-review-01",
+      "claim": "Murf's help-center documentation for its API (re-verified 2026-08-08, unchanged from the hub's 2026-07-21 capture) states a pay-as-you-go tier billed at $0.03 per 1,000 characters (minimum $2 purchase) after a free-trial allotment of 100,000 characters. This is a SEPARATE billing system from Murf Studio (subscription, metered in voice-generation hours/year) and Murf Dub (its own PAYG credit system, see EV-murf-review-06) — Murf operates three distinct pricing models under one brand. Vendor-stated, self-interested.",
+      "source_url": "https://help.murf.ai/murf-api-plans-and-limits",
+      "source_date": "2026-08-08",
+      "quote": "Free Trial: 100,000 characters to try our voices and API services... Pay-as-you-go: purchase 1000 characters at $0.03 (minimum $2 purchase)... Custom Plan: for more extensive character/concurrency/rate limit requirements, contact the Sales team.",
+      "platform": "help.murf.ai (vendor help-center doc, API pricing — self-interested; re-verified 2026-08-08, first captured by the hub 2026-07-21)",
+      "target_slug": "/tools/murf",
+      "collected_at": "2026-08-08",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "murf-review-2026-08-08",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Murf",
+        "aspect": "API pay-as-you-go pricing (vendor-stated), positioned as one of three distinct Murf billing systems",
+        "stance": "n/a",
+        "plan_tier_if_stated": "API PAYG $0.03/1000 chars, min $2, 100k free-trial chars",
+        "item_date": "2026-08-08"
+      },
+      "honesty_notes": [
+        "This is developer/API pricing, not what a video-creator or SMB-marketer reader pays for Murf Studio — never present this figure as 'what Murf costs' without the Studio/Dub/API three-way disambiguation.",
+        "Unchanged from the hub's capture 18 days earlier — a stable, reliably re-fetchable vendor page, in contrast to the still-unverifiable murf.ai/pricing marketing page (see EV-04's honesty_notes for the current state of that gap)."
+      ]
+    },
+    {
+      "id": "EV-murf-review-02",
+      "claim": "A dated Capterra review of Murf Studio (Mukesh B., Content Creator, Marketing & Advertising, 2023-02-16, 4 stars, re-verified live 2026-08-08) praises the ability to sync generated speech to video/presentations but states plainly that AI-generated voice-overs 'aren't always as good as human ones' and 'might sound robotic' — a balanced first-person assessment inside Murf's thin Capterra sample (still exactly 4 reviews as of this run, unchanged from the hub's capture, aggregate 4.5/5).",
+      "source_url": "https://www.capterra.com/p/216058/Murf-Studio/reviews/",
+      "source_date": "2023-02-16",
+      "quote": "AI-generated voice-overs aren't always as good as human ones...might sound robotic... I can sync my speech to my video or presentation, which is excellent.",
+      "platform": "Capterra (review-platform; aggregate 4.5/5, n=4 reviews, re-verified unchanged 2026-08-08; this individual review dated 2023-02-16)",
+      "target_slug": "/tools/murf",
+      "collected_at": "2026-08-08",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "murf-review-2026-08-08",
+      "screening": "included",
+      "label": "community-report",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Murf",
+        "aspect": "video/presentation sync praised (ease of use); general AI-vs-human voice quality gap and 'robotic' risk acknowledged by the reviewer (output quality)",
+        "stance": "mixed",
+        "plan_tier_if_stated": null,
+        "item_date": "2023-02-16"
+      },
+      "honesty_notes": [
+        "Oldest and thinnest community-evidence base of any tool reviewed on Mimo so far (n=4 total Capterra reviews, unchanged in the 18 days since the hub's capture) — the evidenceBase sub-score should reflect this narrow sample honestly rather than being padded by the richer secondary sources (mrreviewai, fahimai, hackceleration) registered below.",
+        "Directly corroborated by two NEW reviews from the same n=4 sample (EV-murf-review-13, EV-murf-review-14) and independently by the COI-flagged Visme test (EV-murf-review-03) and the affiliate-disclosed mrreviewai.com test (EV-murf-review-16) — four separately-sourced, differently-dated mentions of a realism gap on specific voices."
+      ]
+    },
+    {
+      "id": "EV-murf-review-03",
+      "claim": "In a disclosed hands-on comparison (visme.co, published 2025-09-19, re-verified live 2026-08-08), the author personally created a test project in Murf and states that some Murf voices 'sound a bit robotic' and that Murf 'might not be the most realistic AI voice generator compared to ElevenLabs' — but the SAME article ranks the publisher's own product (Visme) #1 in the list, a direct conflict of interest.",
+      "source_url": "https://visme.co/blog/best-ai-voice-generator/",
+      "source_date": "2025-09-19",
+      "quote": "Murf might not be the most realistic AI voice generator compared to ElevenLabs.",
+      "platform": "visme.co/blog (disclosed-methodology hands-on test, published by a company that ranks its own competing product #1 in the same article — self-interested; published 2025-09-19, re-verified live 2026-08-08)",
+      "target_slug": "/tools/murf",
+      "collected_at": "2026-08-08",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "murf-review-2026-08-08",
+      "screening": "included",
+      "label": "independent-test",
+      "coders": ["A", "B"],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "Murf",
+        "aspect": "voice realism vs. ElevenLabs, per a disclosed (but COI-compromised) hands-on test",
+        "stance": "negative",
+        "plan_tier_if_stated": null,
+        "item_date": "2025-09-19"
+      },
+      "honesty_notes": [
+        "FLAGGED for resolver / heavy COI, unchanged from the hub's original flag: Visme's own product is ranked #1 in the very list this quote comes from — the publisher is not a neutral third party. Present with the COI stated up front, never as an independent verdict.",
+        "Now corroborated by MORE independent sources than at hub-capture time: an un-COI'd Capterra reviewer (EV-13, 'you'll notice it's a robot talking not a real human voice') and a disclosed-methodology affiliate test (EV-16, mrreviewai.com, 4.3/5 vs. ElevenLabs 4.8/5 on identical scripts) both independently reach a similar directional conclusion — reducing (though not eliminating) reliance on this single COI-flagged source."
+      ]
+    },
+    {
+      "id": "EV-murf-review-04",
+      "claim": "Murf's help-center subscription-management documentation (captured 2026-08-08) confirms the CURRENT Studio subscription ladder runs Creator > Growth > Business (three paid tiers, not two), with 'a flat 33% off on all subscriptions' for annual billing versus monthly. This partially resolves the hub's flagged Studio-pricing gap: the tier NAMES and annual-discount rate are now vendor-confirmed, but the dollar amounts for each tier are NOT stated anywhere on this or any other help.murf.ai page — they exist only on the still-unverifiable murf.ai/pricing marketing page (4 failed fetch attempts across two runs). Vendor-stated, self-interested.",
+      "source_url": "https://help.murf.ai/increasing-your-vgt",
+      "source_date": "2026-08-08",
+      "quote": "Creator> Growth > Business... Yearly plans offer a flat 33% off on all subscriptions... If your voice generation time runs out before the end of your billing cycle, don't worry. You can always upgrade your plan or repurchase it to continue using our services.",
+      "platform": "help.murf.ai (vendor help-center doc, subscription mechanics — self-interested; captured 2026-08-08)",
+      "target_slug": "/tools/murf",
+      "collected_at": "2026-08-08",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "murf-review-2026-08-08",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Murf",
+        "aspect": "current Studio subscription tier ORDER (Creator/Growth/Business) and annual-discount rate — vendor-confirmed structure, dollar amounts still unverified",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Creator, Growth, Business (3 paid tiers + custom Enterprise elsewhere); $ amounts not stated on this page",
+        "item_date": "2026-08-08"
+      },
+      "honesty_notes": [
+        "CRITICAL FINDING: not one of the third-party pricing write-ups surfaced this run (smallest.ai, checkthat.ai, autogpt.net, dynalord.com, youraisoft.com, tekpon.com — all dated within the last 5 months) mentions a 'Growth' tier at all; every one of them describes only Free/Creator/Business/Enterprise. This vendor page is the ONLY source in this sweep confirming a Growth tier exists. Do not silently merge this with the third-party Creator/Business figures (EV-07, EV-08) as if they describe the same complete ladder — they may be describing a stale or incomplete structure. Disclose the gap explicitly: Murf's own docs reference a middle tier that no dated third-party source has priced.",
+        "help.murf.ai/upgrading-a-subscription (also direct-fetched this run) independently confirms 'Creator' and 'Growth' as adjacent upgrade-path tier names but states no dollar figures either — consistent with this entry, not separately registered to avoid a redundant entry.",
+        "Together with EV-05, this is the strongest available vendor-side evidence for the Studio pricing structure; it should be presented in the page's evidence box as a PARTIAL resolution of the hub's gap, not a full one."
+      ]
+    },
+    {
+      "id": "EV-murf-review-05",
+      "claim": "Murf's help-center documentation (captured 2026-08-08) states the free trial provides access to '300+ voices across 33 languages,' 10 minutes of voice generation time, 10 minutes of transcription, project-preview sharing and embed-link creation, and requires no credit card — but explicitly does NOT support downloads. Vendor-stated, self-interested.",
+      "source_url": "https://help.murf.ai/is-murf-free-to-use",
+      "source_date": "2026-08-08",
+      "quote": "Access all 300+ voices across 33 languages... 10 minutes of voice generation time... 10 minutes of transcription... No credit card required... The free trial does not support downloads.",
+      "platform": "help.murf.ai (vendor help-center doc, free-trial scope — self-interested; captured 2026-08-08)",
+      "target_slug": "/tools/murf",
+      "collected_at": "2026-08-08",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "murf-review-2026-08-08",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Murf",
+        "aspect": "free-plan scope and no-download restriction (vendor-stated)",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Free trial: 10 min generation, 10 min transcription, no downloads, no card required",
+        "item_date": "2026-08-08"
+      },
+      "honesty_notes": [
+        "CONFLICTS with murf.ai/text-to-speech (EV-10, also fetched 2026-08-08), which states '200+ voices across 35+ languages' — a genuine internal vendor inconsistency between two pages fetched the same day. Present both figures with this discrepancy disclosed rather than silently picking one.",
+        "Corroborated independently by the affiliate-disclosed mrreviewai.com hands-on test (EV-16), whose author personally confirmed the 10-minute lifetime cap and no-download restriction via a live account with '8 minutes and 22 seconds remaining' — a vendor claim independently verified by a first-person test, which is the strongest evidentiary combination available for this specific fact."
+      ]
+    },
+    {
+      "id": "EV-murf-review-06",
+      "claim": "Murf's help-center documentation for its Dub product (captured 2026-08-08) states a separate pay-as-you-go pricing model billed at $1 per credit (minimum $5 purchase, up to 10,000 credits), with a default free-trial tier of 200 credits (watermarked exports, 1 project maximum) and a custom-quote Enterprise tier for larger localization needs. This is a THIRD distinct Murf billing system, separate from Studio (subscription hours/year) and the API (per-character PAYG, EV-01). Vendor-stated, self-interested.",
+      "source_url": "https://help.murf.ai/murf-dub-pricing",
+      "source_date": "2026-08-08",
+      "quote": "The Pay as you go plan is priced at $1 per credit... Free Trial (default): 200 credits, watermarked export, one project maximum... Enterprise: Customizable with volume discounts.",
+      "platform": "help.murf.ai (vendor help-center doc, Murf Dub pricing — self-interested; captured 2026-08-08)",
+      "target_slug": "/tools/murf",
+      "collected_at": "2026-08-08",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "murf-review-2026-08-08",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Murf",
+        "aspect": "Murf Dub PAYG credit pricing — the third of Murf's three separate billing systems",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Free trial 200 credits/1 project; PAYG $1/credit, $5 min, up to 10,000 credits; Enterprise custom",
+        "item_date": "2026-08-08"
+      },
+      "honesty_notes": [
+        "This entry completes the three-way Studio/Dub/API pricing disambiguation the page brief identifies as the page's core competitive moat — no competitor page audited in the brief separates these three billing systems.",
+        "Murf Dub is a video-dubbing/localization product (translating existing video/audio into other languages) — do not conflate its 'credit' unit with Studio's 'minutes/hours' unit or the API's 'characters' unit in any cost-comparison table without converting and disclosing the conversion basis."
+      ]
+    },
+    {
+      "id": "EV-murf-review-07",
+      "claim": "A third-party pricing analysis (smallest.ai, published 2026-07-20) states Murf Studio's current tiers as: Free ($0, 10 minutes of voice generation, no export, no commercial rights); Creator ($29/month monthly or $19/month billed annually, 24 hours/year, full commercial rights); Business ($99/month monthly or $66/month billed annually, 96 hours/year on the annual plan); and custom Enterprise. This is THIRD-PARTY-SOURCED, not vendor-confirmed — murf.ai/pricing itself remains unfetchable (see EV-04's honesty_notes). smallest.ai is itself a competing voice-AI/TTS API company (its own products include Lightning TTS, Pulse STT, and Hydra speech-to-speech) — heavy conflict of interest on any competitor-pricing content it publishes.",
+      "source_url": "https://smallest.ai/blog/murf-ai-pricing-plans-cost-what-you-get-in-2026",
+      "source_date": "2026-07-20",
+      "quote": "10 minutes of voice generation with no export capability and no commercial usage rights... At $19 per month annual pricing, this represents a 34% saving for committing to a year... 96 hours of annual voice generation on the annual plan (8 hours per month).",
+      "platform": "smallest.ai/blog (third-party pricing-comparison article published by a direct competing voice-AI vendor — heavy self-interest/COI; published 2026-07-20, captured 2026-08-08)",
+      "target_slug": "/tools/murf",
+      "collected_at": "2026-08-08",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "murf-review-2026-08-08",
+      "screening": "included",
+      "label": "research-finding",
+      "coders": ["A", "B"],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "Murf",
+        "aspect": "third-party-reported Studio subscription $ figures (Free/Creator/Business/Enterprise) — not vendor-confirmed",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Free $0; Creator $19-29/mo; Business $66-99/mo; Enterprise custom",
+        "item_date": "2026-07-20"
+      },
+      "honesty_notes": [
+        "FLAGGED for resolver: this source discloses no hands-on test or documented pricing-verification method — it is a compiled pricing table, not an independent test. Included because (a) it is clearly attributed and dated, never presented as 'Murf states', and (b) it is independently corroborated by EV-08 (checkthat.ai, a differently-run, differently-dated source) landing on nearly identical figures.",
+        "This source does NOT mention the 'Growth' tier that Murf's own help-center docs confirm exists (EV-04) — do not present this Free/Creator/Business/Enterprise structure as the complete, current picture; flag the Growth-tier gap wherever these figures are used.",
+        "Given smallest.ai's own direct-competitor status, any framing that uses this source to make Murf look worse-value than a smallest.ai product should be treated with particular suspicion — this curator did not find such a framing on this specific page, but the risk should stay flagged."
+      ]
+    },
+    {
+      "id": "EV-murf-review-08",
+      "claim": "A second, independently-dated third-party pricing analysis (checkthat.ai, last updated 2026-03-30 — roughly 3.5 months before EV-07's smallest.ai figures) states nearly identical Studio numbers: Free ($0, 10 minutes lifetime total, no downloads, no commercial rights); Creator ($19/month annual / $228/year, 24 hours/year); Business ($66/month annual / $792/year, 96 hours/year annual or 240 hours/year monthly); Enterprise custom. The independent convergence of two differently-run sources 3.5 months apart increases confidence in these SPECIFIC dollar figures without making them vendor-confirmed.",
+      "source_url": "https://checkthat.ai/brands/murf-ai/pricing",
+      "source_date": "2026-03-30",
+      "quote": "10 minutes of voice generation (lifetime total, not monthly)... no downloads... no commercial rights... all paid tiers (Creator, Business, Enterprise) include full commercial licensing. You can use generated audio for client deliverables, YouTube monetization, paid courses, advertising, and broadcast.",
+      "platform": "checkthat.ai (third-party AI-answer-visibility tracking platform's brand/pricing page; no disclosed pricing-verification methodology; last updated 2026-03-30, captured 2026-08-08)",
+      "target_slug": "/tools/murf",
+      "collected_at": "2026-08-08",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "murf-review-2026-08-08",
+      "screening": "included",
+      "label": "research-finding",
+      "coders": ["A", "B"],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "Murf",
+        "aspect": "independent corroboration of EV-07's Studio $ figures, from a source with no direct competitive COI (an AI-visibility tracker, not a voice-AI vendor)",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Free $0; Creator $19/mo ($228/yr); Business $66/mo ($792/yr); Enterprise custom",
+        "item_date": "2026-03-30"
+      },
+      "honesty_notes": [
+        "Same resolver flag as EV-07: no disclosed hands-on test or verification method. checkthat.ai is not a voice-AI competitor (unlike smallest.ai), which reduces but does not eliminate the COI concern for pricing content generally monetized via its own SaaS-tracking business.",
+        "Also does not mention the vendor-confirmed 'Growth' tier (EV-04) — same gap as EV-07.",
+        "The specific commercial-rights breakdown quoted here ('client deliverables, YouTube monetization, paid courses, advertising, and broadcast') independently corroborates the vendor ToS language in EV-09, even though this source itself is third-party, not vendor-primary."
+      ]
+    },
+    {
+      "id": "EV-murf-review-09",
+      "claim": "Murf's Terms of Service (captured 2026-08-08) defines 'Commercial Rights' as any commercial/business use of Murf-generated voices, explicitly prohibits reselling Murf's voice library to third parties, and explicitly prohibits using Murf-created voices to train any AI model or to synthesize Murf voices for any purpose. The document does not itself state which specific subscription tiers include Commercial Rights (that detail comes from third-party sources, EV-07/EV-08, and the free-plan help doc, EV-05, which confirms the free tier excludes it). Vendor-stated, self-interested.",
+      "source_url": "https://murf.ai/legal/terms-of-service",
+      "source_date": "2026-08-08",
+      "quote": "\"Commercial Rights\" means any use of Murf created voices for commercial or business purposes, except as restricted by this User Agreement... you cannot resell or offer to resell Murf's offerings (including the library of voices available on Murf Studio) to any third-party... you not to use Murf created voices for training any AI model or to synthesize Murf created voices in any way or for any purpose.",
+      "platform": "murf.ai/legal (vendor Terms of Service — self-interested; captured 2026-08-08)",
+      "target_slug": "/tools/murf",
+      "collected_at": "2026-08-08",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "murf-review-2026-08-08",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Murf",
+        "aspect": "commercial-rights definition, resale prohibition, and AI-training-restriction from Murf's own primary legal terms",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-08-08"
+      },
+      "honesty_notes": [
+        "The AI-model-training restriction concerns Murf protecting its OWN voice library from being used to train competing AI models by USERS — this is a licensing/IP-protection clause, unrelated to voice-clone detection or deepfake detection; owned-border held.",
+        "Combine with EV-05 (free tier explicitly excludes Commercial Rights) and the third-party-sourced EV-07/EV-08 (all paid tiers include it) for a complete per-tier picture — no single source in this sweep vendor-confirms the per-tier breakdown end to end."
+      ]
+    },
+    {
+      "id": "EV-murf-review-10",
+      "claim": "Murf's own text-to-speech product page (captured 2026-08-08) states '200+ lifelike voices' across '35+ languages' — a figure that CONFLICTS with Murf's own help-center free-trial page (EV-05, captured the same day), which states '300+ voices across 33 languages.' Both are vendor-primary sources fetched on the same date; this curator did not find any dated distinction (e.g., 'Studio voices' vs. 'API voices,' or a stated update between the two pages) that would resolve the discrepancy. Logged as an internal vendor inconsistency rather than silently resolved in either direction.",
+      "source_url": "https://murf.ai/text-to-speech",
+      "source_date": "2026-08-08",
+      "quote": "200+ lifelike voices... 200+ voices across 35+ languages... 35 languages... 10+ accents.",
+      "platform": "murf.ai/text-to-speech (vendor marketing page — self-interested; captured 2026-08-08)",
+      "target_slug": "/tools/murf",
+      "collected_at": "2026-08-08",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "murf-review-2026-08-08",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": ["A", "B"],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "Murf",
+        "aspect": "voice count and language count — conflicts with a same-day fetch of a different Murf-owned page",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-08-08"
+      },
+      "honesty_notes": [
+        "FLAGGED for resolver: could be read as trivial marketing-copy rounding drift ('200+' is technically compatible with 300, both are 'more than 200') rather than a hard contradiction — but the language counts (33 vs. 35+) are harder to reconcile as the same underlying number. A resolver should decide whether the page should state a conservative '200+ voices, 33+ languages' floor, or present the discrepancy explicitly to the reader as evidence of inconsistent vendor self-reporting.",
+        "The page brief's assumption of '120+ voices/20+ languages' is now OUTDATED regardless of which of the two current figures (200+/300+) is used — both vendor pages describe a substantially larger catalog than the brief anticipated; the writer should use whichever framing is chosen consistently and note the brief's figure was stale."
+      ]
+    },
+    {
+      "id": "EV-murf-review-11",
+      "claim": "Murf's Google Slides integration page (captured 2026-08-08) states the add-on 'automatically syncs the narration' to slide timing based on how long each slide's generated voiceover audio runs — i.e., DURATION-BASED alignment (slides advance according to voice-over length), not true lip-sync or any visual mouth-movement matching. Vendor-stated, self-interested.",
+      "source_url": "https://murf.ai/integrations/google-slides",
+      "source_date": "2026-08-08",
+      "quote": "Automatically sync the narration to your presentation. As you add a script for your voice over for each slide, your slides will appear during the presentation as per the time of the voice over attributed to that slide.",
+      "platform": "murf.ai/integrations (vendor product page — self-interested; captured 2026-08-08)",
+      "target_slug": "/tools/murf",
+      "collected_at": "2026-08-08",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "murf-review-2026-08-08",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Murf",
+        "aspect": "mechanism of the Google Slides voice-sync feature — confirmed duration-based, not lip-sync",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-08-08"
+      },
+      "honesty_notes": [
+        "This is the vendor's own description of its differentiator feature — do not describe this as 'lip-sync' or imply frame-accurate visual matching anywhere on the page; 'timeline/duration alignment' is the accurate term per the page brief's semantic_brief.",
+        "The Canva integration works the same way per the same query's search-summary evidence (write, choose voice, generate, sync to the project timeline) — not separately vendor-fetched this run (the direct-guessed murf.ai/text-to-speech/canva URL 404'd), so the Canva-specific mechanism is describable only via this Google Slides page's confirmed pattern plus the unverified search summary, not a second vendor-primary fetch."
+      ]
+    },
+    {
+      "id": "EV-murf-review-12",
+      "claim": "Murf's own published TTS benchmark (captured 2026-08-08, no publish/update date shown on the page) reports a disclosed-methodology blind naturalness test: over 11,000 audio-sample pairs evaluated by native speakers via a third-party staffing agency, across US/UK/Australian/Indian English plus Hindi, Italian, German, French, Spanish, Bengali, Mandarin, and Tamil, comparing Murf against AWS, Azure, ElevenLabs, Google, and OpenAI. Murf reports winning naturalness preference 8 out of 10 times overall, specifically 6/8 languages against ElevenLabs. A separate pronunciation-accuracy test (4,710 words from 300,000 news sentences via the Leipzig Corpus, double-blind native-speaker verification) reports accuracy exceeding 98.7% across tested languages, ranging from 98.70% (UK English) to 99.75% (French). This is Murf's OWN self-published benchmark — methodologically disclosed (named evaluation approach, third-party staffing agency, stated sample size) but fundamentally self-interested: Murf chose the test design, word lists, and competitor set.",
+      "source_url": "https://murf.ai/benchmarks/tts-benchmark",
+      "source_date": "2026-08-08",
+      "quote": "The evaluation data shows that across all tested languages, Murf achieved pronunciation accuracy rates exceeding 98.7%. French achieved the highest accuracy at 99.75%, while UK English showed the most opportunity for improvement at 98.70%... 8 out of 10 times Murf voices win on naturalness vs. competition... Against OpenAI: 9/9 languages; AWS: 6/7; Google: 7/9; ElevenLabs: 6/8; Azure: 6/9.",
+      "platform": "murf.ai/benchmarks (vendor-published benchmark, third-party staffing agency conducted the blind evaluation — self-interested test design/word-list/competitor selection; captured 2026-08-08, no page-shown publish date)",
+      "target_slug": "/tools/murf",
+      "collected_at": "2026-08-08",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "murf-review-2026-08-08",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": ["A", "B"],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "Murf",
+        "aspect": "self-published, methodologically-disclosed naturalness and pronunciation-accuracy benchmark, favorable vs. ElevenLabs specifically — in direct tension with community/Capterra/Visme 'robotic' reports",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-08-08"
+      },
+      "honesty_notes": [
+        "FLAGGED for resolver: a coder could argue for an 'independent-test' label given the arm's-length third-party staffing agency conducted the actual evaluation — this curator kept 'vendor-claim' since Murf itself designed the test, chose the scripts, and chose which competitors to include, none of which is arm's-length.",
+        "This is the single most important tension point for the OUTPUT QUALITY dimension: Murf's own disclosed benchmark claims it beats ElevenLabs on naturalness 6 times out of 8 tested languages, while the COI-flagged Visme test (EV-03), an un-COI'd Capterra reviewer (EV-13), and the affiliate-disclosed mrreviewai.com test (EV-16) all independently report Murf sounding LESS natural / more robotic than ElevenLabs on at least some voices. Present BOTH sides explicitly — do not resolve this tension by picking a side; it is honest, real, and evidence-based on both ends.",
+        "Do NOT quote the widely-repeated third-party '99.38%' headline figure (seen across smallest.ai, tooliverse.ai, aitoolradar.io, and others) as if it were this page's own number — this page states a per-language RANGE (98.70%-99.75%), not one flat 99.38% figure; the recurring '99.38%' appears to be an uncredited/imprecisely-copied number propagating across third-party sites, the same pattern the hub flagged for ElevenLabs's uncredited '89.6%' claim."
+      ]
+    },
+    {
+      "id": "EV-murf-review-13",
+      "claim": "A dated Capterra review of Murf Studio (Hayzweb T., Animation, 2022-12-29, 4 stars, re-verified live 2026-08-08) independently corroborates the 'robotic' voice-quality complaint without Visme's conflict of interest: the reviewer states plainly 'you'll notice it's a robot talking not a real human voice,' while separately praising ease of use.",
+      "source_url": "https://www.capterra.com/p/216058/Murf-Studio/reviews/",
+      "source_date": "2022-12-29",
+      "quote": "You'll notice it's a robot talking not a real human voice... it's so easy to use and the process are much faster.",
+      "platform": "Capterra (review-platform; individual review dated 2022-12-29, part of the same n=4 sample as EV-02, visible as of re-verification 2026-08-08)",
+      "target_slug": "/tools/murf",
+      "collected_at": "2026-08-08",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "murf-review-2026-08-08",
+      "screening": "included",
+      "label": "community-report",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Murf",
+        "aspect": "voice-quality 'robotic' complaint from an un-COI'd reviewer, paired with ease-of-use praise",
+        "stance": "mixed",
+        "plan_tier_if_stated": null,
+        "item_date": "2022-12-29"
+      },
+      "honesty_notes": [
+        "This is the strongest single non-vendor, non-COI corroboration of the 'robotic' theme in this entire sweep — an ordinary Capterra reviewer with no publishing incentive independently uses nearly the same language as the COI-flagged Visme article, 3 years apart.",
+        "One of only 4 total dated Capterra reviews for Murf as of this run — do not generalize into 'users say Murf is robotic'; present as one dated, specific, first-person report."
+      ]
+    },
+    {
+      "id": "EV-murf-review-14",
+      "claim": "A separate dated Capterra review of Murf Studio (Sabino Eduardo Q., Freelancer, Graphic Design, 2023-01-27, 5 stars, re-verified live 2026-08-08) reports the opposite experience — describing the generated voices as 'muy realistas' (very realistic) and calling Murf 'an essential tool' for improving video/presentation quality. Inside the same thin n=4 Capterra sample, this is the most positive dated data point on voice quality specifically.",
+      "source_url": "https://www.capterra.com/p/216058/Murf-Studio/reviews/",
+      "source_date": "2023-01-27",
+      "quote": "Puedo crear audios con voces muy realistas... esencial si quieres mejorar la calidad de tu video, presentacion.",
+      "platform": "Capterra (review-platform; individual review dated 2023-01-27, part of the same n=4 sample as EV-02, visible as of re-verification 2026-08-08)",
+      "target_slug": "/tools/murf",
+      "collected_at": "2026-08-08",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "murf-review-2026-08-08",
+      "screening": "included",
+      "label": "community-report",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Murf",
+        "aspect": "voice naturalness praised in strong terms, presentation/video-quality use case",
+        "stance": "positive",
+        "plan_tier_if_stated": null,
+        "item_date": "2023-01-27"
+      },
+      "honesty_notes": [
+        "Present alongside EV-13, not instead of it — the two reviews are two weeks apart in the same tiny sample and reach OPPOSITE conclusions on the same core question (voice realism), which is itself the honest finding: Murf's voice quality is reviewer/voice-dependent, not uniformly good or bad.",
+        "Original review is in Spanish; translation provided above is this curator's own for context, the registered quote itself is verbatim from the page."
+      ]
+    },
+    {
+      "id": "EV-murf-review-15",
+      "claim": "The fourth and oldest dated Capterra review of Murf Studio (Anonymous, Social Media Manager, IT Services, 2021-03-12, 5 stars, re-verified live 2026-08-08) praises Murf as 'really cheap and easy' for getting voiceovers done and reports generating 150 minutes of voiceover output within a single day — a specific, dated value/throughput data point, though from before the current Studio/Growth tier structure existed (per EV-04's finding that 'Growth' is a newer addition).",
+      "source_url": "https://www.capterra.com/p/216058/Murf-Studio/reviews/",
+      "source_date": "2021-03-12",
+      "quote": "Really cheap and easy way of getting voiceovers done for videos... generate 150 mins of voiceover within a day.",
+      "platform": "Capterra (review-platform; individual review dated 2021-03-12, part of the same n=4 sample as EV-02, visible as of re-verification 2026-08-08)",
+      "target_slug": "/tools/murf",
+      "collected_at": "2026-08-08",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "murf-review-2026-08-08",
+      "screening": "included",
+      "label": "community-report",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Murf",
+        "aspect": "value-for-money and daily output throughput, dated pre-2026 pricing structure",
+        "stance": "positive",
+        "plan_tier_if_stated": null,
+        "item_date": "2021-03-12"
+      },
+      "honesty_notes": [
+        "This is the OLDEST dated source in the entire shard — over 5 years old at capture time, and predates any of the current pricing figures registered here (EV-04 through EV-08). Explicitly flag its age; do not present the 'really cheap' characterization as describing 2026 pricing without this caveat.",
+        "The 150-minutes-in-a-day figure is a single anecdote from one reviewer under an unknown, likely-since-changed plan — never generalize this into a stated Murf throughput capability."
+      ]
+    },
+    {
+      "id": "EV-murf-review-16",
+      "claim": "A disclosed-methodology, affiliate-monetized hands-on test (mrreviewai.com, published 2026-05-30, updated 2026-06-27) documents a live-account free-plan test: the reviewer confirms the 10-minute generation cap is a one-time lifetime allocation with no reset, confirms the no-download restriction via a screenshotted export-dialog quote, and separately ran identical scripts through Murf and ElevenLabs, scoring Murf 4.3/5 overall (calling its 'emotion system... its biggest advantage') versus ElevenLabs at 4.8/5 on the same naturalness comparison — a third, independently-sourced data point (after Visme and the Capterra sample) suggesting a real, if narrow, realism gap versus ElevenLabs specifically.",
+      "source_url": "https://mrreviewai.com/murf-ai-free-plan-review/",
+      "source_date": "2026-05-30",
+      "quote": "The 10 minutes is a one-time lifetime allocation. It does not reset. Once you use it, you're done with the free tier... Unlock unlimited downloads — You are on free plan. Upgrade to one of the paid plans to export your projects... Murf's emotion system is its biggest advantage.",
+      "platform": "mrreviewai.com (disclosed-methodology hands-on test with an explicit affiliate-link disclosure — self-interested; published 2026-05-30, updated 2026-06-27, captured 2026-08-08)",
+      "target_slug": "/tools/murf",
+      "collected_at": "2026-08-08",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "murf-review-2026-08-08",
+      "screening": "included",
+      "label": "independent-test",
+      "coders": ["A", "B"],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "Murf",
+        "aspect": "free-plan mechanics independently confirmed via live account; head-to-head naturalness score vs. ElevenLabs on identical scripts",
+        "stance": "mixed",
+        "plan_tier_if_stated": "Free plan tested live",
+        "item_date": "2026-05-30"
+      },
+      "honesty_notes": [
+        "Carries an explicit affiliate disclosure ('This article contains affiliate links. If you purchase through our Murf AI link, we may earn a small commission') — self-interested despite the disclosed, specific, reproducible methodology (live account, timestamped remaining-minutes figure, direct screenshot quote). Label accordingly wherever cited.",
+        "The 4.3 vs. 4.8 star comparison is this single reviewer's own subjective scoring scale, not a blind test or a defined-sample count — present as one dated reviewer's head-to-head impression, not as an objective naturalness measurement, and do not average or combine it numerically with Murf's own benchmark (EV-12) or the Capterra star ratings."
+      ]
+    },
+    {
+      "id": "EV-murf-review-17",
+      "claim": "A second disclosed-methodology, affiliate-monetized hands-on test (fahimai.com, published 2026-02-14) reports an 8-project, 90-day, 4-language test (5 client training videos + 3 explainer videos), paid for by the author on their own credit card, contacting support 3 times. The reviewer describes Murf's voices as 'natural, not robotic' — a data point in TENSION with EV-13/EV-03/EV-16 above — and reports cutting per-voiceover production time from '3-5 hours to 20 minutes,' concluding the Creator plan ('$19/month') 'pays for itself after two or three projects' compared to hiring a human voice actor.",
+      "source_url": "https://www.fahimai.com/murf-ai",
+      "source_date": "2026-02-14",
+      "quote": "The voices sound natural. Not robotic... Time per voiceover [reduced from] 3-5 hours [to] 20 minutes... pays for itself after two or three projects.",
+      "platform": "fahimai.com (disclosed-methodology hands-on test with explicit affiliate links; published 2026-02-14, captured 2026-08-08)",
+      "target_slug": "/tools/murf",
+      "collected_at": "2026-08-08",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "murf-review-2026-08-08",
+      "screening": "included",
+      "label": "independent-test",
+      "coders": ["A", "B"],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "Murf",
+        "aspect": "ease-of-use time-savings and value-for-money claim, plus a positive (not-robotic) voice-quality impression that contrasts with other sources",
+        "stance": "mixed",
+        "plan_tier_if_stated": "Creator $19/month (as third-party stated by this source, matching EV-07/EV-08)",
+        "item_date": "2026-02-14"
+      },
+      "honesty_notes": [
+        "RELIABILITY CAVEAT: the same publisher's WellSaid Labs article was independently flagged in the wellsaid-labs-review shard for an internal date self-contradiction ('90-vs-60-day'). This specific Murf article shows no equivalent contradiction on inspection this run, but the general reliability concern for this domain is carried forward — use this source's SPECIFIC, checkable claims (time-per-voiceover, cost comparison) rather than its overall narrative framing.",
+        "Deliberately does NOT include the article's headline '99.38% pronunciation accuracy' claim — see EV-12's honesty_notes for why this specific figure was excluded from quoting (it does not match the vendor's own current benchmark page's stated range and recurs as an apparently uncredited copied number across multiple third-party sites).",
+        "Carries an explicit affiliate disclosure ('reader-supported... potential affiliate commissions') and multiple in-article affiliate CTAs — self-interested despite the disclosed methodology."
+      ]
+    },
+    {
+      "id": "EV-murf-review-18",
+      "claim": "hackceleration.com (a commercial AI-agency site with its own tool-implementation COI) compiled 15 reviews from G2, Trustpilot, and TrustRadius and relays 3 individually dated, named quotes: Ishan S. (2026-06-04) notes occasional pronunciation issues with health-related terminology; Pooja K. (2026-01-29) reports voices 'sometimes... sound robotic and not natural' alongside a customer-support complaint; Tiara D. (2026-04-07) calls the Studio interface 'a total nightmare to navigate' with lag/glitching during editing. These quotes could NOT be independently re-verified at their origin platforms this run — G2 and Trustpilot were both blocked (HTTP 403) for direct fetch, as in every prior Mimo shard — so this entry is a SECONDARY, relayed source, not a primary one.",
+      "source_url": "https://hackceleration.com/labs/review/murf",
+      "source_date": "2026-06-04",
+      "quote": "Sometimes I notice the voices sound robotic and not natural... The actual Studio interface is a total nightmare to navigate... the whole thing kept lagging.",
+      "platform": "hackceleration.com (commercial AI-agency site compiling G2/Trustpilot/TrustRadius reviews it did not itself host originally — relayed secondary source, agency has its own tool-implementation COI; page captured 2026-08-08, individual relayed quotes dated Jan-Jun 2026)",
+      "target_slug": "/tools/murf",
+      "collected_at": "2026-08-08",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "murf-review-2026-08-08",
+      "screening": "included",
+      "label": "community-report",
+      "coders": ["A", "B"],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "Murf",
+        "aspect": "relayed, defined-sample (of 15 G2/Trustpilot/TrustRadius reviews compiled Jan-Jun 2026) negative/mixed data points on pronunciation, voice naturalness, support, and Studio interface stability",
+        "stance": "mixed",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-06-04"
+      },
+      "honesty_notes": [
+        "FLAGGED for resolver: a coder could argue for exclusion entirely on chain-of-custody grounds — this curator fetched hackceleration.com's page live this run (satisfying protocol §4's re-fetch requirement for THAT URL), but cannot independently confirm these three quotes appear verbatim on G2/Trustpilot/TrustRadius, since those platforms are themselves blocked. Present explicitly as 'relayed via hackceleration.com,' never as if directly sourced from G2/Trustpilot.",
+        "This is a defined sample WITH a denominator (n=15 reviews, Jan-Jun 2026 date window per hackceleration's own disclosure) — usable per MEP §6's honest-ceiling reporting rules, but only 3 of the 15 are individually quoted/named here; do not imply the other 12 support the same specific complaints without their own quotes.",
+        "The Tiara D. Studio-interface-lag complaint is the ONLY negative ease-of-use data point in this entire shard beyond the generally positive Capterra/vendor framing — genuinely useful for an honest easeOfUse sub-score, but resting on a single relayed, unverified-at-source quote; weight accordingly."
+      ]
+    }
+  ]
+}
