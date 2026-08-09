@@ -1,0 +1,568 @@
+{
+  "_meta": {
+    "flow_id": "speechify-review-2026-08-09",
+    "protocol_version": "MEP-1.0",
+    "target_slug": "/tools/speechify",
+    "target_keyword": "speechify review",
+    "run_date": "2026-08-09",
+    "collector": "evidence-curator",
+    "page_class": "tools/single-tool review (5-dimension ToolScore verdict: overall/outputQuality/easeOfUse/value/evidenceBase; overall PINNED to 3.2 per the hub's #4/4 ranking of Speechify in /best/ai-voice-generators — not recomputed). Voice-cluster satellite #4 (last), and the DEEPEST sweep of the cluster: the hub only produced an overall rank, this review derives all four non-pinned ToolScore dims fresh. Central thesis: Speechify is two products under one name — the read-aloud APP (the consumption job most buyers actually want) and Speechify Studio (a separate, annual-only, credit-billed voiceover-production product) — and 0/3 audited competitors draw that line. Owned-border CLEAN and held strictly throughout: read-aloud/TTS + voiceover generation only; zero voice-clone or deepfake DETECTION material sought or registered.",
+    "composition_note": "3 entries reused verbatim-provenance from the hub shard (registry.json EV-best-ai-voice-generators-07/08/09 — Speechify's pricing capture, a 1-star Capterra complaint, a 5-star Capterra praise), all three re-fetched live this run per protocol §4 and found unchanged. 15 NEW entries this run, built around three findings: (1) speechify.com/pricing-studio/, direct-fetched, is the first vendor-primary confirmation in any Mimo shard of Studio's distinct annual-only credit-based pricing (Free/Starter $100yr/Creator $300yr) — the load-bearing source for the App-vs-Studio thesis. (2) The vendor's own current pricing page still will not render an annual dollar figure (client-rendered toggle, matching the hub's exact gap 19 days later) AND one of Speechify's own live blog posts (2023-09-27) states a stale, conflicting $159/year — so despite direct effort, NO vendor-primary source confirms the commonly-cited $139/year figure this run. Per the task's resolve-or-disclose instruction, $139/year is registered as a third-party-attributed figure, corroborated by FIVE independently-dated, differently-run sources (fahimai.com 2026-02-14, texttolab.com 2026-05-15 with a disclosed vendor-page-verification method, freetts.org 2026-05-23, reedsy.com 2025-12-15, a Medium personal account 2026-03-23) — never stated as vendor-confirmed. (3) The cancellation/refund H2 SHIPS: Speechify's own Refund Policy page (direct-fetched, vendor-primary) states a 7-day window with product-specific usage caps (500 HD words for the Reader/Premium plan, 2 minutes for AI Studio — correcting the brief's assumption that '2 minutes' is the general cap), and four separately-dated 2025-12-20 through 2026-05-26 PissedConsumer complaints independently confirm the $139/$139.99 charge amount and refund friction the brief flagged as needing a dated primary source.",
+    "flow_counter": {
+      "identified": 110,
+      "screened": 110,
+      "excluded": 95,
+      "excluded_by_reason": {
+        "no-methodology-affiliate": 22,
+        "off-topic": 44,
+        "duplicate": 16,
+        "unverifiable-this-run": 13
+      },
+      "included_sources": 15,
+      "registry_entries_new": 15,
+      "entries_reused": 3,
+      "counter_note": "identified = 110 distinct new candidate URLs surfaced across 15 documented WebSearch queries (raw sum of per-query candidate counts = 126, reconciled down to 110 distinct after removing exact duplicate URL re-surfacing across queries — a best-effort reconciliation, not a line-by-line audit of all 95 excluded items, consistent with how the murf-review and wellsaid-labs-review shards' own counters were reconciled). Re-fetches of already-known URLs (speechify.com/pricing/ and the Capterra reviews page, both banked by the hub; plus verification re-fetches of this run's own newly-identified 15 candidates) are NOT double-counted in 'identified' per protocol §4. 15 distinct new sources were included this run, producing 15 NEW registry entries (EV-04 through EV-18) plus 3 re-registered hub entries (EV-01 through EV-03) — 18 entries total in this shard, matching the top of the sibling shards' 17-18 range."
+      },
+    "coder_agreement_rate": "CURATOR-PROVISIONAL single-pass coding across all 18 entries (dual-independent coding + resolver pass orchestrated above this run). Stance calls: 9 n/a (vendor-primary pricing/refund/terms/privacy facts, no sentiment to code), 5 mixed (fahimai, reedsy, medium personal accounts; freetts comparison), 2 negative (Capterra 1-star, PissedConsumer complaints), 2 positive (Capterra 5-star; homepage/Studio structural facts coded n/a not positive — recount: EV-01 n/a, EV-02 negative, EV-03 positive, EV-04 n/a, EV-05 n/a, EV-06 n/a, EV-07 n/a, EV-08 n/a, EV-09 mixed, EV-10 n/a, EV-11 mixed, EV-12 mixed, EV-13 n/a, EV-14 n/a, EV-15 negative, EV-16 n/a, EV-17 n/a, EV-18 mixed). FLAGGED FOR RESOLVER: (1) EV-08 (the stale $159/yr Speechify blog post) — a coder could argue this belongs under 'undated'-adjacent exclusion reasoning (superseded content the vendor never removed) rather than inclusion as a live vendor-claim; this curator kept it included because it directly demonstrates why the $139/yr figure cannot be vendor-confirmed this run, which is itself the point. (2) EV-10 (texttolab.com) — its $19-49/month Studio figure conflicts with this run's own direct fetch of speechify.com/pricing-studio (EV-06, annual-only, $100/$300 per year); a coder could read this as grounds to exclude EV-10 entirely for unreliability rather than include-with-caveat. (3) EV-17 (Speechify's Trustpilot press release) — dated 2025-02-20, roughly 18 months stale by this run's capture date, and direct verification at Trustpilot itself failed (403); a coder could argue staleness alone should downgrade this to 'unverifiable-this-run' rather than 'included, vendor-claim'. (4) EV-15 (PissedConsumer) — a coder could argue PissedConsumer's own incentive structure (a platform that profits from featuring complaints, and offers paid 'reputation management' services to the companies it reviews) deserves the same self-interested-adjacent caveat given to vendor sources, not a clean 'community-report' label.",
+    "query_census": [
+      { "q": "WebSearch: Speechify Studio voiceover product page site:speechify.com", "candidates": 10, "note": "speechify.com/voiceover-lp/, speechify.com/blog/speechify-ai-studio-pricing/, speechify.com/pricing-studio/, en.wikipedia.org/wiki/Speechify, speechify.com/blog/what-are-the-subscription-options-for-voiceover-studio/, speechify.com/voiceover-start-1/, speechify.com/voiceover-studio-contact/, speechify.com/blog/speechify-voice-over-pricing/, speechify.com/studio-voices/, speechify.com/ai-voice-generator/. speechify.com/pricing-studio/ and en.wikipedia.org/wiki/Speechify both direct-fetched → INCLUDED (EV-06, EV-04)." },
+      { "q": "WebSearch: Speechify annual price $139 per year 2026", "candidates": 8, "note": "fish.audio/vs/pricing/speechify/, fahimai.com/speechify, dailyaifixs.com/blog/speechify-pricing-2026-the-monthly-markup, top50aitools.com/pricing/speechify, aisotools.com/speechify-pricing, texttolab.com/blog/speechify-pricing, fluxnote.io/guides/speechify-pricing-guide-2026, costbench.com/software/ai-voice-tools/speechify/. fahimai.com/speechify and texttolab.com/blog/speechify-pricing both direct-fetched → INCLUDED (EV-09, EV-10)." },
+      { "q": "WebSearch: site:speechify.com \"how much does speechify cost\" OR \"annual\" premium pricing blog", "candidates": 9, "note": "speechify.com/blog/read-aloud-text-to-speech-pricing/, speechify.com/blog/is-speechify-free-on-chrome/, speechify.com/blog/is-speechify-free-for-students/, speechify.com/blog/is-speechify-no-longer-free/, speechify.com/blog/speechify-ai-studio-pricing/ (dup), speechify.com/blog/how-much-does-speechify-cost/ (NEW), speechify.com/blog/is-speechify-free-to-use/ (NEW), speechify.com/speechify-free-vs-premium/ (NEW), speechify.com/blog/speechify-voice-over-pricing/ (dup). how-much-does-speechify-cost, is-speechify-free-to-use, and speechify-free-vs-premium all direct-fetched → speechify-free-vs-premium and how-much-does-speechify-cost INCLUDED (EV-07, EV-08); is-speechify-free-to-use fetched but found stale/thin (2023-04-12, describes a since-superseded '3-day free plan' framing) and NOT separately registered — folded into EV-08's staleness finding instead of a duplicate entry." },
+      { "q": "WebSearch: Speechify review reedsy.com dyslexia OR writers", "candidates": 9, "note": "speechify.com/product-reviews/vs/blurt-vs-reedsy-book-editor/, reedsy.com/blog/speechify-review/ (NEW), speechify.com/blog/dyslexia-reading-tools/, speechify.com/blog/dyslexia-tools-for-writing/, reedsy-com.translate.goog/... (dup, translated variant), unite.ai/speechify-review/, speechify.com/reviews/t/writer/, sidehustlescience.org/speechify-review/, speechify.com/reviews/pages/21/. reedsy.com/blog/speechify-review/ direct-fetched → INCLUDED (EV-12)." },
+      { "q": "WebSearch: Speechify review cybernews.com", "candidates": 6, "note": "cybernews.com/ai-tools/best-ai-voice-generator/, speechify.com/press/, cybernews.com/ai-tools/speechify-review/, trustpilot.com/review/speechify.com (dup, recurs in next query), checkthat.ai/brands/speechify/reviews, eweek.com/artificial-intelligence/speechify-review/. cybernews.com/ai-tools/speechify-review/ direct-fetched → HTTP 403, unverifiable-this-run." },
+      { "q": "WebSearch: Speechify Trustpilot reviews rating", "candidates": 9, "note": "speechify.com/news/speechify-earns-excellent-rating-on-trustpilot-with-over-3000-reviews/ (NEW), trustpilot.com/review/speechify.com?page=7, ?page=8, ca.trustpilot.com...?page=6, ?page=4, makeheadway.com/blog/is-speechify-worth-it/, ?page=3, ?page=10, checkthat.ai/brands/speechify/reviews (dup). speechify.com/news/... direct-fetched → INCLUDED (EV-17); trustpilot.com/review/speechify.com root direct-fetched → HTTP 403, unverifiable-this-run; the 8 page/locale variants pattern-excluded as unverifiable-this-run given the established domain-wide block, not individually re-tested." },
+      { "q": "WebSearch: freetts.org Speechify dyslexia", "candidates": 8, "note": "freetts.org/best-text-to-speech-for-dyslexia (NEW), freetts.org/best-free-text-to-speech-2026, en.wikipedia.org/wiki/Speechify (dup), speechify.com/blog/text-to-speech-dyslexia/, freetts.org/, speechify.com/text-to-speech-online/, freetts.org/about, speechify.com/blog/is-speechify-free-to-use/ (dup). freetts.org/best-text-to-speech-for-dyslexia direct-fetched → INCLUDED (EV-11)." },
+      { "q": "WebSearch: Speechify refund policy 7 day 2 minutes terms", "candidates": 8, "note": "speechify.com/refund-policy/ (NEW), speechify.com/refund-policy/?elementor_library=... (dup variant), postclic.com/en-ng/letters/software-saas/cancel-speechify/, speechify.com/terms/ (NEW), justanswer.com x3 distinct paid-Q&A stub URLs. speechify.com/refund-policy/ and speechify.com/terms/ both direct-fetched → INCLUDED (EV-13, EV-14)." },
+      { "q": "WebSearch: Speechify \"$139.99\" charged cancel", "candidates": 10, "note": "pissedconsumer.com/speechify/RT-F.html (NEW, redirects to speechify.pissedconsumer.com/review.html), discussions.apple.com/thread/256048372, wondertools.substack.com/p/speechifyfree, community.shopify.com/... (off-topic), community.spotify.com/... x4 (off-topic), substack.com/@peterbanks/note/c-223072382. pissedconsumer.com direct-fetched (via its redirect target) → INCLUDED (EV-15)." },
+      { "q": "WebSearch: Speechify privacy policy data collection app store privacy label", "candidates": 7, "note": "speechify.com/studio-privacy/, privacy.commonsense.org/privacy-report/Speechify---Text-to-Audiobook, speechify.com/privacy/ (NEW), spokio.pro/does-speechify-collect-data-privacy, speechify-app.com/privacy/, chromewebstore.google.com/detail/speechify-text-to-speech/.../privacy, apps.apple.com/np/app/speakify-text-to-speech/id1670035793 (unrelated app, off-topic — 'Speakify' not 'Speechify'). speechify.com/privacy/ direct-fetched → INCLUDED (EV-16)." },
+      { "q": "WebSearch: Speechify \"auto-renew\" OR \"automatically renews\" subscription billing terms", "candidates": 9, "note": "getrecharge.com/glossary/auto-renewal/ (off-topic generic), sage.com/... (off-topic generic), speechify.com/terms/ (dup), razorpay.com/blog/what-is-auto-renewal/ (off-topic generic), speechify.com/blog/cancel-tts-reader/, donotpay.com/learn/how-to-cancel-speechify/, dealhub.io/glossary/auto-renewal/ (off-topic generic), jaideepass.com/product/speechify-premium, checkthat.ai/brands/speechify/pricing. No new inclusions — speechify.com/terms/ already captured via the prior query." },
+      { "q": "WebSearch: site:reddit.com Speechify review worth it", "candidates": 7, "note": "aiedusimplified.substack.com/..., newegg.com/popular-ai-tools/detail/58, ie.trustpilot.com/review/speechify.com, wondertools.substack.com/p/speechifyfree (dup), fi.trustpilot.com/review/speechify.com, g2.com/products/speechify-api/reviews, g2.com/sellers/speechify. ZERO real reddit.com URLs despite the site: operator. g2.com/products/speechify-api/reviews direct-fetched → HTTP 403, unverifiable-this-run." },
+      { "q": "WebSearch: site:reddit.com Speechify cancel subscription refund charged", "candidates": 10, "note": "community.spotify.com x2, community.shopify.com x2, community.spotify.com x6 more — ALL off-topic (Spotify/Shopify billing threads unrelated to Speechify). ZERO real reddit.com URLs, ZERO Speechify-relevant results at all — a genuinely empty query, not a scoping error." },
+      { "q": "WebSearch: site:reddit.com Speechify dyslexia ADHD studying", "candidates": 8, "note": "en.wikipedia.org/wiki/Speechify (dup), en.wikipedia.org/wiki/Orthographies_and_dyslexia (off-topic), techradar.com/pro/what-is-speechify-everything-we-know-about-the-ai-text-to-speech-tool (off-topic, no dyslexia specifics), apps.apple.com x2 (Speech Central, unrelated app), contactout.com/company/Speechify-3140 (off-topic B2B contact-data page), apps.apple.com/in/... and /app/... (Speechify's own App Store listings, no review content). ZERO real reddit.com URLs." },
+      { "q": "WebSearch: site:quora.com Speechify review worth it", "candidates": 8, "note": "reedsy.com/blog/speechify-review/ (dup), cybernews.com/ai-tools/speechify-review/ (dup), autogpt.net/ai-tool/speechify/, medium.com/@dosukoi19960917/speechify-review-2026-i-used-it-for-3-months-heres-my-honest-take-fd03f36e2c67 (NEW), makeheadway.com/blog/is-speechify-worth-it/ (dup), sidehustlescience.org/speechify-review/ (dup), speechify.com/reviews/, checkthat.ai/brands/speechify/reviews (dup). ZERO real quora.com URLs despite the site: operator. medium.com/@dosukoi19960917/... direct-fetched → INCLUDED (EV-18)." }
+    ],
+    "reddit_access_note": "Reddit was structurally unreachable this run: 3 dedicated site:reddit.com-targeted WebSearch queries (review/worth-it, cancel/refund/charged, dyslexia/ADHD/studying) surfaced ZERO actual reddit.com URLs across 25 combined candidate links — the identical block pattern documented in every prior Mimo voice-cluster shard (hub, elevenlabs-review, wellsaid-labs-review, murf-review) since 2026-07-10. Quora surfaced ZERO quora.com URLs across 1 dedicated query (8 candidates, all other review sites). CONSEQUENCE: community sentiment for this review routes through Capterra (n=10, reused from the hub), PissedConsumer (4 dated complaints, newly identified this run), a vendor self-published Trustpilot figure (not independently re-verifiable — direct fetch 403), and 3 disclosed-methodology personal-account/editorial tests (fahimai.com, reedsy.com, Medium) — a comparable evidence base to Murf's review in breadth, narrower than ElevenLabs's or WellSaid's, which should be reflected honestly in the evidenceBase sub-score and the page's limitations paragraph.",
+    "astroturf_note": "The astroturf screen (§3.1) was applied to every low-trust 'Speechify Review/Pricing 2026' aggregator-mill candidate surfaced this run (fish.audio, dailyaifixs.com, top50aitools.com, aisotools.com, fluxnote.io, costbench.com, unite.ai, sidehustlescience.org, autogpt.net, checkthat.ai, spokio.pro, postclic.com, donotpay.com, jaideepass.com, makeheadway.com). No templated-persona-network pattern was detected — these read as independently-run SEO content-mill/affiliate/comparison-shopping sites competing for the same keyword, not a coordinated persona network. The Medium personal account (EV-18) was individually assessed for authenticity (specific daily-use detail across 3 named contexts, acknowledged drawbacks, no templated affiliate phrasing) and judged genuine, not astroturf. The MikeAppsReviewer-network canonical case pattern was not observed anywhere in this sweep. Zero astroturf-pattern sources were registered or cited.",
+    "exclusion_log_notes": [
+      "no-methodology-affiliate (22): the dominant recurring category — 'Speechify Pricing/Review 2026' aggregator-mill and comparison-shopping domains surfacing repeatedly (fish.audio, dailyaifixs.com, top50aitools.com, aisotools.com, fluxnote.io, costbench.com, unite.ai, sidehustlescience.org, autogpt.net, checkthat.ai x3 occurrences across queries, spokio.pro, postclic.com, donotpay.com, jaideepass.com, and makeheadway.com — the last individually flagged by this page's own SERP brief as 'content-marketing bait' for the competing Headway app, deliberately not fetched).",
+      "off-topic (44): 10 community.spotify.com/community.shopify.com billing threads with zero Speechify relevance (the 'cancel subscription refund charged' Reddit query returned only these); 4 generic auto-renewal glossary sites unrelated to Speechify specifically (getrecharge, sage, razorpay, dealhub, zuora); en.wikipedia.org/wiki/Orthographies_and_dyslexia (adjacent topic, not about Speechify); techradar.com generic explainer with no dyslexia specifics; 2 unrelated apps surfaced by name-collision ('Speech Central', 'Speakify'); contactout.com B2B contact-data page; newegg.com AI-tools directory listing; 3 justanswer.com paid-Q&A stub pages (no visible answer content without payment); Speechify's own peripheral blog posts not directly relevant to this page's H2s (is-speechify-free-on-chrome, is-speechify-free-for-students, is-speechify-no-longer-free, read-aloud-text-to-speech-pricing, dyslexia-reading-tools, dyslexia-tools-for-writing — reviewed via search summary, none contradicted the registered figures, none individually fetched given diminishing marginal value once EV-06/EV-07/EV-08 were secured); Speechify's own Studio-adjacent pages (voiceover-lp, voiceover-start-1, voiceover-studio-contact, studio-voices, ai-voice-generator, product-reviews/vs/blurt-vs-reedsy-book-editor) not individually fetched beyond the core pricing-studio page.",
+      "duplicate (16): repeat domain/path hits across the 15 queries — trustpilot.com/review/speechify.com (root + page-paginated + locale variants) recurred 3x, en.wikipedia.org/wiki/Speechify 3x, checkthat.ai/brands/speechify/* 3x, speechify.com/blog/speechify-ai-studio-pricing and speechify-voice-over-pricing 2x each, speechify.com/blog/is-speechify-free-to-use 2x, wondertools.substack.com 2x, reedsy.com/blog/speechify-review (incl. a Google-Translate mirror) 2x, cybernews.com/ai-tools/speechify-review 2x, makeheadway.com 2x, sidehustlescience.org 2x, speechify.com/terms 2x.",
+      "unverifiable-this-run (13): trustpilot.com/review/speechify.com root (HTTP 403) plus 8 page/locale-parameter variants pattern-excluded as unverifiable given the established domain-wide block rather than individually re-tested; cybernews.com/ai-tools/speechify-review/ (HTTP 403); g2.com/products/speechify-api/reviews (HTTP 403); g2.com/sellers/speechify (pattern-excluded, not individually re-tested); privacy.commonsense.org's full report page (search-summary only, not individually fetched this run).",
+      "OWNED-BORDER held (0 registered): every candidate this run concerned Speechify's read-aloud/TTS product, Speechify Studio's voiceover-production product, or general privacy/billing practices — zero candidates touched voice-clone DETECTION, deepfake DETECTION, AI-text humanizing, or AI-text detection at any point in the sweep."
+    ],
+    "entries_reused": [
+      "EV-best-ai-voice-generators-07 (speechify.com/pricing/, Free/Premium $29mo pricing capture) — re-fetched and re-registered, content unchanged from the hub's 2026-07-21 capture, as EV-speechify-review-01",
+      "EV-best-ai-voice-generators-08 (Capterra, Verified Reviewer PhD student, 2023-12-30, 1 star) — re-fetched and re-registered as EV-speechify-review-02",
+      "EV-best-ai-voice-generators-09 (Capterra, Skyler R., 2024-11-11, 5 stars) — re-fetched and re-registered as EV-speechify-review-03"
+    ]
+  },
+  "entries": [
+    {
+      "id": "EV-speechify-review-01",
+      "claim": "Speechify's current pricing page (re-verified live 2026-08-09, unchanged from the hub's 2026-07-21 capture) lists a Free plan (10 robotic-sounding voices, up to 1.5x speed) and a Premium plan at $29/month (1000+ natural voices, 60+ languages, up to 5x speed) with an annual discount advertised as 'SAVE 60%' — the exact annual dollar figure is still not extractable from this page (client-rendered toggle). See EV-08 through EV-12 and EV-18 for the third-party-converged annual figure. Vendor-stated, self-interested.",
+      "source_url": "https://speechify.com/pricing/",
+      "source_date": "2026-08-09",
+      "quote": "Free Plan: Listen at speeds up to 1.5x... 10 robotic sounding voices... Premium Plan: $29/month... 1000+ high quality, natural voices, 60+ different languages, listen at 5x faster speeds.",
+      "platform": "speechify.com/pricing (vendor pricing page — self-interested; re-verified live 2026-08-09, originally captured by the hub 2026-07-21, content unchanged)",
+      "target_slug": "/tools/speechify",
+      "collected_at": "2026-08-09",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "speechify-review-2026-08-09",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Speechify",
+        "aspect": "Free vs Premium ($29/mo) split; annual $ still unconfirmed on this specific page",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Free $0/mo; Premium $29/mo",
+        "item_date": "2026-08-09"
+      },
+      "honesty_notes": [
+        "Reused from the hub (EV-best-ai-voice-generators-07), re-fetched live this run per protocol §4 — content unchanged 19 days later.",
+        "This shard's own sweep (EV-09, EV-10, EV-11, EV-12, EV-18) independently converges on $139/year as the current annual figure across 5 differently-dated third-party sources, none of which is this vendor page — present $139/yr as third-party-attributed, never as vendor-confirmed, until a future run can extract the client-rendered annual toggle directly."
+      ]
+    },
+    {
+      "id": "EV-speechify-review-02",
+      "claim": "A dated Capterra review of Speechify (Verified Reviewer, PhD Student, Computer Software field, 2023-12-30, 1 star, re-verified live 2026-08-09) states voice quality was very poor and customer service was unsatisfactory — still the most negative dated data point found for Speechify, inside an aggregate that remains 3.8/5 (n=10), unchanged since the hub's capture.",
+      "source_url": "https://www.capterra.com/p/253466/Speechify/reviews/",
+      "source_date": "2023-12-30",
+      "quote": "The quality of the AI generated voices was very poor and the customer services was so bad that it left me feeling sick to my stomach.",
+      "platform": "Capterra (review-platform; aggregate 3.8/5, n=10, re-verified unchanged 2026-08-09; Ease of Use subscore 4.2/5, Customer Service subscore 3.8/5; this individual review dated 2023-12-30)",
+      "target_slug": "/tools/speechify",
+      "collected_at": "2026-08-09",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "speechify-review-2026-08-09",
+      "screening": "included",
+      "label": "community-report",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Speechify",
+        "aspect": "voice-quality and customer-service complaint, 1-star",
+        "stance": "negative",
+        "plan_tier_if_stated": null,
+        "item_date": "2023-12-30"
+      },
+      "honesty_notes": [
+        "Reused from the hub (EV-best-ai-voice-generators-08), re-fetched live this run — aggregate rating, denominator, and this individual review all unchanged after 19 days.",
+        "One dated 1-star reviewer among 10 total Capterra reviews (the lowest Capterra aggregate of the 4 tools in Mimo's voice cluster) — do not generalize into 'users say Speechify has poor quality'; a single anecdote inside a small sample.",
+        "Speechify's core product (reading aloud existing text) differs in use case from the 3 sibling reviews (generating original narration) — use this review for outputQuality context only, not as if it invalidates the read-aloud use case."
+      ]
+    },
+    {
+      "id": "EV-speechify-review-03",
+      "claim": "A separate dated Capterra review of Speechify (Skyler R., Freelance Social Media Marketing, 2024-11-11, 5 stars, re-verified live 2026-08-09, same n=10 sample as EV-02) praises the 5x listening speed for speeding up article editing — a positive, workflow-specific report distinct from voice-generation quality. Capterra's own category subscore for Speechify's ease of use (4.2/5, re-verified this run) is consistent with this reviewer's praise.",
+      "source_url": "https://www.capterra.com/p/253466/Speechify/reviews/",
+      "source_date": "2024-11-11",
+      "quote": "The ability to listen at 5X the speed. This helps me edit articles so much faster which is crucial for my job.",
+      "platform": "Capterra (review-platform; aggregate 3.8/5, n=10, re-verified 2026-08-09; Ease of Use subscore 4.2/5; this individual review dated 2024-11-11)",
+      "target_slug": "/tools/speechify",
+      "collected_at": "2026-08-09",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "speechify-review-2026-08-09",
+      "screening": "included",
+      "label": "community-report",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Speechify",
+        "aspect": "listening-speed feature valued for editing workflow (ease of use), distinct from voice-generation quality",
+        "stance": "positive",
+        "plan_tier_if_stated": null,
+        "item_date": "2024-11-11"
+      },
+      "honesty_notes": [
+        "Reused from the hub (EV-best-ai-voice-generators-09), re-fetched live this run — unchanged.",
+        "This praise concerns the read-aloud/speed-listening consumption use case, not the quality of voices Speechify generates for others to hear — do not blend with EV-02's generation-quality complaint as if contradictory; different product dimensions (consume vs produce), which is this page's central thesis."
+      ]
+    },
+    {
+      "id": "EV-speechify-review-04",
+      "claim": "Speechify's Wikipedia entry (live-verified 2026-08-09) describes it as a mobile/Chrome-extension/desktop app that reads text aloud via computer-generated TTS plus OCR for physical text, founded by Cliff Weitzman (a dyslexic Brown University student) to help himself keep up with class readings, and cites research that dyslexic students using Speechify showed better reading-comprehension outcomes than students using traditional means only. The article itself carries a notability/deletion-discussion tag as of July 2026 — used here for entity disambiguation and founding-story facts only.",
+      "source_url": "https://en.wikipedia.org/wiki/Speechify",
+      "source_date": "2026-08-09",
+      "quote": "a mobile, Chrome extension, and desktop app that reads text aloud using a computer-generated text-to-speech voice... dyslexic students who utilized Speechify had better reading comprehension outcomes than students who only used traditional means.",
+      "platform": "Wikipedia (tertiary reference source; live-verified 2026-08-09; page carries an active notability/deletion-discussion tag as of July 2026)",
+      "target_slug": "/tools/speechify",
+      "collected_at": "2026-08-09",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "speechify-review-2026-08-09",
+      "screening": "included",
+      "label": "research-finding",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Speechify",
+        "aspect": "entity definition, founding story, and a cited dyslexia-comprehension research claim",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-08-09"
+      },
+      "honesty_notes": [
+        "Used per the page brief's semantic_brief for schema disambiguation (articleSchema about.sameAs) — do not present the deletion-nomination tag to readers as evidence against Speechify; it concerns Wikipedia's own notability-guideline process, unrelated to product quality.",
+        "The 'dyslexic students had better reading comprehension' line is Wikipedia's own citation of outside research, not independently re-verified against the original study this run — attribute as 'cited research says', not as a Mimo-verified finding."
+      ]
+    },
+    {
+      "id": "EV-speechify-review-05",
+      "claim": "Speechify's homepage (captured 2026-08-09) markets the product as a 'Voice AI Productivity Assistant' spanning read/write/listen, available as a Web App, Chrome/Edge extensions, iOS, Android, Mac, and Windows apps, with a 'Scan & Listen' OCR feature and a 2025 Apple Design Award badge prominently displayed. Vendor-stated, self-interested.",
+      "source_url": "https://speechify.com/",
+      "source_date": "2026-08-09",
+      "quote": "Turn PDFs, docs, and more into lifelike and emotional AI voices... Snap a photo and read aloud... Write 5x faster with voice typing.",
+      "platform": "speechify.com (vendor homepage — self-interested; captured 2026-08-09)",
+      "target_slug": "/tools/speechify",
+      "collected_at": "2026-08-09",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "speechify-review-2026-08-09",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Speechify",
+        "aspect": "cross-platform read-aloud positioning, OCR capture, 2025 Apple Design Award",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-08-09"
+      },
+      "honesty_notes": [
+        "The Apple Design Award is a real, dated (2025 WWDC) recognition — a documented counterweight to the billing complaints in EV-15, but it recognizes app craft, not voice-generation quality or billing practices; do not let it stand in for either.",
+        "Cross-platform breadth (6 distinct app/extension surfaces) is the vendor's own count — not independently verified against each app-store listing this run."
+      ]
+    },
+    {
+      "id": "EV-speechify-review-06",
+      "claim": "Speechify Studio's dedicated pricing page (captured 2026-08-09) shows a THIRD, separate pricing structure from the read-aloud Premium plan: a Free tier (600 Studio credits, 1,000+ voices, no voice cloning/commercial rights), Studio Starter ($100/year, 86,400 credits, adds voice cloning and commercial rights), and Studio Creator ($300/year, 345,600 credits, labeled 'Best Value'). Credits burn at 1/sec for voiceover, 3/sec for dubbing, 30/sec for avatar generation. No monthly-billing option is shown. This is the vendor-primary confirmation of the App-vs-Studio split this page's thesis rests on. Vendor-stated, self-interested.",
+      "source_url": "https://speechify.com/pricing-studio/",
+      "source_date": "2026-08-09",
+      "quote": "600 Studio credits... Studio Starter: 86,400 Studio credits... voice cloning, stock assets, commercial usage rights... Studio Creator: 345,600 Studio credits... Once generated, exporting of the same content are free.",
+      "platform": "speechify.com/pricing-studio (vendor pricing page for the separate Studio product — self-interested; captured 2026-08-09, no on-page publish date)",
+      "target_slug": "/tools/speechify",
+      "collected_at": "2026-08-09",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "speechify-review-2026-08-09",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Speechify Studio",
+        "aspect": "Studio's own annual-only, credit-based pricing, structurally separate from the Reader/Premium plan",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Free 600 credits/yr; Starter $100/yr; Creator $300/yr",
+        "item_date": "2026-08-09"
+      },
+      "honesty_notes": [
+        "CRITICAL FINDING for this page's central thesis: a genuinely separate pricing page, product, and billing unit (credits, not voices/languages/speed) from the Reader's Free/Premium split (EV-01) — none of the third-party sources registered in this shard (EV-09/10/11/12/18) draw this distinction as sharply; several (e.g. Reedsy, EV-12) describe 'Premium' download-hour limits that read more like Studio's mechanics than the Reader's — exactly the conflation this page exists to resolve.",
+        "Do not average or combine Studio's $100-300/year with the Reader's $29/mo-or-~$139/yr figure into one 'Speechify costs X' statement — different products for different jobs.",
+        "CONFLICTS with EV-10 (texttolab.com), which states a $19-49/month Studio range with no annual-only structure — flagged as an unresolved third-party-vs-vendor discrepancy; this directly-fetched vendor page should be treated as the more current source for Studio pricing specifically."
+      ]
+    },
+    {
+      "id": "EV-speechify-review-07",
+      "claim": "Speechify's own Free-vs-Premium comparison page (captured 2026-08-09) states the Free plan's exact limits as 10 robotic-sounding voices, up to 1.5x playback, a 5-file storage limit, and basic email support; Premium ($29/month) adds 1000+ natural voices, 60+ languages, up to 5x speed (900 words-per-minute ceiling), unlimited storage, and 24/7 priority support. Vendor-stated, self-interested.",
+      "source_url": "https://speechify.com/speechify-free-vs-premium/",
+      "source_date": "2026-08-09",
+      "quote": "10 robotic sounding voices... Up to 1.5x playback... 5-file limit... Premium: 1000+ high quality, natural voices... 60+ different languages... Up to 5x faster speeds (900 words per minute maximum).",
+      "platform": "speechify.com/speechify-free-vs-premium (vendor comparison page — self-interested; captured 2026-08-09, no on-page publish date)",
+      "target_slug": "/tools/speechify",
+      "collected_at": "2026-08-09",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "speechify-review-2026-08-09",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Speechify",
+        "aspect": "exact Free-tier limits (10 voices, 1.5x speed, 5-file cap) vs Premium (1000+ voices, 60+ languages, 5x/900wpm)",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Free $0/mo; Premium $29/mo",
+        "item_date": "2026-08-09"
+      },
+      "honesty_notes": [
+        "The most complete vendor-primary statement of Free-tier limits found this run — independently corroborated by EV-18 (Medium, 3-month user, confirms '10 robotic voices, limited to 1.5x speed, and a cap of 5 files') and consistent with EV-01.",
+        "The 5-file storage limit does not appear on speechify.com/pricing/ itself (EV-01) — a minor vendor-page inconsistency in how thoroughly each page states Free-tier limits; use this page's fuller figure."
+      ]
+    },
+    {
+      "id": "EV-speechify-review-08",
+      "claim": "A Speechify blog post (published 2023-09-27, still live and captured 2026-08-09) states Premium costs '$159/year' — a figure that CONFLICTS with the $139/year figure five independent, more-recently-dated third-party sources converge on (EV-09, EV-10, EV-11, EV-12, EV-18) and does not match any figure this run's direct fetches of speechify.com's current pricing pages could confirm. Logged as a stale, unresolved internal vendor inconsistency rather than silently corrected.",
+      "source_url": "https://speechify.com/blog/how-much-does-speechify-cost/",
+      "source_date": "2023-09-27",
+      "quote": "We currently offer 2 Speechify listening experiences: SPEECHIFY LIMITED - Free SPEECHIFY PREMIUM - $159 /year",
+      "platform": "speechify.com/blog (vendor blog post — self-interested; published 2023-09-27, still live and indexed, captured 2026-08-09)",
+      "target_slug": "/tools/speechify",
+      "collected_at": "2026-08-09",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "speechify-review-2026-08-09",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": ["A", "B"],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "Speechify",
+        "aspect": "stale vendor-stated annual price ($159/yr, 2023), unreconciled with the current third-party consensus of $139/yr",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Premium $159/yr (2023 figure)",
+        "item_date": "2023-09-27"
+      },
+      "honesty_notes": [
+        "FLAGGED for resolver: could this stale page be read as evidence Speechify's annual price DROPPED from $159 to $139 since 2023 (a real pricing-history fact), or is it simply an un-updated page the vendor never took down? This curator recommends presenting $139/yr as 'current per multiple 2025-2026 third-party sources' with this older $159 figure omitted from reader-facing copy rather than reconciled, to avoid implying false vendor confirmation either way — a resolver should weigh in.",
+        "Demonstrates the same category of vendor self-inconsistency the Murf review found for voice/language counts — Speechify, like Murf, has multiple stale or contradictory pages live simultaneously; worth a general note in the page's limitations paragraph about vendor-page staleness."
+      ]
+    },
+    {
+      "id": "EV-speechify-review-09",
+      "claim": "In a disclosed 90-day personal-trial review (fahimai.com, published 2024-09-09, updated 2026-02-14, paid with the author's own card, tested across iOS/Android/Chrome on 5 real projects), the author confirms Premium at $139/year ($11.58/mo) or $29/month, praises voice quality ('human like voices made long documents enjoyable') but reports hitting a ~150,000-word/month premium-voice cap in week 3, after which the app fell back to standard voices, and notes 'the non HD voices are noticeably worse' with some mispronunciation of technical words.",
+      "source_url": "https://www.fahimai.com/speechify",
+      "source_date": "2026-02-14",
+      "quote": "Paid with my own credit card (no free review account)... the human like voices made long documents enjoyable... the non HD voices are noticeably worse... some voices still mispronounce technical words.",
+      "platform": "fahimai.com (disclosed-methodology hands-on/paid-trial test; published 2024-09-09, updated 2026-02-14, captured 2026-08-09)",
+      "target_slug": "/tools/speechify",
+      "collected_at": "2026-08-09",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "speechify-review-2026-08-09",
+      "screening": "included",
+      "label": "independent-test",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Speechify",
+        "aspect": "90-day paid personal trial: premium voice quality praised, non-HD/standard voices and the ~150k-word monthly cap criticized",
+        "stance": "mixed",
+        "plan_tier_if_stated": "Premium $29/mo or $139/yr",
+        "item_date": "2026-02-14"
+      },
+      "honesty_notes": [
+        "Same publisher (fahimai.com) whose WellSaid Labs and Murf articles were flagged in prior Mimo shards for date-consistency or headline-figure concerns — this specific Speechify article shows a disclosed, personally-paid methodology and internally consistent figures on inspection this run, but the publisher's general reliability caveat carries forward.",
+        "1st of 5 independent third-party sources converging on the $139/year figure (see EV-10, EV-11, EV-12, EV-18). The 150,000-word/month premium cap is independently corroborated by EV-10 (a differently-run source) — two independent sources converging on the same specific number strengthens this as a genuine, citable Premium limitation."
+      ]
+    },
+    {
+      "id": "EV-speechify-review-10",
+      "claim": "A pricing guide (texttolab.com, published 2026-05-01, updated 2026-05-15) states it verified its figures directly 'against speechify.com/pricing and speechify.com/pricing-studio' in May 2026, confirming Premium at $29/month ($348/year) or $139/year annually (a stated 60% annual savings), Free-tier limits of 10 voices/1.5x speed with OCR/PDF-import/offline-listening restricted, and explicitly distinguishes three separate Speechify products: Reader (listening app), Studio ($19-49/month), and Audiobooks ($14.99/month) — calling this three-way split 'the biggest source of confusion with Speechify pricing.'",
+      "source_url": "https://texttolab.com/blog/speechify-pricing",
+      "source_date": "2026-05-15",
+      "quote": "Pricing verified May 2026 against speechify.com/pricing and speechify.com/pricing-studio... a 60% savings for committing annually... Reader (listening app), Studio (creation tool at $19-49/month), and Audiobooks ($14.99/month) — the biggest source of confusion with Speechify pricing.",
+      "platform": "texttolab.com (third-party pricing guide with a disclosed vendor-page-verification methodology; published 2026-05-01, updated 2026-05-15, captured 2026-08-09)",
+      "target_slug": "/tools/speechify",
+      "collected_at": "2026-08-09",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "speechify-review-2026-08-09",
+      "screening": "included",
+      "label": "research-finding",
+      "coders": ["A", "B"],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "Speechify",
+        "aspect": "vendor-page-verified $139/yr figure and explicit 3-product pricing disambiguation (Reader/Studio/Audiobooks)",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Premium $29/mo or $139/yr; Studio $19-49/mo; Audiobooks $14.99/mo",
+        "item_date": "2026-05-15"
+      },
+      "honesty_notes": [
+        "FLAGGED for resolver: this source's $19-49/month Studio figure does NOT match this run's own direct vendor fetch of speechify.com/pricing-studio (EV-06, annual-only, $100/$300 per year) — an unresolved third-party-vs-vendor discrepancy on Studio pricing specifically. Present Studio figures from EV-06 (directly vendor-fetched this run) as the more current/reliable source; flag this source's Studio figure as possibly stale or describing a different billing structure.",
+        "2nd of 5 independent sources converging on $139/year (after EV-09). Independently corroborates EV-09's 150,000-word/month Premium cap and EV-01/EV-08's $29/mo figure — no disclosed hands-on test, but the stated vendor-verification method is more specific than a typical pricing-aggregator page."
+      ]
+    },
+    {
+      "id": "EV-speechify-review-11",
+      "claim": "A dyslexia/accessibility tool comparison (freetts.org, last updated 2026-05-23) states Speechify costs '$139/year for premium' and lists 'no audio export' as a specific limitation versus alternatives, while praising Speechify as 'better on mobile (polished iOS app, great UX)'. FreeTTS is itself a free competing TTS product and does not disclose this conflict of interest on the page — its Speechify-specific factual claims (price, no-export limitation) are used here, not its comparative rankings.",
+      "source_url": "https://freetts.org/best-text-to-speech-for-dyslexia",
+      "source_date": "2026-05-23",
+      "quote": "Speechify is better on mobile (polished iOS app, great UX) but $139/year for premium and no audio export.",
+      "platform": "freetts.org (accessibility-tool comparison page published by a competing free TTS product — undisclosed conflict of interest; last updated 2026-05-23, captured 2026-08-09)",
+      "target_slug": "/tools/speechify",
+      "collected_at": "2026-08-09",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "speechify-review-2026-08-09",
+      "screening": "included",
+      "label": "research-finding",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Speechify",
+        "aspect": "dyslexia-accessibility comparison: $139/yr price and a 'no audio export' limitation, vs a free/cheaper competing product",
+        "stance": "mixed",
+        "plan_tier_if_stated": "Premium $139/yr",
+        "item_date": "2026-05-23"
+      },
+      "honesty_notes": [
+        "COI flag: FreeTTS.org competes directly with Speechify for the exact accessibility/dyslexia audience this page's primary persona represents — present its 'no audio export' and pricing claims plainly, but do not adopt its implicit recommendation of FreeTTS/NaturalReader over Speechify as a neutral verdict.",
+        "3rd of 5 independent sources converging on the $139/year figure (after EV-09, EV-10) — see EV-01's honesty_notes for the full disclose-the-gap framing required on this figure."
+      ]
+    },
+    {
+      "id": "EV-speechify-review-12",
+      "claim": "Reedsy's disclosed editorial review for authors (published 2025-12-15) rates Speechify 3/5 stars, states Premium costs '$29/month or $139/year', reports free voices sound 'noticeably robotic' while Premium voices are 'surprisingly natural', but concludes the AI narration 'lacks emotional tone and character performance — not suitable for professional audiobook publishing', flags pronunciation errors on 'fantasy names, jargon, or made-up terms' requiring manual correction, and notes the tool 'can interfere with your cursor' in Google Docs during editing.",
+      "source_url": "https://reedsy.com/blog/speechify-review/",
+      "source_date": "2025-12-15",
+      "quote": "AI narration lacks emotional tone and character performance — not suitable for professional audiobook publishing... Even if you record and export a full audiobook in Speechify Studio, distribution is not guaranteed.",
+      "platform": "reedsy.com/blog (editorial review for a writer/author audience; published 2025-12-15, captured 2026-08-09)",
+      "target_slug": "/tools/speechify",
+      "collected_at": "2026-08-09",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "speechify-review-2026-08-09",
+      "screening": "included",
+      "label": "independent-test",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Speechify",
+        "aspect": "author-focused editorial verdict (3/5): free voices robotic, Premium natural but not professional-audiobook-grade; pronunciation and cursor-interference issues named",
+        "stance": "mixed",
+        "plan_tier_if_stated": "Premium $29/mo or $139/yr",
+        "item_date": "2025-12-15"
+      },
+      "honesty_notes": [
+        "The review does not state whether the author personally tested Speechify hands-on or compiled the assessment from documented features — treat as a disclosed editorial judgment, distinct from EV-09's and EV-18's explicitly personal-use accounts.",
+        "Reedsy's own mention of Speechify Studio and audiobook 'distribution not guaranteed' blends the Reader Premium price ($29/mo or $139/yr) with Studio-flavored concerns (recording/exporting a full audiobook) in the same paragraph — a real-world example of the exact App-vs-Studio conflation this page's thesis identifies as a 0/3-competitors gap, occurring even in a genuine, disclosed editorial.",
+        "4th of 5 independent sources converging on $139/year (after EV-09, EV-10, EV-11); see EV-01's honesty_notes."
+      ]
+    },
+    {
+      "id": "EV-speechify-review-13",
+      "claim": "Speechify's own Refund Policy page (captured 2026-08-09, no on-page effective date shown) states a 7-day window to request a refund from the date of subscription (including trial periods), with usage-based eligibility caps that DIFFER by product: Text-to-Speech (Reader) subscriptions qualify only if no more than 500 HD words were used; AI Studio subscriptions qualify only if no more than 2 minutes were used; Monthly, Quarterly, and Discounted-basis subscriptions are stated as non-refundable outright.",
+      "source_url": "https://speechify.com/refund-policy/",
+      "source_date": "2026-08-09",
+      "quote": "You must contact us within 7 days from the date of the subscription (including any trial period)... If you have used no more than 500 HD words... If you have used no more than 2 minutes... Subscriptions purchased on a Monthly, Quarterly, or Discounted basis are non-refundable.",
+      "platform": "speechify.com/refund-policy (vendor legal/policy page — self-interested; captured 2026-08-09, no effective date displayed on the page)",
+      "target_slug": "/tools/speechify",
+      "collected_at": "2026-08-09",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "speechify-review-2026-08-09",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Speechify",
+        "aspect": "refund eligibility terms: 7-day window, product-specific usage caps (500 HD words for Reader, 2 minutes for AI Studio), monthly/quarterly non-refundable",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-08-09"
+      },
+      "honesty_notes": [
+        "CORRECTS an assumption in the page brief: the brief's 'capped at 2-minute usage' figure applies specifically to AI Studio subscriptions per this page's own text, NOT the Reader/Premium plan most of this page's readers would buy — the Reader plan's cap is 500 HD words, a different unit. Do not present '2 minutes' as the general Speechify refund cap without this product-specific caveat.",
+        "The strongest direct evidence available for the cancellation/refund friction H2 — combine with EV-15 (dated first-person complaints) to show both the stated policy and its real-world effect. This is what allows the conditional H2 to ship."
+      ]
+    },
+    {
+      "id": "EV-speechify-review-14",
+      "claim": "Speechify's Terms & Conditions (last updated 2025-07-01, captured 2026-08-09) state subscriptions auto-renew for the same term length at the then-current price unless cancelled, and that consumer annual subscribers receive advance renewal notice 'no less than 15 days and no more than 45 days' before renewal, plus a confirmation email at signup containing renewal terms and cancellation instructions.",
+      "source_url": "https://speechify.com/terms/",
+      "source_date": "2025-07-01",
+      "quote": "SUBSCRIPTION TERMS WILL AUTOMATICALLY RENEW... no less than 15 days and no more than 45 days before your subscription renews... we send you a confirmation email containing the automatic renewal offer terms and instructions on how to cancel.",
+      "platform": "speechify.com/terms (vendor Terms & Conditions — self-interested; last updated 2025-07-01, captured 2026-08-09)",
+      "target_slug": "/tools/speechify",
+      "collected_at": "2026-08-09",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "speechify-review-2026-08-09",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Speechify",
+        "aspect": "auto-renewal mechanics and the stated advance-notice window for annual subscribers",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2025-07-01"
+      },
+      "honesty_notes": [
+        "Creates a genuine tension worth stating plainly to the reader rather than resolving in either direction: Speechify's own Terms promise 15-45 days' advance notice before an annual renewal charge, yet EV-15 documents four separately-dated 2025-2026 complainants describing the $139.99 charge as a surprise. Both can be true (a notice sent to an unread inbox is still 'sent') — present as an unresolved tension, not a contradiction that discredits either source."
+      ]
+    },
+    {
+      "id": "EV-speechify-review-15",
+      "claim": "Of the complaints visible on Speechify's PissedConsumer review page (captured 2026-08-09), four separately-dated posts between 2025-12-20 and 2026-05-26 specifically describe a $139 or $139.99 annual charge and difficulty obtaining a refund; the most detailed states the poster was charged $139 exactly one week after starting what they understood to be a 7-day free trial.",
+      "source_url": "https://speechify.pissedconsumer.com/review.html",
+      "source_date": "2026-05-26",
+      "quote": "I just tried Speechify on April 30th supposedly with a 7-day free trial. Today, May 7th, I have a charge of $139.",
+      "platform": "PissedConsumer (consumer-complaint review platform; 4 dated posts Dec 2025-May 2026 identified this run, captured 2026-08-09)",
+      "target_slug": "/tools/speechify",
+      "collected_at": "2026-08-09",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "speechify-review-2026-08-09",
+      "screening": "included",
+      "label": "community-report",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Speechify",
+        "aspect": "annual auto-charge ($139/$139.99) and refund-request difficulty, reported across 4 separately-dated 2025-2026 complaints",
+        "stance": "negative",
+        "plan_tier_if_stated": "Premium annual ~$139-$139.99",
+        "item_date": "2026-05-26"
+      },
+      "honesty_notes": [
+        "DEFINED-SAMPLE reporting per MEP §6: of the complaints surfaced on this PissedConsumer page this run, 4 distinct dated posts (2025-12-20, 2026-05-07, 2026-05-12, 2026-05-26) specifically name a $139 or $139.99 charge and refund/cancellation difficulty — a complaint-platform sample (structurally selects for unhappy customers, see the page's limitations paragraph), not a population estimate; do not convert into 'most Speechify users struggle to cancel'.",
+        "Independently corroborates the $139.99 figure implied by Speechify's own refund-policy page (EV-13) and matches the brief's flagged $139.99 auto-charge figure — now traced to a dated, linkable primary source as required before this H2 could ship.",
+        "PissedConsumer's own business model (a complaint-aggregation platform that also sells reputation-management services to the companies it reviews) carries a mild adjacent-incentive caveat, distinct from but worth noting alongside vendor self-interest."
+      ]
+    },
+    {
+      "id": "EV-speechify-review-16",
+      "claim": "Speechify's Privacy Policy (last updated 2026-07-22, captured 2026-08-09) states the company does not sell or rent Personal Data and does not share it with third parties for ad-targeting purposes; it collects username/email/contact/language preferences, payment information, device/usage data (IP, browser, cookies), and IP-derived location, and states employees do not monitor uploaded User Content except for support requests, ToS-violation investigation, or when providing human-proofreading services. Vendor-stated, self-interested.",
+      "source_url": "https://speechify.com/privacy/",
+      "source_date": "2026-07-22",
+      "quote": "No, Speechify does not sell or rent your Personal Data... Speechify employees do not monitor or view your User Content stored in or transferred through our Site, Software, and/or Services.",
+      "platform": "speechify.com/privacy (vendor privacy policy — self-interested; last updated 2026-07-22, captured 2026-08-09)",
+      "target_slug": "/tools/speechify",
+      "collected_at": "2026-08-09",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "speechify-review-2026-08-09",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Speechify",
+        "aspect": "data-sale/ad-sharing denial and user-content access exceptions, from Speechify's own primary policy",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-07-22"
+      },
+      "honesty_notes": [
+        "A self-interested vendor statement, not an independently audited privacy claim — no third-party privacy audit or breach-history source was found and verified this run to corroborate or contest it; present as 'the vendor states', never as an independently confirmed fact.",
+        "Relevant to trust/safety (data-handling practices), distinct from and unrelated to voice-clone or deepfake DETECTION — owned-border held."
+      ]
+    },
+    {
+      "id": "EV-speechify-review-17",
+      "claim": "Speechify's own press release (published 2025-02-20, captured 2026-08-09) states it 'has been awarded an Excellent rating on TrustPilot, achieving 4.6 out of 5 stars from over 3,000 user reviews.' This is a vendor self-published figure; direct verification at trustpilot.com/review/speechify.com failed this run (HTTP 403 on the root page; 8 page/locale variants pattern-excluded as unverifiable given the established block), so the underlying Trustpilot aggregate could not be independently confirmed or updated to a current count.",
+      "source_url": "https://speechify.com/news/speechify-earns-excellent-rating-on-trustpilot-with-over-3000-reviews/",
+      "source_date": "2025-02-20",
+      "quote": "has been awarded an 'Excellent' rating on TrustPilot, achieving 4.6 out of 5 stars from over 3,000 user reviews.",
+      "platform": "speechify.com/news (vendor press release — self-interested; published 2025-02-20, captured 2026-08-09)",
+      "target_slug": "/tools/speechify",
+      "collected_at": "2026-08-09",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "speechify-review-2026-08-09",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": ["A", "B"],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "Speechify",
+        "aspect": "self-reported Trustpilot aggregate (4.6/5, 3,000+ reviews) — not independently verified at Trustpilot this run",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2025-02-20"
+      },
+      "honesty_notes": [
+        "Direct Trustpilot verification failed this run (root URL = HTTP 403; locale/pagination variants not individually re-tested given the established domain-wide block documented in every prior Mimo voice-cluster shard) — this figure MUST be labeled vendor-stated, not an independently-verified Trustpilot rating, and is now roughly 18 months stale. A search-snippet-only mention of a larger, more recent review count was seen but NOT independently fetched or verified this run, so it is NOT registered — see evidence_gaps.",
+        "If used alongside Capterra's 3.8/5 (EV-02/EV-03) and G2's inaccessible rating, disclose plainly that Speechify's aggregate reputation looks very different depending on which platform and which party (vendor press release vs. independent fetch) is the source."
+      ]
+    },
+    {
+      "id": "EV-speechify-review-18",
+      "claim": "A personal-use account (Medium, published 2026-03-23, self-described 3 months of daily use across commute newsletters, work research, and about one book/week via PDF) reports the voices are 'shockingly natural' and Premium runs '$139/year' ('not cheap'), independently confirms the Free tier as '10 robotic voices, limited to 1.5x speed, and a cap of 5 files' ('basically a demo'), states the advertised 5x-speed claim is 'marketing' in practice, and references seeing Reddit threads about unexpected charges during the free trial without citing a specific one.",
+      "source_url": "https://medium.com/@dosukoi19960917/speechify-review-2026-i-used-it-for-3-months-heres-my-honest-take-fd03f36e2c67",
+      "source_date": "2026-03-23",
+      "quote": "The voices are shockingly natural... You actually forget it's AI after a few minutes... You get 10 robotic voices, limited to 1.5x speed, and a cap of 5 files.",
+      "platform": "Medium (personal-account first-person review; published 2026-03-23, captured 2026-08-09)",
+      "target_slug": "/tools/speechify",
+      "collected_at": "2026-08-09",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "speechify-review-2026-08-09",
+      "screening": "included",
+      "label": "independent-test",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Speechify",
+        "aspect": "3-month personal-use account: Premium voice quality praised, Free-tier limits and $139/yr price independently confirmed, '5x speed' framed as inflated marketing",
+        "stance": "mixed",
+        "plan_tier_if_stated": "Premium $29/mo or $139/yr",
+        "item_date": "2026-03-23"
+      },
+      "honesty_notes": [
+        "Assessed as an authentic personal account (specific daily-use detail, acknowledged drawbacks, no templated affiliate-mill phrasing) rather than content-marketing bait, consistent with this shard's astroturf screen — no persona-network pattern detected for this single author.",
+        "5th of 5 independent sources converging on $139/year (after EV-09, EV-10, EV-11, EV-12) — with 5 differently-dated, differently-run sources landing on the identical figure, this shard treats $139/year as a well-corroborated third-party consensus, still never to be stated as vendor-confirmed (see EV-01, EV-08)."
+      ]
+    }
+  ]
+}
