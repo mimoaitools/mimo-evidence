@@ -358,7 +358,17 @@
         "stance": "n/a",
         "plan_tier_if_stated": "Essentials — $9/month, 15,000 KoalaWriter words",
         "item_date": "2026-07-10"
-      }
+      },
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-21",
+          "source_url": "https://koala.sh/pricing",
+          "claim": "Koala AI's cheapest plan is now Starter at $25/month for 45,000 KoalaWriter words; the 15-day refund window applies when usage is under 15,000 words and 100 credits.",
+          "quote": "If you aren't satisfied within the first 15 days of a new plan and have used minimal credits (under 15,000 words and 100 credits), just contact us for a prompt refund.",
+          "supersedes": "2026-07-10 Essentials $9/15,000 words; refund condition worded as 100 messages",
+          "collector": "fix-wave-2026-10-21 (live curl + WebFetch)"
+        }
+      ]
     },
     {
       "id": "EV-evidence-ai-writing-tools-10",
