@@ -1,0 +1,1155 @@
+{
+  "_meta": {
+    "flow_id": "rytr-review-2026-10-25",
+    "protocol_version": "MEP-1.0",
+    "target_slug": "/tools/rytr",
+    "target_keyword": "rytr review",
+    "run_date": "2026-10-25",
+    "collector": "evidence-curator",
+    "flow_counter": {
+      "identified": 130,
+      "screened": 130,
+      "excluded": 86,
+      "excluded_by_reason": {
+        "duplicate": 35,
+        "off-topic": 14,
+        "unverifiable-this-run": 14,
+        "no-methodology-affiliate": 23
+      },
+      "included_items": 44,
+      "included_items_breakdown": {
+        "vendor_pages": 6,
+        "archive_captures": 3,
+        "help_centre": 1,
+        "ftc_primary": 3,
+        "law_firm_secondary": 1,
+        "review_platform_aggregates": 2,
+        "trustpilot_reviews": 20,
+        "quora_answers": 5,
+        "third_party_tests": 3
+      },
+      "registry_entries_new": 26,
+      "registry_entries_reused": 1,
+      "reused_entries": [
+        "EV-evidence-ai-writing-tools-10 (now carries a 2026-10-25 recaptures block)"
+      ],
+      "unit_note": "Unit of analysis = one page, archive capture, review or answer. Trustpilot reviews and Quora answers are counted per item; they are registered as two counted samples (EV-17, EV-26) plus four quote entries (EV-18..21), so included items (44) exceed registry entries (26).",
+      "resolver_change": "2026-10-25 coding resolution: 1 Quora answer (Blandina Marcelle) moved from included to excluded:no-methodology-affiliate (promotional, referral link, false product claims). excluded 85 -> 86, no-methodology-affiliate 22 -> 23, included 45 -> 44, quora_answers 6 -> 5."
+    },
+    "coder_agreement_rate": {
+      "entries": {
+        "coded": 26,
+        "agreed": 20,
+        "disagreed": 6,
+        "rate": 0.769,
+        "disagreed_ids": [
+          "EV-rytr-review-12",
+          "EV-rytr-review-13",
+          "EV-rytr-review-16",
+          "EV-rytr-review-17",
+          "EV-rytr-review-22",
+          "EV-rytr-review-24"
+        ]
+      },
+      "items": {
+        "EV-rytr-review-17": {
+          "items": 20,
+          "agreed": 19,
+          "rate": 0.95
+        },
+        "EV-rytr-review-26": {
+          "items": 6,
+          "agreed": 6,
+          "rate": 1.0
+        }
+      },
+      "coding_ambiguous": 0,
+      "definition": "An entry counts as agreed when coders A and B give the same label, the same stance and the same facts/counts for it. Agreement is between the two independent passes, not with the curator."
+    },
+    "coder_agreement_note": "Dual-independent coding done 2026-10-25 (coding-A.json, coding-B.json), resolved by mep-coding-resolver (log: Data/seo/phases/rytr-review/coding-resolution.json). 20 of 26 entries agreed (76.9%). Disagreements: EV-12/13/16/22 stance only (A neutral vs B directional), resolved n/a per shard convention; EV-24 weights (re-opened: weights are stated) and stance; EV-17 broad support code (re-opened: 4). Where A and B agreed against the curator, the entry was corrected: EV-02 note, EV-06/07 yearly-view label, EV-22 wording, EV-25 label + quote, EV-26 Dick Ibrahim mixed + Blandina Marcelle excluded. No item left coding-ambiguous.",
+    "query_census": [
+      {
+        "q": "curl + WebFetch https://rytr.me/ (homepage title/meta; Create counts)",
+        "candidates": 1,
+        "note": "included -> EV-01, EV-02"
+      },
+      {
+        "q": "curl raw HTML + JS chunk + rendered browser (Yearly toggle clicked) + WebFetch https://rytr.me/pricing",
+        "candidates": 1,
+        "note": "included -> EV-03, EV-04, EV-05, EV-08"
+      },
+      {
+        "q": "curl https://rytr.me/products/create and https://rytr.me/create-features/writing-use-cases (feature-presence check)",
+        "candidates": 2,
+        "note": "included as supporting pages of EV-05 (and EV-02 for products/create)"
+      },
+      {
+        "q": "curl https://rytr.me/terms, https://rytr.me/refund-policy, https://rytr.me/privacy-policy",
+        "candidates": 3,
+        "note": "/terms 404 and /refund-policy 404 -> excluded unverifiable-this-run (dead); /privacy-policy 200 serves the same document as /trust/privacy-policy -> excluded duplicate"
+      },
+      {
+        "q": "curl + WebFetch + rendered browser https://rytr.me/trust/terms-of-use and https://rytr.me/trust/privacy-policy (legal links taken from the pricing page footer)",
+        "candidates": 2,
+        "note": "included -> EV-09, EV-10. Newer unrendered drafts found in the site's JS bundle recorded as notes, not registered."
+      },
+      {
+        "q": "Wayback CDX: url=rytr.me/pricing and url=rytr.me/ from 2026-07/08-01 to 2026-10-25, status 200, collapse=digest",
+        "candidates": 5,
+        "note": "pricing 2026-08-21 -> EV-06; home 2026-09-24 + pricing 2026-10-18 -> EV-07; home 2026-08-04 and 2026-09-03 -> excluded duplicate (same pre-pivot lineup as the 2026-09-24 capture)"
+      },
+      {
+        "q": "WebSearch (allowed_domains rytr.me): rytr.me lifetime plan help center update lifetime deal users",
+        "candidates": 10,
+        "note": "help.rytr.me/article/30-write-in-30-languages -> EV-11; help.rytr.me/knowledge-base/upgrading -> 404 unverifiable-this-run; rytr.me/pricing, rytr.me/, rytr.me/terms-of-use, rytr.me/pricing?via=f8bedd -> duplicate; rytr.me/comparisons/{rytr-vs-chatgpt, rytr-vs-copy-ai, rytr-vs-jasper-ai, rytr-vs-peppertype} -> off-topic (vendor comparison marketing, no lifetime/billing content). No vendor lifetime-deal statement found."
+      },
+      {
+        "q": "WebSearch (allowed_domains ftc.gov): FTC Rytr consent order final December 2024",
+        "candidates": 10,
+        "note": "2024-12 press release -> EV-12; 2025-12 press release -> EV-13; case page 232-3052 -> EV-14; timeline item 2024-12-18, Rytr-Order.pdf, 2323052c4806finalorder.pdf -> duplicate of registered primaries; press-release index, deceptive-conduct tag, AI industry page, Technology page -> off-topic"
+      },
+      {
+        "q": "WebSearch: FTC sets aside Rytr final order December 2025",
+        "candidates": 9,
+        "note": "parkerpoe.com 2025-12-30 -> EV-15; insideprivacy.com (x2), globalpolicywatch.com, reedsmith.com, wiggin.com, mondaq (wiggin syndication), ftc.gov press-list page, ftc.gov/node/327399 -> duplicate (same facts as registered FTC primaries)"
+      },
+      {
+        "q": "Reddit: curl https://www.reddit.com/search.json?q=rytr, https://old.reddit.com/search.json?q=rytr%20review, https://www.reddit.com/r/rytr/new.json; Browser pane old.reddit.com/search?q=rytr; WebSearch allowed_domains reddit.com 'rytr review reddit' and 'rytr reddit lifetime deal OR cancel OR refund OR \"long form\"'",
+        "candidates": 0,
+        "note": "BLOCKED: 403 / 302 on JSON endpoints, Browser pane refuses old.reddit.com, WebSearch returns 'domains not accessible to our user agent: reddit.com'. Zero threads identified; recorded as evidence gap. Target subs not reachable: r/WritingWithAI, r/rytr, r/AIcontentWritingtools, r/blogging, r/copywriting."
+      },
+      {
+        "q": "curl probe: trustpilot.com/review/rytr.me, g2.com/products/rytr/reviews, capterra.com/p/226640/Rytr/reviews/, appsumo.com/products/rytr/, quora.com/search?q=rytr",
+        "candidates": 2,
+        "note": "Trustpilot and G2 403 to curl, re-opened in the Browser pane (below). capterra.com/p/226640 403 -> unverifiable-this-run; appsumo.com/products/rytr/ redirects to the AppSumo homepage (no live Rytr listing) -> unverifiable-this-run; Quora search page 403 (search page, not a candidate)."
+      },
+      {
+        "q": "Browser pane + WebFetch: https://www.trustpilot.com/review/rytr.me?sort=recency (page 1)",
+        "candidates": 25,
+        "note": "aggregate -> EV-16; 20 dated review cards -> sample EV-17 (individual items EV-18..21 registered for quotes); 4 highlight cards -> excluded duplicate"
+      },
+      {
+        "q": "Browser pane: https://www.g2.com/products/rytr/reviews (WebFetch 403)",
+        "candidates": 1,
+        "note": "aggregate + seller pricing block -> EV-22; individual reviews did not render without login (gap)"
+      },
+      {
+        "q": "Browser pane: https://www.capterra.com/p/10004456/Rytr/reviews/",
+        "candidates": 1,
+        "note": "Cloudflare challenge did not clear; not bypassed -> unverifiable-this-run"
+      },
+      {
+        "q": "WebFetch: https://www.softwareadvice.com/ca/ai-writing-assistant/rytr-profile/reviews/",
+        "candidates": 1,
+        "note": "403 -> unverifiable-this-run (snippet '4.6/5 from 18 reviews' NOT registerable)"
+      },
+      {
+        "q": "WebSearch: Rytr lifetime deal ended lifetime users 2026",
+        "candidates": 9,
+        "note": "yespress.io/products/rytr.md -> WebFetch 403 unverifiable-this-run; store.entrepreneur.com (x2), store.techspot.com, shop.blackenterprise.com -> no-methodology-affiliate (reseller deal listings); appleworld.today (x2), mactrast.com tag -> no-methodology-affiliate (deal promotion posts); daveswift.com/rytr -> no-methodology-affiliate (not fetched; affiliate review)"
+      },
+      {
+        "q": "WebSearch: rytr review 2026 relationship manager pivot",
+        "candidates": 9,
+        "note": "zero results mention the pivot. softwareadvice.com/ca (dup of 403 above), capterra.com/p/10004456 (dup), capterra.co.il (x2) -> duplicate; getapp.com (x2), getapp.ca -> unverifiable-this-run (same Gartner network that returned 403/challenge); theblogchatter.com, softwarereviews.com -> no-methodology-affiliate"
+      },
+      {
+        "q": "WebSearch: rytr reviews g2 capterra",
+        "candidates": 9,
+        "note": "g2.com pages 2/3/4, g2.com/products/rytr, g2.com pricing -> duplicate of EV-22 page; g2.com survey_responses (x2) -> unverifiable-this-run (G2 403 / login); firstsales.io -> no-methodology-affiliate; copy.ai rytr-review -> no-methodology-affiliate (competitor-authored)"
+      },
+      {
+        "q": "WebSearch (allowed_domains quora.com): quora Rytr AI writer worth it experience",
+        "candidates": 10,
+        "note": "bloggertoolbox.quora.com, techsavvythoughts.quora.com, contentwritingandbloggingtips.quora.com -> no-methodology-affiliate (promotional Spaces posts); cheapestlifetimedeals.quora.com -> no-methodology-affiliate (affiliate deal link); the 2 Rytr question pages -> duplicate (expanded into answer-level items in the next row); 4 generic 'best AI tools' questions (top 5 tools, tools for authors, WordHero, best free writer) -> off-topic"
+      },
+      {
+        "q": "Browser pane: quora.com/Is-Rytr-a-good-content-writing-tool and quora.com/Is-Rytr-the-best-AI-content-writing-tool-for-you (answer dates from each answer page)",
+        "candidates": 10,
+        "note": "5 first-person answers -> sample EV-26; Blandina-Marcelle answer -> no-methodology-affiliate (promotional, 'CLICK HERE' referral link, false product claims; re-screened by the coding resolver 2026-10-25); Quora 'Assistant' bot answer -> off-topic (AI-generated, not first-person); Ramadevi-Chelliah answer (appears on both questions) -> unverifiable-this-run (truncated article teaser, full text not readable) + duplicate; Jiya-Singh answer -> off-topic (states they have not used Rytr)"
+      },
+      {
+        "q": "WebSearch: rytr hands-on review tested methodology long-form repetitive output",
+        "candidates": 9,
+        "note": "fritz.ai -> EV-24; saascrmreview.com/rytr-review -> EV-25; saascrmreview.com/?p=3524 -> duplicate; eesel.ai (x4 URLs) -> no-methodology-affiliate (vendor-adjacent, second-hand quotes); authorityhacker.com -> no-methodology-affiliate (not fetched); zoftwarehub.com -> no-methodology-affiliate (aggregator)"
+      },
+      {
+        "q": "WebFetch (Phase-1 SERP seed): https://www.searchendurance.com/rytr-review/",
+        "candidates": 1,
+        "note": "included -> EV-23"
+      }
+    ],
+    "reddit_access_note": "Reddit was unreachable this run by every route tried (reddit.com and old.reddit.com JSON endpoints 403/302; Browser pane refuses old.reddit.com; WebSearch refuses reddit.com for this user agent). No Reddit thread is registered and the writer must not attribute any claim to Reddit or use a 'What Reddit says' framing.",
+    "unrendered_legal_drafts_note": "rytr.me's JS bundle contains newer Terms and Privacy texts dated 'Last updated August 24, 2026' that are not what the live pages render (checked by curl, WebFetch and a rendered browser on 2026-10-25). They are recorded in EV-09/EV-10 notes only; re-check before publish."
+  },
+  "entries": [
+    {
+      "id": "EV-rytr-review-01",
+      "claim": "On 2026-10-25 the vendor's homepage title and meta description present Rytr as an AI relationship manager that pulls client context from Gmail, Slack, calendars and meeting notes, prepares meetings and drafts follow-ups; writing ('Create') is presented as one of two product halves beside 'Engage'.",
+      "source_url": "https://rytr.me/",
+      "source_date": "2026-10-25",
+      "quote": "Rytr: AI Relationship Manager & Follow-Up Assistant",
+      "platform": "rytr.me (vendor page, self-interested)",
+      "target_slug": "/tools/rytr",
+      "collected_at": "2026-10-25",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "rytr-review-2026-10-25",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Rytr",
+        "aspect": "product positioning: repositioned from AI writer to relationship manager + follow-up assistant (vendor-stated)",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-10-25"
+      },
+      "verification": "curl raw HTML <title> + meta description, and WebFetch, both 2026-10-25",
+      "meta_description_verbatim": "Rytr is an AI relationship manager for professionals. It brings client context from Gmail, Slack, calendars, and meeting notes into one brief, prepares meetings, and drafts follow-ups in your voice."
+    },
+    {
+      "id": "EV-rytr-review-02",
+      "claim": "The vendor homepage states its writing half ('Create') offers 40 use cases, 22 tones and 38 languages with up to three drafts at once; the pricing page's Free row instead says '40+ writing use cases' and '30+ languages'. The two vendor counts differ and are both vendor figures as of 2026-10-25.",
+      "source_url": "https://rytr.me/",
+      "source_date": "2026-10-25",
+      "quote": "40 use cases, from emails to ads / Your own voice, or one of 22 tones / 38 languages, up to three drafts at once",
+      "platform": "rytr.me (vendor page, self-interested)",
+      "target_slug": "/tools/rytr",
+      "collected_at": "2026-10-25",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "rytr-review-2026-10-25",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Rytr",
+        "aspect": "writing feature counts (use cases, tones, languages); homepage vs pricing page disagree on languages (38 vs 30+)",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-10-25"
+      },
+      "related_urls": [
+        "https://rytr.me/pricing",
+        "https://rytr.me/products/create"
+      ],
+      "note": "'22 tones' is stated on the homepage only; /products/create states '38 languages' but gives no tone count (it lists example tones). Writer must state both vendor language figures (homepage 38, pricing 30+) with the capture date, never pick one silently.",
+      "resolver_note": "Both coders: products/create does not carry '22 tones'; note corrected 2026-10-25."
+    },
+    {
+      "id": "EV-rytr-review-03",
+      "claim": "On 2026-10-25 the vendor's pricing page lists four plans billed monthly: Free ($0; 10,000 characters/month, 1 connected source, 25 active relationships, 25 Engage actions/month, 3 person research runs, daily briefing, 40+ writing use cases, 30+ languages), Lite ($9/mo; everything in Free plus unlimited characters), Personal ($19/mo, marked most popular; 2 connected sources, 250 relationships, 250 Engage actions, 10 research runs/month) and Pro ($49/mo; all connected sources, 1,000 relationships, 2,000 Engage actions, 50 research runs/month, morning and evening briefings, custom use cases).",
+      "source_url": "https://rytr.me/pricing",
+      "source_date": "2026-10-25",
+      "quote": "Choose Free, Lite, Personal, or Pro. Save 20% with yearly billing.",
+      "platform": "rytr.me (vendor page, self-interested)",
+      "target_slug": "/tools/rytr",
+      "collected_at": "2026-10-25",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "rytr-review-2026-10-25",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Rytr",
+        "aspect": "current plan ladder, monthly prices and per-plan limits (vendor-stated); Lite is the only plan whose stated difference from Free is writing (unlimited characters)",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Free $0 / Lite $9 / Personal $19 / Pro $49 per month (monthly billing)",
+        "item_date": "2026-10-25"
+      },
+      "verification": "raw HTML (server-rendered monthly view), WebFetch, and rendered page in a browser, all 2026-10-25",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-28",
+          "source_url": "https://rytr.me/pricing",
+          "claim": "Re-read 2026-10-28: same four plans and monthly prices (Free $0, Lite $9, Personal $19, Pro $49) and the same per-plan limits as the 2026-10-25 capture.",
+          "quote": "Lite Unlimited content creation $9 /mo",
+          "supersedes": "none (no change)",
+          "collector": "mimo-auto-content publish re-check (live curl + browser)"
+        }
+      ]
+    },
+    {
+      "id": "EV-rytr-review-04",
+      "claim": "With the pricing page's Yearly toggle selected (2026-10-25), the vendor displays Lite $7.50/mo, Personal $15/mo and Pro $39/mo, each 'billed annually'; the page says yearly billing saves 20% versus monthly.",
+      "source_url": "https://rytr.me/pricing",
+      "source_date": "2026-10-25",
+      "quote": "Yearly billing saves 20% compared with the monthly price and is billed annually.",
+      "platform": "rytr.me (vendor page, self-interested)",
+      "target_slug": "/tools/rytr",
+      "collected_at": "2026-10-25",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "rytr-review-2026-10-25",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Rytr",
+        "aspect": "annual-billing prices (JS-toggled; read from the page's own script and confirmed by clicking the Yearly toggle in a rendered browser)",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Yearly: Lite $7.50/mo, Personal $15/mo, Pro $39/mo, billed annually",
+        "item_date": "2026-10-25"
+      },
+      "verification": "price map found in rytr.me/_next/static chunk 10fn458ukygos.js ({lite:'$7.50',personal:'$15',pro:'$39',note:'billed annually'}) and the rendered Yearly view showing '$7.50 /mo billed annually', '$15 /mo billed annually', '$39 /mo billed annually' (2026-10-25)",
+      "arithmetic_note_not_a_claim": "$7.50 vs $9 is a 16.7% reduction; $15 vs $19 is 21.1%; $39 vs $49 is 20.4%. The vendor's '20%' label is therefore approximate for Lite. Writer may print the displayed prices; do not restate them as 'exactly 20% off'.",
+      "resolver_note": "Both coders agree with the arithmetic note: print the displayed yearly prices; 'save 20%' is the vendor's label and is approximate for Lite (16.7%). Never write 'exactly 20%'.",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-28",
+          "source_url": "https://rytr.me/pricing",
+          "claim": "Re-read 2026-10-28 with the Yearly toggle on: Lite $7.50, Personal $15, Pro $39 per month, billed annually; label 'Save 20%'. Unchanged from 2026-10-25.",
+          "quote": "$7.50 /mo billed annually",
+          "supersedes": "none (no change)",
+          "collector": "mimo-auto-content publish re-check (live curl + browser)"
+        }
+      ]
+    },
+    {
+      "id": "EV-rytr-review-05",
+      "claim": "No plagiarism checker, image generator or keyword generator is named on the vendor's live pricing page, homepage, Create product page or writing-use-cases page as of 2026-10-25 (the homepage lists 'SEO' only as one of its writing use cases). By contrast, the archived pricing page of 2026-08-21 listed 50 and 100 plagiarism checks per month on the two paid plans (see EV-rytr-review-06).",
+      "source_url": "https://rytr.me/pricing",
+      "source_date": "2026-10-25",
+      "quote": "Free 10,000 characters per month 1 connected source 25 active relationships 25 Engage actions per month 3 person research runs Daily briefing 40+ writing use cases 30+ languages",
+      "platform": "rytr.me (vendor page, self-interested)",
+      "target_slug": "/tools/rytr",
+      "collected_at": "2026-10-25",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "rytr-review-2026-10-25",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Rytr",
+        "aspect": "feature presence check: plagiarism checker / image generator / keyword generator absent from all four live vendor pages checked (absence as of capture date, not a statement that the feature was formally retired)",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-10-25"
+      },
+      "pages_checked": [
+        "https://rytr.me/pricing",
+        "https://rytr.me/",
+        "https://rytr.me/products/create",
+        "https://rytr.me/create-features/writing-use-cases"
+      ],
+      "method": "case-insensitive text search of each page's server-rendered HTML for 'plagiari', 'image gen', 'keyword' (0 hits for plagiarism and keyword on all four; 'image' hits are image assets only, no image-generation feature); WebFetch of pricing and homepage independently reported none of the three features",
+      "caveat": "the Terms of Use bundle text mentions third-party 'originality-checking services' generically; the served pages do not name a plagiarism-check feature or allowance. Writer must say 'not listed on the pricing page as of 2026-10-25', not 'removed'."
+    },
+    {
+      "id": "EV-rytr-review-06",
+      "claim": "An Internet Archive capture of the vendor's pricing page dated 2026-08-21 shows the previous writing-tool lineup: Free ($0, 10K characters/month), Unlimited and Premium, displayed at $7.50/m and $24.16/m in the page's yearly-billing view (per-month price when billed yearly; the monthly-billing prices were $9 and $29 per EV-rytr-review-25), with plagiarism checks of none / 50 / 100 per month and languages 1 / 1 / 35+.",
+      "source_url": "https://web.archive.org/web/20260821080446/https://rytr.me/pricing",
+      "source_date": "2026-08-21",
+      "quote": "Plagiarism Checks None 50 per month 100 per month Languages 1 1 35+",
+      "platform": "web.archive.org capture of rytr.me/pricing (vendor page, self-interested; archived)",
+      "target_slug": "/tools/rytr",
+      "collected_at": "2026-10-25",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "rytr-review-2026-10-25",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Rytr",
+        "aspect": "pre-pivot plan lineup and per-plan plagiarism-check + language allowances (archived vendor page)",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Free $0 / Unlimited $7.50/m / Premium $24.16/m, yearly-billing view (monthly billing $9 / $29 per EV-25)",
+        "item_date": "2026-08-21"
+      },
+      "verification": "Wayback CDX lookup + fetch of the 2026-08-21 capture on 2026-10-25",
+      "second_quote": "Unlimited Unlimited generations for individuals getting started with generative AI. $7.50/m",
+      "resolver_note": "Both coders: $7.50/$24.16 are the yearly-view per-month prices (the capture's toggle opens on Yearly); claim relabelled."
+    },
+    {
+      "id": "EV-rytr-review-07",
+      "claim": "Internet Archive captures date the repositioning to a window: the rytr.me homepage captured 2026-09-24 is still titled as an AI writer and lists Unlimited $7.50/m and Premium $24.16/m (yearly-billing per-month prices) with 50/m plagiarism checks, while the pricing page captured 2026-10-18 already shows the Free / Lite / Personal / Pro relationship-manager lineup. The switch therefore happened between 2026-09-24 and 2026-10-18 (archive dates, not a vendor announcement).",
+      "source_url": "https://web.archive.org/web/20260924080103/https://rytr.me/",
+      "source_date": "2026-09-24",
+      "quote": "Free AI Writer, Content Generator & Writing Assistant | Rytr",
+      "platform": "web.archive.org captures of rytr.me (vendor pages, archived)",
+      "target_slug": "/tools/rytr",
+      "collected_at": "2026-10-25",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "rytr-review-2026-10-25",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Rytr",
+        "aspect": "timing of the product pivot, bounded by two archive captures",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-09-24"
+      },
+      "related_urls": [
+        "https://web.archive.org/web/20261018192727/https://rytr.me/pricing"
+      ],
+      "second_quote": "Simple pricing for the work you do Choose Free, Lite, Personal, or Pro. Save 20% with yearly billing.",
+      "caveat": "Archive gaps mean the true switch date may be anywhere in the window. No vendor changelog or announcement found this run.",
+      "resolver_note": "Same yearly-view label as EV-06 added."
+    },
+    {
+      "id": "EV-rytr-review-08",
+      "claim": "The vendor's pricing FAQ says users can cancel anytime and keep access until the end of the billing period, and can change plans at any time.",
+      "source_url": "https://rytr.me/pricing",
+      "source_date": "2026-10-25",
+      "quote": "Yes, cancel anytime. You keep access until the end of your billing period.",
+      "platform": "rytr.me (vendor page, self-interested)",
+      "target_slug": "/tools/rytr",
+      "collected_at": "2026-10-25",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "rytr-review-2026-10-25",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Rytr",
+        "aspect": "cancellation path as described on the pricing page",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-10-25"
+      }
+    },
+    {
+      "id": "EV-rytr-review-09",
+      "claim": "The vendor's served Terms of Use (no 'last updated' date shown; issued by Rytr LLC, 1309 Coffeen Ave. Suite 1200, Sheridan WY) say subscriptions auto-renew monthly or yearly, renewal is cancelled by contacting support@rytr.me, fees already paid for the current period are not refunded, and refunds are otherwise only considered case by case at the company's discretion.",
+      "source_url": "https://rytr.me/trust/terms-of-use",
+      "source_date": "2026-10-25",
+      "quote": "You will not receive a refund for the fees You already paid for Your current Subscription period and You will be able to access the Service until the end of Your current subscription period.",
+      "platform": "rytr.me (vendor page, self-interested)",
+      "target_slug": "/tools/rytr",
+      "collected_at": "2026-10-25",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "rytr-review-2026-10-25",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Rytr",
+        "aspect": "auto-renewal, cancellation channel (email to support) and no-refund policy; legal entity Rytr LLC while the site footer says Rytr, Inc.",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-10-25"
+      },
+      "second_quote": "certain refund requests for Subscriptions may be considered by the Company on a case-by-case basis and granted at the sole discretion of the Company.",
+      "note": "rytr.me/terms and rytr.me/refund-policy return 404; rytr.me/terms-of-use serves the same document. The pricing FAQ (EV-08) says 'cancel anytime', the Terms name email to support as the channel; both are vendor text.",
+      "unrendered_draft_note": "The site's JS bundle also contains a newer numbered Terms text ('Last updated August 24, 2026', section '9. Plans, trials, billing, and cancellation': cancel 'through available account controls or by emailing support@rytr.me'; fees 'non-refundable except where law requires'). It is NOT what the page renders (checked in a browser 2026-10-25), so it is not registered as the vendor's current terms.",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-28",
+          "source_url": "https://rytr.me/trust/terms-of-use",
+          "claim": "Re-read 2026-10-28: Terms still issued by Rytr LLC (1309 Coffeen Ave. Suite 1200, Sheridan WY); renewal cancelled by contacting support@rytr.me; no refund for the current period; other refunds case-by-case at the Company's discretion; footer reads 2026 Rytr, Inc. No last-updated date shown. The August 2026 draft has not gone live.",
+          "quote": "You will not receive a refund for the fees You already paid for Your current Subscription period",
+          "supersedes": "none (no change)",
+          "collector": "mimo-auto-content publish re-check (live curl + browser)"
+        }
+      ]
+    },
+    {
+      "id": "EV-rytr-review-10",
+      "claim": "The vendor's served Privacy Policy (Rytr LLC; no visible 'last updated' date) contains one sentence on connected Google data, committing to Google's User Data Policy and Limited Use requirements; it contains no Slack-, Gmail- or connector-specific data-use text and does not mention AI model training. It lists targeted advertising among the uses of personal data.",
+      "source_url": "https://rytr.me/trust/privacy-policy",
+      "source_date": "2026-10-25",
+      "quote": "The use of raw or derived user data received from Workspace APIs will adhere to the Google User Data Policy, including the Limited Use requirements.",
+      "platform": "rytr.me (vendor page, self-interested)",
+      "target_slug": "/tools/rytr",
+      "collected_at": "2026-10-25",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "rytr-review-2026-10-25",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Rytr",
+        "aspect": "privacy coverage of connected sources (Gmail/Slack) in the served policy: Google Limited Use line only; no Slack text; targeted-advertising use stated",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-10-25"
+      },
+      "second_quote": "To deliver targeted advertising to You: We may use Your information to develop and display content and advertising (and work with third-party vendors who do so) tailored to Your interests and/or location and to measure its effectiveness.",
+      "verification": "curl raw HTML, WebFetch, and rendered browser text (document.body.innerText) on 2026-10-25 all show this older policy",
+      "unrendered_draft_note": "The site's JS bundle contains a newer 14-section policy ('Last updated August 24, 2026') that does describe 'Connected-source data' from Gmail, Slack, Google Calendar and Granola, sends context to 'AI service providers', says disconnecting does not by itself purge imported data, and says it does not sell personal information. That text did not render on the live page this run; do NOT cite it as Rytr's policy. Re-check before publish: if the page switches to it, register it as a recapture.",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-28",
+          "source_url": "https://rytr.me/trust/privacy-policy",
+          "claim": "Re-read 2026-10-28: one sentence on Google User Data Policy Limited Use for Workspace APIs; no Slack or AI-training language found; targeted advertising still listed among uses of personal data. Unchanged from 2026-10-25.",
+          "quote": "will adhere to the Google User Data Policy, including the Limited Use requirements",
+          "supersedes": "none (no change)",
+          "collector": "mimo-auto-content publish re-check (live curl + browser)"
+        }
+      ]
+    },
+    {
+      "id": "EV-rytr-review-11",
+      "claim": "A vendor help-centre article (last updated 2025-08-28, footer '© Copysmith AI 2026') still describes the old plan names: freemium and unlimited users get one language, premium users all languages. It has not been updated to the Free/Lite/Personal/Pro lineup, whose pricing page lists '30+ languages' on Free.",
+      "source_url": "https://help.rytr.me/article/30-write-in-30-languages",
+      "source_date": "2025-08-28",
+      "quote": "Our freemium and unlimited users can access one language of their choice while premium plan users can access all our languages.",
+      "platform": "help.rytr.me (vendor help centre, self-interested; stale vs pricing page)",
+      "target_slug": "/tools/rytr",
+      "collected_at": "2026-10-25",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "rytr-review-2026-10-25",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Rytr",
+        "aspect": "language access per plan in vendor docs (stale, conflicts with the live pricing page)",
+        "stance": "n/a",
+        "plan_tier_if_stated": "freemium / unlimited: 1 language; premium: all",
+        "item_date": "2025-08-28"
+      },
+      "note": "Footer names Copysmith AI as copyright holder. Writer may say the help centre still uses the old plan names as of 2026-10-25; do not use it to state current language limits."
+    },
+    {
+      "id": "EV-rytr-review-12",
+      "claim": "FTC press release of 2024-12-18: the Commission approved, 3-2, a final consent order against Rytr over its AI 'Testimonial & Review' service, after a September 2024 complaint; the order barred Rytr from selling or promoting any service dedicated to generating consumer reviews or testimonials. Commissioners Holyoak and Ferguson dissented.",
+      "source_url": "https://www.ftc.gov/news-events/news/press-releases/2024/12/ftc-approves-final-order-against-rytr-seller-ai-testimonial-review-service-providing-subscribers",
+      "source_date": "2024-12-18",
+      "quote": "It also bars the company from advertising, promoting, marketing, or selling any service dedicated to – or promoted as – generating consumer reviews or testimonials.",
+      "platform": "ftc.gov (US regulator, primary source)",
+      "target_slug": "/tools/rytr",
+      "collected_at": "2026-10-25",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "rytr-review-2026-10-25",
+      "screening": "included",
+      "label": "research-finding",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "Rytr",
+        "aspect": "regulatory history: 2024 final consent order over the review/testimonial use case",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2024-12-18"
+      },
+      "second_quote": "Following a public comment period, the Commission voted 3-2 to approve the final consent order and letters to eight public commenters.",
+      "verification": "WebFetch + rendered page text 2026-10-25 (curl blocked by ftc.gov, 404 to non-browser clients)",
+      "framing_rule": "facts and dates only; the order settled allegations, no admission is stated; never describe how to use any review/testimonial feature",
+      "resolved_by": "mep-coding-resolver",
+      "resolver_note": "Stance split: A neutral, B negative (toward Rytr). Resolved n/a: a dated regulatory record is reported as fact, no sentiment is coded (shard convention for primary/docket sources)."
+    },
+    {
+      "id": "EV-rytr-review-13",
+      "claim": "FTC press release of 2025-12-22: the Commission reopened and set aside the 2024 Rytr order by a 2-0 vote, finding the complaint's facts did not support a Section 5 violation and that the order unduly burdened AI innovation, citing the administration's AI Action Plan; Rytr consented to vacating the order.",
+      "source_url": "https://www.ftc.gov/news-events/news/press-releases/2025/12/ftc-reopens-sets-aside-rytr-final-order-response-trump-administrations-ai-action-plan",
+      "source_date": "2025-12-22",
+      "quote": "Rytr has consented to vacating the order and waived any rights it may have under Rule 3.72(b) of the Commission's Rules of Practice. The Commission vote to issue the order reopening and setting aside the final decision and order was 2-0.",
+      "platform": "ftc.gov (US regulator, primary source)",
+      "target_slug": "/tools/rytr",
+      "collected_at": "2026-10-25",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "rytr-review-2026-10-25",
+      "screening": "included",
+      "label": "research-finding",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "Rytr",
+        "aspect": "regulatory history: 2025 set-aside of the 2024 order",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2025-12-22"
+      },
+      "second_quote": "because the order unduly burdens innovation in the nascent AI industry, it is in the public interest to set it aside.",
+      "verification": "WebFetch + rendered page text 2026-10-25",
+      "resolved_by": "mep-coding-resolver",
+      "resolver_note": "Stance split: A neutral, B positive (toward Rytr). Resolved n/a: a dated regulatory record is reported as fact, no sentiment is coded (shard convention for primary/docket sources)."
+    },
+    {
+      "id": "EV-rytr-review-14",
+      "claim": "The FTC case page for Rytr LLC (matter 232 3052) lists three dated steps: complaint and proposed consent agreement 2024-09-25, final complaint and decision and order 2024-12-18, and an order reopening and setting aside the order 2025-12-22. The page's status field still reads 'Pending'.",
+      "source_url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/232-3052-rytr-llc-matter",
+      "source_date": "2026-10-25",
+      "quote": "Order Reopening and Setting Aside Order",
+      "platform": "ftc.gov (US regulator, case docket page)",
+      "target_slug": "/tools/rytr",
+      "collected_at": "2026-10-25",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "rytr-review-2026-10-25",
+      "screening": "included",
+      "label": "research-finding",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Rytr",
+        "aspect": "dated case timeline; docket status label",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2025-12-22"
+      },
+      "note": "Do not interpret the 'Pending' status label; state the three dated documents only."
+    },
+    {
+      "id": "EV-rytr-review-15",
+      "claim": "Law firm Parker Poe's client alert of 2025-12-30 independently reports that the FTC reopened and vacated the Rytr order by a 2-0 commissioner vote (secondary source corroborating EV-13).",
+      "source_url": "https://www.parkerpoe.com/news/2025/12/ftc-reopens-and-vacates-prior-order-against-ai",
+      "source_date": "2025-12-30",
+      "quote": "the decisions was approved by the commissioners in a 2–0 vote, vacating the order",
+      "platform": "parkerpoe.com (law-firm client alert, secondary; no named author on page)",
+      "target_slug": "/tools/rytr",
+      "collected_at": "2026-10-25",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "rytr-review-2026-10-25",
+      "screening": "included",
+      "label": "research-finding",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Rytr",
+        "aspect": "secondary corroboration of the 2025 set-aside and vote",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2025-12-30"
+      },
+      "note": "Quote preserves the source's own typo ('decisions was')."
+    },
+    {
+      "id": "EV-rytr-review-16",
+      "claim": "On 2026-10-25 Trustpilot showed Rytr with a TrustScore of 4.4 from 2,449 reviews (star split 90% five-star, 7% four, 1% three, under 1% two, 2% one), only 3 reviews in the last 12 months, and labels saying the company has not invited customers recently and has not replied to negative reviews. These are platform aggregates, not Mimo's rating.",
+      "source_url": "https://www.trustpilot.com/review/rytr.me",
+      "source_date": "2026-10-25",
+      "quote": "This company hasn't invited customers recently, so reviews may not be representative",
+      "platform": "trustpilot.com (review platform; its own incentive and moderation structure; 'we don't fact-check reviews')",
+      "target_slug": "/tools/rytr",
+      "collected_at": "2026-10-25",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "rytr-review-2026-10-25",
+      "screening": "included",
+      "label": "community-report",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "Rytr",
+        "aspect": "review-platform aggregate score, volume and recency (most reviews predate the 2026 pivot)",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-10-25"
+      },
+      "verification": "WebFetch (score + count) and rendered browser page (distribution, recency and labels), 2026-10-25",
+      "other_labels_verbatim": [
+        "3 reviews in the last 12 months",
+        "Hasn't replied to negative reviews",
+        "Claimed profile • Apr 2021"
+      ],
+      "resolved_by": "mep-coding-resolver",
+      "resolver_note": "Stance split: A neutral, B mixed (high score but stale and no replies to negative reviews). Resolved n/a: platform aggregate reported as numbers and labels only; the staleness is carried in the claim text.",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-28",
+          "source_url": "https://www.trustpilot.com/review/rytr.me",
+          "claim": "Re-read 2026-10-28: TrustScore 4.4 from 2,449 reviews, unchanged.",
+          "quote": "TrustScore 4.4",
+          "supersedes": "none (no change)",
+          "collector": "mimo-auto-content publish re-check (live curl + browser)"
+        }
+      ]
+    },
+    {
+      "id": "EV-rytr-review-17",
+      "claim": "Defined sample: the 20 most recent Trustpilot reviews of Rytr (top 20 of page 1 of sort=recency, posted 2025-01-13 to 2026-06-30, read 2026-10-25). 11 are 5-star, 3 are 4-star and 6 are 1-star (13 positive, 1 mixed, 6 negative in tone). Of the 20: 4 complain about customer support (2 of them specifically slow or email-only support, one about account deletion), 3 describe a refused refund (two of them after an unwanted renewal or a charge after cancelling), 2 describe generic or repetitive output, 2 say it is no better than other or free tools, 1 describes lifetime-account holders being dropped; on the positive side 3 praise short-form use (social posts, emails/newsletters, short tasks), 2 praise ease of use, 2 praise the free tier and 2 mention academic use. All 20 predate the October 2026 repositioning.",
+      "source_url": "https://www.trustpilot.com/review/rytr.me?sort=recency",
+      "source_date": "2026-06-30",
+      "quote": "3 reviews in the last 12 months",
+      "platform": "trustpilot.com (review platform; complaint and praise bias both possible)",
+      "target_slug": "/tools/rytr",
+      "collected_at": "2026-10-25",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "rytr-review-2026-10-25",
+      "screening": "included",
+      "label": "community-report",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "Rytr",
+        "aspect": "counted sample of recent reviews: star split, tone and coded themes (support, refunds, renewal, output quality, lifetime accounts, value vs other tools, short-form praise, ease of use, free tier, academic use)",
+        "stance": "mixed",
+        "plan_tier_if_stated": null,
+        "item_date": "2025-01-13..2026-06-30"
+      },
+      "sample": {
+        "n": 20,
+        "date_window": "2025-01-13 to 2026-06-30",
+        "capture": "2026-10-25",
+        "stars": {
+          "5": 11,
+          "4": 3,
+          "3": 0,
+          "2": 0,
+          "1": 6
+        },
+        "themes": {
+          "support_complaint_any": [
+            "https://www.trustpilot.com/reviews/689f17b0b3c6e80ff36ac513",
+            "https://www.trustpilot.com/reviews/684fc3b9cc523a0bdc8984a0",
+            "https://www.trustpilot.com/reviews/67c14af24cc302af6963a9fc",
+            "https://www.trustpilot.com/reviews/679eb9885b7b6d7527040181"
+          ],
+          "support_slow_or_email_only": [
+            "https://www.trustpilot.com/reviews/689f17b0b3c6e80ff36ac513",
+            "https://www.trustpilot.com/reviews/679eb9885b7b6d7527040181"
+          ],
+          "refund_refused": [
+            "https://www.trustpilot.com/reviews/6784fbe67e9a79248bea9f01",
+            "https://www.trustpilot.com/reviews/67c14af24cc302af6963a9fc",
+            "https://www.trustpilot.com/reviews/684fc3b9cc523a0bdc8984a0"
+          ],
+          "unwanted_renewal_or_charged_after_cancel": [
+            "https://www.trustpilot.com/reviews/684fc3b9cc523a0bdc8984a0",
+            "https://www.trustpilot.com/reviews/6784fbe67e9a79248bea9f01"
+          ],
+          "generic_or_repetitive_output": [
+            "https://www.trustpilot.com/reviews/6811c583999a433eeca49590",
+            "https://www.trustpilot.com/reviews/67c14af24cc302af6963a9fc"
+          ],
+          "not_better_than_other_or_free_tools": [
+            "https://www.trustpilot.com/reviews/679eb9885b7b6d7527040181",
+            "https://www.trustpilot.com/reviews/6784fbe67e9a79248bea9f01"
+          ],
+          "lifetime_accounts_dropped": [
+            "https://www.trustpilot.com/reviews/6a43dcf4e43d2d3a30854193"
+          ],
+          "account_deletion": [
+            "https://www.trustpilot.com/reviews/689f17b0b3c6e80ff36ac513"
+          ],
+          "short_form_praise": [
+            "https://www.trustpilot.com/reviews/68c569e34cb8df2b68ee8648",
+            "https://www.trustpilot.com/reviews/68846580f96add1c4235d539",
+            "https://www.trustpilot.com/reviews/6811c583999a433eeca49590"
+          ],
+          "ease_of_use": [
+            "https://www.trustpilot.com/reviews/69146715ab62764b7945dd29",
+            "https://www.trustpilot.com/reviews/683ee1abca16593bb1f05e6b"
+          ],
+          "free_tier_praise": [
+            "https://www.trustpilot.com/reviews/681f2585b34f477ed192d58d",
+            "https://www.trustpilot.com/reviews/67b4f416d0fa8e7fc3dc8415"
+          ],
+          "academic_use": [
+            "https://www.trustpilot.com/reviews/6852c9a0bba8f1377ebe6be7",
+            "https://www.trustpilot.com/reviews/6820d17370602f9a648f6a7b"
+          ]
+        },
+        "excluded_from_sample": "4 'See what reviewers are saying' highlight cards on the same page duplicate reviews in or older than the sample (screened duplicate)",
+        "reporting_rule": "print as 'N of the 20 most recent Trustpilot reviews (Jan 2025 to Jun 2026, read 25 Oct 2026)', never as a share of Rytr users",
+        "definition": "top 20 of page 1 of https://www.trustpilot.com/review/rytr.me?sort=recency (excluding the 4 'See what reviewers are saying' highlight cards)",
+        "stance": {
+          "positive": 13,
+          "mixed": 1,
+          "negative": 6
+        },
+        "theme_counts": {
+          "support_complaint_any": 4,
+          "support_slow_or_email_only": 2,
+          "refund_refused": 3,
+          "unwanted_renewal_or_charged_after_cancel": 2,
+          "generic_or_repetitive_output": 2,
+          "not_better_than_other_or_free_tools": 2,
+          "lifetime_accounts_dropped": 1,
+          "account_deletion": 1,
+          "short_form_praise": 3,
+          "ease_of_use": 2,
+          "free_tier_praise": 2,
+          "academic_use": 2
+        },
+        "item_level_agreement": {
+          "items": 20,
+          "agreed": 19,
+          "rate": 0.95,
+          "stars_agreement": "20/20",
+          "stance_agreement": "20/20",
+          "disagreed_item": "684fc3b9cc523a0bdc8984a0 (Eoghan Colgan): A did not code a support complaint, B did"
+        }
+      },
+      "resolved_by": "mep-coding-resolver",
+      "resolver_note": "Only item-level conflict: broad support-complaint code A 3 / B 4, differing on Eoghan Colgan (2025-06-16). Resolver re-opened that review 2026-10-25 (WebFetch): its title says 'They clearly do not care about customer satisfaction!' and it closes 'very disappointed with the customer service', so it is a support complaint: final 4 (B). Extra themes coded by both coders (value vs other/free tools 2, ease of use 2, free tier 2, academic use 2) added; curator's five registered theme lists confirmed by both. Sample labelled 'top 20 of page 1': coder A's rendered browser showed more than 20 recent cards on page 1, while the resolver's WebFetch of the same URL returned exactly 20; identified count left unchanged, re-check page 1 card count before publish.",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-28",
+          "source_url": "https://www.trustpilot.com/review/rytr.me?sort=recency",
+          "claim": "Re-read 2026-10-28: the 20 most recent reviews are the same set (2025-01-13 to 2026-06-30; 11 five-star, 3 four-star, 6 one-star); no recount needed.",
+          "quote": "sorted by most recent, 20 reviews, newest 2026-06-30",
+          "supersedes": "none (no change)",
+          "collector": "mimo-auto-content publish re-check (live curl + browser)"
+        }
+      ]
+    },
+    {
+      "id": "EV-rytr-review-18",
+      "claim": "One 1-star Trustpilot review (2026-06-30, the most recent in the sample) says Rytr dropped customers who had bought lifetime accounts, offering little more than an apology. Single report, unverified allegation; no vendor statement on lifetime accounts was found this run.",
+      "source_url": "https://www.trustpilot.com/reviews/6a43dcf4e43d2d3a30854193",
+      "source_date": "2026-06-30",
+      "quote": "It abandoned customers who purchased lifetime accounts with little more than a generic \"sorry.\"",
+      "platform": "trustpilot.com (single user review)",
+      "target_slug": "/tools/rytr",
+      "collected_at": "2026-10-25",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "rytr-review-2026-10-25",
+      "screening": "included",
+      "label": "community-report",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Rytr",
+        "aspect": "lifetime-deal account handling (allegation)",
+        "stance": "negative",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-06-30"
+      },
+      "verification": "rendered listing + WebFetch of the individual review URL, 2026-10-25"
+    },
+    {
+      "id": "EV-rytr-review-19",
+      "claim": "A 1-star Trustpilot review (2025-06-16) says an annual subscription renewed months after the user stopped using Rytr, at a higher price and without a renewal notice, and a next-day refund request was refused. One of 3 refund-refusal reports in the 20-review sample (EV-17); consistent with the no-refund clause in the vendor's Terms (EV-09).",
+      "source_url": "https://www.trustpilot.com/reviews/684fc3b9cc523a0bdc8984a0",
+      "source_date": "2025-06-16",
+      "quote": "There was no auto-renewal notice (which I think companies are expected to provide).",
+      "platform": "trustpilot.com (single user review)",
+      "target_slug": "/tools/rytr",
+      "collected_at": "2026-10-25",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "rytr-review-2026-10-25",
+      "screening": "included",
+      "label": "community-report",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Rytr",
+        "aspect": "annual auto-renewal + refund refusal (allegation)",
+        "stance": "negative",
+        "plan_tier_if_stated": "annual subscription (plan not named)",
+        "item_date": "2025-06-16"
+      },
+      "verification": "rendered listing + WebFetch of the individual review URL, 2026-10-25"
+    },
+    {
+      "id": "EV-rytr-review-20",
+      "claim": "A 4-star Trustpilot review (2025-04-30) calls Rytr good for short-form tasks such as emails, product descriptions and social captions, but says some outputs repeat phrasing or feel generic on longer content and that the trial felt too short.",
+      "source_url": "https://www.trustpilot.com/reviews/6811c583999a433eeca49590",
+      "source_date": "2025-04-30",
+      "quote": "Great for short-form tasks like emails, product descriptions, or social media captions. ... Some outputs repeat phrasing or feel generic, especially with longer content.",
+      "platform": "trustpilot.com (single user review)",
+      "target_slug": "/tools/rytr",
+      "collected_at": "2026-10-25",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "rytr-review-2026-10-25",
+      "screening": "included",
+      "label": "community-report",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Rytr",
+        "aspect": "short-form strength vs long-form repetition",
+        "stance": "mixed",
+        "plan_tier_if_stated": null,
+        "item_date": "2025-04-30"
+      }
+    },
+    {
+      "id": "EV-rytr-review-21",
+      "claim": "A 1-star Trustpilot review (2025-08-15) says there was no self-serve way to delete the account and that a deletion request to support had not been answered at the time of posting. Single report.",
+      "source_url": "https://www.trustpilot.com/reviews/689f17b0b3c6e80ff36ac513",
+      "source_date": "2025-08-15",
+      "quote": "There is no option to delete your account. You ask \"support\" to do that for you. Still waiting for a reply, far less my account to be deleted.",
+      "platform": "trustpilot.com (single user review)",
+      "target_slug": "/tools/rytr",
+      "collected_at": "2026-10-25",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "rytr-review-2026-10-25",
+      "screening": "included",
+      "label": "community-report",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Rytr",
+        "aspect": "account deletion via support only; support responsiveness (allegation)",
+        "stance": "negative",
+        "plan_tier_if_stated": null,
+        "item_date": "2025-08-15"
+      },
+      "context": "The served Privacy Policy (EV-10) says users can request deletion in account settings 'whenever made possible' or by contacting the company."
+    },
+    {
+      "id": "EV-rytr-review-22",
+      "claim": "On 2026-10-25 G2 showed Rytr at 4.7/5 from 820 reviews; its seller-provided pricing block lists 'Rytr Saver $9.00' and 'Rytr Unlimited $29.00' per month. The $9 and $29 figures equal the pre-pivot monthly prices of Unlimited and Premium (EV-rytr-review-25); only the plan NAMES are stale, matching neither the August 2026 (Unlimited/Premium) nor the October 2026 (Free/Lite/Personal/Pro) vendor lineup. This explains part of the plan-name conflict across ranking reviews.",
+      "source_url": "https://www.g2.com/products/rytr/reviews",
+      "source_date": "2026-10-25",
+      "quote": "Rytr Saver $9.00 Per Month Rytr Unlimited $29.00 Per Month",
+      "platform": "g2.com (review platform; pricing block 'provided by Rytr')",
+      "target_slug": "/tools/rytr",
+      "collected_at": "2026-10-25",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "rytr-review-2026-10-25",
+      "screening": "included",
+      "label": "community-report",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "Rytr",
+        "aspect": "review-platform aggregate + stale vendor-supplied plan names on G2",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-10-25"
+      },
+      "second_quote": "Average based on 820 real user reviews.",
+      "verification": "rendered browser page 2026-10-25 (WebFetch returns 403). Individual G2 review texts did not render without login, so no G2 review is coded.",
+      "resolved_by": "mep-coding-resolver",
+      "resolver_note": "Stance split: A neutral, B positive. Resolved n/a (platform aggregate). Both coders: stale part is the names, not the prices; claim reworded."
+    },
+    {
+      "id": "EV-rytr-review-23",
+      "claim": "Search Endurance (Matt Moran; updated 2026-01-13; affiliate-disclosed; describes its own tests such as generating an outline for 'SEO writing tools' and rephrasing a pasted excerpt) found Rytr's output degraded when asked to expand a paragraph.",
+      "source_url": "https://www.searchendurance.com/rytr-review/",
+      "source_date": "2026-01-13",
+      "quote": "when asked to expand on that paragraph, it starts producing very odd, repetitive, and often nonsensical output",
+      "platform": "searchendurance.com (independent blog; hands-on tests described; affiliate links disclosed)",
+      "target_slug": "/tools/rytr",
+      "collected_at": "2026-10-25",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "rytr-review-2026-10-25",
+      "screening": "included",
+      "label": "independent-test",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Rytr",
+        "aspect": "long-form / paragraph-expansion quality",
+        "stance": "negative",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-01-13"
+      },
+      "caveat": "tests described but no full prompt set or scoring published; pre-pivot product"
+    },
+    {
+      "id": "EV-rytr-review-24",
+      "claim": "Fritz.ai (Brenda Stokes Barron; updated 2026-03-13; affiliate-disclosed) says it tested Rytr on short-form copy, medium-form drafts and long-form articles, scored against six weighted criteria (Output Quality 30%, Feature Depth 20%, Ease of Use 20%, Pricing and Value 15%, Editing and Polish Tools 10%, Extras 5%), and cross-referenced 2025-2026 user reviews and expert assessments. It concludes Rytr's long-form articles come out generic and repetitive and need substantial human input. Its '50% or more' editing figure is attributed to 'most reviewers', so that figure is second-hand, not Fritz.ai's own measurement.",
+      "source_url": "https://fritz.ai/rytr-review/",
+      "source_date": "2026-03-13",
+      "quote": "articles tend to come out generic and repetitive",
+      "platform": "fritz.ai (review site; test categories + weighted criteria stated, no prompts or outputs published; affiliate links disclosed)",
+      "target_slug": "/tools/rytr",
+      "collected_at": "2026-10-25",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "rytr-review-2026-10-25",
+      "screening": "included",
+      "label": "independent-test",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "Rytr",
+        "aspect": "long-form article quality (own test categories + cross-referenced reviews)",
+        "stance": "negative",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-03-13"
+      },
+      "note": "lists Saver ~$9 / Premium-Unlimited ~$29, already stale vs vendor pages",
+      "resolved_by": "mep-coding-resolver",
+      "source_overall_stance": "mixed (positive on short-form budget copy, negative on long-form)",
+      "caveat": "No prompts, outputs or per-criterion scores published; part of the long-form judgement is cross-referenced from other reviews; pre-pivot product. Writer may cite 'generic and repetitive' as Fritz.ai's conclusion; must not present the 50% figure as a measured result.",
+      "resolver_note": "Coder conflict on 'stated scoring weights': A found none, B found them. Resolver re-opened fritz.ai/rytr-review/ 2026-10-25 (curl raw HTML): the 'How We Tested Rytr' section lists six criteria with weights (Output Quality 30% ... Extras 5%). B correct on weights; A correct that the 50%+ figure is attributed to 'most reviewers' and that findings were cross-referenced with user reviews. Stance split A negative / B mixed resolved: negative on the coded long-form aspect, source overall mixed. Screening kept: independent-test (weak)."
+    },
+    {
+      "id": "EV-rytr-review-25",
+      "claim": "SaaS CRM Review (founder 'Macedona'; updated 2026-08-21; states 'This review is documentation-based', i.e. desk research, no hands-on test; affiliate-disclosed) reports Rytr's official pricing as read on 2026-08-12: Free (10,000 characters, one language, no plagiarism checks), Unlimited $9/mo billed monthly or $7.50/mo in the yearly display, Premium $29/mo billed monthly or $24.16/mo. This independently corroborates the pre-pivot lineup in EV-rytr-review-06 and shows $7.50/$24.16 are the yearly-view prices.",
+      "source_url": "https://saascrmreview.com/rytr-review/",
+      "source_date": "2026-08-21",
+      "quote": "The yearly view of the official pricing page displays $7.50 per month for Unlimited and $24.16 per month for Premium, with Free at zero",
+      "platform": "saascrmreview.com (review site; documentation-based desk research, no hands-on test; affiliate links disclosed)",
+      "target_slug": "/tools/rytr",
+      "collected_at": "2026-10-25",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "rytr-review-2026-10-25",
+      "screening": "included",
+      "label": "research-finding",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Rytr",
+        "aspect": "dated third-party pricing check (2026-08-12), desk research",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Unlimited $9 monthly / $7.50 yearly view; Premium $29 monthly / $24.16 yearly view (as of 2026-08-12 per the article)",
+        "item_date": "2026-08-12"
+      },
+      "note": "Does not mention the relationship-manager product (it predates the switch). Its line 'Long-form depth and coherence are the documented weak point across independent evaluations' summarises other evaluations and is NOT a quality finding; do not cite it as one.",
+      "second_quote": "Unlimited is $9 per month billed monthly or $7.50 per month on the yearly display, and Premium is $29 per month billed monthly or $24.16 per month",
+      "resolver_note": "Both coders: label research-finding (documentation-based), not independent-test; registered quote supported long-form weakness, not the pricing claim. Resolver re-opened the page 2026-10-25 and replaced the quote with the verbatim pricing sentences. Stance set n/a (pricing fact); coders' 'mixed' referred to the dropped long-form line."
+    },
+    {
+      "id": "EV-rytr-review-26",
+      "claim": "Defined sample: first-person answers on two Quora questions about Rytr ('Is Rytr a good content writing tool?' and 'Is Rytr the best AI content writing tool for you?'), dated 2022-10-09 to 2024-05-27. Of 5 first-person answers, 2 are positive and 3 are mixed: one says the free account is limited compared to other AI writers, one found the grammar checker inconsistent and the content isn’t as robust as wanted, and one calls Rytr an amazing tool but says the writer then switched to another tool. A sixth answer was excluded as promotional. All predate the 2026 pivot.",
+      "source_url": "https://www.quora.com/Is-Rytr-a-good-content-writing-tool/answer/David-Paul-1132",
+      "source_date": "2022-11-02",
+      "quote": "Some cons were that I found the grammar checker inconsistent and the content isn’t as robust as I wanted. But nonetheless, it is your best bang for your buck.",
+      "platform": "quora.com (community Q&A; answer dates read from each answer page's creationTime)",
+      "target_slug": "/tools/rytr",
+      "collected_at": "2026-10-25",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "rytr-review-2026-10-25",
+      "screening": "included",
+      "label": "community-report",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Rytr",
+        "aspect": "older community sentiment on value, free-plan limits and output depth",
+        "stance": "mixed",
+        "plan_tier_if_stated": null,
+        "item_date": "2022-10-09..2024-05-27"
+      },
+      "sample": {
+        "n": 5,
+        "date_window": "2022-10-09 to 2024-05-27",
+        "capture": "2026-10-25",
+        "positive": [
+          "https://www.quora.com/Is-Rytr-a-good-content-writing-tool/answer/Alexis-Turner-19 (2022-10-09)",
+          "https://www.quora.com/Is-Rytr-the-best-AI-content-writing-tool-for-you/answer/Liona-Voss (2024-05-27)"
+        ],
+        "mixed": [
+          "https://www.quora.com/Is-Rytr-the-best-AI-content-writing-tool-for-you/answer/Alan-3772 (2022-10-31)",
+          "https://www.quora.com/Is-Rytr-a-good-content-writing-tool/answer/David-Paul-1132 (2022-11-02)",
+          "https://www.quora.com/Is-Rytr-a-good-content-writing-tool/answer/Dick-Ibrahim-1 (2023-01-31)"
+        ],
+        "counts": {
+          "positive": 2,
+          "mixed": 3,
+          "negative": 0,
+          "coding_ambiguous": 0
+        },
+        "excluded_from_sample": [
+          {
+            "url": "https://www.quora.com/Is-Rytr-a-good-content-writing-tool/answer/Blandina-Marcelle (2021-11-26)",
+            "screening": "excluded:no-methodology-affiliate",
+            "reason": "Promotional answer ending in a 'CLICK HERE' referral link; describes features Rytr does not have (a freelancer marketplace paying writers, a drag-and-drop ebook editor, 'reduce their marketing costs by up to 12%'). Both coders flagged it unreliable; resolver re-read it 2026-10-25 and excluded it under the existing affiliate/promotional reason code."
+          }
+        ],
+        "verbatim_wording": {
+          "Alan-3772": "the free account is limited compared to other AI writers",
+          "David-Paul-1132": "the content isn’t as robust as I wanted",
+          "Dick-Ibrahim-1": "I used Rytr for sometime and I think it is an amazing tool. I then switched to [another tool]"
+        },
+        "item_level_agreement": {
+          "items": 6,
+          "agreed": 6,
+          "rate": 1.0,
+          "note": "A and B coded all 6 answers identically (both coded Dick Ibrahim mixed; both flagged Blandina Marcelle); 1 item then excluded at re-screening"
+        }
+      },
+      "resolver_note": "Curator left Dick Ibrahim coding-ambiguous; both coders independently coded mixed (praise, then switched tool): resolved mixed. Blandina Marcelle answer excluded (see excluded_from_sample), n 6 -> 5, counts 3 pos/2 mixed/1 ambiguous -> 2 pos/3 mixed. Paraphrase in quotation marks removed from the claim; quote uses the source's curly apostrophe. Dick Ibrahim and Alan name rival tools: per owner page-format rule the writer does not name them."
+    }
+  ]
+}
