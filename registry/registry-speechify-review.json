@@ -5,6 +5,7 @@
     "target_slug": "/tools/speechify",
     "target_keyword": "speechify review",
     "run_date": "2026-08-09",
+    "refresh_2026_10_29": "Targeted refresh B2: EV-01 and EV-06 re-captured live 2026-10-29 (see each entry's recaptures). $139/yr is now vendor-printed on speechify.com/pricing; Studio prices unchanged, voice cloning no longer listed on the Starter card. No entries added or removed: 18 included (15 from the 2026-08-09 sweep + 3 reused from the hub).",
     "collector": "evidence-curator",
     "page_class": "tools/single-tool review (5-dimension ToolScore verdict: overall/outputQuality/easeOfUse/value/evidenceBase; overall PINNED to 3.2 per the hub's #4/4 ranking of Speechify in /best/ai-voice-generators — not recomputed). Voice-cluster satellite #4 (last), and the DEEPEST sweep of the cluster: the hub only produced an overall rank, this review derives all four non-pinned ToolScore dims fresh. Central thesis: Speechify is two products under one name — the read-aloud APP (the consumption job most buyers actually want) and Speechify Studio (a separate, annual-only, credit-billed voiceover-production product) — and 0/3 audited competitors draw that line. Owned-border CLEAN and held strictly throughout: read-aloud/TTS + voiceover generation only; zero voice-clone or deepfake DETECTION material sought or registered.",
     "composition_note": "3 entries reused verbatim-provenance from the hub shard (registry.json EV-best-ai-voice-generators-07/08/09 — Speechify's pricing capture, a 1-star Capterra complaint, a 5-star Capterra praise), all three re-fetched live this run per protocol §4 and found unchanged. 15 NEW entries this run, built around three findings: (1) speechify.com/pricing-studio/, direct-fetched, is the first vendor-primary confirmation in any Mimo shard of Studio's distinct annual-only credit-based pricing (Free/Starter $100yr/Creator $300yr) — the load-bearing source for the App-vs-Studio thesis. (2) The vendor's own current pricing page still will not render an annual dollar figure (client-rendered toggle, matching the hub's exact gap 19 days later) AND one of Speechify's own live blog posts (2023-09-27) states a stale, conflicting $159/year — so despite direct effort, NO vendor-primary source confirms the commonly-cited $139/year figure this run. Per the task's resolve-or-disclose instruction, $139/year is registered as a third-party-attributed figure, corroborated by FIVE independently-dated, differently-run sources (fahimai.com 2026-02-14, texttolab.com 2026-05-15 with a disclosed vendor-page-verification method, freetts.org 2026-05-23, reedsy.com 2025-12-15, a Medium personal account 2026-03-23) — never stated as vendor-confirmed. (3) The cancellation/refund H2 SHIPS: Speechify's own Refund Policy page (direct-fetched, vendor-primary) states a 7-day window with product-specific usage caps (500 HD words for the Reader/Premium plan, 2 minutes for AI Studio — correcting the brief's assumption that '2 minutes' is the general cap), and four separately-dated 2025-12-20 through 2026-05-26 PissedConsumer complaints independently confirm the $139/$139.99 charge amount and refund friction the brief flagged as needing a dated primary source.",
@@ -83,6 +84,16 @@
       "honesty_notes": [
         "Reused from the hub (EV-best-ai-voice-generators-07), re-fetched live this run per protocol §4 — content unchanged 19 days later.",
         "This shard's own sweep (EV-09, EV-10, EV-11, EV-12, EV-18) independently converges on $139/year as the current annual figure across 5 differently-dated third-party sources, none of which is this vendor page — present $139/yr as third-party-attributed, never as vendor-confirmed, until a future run can extract the client-rendered annual toggle directly."
+      ],
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-29",
+          "source_url": "https://speechify.com/pricing/",
+          "claim": "Pricing page re-read 2026-10-29. Free: listen at up to 1.5x, 10 robotic sounding voices, text to speech features only. Premium: $29/Month, now printed with 'or $139 billed yearly' beside a Monthly/Yearly toggle marked 'SAVE 60%'. CHANGE: on 2026-08-09 the annual dollar figure was not extractable from this page (client-rendered toggle), so $139/yr was registered as third-party-attributed (EV-09, EV-10, EV-11, EV-12, EV-18). The vendor page now states $139 yearly itself, matching those five sources; $139/yr is vendor-stated from this date. The 2023 blog figure of $159/yr (EV-08) stays as dated history. $139/12 = about $11.58/mo is Mimo arithmetic, not a vendor figure.",
+          "quote": "$29/Month ... or $139 billed yearly",
+          "supersedes": "2026-08-09 note that no vendor-primary source confirmed the $139/yr annual figure",
+          "method": "r.jina.ai text render of the live page"
+        }
       ]
     },
     {
@@ -225,6 +236,16 @@
         "CRITICAL FINDING for this page's central thesis: a genuinely separate pricing page, product, and billing unit (credits, not voices/languages/speed) from the Reader's Free/Premium split (EV-01) — none of the third-party sources registered in this shard (EV-09/10/11/12/18) draw this distinction as sharply; several (e.g. Reedsy, EV-12) describe 'Premium' download-hour limits that read more like Studio's mechanics than the Reader's — exactly the conflation this page exists to resolve.",
         "Do not average or combine Studio's $100-300/year with the Reader's $29/mo-or-~$139/yr figure into one 'Speechify costs X' statement — different products for different jobs.",
         "CONFLICTS with EV-10 (texttolab.com), which states a $19-49/month Studio range with no annual-only structure — flagged as an unresolved third-party-vs-vendor discrepancy; this directly-fetched vendor page should be treated as the more current source for Studio pricing specifically."
+      ],
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-29",
+          "source_url": "https://speechify.com/pricing-studio/",
+          "claim": "Studio pricing page re-read 2026-10-29: prices and credits unchanged (Free $0, 600 Studio credits, no commercial usage rights; Studio Starter $100/Year, 86,400 credits, commercial usage rights, stock music/video/images/sound effects; Studio Creator $300/Year, 345,600 credits, 'Best Value'; plan links billing=yearly). Credit burn unchanged: voiceover 1 credit/sec, dubbing 3/sec, avatar 30/sec. CHANGE: the Starter plan card no longer lists voice cloning in this text render (the 2026-08-09 quote listed 'voice cloning, stock assets, commercial usage rights'), so the page no longer states cloning as a Starter inclusion. NEW: the page states that Studio and the Text to Speech Reader are two different subscriptions.",
+          "quote": "Yes, Speechify Studio is different from Speechify Text to Speech Reader and they're two different subscriptions.",
+          "supersedes": "2026-08-09 reading that Studio Starter adds voice cloning (not shown on 2026-10-29)",
+          "method": "r.jina.ai text render of the live page"
+        }
       ]
     },
     {

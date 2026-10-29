@@ -96,6 +96,17 @@
       "honesty_notes": [
         "Re-registered from EV-best-ai-voice-generators-10 (hub shard) — figures confirmed unchanged 5 days later. NEW detail this run: commercial usage rights are explicitly granted on ALL paid tiers per the vendor's own wording, and only DOWNLOADED/exported audio consumes the minute allocation — unlimited in-app generation/preview attempts do not count against the cap.",
         "Do not conflate 'generation' with 'download' when computing any per-minute cost math — the vendor page draws this distinction explicitly."
+      ],
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-29",
+          "source_url": "https://www.wellsaid.io/pricing",
+          "claim": "Pricing page re-read 2026-10-29 (the July URL /ai-voice-pricing now serves the same ladder at /pricing): list prices and allowances unchanged vs the 2026-07-26 capture. Trial free, no credit card, 3 download minutes per month with no commercial rights; Starter $19/mo billed monthly or $10/mo billed annually at $120/year, 20 minutes/month (240/year); Pro $49/mo monthly or $33/mo annually at $396/year, 180 minutes/month (2,160/year); Business $160/mo/user billed annually at $1,920/year, 2,880 minutes/year/user, up to 5 seats; Enterprise custom. Full commercial rights listed on Starter and Pro. Newly recorded details from the same page: generation ('Regenerate or modify your audio clips. This does not count against downloaded minutes') is Unlimited on Starter, Pro, Business and Enterprise and 10 minutes on the Trial; Starter and Pro list 'All English voices', while 'All languages' is listed only under Enterprise. The page shows no promotional first-month price. Per-minute figures on the page are Mimo arithmetic on these prices, not vendor figures.",
+          "quote": "3 download minutes per month (no commercial rights) ... $19/mo Billed monthly ... 20 minutes/month ... $49/mo Billed monthly ... 180 minutes/month ... $160/mo/user Billed annually at $1,920/year ... All English voices ... All languages",
+          "supersedes": "none (prices confirmed unchanged; adds the Trial 10-minute generation cap and the English-voices-on-Starter/Pro vs all-languages-on-Enterprise plan scope)",
+          "method": "r.jina.ai text render of the live page",
+          "collector": "refresh-2026-10-29 (B2)"
+        }
       ]
     },
     {

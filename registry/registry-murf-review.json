@@ -25,36 +25,156 @@
     },
     "coder_agreement_rate": "CURATOR-PROVISIONAL single-pass coding across all 18 entries (dual-independent coding + resolver pass orchestrated above this run). Stance calls: 7 n/a (vendor-primary pricing/ToS/feature facts, no sentiment to code), 6 mixed (paired positive/negative Capterra + benchmark-vs-community tension + hackceleration compiled quotes), 3 negative, 2 positive. FLAGGED FOR RESOLVER: (1) EV-07/EV-08 (smallest.ai, checkthat.ai third-party Studio $ figures) — neither source discloses a hands-on test or a documented pricing-verification methodology; a coder could argue for exclusion under no-methodology-affiliate despite the two-source convergence, since convergence alone does not establish disclosed method. Currently included on the strength of (a) the task's explicit instruction that a clearly attributed third-party price is preferable to silence once vendor verification is exhausted, and (b) independent, differently-dated corroboration. A resolver should confirm this reasoning holds. (2) EV-10 (voice/language-count vendor inconsistency) — a coder could read this as trivial marketing-copy drift (200+ vs 300+ 'rounds down/up') rather than a substantive finding worth its own entry; flagged rather than resolved. (3) EV-12 (murf.ai/benchmarks/tts-benchmark) — self-published vendor benchmark using a third-party staffing agency for evaluation; a coder could argue this deserves an 'independent-test' label rather than 'vendor-claim' given the arm's-length evaluator, but the test DESIGN, word list, and competitor selection are all Murf's own choices, so this curator kept the vendor-claim/self-interested label — a resolver should weigh in. (4) EV-17 (fahimai.com) — same publisher's WellSaid Labs article was flagged in the wellsaid-labs-review shard for an internal date self-contradiction; THIS Murf article shows no equivalent internal contradiction on inspection this run, but the publisher's general reliability concern is carried forward as a caveat rather than a fresh finding. (5) EV-18 (hackceleration.com) — relays quotes it attributes to G2/Trustpilot/TrustRadius reviewers that this curator could NOT independently verify at the origin platform (both blocked); a coder could argue for exclusion entirely on chain-of-custody grounds rather than inclusion-with-caveats.",
     "query_census": [
-      { "q": "WebSearch: murf.ai pricing 2026 Creator Business plans minutes per year", "candidates": 8, "note": "smallest.ai/blog/murf-ai-pricing-plans-cost-what-you-get-in-2026, fish.audio/vs/pricing/murf-ai, autogpt.net/murf-ai-pricing, g2.com/products/murf-ai/pricing, layer3labs.io/guides/is-murf-ai-worth-it, dynalord.com/blog/murf-pricing, youraisoft.com/murf-ai-review, checkthat.ai/brands/murf-ai/pricing. smallest.ai and checkthat.ai both later direct-fetched and INCLUDED (EV-07, EV-08)." },
-      { "q": "WebSearch: Murf AI Studio pricing Free Creator Business Enterprise 2026", "candidates": 8, "note": "Identical result set to the prior query (full duplicate) — 0 new candidates." },
-      { "q": "WebSearch: help.murf.ai pricing plans Studio subscription", "candidates": 9, "note": "fish.audio (dup), help.murf.ai/murf-dub-pricing (NEW), help.murf.ai/murf-api-plans-and-limits (already hub-known, re-identified), smallest.ai (dup), g2.com/products/murf-ai/pricing (dup), autogpt.net (dup), elegantthemes.com/blog/business/murf-ai-review (NEW), saasworthy.com/product/murf-ai/pricing (NEW), checkthat.ai (dup). help.murf.ai/murf-dub-pricing direct-fetched → INCLUDED (EV-06)." },
-      { "q": "DIRECT: WebFetch https://murf.ai/pricing", "candidates": 0, "note": "4th attempt across two runs (hub tried 3x). Page returns only the word 'Murf', no pricing content — client-rendered React app not captured by this tool. Logged unverifiable-this-run again; the top-priority gap is only PARTIALLY closed via the help-center subdomain pivot (see sweep_strategy)." },
-      { "q": "WebSearch: site:help.murf.ai studio pricing plans", "candidates": 9, "note": "help.murf.ai/murf-dub-pricing (dup), help.murf.ai/upgrading-a-subscription (NEW), help.murf.ai/increasing-your-vgt (NEW), help.murf.ai/murf-dub-pay-as-you-go (NEW), help.murf.ai/is-murf-free-to-use (NEW), help.murf.ai/murf-dub (NEW), help.murf.ai/what-is-a-workspace (NEW), help.murf.ai/working-with-the-studio (NEW), help.murf.ai/billing-affect-on-adding-and-removing-users (NEW). help.murf.ai/increasing-your-vgt and help.murf.ai/is-murf-free-to-use both direct-fetched → INCLUDED (EV-04, EV-05); help.murf.ai/upgrading-a-subscription direct-fetched but yielded only mechanics (no new $ figures) — folded into EV-04's honesty_notes, not separately registered." },
-      { "q": "DIRECT: WebFetch https://help.murf.ai/is-murf-free-to-use, https://help.murf.ai/increasing-your-vgt, https://help.murf.ai/upgrading-a-subscription", "candidates": 0, "note": "Verification fetches of the 3 candidates surfaced by the prior query — not counted again in 'identified'." },
-      { "q": "DIRECT: WebFetch http://archive.org/wayback/available?url=murf.ai/pricing", "candidates": 0, "note": "Availability API responded but returned an EMPTY archived_snapshots object for murf.ai/pricing — unlike the hub's LOVO/PlayHT wayback checks, no historical snapshot exists at all for this specific URL. Logged unverifiable-this-run (no snapshot to even attempt fetching)." },
-      { "q": "WebSearch: murf.ai blog announcing new pricing Growth plan 2026", "candidates": 8, "note": "smallest.ai (dup) plus smallest.ai/blog/murf-ai-review-2026-pricing-features-api-limits (NEW), fish.audio (dup), todaytesting.com/murf-ai-promo-codes-and-review (NEW), autogpt.net (dup), dynalord.com (dup), checkthat.ai (dup), youraisoft.com (dup). No official Murf blog post about a 'Growth' tier surfaced — the vendor confirmation for that tier name came only from the help-center mechanics page (EV-04), not a announcement post." },
-      { "q": "WebSearch: \"Murf\" \"Growth plan\" pricing voice generation", "candidates": 9, "note": "autogpt.net (dup), smallest.ai (dup), fish.audio (dup), tekpon.com/software/murf-ai/pricing (NEW), g2.com/products/murf-ai/pricing (dup), layer3labs.io (dup), dynalord.com (dup), youraisoft.com (dup), checkthat.ai (dup). Confirms: none of the third-party pricing aggregators mention a Growth tier by name, even when directly queried for it — corroborates the honesty_note that this is a vendor-only-confirmed, third-party-unnoticed structural detail." },
-      { "q": "DIRECT: WebFetch https://smallest.ai/blog/murf-ai-pricing-plans-cost-what-you-get-in-2026, https://checkthat.ai/brands/murf-ai/pricing", "candidates": 0, "note": "Verification fetches of query-1 candidates — not counted again." },
-      { "q": "DIRECT: WebFetch https://smallest.ai/ and https://checkthat.ai/ (COI/business-model checks, root domains)", "candidates": 0, "note": "Confirmed smallest.ai is itself a competing voice-AI/TTS API platform (Lightning TTS, Pulse STT, Hydra speech-to-speech, voice cloning) — heavy COI on its Murf pricing article, flagged in EV-07. Confirmed checkthat.ai is an AI-answer-visibility tracking platform, not a competing voice product, but discloses no specific pricing-verification methodology on its brand pages — flagged in EV-08." },
-      { "q": "WebSearch: site:reddit.com Murf AI review robotic voice", "candidates": 8, "note": "g2.com/sellers/murf-inc (NEW), g2.com/products/murf-ai/reviews (NEW), g2.com/sellers/murf (NEW), g2.com/products/murf-ai/reviews?page=9 (dup pagination), alternativeto.net/software/murf-ai-voiceovers/about (NEW), g2.com/products/murf-ai/reviews?page=2/10/5 (dup pagination x3). ZERO real reddit.com URLs despite the site: operator — same block pattern the hub found for this exact tool+query five weeks ago." },
-      { "q": "WebSearch: site:reddit.com Murf AI worth it", "candidates": 9, "note": "digestafrica.com/vintage-brief (NEW), youraisoft.com (dup), aiblogfirst.com/murf-ai-review (NEW), aitooltier.com/tools/murf-ai (NEW), g2.com/compare/murf-ai-vs-tess-ai (NEW), g2.com/compare/murf-ai-vs-descript (NEW), g2.com/compare/anyword-vs-murf-ai (NEW), alternativeto.net (dup), saashub.com/compare-paperflite-vs-murf-ai (NEW). ZERO real reddit.com URLs." },
-      { "q": "WebSearch: site:reddit.com \"Murf\" credits ran out cancel subscription", "candidates": 10, "note": "community.adobe.com (x3 distinct URLs, Adobe Stock credits — wrong product), docs.surferseo.com, teamblind.com, scribd.com, afrothinktank.substack.com, community.spotify.com, tvmaze.com. ZERO Murf-relevant or reddit.com results at all — the query surfaced only unrelated other-platform subscription-cancellation threads, confirming this is a genuinely empty search rather than a scoping error." },
-      { "q": "WebSearch: site:quora.com Murf AI review worth", "candidates": 10, "note": "quora.com/What-is-MURF-AI, ainewesttechhub.quora.com (promotional Space post), quora.com/Are-there-any-websites-that-use-artificial-intelligence..., youtubeshare.quora.com (promotional Space post), d3vsinghsspace.quora.com (promotional Space post), ewrite.quora.com (promotional Space post), digitalmoneyspacesspace.quora.com (promotional Space post), quora.com/Which-is-better-ElevenLabs-or-Murf-AI, quora.com/Which-recent-AI-tools-are-free-for-text-to-voice, quora.com/What-free-AI-voiceover-software-is-there-that-sounds-like-humans. None individually fetched — all are either generic multi-tool listicle questions with no Murf-specific dated first-person detail, or vendor-promotional 'Space' cross-posts (a recurring low-trust pattern on Quora for this category, consistent with prior shards, though not rising to the coordinated-persona astroturf definition since each Space appears to be a single-account promotional account rather than a network)." },
-      { "q": "WebSearch: G2 Murf AI reviews voice quality", "candidates": 9, "note": "murf.ai/blog/g2-momentum-leader (NEW, vendor blog — self-interested marketing framing of G2 standing, not registered), murf.ai/resources/g2-high-performer (NEW, vendor), geniusfirms.com/blog/murf-ai-review-my-honest-take (NEW), digiinvent.com/murf-ai-review (NEW), layer3labs.io/guides/murf-ai-review (NEW path), qcall.ai/murf-ai-review (NEW), blogrecode.com/murf-ai-review-generated-voiceovers-the-truth (NEW), g2.com/compare/murf-ai-vs-voicemaker (NEW), g2.com/compare/murf-ai-vs-veed (NEW)." },
-      { "q": "DIRECT: WebFetch https://www.g2.com/products/murf-ai/reviews", "candidates": 0, "note": "HTTP 403 — unverifiable-this-run, consistent with every prior Mimo shard's G2 block." },
-      { "q": "WebSearch: Murf AI Canva integration Google Slides add-on voice sync", "candidates": 9, "note": "medium.com/@nicolasgalvi8/introducing-murf-ai-integration-in-canva, murf.ai/blog/voice-over-google-slides-with-add-on, murf.ai/integrations/google-slides, help.murf.ai/products, murf.ai/integrations, murf.ai/blog/launching-murf-voice-over-google-slides, topvox.ai/blog/murf-ai (competitor-run domain per the page brief's explicit flag — not fetched), kripeshadwani.com/murf-ai-review, workspace.google.com/marketplace/app/murf. murf.ai/integrations/google-slides direct-fetched → INCLUDED (EV-11)." },
-      { "q": "WebSearch: Murf Studio timeline sync video review ease of use", "candidates": 10, "note": "fahimai.com/murf-ai (NEW), digiinvent.com (dup), fritz.ai/murf-ai-review (NEW), layer3labs.io/guides/murf-ai-review (dup), qcall.ai/murf-ai-review (dup), aitoolnotes.com/review/murf-ai-review (NEW), blogrecode.com (dup), hackceleration.com/labs/review/murf (NEW), aiblogfirst.com (dup), g2.com/products/murf-ai/reviews (dup). fahimai.com/murf-ai and hackceleration.com/labs/review/murf both direct-fetched → INCLUDED (EV-17, EV-18)." },
-      { "q": "DIRECT: WebFetch https://murf.ai/text-to-speech/canva", "candidates": 1, "note": "New URL, pattern-guessed (not returned by any search) — HTTP 404. Confirms this specific path does not exist; the Canva integration lives at a different URL structure entirely (murf.ai/integrations, per the query above)." },
-      { "q": "DIRECT: WebFetch https://murf.ai/integrations/google-slides, https://www.fahimai.com/murf-ai, https://hackceleration.com/labs/review/murf", "candidates": 0, "note": "Verification fetches of already-identified candidates — not counted again." },
-      { "q": "WebSearch: help.murf.ai commercial use rights license voice over", "candidates": 9, "note": "speechify.com/blog/murf-ai-terms-service-commercial-rights-voice-over (NEW), cybernews.com/ai-tools/murf-ai-review (NEW), murf.ai/legal/terms-of-service (NEW), murf.ai/ (NEW, homepage), aiseesoft.com/resource/murf-ai-voice.html (NEW), murf.ai/ai-voice-generator (NEW), elegantthemes.com (dup), blogrecode.com (dup), alternativeto.net (dup). murf.ai/legal/terms-of-service direct-fetched → INCLUDED (EV-09)." },
-      { "q": "WebSearch: Murf AI free plan limitations no download credits ran out complaint", "candidates": 9, "note": "fish.audio (dup), help.murf.ai/murf-api-plans-and-limits (dup), autogpt.net (dup), mrreviewai.com/murf-ai-free-plan-review (NEW), thespeakr.com/murf-ai (NEW), help.murf.ai/projects (NEW), aibrainjet.com/murf-ai-pricing-explained (NEW), layer3labs.io (dup), aiblogfirst.com (dup). mrreviewai.com/murf-ai-free-plan-review direct-fetched → INCLUDED (EV-16)." },
-      { "q": "DIRECT: WebFetch https://murf.ai/legal/terms-of-service, https://mrreviewai.com/murf-ai-free-plan-review/", "candidates": 0, "note": "Verification fetches of already-identified candidates — not counted again." },
-      { "q": "DIRECT: WebFetch https://murf.ai/text-to-speech", "candidates": 1, "note": "New URL, pattern-derived from mentions in prior query results rather than itself returned by a search query. Direct-fetched → INCLUDED (EV-10), and found to state a DIFFERENT voice/language count (200+ voices/35+ languages) than help.murf.ai/is-murf-free-to-use (300+ voices/33 languages, EV-05) — both fetched the same day, an internal vendor inconsistency logged rather than silently resolved." },
-      { "q": "DIRECT: WebFetch https://visme.co/blog/best-ai-voice-generator/ (re-verification of the hub's EV-06 source)", "candidates": 0, "note": "Re-fetch per protocol §4 — confirmed still live, publish date unchanged (2025-09-19), the 'a bit robotic' language confirmed present in a slightly different sentence than the hub's originally-captured quote but same section/same COI (Visme ranks its own product #1 in the same article)." },
-      { "q": "WebSearch: academic study text-to-speech Murf AI evaluation naturalness paper", "candidates": 9, "note": "murf.ai/benchmarks/tts-benchmark (NEW), murf.ai/text-to-speech (dup), cybernews.com (dup), murf.ai/api (NEW), murf.ai/ (dup), murf.ai/text-to-speech-gen-2 (NEW), arxiv.org/pdf/2312.11563 (NEW), a USPTO patent-application PDF (NEW, off-topic), wellsaid.io/resources/blog/murf-ai-alternatives (NEW, a direct competitor's own comparison page). murf.ai/benchmarks/tts-benchmark direct-fetched → INCLUDED (EV-12); arxiv.org/pdf/2312.11563 direct-fetched and confirmed EXCLUDED off-topic (a general TTS-technology review paper with zero mentions of Murf anywhere in the text)." },
-      { "q": "WebSearch: murf.ai blog pronunciation accuracy benchmark blind test native speaker", "candidates": 9, "note": "murf.ai/api/docs/introduction/models (NEW), murf.ai/benchmarks/tts-benchmark (dup), autogpt.net/ai-tool/murf-ai (NEW path), murf.ai/api (dup), tooliverse.ai/tools/murf-ai (NEW), qcall.ai/murf-ai-review (dup), murf.ai/ai-voice-generator (dup), blogrecode.com (dup), youraisoft.com (dup). Confirmed the benchmark page URL and its headline figures via search-summary triangulation before the direct fetch above." },
-      { "q": "WebSearch: \"Murf\" \"99.38%\" OR \"99%\" pronunciation accuracy", "candidates": 10, "note": "murf.ai/api/dashboard (NEW, login page, no content), murf.ai/text-to-speech/accent-generator (NEW), murf.ai/api (dup), murf.ai/text-to-speech (dup), tooliverse.ai/tools/murf-ai (dup), aitoolradar.io/guides/murf-ai (NEW), thespeakr.com/murf-ai (dup), blogrecode.com (dup), layer3labs.io/guides/murf-ai-review (dup), youraisoft.com (dup). Confirmed the '99.38%' figure recurs across multiple third-party sites without matching the vendor's own current page verbatim (which states a 98.70%-99.75% per-language range, not one flat number) — the same uncredited-copied-number pattern the hub flagged for ElevenLabs; NOT registered as a standalone quoted figure (see EV-17's honesty_notes)." },
-      { "q": "DIRECT: WebFetch https://murf.ai/benchmarks/tts-benchmark, https://arxiv.org/pdf/2312.11563", "candidates": 0, "note": "Verification fetches of already-identified candidates — not counted again." }
+      {
+        "q": "WebSearch: murf.ai pricing 2026 Creator Business plans minutes per year",
+        "candidates": 8,
+        "note": "smallest.ai/blog/murf-ai-pricing-plans-cost-what-you-get-in-2026, fish.audio/vs/pricing/murf-ai, autogpt.net/murf-ai-pricing, g2.com/products/murf-ai/pricing, layer3labs.io/guides/is-murf-ai-worth-it, dynalord.com/blog/murf-pricing, youraisoft.com/murf-ai-review, checkthat.ai/brands/murf-ai/pricing. smallest.ai and checkthat.ai both later direct-fetched and INCLUDED (EV-07, EV-08)."
+      },
+      {
+        "q": "WebSearch: Murf AI Studio pricing Free Creator Business Enterprise 2026",
+        "candidates": 8,
+        "note": "Identical result set to the prior query (full duplicate) — 0 new candidates."
+      },
+      {
+        "q": "WebSearch: help.murf.ai pricing plans Studio subscription",
+        "candidates": 9,
+        "note": "fish.audio (dup), help.murf.ai/murf-dub-pricing (NEW), help.murf.ai/murf-api-plans-and-limits (already hub-known, re-identified), smallest.ai (dup), g2.com/products/murf-ai/pricing (dup), autogpt.net (dup), elegantthemes.com/blog/business/murf-ai-review (NEW), saasworthy.com/product/murf-ai/pricing (NEW), checkthat.ai (dup). help.murf.ai/murf-dub-pricing direct-fetched → INCLUDED (EV-06)."
+      },
+      {
+        "q": "DIRECT: WebFetch https://murf.ai/pricing",
+        "candidates": 0,
+        "note": "4th attempt across two runs (hub tried 3x). Page returns only the word 'Murf', no pricing content — client-rendered React app not captured by this tool. Logged unverifiable-this-run again; the top-priority gap is only PARTIALLY closed via the help-center subdomain pivot (see sweep_strategy)."
+      },
+      {
+        "q": "WebSearch: site:help.murf.ai studio pricing plans",
+        "candidates": 9,
+        "note": "help.murf.ai/murf-dub-pricing (dup), help.murf.ai/upgrading-a-subscription (NEW), help.murf.ai/increasing-your-vgt (NEW), help.murf.ai/murf-dub-pay-as-you-go (NEW), help.murf.ai/is-murf-free-to-use (NEW), help.murf.ai/murf-dub (NEW), help.murf.ai/what-is-a-workspace (NEW), help.murf.ai/working-with-the-studio (NEW), help.murf.ai/billing-affect-on-adding-and-removing-users (NEW). help.murf.ai/increasing-your-vgt and help.murf.ai/is-murf-free-to-use both direct-fetched → INCLUDED (EV-04, EV-05); help.murf.ai/upgrading-a-subscription direct-fetched but yielded only mechanics (no new $ figures) — folded into EV-04's honesty_notes, not separately registered."
+      },
+      {
+        "q": "DIRECT: WebFetch https://help.murf.ai/is-murf-free-to-use, https://help.murf.ai/increasing-your-vgt, https://help.murf.ai/upgrading-a-subscription",
+        "candidates": 0,
+        "note": "Verification fetches of the 3 candidates surfaced by the prior query — not counted again in 'identified'."
+      },
+      {
+        "q": "DIRECT: WebFetch http://archive.org/wayback/available?url=murf.ai/pricing",
+        "candidates": 0,
+        "note": "Availability API responded but returned an EMPTY archived_snapshots object for murf.ai/pricing — unlike the hub's LOVO/PlayHT wayback checks, no historical snapshot exists at all for this specific URL. Logged unverifiable-this-run (no snapshot to even attempt fetching)."
+      },
+      {
+        "q": "WebSearch: murf.ai blog announcing new pricing Growth plan 2026",
+        "candidates": 8,
+        "note": "smallest.ai (dup) plus smallest.ai/blog/murf-ai-review-2026-pricing-features-api-limits (NEW), fish.audio (dup), todaytesting.com/murf-ai-promo-codes-and-review (NEW), autogpt.net (dup), dynalord.com (dup), checkthat.ai (dup), youraisoft.com (dup). No official Murf blog post about a 'Growth' tier surfaced — the vendor confirmation for that tier name came only from the help-center mechanics page (EV-04), not a announcement post."
+      },
+      {
+        "q": "WebSearch: \"Murf\" \"Growth plan\" pricing voice generation",
+        "candidates": 9,
+        "note": "autogpt.net (dup), smallest.ai (dup), fish.audio (dup), tekpon.com/software/murf-ai/pricing (NEW), g2.com/products/murf-ai/pricing (dup), layer3labs.io (dup), dynalord.com (dup), youraisoft.com (dup), checkthat.ai (dup). Confirms: none of the third-party pricing aggregators mention a Growth tier by name, even when directly queried for it — corroborates the honesty_note that this is a vendor-only-confirmed, third-party-unnoticed structural detail."
+      },
+      {
+        "q": "DIRECT: WebFetch https://smallest.ai/blog/murf-ai-pricing-plans-cost-what-you-get-in-2026, https://checkthat.ai/brands/murf-ai/pricing",
+        "candidates": 0,
+        "note": "Verification fetches of query-1 candidates — not counted again."
+      },
+      {
+        "q": "DIRECT: WebFetch https://smallest.ai/ and https://checkthat.ai/ (COI/business-model checks, root domains)",
+        "candidates": 0,
+        "note": "Confirmed smallest.ai is itself a competing voice-AI/TTS API platform (Lightning TTS, Pulse STT, Hydra speech-to-speech, voice cloning) — heavy COI on its Murf pricing article, flagged in EV-07. Confirmed checkthat.ai is an AI-answer-visibility tracking platform, not a competing voice product, but discloses no specific pricing-verification methodology on its brand pages — flagged in EV-08."
+      },
+      {
+        "q": "WebSearch: site:reddit.com Murf AI review robotic voice",
+        "candidates": 8,
+        "note": "g2.com/sellers/murf-inc (NEW), g2.com/products/murf-ai/reviews (NEW), g2.com/sellers/murf (NEW), g2.com/products/murf-ai/reviews?page=9 (dup pagination), alternativeto.net/software/murf-ai-voiceovers/about (NEW), g2.com/products/murf-ai/reviews?page=2/10/5 (dup pagination x3). ZERO real reddit.com URLs despite the site: operator — same block pattern the hub found for this exact tool+query five weeks ago."
+      },
+      {
+        "q": "WebSearch: site:reddit.com Murf AI worth it",
+        "candidates": 9,
+        "note": "digestafrica.com/vintage-brief (NEW), youraisoft.com (dup), aiblogfirst.com/murf-ai-review (NEW), aitooltier.com/tools/murf-ai (NEW), g2.com/compare/murf-ai-vs-tess-ai (NEW), g2.com/compare/murf-ai-vs-descript (NEW), g2.com/compare/anyword-vs-murf-ai (NEW), alternativeto.net (dup), saashub.com/compare-paperflite-vs-murf-ai (NEW). ZERO real reddit.com URLs."
+      },
+      {
+        "q": "WebSearch: site:reddit.com \"Murf\" credits ran out cancel subscription",
+        "candidates": 10,
+        "note": "community.adobe.com (x3 distinct URLs, Adobe Stock credits — wrong product), docs.surferseo.com, teamblind.com, scribd.com, afrothinktank.substack.com, community.spotify.com, tvmaze.com. ZERO Murf-relevant or reddit.com results at all — the query surfaced only unrelated other-platform subscription-cancellation threads, confirming this is a genuinely empty search rather than a scoping error."
+      },
+      {
+        "q": "WebSearch: site:quora.com Murf AI review worth",
+        "candidates": 10,
+        "note": "quora.com/What-is-MURF-AI, ainewesttechhub.quora.com (promotional Space post), quora.com/Are-there-any-websites-that-use-artificial-intelligence..., youtubeshare.quora.com (promotional Space post), d3vsinghsspace.quora.com (promotional Space post), ewrite.quora.com (promotional Space post), digitalmoneyspacesspace.quora.com (promotional Space post), quora.com/Which-is-better-ElevenLabs-or-Murf-AI, quora.com/Which-recent-AI-tools-are-free-for-text-to-voice, quora.com/What-free-AI-voiceover-software-is-there-that-sounds-like-humans. None individually fetched — all are either generic multi-tool listicle questions with no Murf-specific dated first-person detail, or vendor-promotional 'Space' cross-posts (a recurring low-trust pattern on Quora for this category, consistent with prior shards, though not rising to the coordinated-persona astroturf definition since each Space appears to be a single-account promotional account rather than a network)."
+      },
+      {
+        "q": "WebSearch: G2 Murf AI reviews voice quality",
+        "candidates": 9,
+        "note": "murf.ai/blog/g2-momentum-leader (NEW, vendor blog — self-interested marketing framing of G2 standing, not registered), murf.ai/resources/g2-high-performer (NEW, vendor), geniusfirms.com/blog/murf-ai-review-my-honest-take (NEW), digiinvent.com/murf-ai-review (NEW), layer3labs.io/guides/murf-ai-review (NEW path), qcall.ai/murf-ai-review (NEW), blogrecode.com/murf-ai-review-generated-voiceovers-the-truth (NEW), g2.com/compare/murf-ai-vs-voicemaker (NEW), g2.com/compare/murf-ai-vs-veed (NEW)."
+      },
+      {
+        "q": "DIRECT: WebFetch https://www.g2.com/products/murf-ai/reviews",
+        "candidates": 0,
+        "note": "HTTP 403 — unverifiable-this-run, consistent with every prior Mimo shard's G2 block."
+      },
+      {
+        "q": "WebSearch: Murf AI Canva integration Google Slides add-on voice sync",
+        "candidates": 9,
+        "note": "medium.com/@nicolasgalvi8/introducing-murf-ai-integration-in-canva, murf.ai/blog/voice-over-google-slides-with-add-on, murf.ai/integrations/google-slides, help.murf.ai/products, murf.ai/integrations, murf.ai/blog/launching-murf-voice-over-google-slides, topvox.ai/blog/murf-ai (competitor-run domain per the page brief's explicit flag — not fetched), kripeshadwani.com/murf-ai-review, workspace.google.com/marketplace/app/murf. murf.ai/integrations/google-slides direct-fetched → INCLUDED (EV-11)."
+      },
+      {
+        "q": "WebSearch: Murf Studio timeline sync video review ease of use",
+        "candidates": 10,
+        "note": "fahimai.com/murf-ai (NEW), digiinvent.com (dup), fritz.ai/murf-ai-review (NEW), layer3labs.io/guides/murf-ai-review (dup), qcall.ai/murf-ai-review (dup), aitoolnotes.com/review/murf-ai-review (NEW), blogrecode.com (dup), hackceleration.com/labs/review/murf (NEW), aiblogfirst.com (dup), g2.com/products/murf-ai/reviews (dup). fahimai.com/murf-ai and hackceleration.com/labs/review/murf both direct-fetched → INCLUDED (EV-17, EV-18)."
+      },
+      {
+        "q": "DIRECT: WebFetch https://murf.ai/text-to-speech/canva",
+        "candidates": 1,
+        "note": "New URL, pattern-guessed (not returned by any search) — HTTP 404. Confirms this specific path does not exist; the Canva integration lives at a different URL structure entirely (murf.ai/integrations, per the query above)."
+      },
+      {
+        "q": "DIRECT: WebFetch https://murf.ai/integrations/google-slides, https://www.fahimai.com/murf-ai, https://hackceleration.com/labs/review/murf",
+        "candidates": 0,
+        "note": "Verification fetches of already-identified candidates — not counted again."
+      },
+      {
+        "q": "WebSearch: help.murf.ai commercial use rights license voice over",
+        "candidates": 9,
+        "note": "speechify.com/blog/murf-ai-terms-service-commercial-rights-voice-over (NEW), cybernews.com/ai-tools/murf-ai-review (NEW), murf.ai/legal/terms-of-service (NEW), murf.ai/ (NEW, homepage), aiseesoft.com/resource/murf-ai-voice.html (NEW), murf.ai/ai-voice-generator (NEW), elegantthemes.com (dup), blogrecode.com (dup), alternativeto.net (dup). murf.ai/legal/terms-of-service direct-fetched → INCLUDED (EV-09)."
+      },
+      {
+        "q": "WebSearch: Murf AI free plan limitations no download credits ran out complaint",
+        "candidates": 9,
+        "note": "fish.audio (dup), help.murf.ai/murf-api-plans-and-limits (dup), autogpt.net (dup), mrreviewai.com/murf-ai-free-plan-review (NEW), thespeakr.com/murf-ai (NEW), help.murf.ai/projects (NEW), aibrainjet.com/murf-ai-pricing-explained (NEW), layer3labs.io (dup), aiblogfirst.com (dup). mrreviewai.com/murf-ai-free-plan-review direct-fetched → INCLUDED (EV-16)."
+      },
+      {
+        "q": "DIRECT: WebFetch https://murf.ai/legal/terms-of-service, https://mrreviewai.com/murf-ai-free-plan-review/",
+        "candidates": 0,
+        "note": "Verification fetches of already-identified candidates — not counted again."
+      },
+      {
+        "q": "DIRECT: WebFetch https://murf.ai/text-to-speech",
+        "candidates": 1,
+        "note": "New URL, pattern-derived from mentions in prior query results rather than itself returned by a search query. Direct-fetched → INCLUDED (EV-10), and found to state a DIFFERENT voice/language count (200+ voices/35+ languages) than help.murf.ai/is-murf-free-to-use (300+ voices/33 languages, EV-05) — both fetched the same day, an internal vendor inconsistency logged rather than silently resolved."
+      },
+      {
+        "q": "DIRECT: WebFetch https://visme.co/blog/best-ai-voice-generator/ (re-verification of the hub's EV-06 source)",
+        "candidates": 0,
+        "note": "Re-fetch per protocol §4 — confirmed still live, publish date unchanged (2025-09-19), the 'a bit robotic' language confirmed present in a slightly different sentence than the hub's originally-captured quote but same section/same COI (Visme ranks its own product #1 in the same article)."
+      },
+      {
+        "q": "WebSearch: academic study text-to-speech Murf AI evaluation naturalness paper",
+        "candidates": 9,
+        "note": "murf.ai/benchmarks/tts-benchmark (NEW), murf.ai/text-to-speech (dup), cybernews.com (dup), murf.ai/api (NEW), murf.ai/ (dup), murf.ai/text-to-speech-gen-2 (NEW), arxiv.org/pdf/2312.11563 (NEW), a USPTO patent-application PDF (NEW, off-topic), wellsaid.io/resources/blog/murf-ai-alternatives (NEW, a direct competitor's own comparison page). murf.ai/benchmarks/tts-benchmark direct-fetched → INCLUDED (EV-12); arxiv.org/pdf/2312.11563 direct-fetched and confirmed EXCLUDED off-topic (a general TTS-technology review paper with zero mentions of Murf anywhere in the text)."
+      },
+      {
+        "q": "WebSearch: murf.ai blog pronunciation accuracy benchmark blind test native speaker",
+        "candidates": 9,
+        "note": "murf.ai/api/docs/introduction/models (NEW), murf.ai/benchmarks/tts-benchmark (dup), autogpt.net/ai-tool/murf-ai (NEW path), murf.ai/api (dup), tooliverse.ai/tools/murf-ai (NEW), qcall.ai/murf-ai-review (dup), murf.ai/ai-voice-generator (dup), blogrecode.com (dup), youraisoft.com (dup). Confirmed the benchmark page URL and its headline figures via search-summary triangulation before the direct fetch above."
+      },
+      {
+        "q": "WebSearch: \"Murf\" \"99.38%\" OR \"99%\" pronunciation accuracy",
+        "candidates": 10,
+        "note": "murf.ai/api/dashboard (NEW, login page, no content), murf.ai/text-to-speech/accent-generator (NEW), murf.ai/api (dup), murf.ai/text-to-speech (dup), tooliverse.ai/tools/murf-ai (dup), aitoolradar.io/guides/murf-ai (NEW), thespeakr.com/murf-ai (dup), blogrecode.com (dup), layer3labs.io/guides/murf-ai-review (dup), youraisoft.com (dup). Confirmed the '99.38%' figure recurs across multiple third-party sites without matching the vendor's own current page verbatim (which states a 98.70%-99.75% per-language range, not one flat number) — the same uncredited-copied-number pattern the hub flagged for ElevenLabs; NOT registered as a standalone quoted figure (see EV-17's honesty_notes)."
+      },
+      {
+        "q": "DIRECT: WebFetch https://murf.ai/benchmarks/tts-benchmark, https://arxiv.org/pdf/2312.11563",
+        "candidates": 0,
+        "note": "Verification fetches of already-identified candidates — not counted again."
+      }
     ],
     "reddit_access_note": "Reddit was structurally unreachable this run: 3 dedicated site:reddit.com-targeted WebSearch queries (robotic-voice, worth-it, credits-ran-out) surfaced ZERO actual reddit.com URLs across 27 total candidate links — the same identical block documented in the hub shard for this exact tool five weeks ago and in every prior Mimo shard since 2026-07-10. Quora surfaced ten candidate URLs for one dedicated query, none a substantive independent first-person thread (a mix of generic multi-tool listicle Q&As and single-account promotional 'Space' cross-posts) — none were individually fetched given this pattern's 100% historical failure rate for yielding registrable content in prior shards. G2 (4 URL variants: /reviews base, /reviews?page=2/5/9/10 pagination, /sellers/murf-inc, /sellers/murf) returned HTTP 403 on the one directly-tested variant, consistent with the established domain-wide block; the others were pattern-excluded rather than individually re-tested. Trustpilot was not separately queried this run given its 100% historical failure rate in every prior shard. CONSEQUENCE: community sentiment for this review routes through Capterra (4 dated reviews, fully re-verified), a secondary relay of G2/Trustpilot/TrustRadius quotes via hackceleration.com (flagged as unverified-at-origin), and two disclosed-methodology affiliate-monetized hands-on tests (mrreviewai.com, fahimai.com) — a narrower community base than ElevenLabs or WellSaid Labs enjoyed in their own Mimo reviews, and this must be disclosed plainly in the page's limitations paragraph and reflected conservatively in the evidenceBase sub-score.",
     "astroturf_note": "The astroturf screen (§3.1: templated look-alike threads, recurring fresh personas, all funneling to one vendor) was applied to every low-trust 'Murf AI Review/Pricing 2026' aggregator-mill candidate surfaced this run (youraisoft.com, dynalord.com, layer3labs.io, autogpt.net, aitooltier.com, aiblogfirst.com, digiinvent.com, blogrecode.com, geniusfirms.com, aitoolnotes.com, fritz.ai, thespeakr.com, aibrainjet.com, elegantthemes.com, aiseesoft.com, tekpon.com, tooliverse.ai, aitoolradar.io, digestafrica.com, and others). No templated-persona-network pattern was detected — these read as independently-run SEO content-mill/affiliate sites competing for the same keyword, not a coordinated persona network. The closest adjacent finding was the cluster of single-account promotional 'Space' cross-posts on Quora (ainewesttechhub, youtubeshare, d3vsinghsspace, ewrite, digitalmoneyspacesspace) — flagged for visibility but treated as isolated promotional accounts rather than a coordinated network, since each posts independently-worded content to a single Quora Space rather than templated near-identical text across multiple forums. Zero astroturf-pattern sources were registered or cited. The MikeAppsReviewer-network canonical case pattern was not observed anywhere in this sweep.",
@@ -69,6 +189,13 @@
       "EV-best-ai-voice-generators-04 (help.murf.ai/murf-api-plans-and-limits, API PAYG pricing) — re-fetched and re-registered, figures unchanged from the hub's 2026-07-21 capture, as EV-murf-review-01",
       "EV-best-ai-voice-generators-05 (Mukesh B., Capterra, 2023-02-16) — re-registered as EV-murf-review-02",
       "EV-best-ai-voice-generators-06 (visme.co, 2025-09-19, COI-flagged) — re-registered as EV-murf-review-03"
+    ],
+    "refreshes": [
+      {
+        "date": "2026-10-29",
+        "batch": "B2",
+        "note": "Live recapture of murf.ai/pricing, murf.ai/pricing/studio and murf.ai/studio/pricing; recaptures added on EV-murf-review-01 (API free trial now $10 credit, Falcon 2.1 $0.01/1k, Gen2 $0.03/1k unchanged) and EV-murf-review-04 (Studio prices still unreadable). Entry count unchanged: 18 included (15 from the 2026-08-08 sweep plus 3 re-registered from the voice-generator hub)."
+      }
     ]
   },
   "entries": [
@@ -86,7 +213,10 @@
       "flow_id": "murf-review-2026-08-08",
       "screening": "included",
       "label": "vendor-claim",
-      "coders": ["A", "B"],
+      "coders": [
+        "A",
+        "B"
+      ],
       "coder_agreement": true,
       "coding": {
         "tool": "Murf",
@@ -98,6 +228,15 @@
       "honesty_notes": [
         "This is developer/API pricing, not what a video-creator or SMB-marketer reader pays for Murf Studio — never present this figure as 'what Murf costs' without the Studio/Dub/API three-way disambiguation.",
         "Unchanged from the hub's capture 18 days earlier — a stable, reliably re-fetchable vendor page, in contrast to the still-unverifiable murf.ai/pricing marketing page (see EV-04's honesty_notes for the current state of that gap)."
+      ],
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-29",
+          "source_url": "https://murf.ai/pricing",
+          "claim": "murf.ai/pricing now renders and shows the API plans (Free trial / Pay as you go / Enterprise). CHANGED vs the 2026-08-08 help-center capture: the free trial is now stated as '$10 FREE for API calls' with 'No credit card required' (no '100,000 characters' wording anywhere on the page, and no 'every month' wording either). Pay as you go: Falcon 2.1 text to speech $0.01 per 1,000 characters (real-time, time-to-first-audio under 100ms); Gen2 text to speech $0.03 per 1,000 characters (unchanged rate); Speech to Text beta $0.24/hour; Voice Changer $0.10/minute; Translation $0.02 per 1,000 characters; 'Purchased credit never expires'. The $2 minimum purchase from the August help-center page is not shown on this page. Enterprise: contact sales. Old values kept above.",
+          "quote": "$10 FREE for API calls ... $0.01/1000 characters for Falcon 2.1 ... Text to Speech Studio-quality speech synthesis ... $0.03 / 1000 characters ... Purchased credit never expires",
+          "method": "r.jina.ai text render of the live page"
+        }
       ]
     },
     {
@@ -114,7 +253,10 @@
       "flow_id": "murf-review-2026-08-08",
       "screening": "included",
       "label": "community-report",
-      "coders": ["A", "B"],
+      "coders": [
+        "A",
+        "B"
+      ],
       "coder_agreement": true,
       "coding": {
         "tool": "Murf",
@@ -142,7 +284,10 @@
       "flow_id": "murf-review-2026-08-08",
       "screening": "included",
       "label": "independent-test",
-      "coders": ["A", "B"],
+      "coders": [
+        "A",
+        "B"
+      ],
       "coder_agreement": false,
       "coding": {
         "tool": "Murf",
@@ -170,7 +315,10 @@
       "flow_id": "murf-review-2026-08-08",
       "screening": "included",
       "label": "vendor-claim",
-      "coders": ["A", "B"],
+      "coders": [
+        "A",
+        "B"
+      ],
       "coder_agreement": true,
       "coding": {
         "tool": "Murf",
@@ -183,6 +331,15 @@
         "CRITICAL FINDING: not one of the third-party pricing write-ups surfaced this run (smallest.ai, checkthat.ai, autogpt.net, dynalord.com, youraisoft.com, tekpon.com — all dated within the last 5 months) mentions a 'Growth' tier at all; every one of them describes only Free/Creator/Business/Enterprise. This vendor page is the ONLY source in this sweep confirming a Growth tier exists. Do not silently merge this with the third-party Creator/Business figures (EV-07, EV-08) as if they describe the same complete ladder — they may be describing a stale or incomplete structure. Disclose the gap explicitly: Murf's own docs reference a middle tier that no dated third-party source has priced.",
         "help.murf.ai/upgrading-a-subscription (also direct-fetched this run) independently confirms 'Creator' and 'Growth' as adjacent upgrade-path tier names but states no dollar figures either — consistent with this entry, not separately registered to avoid a redundant entry.",
         "Together with EV-05, this is the strongest available vendor-side evidence for the Studio pricing structure; it should be presented in the page's evidence box as a PARTIAL resolution of the hub's gap, not a full one."
+      ],
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-29",
+          "source_url": "https://murf.ai/pricing",
+          "claim": "Studio dollar prices are still NOT readable on any Murf page on 2026-10-29: murf.ai/pricing renders an API / Studio / Dub switch but the text render shows only API prices; https://murf.ai/pricing/studio returns a 404 'Not Found' page; https://murf.ai/studio/pricing shows a sign-up form with no prices. Creator/Business dollar figures therefore stay third-party-sourced (EV-murf-review-07, EV-murf-review-08). The Creator > Growth > Business order from the August help-center capture was not re-checked today.",
+          "quote": "# 404 ### Not Found We could not find what you were looking for.",
+          "method": "r.jina.ai text render of the live page"
+        }
       ]
     },
     {
@@ -199,7 +356,10 @@
       "flow_id": "murf-review-2026-08-08",
       "screening": "included",
       "label": "vendor-claim",
-      "coders": ["A", "B"],
+      "coders": [
+        "A",
+        "B"
+      ],
       "coder_agreement": true,
       "coding": {
         "tool": "Murf",
@@ -227,7 +387,10 @@
       "flow_id": "murf-review-2026-08-08",
       "screening": "included",
       "label": "vendor-claim",
-      "coders": ["A", "B"],
+      "coders": [
+        "A",
+        "B"
+      ],
       "coder_agreement": true,
       "coding": {
         "tool": "Murf",
@@ -255,7 +418,10 @@
       "flow_id": "murf-review-2026-08-08",
       "screening": "included",
       "label": "research-finding",
-      "coders": ["A", "B"],
+      "coders": [
+        "A",
+        "B"
+      ],
       "coder_agreement": false,
       "coding": {
         "tool": "Murf",
@@ -284,7 +450,10 @@
       "flow_id": "murf-review-2026-08-08",
       "screening": "included",
       "label": "research-finding",
-      "coders": ["A", "B"],
+      "coders": [
+        "A",
+        "B"
+      ],
       "coder_agreement": false,
       "coding": {
         "tool": "Murf",
@@ -313,7 +482,10 @@
       "flow_id": "murf-review-2026-08-08",
       "screening": "included",
       "label": "vendor-claim",
-      "coders": ["A", "B"],
+      "coders": [
+        "A",
+        "B"
+      ],
       "coder_agreement": true,
       "coding": {
         "tool": "Murf",
@@ -341,7 +513,10 @@
       "flow_id": "murf-review-2026-08-08",
       "screening": "included",
       "label": "vendor-claim",
-      "coders": ["A", "B"],
+      "coders": [
+        "A",
+        "B"
+      ],
       "coder_agreement": false,
       "coding": {
         "tool": "Murf",
@@ -369,7 +544,10 @@
       "flow_id": "murf-review-2026-08-08",
       "screening": "included",
       "label": "vendor-claim",
-      "coders": ["A", "B"],
+      "coders": [
+        "A",
+        "B"
+      ],
       "coder_agreement": true,
       "coding": {
         "tool": "Murf",
@@ -397,7 +575,10 @@
       "flow_id": "murf-review-2026-08-08",
       "screening": "included",
       "label": "vendor-claim",
-      "coders": ["A", "B"],
+      "coders": [
+        "A",
+        "B"
+      ],
       "coder_agreement": false,
       "coding": {
         "tool": "Murf",
@@ -426,7 +607,10 @@
       "flow_id": "murf-review-2026-08-08",
       "screening": "included",
       "label": "community-report",
-      "coders": ["A", "B"],
+      "coders": [
+        "A",
+        "B"
+      ],
       "coder_agreement": true,
       "coding": {
         "tool": "Murf",
@@ -454,7 +638,10 @@
       "flow_id": "murf-review-2026-08-08",
       "screening": "included",
       "label": "community-report",
-      "coders": ["A", "B"],
+      "coders": [
+        "A",
+        "B"
+      ],
       "coder_agreement": true,
       "coding": {
         "tool": "Murf",
@@ -482,7 +669,10 @@
       "flow_id": "murf-review-2026-08-08",
       "screening": "included",
       "label": "community-report",
-      "coders": ["A", "B"],
+      "coders": [
+        "A",
+        "B"
+      ],
       "coder_agreement": true,
       "coding": {
         "tool": "Murf",
@@ -510,7 +700,10 @@
       "flow_id": "murf-review-2026-08-08",
       "screening": "included",
       "label": "independent-test",
-      "coders": ["A", "B"],
+      "coders": [
+        "A",
+        "B"
+      ],
       "coder_agreement": false,
       "coding": {
         "tool": "Murf",
@@ -538,7 +731,10 @@
       "flow_id": "murf-review-2026-08-08",
       "screening": "included",
       "label": "independent-test",
-      "coders": ["A", "B"],
+      "coders": [
+        "A",
+        "B"
+      ],
       "coder_agreement": false,
       "coding": {
         "tool": "Murf",
@@ -567,7 +763,10 @@
       "flow_id": "murf-review-2026-08-08",
       "screening": "included",
       "label": "community-report",
-      "coders": ["A", "B"],
+      "coders": [
+        "A",
+        "B"
+      ],
       "coder_agreement": false,
       "coding": {
         "tool": "Murf",

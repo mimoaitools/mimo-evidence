@@ -112,6 +112,15 @@
       "honesty_notes": [
         "Credits are a blended metering unit across TTS, dubbing, voice cloning etc. — 'characters generated' varies by which model is used (V2 Multilingual = 1 credit/char; Flash/Turbo = 0.5-1 credit/char per the page's FAQ) — do not present a single flat 'price per character' without this caveat.",
         "Annual billing is stated by the page to work out to two months free but the exact per-tier annual dollar figures were not extracted verbatim this run — do not invent specific annual prices."
+      ],
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-27",
+          "source_url": "https://elevenlabs.io/pricing",
+          "claim": "Re-read 2026-10-27 in the ElevenLabs review refresh (registry-elevenlabs-review.json, EV-elevenlabs-review-01 recaptures): list prices and credits unchanged (Free $0/10,000; Starter $6/30,000; Creator $22/121,000; Pro $99/600,000; Scale $299/1.8M; Business $990/6M). Cited on this page as 'still listed when re-read on October 27, 2026'; the $1.64 per-script Creator figure is unchanged.",
+          "quote": "Unused credits roll over for up to two months, up to 2x your monthly quota, so your balance can reach at most 3x your monthly quota ... Rollover does not apply to the Free plan.",
+          "method": "live re-read 2026-10-27 (curl/WebFetch), reused from the ElevenLabs review shard"
+        }
       ]
     },
     {
@@ -196,6 +205,16 @@
       "honesty_notes": [
         "CRITICAL GAP: do not present a specific Murf Studio monthly price ($19, $29 etc.) as vendor-confirmed in the published page — those figures come only from third-party aggregator search summaries this run, never from a direct vendor fetch. If the page needs a Studio price, either attempt a fresh fetch at publish time or clearly attribute the figure to a named third-party source, never to 'Murf states'.",
         "This asymmetry (API pricing verified, Studio pricing not) should be disclosed in the page's limitations paragraph, not silently smoothed over."
+      ],
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-29",
+          "source_url": "https://murf.ai/pricing",
+          "claim": "murf.ai/pricing re-read 2026-10-29 now shows the API plans only: Free trial with '$10 FREE for API calls', 'No credit card required', all API endpoints, 150+ voices in 35+ languages; Pay as you go: Gen2 TTS $0.03 / 1000 characters, Falcon 2.1 TTS $0.01 / 1000 characters (time-to-first-audio under 100ms), Speech to Text beta $0.24/hour, Voice Changer $0.10/minute, Translation $0.02/1000 characters, purchased credit never expires; Enterprise contact sales. CHANGE vs July: the free allowance is now stated as $10 of API credit, not 100,000 characters; a second, cheaper model (Falcon 2.1) is priced. Studio consumer prices still printed on no readable murf.ai page (murf.ai/pricing/studio 404; murf.ai/studio/pricing shows no prices). CONFLICT: the original EV-04 source (help.murf.ai/murf-api-plans-and-limits), re-read the same day, still says 'you will be allotted 100,000 characters' for the Free Trial and $0.03 per 1000 characters (minimum $2) for pay-as-you-go. The page uses the pricing page and names the disagreement.",
+          "quote": "$10 FREE for API calls ... No credit card required ... $0.01/1000 characters for Falcon 2.1 ... Text to Speech Studio-quality speech synthesis ... $0.03 / 1000 characters ... Purchased credit never expires",
+          "method": "r.jina.ai text render of the live page",
+          "supersedes": "2026-07-21 free-trial figure of 100,000 characters (help-center doc) as the page's headline free allowance; July value kept above"
+        }
       ]
     },
     {
@@ -280,6 +299,16 @@
       "honesty_notes": [
         "Third-party aggregator sites (not vendor-fetched this run) report an annual-equivalent figure around $11.58-$139/year — do NOT present that as vendor-confirmed; only the $29/mo monthly figure was directly verified on speechify.com this run.",
         "Speechify also sells separate Audiobooks and Studio products at different price points per third-party sources — not verified here, out of scope for the free-vs-Premium core comparison this entry supports."
+      ],
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-29",
+          "source_url": "https://speechify.com/pricing/",
+          "claim": "speechify.com/pricing/ re-read 2026-10-29: Free (10 robotic sounding voices, up to 1.5x, text to speech only) and Premium '$29/Month' 'or $139 billed yearly' with a 'SAVE 60%' yearly toggle. CHANGE vs July: the vendor page now prints the annual figure itself ($139 billed yearly), so $139 is vendor-stated, no longer only a third-party consensus. A live 2023 Speechify blog that says $159/yr (noted in the Speechify review shard) is history, not the current price.",
+          "quote": "$29/Month ... or $139 billed yearly",
+          "method": "r.jina.ai text render of the live page",
+          "supersedes": "2026-07-21 note that the annual dollar figure was not extractable from the vendor page"
+        }
       ]
     },
     {
@@ -363,6 +392,16 @@
       "honesty_notes": [
         "WellSaid's metering unit (downloaded minutes) is NOT directly comparable to ElevenLabs/Murf's character-based credits or Resemble's per-second pricing — never build a single 'cheapest per X' table across all 7 tools without converting units and disclosing the conversion assumption.",
         "This is the only tool of the 6 live candidates where the FULL current pricing ladder was vendor-verified on the first direct fetch attempt, no JS-rendering issues encountered."
+      ],
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-29",
+          "source_url": "https://www.wellsaid.io/ai-voice-pricing",
+          "claim": "WellSaid pricing re-read 2026-10-29 (wellsaid.io/ai-voice-pricing and wellsaid.io/pricing): unchanged vs July. Trial free 3 min/mo; Starter $19 monthly or $10/mo billed annually ($120/yr), 20 min/mo; Pro $49 monthly or $33/mo billed annually ($396/yr), 180 min/mo; Business $160/mo per user billed annually ($1,920/yr), 2,880 min/yr per user, 1-5 seats; Enterprise custom. The page shows no promotional first-month price.",
+          "quote": "Starter $19 monthly or $10/mo billed annually ... Pro $49 monthly or $33/mo billed annually ... Business $160/mo/user billed annually",
+          "method": "r.jina.ai text render of the live page",
+          "supersedes": "none (confirms July values)"
+        }
       ]
     },
     {
@@ -501,6 +540,16 @@
       },
       "honesty_notes": [
         "Present alongside EV-14, not instead of it — the two reviews describe different dimensions (voice quality vs. data/library reliability) and both are needed for an honest picture."
+      ],
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-29",
+          "source_url": "https://lovo.ai/pricing",
+          "claim": "LOVO pricing re-check 2026-10-29: lovo.ai/pricing, genny.lovo.ai/pricing and the lovo.ai homepage all returned HTTP 402 with a 'Deployment Paused' page instead of LOVO content. No LOVO price could be read; the page says the site was paused on this date and does not interpret why. Logged on this LOVO entry because the shard holds no LOVO pricing entry (July pricing never loaded either).",
+          "quote": "This deployment is temporarily paused",
+          "method": "r.jina.ai text render of the live page",
+          "supersedes": "none (adds a dated site-status observation)"
+        }
       ]
     },
     {
@@ -557,6 +606,16 @@
       "honesty_notes": [
         "The page's own TTS second-rate ($0.0005/sec, i.e. $0.03/min) was reported by WebSearch synthesis but the exact per-second TTS figure was not independently re-confirmed inside THIS specific direct fetch's extracted text — cross-check against EV-18 (voiceflow.com), which does independently state the same $0.0005/sec figure, before publishing a specific number.",
         "This positions Resemble as structurally different from the other 5 live tools (no flat monthly plan a solo creator can budget against) — an honest differentiator for the listicle's comparison table, not a value judgment."
+      ],
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-29",
+          "source_url": "https://www.resemble.ai/pricing",
+          "claim": "resemble.ai/pricing re-read 2026-10-29 (r.jina.ai render plus the raw HTML for the rate table): the page is now titled 'Deepfake Detection & AI Security Pricing' and prices only detection products. Flex $0/mo, buy credits as you go, credits never expire, 1 team seat included; Team $350/mo ($280/mo billed annually), 5 seats; Business $1,000/mo ($800/mo annually), 20 seats; Enterprise custom. Processing rates listed are for Resemble Detect (audio $0.035/sec on Flex), Intelligence, Identity, Watermarker and Agent Detection only. CHANGE vs July: no voice-generation (TTS / cloning) rate and no $20/month team-seat add-on appear on the page; voice product URLs tried (/voice-pricing, /text-to-speech, /products/voice-cloning) return 404. The page's $0.30-per-script Resemble figure therefore rests on the July rate stated by EV-18 and is labelled as dated.",
+          "quote": "For builders and teams exploring detection with no subscription fee. $0/mo Buy credits as you go ... No, credits on the Flex Plan never expire.",
+          "method": "r.jina.ai text render of the live page (plus raw HTML fetch of the same URL for the processing-rate table)",
+          "supersedes": "2026-07-21 reading of a voice Flex plan billed per second plus $20/month team seats, as the current vendor statement"
+        }
       ]
     },
     {
@@ -641,6 +700,16 @@
       "honesty_notes": [
         "This is the strongest single fact in the entire shard for the listicle's editorial framing: PlayHT should be EXCLUDED from the ranked list entirely (not merely 'listed, not scored') and instead called out as a defunct-tool cautionary note, since recommending signup to a dead product would actively mislead readers.",
         "Independently corroborated by EV-19 (infrabase.ai) and by this run's own live infrastructure evidence (every play.ht/* URL failed DNS resolution) — three independent, dated, mutually-consistent signals."
+      ],
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-29",
+          "source_url": "https://play.ht/pricing",
+          "claim": "PlayHT re-check 2026-10-29: r.jina.ai could not resolve play.ht ('Failed to resolve domain'), and a local DNS lookup returned no address. Consistent with the documented 2025-12-31 shutdown.",
+          "quote": "Failed to resolve domain 'play.ht'",
+          "method": "r.jina.ai text render of the live page",
+          "supersedes": "none"
+        }
       ]
     },
     {
@@ -669,6 +738,16 @@
       "honesty_notes": [
         "FLAGGED for resolver: this is the thinnest-evidence tool in the shard — a single third-party source, no vendor-page verification, no Capterra/G2/Reddit data, no hands-on test. It is the free/no-affiliate baseline candidate the brief requested, but should be presented as 'listed, not scored' — do not assign it a numeric rubric score alongside the 4 tools with richer evidence.",
         "freetts.ai's own affiliate/methodology status was not separately audited — treat this entry as color/context for the free-tier landscape, not as a rigorously vetted primary source."
+      ],
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-29",
+          "source_url": "https://ttsmaker.com",
+          "claim": "TTSMaker homepage re-read 2026-10-29: it loaded (title 'Free Text to Speech Online'; it was unreachable in July) and labels many voices 'unlimited' (e.g. '(hot + unlimited)'), but the text render prints no weekly character figure, no-signup statement or commercial-use terms. The ~20,000 characters/week figure therefore still rests on the third-party source of this entry.",
+          "quote": "Free Text to Speech Online ... (hot + unlimited)",
+          "method": "r.jina.ai text render of the live page",
+          "supersedes": "July note that the vendor site was unreachable"
+        }
       ]
     }
   ]
