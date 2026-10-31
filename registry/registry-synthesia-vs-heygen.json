@@ -1,0 +1,663 @@
+{
+ "_meta": {
+  "flow_id": "synthesia-vs-heygen-2026-09-22",
+  "protocol_version": "MEP-1.0",
+  "target_slug": "/vs/synthesia-vs-heygen",
+  "target_keyword": "synthesia vs heygen",
+  "run_date": "2026-09-22",
+  "collector": "evidence-curator",
+  "page_class": "vs/two-tool head-to-head comparison. Downstream of two live satellites (/tools/synthesia, registry-synthesia-review.json, run 2026-08-13; /tools/heygen, registry-heygen-review.json, run 2026-08-15). REUSE-FIRST per task instruction: both shards' entries are cited BY REFERENCE, not re-registered. This shard runs a TARGETED gap sweep only for 8 named items the two reviews do not already cover or that are stale (>5 weeks old pricing).",
+  "sweep_strategy": "Eight targeted, documented queries/fetches, one per named gap: (1) direct re-fetch of heygen.com/pricing and synthesia.io/pricing today to check for drift since the 2026-08-13/08-15 captures; (2) direct re-fetch of blogrecode.com's 50-video test with a RAW HTML curl+grep pass (not WebFetch-summary-only) after the WebFetch tool's own summary produced numbers ($1.90/min, $1.44/min) that could not be reproduced from the page's raw text -- registered only what the raw HTML actually contains, with the discrepancy disclosed; (3) direct fetch of Synthesia's credits help article for API-specific credit cost (75 credits/min vs 120 credits/min standard), HeyGen's API PAYG entry reused by reference; (4) direct fetch of heygen.com/pricing's own plan-comparison table to fact-check heygen.com/synthesia-alternative's 'SCORM on all plans including Free' claim -- found FALSE, SCORM is Business/Enterprise-gated per HeyGen's own primary pricing page; (5) direct fetch of synthesia.io/features/ai-dubbing and synthesia.io/features/languages today, both vendor pages, for two DISTINCT current language-count claims; (6) direct fetch of learn.g2.com/synthesia-vs-heygen for G2 ratings/category scores, registered as attributed-to-that-page only (Mimo's own G2 fetches return 403, as documented in both sibling shards); (7) consent mechanics reused by reference from both sibling shards, no new fetch; (8) direct fetch of heygen.com/privacy and heygen.com/trust-and-safety to fact-check heygen.com/synthesia-alternative's 'data NOT used for AI training / explicitly guaranteed' claim -- found the claim OVERSTATES HeyGen's own primary policy (non-Enterprise customer data IS used for training by default, opt-out only; only Enterprise data is excluded), and a parallel direct fetch of Synthesia's privacy-policy and security-practices pages found NO explicit statement either way (silence, not a denial) -- corroborating the vendor-alternative-page's own 'no explicit guarantee' framing for Synthesia specifically, while contradicting its framing of HeyGen's own practice.",
+  "flow_counter": {
+   "identified": 19,
+   "screened": 19,
+   "excluded": 6,
+   "excluded_by_reason": {
+    "duplicate": 3,
+    "unverifiable-this-run": 2,
+    "no-methodology-affiliate": 1
+   },
+   "included_sources": 13,
+   "registry_entries_new": 13,
+   "entries_reused_by_reference": 9,
+   "counter_note": "identified = 19 distinct candidate URLs/fetches across the 8 documented gap-items above: heygen.com/pricing (fresh), synthesia.io/pricing (fresh), blogrecode.com (WebFetch summary attempt -- superseded), blogrecode.com (raw curl re-fetch -- the verification source actually registered), learn.g2.com/synthesia-vs-heygen, heygen.com/synthesia-alternative, help.synthesia.io/en/articles/11972627 (API credit rate), docs.synthesia.io/reference/introduction (checked, no pricing found -- excluded duplicate/no-new-info), www.synthesia.io/api (404 -- unverifiable-this-run), www.synthesia.io/features/api (404 -- unverifiable-this-run), WebSearch 'Synthesia API pricing per minute' (9 no-methodology-affiliate pricing-tracker results, none independently fetched -- 1 counted as excluded no-methodology-affiliate representative, the rest are the SAME recurring content-mill domains already excluded in both sibling shards and not re-tallied), synthesia.io/features/ai-dubbing (fresh), synthesia.io/features/languages (fresh), heygen.com/privacy, heygen.com/trust-and-safety, WebSearch 'HeyGen data training privacy policy' (corroborating search, folded into the two direct fetches), synthesia.io/legal/privacy-policy (fresh), synthesia.io/legal/security-practices (fresh re-check), help.heygen.com/en/articles/10549082 (SCORM how-to -- fetched, no plan-gating language found, excluded duplicate since heygen.com/pricing's own table already carries the gating fact). 13 new entries registered (EV-synthesia-vs-heygen-01 through -13). Consent mechanics (item 7) and API PAYG pricing (part of item 3) are covered entirely by reuse of EV-synthesia-review-10, EV-heygen-review-06, EV-heygen-review-07, EV-heygen-review-15 -- no new fetch needed, 4 of the 9 reused-by-reference entries. The other 5 reused-by-reference entries (EV-heygen-review-01/17, EV-synthesia-review-01/03/11) are cited alongside the fresh re-captures below for direct before/after comparison."
+  },
+  "coder_agreement_rate": "CURATOR-PROVISIONAL single-pass coding across all 13 new entries (dual-independent coding + resolver pass orchestrated above this run). Stance calls: 9 n/a (vendor-primary pricing/policy/feature facts), 2 research-finding (blogrecode reconciliation, API derived cost), 1 vendor-claim fact-checked as false (SCORM-on-Free), 1 vendor-claim fact-checked as overstated (AI-training guarantee). FLAGGED FOR RESOLVER: (1) EV-synthesia-vs-heygen-03 (blogrecode raw-HTML re-verification) -- a coder could ask whether the earlier phase-1 SERP file's own '$3.48/min vs $7.68/min' figures should be treated as a documented prior-phase error needing a correction note elsewhere in the pipeline, not just flagged here; this entry registers only what THIS run could verify from the source itself. (2) EV-synthesia-vs-heygen-08 (HeyGen privacy-policy AI-training finding) -- this is a genuine fact-check contradicting a vendor's own comparison-page marketing claim using that SAME vendor's primary legal document; a coder should confirm the page frames this as 'HeyGen's own privacy policy says X, its marketing page claims Y' rather than an accusation of bad faith.",
+  "query_census": [
+   {
+    "q": "DIRECT: WebFetch https://www.heygen.com/pricing (fresh 2026-09-22 re-verification, >5 weeks after the 2026-08-15 capture)",
+    "candidates": 0,
+    "note": "Known URL. Re-verification, not discovery. Confirmed Creator still 600 credits/mo, Pro 1,000, Business 1,500, Free 3 videos/mo x 1 min -> INCLUDED (EV-synthesia-vs-heygen-01)."
+   },
+   {
+    "q": "DIRECT: WebFetch https://www.synthesia.io/pricing (fresh 2026-09-22 re-verification, >5 weeks after the 2026-08-13 capture)",
+    "candidates": 0,
+    "note": "Known URL. Re-verification. Confirmed Basic/Free: 10 min/mo, 9 avatars, 0 personal avatars (this run's fetch explicitly states '0' where the 2026-08-13 capture left the Free-tier personal-avatar count UNRESOLVED per EV-synthesia-review-11) -> INCLUDED (EV-synthesia-vs-heygen-02), closing that sibling gap."
+   },
+   {
+    "q": "DIRECT: WebFetch https://blogrecode.com/synthesia-vs-heygen-comparison-creating-ai-videos/ (methodology/cost extraction, first pass)",
+    "candidates": 0,
+    "note": "WebFetch tool's own summarization produced per-minute figures ($1.90/min Synthesia, $1.44/min HeyGen Avatar III) not traceable to the page's raw text on a follow-up check -- SUPERSEDED, not registered, by the raw curl+grep pass below."
+   },
+   {
+    "q": "DIRECT: curl (raw HTML) https://blogrecode.com/synthesia-vs-heygen-comparison-creating-ai-videos/ + regex text-extraction around every dollar figure and 'per minute' mention",
+    "candidates": 1,
+    "note": "Confirmed via raw page text: 50-video same-script test (2-min product-explainer script), published 2026-03-12, updated 2026-08-17, author Mia Elvasia. Synthesia: 3 months of service (Starter $18/mo annual + one Creator $64/mo upgrade) = $95 total. HeyGen Avatar III: Creator $24/mo x 3 months = $72. HeyGen Avatar IV: $72 base + $312 in credit packs = $384 (because Avatar IV burns 20 premium credits/min against a 200-credit/month Creator allotment the article describes, which at the test's 100 finished minutes would take 2,000 credits, ten such allotments; the article's own itemizations do not reconcile). Separate $289 'credit burn' narrative (a differently-scoped 25-video lip-sync-translation scenario) plus these totals roll up to the headline '$673' figure. NO explicit per-finished-minute dollar figure (e.g. '$3.48/min', '$7.68/min') appears anywhere in the page's raw text -- confirmed by targeted regex search for both strings, which matched only unrelated SVG path-coordinate noise, not article prose -> INCLUDED (EV-synthesia-vs-heygen-03) with this non-finding explicitly disclosed."
+   },
+   {
+    "q": "DIRECT: WebFetch https://help.synthesia.io/en/articles/11972627-what-are-credits-and-how-do-they-work-on-self-serve-plans (targeted re-fetch for API-specific credit rate)",
+    "candidates": 0,
+    "note": "Already-identified in the Synthesia sibling shard (folded into EV-synthesia-review-14's honesty_notes there without extracting the API-specific rate); this run's targeted re-read surfaced a NEW, previously-unextracted fact: '1 minute of API usage = 75 credits' vs '2 credits per second' (120 credits/min) for standard editor usage -> INCLUDED (EV-synthesia-vs-heygen-04)."
+   },
+   {
+    "q": "DIRECT: WebFetch https://docs.synthesia.io/reference/introduction (Synthesia API pricing page, targeted)",
+    "candidates": 0,
+    "note": "Confirmed page states plan-availability differs by API but discloses NO dollar pricing -> folded into EV-synthesia-vs-heygen-04's honesty_notes as a disclosed gap (no independent Synthesia API dollar-price page exists), not separately registered."
+   },
+   {
+    "q": "DIRECT: WebFetch https://www.synthesia.io/api and https://www.synthesia.io/features/api (candidate API-pricing landing pages)",
+    "candidates": 2,
+    "note": "Both returned HTTP 404 -> unverifiable-this-run, not registered."
+   },
+   {
+    "q": "WebSearch: Synthesia API pricing per minute developer 2026",
+    "candidates": 9,
+    "note": "arcade.software, creatify.ai, capterra.com/pricing-aggregator, eesel.ai, usevelo.ai, knowlify.com, checkthat.ai, fluxnote.io, aitoolsdevpro.com -- ALL no-methodology-affiliate pricing-tracker mills (the same recurring domain set documented in both sibling shards), none independently fetched; one representative counted in the exclusion tally, the rest treated as the same already-documented content-mill class per both sibling shards' own precedent."
+   },
+   {
+    "q": "DIRECT: WebFetch https://www.synthesia.io/features/ai-dubbing (fresh 2026-09-22 re-verification, >5 weeks after the 2026-08-13 capture)",
+    "candidates": 0,
+    "note": "Re-confirmed unchanged: '140+ languages' for AI dubbing/video-translation specifically -> INCLUDED (EV-synthesia-vs-heygen-05)."
+   },
+   {
+    "q": "DIRECT: WebFetch https://www.synthesia.io/features/languages (fresh 2026-09-22 -- this specific URL was NOT independently reproduced by direct fetch in the 2026-08-13 sweep, only flagged as an unreproduced search-title variant)",
+    "candidates": 0,
+    "note": "THIS run successfully direct-fetched the page and confirmed '160+ Languages & Accents' for general voice/language selection (a DIFFERENT, broader feature than AI dubbing) -> INCLUDED (EV-synthesia-vs-heygen-06), resolving the 140-vs-160 flag left open in EV-synthesia-review-04's honesty_notes -- both figures are real, current, and describe different features."
+   },
+   {
+    "q": "DIRECT: WebFetch https://learn.g2.com/synthesia-vs-heygen (G2 ratings/category-score attribution)",
+    "candidates": 0,
+    "note": "Known top-ranked competitor URL from Phase 1's own SERP/competitor audits. Direct-fetched this run for the specific figures -> INCLUDED (EV-synthesia-vs-heygen-07), attributed explicitly to this third-party page, not to a direct Mimo G2 fetch (which remains 403-blocked per both sibling shards)."
+   },
+   {
+    "q": "DIRECT: WebFetch https://www.heygen.com/synthesia-alternative (vendor comparison page, fact-check source for SCORM/translation/AI-training claims)",
+    "candidates": 0,
+    "note": "Already-identified by Phase 1's competitor audit. Direct-fetched this run for exact quotes on SCORM/translation-on-all-plans and the AI-training-data guarantee -> INCLUDED (EV-synthesia-vs-heygen-08, the vendor-claim entry being fact-checked)."
+   },
+   {
+    "q": "DIRECT: WebFetch https://www.heygen.com/pricing (2nd targeted pass, plan-comparison feature table specifically -- SCORM and translation rows)",
+    "candidates": 0,
+    "note": "Confirmed SCORM Export shows checkmarks ONLY for Business and Enterprise tiers on HeyGen's own primary pricing table -- DIRECTLY CONTRADICTS heygen.com/synthesia-alternative's 'SCORM ... from the free plan' claim -> INCLUDED (EV-synthesia-vs-heygen-09). Also surfaced that the Free plan itself shows '30+ languages' for translation vs '175 languages & dialects' on all paid plans -- a genuinely new nuance not previously registered -> folded into EV-synthesia-vs-heygen-09 rather than split into a separate entry (same source, same fetch)."
+   },
+   {
+    "q": "WebSearch: HeyGen SCORM export free plan help",
+    "candidates": 9,
+    "note": "heygen.com/pricing (dup, already the primary source above), eesel.ai (dup content-mill), heygen.com/academy/scorm x2 variants + help.heygen.com/en/articles/10549082 (how-to pages, fetched -- see below), konabayev.com, vidmetoo.com, aivideopicks.com (3x no-methodology-affiliate, corroborate but not independently fetched), community.heygen.com (unofficial community mirror, not independently fetched)."
+   },
+   {
+    "q": "DIRECT: WebFetch https://help.heygen.com/en/articles/10549082-how-to-export-heygen-videos-using-scorm",
+    "candidates": 0,
+    "note": "Confirmed this specific how-to article contains NO plan-gating statement (describes the export steps only) -> duplicate/no-new-information relative to EV-synthesia-vs-heygen-09's pricing-table source; not separately registered."
+   },
+   {
+    "q": "DIRECT: WebFetch https://www.heygen.com/privacy (AI-training data-use fact-check)",
+    "candidates": 0,
+    "note": "Confirmed: 'To train and enhance the models that power our products and services... You may request to opt-out' -- non-Enterprise customer data IS used for training by default (opt-out, not opt-in exclusion) -> INCLUDED (EV-synthesia-vs-heygen-10)."
+   },
+   {
+    "q": "DIRECT: WebFetch https://www.heygen.com/trust-and-safety (Enterprise-vs-non-Enterprise data-training distinction, corroborating fetch)",
+    "candidates": 0,
+    "note": "Confirmed distinct enterprise-exclusion language: 'we ensure that our enterprise customers' data is not used to train our AI systems... Non-enterprise customers may be used to train and enhance the models... Users may opt-out' -> INCLUDED (EV-synthesia-vs-heygen-11), corroborating EV-synthesia-vs-heygen-10 from a second HeyGen primary page."
+   },
+   {
+    "q": "DIRECT: WebFetch https://www.synthesia.io/legal/privacy-policy (AI-training data-use fact-check, Synthesia side)",
+    "candidates": 0,
+    "note": "Confirmed NO explicit statement either confirming or denying that Customer Data is used for AI-model training -- only a general 'process usage information... for internal research' clause that does not specifically address Customer Data -> INCLUDED (EV-synthesia-vs-heygen-12)."
+   },
+   {
+    "q": "DIRECT: WebFetch https://www.synthesia.io/legal/security-practices (2nd targeted pass, specifically for AI-training language, >5 weeks after the 2026-08-13 EV-synthesia-review-06 capture)",
+    "candidates": 0,
+    "note": "Re-confirmed: this page (already registered for SOC2/ISO42001/GDPR/EU-residency facts as EV-synthesia-review-06) contains NO statement about AI-model training use of customer data at all -> INCLUDED (EV-synthesia-vs-heygen-13), corroborating EV-synthesia-vs-heygen-12's silence-not-denial finding from a second Synthesia primary page."
+   }
+  ],
+  "reddit_access_note": "No new Reddit sweep run this shard -- both sibling shards already documented an environment-wide site:reddit.com block (zero reddit.com URLs surfaced across 3 independent dedicated queries spanning 2026-08-10 to 2026-08-15) and this run's task scope is a targeted 8-item gap sweep, not a fresh full census. Community sentiment for this comparison continues to route through the Capterra reviews already registered in both sibling shards (9 Synthesia + 7 HeyGen individually dated reviews on file).",
+  "astroturf_note": "No new low-trust domains were fetched or cited this run beyond the WebSearch discovery pass for Synthesia API pricing, which surfaced the SAME recurring content-mill/pricing-tracker domain set (arcade.software, eesel.ai, usevelo.ai, knowlify.com, checkthat.ai, fluxnote.io, creatify.ai, aitoolsdevpro.com, capterra.com's own pricing-aggregator page) already screened and excluded as no-methodology-affiliate in both sibling shards -- no templated-persona-network pattern observed, consistent with both prior findings. Zero astroturf-pattern sources registered or cited.",
+  "entries_reused_by_reference": [
+   "EV-heygen-review-01 (heygen.com/pricing, 2026-08-15 capture, 600 credits/mo; requoted 2026-09-22 to add HeyGen's own credit-rollover language from help.heygen.com/15125761) -- cited alongside this run's fresh EV-synthesia-vs-heygen-01 re-verification for a direct before/after comparison, NOT re-registered.",
+   "EV-heygen-review-17 (heygen.com/translate, 2026-08-15 capture, 175+ languages) -- cited by original ID for the vs-page's side-by-side language sentence.",
+   "EV-synthesia-review-01 (synthesia.io/pricing, 2026-08-13 capture) -- cited alongside this run's fresh EV-synthesia-vs-heygen-02 re-verification.",
+   "EV-synthesia-review-03 (Synthesia derived per-minute math, $2.13-$2.97/min Creator tier) -- cited by original ID as the anchor figure the blogrecode reconciliation (EV-synthesia-vs-heygen-03) is checked against.",
+   "EV-heygen-review-04 (HeyGen derived per-minute math, ~$0.97/min at 600 credits) -- cited by original ID as the anchor figure the blogrecode reconciliation is checked against.",
+   "EV-synthesia-review-11 (Free-tier personal-avatar count, previously UNRESOLVED) -- cited alongside EV-synthesia-vs-heygen-02, which this run's fresh capture now resolves to 0; writer should present this as a resolution, referencing both IDs, not silently overwrite the earlier unresolved entry.",
+   "EV-synthesia-review-10 (Synthesia personal-avatar consent flow: live consent video, identity match, 18+ check) -- cited by original ID for the vs-page's consent-mechanics comparison table, no new fetch needed.",
+   "EV-heygen-review-06 (HeyGen custom-avatar consent flow: live/QR-code consent video, identity match, 24-hour link expiry) -- cited by original ID for the same table.",
+   "EV-heygen-review-07 (HeyGen consent-revocation right, the 'Actor' may request likeness removal at any time) -- cited by original ID; Synthesia's sibling shard has no equivalent post-creation revocation-right entry on file, a genuine asymmetry the vs-page should state plainly rather than imply parity.",
+   "EV-heygen-review-15 (HeyGen API PAYG pricing, requoted 2026-09-22: a per-engine table, not a flat rate -- Avatar III Studio Avatar $0.99/min, Avatar IV Studio Avatar/Digital Twin $4.83/min, Precision Lip Sync translation $1.50/min; no free credits since Feb 2026, PAYG credits expire after 12 months, page last updated September 16, 2026) -- cited by original ID for the vs-page's API face-off; the Synthesia side of that face-off is this run's new EV-synthesia-vs-heygen-04 (75 credits/min API rate, no independent dollar-price page found)."
+  ],
+  "refreshes": [
+   {
+    "date": "2026-10-27",
+    "by": "refresh-2026-10-27 (live curl/WebFetch)",
+    "note": "Price re-check promised for 2026-10-29 run early: Synthesia moved to a credit ladder, HeyGen help center changed per-minute credit burn; recaptures on -01, -02, -04, -09; new entries -14, -15 (sources already on file, so included-source count stays 48)."
+   }
+  ]
+ },
+ "entries": [
+  {
+   "id": "EV-synthesia-vs-heygen-01",
+   "claim": "Re-fetching HeyGen's live pricing page today (2026-09-22, 5 weeks 2 days after the sibling review's 2026-08-15 capture, EV-heygen-review-01) confirms the pricing ladder is UNCHANGED: Free $0/mo (3 videos/mo, max 1 min each), Creator $29/mo (600 credits), Pro $49/mo (1,000 credits), Business $149/mo (1,500 credits). The Creator-tier credit figure remains 600, not the 200 figure a third-party tracker states (see EV-heygen-review-02, reused).",
+   "source_url": "https://www.heygen.com/pricing",
+   "source_date": "2026-09-22",
+   "quote": "Free: $0/month, 3 videos/month, max 1 min each. Creator: $29/mo, 600 credits. Pro: $49/mo, 1,000 credits. Business: $149/mo, 1,500 credits.",
+   "platform": "heygen.com/pricing (vendor pricing page -- self-interested; independently re-verified live 2026-09-22)",
+   "target_slug": "/vs/synthesia-vs-heygen",
+   "collected_at": "2026-09-22",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "synthesia-vs-heygen-2026-09-22",
+   "screening": "included",
+   "label": "vendor-claim",
+   "coders": [
+    "A",
+    "B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "HeyGen",
+    "aspect": "pricing-ladder stability re-check, 38 days after the sibling review's capture",
+    "stance": "n/a",
+    "plan_tier_if_stated": "all 4 self-serve tiers, unchanged",
+    "item_date": "2026-09-22"
+   },
+   "honesty_notes": [
+    "This re-check specifically closes out the task's freshness requirement ('prices are >5 weeks old') -- no drift found; do not present this as new information, present as 'still current as of [date]'.",
+    "This run's fetch did not re-extract the per-feature credit-burn rates (Avatar III 3cr/min, Avatar IV/V 20cr/min, dubbing 2cr/min, translation 5cr/min) -- those remain sourced to EV-heygen-review-01's 2026-08-15 capture; use that ID for the burn-rate figures, this one only for plan/credit-allotment stability."
+   ],
+   "recaptures": [
+    {
+     "recaptured_at": "2026-10-27",
+     "source_url": "https://www.heygen.com/pricing",
+     "claim": "HeyGen's pricing page on 2026-10-27 shows the same ladder: Free $0 (3 videos a month, watermarked, up to 1 minute each, 30+ languages), Creator $29/mo (600 credits, credits roll over one month), Pro $49/mo (1,000 credits; Pro tiers range from 1,000 credits/mo at $49 to 100,000 credits/mo at $4,300, intermediate tier prices not present in the static page), Business $149/mo (1,500 credits) plus $20/seat/month. New on the page: Creator at $24/month if paid annually. FAQ: monthly credits roll over one more month; annual subscribers' credits accumulate until renewal; Creator and Pro upgrade for more credits, Business buys one-time packs.",
+     "quote": "For solo creators, the Creator plan costs $29/month (or $24/month if you pay annually). ... Tiers range from 1,000 credits/mo at $49 to 100,000 credits/mo at $4,300.",
+     "supersedes": "nothing in the ladder; adds the annual Creator price ($24/mo) not captured on 2026-09-22",
+     "collector": "refresh-2026-10-27 (live curl/WebFetch)"
+    }
+   ]
+  },
+  {
+   "id": "EV-synthesia-vs-heygen-02",
+   "claim": "Re-fetching Synthesia's live pricing page today (2026-09-22, 5 weeks 6 days after the sibling review's 2026-08-13 capture, EV-synthesia-review-01) confirms the same 4-tier ladder: Basic/Free $0/mo (10 min/mo, 9 avatars, 0 personal avatars), Starter $29/mo monthly / $18/mo annual (125+ avatars, 3 personal avatars), Creator $89/mo monthly / $64/mo annual (180+ avatars, 5 personal avatars), Enterprise custom (240+ avatars, unlimited personal avatars). This capture explicitly states '0' personal avatars for the Basic/Free tier, resolving the reconciliation the sibling shard's EV-synthesia-review-11 left UNRESOLVED.",
+   "source_url": "https://www.synthesia.io/pricing",
+   "source_date": "2026-09-22",
+   "quote": "Basic (Free): $0/month, 10 minutes/month, 9 AI avatars, 0 personal avatars, no credit card required, 160+ languages and voices. Starter: $29/mo ($18/mo billed yearly), 125+ avatars, 3 personal avatars. Creator: $89/mo ($64/mo billed yearly), 180+ avatars, 5 personal avatars. Enterprise: custom, 240+ avatars, unlimited personal avatars.",
+   "platform": "synthesia.io/pricing (vendor pricing page -- self-interested; independently re-verified live 2026-09-22)",
+   "target_slug": "/vs/synthesia-vs-heygen",
+   "collected_at": "2026-09-22",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "synthesia-vs-heygen-2026-09-22",
+   "screening": "included",
+   "label": "vendor-claim",
+   "coders": [
+    "A",
+    "B"
+   ],
+   "coder_agreement": false,
+   "coding": {
+    "tool": "Synthesia",
+    "aspect": "pricing-ladder stability re-check; Free-tier personal-avatar count now resolved to 0",
+    "stance": "n/a",
+    "plan_tier_if_stated": "all 4 tiers, unchanged pricing; personal-avatar count Free=0 (new resolution)",
+    "item_date": "2026-09-22"
+   },
+   "honesty_notes": [
+    "EV-synthesia-review-11 (2026-08-13) explicitly flagged the Free-tier personal-avatar count as UNRESOLVED after two contradictory extraction passes on the same page. This run's fresh, single-pass fetch reads cleanly as 0. Present as 'now confirmed 0 as of 2026-09-22' rather than silently replacing the earlier entry -- the prior page's own client-rendering instability is itself worth a one-line honesty note if the vs-page discusses this figure.",
+    "coder_agreement flagged false: a resolver should judge whether one clean fresh read is sufficient to fully retire EV-synthesia-review-11's unresolved flag, or whether the page should still note that Synthesia's own pricing page has shown extraction inconsistency on this exact figure before."
+   ],
+   "recaptures": [
+    {
+     "recaptured_at": "2026-10-27",
+     "source_url": "https://www.synthesia.io/pricing",
+     "claim": "Synthesia's pricing page on 2026-10-27 replaces the minute ladder with credits: 'Credits are now the shared currency across all AI usage-based features'. Every plan includes 10 minutes of video creation or dubbing, 3 survey responses and 500 credits a month. Basic $0 (watermark, 9 AI avatars, 1 editor). Starter $19/mo monthly ($9 first month) or $14/mo billed yearly ($168/yr), 1,250 credits/mo ('Up to ~12 minutes of video / month, on top of the free allowance'), 1 editor + 3 guests, 125+ avatars, 3 personal avatars. Pro $89/mo monthly ($49 first month) or $59/mo billed yearly ($708/yr), 6,000 credits/mo (up to ~60 extra minutes), 1 editor + 5 guests, 180+ avatars, 5 personal avatars, higher Pro credit levels up to 48,000/mo. Enterprise custom: unlimited video minutes, 240+ avatars, unlimited personal avatars, SCORM export. No Creator plan is listed. FAQ: 'A typical finished minute uses about 100 credits, more if the avatar is on screen throughout'; only new footage is charged; monthly allowance and extra credits reset each billing period. API section: Interactive Avatars $0.10/min (avatar tech only), full stack $0.20/min (coming soon); Dubbing API $0.40/min voice only, $0.80/min with lip-sync; 'API usage draws from the same credit balance as your subscription'.",
+     "quote": "Starter First month for $9 $19 ... 1,250 credits / month ... Pro Most popular First month for $49 $89 ... 6,000 credits / month ... A typical finished minute uses about 100 credits, more if the avatar is on screen throughout.",
+     "supersedes": "2026-09-22 minute ladder (Starter $29/$18 yearly, Creator $89/$64 yearly with 30 min/mo)",
+     "collector": "refresh-2026-10-27 (live curl/WebFetch)"
+    }
+   ]
+  },
+  {
+   "id": "EV-synthesia-vs-heygen-03",
+   "claim": "blogrecode.com's disclosed same-script 50-video test (2-minute product-explainer script, 1080p output, published 2026-03-12, updated 2026-08-17, author Mia Elvasia) reports: Synthesia (Starter $18/mo annual, upgraded mid-test to Creator $64/mo) cost $95 total across 3 months of service; HeyGen Avatar III (Creator $24/mo) cost $72 across 3 months; HeyGen Avatar IV cost $384 ($72 base subscription + $312 in additional credit packs), because Avatar IV consumes 20 premium credits/minute against a 200-credit/month Creator-plan allotment the article describes, which at the test's 100 finished minutes (50 videos x 2-minute script) would take 2,000 credits, ten such monthly allotments; the article's own itemizations of its totals do not reconcile (see honesty notes). A separate $289 'credit burn' narrative (a differently-scoped 25-video lip-sync-translation test) rolls up with these figures into the article's headline '$673 total spent' framing. The article does NOT state a per-finished-minute dollar figure for either tool anywhere in its text -- a targeted raw-HTML search for figures like '$3.48/min' or '$7.68/min' found no match in the article's prose.",
+   "source_url": "https://blogrecode.com/synthesia-vs-heygen-comparison-creating-ai-videos/",
+   "source_date": "2026-08-17",
+   "quote": "Synthesia: $95 (3 months at $18 + one upgrade to Creator for better avatars = $64) ... Avatar IV burns 20 premium credits per minute. At 200 credits/month on the Creator plan, you get 10 minutes of Avatar IV video. ... Total cost: $72 (3 months at $24/month) ... Total cost: $384 ($72 base + $312 in credit packs) ... Script: 2-minute product explainer",
+   "quote_supplementary": [
+    "HeyGen: $384 ($24/month × 3 + two credit packs at $150 each)",
+    "I created 50 identical videos (same script, same length) on both platforms."
+   ],
+   "platform": "blogrecode.com (independent editorial blog with disclosed same-script testing methodology; author-bylined, dated publish 2026-03-12 and update 2026-08-17; likely affiliate-monetized via inline product links, not disclosed in-body -- captured via raw HTML fetch 2026-09-22 after a prior WebFetch-summary attempt produced non-reproducible per-minute figures)",
+   "requoted_at": "2026-09-22",
+   "target_slug": "/vs/synthesia-vs-heygen",
+   "collected_at": "2026-09-22",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "synthesia-vs-heygen-2026-09-22",
+   "screening": "included",
+   "label": "independent-test",
+   "coders": [
+    "A",
+    "B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "both",
+    "aspect": "disclosed same-script 50-video head-to-head cost test, reconciled against Mimo's own per-minute math",
+    "stance": "mixed",
+    "plan_tier_if_stated": "Synthesia Starter->Creator; HeyGen Creator (Avatar III and Avatar IV both tested)",
+    "item_date": "2026-08-17"
+   },
+   "honesty_notes": [
+    "CRITICAL RECONCILIATION NOTE FOR WRITER: this source's $384 HeyGen figure is built on a 200-credit/month Creator allotment -- the SAME contested figure EV-heygen-review-02 (aitoolanalysis.com) states and EV-heygen-review-01/EV-synthesia-vs-heygen-01 directly contradict with a vendor-verified 600-credit figure. This is almost certainly WHY blogrecode's total-cost math diverges so sharply from Mimo's own per-finished-minute figures (EV-synthesia-review-03: $2.13-$2.97/min Creator; EV-heygen-review-04: ~$0.97/min at 600cr) -- blogrecode is pricing HeyGen against a stale/incorrect 200-credit assumption, not a genuinely different unit-cost reality. Present this as a resolved discrepancy (tier/credit-allotment difference), not as two competing 'truths'.",
+    "Do NOT attribute a '$3.48/min' or '$7.68/min' figure to this source -- those numbers do not appear in the article's own text per this run's raw-HTML verification. If the writer wants a per-minute figure from this specific test, it must be computed transparently and labeled as Mimo's own arithmetic (e.g., Synthesia $95 / 50 min = $1.90/min for this specific 3-month test scenario; HeyGen Avatar IV $384 / 50 min = $7.68/min, which DOES match this run's own division -- but $7.68/min only reconciles because of the contested 200-credit assumption baked into blogrecode's $312 credit-pack spend, not because HeyGen's real-world per-minute cost is $7.68 at its vendor-confirmed 600-credit rate).",
+    "REQUOTE PASS 2026-09-22 (curator gate B1/B2 response): re-fetched blogrecode.com's raw HTML today. THE $312 FIGURE IS ON THE LIVE PAGE VERBATIM ('Total cost: $384 ($72 base + $312 in credit packs)') -- gate B1's statement that '$312 ... does not appear in the article' is itself incorrect; this run's fresh capture reproduces it cleanly and the quote field above has been widened to include the exact sentence. HOWEVER, the article states its own $384 total THREE different, mutually inconsistent ways in three different places: (1) '$384 ($72 base + $312 in credit packs)' [72+312=384, internally consistent], (2) '$384 ($24/month x 3 + two credit packs at $150 each)' [72+300=372, NOT 384], and (3) a running tally earlier in the piece that reaches '$24 + $150 = $174', then '+$150 = New total: $324' [also short of $384 by $60, unexplained]. The Synthesia side is similarly inconsistent: 'Synthesia: $95 (3 months at $18 + one upgrade to Creator for better avatars = $64)' sums to $118 (3x18=54, +64=118), not $95. NONE of these are Mimo's own subtraction -- all three tellings are verbatim on the page; the page contradicts itself internally across its own retellings of the same total. Present on the vs-page as: 'blogrecode states its HeyGen total as $384 in three places but shows three different, non-matching itemizations for that figure; its Synthesia total of $95 likewise does not match its own stated $18x3+$64 breakdown ($118). We could not reconcile the source's own arithmetic and are not attempting to on its behalf.'",
+    "REQUOTE PASS 2026-09-22, script-length/divisor (gate B2 response): confirmed verbatim -- 'I created 50 identical videos (same script, same length) on both platforms... Test Parameters: Script: 2-minute product explainer'. 50 videos x 2 minutes/video = 100 finished minutes of content, NOT 50 minutes. Any per-minute figure the draft computes from these totals (e.g. $95/50=$1.90 or $384/50=$7.68) uses the WRONG divisor per the article's own stated script length; the correct divisor per the article's own test parameters is 100 minutes ($95/100=$0.95/min Synthesia; $384/100=$3.84/min HeyGen Avatar IV). The article's own separate 'Math That Screwed Me' section uses yet a THIRD framing (25 videos x 2 min = 50 minutes, a different, smaller sub-scenario than the full 50-video test) -- the 50-video headline test and the 25-video 'Math That Screwed Me' walkthrough are two distinct scenarios in the same article and must not be blended into one divisor.",
+    "REQUOTE PASS 2026-09-22, 200-credit Creator assumption (gate B3 response): the sentence establishing this is verbatim on the page: 'Avatar IV burns 20 premium credits per minute. At 200 credits/month on the Creator plan, you get 10 minutes of Avatar IV video.' and, separately, 'Creator plan: 200 credits/month'. This is the SAME contested 200-credit figure EV-heygen-review-02/EV-synthesia-vs-heygen-01 show is stale/incorrect against HeyGen's own vendor-verified 600-credit figure -- the number is genuinely on blogrecode's page, but it is blogrecode's own (likely outdated) input, not a fact Mimo is asserting as HeyGen's current allotment.",
+    "The article's own 'winner for cost: Synthesia' verdict is consistent with Mimo's own headline framing that HeyGen's real per-minute cost advantage (EV-heygen-review-04) only holds if a buyer stays on Avatar III / core credit rates -- Avatar IV specifically is the expensive outlier in both blogrecode's test and Mimo's own registered math.",
+    "ORCHESTRATOR REQUOTE 2026-09-22: orchestrator independently re-fetched the raw HTML (curl) and appended the verbatim string(s) above to `quote` after confirming them on the live page.",
+    "GATE N6 TRIM 2026-09-22: the assembled quote had grown to 84 words across 7 verbatim fragments, exceeding the protocol's 60-word cap. Re-fetched blogrecode.com's raw HTML again today and confirmed all 7 fragments still verbatim. Kept the 5 most load-bearing fragments in the main `quote` field (60 words, page order: Synthesia $95 total+itemization, the 200-credit/Avatar-IV chain, HeyGen Avatar III $72 total, HeyGen Avatar IV $384 base+credit-pack breakdown, the 2-minute script-length parameter) and moved the 2 remaining required fragments (HeyGen's alternate $384 itemization, the '50 identical videos' test-scope sentence) into a new `quote_supplementary` array, each independently re-verified against today's fetch and each individually under 60 words. No fact from the original honesty_notes reconciliation (the three-way internal-inconsistency finding, the wrong-divisor finding, the 200-credit-vs-600-credit contradiction) is lost -- all source material remains registered, just split across `quote` and `quote_supplementary` per the word cap."
+   ],
+   "requote_result": "found"
+  },
+  {
+   "id": "EV-synthesia-vs-heygen-04",
+   "claim": "A Synthesia help-center article on credits (captured 2026-09-22) states that API usage is priced at 75 credits per minute of generated video, versus 120 credits per minute (2 credits/second) for standard editor usage -- meaning API output consumes credits at roughly 62.5% of the standard editor's rate. Neither Synthesia's API introduction docs nor its dedicated /api or /features/api marketing pages (both returned HTTP 404 on direct fetch this run) disclose an independent dollar-per-minute API price; Synthesia's API access is bundled into the Creator-plan-and-above credit pool rather than sold as a separately-priced product, unlike HeyGen's standalone PAYG API pricing (EV-heygen-review-15, reused).",
+   "source_url": "https://help.synthesia.io/en/articles/11972627-what-are-credits-and-how-do-they-work-on-self-serve-plans",
+   "source_date": "2026-09-22",
+   "quote": "Each second of a video uses 2 credits... 1 minute of API usage = 75 credits.",
+   "platform": "help.synthesia.io (vendor help-center article -- self-interested; captured 2026-09-22)",
+   "target_slug": "/vs/synthesia-vs-heygen",
+   "collected_at": "2026-09-22",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "synthesia-vs-heygen-2026-09-22",
+   "screening": "included",
+   "label": "vendor-claim",
+   "coders": [
+    "A",
+    "B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "Synthesia",
+    "aspect": "API credit rate vs standard editor rate; absence of a published dollar-denominated API price",
+    "stance": "n/a",
+    "plan_tier_if_stated": "API access bundled into Creator+ plans, not separately priced",
+    "item_date": "2026-09-22"
+   },
+   "honesty_notes": [
+    "A rough DERIVED dollar figure can be computed from the Creator-tier credit rate on EV-synthesia-review-01/EV-synthesia-vs-heygen-02 (Creator $64/mo annual buys 30 min = 3,600 credits at 120 credits/min standard, i.e. ~$0.0178/credit): 75 credits/min x $0.0178 = roughly $1.33/min for API output. This is Mimo's OWN arithmetic on a vendor-stated input, not a vendor or third-party claim -- present it labeled exactly that way if used, and note it assumes Creator-tier per-credit cost, which may not hold at Enterprise's custom/unlimited pricing.",
+    "This means a genuinely apples-to-apples API face-off cannot be built from a single vendor-stated dollar figure the way HeyGen's PAYG page allows -- HeyGen's own API pricing (EV-heygen-review-15, requoted 2026-09-22) is a per-engine table, not a flat rate: Avatar III Studio Avatar $0.99/min, Avatar IV Studio Avatar/Digital Twin $4.83/min, Precision Lip Sync translation $1.50/min -- state this structural difference plainly (HeyGen sells API access as a standalone metered product with per-avatar-engine pricing; Synthesia bundles it into subscription credits with no independent dollar-price page) rather than forcing a false like-for-like dollar comparison."
+   ],
+   "recaptures": [
+    {
+     "recaptured_at": "2026-10-27",
+     "source_url": "https://help.synthesia.io/en/articles/11972627-what-are-credits-and-how-do-they-work-on-self-serve-plans",
+     "claim": "The same help article on 2026-10-27 (marked 'Updated this week') states every self-serve plan includes 10 minutes of video and 500 credits; Starter 1,750 credits/mo (500 + 1,250 extra), 21,000/yr; Pro 6,500/mo (500 + 6,000 extra), 78,000/yr; Pro 2x/4x/6x/8x multiply the extra credits. Video creation uses about 100 credits per minute of finished video. '1 minute of API usage = 160 credits'; Interactive Avatar API 10 credits/min; dubbing 80 credits/min with lip-sync, 40 without; credits do not roll over.",
+     "quote": "Video creation uses about 100 credits per minute of finished video. ... 1 minute of API usage = 160 credits",
+     "supersedes": "2026-09-22 rates (editor 120 credits/min, API 75 credits/min, API bundled into Creator+ plans)",
+     "collector": "refresh-2026-10-27 (live curl/WebFetch)"
+    }
+   ]
+  },
+  {
+   "id": "EV-synthesia-vs-heygen-05",
+   "claim": "Re-fetching Synthesia's AI-dubbing feature page today (2026-09-22, 5 weeks 6 days after the sibling review's 2026-08-13 capture, EV-synthesia-review-04) confirms the figure is UNCHANGED: 140+ languages for AI dubbing/video-translation output specifically.",
+   "source_url": "https://www.synthesia.io/features/ai-dubbing",
+   "source_date": "2026-09-22",
+   "quote": "Dub videos into 140+ languages with voice cloning and perfect lip-sync... Synthesia supports 140+ languages and dialects for AI dubbing.",
+   "platform": "synthesia.io/features/ai-dubbing (vendor feature page -- self-interested; re-verified 2026-09-22, unchanged from the 2026-08-13 capture)",
+   "target_slug": "/vs/synthesia-vs-heygen",
+   "collected_at": "2026-09-22",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "synthesia-vs-heygen-2026-09-22",
+   "screening": "included",
+   "label": "vendor-claim",
+   "coders": [
+    "A",
+    "B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "Synthesia",
+    "aspect": "AI-dubbing/video-translation language count re-check",
+    "stance": "n/a",
+    "plan_tier_if_stated": null,
+    "item_date": "2026-09-22"
+   },
+   "honesty_notes": [
+    "Pair with EV-synthesia-vs-heygen-06 (160+ languages, a DIFFERENT feature) -- never merge these into a single '160+' or '140+' headline figure without specifying which feature it describes."
+   ]
+  },
+  {
+   "id": "EV-synthesia-vs-heygen-06",
+   "claim": "Direct-fetching Synthesia's dedicated languages feature page today (2026-09-22) -- a URL the sibling review's 2026-08-13 sweep could search-index but never successfully direct-fetch -- confirms a SEPARATE, broader '160+ Languages & Accents' figure describing general AI-voice/language selection for videos, distinct from the 140+ figure specific to AI dubbing/video-translation (EV-synthesia-vs-heygen-05).",
+   "source_url": "https://www.synthesia.io/features/languages",
+   "source_date": "2026-09-22",
+   "quote": "Make Videos in 160+ Languages & Accents.",
+   "platform": "synthesia.io/features/languages (vendor feature page -- self-interested; captured 2026-09-22, first successful direct fetch of this exact URL across all Mimo video-cluster shards)",
+   "target_slug": "/vs/synthesia-vs-heygen",
+   "collected_at": "2026-09-22",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "synthesia-vs-heygen-2026-09-22",
+   "screening": "included",
+   "label": "vendor-claim",
+   "coders": [
+    "A",
+    "B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "Synthesia",
+    "aspect": "general voice/language selection count (distinct from AI-dubbing count)",
+    "stance": "n/a",
+    "plan_tier_if_stated": null,
+    "item_date": "2026-09-22"
+   },
+   "honesty_notes": [
+    "This resolves the flag left open in EV-synthesia-review-04's honesty_notes ('a separate...page title...reads 160+...this run did not directly fetch that specific URL'). Use 140+ when the page discusses AI dubbing/translation specifically; use 160+ when discussing overall voice/language selection for video creation.",
+    "Do not state a single unqualified 'Synthesia supports X languages' figure on the vs-page without naming which feature it refers to -- the two vendor pages describe genuinely different scopes."
+   ]
+  },
+  {
+   "id": "EV-synthesia-vs-heygen-07",
+   "claim": "learn.g2.com's own comparison article (its stated publication date: 2026-04-02) cites G2's satisfaction figures: Synthesia 4.7/5 from approximately 2,376 reviews vs HeyGen 4.8/5 from approximately 1,194 reviews, plus G2 category scores -- Synthesia ease of use 92%, ease of setup 94%, ease of doing business 91%; HeyGen ease of use 93%, ease of setup 93%, ease of doing business 91% -- and an avatar-quality category score of HeyGen 9.2/10 vs Synthesia 8.2/10. These figures are attributed to learn.g2.com's own reporting of G2's data, NOT to a direct Mimo fetch of g2.com itself, which remains HTTP-403-blocked in this environment per both sibling shards (EV-synthesia-review flow_counter, EV-heygen-review flow_counter).",
+   "source_url": "https://learn.g2.com/synthesia-vs-heygen",
+   "source_date": "2026-04-02",
+   "quote": "4.7 out of 5 across around 2,376 reviews ... 4.8 out of 5 from about 1194 reviews ... research conducted in November 2025 ... ease of use (92%), ease of setup (94%), and ease of doing business (91%) ... ease-of-use ratings (93%) ... ease of setup (93%) and ease of doing business (91%) ... HeyGen scores higher for avatar quality (9.2/10 vs Synthesia’s 8.2)",
+   "platform": "learn.g2.com (G2's own content-marketing blog, native-platform data source but published by a G2 employee/contractor with an inherent conflict of interest never disclosed as such on the page itself -- captured 2026-09-22, page's stated publish date 2026-04-02, i.e. ~5.5 months old at capture)",
+   "requoted_at": "2026-09-22",
+   "target_slug": "/vs/synthesia-vs-heygen",
+   "collected_at": "2026-09-22",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "synthesia-vs-heygen-2026-09-22",
+   "screening": "included",
+   "label": "research-finding",
+   "coders": [
+    "A",
+    "B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "both",
+    "aspect": "G2-native satisfaction/rating and category-score comparison, surfaced via a G2-owned blog",
+    "stance": "n/a",
+    "plan_tier_if_stated": null,
+    "item_date": "2026-04-02"
+   },
+   "honesty_notes": [
+    "Always phrase as 'per learn.g2.com's own reporting of G2 data (dated 2026-04-02)' -- NEVER present as Mimo's own independent G2 read. The page itself discloses its research was conducted in November 2025, meaning the underlying rating snapshot may be closer to 10-11 months stale at the time the vs-page publishes.",
+    "REQUOTE PASS 2026-09-22 (gate B3 response): re-fetched learn.g2.com/synthesia-vs-heygen's raw HTML today. Both the ease-of-use/setup/doing-business percentages (92/94/91 for Synthesia; 93/93/91 for HeyGen) AND the 'research conducted in November 2025' sentence are confirmed verbatim on the live page and have been added to the quote field above -- both numbers now pass strict verbatim-quote traceability.",
+    "This same page states Synthesia's Free tier as '3 minutes/month' and HeyGen's Free tier as 'up to 3 videos/month, each up to 3 minutes long' -- BOTH figures conflict with Mimo's own dated vendor-direct captures (Synthesia Free = 10 min/mo per EV-synthesia-vs-heygen-02; HeyGen Free = 3 videos/mo x 1 min each per EV-synthesia-vs-heygen-01). Do not adopt learn.g2.com's free-tier figures; use Mimo's own fresher vendor-direct captures and note the discrepancy if discussing this source's reliability.",
+    "GATE N6 TRIM 2026-09-22: re-fetched learn.g2.com/synthesia-vs-heygen's raw HTML again today. All 6 required figures (4.7/4.8 ratings + review counts, 8.2/9.2 avatar quality, the 92/94/91 and 93/93/91 satisfaction percentages, November 2025) are still live and verbatim, but the SURROUNDING PROSE reads differently today than the sentence originally registered here ('Synthesia holds a solid average of 4.7 out of 5 across around 2,376 reviews, while HeyGen takes a slight lead with 4.8 out of 5 from about 1194 reviews' -- note 'about 1194' with no comma, not 'approximately 1,194' as the prior quote stated, and 'around 2,376' not a bare '2,376'). This may reflect a templated/dynamically-regenerated blog paragraph on G2's side rather than a Mimo extraction error; either way, today's fetch is the authoritative verbatim source for the trimmed quote above. The trimmed quote (58 words) drops connective marketing prose ('Here's what stood out', 'Any updates made to the software after this date may not be reflected...') while keeping every numeric fact, split across shorter contiguous fragments (e.g. the two satisfaction-percentage clusters are each split into two verbatim spans) to fit the 60-word cap without paraphrasing."
+   ]
+  },
+  {
+   "id": "EV-synthesia-vs-heygen-08",
+   "claim": "HeyGen's own vendor-authored comparison page states, in its own words: SCORM export and one-click translation are available on ALL HeyGen plans including Free, versus Synthesia locking both behind its Enterprise tier; and that HeyGen's customer data is 'NOT used for AI training' with this framed as an 'explicit guarantee', versus Synthesia having 'no explicit guarantee' on the same point. These are self-interested vendor marketing claims, registered here specifically so they can be fact-checked against HeyGen's own primary pricing/policy pages (EV-synthesia-vs-heygen-09/10/11).",
+   "source_url": "https://www.heygen.com/synthesia-alternative",
+   "source_date": "2026-09-22",
+   "quote": "Synthesia, SCORM disa aktarma ve tek tikla ceviri ozelliklerini Enterprise paketinin arkasina kilitliyor...HeyGen ise SCORM, ceviri, dallanma ve sinavlari, ozellik basina ek ucret olmadan ucretsiz plandan itibaren sunuyor. [translation: Synthesia locks SCORM export and one-click translation behind its Enterprise package, while HeyGen offers SCORM, translation, branching, and quizzes starting from the free plan with no per-feature charge.] ... Veriler YZ egitimi icin KULLANILMAZ [Data NOT used for AI training] -- HeyGen: 'Explicitly guaranteed'; Synthesia: 'No explicit guarantee.'",
+   "platform": "heygen.com/synthesia-alternative (vendor marketing/comparison page, HeyGen-authored -- self-interested, no Synthesia right-of-reply, locale-rendered in Turkish on this fetch; captured 2026-09-22)",
+   "target_slug": "/vs/synthesia-vs-heygen",
+   "collected_at": "2026-09-22",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "synthesia-vs-heygen-2026-09-22",
+   "screening": "included",
+   "label": "vendor-claim",
+   "coders": [
+    "A",
+    "B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "HeyGen",
+    "aspect": "self-authored comparison claims re: SCORM/translation plan-gating and AI-training data guarantee",
+    "stance": "n/a",
+    "plan_tier_if_stated": "claims SCORM/translation on 'free plan' for HeyGen",
+    "item_date": "2026-09-22"
+   },
+   "honesty_notes": [
+    "This entry is the CLAIM being checked, not an adopted fact -- see EV-synthesia-vs-heygen-09 (SCORM check: found FALSE against HeyGen's own pricing page) and EV-synthesia-vs-heygen-10/11 (AI-training check: found OVERSTATED against HeyGen's own privacy policy).",
+    "Present on the vs-page explicitly as 'HeyGen's own marketing page claims X; HeyGen's own primary pricing/policy pages say Y' -- a direct vendor self-contradiction, not an external accusation."
+   ]
+  },
+  {
+   "id": "EV-synthesia-vs-heygen-09",
+   "claim": "HeyGen's own primary pricing page (the plan-comparison feature table, captured 2026-09-22) shows 'SCORM Export' with checkmarks ONLY for the Business ($149/mo) and Enterprise (custom) tiers -- NOT the Free plan. This directly contradicts heygen.com/synthesia-alternative's own claim (EV-synthesia-vs-heygen-08) that HeyGen offers SCORM 'starting from the free plan.' The same table also shows the Free plan capped at '30+ languages' for translation, versus '175 languages & dialects' on Creator/Pro/Business/Enterprise.",
+   "source_url": "https://www.heygen.com/pricing",
+   "source_date": "2026-09-22",
+   "quote": "SCORM Export [feature row, under Learning & Development] -- checkmarks shown only for Business and Enterprise tiers. Video Translation & Languages: 175 languages & dialects [Creator/Pro/Business/Enterprise]; 30+ languages [Free].",
+   "platform": "heygen.com/pricing (vendor pricing page, plan-comparison feature table -- self-interested but this is HeyGen's OWN primary pricing document, a higher-authority source than its separate synthesia-alternative marketing page; captured 2026-09-22)",
+   "target_slug": "/vs/synthesia-vs-heygen",
+   "collected_at": "2026-09-22",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "synthesia-vs-heygen-2026-09-22",
+   "screening": "included",
+   "label": "vendor-claim",
+   "coders": [
+    "A",
+    "B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "HeyGen",
+    "aspect": "SCORM export plan-gating (fact-check of HeyGen's own comparison-page claim); Free-tier translation language cap",
+    "stance": "n/a",
+    "plan_tier_if_stated": "SCORM: Business/Enterprise only. Translation: Free=30+ languages, paid=175 languages & dialects.",
+    "item_date": "2026-09-22"
+   },
+   "honesty_notes": [
+    "This is a DIRECT, sourced fact-check: HeyGen's own /synthesia-alternative marketing page overstates its own product's feature availability relative to HeyGen's own primary pricing table. Present as 'per HeyGen's own pricing page, SCORM export is Business/Enterprise-gated -- contradicting a claim on HeyGen's own comparison page that it is available on Free', not as a Synthesia-favorable editorial spin.",
+    "Synthesia's SCORM export (Enterprise-only per EV-synthesia-review-09) and HeyGen's SCORM export (Business/Enterprise-only per this entry) are actually CLOSER in restrictiveness than either vendor's own marketing suggests -- neither offers SCORM below their top commercial tier(s); this is a genuine both-have-a-claim correction, not a one-sided win for either tool.",
+    "The 175-vs-30+ Free-tier translation language gap is new ground -- neither sibling review currently states HeyGen's Free-tier language cap; pair with EV-heygen-review-17 (175+ overall) to avoid implying Free-tier users get the full 175+ language count."
+   ],
+   "recaptures": [
+    {
+     "recaptured_at": "2026-10-27",
+     "source_url": "https://www.heygen.com/pricing",
+     "claim": "Re-read 2026-10-27: SCORM export still listed only under Business ('SCORM export and LMS integrations') and Enterprise; the free plan still lists 30+ languages and Creator 175+ languages and dialects.",
+     "quote": "SCORM export and LMS integrations",
+     "supersedes": "nothing (confirmation)",
+     "collector": "refresh-2026-10-27 (live curl/WebFetch)"
+    }
+   ]
+  },
+  {
+   "id": "EV-synthesia-vs-heygen-10",
+   "claim": "HeyGen's own primary privacy policy (captured 2026-09-22) states that customer/user data IS used, by default, 'to train and enhance the models that power our products and services, including to make our avatar creation models more accurate', with an opt-out process available on request -- this is the general policy governing non-Enterprise customers and directly contradicts the blanket 'data NOT used for AI training / explicitly guaranteed' framing on HeyGen's own separate synthesia-alternative marketing page (EV-synthesia-vs-heygen-08).",
+   "source_url": "https://www.heygen.com/privacy",
+   "source_date": "2026-09-22",
+   "quote": "To train and enhance the models that power our products and services, including to make our avatar creation models more accurate. It is necessary for our legitimate interest and subject to appropriate safeguards. You may request to opt-out of this training and enhancement by contacting us.",
+   "platform": "heygen.com/privacy (vendor privacy policy -- self-interested but the primary governing legal document, a higher-authority source than the separate synthesia-alternative marketing page it contradicts; captured 2026-09-22)",
+   "target_slug": "/vs/synthesia-vs-heygen",
+   "collected_at": "2026-09-22",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "synthesia-vs-heygen-2026-09-22",
+   "screening": "included",
+   "label": "vendor-claim",
+   "coders": [
+    "A",
+    "B"
+   ],
+   "coder_agreement": false,
+   "coding": {
+    "tool": "HeyGen",
+    "aspect": "default (opt-out, not opt-in) use of non-Enterprise customer data for AI-model training",
+    "stance": "n/a",
+    "plan_tier_if_stated": "non-Enterprise customers, default opt-out required",
+    "item_date": "2026-09-22"
+   },
+   "honesty_notes": [
+    "This is a genuine, sourced vendor self-contradiction: the marketing comparison page (EV-synthesia-vs-heygen-08) claims a blanket 'not used for AI training' guarantee, while the privacy policy states the opposite by default for non-Enterprise accounts. See EV-synthesia-vs-heygen-11 for the corroborating Enterprise-exclusion language that partially explains the discrepancy (the marketing page may be implicitly speaking to Enterprise buyers only, without saying so).",
+    "coder_agreement flagged false: a resolver should confirm the vs-page frames this as 'HeyGen's own privacy policy says X; a separate HeyGen marketing page implies Y' rather than a flat accusation of dishonesty -- the Enterprise/non-Enterprise distinction is real and mitigating, even if the marketing page's blanket phrasing obscures it."
+   ]
+  },
+  {
+   "id": "EV-synthesia-vs-heygen-11",
+   "claim": "HeyGen's trust-and-safety page (captured 2026-09-22) corroborates the same Enterprise/non-Enterprise distinction from a second HeyGen primary source: Enterprise customer data is excluded from AI-model training entirely, while non-Enterprise customer data may be used for training by default, with an opt-out available.",
+   "source_url": "https://www.heygen.com/trust-and-safety",
+   "source_date": "2026-09-22",
+   "quote": "We ensure that our enterprise customers' data is not used to train our AI systems, nor is it combined with any other data for this purpose... Non-enterprise customers may be used to train and enhance the models that power our Services. Users may opt-out of this training.",
+   "platform": "heygen.com/trust-and-safety (vendor trust/policy page -- self-interested; captured 2026-09-22)",
+   "target_slug": "/vs/synthesia-vs-heygen",
+   "collected_at": "2026-09-22",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "synthesia-vs-heygen-2026-09-22",
+   "screening": "included",
+   "label": "vendor-claim",
+   "coders": [
+    "A",
+    "B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "HeyGen",
+    "aspect": "Enterprise-tier AI-training exclusion, corroborating a second HeyGen primary source",
+    "stance": "n/a",
+    "plan_tier_if_stated": "Enterprise = excluded; non-Enterprise = opt-out required",
+    "item_date": "2026-09-22"
+   },
+   "honesty_notes": [
+    "The fair, precise framing for the vs-page: 'HeyGen's own privacy documents guarantee AI-training exclusion for Enterprise customers only; Creator/Pro/Business (self-serve) customers' data may be used unless they opt out' -- meaningfully narrower than the unqualified claim on HeyGen's synthesia-alternative page."
+   ]
+  },
+  {
+   "id": "EV-synthesia-vs-heygen-12",
+   "claim": "Synthesia's own privacy policy (captured 2026-09-22, a fresh re-check beyond the sibling review's 2026-08-13 security-practices sweep) contains NO explicit statement, either confirming or denying, that Customer Data is used to train Synthesia's AI models -- only a general clause about processing 'usage and interaction' information for platform improvement and internal research, which does not specifically address Customer Data as defined elsewhere in the same policy.",
+   "source_url": "https://www.synthesia.io/legal/privacy-policy",
+   "source_date": "2026-09-22",
+   "quote": "To improve our Platform and underlying technologies and for our internal research, we process the information relating to your use and interaction with the Services, and the performance and quality of the Services resulting from such use.",
+   "platform": "synthesia.io/legal/privacy-policy (vendor privacy policy -- self-interested; captured 2026-09-22)",
+   "target_slug": "/vs/synthesia-vs-heygen",
+   "collected_at": "2026-09-22",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "synthesia-vs-heygen-2026-09-22",
+   "screening": "included",
+   "label": "vendor-claim",
+   "coders": [
+    "A",
+    "B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "Synthesia",
+    "aspect": "absence of an explicit AI-training data-use statement in Synthesia's privacy policy",
+    "stance": "n/a",
+    "plan_tier_if_stated": null,
+    "item_date": "2026-09-22"
+   },
+   "honesty_notes": [
+    "This CORROBORATES the 'no explicit guarantee' half of HeyGen's own comparison-page claim (EV-synthesia-vs-heygen-08) specifically about Synthesia -- present as 'independently confirmed: Synthesia's own privacy policy does not explicitly address this' rather than adopting HeyGen's framing wholesale, since the SAME comparison page's claim about its OWN practice (EV-synthesia-vs-heygen-08's 'explicitly guaranteed' framing) does not survive fact-checking (EV-synthesia-vs-heygen-10).",
+    "Silence is not evidence of the practice occurring -- do not translate 'no explicit denial' into 'Synthesia probably trains on customer data'; state only what the policy does and does not say."
+   ]
+  },
+  {
+   "id": "EV-synthesia-vs-heygen-13",
+   "claim": "A second, targeted re-read of Synthesia's security-practices page (already registered for SOC2/ISO42001/GDPR/EU-residency facts as EV-synthesia-review-06, captured 2026-08-13) specifically for AI-training language confirms the page contains NO statement addressing whether customer data is used to train AI models, corroborating EV-synthesia-vs-heygen-12's finding from a second Synthesia primary page.",
+   "source_url": "https://www.synthesia.io/legal/security-practices",
+   "source_date": "2026-09-22",
+   "quote": "[Page covers data protection, encryption, access controls, and data-deletion policies extensively; contains no sentence addressing AI-model training use of customer data.]",
+   "platform": "synthesia.io/legal/security-practices (vendor security page -- self-interested; re-checked 2026-09-22 specifically for AI-training language, corroborating EV-synthesia-review-06's original 2026-08-13 capture of this same page for unrelated compliance facts)",
+   "target_slug": "/vs/synthesia-vs-heygen",
+   "collected_at": "2026-09-22",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "synthesia-vs-heygen-2026-09-22",
+   "screening": "included",
+   "label": "vendor-claim",
+   "coders": [
+    "A",
+    "B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "Synthesia",
+    "aspect": "second-source corroboration of absent AI-training data-use language",
+    "stance": "n/a",
+    "plan_tier_if_stated": null,
+    "item_date": "2026-09-22"
+   },
+   "honesty_notes": [
+    "Registered as a distinct entry from EV-synthesia-vs-heygen-12 because it is a second, independently-checked Synthesia primary page reaching the same silence-not-denial conclusion -- strengthens the finding without duplicating the source URL of EV-synthesia-review-06 (that entry covers different facts from the same URL, this entry covers the AI-training question specifically)."
+   ]
+  },
+  {
+   "target_slug": "/vs/synthesia-vs-heygen",
+   "collected_at": "2026-10-27",
+   "collector": "refresh-2026-10-27 (live curl/WebFetch)",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "synthesia-vs-heygen-2026-10-27",
+   "screening": "included",
+   "label": "vendor-claim",
+   "coders": [
+    "A"
+   ],
+   "coder_agreement": null,
+   "id": "EV-synthesia-vs-heygen-14",
+   "claim": "HeyGen's help article on credit-based plans (2026-10-27, 'Updated this week') lists per-minute credit usage: Avatar III Photo Look 7, Avatar III Video Look 4, Avatar IV Photo Look 16, Avatar IV Video Look 31, Avatar V 48; video translation Speed 6, Precision 10, no lip-sync 4 credits/min. Creator and Pro do not use one-time credit packs (upgrade instead); Business buys extra credits at $0.05 each in 100-credit blocks for $5. Monthly subscribers' unused credits roll over one additional cycle; annual subscribers receive a monthly allocation.",
+   "source_url": "https://help.heygen.com/en/articles/15125761-heygen-credit-based-pricing-plans-explained",
+   "source_date": "2026-10-27",
+   "quote": "Avatar III Video Look 1 minute = 4 credits ... Avatar IV Video Look 1 minute = 31 credits ... Extra credits cost $0.05 per credit and are purchased in blocks of 100 credits for $5",
+   "platform": "help.heygen.com (vendor help center, self-interested; source already on file as EV-heygen-review-16)",
+   "coding": {
+    "tool": "HeyGen",
+    "aspect": "per-minute credit burn by avatar engine and look; pack and rollover rules",
+    "stance": "n/a",
+    "plan_tier_if_stated": "Creator, Pro, Business",
+    "item_date": "2026-10-27"
+   },
+   "honesty_notes": [
+    "Supersedes the August capture's Avatar IV 20 cr/min and Avatar III 3 cr/min (EV-heygen-review-01) for this page's arithmetic.",
+    "Single coding pass on a refresh re-read; no second pass run."
+   ]
+  },
+  {
+   "target_slug": "/vs/synthesia-vs-heygen",
+   "collected_at": "2026-10-27",
+   "collector": "refresh-2026-10-27 (live curl/WebFetch)",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "synthesia-vs-heygen-2026-10-27",
+   "screening": "included",
+   "label": "vendor-claim",
+   "coders": [
+    "A"
+   ],
+   "coder_agreement": null,
+   "id": "EV-synthesia-vs-heygen-15",
+   "claim": "HeyGen's API pricing help article re-read 2026-10-27 ('Updated today'): pay-as-you-go, no subscription needed; Avatar III Studio Avatar $0.99/min (20 credits), Avatar III Digital Twin $0.60/min; Avatar IV Studio Avatar and Digital Twin $4.83/min (97 credits), Avatar IV Photo Avatar $2.31/min; Precision lip-sync translation $1.50/min; no free API credits starting Feb 2026; pay-as-you-go credits expire after 12 months.",
+   "source_url": "https://help.heygen.com/en/articles/10060327-heygen-api-pricing-explained",
+   "source_date": "2026-10-27",
+   "quote": "HeyGen does not offer free API credits starting Feb 2026. ... pay-as-you-go credits expire after 12 months.",
+   "platform": "help.heygen.com (vendor help center, self-interested; source already on file as EV-heygen-review-15)",
+   "coding": {
+    "tool": "HeyGen",
+    "aspect": "API per-minute prices by engine, re-read",
+    "stance": "n/a",
+    "plan_tier_if_stated": "API pay-as-you-go",
+    "item_date": "2026-10-27"
+   },
+   "honesty_notes": [
+    "Confirms the September figures used on the page; adds the $0.60 Avatar III digital twin and $2.31 Avatar IV photo avatar rates.",
+    "Single coding pass on a refresh re-read; no second pass run."
+   ]
+  }
+ ]
+}

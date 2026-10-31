@@ -1,0 +1,1528 @@
+{
+  "_meta": {
+    "flow_id": "how-to-make-an-ai-avatar-video-2026-10-28",
+    "protocol_version": "MEP-1.0",
+    "target_slug": "/guides/how-to-make-an-ai-avatar-video",
+    "target_keyword": "how to make an ai avatar video",
+    "run_date": "2026-10-28",
+    "collector": "evidence-curator",
+    "page_class": "how-to guide walking Synthesia and HeyGen end to end (script, avatar, voice, render, export). No hands-on claims: Mimo made no renders; every entry is a vendor primary source (self-interested, attributed) or a dated reviewer-reported community item.",
+    "flow": {
+      "identified": 147,
+      "screened": 147,
+      "excluded_total": 115,
+      "excluded_by_reason": {
+        "duplicate": 28,
+        "off-topic": 42,
+        "unverifiable-this-run": 12,
+        "no-methodology-affiliate": 33
+      },
+      "included_sources": 32,
+      "included_registry_entries": 41,
+      "note": "Unit = distinct source URL (locale, slug and tracking variants of one page counted once; grouped families counted at member count in candidates_log). Several included sources yield more than one registry entry, so included_registry_entries exceeds included_sources."
+    },
+    "queries_verbatim": [
+      "help.synthesia.io how do I create a video in Synthesia generate download watermark",
+      "help.synthesia.io What are Synthesia Licenses commercial use free plan",
+      "help.heygen.com how to create your first video avatar script voice generate",
+      "help.heygen.com free plan watermark commercial use video limit",
+      "site:reddit.com HeyGen credits used up video failed rendering credits lost",
+      "site:reddit.com Synthesia credits new pricing October 2026 minutes",
+      "reddit HeyGen credits ran out re-render same video charged again",
+      "reddit r/HeyGen_Official credits wasted video generation failed",
+      "Synthesia credits change complaint reddit r/synthesia new plan credits per minute",
+      "HeyGen Trustpilot reviews credits charged video failed",
+      "help.synthesia.io \"How do I download my Synthesia video\" MP4 plan",
+      "synthesia.io legal terms of service \"Customer Terms\" commercial use output free plan",
+      "quora HeyGen credits finished quickly video re-generate cost",
+      "HeyGen Avatar IV credits burn complaint October 2026 users surprised credit costs",
+      "community.heygen.com credits deducted failed render video stuck credits refund",
+      "Synthesia community video generation failed credits deducted regenerate edit credits again forum"
+    ],
+    "direct_fetches_documented": "Vendor help-center, pricing, terms and Trustpilot URLs were fetched directly (listed in candidates_log); reddit.com search, reddit search.json, Capterra review pages and 4 HeyGen developer-forum threads were attempted and could not be fetched. A later attempt to probe G2 and Quora endpoints directly was stopped by the environment's permission check and not retried.",
+    "date_window": "all-time up to 2026-10-28; vendor pages carry their own stated dates; Trustpilot samples cover 2026-07-03..2026-10-28",
+    "astroturf_screen": "No astroturf network detected; the Trustpilot items are individual reviewer posts, none funnelled to one vendor; 0 items excluded as astroturf. Vendor material is labeled self-interested throughout.",
+    "platform_coverage_note": "Reddit (WebFetch tool refuses reddit.com; direct HTTP 403), Capterra (HTTP 403), Quora and G2 yielded zero verifiable items this run. The shard does not claim Reddit, Quora, Capterra or G2 coverage; the community layer is Trustpilot only.",
+    "metering_conflicts_for_writer": [
+      "Synthesia: the current credits article and the 2026-10-01 plan article say about 100 credits per finished minute; the July 22 2026 edit-consumption article still says 2 credits per second (120 per minute). Cite 100 and label 120 as an older vendor page, or avoid per-minute figures for edits.",
+      "Synthesia: the generate article's FAQ (July 22 2026) still says generating consumes 'minutes'; the credits article says credits. Vendor docs are mid-migration.",
+      "HeyGen: the help article says Free = 1 to 3 videos by region; the pricing page says 3 videos a month. Say 'up to 3, depending on region'.",
+      "HeyGen: the paid-user export article says output may be used commercially; the Terms (updated 2026-10-15) restrict Free Plan output to non-commercial use. For free-plan commercial use cite the Terms.",
+      "Synthesia free-plan commercial use: no plain statement found in the captured Customer Terms; do not claim either way.",
+      "Neither vendor states a credit price for preview or export. HeyGen states failed or cancelled renders are not charged; the Synthesia help pages checked do not state a refund rule for failed generations."
+    ],
+    "reused_with_recapture": [
+      {
+        "ev_id": "EV-synthesia-vs-heygen-14",
+        "recaptured_at": "2026-10-28",
+        "result": "unchanged: HeyGen Avatar III Video 4, IV Video 31, V 48 credits per minute; see entry 19"
+      },
+      {
+        "ev_id": "EV-synthesia-vs-heygen-04",
+        "recaptured_at": "2026-10-28",
+        "result": "Synthesia ~100 credits per finished minute and API 160 credits per minute confirmed on the 10/01 and credits articles; the older 120 credits per minute still appears in the July 22 edit article; see entries 01, 03, 05"
+      },
+      {
+        "ev_id": "EV-synthesia-vs-heygen-02",
+        "recaptured_at": "2026-10-28",
+        "result": "unchanged vs the 2026-10-27 recapture: Starter $19 ($9 first month, $14/mo yearly, $168), Pro $89 ($49 first month, $59/mo yearly, $708), Basic $0 with 10 min and 500 credits; see entry 06"
+      },
+      {
+        "ev_id": "EV-synthesia-vs-heygen-01",
+        "recaptured_at": "2026-10-28",
+        "result": "unchanged vs the 2026-10-27 recapture: HeyGen Free 3 videos, 1 minute, watermarked; Creator $29 600 credits; Pro $49 1,000 credits; see entry 29"
+      },
+      {
+        "ev_id": "EV-heygen-review-06",
+        "recaptured_at": "2026-10-28",
+        "result": "consent flow unchanged in substance on the 2026-04-23 article (live consent, same person, under 30 s, QR for a second person); see entry 31"
+      },
+      {
+        "ev_id": "EV-synthesia-review-10",
+        "recaptured_at": "2026-10-28",
+        "result": "live-consent rule unchanged on docs.synthesia.io today; see entry 16"
+      },
+      {
+        "ev_id": "EV-synthesia-review-11",
+        "recaptured_at": "2026-10-28",
+        "result": "allowances Starter 3 / Creator (now Pro) 5 / Enterprise unlimited unchanged on the help article; pricing page also lists 3 / 5 / unlimited; see entry 17"
+      }
+    ],
+    "excluded_note": "pricingsaas.com tracker (Oct 2, 2026) reports Synthesia cut Basic credits from 1,200 to 500; excluded as no-methodology (detection method not described). Synthesia's own 10/01 article is the registered source for the Creator-to-Pro rename and the 500-credit Basic allowance; the 1,200-to-500 cut is NOT claimed.",
+    "candidates_log": [
+      "I||help.synthesia.io/en/articles/11972627 (credits, self-serve)",
+      "I||help.synthesia.io/en/articles/8850453 (credit consumption for edits)",
+      "I||help.synthesia.io/en/articles/17217419 (Oct 1 2026 plan changes)",
+      "I||synthesia.io/pricing",
+      "I||help.synthesia.io/en/articles/9189319 (generate)",
+      "I||help.synthesia.io/en/articles/9564635 (watermark)",
+      "I||help.synthesia.io/en/articles/9317524 (download)",
+      "I||help.synthesia.io/en/articles/13214011 (script)",
+      "I||help.synthesia.io/en/articles/6341418 (stock avatars)",
+      "I||help.synthesia.io/en/articles/13770160 (voice)",
+      "I||help.synthesia.io/en/articles/8224637 (use an avatar)",
+      "I||help.synthesia.io/en/articles/9457904 (slow generation / moderation)",
+      "I||help.synthesia.io/en/articles/10104506 (generation errors)",
+      "I||docs.synthesia.io/docs/personal-avatars",
+      "I||help.synthesia.io/en/articles/9453224 (personal avatar from video)",
+      "I||synthesia.io/legal/customer-terms-of-service",
+      "I||help.heygen.com/en/articles/15125761 (credit-based plans)",
+      "I||help.heygen.com/en/articles/15126059 (how to use credits)",
+      "I||help.heygen.com/en/articles/15544929 (avatar and voice FAQ)",
+      "I||help.heygen.com/en/articles/9655503 (processing times)",
+      "I||help.heygen.com/en/articles/11049837 (first video in Studio)",
+      "I||help.heygen.com/en/articles/9574152 (script tips)",
+      "I||help.heygen.com/en/articles/9834825 (download/export)",
+      "I||help.heygen.com/en/articles/11057301 (watermark)",
+      "I||heygen.com/pricing",
+      "I||heygen.com/terms",
+      "I||help.heygen.com/en/articles/12092609 (consent video)",
+      "I||help.heygen.com/en/articles/9834925 (voices)",
+      "I||help.heygen.com/en/articles/17589678 (PVC)",
+      "I||trustpilot.com/review/heygen.com?sort=recency (page 1)",
+      "I||trustpilot.com/review/heygen.com?sort=recency&page=2",
+      "I||trustpilot.com/review/synthesia.io?sort=recency (page 1)",
+      "X|duplicate|help.synthesia.io/en/articles/15972650 (pricing plans; Basic = explore, subsumed by pricing page entry)",
+      "X|duplicate|help.synthesia.io/en/articles/10274409 (second URL of the download article)",
+      "X|duplicate|help.synthesia.io/en/articles/11972627-credits-are-here (older slug of the credits article)",
+      "X|off-topic|help.synthesia.io/en/articles/9189559 (sharing, SCORM, password protection)",
+      "X|off-topic|docs.synthesia.io/docs/voices (API reference dump, no user-facing voice rules)",
+      "X|unverifiable-this-run|help.synthesia.io/en/articles/8408197 (What are Synthesia Licenses; HTTP 404 on fetch)",
+      "X|unverifiable-this-run|synthesia.io/legal/terms (HTTP 404)",
+      "X|off-topic|help.heygen.com/en/ (help-center home, index page)",
+      "X|off-topic|help.heygen.com/en/collections/9057644-video (index page)",
+      "X|off-topic|help.heygen.com/en/collections/10656342-voice (index page)",
+      "X|off-topic|help.heygen.com/en/collections/9057650-account-billing (index page)",
+      "X|unverifiable-this-run|reddit.com/search?q=heygen credits (fetch blocked by tool)",
+      "X|unverifiable-this-run|reddit.com/search.json?q=heygen+credits (HTTP 403)",
+      "X|unverifiable-this-run|old.reddit.com/search?q=heygen+credits (HTTP 403 block page)",
+      "X|unverifiable-this-run|capterra.com/p/10015133/HeyGen/reviews (HTTP 403)",
+      "X|unverifiable-this-run|capterra.com/p/198045/Enact/reviews (Synthesia; HTTP 403)",
+      "X|unverifiable-this-run|developers.heygen.com/discuss/666cf562809d400010e63178 (301 then 404)",
+      "X|unverifiable-this-run|developers.heygen.com/discuss/679a87b25d98cb0010bf2645 (301 then 404)",
+      "X|unverifiable-this-run|developers.heygen.com/discuss/67860e1134653200661a6d0e (404)",
+      "X|unverifiable-this-run|community.heygen.com/.../video-agent-must-toggle-between-unlimited-or-avatar-iv (301 to geniverse landing page)",
+      "X|unverifiable-this-run|docs.heygen.com/discuss/67e56ac2e12528004bbb409d (same host family as the 404 threads; not separately fetched)",
+      "X|no-methodology-affiliate|pricingsaas.com/news/article/synthesia-renames-creator-to-pro (tracker, detection method not described)",
+      "X|no-methodology-affiliate|pricingsaas.com/companies/synthesia/diffs/2026D275",
+      "X|no-methodology-affiliate|usagepricing.com/blueprint/activity/synthesia-2026-10-04",
+      "X|no-methodology-affiliate|admakeai.com/blog/heygen-pricing-explained",
+      "X|no-methodology-affiliate|costbench.com/software/ai-video-generators/heygen/hidden-costs",
+      "X|no-methodology-affiliate|eesel.ai/blog/heygen-pricing",
+      "X|no-methodology-affiliate|eesel.ai/blog/synthesia-pricing",
+      "X|no-methodology-affiliate|anam.ai/blog/heygen-pricing",
+      "X|no-methodology-affiliate|magichour.ai/blog/heygen-pricing",
+      "X|no-methodology-affiliate|magichour.ai/blog/synthesia-pricing-2026",
+      "X|no-methodology-affiliate|diyai.io/ai-tools/video-generation/heygen-pricing",
+      "X|no-methodology-affiliate|academy.techpresso.co/reviews/is-heygen-worth-it",
+      "X|no-methodology-affiliate|pexo.ai/blog/heygen-review-7390",
+      "X|no-methodology-affiliate|checkthat.ai/brands/heygen/reviews",
+      "X|no-methodology-affiliate|vidailab.com/heygen-avatar-iv-review",
+      "X|no-methodology-affiliate|creatify.ai/blog/synthesia-pricing-(2026)",
+      "X|no-methodology-affiliate|activepieces.com/blog/synthesia-pricing-2026",
+      "X|no-methodology-affiliate|prospeo.io/s/heygen-pricing-reviews-pros-and-cons",
+      "X|no-methodology-affiliate|prospeo.io/s/heygen-alternatives",
+      "X|no-methodology-affiliate|zsky.ai/blog/how-much-does-synthesia-cost",
+      "X|no-methodology-affiliate|licenseorg.com/guide/ai-content/synthesia",
+      "X|no-methodology-affiliate|licenseorg.com/compare/synthesia-vs-adobe-firefly",
+      "X|no-methodology-affiliate|gptprompts.ai/ai-pricing/heygen-ai-pricing",
+      "X|no-methodology-affiliate|bigvu.tv/blog/heygen-free-get-free-plan",
+      "X|no-methodology-affiliate|flexprice.io/pricing-index/heygen",
+      "X|no-methodology-affiliate|prismix.dev/guides/heygen-not-working",
+      "X|no-methodology-affiliate|conductatlas.com/platform/synthesia/synthesia-terms-of-service",
+      "X|no-methodology-affiliate|keywordsearch.com/blog/create-videos-effortlessly-with-heygen-ai-tool",
+      "X|no-methodology-affiliate|keywordsearch.com/blog/get-started-with-synthesia-video-creator-free-download",
+      "X|no-methodology-affiliate|tooljunction.io/ai-tools/heygen",
+      "X|no-methodology-affiliate|lilachbullock.com/?p=158286",
+      "X|no-methodology-affiliate|qwe.edu.pl/tutorial/heygen-ai-avatar-videos-tutorial",
+      "X|no-methodology-affiliate|shotstack.io/docs/guide/generating-assets/providers/heygen",
+      "X|off-topic|school-education.ec.europa.eu/etwinning/.../heygen",
+      "X|off-topic|grandavehousing.calpoly.edu/news/free-ai-video-creation-no",
+      "X|off-topic|en.wikipedia.org/wiki/Synthesia_(video_game)",
+      "X|off-topic|en.wikipedia.org/wiki/HeyGen",
+      "X|off-topic|g2.com/compare/heygen-vs-synthesia",
+      "X|off-topic|g2.com/compare/animoto-vs-synthesia",
+      "X|off-topic|g2.com/compare/rytr-vs-synthesia",
+      "X|off-topic|g2.com/compare/synthesia-vs-invideo",
+      "X|off-topic|capterra.com/p/242212/Synthesys-Studio/pricing",
+      "X|off-topic|capterra.com/compare/198045-10011212/Enact-vs-Replit",
+      "X|off-topic|docs-v1.reachout.ai/faq-troubleshooting/why-do-i-get-charged-credits-for-the-same-video",
+      "X|off-topic|veniceai.featurebase.app credit protection post",
+      "X|off-topic|ai.sync.so/refund-policy-failed-jobs",
+      "X|off-topic|synthesia.io/tools/ai-video-editor/video-watermark (vendor marketing page)",
+      "X|off-topic|help.synthesia.io collection pages (9616435, 9616604, 17200845, 16069188, 18912270, 8218068 FAQ)",
+      "X|off-topic|synthesia.io/updates/download-multiple-videos-at-once",
+      "X|duplicate|synthesia.io/updates/introducing-credits-instead-of-minutes (pre-October credits launch, superseded by entries 01/05)",
+      "X|off-topic|docs.synthesia.io/docs/youtube and /docs/vimeo",
+      "X|off-topic|help.synthesia.io/en/articles/11825466 (Enterprise credits)",
+      "X|duplicate|help.synthesia.io/en/articles/10113080 (not-enough-credits article, covered by errors article)",
+      "X|duplicate|synthesia.io legal terms: user-terms-of-service, terms-of-service, terms-and-conditions, 2024/2022 archived versions (6 URLs of the legal family; current Customer Terms captured)",
+      "X|off-topic|heygen.com marketing tool pages (free-avatar-video-generator x3 locales, script-to-video-ai, ai-girl-generator, free-ai-video-generator-no-watermark x4 locales, blog/best-free-ai-avatar-generators, blog/free-ai-video-generators)",
+      "X|duplicate|heygen.com/pricing locale and tracking variants (en-ae, en-gb, ?via, ?nb)",
+      "X|duplicate|trustpilot.com regional mirrors of HeyGen profile (ca p7, au p7, au p5, ie p10, ch, jp, no x2, se x2, fr-be, ca heygen.ai, www p2); same reviewer pool, main profile sampled",
+      "X|off-topic|community.adobe.com Firefly/credit threads (Adobe product, 14 distinct thread IDs from the failed-render searches)"
+    ],
+    "coding": {
+      "passes": [
+        "A",
+        "B"
+      ],
+      "agreement": "40 of 41 entries agreed on label, stance and claim match; 1 (-34) resolved by trimming an inference not on the page",
+      "date_corrections": 12
+    }
+  },
+  "entries": [
+    {
+      "id": "EV-how-to-make-an-ai-avatar-video-01",
+      "claim": "Synthesia's self-serve credits article (captured 2026-10-28, marked 'Updated this week') states that video creation uses about 100 credits per minute of finished video, that every self-serve plan including Basic includes 10 minutes of video and 500 credits a month (Starter 1,750 credits/mo, Pro 6,500 credits/mo), and that unused credits are reset at the start of each billing period with no accumulation. The worked example says 1,750 credits cover about 17 minutes of finished video on Starter, in addition to the 10 included minutes. Recapture of the 2026-10-27 B1 refresh, unchanged.",
+      "source_url": "https://help.synthesia.io/en/articles/11972627-what-are-credits-and-how-do-they-work-on-self-serve-plans",
+      "source_date": "2026-10-21",
+      "quote": "Video creation uses about 100 credits per minute of finished video.",
+      "platform": "help.synthesia.io (vendor help-center article, self-interested; captured 2026-10-28); page shows only 'Updated this week'",
+      "target_slug": "/guides/how-to-make-an-ai-avatar-video",
+      "collected_at": "2026-10-28",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "how-to-make-an-ai-avatar-video-2026-10-28",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Synthesia",
+        "aspect": "credits per finished minute; monthly allowances; no rollover",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Basic, Starter, Pro",
+        "item_date": "2026-10-21"
+      },
+      "coding_ambiguous": false,
+      "honesty_notes": [],
+      "quote_verified_against_live_fetch": true,
+      "resolver_note_date": "item date set to the page's own modified date (coder A); capture date stays collected_at 2026-10-28",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-31",
+          "source_url": "https://help.synthesia.io/en/articles/11972627-what-are-credits-and-how-do-they-work-on-self-serve-plans",
+          "claim": "Re-read 2026-10-31: about 100 credits per finished minute unchanged.",
+          "quote": "A typical finished video uses about 100 credits per minute."
+        }
+      ]
+    },
+    {
+      "id": "EV-how-to-make-an-ai-avatar-video-02",
+      "claim": "The same Synthesia credits article states that when a user edits an existing video and generates a new version, credits are recalculated based on the updated version and additional credits may be used depending on the changes; duplicating a video does not use credits but generating the duplicate does. The article does not list a separate credit price for preview or for download.",
+      "source_url": "https://help.synthesia.io/en/articles/11972627-what-are-credits-and-how-do-they-work-on-self-serve-plans",
+      "source_date": "2026-10-21",
+      "quote": "When you edit an existing video and generate a new version, credits are recalculated based on the updated version.",
+      "platform": "help.synthesia.io (vendor help-center article, self-interested; captured 2026-10-28); page shows only 'Updated this week'",
+      "target_slug": "/guides/how-to-make-an-ai-avatar-video",
+      "collected_at": "2026-10-28",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "how-to-make-an-ai-avatar-video-2026-10-28",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Synthesia",
+        "aspect": "retake/regenerate cost; duplicate cost; no stated preview or export fee",
+        "stance": "n/a",
+        "plan_tier_if_stated": "all self-serve plans",
+        "item_date": "2026-10-21"
+      },
+      "coding_ambiguous": false,
+      "honesty_notes": [],
+      "quote_verified_against_live_fetch": true,
+      "resolver_note_date": "item date set to the page's own modified date (coder A); capture date stays collected_at 2026-10-28"
+    },
+    {
+      "id": "EV-how-to-make-an-ai-avatar-video-03",
+      "claim": "Synthesia's edit-consumption article (dated July 22, 2026) says each second of video uses 2 credits, so a one-minute video consumes 120 credits. This conflicts with the October credits article (about 100 credits per finished minute); the edit article carries the older figure and its date predates the 2026-10-01 plan change. A writer must cite the 100 credits per minute figure and name the 120 figure only as an older vendor page.",
+      "source_url": "https://help.synthesia.io/en/articles/8850453-how-does-synthesia-credit-consumption-work-for-video-edits",
+      "source_date": "2026-07-22",
+      "quote": "Each second of a video uses 2 credits. Ex: A one-minute video will consume 120 credits.",
+      "platform": "help.synthesia.io (vendor help-center article, self-interested; captured 2026-10-28); page dated July 22, 2026, so it predates the 2026-10-01 plan change",
+      "target_slug": "/guides/how-to-make-an-ai-avatar-video",
+      "collected_at": "2026-10-28",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "how-to-make-an-ai-avatar-video-2026-10-28",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Synthesia",
+        "aspect": "credits per second (older page) vs ~100 credits/min (current page): vendor docs inconsistent",
+        "stance": "n/a",
+        "plan_tier_if_stated": "self-serve",
+        "item_date": "2026-07-22"
+      },
+      "coding_ambiguous": true,
+      "honesty_notes": [
+        "Vendor-internal inconsistency between two help articles; coding ambiguous on which rate governs. Flag to resolver."
+      ],
+      "quote_verified_against_live_fetch": true
+    },
+    {
+      "id": "EV-how-to-make-an-ai-avatar-video-04",
+      "claim": "According to Synthesia's edit-consumption table (dated July 22, 2026), a script edit that removes words, reorders words or changes punctuation has no effect on credit consumption, while adding or replacing words counts the duration of the new words (the worked example: +1 second means 2 additional credits). Replacing an avatar or changing the voice language counts the duration of the change; changing avatar framing, avatar look, pronunciation or voice tone has no effect. Per-second rate in the example is the older 2 credits/second (see EV-how-to-make-an-ai-avatar-video-03).",
+      "source_url": "https://help.synthesia.io/en/articles/8850453-how-does-synthesia-credit-consumption-work-for-video-edits",
+      "source_date": "2026-07-22",
+      "quote": "Count duration of new words. It’s +1 seconds to the script. You have spent 2 additional credits.",
+      "platform": "help.synthesia.io (vendor help-center article, self-interested; captured 2026-10-28); page dated July 22, 2026",
+      "target_slug": "/guides/how-to-make-an-ai-avatar-video",
+      "collected_at": "2026-10-28",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "how-to-make-an-ai-avatar-video-2026-10-28",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Synthesia",
+        "aspect": "which edits spend credits again (script words added/replaced, avatar replaced, voice language changed)",
+        "stance": "n/a",
+        "plan_tier_if_stated": "self-serve",
+        "item_date": "2026-07-22"
+      },
+      "coding_ambiguous": false,
+      "honesty_notes": [],
+      "quote_verified_against_live_fetch": true
+    },
+    {
+      "id": "EV-how-to-make-an-ai-avatar-video-05",
+      "claim": "Synthesia's plan-change article states that from October 1, 2026 every plan including Basic carries 10 minutes of video, 3 survey responses and 500 credits a month, that Creator is renamed Pro at the same price, and that the included 10 minutes of video and 3 survey responses are used first with credits spent only after they run out. The credit table lists video creation at about 100 credits per minute, dubbing with lip-sync 80 and without 40, API video 160 per minute, and motion graphics free.",
+      "source_url": "https://help.synthesia.io/en/articles/17217419-what-s-changing-in-synthesia-plans-on-october-1-2026",
+      "source_date": "2026-09-29",
+      "quote": "Your 10 minutes of included video and 3 survey responses are used first. Credits are only used once those run out.",
+      "platform": "help.synthesia.io (vendor help-center article, self-interested; captured 2026-10-28); page shows 'Updated over a month ago'",
+      "target_slug": "/guides/how-to-make-an-ai-avatar-video",
+      "collected_at": "2026-10-28",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "how-to-make-an-ai-avatar-video-2026-10-28",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Synthesia",
+        "aspect": "October 2026 metering change; included minutes spent before credits",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Basic, Starter, Pro",
+        "item_date": "2026-09-29"
+      },
+      "coding_ambiguous": false,
+      "honesty_notes": [],
+      "quote_verified_against_live_fetch": true,
+      "resolver_note_date": "item date set to the page's own modified date (coder A); capture date stays collected_at 2026-10-28"
+    },
+    {
+      "id": "EV-how-to-make-an-ai-avatar-video-06",
+      "claim": "On its pricing page captured 2026-10-28 Synthesia lists Basic at $0 per month with 10 minutes of video creation or dubbing, 3 survey responses and 500 credits, and states videos carry a Synthesia watermark. Starter is $19 per month ($9 for the first month; $14 per month billed yearly, $168 per year) with 1,250 credits, and Pro is $89 per month ($49 first month; $59 per month billed yearly, $708 per year) with 6,000 credits. The MP4 Downloads row reads 'Download your videos in Full HD, 1920 x 1080.' Recapture of the 2026-10-27 refresh figures, unchanged.",
+      "source_url": "https://www.synthesia.io/pricing",
+      "source_date": "2026-10-28",
+      "quote": "Basic $0 per month 500 credits / month ... Videos carry a Synthesia watermark",
+      "platform": "synthesia.io/pricing (vendor pricing page, self-interested; captured 2026-10-28)",
+      "target_slug": "/guides/how-to-make-an-ai-avatar-video",
+      "collected_at": "2026-10-28",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "how-to-make-an-ai-avatar-video-2026-10-28",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Synthesia",
+        "aspect": "prices, free-plan watermark, credits per plan",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Basic, Starter, Pro",
+        "item_date": "2026-10-28"
+      },
+      "coding_ambiguous": false,
+      "honesty_notes": [],
+      "quote_verified_against_live_fetch": true,
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-31",
+          "source_url": "https://www.synthesia.io/pricing",
+          "claim": "Re-read 2026-10-31: Basic $0, Starter $19 ($9 first month), $14 billed yearly at $168, 10 included minutes, watermark on Basic: unchanged.",
+          "quote": "$168 billed yearly"
+        }
+      ]
+    },
+    {
+      "id": "EV-how-to-make-an-ai-avatar-video-07",
+      "claim": "Synthesia's generate article (July 22, 2026) walks through rendering: select Generate at the top right of the project, enter a title and description if required, optionally toggle burned-in captions, edit chapters, then select Generate again; the in-progress screen shows the stages Moderating, Queued, Preparing, Rendering, Assembling and Finalizing, and a generated video is edited again through Open in Editor. The FAQ on the same page says generating consumes 'minutes' on the account, wording that predates the credits model.",
+      "source_url": "https://help.synthesia.io/en/articles/9189319-how-do-i-generate-my-video-in-synthesia",
+      "source_date": "2026-07-22",
+      "quote": "Navigate to your chosen project and select the Generate button at the top right of the screen",
+      "platform": "help.synthesia.io (vendor help-center article, self-interested; captured 2026-10-28); page dated July 22, 2026",
+      "target_slug": "/guides/how-to-make-an-ai-avatar-video",
+      "collected_at": "2026-10-28",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "how-to-make-an-ai-avatar-video-2026-10-28",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Synthesia",
+        "aspect": "render step and stages; FAQ still says minutes",
+        "stance": "n/a",
+        "plan_tier_if_stated": "all plans",
+        "item_date": "2026-07-22"
+      },
+      "coding_ambiguous": false,
+      "honesty_notes": [],
+      "quote_verified_against_live_fetch": true
+    },
+    {
+      "id": "EV-how-to-make-an-ai-avatar-video-08",
+      "claim": "Synthesia's watermark article (July 22, 2026) says the Synthesia logo appears on all videos created on the Basic plan and that removing it means upgrading the plan and re-generating the video. For the API, a test-mode video carries a watermark and uses no minutes, and a watermark cannot be removed from an existing test-mode video.",
+      "source_url": "https://help.synthesia.io/en/articles/9564635-how-do-i-remove-the-synthesia-watermark",
+      "source_date": "2026-07-22",
+      "quote": "The Synthesia logo (watermark) will appear on all videos created with your account.",
+      "platform": "help.synthesia.io (vendor help-center article, self-interested; captured 2026-10-28); page dated July 22, 2026",
+      "target_slug": "/guides/how-to-make-an-ai-avatar-video",
+      "collected_at": "2026-10-28",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "how-to-make-an-ai-avatar-video-2026-10-28",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Synthesia",
+        "aspect": "free-plan watermark; removal requires upgrade and re-generation",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Basic",
+        "item_date": "2026-07-22"
+      },
+      "coding_ambiguous": false,
+      "honesty_notes": [],
+      "quote_verified_against_live_fetch": true
+    },
+    {
+      "id": "EV-how-to-make-an-ai-avatar-video-09",
+      "claim": "Synthesia's download article states that downloading a video is available to Starter, Pro and Enterprise customers and that Basic and trial users are unable to download videos; the steps are to generate the video, open the three-dot menu on the video and choose Download, then pick the .mp4 option.",
+      "source_url": "https://help.synthesia.io/en/articles/9317524-how-do-i-download-my-video",
+      "source_date": "2026-10-05",
+      "quote": "Basic and trial users are unable to download videos.",
+      "platform": "help.synthesia.io (vendor help-center article, self-interested; captured 2026-10-28); page shows 'Updated over 3 weeks ago'",
+      "target_slug": "/guides/how-to-make-an-ai-avatar-video",
+      "collected_at": "2026-10-28",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "how-to-make-an-ai-avatar-video-2026-10-28",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Synthesia",
+        "aspect": "export step; free plan cannot download",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Basic vs Starter/Pro",
+        "item_date": "2026-10-05"
+      },
+      "coding_ambiguous": false,
+      "honesty_notes": [],
+      "quote_verified_against_live_fetch": true,
+      "resolver_note_date": "item date set to the page's own modified date (coder A); capture date stays collected_at 2026-10-28"
+    },
+    {
+      "id": "EV-how-to-make-an-ai-avatar-video-10",
+      "claim": "Synthesia's script article (July 20, 2026) says a script is the spoken text for a single scene, that scripts are scene-based so longer scripts should be split into multiple scenes, and that scene breaks act as natural pauses; the steps are to open the video in the editor, select a scene, select the script box and type or paste the text, or upload an audio file instead.",
+      "source_url": "https://help.synthesia.io/en/articles/13214011-how-do-i-create-a-script-in-synthesia",
+      "source_date": "2026-07-20",
+      "quote": "Scripts in Synthesia are scene-based, not video-based.",
+      "platform": "help.synthesia.io (vendor help-center article, self-interested; captured 2026-10-28); page dated July 20, 2026",
+      "target_slug": "/guides/how-to-make-an-ai-avatar-video",
+      "collected_at": "2026-10-28",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "how-to-make-an-ai-avatar-video-2026-10-28",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Synthesia",
+        "aspect": "script step; scene-based scripts",
+        "stance": "n/a",
+        "plan_tier_if_stated": "all plans",
+        "item_date": "2026-07-20"
+      },
+      "coding_ambiguous": false,
+      "honesty_notes": [],
+      "quote_verified_against_live_fetch": true
+    },
+    {
+      "id": "EV-how-to-make-an-ai-avatar-video-11",
+      "claim": "Synthesia's stock-avatar article (September 2, 2026) states that stock avatars are included on all plans with no creation or additional cost, are available immediately from the Avatar page, and come in five types (including synthetic stock avatars and Express-3 stock avatars, the latter in staged rollout).",
+      "source_url": "https://help.synthesia.io/en/articles/6341418-what-stock-avatars-are-available-in-synthesia",
+      "source_date": "2026-09-02",
+      "quote": "Stock Avatars are included on all Synthesia plans",
+      "platform": "help.synthesia.io (vendor help-center article, self-interested; captured 2026-10-28); page dated September 2, 2026",
+      "target_slug": "/guides/how-to-make-an-ai-avatar-video",
+      "collected_at": "2026-10-28",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "how-to-make-an-ai-avatar-video-2026-10-28",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Synthesia",
+        "aspect": "stock avatar choice; included on all plans",
+        "stance": "n/a",
+        "plan_tier_if_stated": "all plans",
+        "item_date": "2026-09-02"
+      },
+      "coding_ambiguous": false,
+      "honesty_notes": [],
+      "quote_verified_against_live_fetch": true
+    },
+    {
+      "id": "EV-how-to-make-an-ai-avatar-video-12",
+      "claim": "Synthesia's voice article (September 4, 2026) says avatars come with a pre-selected voice that can be changed from the voice dropdown in the script box, with a voice library offering Featured voices and tabs for voices from Synthesia, My voices and Shared with me, a play-icon preview for any voice, and a prompt to apply the new voice to all scenes.",
+      "source_url": "https://help.synthesia.io/en/articles/13770160-how-do-i-change-an-avatar-s-voice",
+      "source_date": "2026-09-04",
+      "quote": "As standard, avatars come with a pre-selected voice, but you can change the voice, language, and speed to fit your video needs.",
+      "platform": "help.synthesia.io (vendor help-center article, self-interested; captured 2026-10-28); page dated September 4, 2026",
+      "target_slug": "/guides/how-to-make-an-ai-avatar-video",
+      "collected_at": "2026-10-28",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "how-to-make-an-ai-avatar-video-2026-10-28",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Synthesia",
+        "aspect": "voice step; preview before choosing",
+        "stance": "n/a",
+        "plan_tier_if_stated": "all plans",
+        "item_date": "2026-09-04"
+      },
+      "coding_ambiguous": false,
+      "honesty_notes": [],
+      "quote_verified_against_live_fetch": true
+    },
+    {
+      "id": "EV-how-to-make-an-ai-avatar-video-13",
+      "claim": "Synthesia's avatar article lists four routes: stock avatars, customizable synthetic stock avatars, custom avatars (from an image, a video recording or a studio shoot) and Avatar Builder. For new content it recommends a photo-based Personal Avatar rather than a video-based one, which it says uses legacy technology, and it notes that some topics may require a custom avatar instead of a stock avatar under its content moderation guidelines.",
+      "source_url": "https://help.synthesia.io/en/articles/8224637-how-do-i-use-an-avatar-in-synthesia",
+      "source_date": "2026-10-09",
+      "quote": "For new content, Synthesia recommends a photo-based Personal Avatar rather than a video-based Personal Avatar, which uses legacy technology.",
+      "platform": "help.synthesia.io (vendor help-center article, self-interested; captured 2026-10-28); page shows 'Updated over 2 weeks ago'",
+      "target_slug": "/guides/how-to-make-an-ai-avatar-video",
+      "collected_at": "2026-10-28",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "how-to-make-an-ai-avatar-video-2026-10-28",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Synthesia",
+        "aspect": "avatar choice; stock vs custom; moderation guideline",
+        "stance": "n/a",
+        "plan_tier_if_stated": "all plans",
+        "item_date": "2026-10-09"
+      },
+      "coding_ambiguous": false,
+      "honesty_notes": [],
+      "quote_verified_against_live_fetch": true,
+      "resolver_note_date": "item date set to the page's own modified date (coder A); capture date stays collected_at 2026-10-28"
+    },
+    {
+      "id": "EV-how-to-make-an-ai-avatar-video-14",
+      "claim": "Synthesia's article on slow generation (July 22, 2026) says every video is moderated by automated systems and, where needed, manual review that takes additional time, asks users not to generate the same video multiple times because that increases wait times, and tells users whose video has been under manual review for more than 24 hours to contact support.",
+      "source_url": "https://help.synthesia.io/en/articles/9457904-why-is-my-video-taking-a-while-to-generate",
+      "source_date": "2026-07-22",
+      "quote": "Please do not generate the video multiple times, as this will hinder the process, resulting in increased wait times.",
+      "platform": "help.synthesia.io (vendor help-center article, self-interested; captured 2026-10-28); page dated July 22, 2026",
+      "target_slug": "/guides/how-to-make-an-ai-avatar-video",
+      "collected_at": "2026-10-28",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "how-to-make-an-ai-avatar-video-2026-10-28",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Synthesia",
+        "aspect": "render waiting time; moderation; do not resubmit",
+        "stance": "n/a",
+        "plan_tier_if_stated": "all plans",
+        "item_date": "2026-07-22"
+      },
+      "coding_ambiguous": false,
+      "honesty_notes": [],
+      "quote_verified_against_live_fetch": true
+    },
+    {
+      "id": "EV-how-to-make-an-ai-avatar-video-15",
+      "claim": "Synthesia's generation-errors article (July 24, 2026) lists the error messages a user may meet at render time, including 'Oops... You don’t have enough credits to generate the video', a general 'Something went wrong' error, and a permissions error when a video contains avatars or voices the account may not use. It does not state whether credits are returned after a failed generation.",
+      "source_url": "https://help.synthesia.io/en/articles/10104506-how-do-i-fix-video-generation-errors",
+      "source_date": "2026-07-24",
+      "quote": "If you see this message, your account does not have enough credits to complete the video generation.",
+      "platform": "help.synthesia.io (vendor help-center article, self-interested; captured 2026-10-28); page dated July 24, 2026",
+      "target_slug": "/guides/how-to-make-an-ai-avatar-video",
+      "collected_at": "2026-10-28",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "how-to-make-an-ai-avatar-video-2026-10-28",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Synthesia",
+        "aspect": "render failure messages; no stated refund rule for failed generation",
+        "stance": "n/a",
+        "plan_tier_if_stated": "all plans",
+        "item_date": "2026-07-24"
+      },
+      "coding_ambiguous": false,
+      "honesty_notes": [],
+      "quote_verified_against_live_fetch": true
+    },
+    {
+      "id": "EV-how-to-make-an-ai-avatar-video-16",
+      "claim": "Synthesia's Personal Avatar documentation (captured 2026-10-28) states that the consent video must be recorded live by the same person shown in the footage or photo and cannot be uploaded pre-recorded, that personal avatars from a photo are available on paid plans only, that Personal Avatar Requests (making an avatar of someone else) are Enterprise-only, and that owners can request deletion of their data at any time. Re-fetch of the sources behind EV-synthesia-review-10 and EV-synthesia-review-11.",
+      "source_url": "https://docs.synthesia.io/docs/personal-avatars",
+      "source_date": "2026-10-22",
+      "quote": "The consent video must be recorded live, and it must be the same person in the personal avatar creation footage. You cannot upload a pre-recorded consent video",
+      "platform": "docs.synthesia.io (vendor documentation, self-interested; captured 2026-10-28; page shows 'Updated 6 days ago')",
+      "target_slug": "/guides/how-to-make-an-ai-avatar-video",
+      "collected_at": "2026-10-28",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "how-to-make-an-ai-avatar-video-2026-10-28",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Synthesia",
+        "aspect": "custom avatar consent video; paid-plan gate; enterprise-only requests",
+        "stance": "n/a",
+        "plan_tier_if_stated": "paid plans / Enterprise",
+        "item_date": "2026-10-22"
+      },
+      "coding_ambiguous": false,
+      "honesty_notes": [],
+      "quote_verified_against_live_fetch": true,
+      "resolver_note_date": "item date set to the page's own modified date (coder A); capture date stays collected_at 2026-10-28"
+    },
+    {
+      "id": "EV-how-to-make-an-ai-avatar-video-17",
+      "claim": "Synthesia's help article on creating a personal avatar from video (July 22, 2026) lists allowances of 3 free avatars on Starter, 5 on Creator (the pre-October name of Pro) and unlimited on Enterprise, tells users to record consent using an on-screen script and tick a biometric consent box, and says the avatar processes in about 1 business day.",
+      "source_url": "https://help.synthesia.io/en/articles/9453224-how-do-i-create-my-personal-avatar",
+      "source_date": "2026-07-22",
+      "quote": "Select Start Recording and record your consent using the on-screen script.",
+      "platform": "help.synthesia.io (vendor help-center article, self-interested; captured 2026-10-28); page dated July 22, 2026 (still uses the pre-October plan name Creator)",
+      "target_slug": "/guides/how-to-make-an-ai-avatar-video",
+      "collected_at": "2026-10-28",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "how-to-make-an-ai-avatar-video-2026-10-28",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Synthesia",
+        "aspect": "personal avatar allowance by plan; consent steps; processing time",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Starter, Creator/Pro, Enterprise",
+        "item_date": "2026-07-22"
+      },
+      "coding_ambiguous": false,
+      "honesty_notes": [],
+      "quote_verified_against_live_fetch": true
+    },
+    {
+      "id": "EV-how-to-make-an-ai-avatar-video-18",
+      "claim": "Synthesia's Customer Terms of Service (effective July 20, 2026) put the burden on the customer: when a customer authorizes a Custom Avatar using an individual's voice or likeness, the customer must ensure that individual is over the applicable legal age and has given free and informed consent. The captured text did not contain a plain statement on commercial use of output by free-plan users, so that point is not claimed.",
+      "source_url": "https://www.synthesia.io/legal/customer-terms-of-service",
+      "source_date": "2026-07-20",
+      "quote": "ensure that when it authorizes the creation or use of a Custom Avatar using the voice or likeness of an individual, such individual is over the applicable statutory legal age and has provided free and informed consent.",
+      "platform": "synthesia.io/legal (vendor legal terms, self-interested; page states 'Effective: July 20, 2026'; captured 2026-10-28)",
+      "target_slug": "/guides/how-to-make-an-ai-avatar-video",
+      "collected_at": "2026-10-28",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "how-to-make-an-ai-avatar-video-2026-10-28",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Synthesia",
+        "aspect": "custom avatar likeness consent obligation (terms)",
+        "stance": "n/a",
+        "plan_tier_if_stated": "customer terms",
+        "item_date": "2026-07-20"
+      },
+      "coding_ambiguous": false,
+      "honesty_notes": [],
+      "quote_verified_against_live_fetch": true
+    },
+    {
+      "id": "EV-how-to-make-an-ai-avatar-video-19",
+      "claim": "HeyGen's credit-plan article (captured 2026-10-28) lists per-minute credit use for avatar video: Avatar III Photo Look 7, Avatar III Video Look 4, Avatar IV Photo Look 16, Avatar IV Video Look 31, Avatar V 48; Video Translation 6 (Speed), 10 (Precision), 4 without lip-sync. Creator is 600 credits a month at $29, Pro starts at 1,000 credits for $49, and Business is 1,500 credits for $149. Recapture of EV-synthesia-vs-heygen-14 (2026-10-27), unchanged. The article also says the credit cost is shown in-product before generating when available.",
+      "source_url": "https://help.heygen.com/en/articles/15125761-heygen-credit-based-pricing-plans-explained",
+      "source_date": "2026-10-21",
+      "quote": "Avatar III Video Look 1 minute = 4 credits",
+      "platform": "help.heygen.com (vendor help-center article, self-interested; captured 2026-10-28); page shows 'Updated over a week ago'",
+      "target_slug": "/guides/how-to-make-an-ai-avatar-video",
+      "collected_at": "2026-10-28",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "how-to-make-an-ai-avatar-video-2026-10-28",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "HeyGen",
+        "aspect": "credits per minute by avatar engine; plan credit pools",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Creator, Pro, Business",
+        "item_date": "2026-10-21"
+      },
+      "coding_ambiguous": false,
+      "honesty_notes": [],
+      "quote_verified_against_live_fetch": true,
+      "resolver_note_date": "item date set to the page's own modified date (coder A); capture date stays collected_at 2026-10-28",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-31",
+          "source_url": "https://help.heygen.com/en/articles/15125761-heygen-credit-based-pricing-plans-explained",
+          "claim": "Re-read 2026-10-31: engine rates unchanged (Avatar III 4/7, Avatar IV 31/16, Avatar V 48, translation 6/10/4).",
+          "quote": "Avatar IV Video Look 1 minute = 31 credits"
+        }
+      ]
+    },
+    {
+      "id": "EV-how-to-make-an-ai-avatar-video-20",
+      "claim": "HeyGen's credit-plan article states the Free plan does not use credits and instead gives a free video quota: 1 to 3 free videos depending on region, videos up to 1 minute, a 720p video sharing link, 500+ stock video avatars and 1 voice clone. Creator and Pro have 30-minute video length, Creator exports 1080p and Pro and Business 4K, and watermark removal starts at Creator.",
+      "source_url": "https://help.heygen.com/en/articles/15125761-heygen-credit-based-pricing-plans-explained",
+      "source_date": "2026-10-21",
+      "quote": "The Free plan does not use credits. Instead, Free users have a free video quota.",
+      "platform": "help.heygen.com (vendor help-center article, self-interested; captured 2026-10-28); page shows 'Updated over a week ago'",
+      "target_slug": "/guides/how-to-make-an-ai-avatar-video",
+      "collected_at": "2026-10-28",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "how-to-make-an-ai-avatar-video-2026-10-28",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "HeyGen",
+        "aspect": "free-plan limits: video count, length, resolution",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Free vs Creator/Pro",
+        "item_date": "2026-10-21"
+      },
+      "coding_ambiguous": false,
+      "honesty_notes": [],
+      "quote_verified_against_live_fetch": true,
+      "resolver_note_date": "item date set to the page's own modified date (coder A); capture date stays collected_at 2026-10-28"
+    },
+    {
+      "id": "EV-how-to-make-an-ai-avatar-video-21",
+      "claim": "HeyGen's credit-plan article says unused credits roll over for one additional billing cycle for monthly subscribers, annual subscribers get a monthly allocation that accumulates until the annual renewal date, and unused credits do not roll over if a paid plan is cancelled to Free. Creator and Pro cannot buy one-time credit packs (Creator upgrades to Pro; Pro moves to a higher tier), while Business can add credits at $0.05 each in 100-credit blocks for $5.",
+      "source_url": "https://help.heygen.com/en/articles/15125761-heygen-credit-based-pricing-plans-explained",
+      "source_date": "2026-10-21",
+      "quote": "Creator does not support one-time credit purchases.",
+      "platform": "help.heygen.com (vendor help-center article, self-interested; captured 2026-10-28); page shows 'Updated over a week ago'",
+      "target_slug": "/guides/how-to-make-an-ai-avatar-video",
+      "collected_at": "2026-10-28",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "how-to-make-an-ai-avatar-video-2026-10-28",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "HeyGen",
+        "aspect": "credit rollover; no top-up on Creator and Pro",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Creator, Pro, Business",
+        "item_date": "2026-10-21"
+      },
+      "coding_ambiguous": false,
+      "honesty_notes": [],
+      "quote_verified_against_live_fetch": true,
+      "resolver_note_date": "item date set to the page's own modified date (coder A); capture date stays collected_at 2026-10-28"
+    },
+    {
+      "id": "EV-how-to-make-an-ai-avatar-video-22",
+      "claim": "HeyGen's how-to-use-credits article warns that credit rates and plan limits can vary by account creation date and region, and that the credit cost shown in HeyGen before generating is always the cost that will be charged, so a user should confirm the rate in the product rather than rely on the help-page table.",
+      "source_url": "https://help.heygen.com/en/articles/15126059-how-to-use-credits-on-heygen",
+      "source_date": "2026-10-21",
+      "quote": "The credit cost shown in HeyGen before you generate is always the cost that will be charged for that generation",
+      "platform": "help.heygen.com (vendor help-center article, self-interested; captured 2026-10-28); page shows 'Updated over a week ago'",
+      "target_slug": "/guides/how-to-make-an-ai-avatar-video",
+      "collected_at": "2026-10-28",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "how-to-make-an-ai-avatar-video-2026-10-28",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "HeyGen",
+        "aspect": "check cost in-product before generating; rates vary by account",
+        "stance": "n/a",
+        "plan_tier_if_stated": "paid plans",
+        "item_date": "2026-10-21"
+      },
+      "coding_ambiguous": false,
+      "honesty_notes": [],
+      "quote_verified_against_live_fetch": true,
+      "resolver_note_date": "item date set to the page's own modified date (coder A); capture date stays collected_at 2026-10-28"
+    },
+    {
+      "id": "EV-how-to-make-an-ai-avatar-video-23",
+      "claim": "HeyGen's Avatar and Voice FAQ states that changes to A-Roll scenes require the scene to be re-rendered, which consumes credits, and recommends previewing the speech, regenerating the audio or fixing the script, previewing each scene and only then rendering the full video, to avoid re-renders.",
+      "source_url": "https://help.heygen.com/en/articles/15544929-avatar-voice-faq-troubleshooting-best-practices-and-credits",
+      "source_date": "2026-10-13",
+      "quote": "Making changes to A-Roll scenes requires the scene to be re-rendered, which consumes credits.",
+      "platform": "help.heygen.com (vendor help-center article, self-interested; captured 2026-10-28); page shows 'Updated over 2 weeks ago'",
+      "target_slug": "/guides/how-to-make-an-ai-avatar-video",
+      "collected_at": "2026-10-28",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "how-to-make-an-ai-avatar-video-2026-10-28",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "HeyGen",
+        "aspect": "re-render spends credits again; preview-first workflow",
+        "stance": "n/a",
+        "plan_tier_if_stated": "credit plans",
+        "item_date": "2026-10-13"
+      },
+      "coding_ambiguous": false,
+      "honesty_notes": [],
+      "quote_verified_against_live_fetch": true,
+      "resolver_note_date": "item date set to the page's own modified date (coder A); capture date stays collected_at 2026-10-28"
+    },
+    {
+      "id": "EV-how-to-make-an-ai-avatar-video-24",
+      "claim": "HeyGen's processing-times article (June 18, 2026) says a video cancelled mid-way or failed is not charged any credits under any circumstances, that the regular queue averages just under 24 hours on weekdays, that videos left Pending usually exceed the plan's concurrency limit, and that abuse-prevention limits can trigger a 'Daily Rate Error' for extreme use of voice previews or Render Scene previews.",
+      "source_url": "https://help.heygen.com/en/articles/9655503-heygen-video-processing-times",
+      "source_date": "2026-06-18",
+      "quote": "if a video is cancelled mid-way or failed- you will not be charged any Credits under any circumstances.",
+      "platform": "help.heygen.com (vendor help-center article, self-interested; captured 2026-10-28); page dated June 18, 2026",
+      "target_slug": "/guides/how-to-make-an-ai-avatar-video",
+      "collected_at": "2026-10-28",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "how-to-make-an-ai-avatar-video-2026-10-28",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "HeyGen",
+        "aspect": "failed or cancelled render is not charged; queue time; preview rate limits",
+        "stance": "n/a",
+        "plan_tier_if_stated": "all plans",
+        "item_date": "2026-06-18"
+      },
+      "coding_ambiguous": false,
+      "honesty_notes": [],
+      "quote_verified_against_live_fetch": true
+    },
+    {
+      "id": "EV-how-to-make-an-ai-avatar-video-25",
+      "claim": "HeyGen's first-video guide (September 24, 2026) walks through choosing an avatar (default avatar Annie, changeable to a public or custom avatar), choosing a voice (voices are set at avatar level by default; a play button reads the script aloud before generating), and writing scripts in scenes, recommending each script section stay under 2,000 characters.",
+      "source_url": "https://help.heygen.com/en/articles/11049837-create-your-first-video-in-our-studio",
+      "source_date": "2026-09-24",
+      "quote": "we recommend keeping each script section under 2,000 characters for the best results.",
+      "platform": "help.heygen.com (vendor help-center article, self-interested; captured 2026-10-28); page dated September 24, 2026",
+      "target_slug": "/guides/how-to-make-an-ai-avatar-video",
+      "collected_at": "2026-10-28",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "how-to-make-an-ai-avatar-video-2026-10-28",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "HeyGen",
+        "aspect": "avatar, voice, script and scene steps in Studio",
+        "stance": "n/a",
+        "plan_tier_if_stated": "all plans",
+        "item_date": "2026-09-24"
+      },
+      "coding_ambiguous": false,
+      "honesty_notes": [],
+      "quote_verified_against_live_fetch": true
+    },
+    {
+      "id": "EV-how-to-make-an-ai-avatar-video-26",
+      "claim": "HeyGen's script-tips article (April 17, 2026) says the Pause button inserts a half-second break at the cursor, that the pause length can be edited, and that a scene containing only a pause makes a silent still avatar between scenes.",
+      "source_url": "https://help.heygen.com/en/articles/9574152-script-tips",
+      "source_date": "2026-04-17",
+      "quote": "Each pause represents a half-second break.",
+      "platform": "help.heygen.com (vendor help-center article, self-interested; captured 2026-10-28); page dated April 17, 2026",
+      "target_slug": "/guides/how-to-make-an-ai-avatar-video",
+      "collected_at": "2026-10-28",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "how-to-make-an-ai-avatar-video-2026-10-28",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "HeyGen",
+        "aspect": "script step: pauses",
+        "stance": "n/a",
+        "plan_tier_if_stated": "all plans",
+        "item_date": "2026-04-17"
+      },
+      "coding_ambiguous": false,
+      "honesty_notes": [],
+      "quote_verified_against_live_fetch": true
+    },
+    {
+      "id": "EV-how-to-make-an-ai-avatar-video-27",
+      "claim": "HeyGen's download article (May 25, 2026), written for paid users, says a video downloads from the Projects tab via the three-dot menu, offers 720p, 1080p, and 4K resolution (4K for Pro, Business and Enterprise only), and says HeyGen-generated videos may be used on any platform including commercially as long as inputs follow standard guidelines.",
+      "source_url": "https://help.heygen.com/en/articles/9834825-how-to-download-or-export-a-video",
+      "source_date": "2026-05-25",
+      "quote": "4K downloads are available to Pro, Business and Enterprise plans only.",
+      "platform": "help.heygen.com (vendor help-center article, self-interested; captured 2026-10-28); page dated May 25, 2026",
+      "target_slug": "/guides/how-to-make-an-ai-avatar-video",
+      "collected_at": "2026-10-28",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "how-to-make-an-ai-avatar-video-2026-10-28",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "HeyGen",
+        "aspect": "export step and resolution tiers; commercial wording on a paid-user page",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Pro/Business/Enterprise",
+        "item_date": "2026-05-25"
+      },
+      "coding_ambiguous": false,
+      "honesty_notes": [],
+      "quote_verified_against_live_fetch": true
+    },
+    {
+      "id": "EV-how-to-make-an-ai-avatar-video-28",
+      "claim": "HeyGen's watermark article (September 16, 2026) says all HeyGen videos carry a HeyGen logo watermark by default, that removal is available on all paid plans (Creator, Pro, Business, Enterprise, grandfathered legacy), and that videos from Free users automatically include the watermark without an option to remove it.",
+      "source_url": "https://help.heygen.com/en/articles/11057301-how-to-remove-the-heygen-watermark",
+      "source_date": "2026-09-16",
+      "quote": "Free user videos automatically include the HeyGen watermark without the option for removal.",
+      "platform": "help.heygen.com (vendor help-center article, self-interested; captured 2026-10-28); page dated September 16, 2026",
+      "target_slug": "/guides/how-to-make-an-ai-avatar-video",
+      "collected_at": "2026-10-28",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "how-to-make-an-ai-avatar-video-2026-10-28",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "HeyGen",
+        "aspect": "free-plan watermark",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Free vs paid",
+        "item_date": "2026-09-16"
+      },
+      "coding_ambiguous": false,
+      "honesty_notes": [],
+      "quote_verified_against_live_fetch": true
+    },
+    {
+      "id": "EV-how-to-make-an-ai-avatar-video-29",
+      "claim": "On its pricing page captured 2026-10-28 HeyGen lists Free at $0 with 3 videos a month, watermarked, up to 1 minute each; Creator at $29 per month (600 credits, 1080p export, watermark removal); Pro from $49 per month (1,000 credits, 4K, videos up to 30 minutes). Recapture of the 2026-10-27 refresh, unchanged.",
+      "source_url": "https://www.heygen.com/pricing",
+      "source_date": "2026-10-28",
+      "quote": "3 videos a month, watermarked",
+      "platform": "heygen.com/pricing (vendor pricing page, self-interested; captured 2026-10-28)",
+      "target_slug": "/guides/how-to-make-an-ai-avatar-video",
+      "collected_at": "2026-10-28",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "how-to-make-an-ai-avatar-video-2026-10-28",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "HeyGen",
+        "aspect": "free-plan video count, length cap, watermark; paid prices",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Free, Creator, Pro",
+        "item_date": "2026-10-28"
+      },
+      "coding_ambiguous": false,
+      "honesty_notes": [],
+      "quote_verified_against_live_fetch": true,
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-31",
+          "source_url": "https://www.heygen.com/pricing",
+          "claim": "Re-read 2026-10-31: Free 3 watermarked videos a month, Creator $29 with 600 credits: unchanged.",
+          "quote": "3 videos a month, watermarked"
+        }
+      ]
+    },
+    {
+      "id": "EV-how-to-make-an-ai-avatar-video-30",
+      "claim": "HeyGen's Terms of Service (last updated October 15, 2026), section 4 for Free Plan users, license the user's output solely for personal, non-commercial and internal evaluation purposes: Free Plan output may not be sold, sublicensed, redistributed, monetized or used for commercial activities, advertising, client work or revenue-generating products.",
+      "source_url": "https://www.heygen.com/terms",
+      "source_date": "2026-10-15",
+      "quote": "User Output generated under a Free Plan may not be sold, sublicensed, redistributed, monetized, or used in connection with commercial activities, advertising, client work, revenue-generating product or any other services.",
+      "platform": "heygen.com/terms (vendor terms of service, self-interested; page states 'Last Updated: October 15, 2026'; captured 2026-10-28)",
+      "target_slug": "/guides/how-to-make-an-ai-avatar-video",
+      "collected_at": "2026-10-28",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "how-to-make-an-ai-avatar-video-2026-10-28",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "HeyGen",
+        "aspect": "free-plan output is non-commercial (terms)",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Free",
+        "item_date": "2026-10-15"
+      },
+      "coding_ambiguous": false,
+      "honesty_notes": [],
+      "quote_verified_against_live_fetch": true
+    },
+    {
+      "id": "EV-how-to-make-an-ai-avatar-video-31",
+      "claim": "HeyGen's consent-video article (April 23, 2026) says that for every video-based Digital Twin the user must record a consent video of under 30 seconds, read exactly from the supplied script, by the same person who appears in the avatar footage; a screen recording of the consent text is not accepted. If the avatar is for someone else, that person records their own consent, e.g. by phone via a QR code. Re-fetch of the source behind EV-heygen-review-06.",
+      "source_url": "https://help.heygen.com/en/articles/12092609-recording-your-consent-video",
+      "source_date": "2026-04-23",
+      "quote": "for every video-based Digital Twin created, users must record a short consent video before creating their avatar.",
+      "platform": "help.heygen.com (vendor help-center article, self-interested; captured 2026-10-28); page dated April 23, 2026",
+      "target_slug": "/guides/how-to-make-an-ai-avatar-video",
+      "collected_at": "2026-10-28",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "how-to-make-an-ai-avatar-video-2026-10-28",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "HeyGen",
+        "aspect": "custom avatar consent video requirements",
+        "stance": "n/a",
+        "plan_tier_if_stated": "paid plans",
+        "item_date": "2026-04-23"
+      },
+      "coding_ambiguous": false,
+      "honesty_notes": [],
+      "quote_verified_against_live_fetch": true
+    },
+    {
+      "id": "EV-how-to-make-an-ai-avatar-video-32",
+      "claim": "HeyGen's Avatar and Voice FAQ lists reasons a consent step can fail: the consent code was not read correctly, the person does not match the training footage, consent was recorded using an AI avatar instead of the real person, the video was blurry or dark, the audio was unclear, or it was a screen recording; the fix is to record a new consent video.",
+      "source_url": "https://help.heygen.com/en/articles/15544929-avatar-voice-faq-troubleshooting-best-practices-and-credits",
+      "source_date": "2026-10-13",
+      "quote": "The consent was recorded using an AI avatar instead of the real person.",
+      "platform": "help.heygen.com (vendor help-center article, self-interested; captured 2026-10-28); page shows 'Updated over 2 weeks ago'",
+      "target_slug": "/guides/how-to-make-an-ai-avatar-video",
+      "collected_at": "2026-10-28",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "how-to-make-an-ai-avatar-video-2026-10-28",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "HeyGen",
+        "aspect": "why consent verification fails",
+        "stance": "n/a",
+        "plan_tier_if_stated": "paid plans",
+        "item_date": "2026-10-13"
+      },
+      "coding_ambiguous": false,
+      "honesty_notes": [],
+      "quote_verified_against_live_fetch": true,
+      "resolver_note_date": "item date set to the page's own modified date (coder A); capture date stays collected_at 2026-10-28"
+    },
+    {
+      "id": "EV-how-to-make-an-ai-avatar-video-33",
+      "claim": "HeyGen's voices article (September 24, 2026) gives voice-clone limits by plan: Free 1, Creator 40, Pro 70, Business 70, Enterprise unlimited, and says extra clone slots cannot be bought; users at the limit must delete voices.",
+      "source_url": "https://help.heygen.com/en/articles/9834925-how-to-get-started-with-voices",
+      "source_date": "2026-09-24",
+      "quote": "There is no option to purchase additional voice clone slots.",
+      "platform": "help.heygen.com (vendor help-center article, self-interested; captured 2026-10-28); page dated September 24, 2026",
+      "target_slug": "/guides/how-to-make-an-ai-avatar-video",
+      "collected_at": "2026-10-28",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "how-to-make-an-ai-avatar-video-2026-10-28",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "HeyGen",
+        "aspect": "voice clone count by plan",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Free, Creator, Pro, Business",
+        "item_date": "2026-09-24"
+      },
+      "coding_ambiguous": false,
+      "honesty_notes": [],
+      "quote_verified_against_live_fetch": true
+    },
+    {
+      "id": "EV-how-to-make-an-ai-avatar-video-34",
+      "claim": "HeyGen's Professional Voice Clone article (last updated October 13, 2026) says the PVC flow is upload only, with no in-app recording and no consent step; it requires a paid HeyGen plan and an added per-voice fee of $29/month or $288/year.",
+      "source_url": "https://help.heygen.com/en/articles/17589678-how-to-create-a-great-professional-voice-clone-pvc",
+      "source_date": "2026-10-13",
+      "quote": "the PVC flow is upload only, so there is no in-app recording and no consent step.",
+      "platform": "help.heygen.com (vendor help-center article, self-interested; captured 2026-10-28); page states 'Last Updated: October 13, 2026'",
+      "target_slug": "/guides/how-to-make-an-ai-avatar-video",
+      "collected_at": "2026-10-28",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "how-to-make-an-ai-avatar-video-2026-10-28",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "HeyGen",
+        "aspect": "voice clone consent: PVC has no consent step; paid add-on",
+        "stance": "n/a",
+        "plan_tier_if_stated": "paid plans",
+        "item_date": "2026-10-13"
+      },
+      "coding_ambiguous": false,
+      "honesty_notes": [],
+      "quote_verified_against_live_fetch": true,
+      "resolver_note": "Coder A partial: the page carries no rights or permission wording, so the closing inference was cut; coder B match on the remaining facts. Resolved to the trimmed claim."
+    },
+    {
+      "id": "EV-how-to-make-an-ai-avatar-video-35",
+      "claim": "A HeyGen Trustpilot reviewer (Brian Berlin, 1 star, 2026-10-27) reports credits being consumed faster than expected: about 150 credits for one simple avatar and one simple 30-second video, and says the AI burned credits by doing things unasked. Single anecdote; plan, avatar engine and settings are not stated, so it cannot be mapped to the credit table.",
+      "source_url": "https://www.trustpilot.com/review/heygen.com?sort=recency",
+      "source_date": "2026-10-27",
+      "quote": "It took me about 150 credits to get one simple Avatar and one simple 30 second video done.",
+      "platform": "Trustpilot (review platform; reviewer-reported; direct fetch returns HTTP 403 so text was read through the WebFetch tool's page summarizer; the quoted phrase was re-requested and matched across separate fetches on 2026-10-28)",
+      "target_slug": "/guides/how-to-make-an-ai-avatar-video",
+      "collected_at": "2026-10-28",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "how-to-make-an-ai-avatar-video-2026-10-28",
+      "screening": "included",
+      "label": "community-report",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "HeyGen",
+        "aspect": "credit burn on a first avatar and short video",
+        "stance": "negative",
+        "plan_tier_if_stated": "unspecified plan",
+        "item_date": "2026-10-27"
+      },
+      "coding_ambiguous": false,
+      "honesty_notes": [
+        "Phrase matched in 3 separate fetches."
+      ],
+      "quote_verified_against_live_fetch": "via WebFetch summarizer, cross-checked (see honesty_notes)"
+    },
+    {
+      "id": "EV-how-to-make-an-ai-avatar-video-36",
+      "claim": "A HeyGen Trustpilot reviewer (Sanford Staab, 3 stars, 2026-10-27) reports spending $250 on tokens for a longer lecture video and describes the workflow as rebuilding the entire video for every correction, with some fixes not applying after repeated attempts. Single anecdote; plan, length and engine are not stated.",
+      "source_url": "https://www.trustpilot.com/review/heygen.com?sort=recency",
+      "source_date": "2026-10-27",
+      "quote": "On my second video I attempted a longer lecture and ended up spending $250 on tokens",
+      "platform": "Trustpilot (review platform; reviewer-reported; direct fetch returns HTTP 403 so text was read through the WebFetch tool's page summarizer; the quoted phrase was re-requested and matched across separate fetches on 2026-10-28)",
+      "target_slug": "/guides/how-to-make-an-ai-avatar-video",
+      "collected_at": "2026-10-28",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "how-to-make-an-ai-avatar-video-2026-10-28",
+      "screening": "included",
+      "label": "community-report",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "HeyGen",
+        "aspect": "long video cost and whole-video rebuild per correction",
+        "stance": "negative",
+        "plan_tier_if_stated": "unspecified plan",
+        "item_date": "2026-10-27"
+      },
+      "coding_ambiguous": false,
+      "honesty_notes": [
+        "The $250 sentence and the fragment 'would rebuild the entire video for every corrections' each matched in 2 separate fetches; the rest of the review is not quoted."
+      ],
+      "quote_verified_against_live_fetch": "via WebFetch summarizer, cross-checked (see honesty_notes)"
+    },
+    {
+      "id": "EV-how-to-make-an-ai-avatar-video-37",
+      "claim": "A Synthesia Trustpilot reviewer (srptrecruitment.com, 3 stars, 2026-07-03) complains that unused credits are wiped at the end of the billing cycle despite having been paid for. This matches Synthesia's own statement that credits do not roll over (EV-how-to-make-an-ai-avatar-video-01). The review predates the 2026-10-01 plan change.",
+      "source_url": "https://www.trustpilot.com/review/synthesia.io?sort=recency",
+      "source_date": "2026-07-03",
+      "quote": "At the end of the billing cycle, any unused credits are simply wiped, despite having been paid for.",
+      "platform": "Trustpilot (review platform; reviewer-reported; direct fetch returns HTTP 403 so text was read through the WebFetch tool's page summarizer; the quoted phrase was re-requested and matched across separate fetches on 2026-10-28)",
+      "target_slug": "/guides/how-to-make-an-ai-avatar-video",
+      "collected_at": "2026-10-28",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "how-to-make-an-ai-avatar-video-2026-10-28",
+      "screening": "included",
+      "label": "community-report",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Synthesia",
+        "aspect": "unused monthly credits wiped at end of billing cycle",
+        "stance": "negative",
+        "plan_tier_if_stated": "monthly subscription (plan not stated)",
+        "item_date": "2026-07-03"
+      },
+      "coding_ambiguous": false,
+      "honesty_notes": [
+        "Sentence matched in 2 separate fetches."
+      ],
+      "quote_verified_against_live_fetch": "via WebFetch summarizer, cross-checked (see honesty_notes)"
+    },
+    {
+      "id": "EV-how-to-make-an-ai-avatar-video-38",
+      "claim": "A Synthesia Trustpilot reviewer (Robert D, 1 star, posted 2026-07-25, updated 2026-07-29) reports receiving a message refusing to produce the video because of its content, after a custom avatar mispronounced industry terms. Single anecdote; consistent with Synthesia's own documentation that every video passes moderation (EV-how-to-make-an-ai-avatar-video-14).",
+      "source_url": "https://www.trustpilot.com/review/synthesia.io?sort=recency",
+      "source_date": "2026-07-25",
+      "quote": "instead of my video I received a message refusing to produce my video because Synthesia did not like the content.",
+      "platform": "Trustpilot (review platform; reviewer-reported; direct fetch returns HTTP 403 so text was read through the WebFetch tool's page summarizer; the quoted phrase was re-requested and matched across separate fetches on 2026-10-28)",
+      "target_slug": "/guides/how-to-make-an-ai-avatar-video",
+      "collected_at": "2026-10-28",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "how-to-make-an-ai-avatar-video-2026-10-28",
+      "screening": "included",
+      "label": "community-report",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Synthesia",
+        "aspect": "video refused at render time by content moderation",
+        "stance": "negative",
+        "plan_tier_if_stated": "unspecified plan",
+        "item_date": "2026-07-25"
+      },
+      "coding_ambiguous": false,
+      "honesty_notes": [
+        "Sentence matched in 2 separate fetches."
+      ],
+      "quote_verified_against_live_fetch": "via WebFetch summarizer, cross-checked (see honesty_notes)"
+    },
+    {
+      "id": "EV-how-to-make-an-ai-avatar-video-39",
+      "claim": "A Synthesia Trustpilot reviewer (Stanislav Expert, 1 star, 2026-10-18) says every generated video goes to manual moderation and he must wait for the check before the video is available. Single anecdote; Synthesia's own help page says moderation can be automated or manual and manual review adds time (EV-how-to-make-an-ai-avatar-video-14).",
+      "source_url": "https://www.trustpilot.com/review/synthesia.io?sort=recency",
+      "source_date": "2026-10-18",
+      "quote": "Every generated video goes to manual moderation and you have to wait until their censor check your every single word",
+      "platform": "Trustpilot (review platform; reviewer-reported; direct fetch returns HTTP 403 so text was read through the WebFetch tool's page summarizer; the quoted phrase was re-requested and matched across separate fetches on 2026-10-28)",
+      "target_slug": "/guides/how-to-make-an-ai-avatar-video",
+      "collected_at": "2026-10-28",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "how-to-make-an-ai-avatar-video-2026-10-28",
+      "screening": "included",
+      "label": "community-report",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Synthesia",
+        "aspect": "every video goes to manual moderation before it renders",
+        "stance": "negative",
+        "plan_tier_if_stated": "unspecified plan",
+        "item_date": "2026-10-18"
+      },
+      "coding_ambiguous": false,
+      "honesty_notes": [
+        "Sentence matched in 3 separate fetches (quote keeps the reviewer's own grammar)."
+      ],
+      "quote_verified_against_live_fetch": "via WebFetch summarizer, cross-checked (see honesty_notes)"
+    },
+    {
+      "id": "EV-how-to-make-an-ai-avatar-video-40",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-31",
+          "source_url": "https://www.trustpilot.com/review/heygen.com",
+          "claim": "Trustpilot profile read 2026-10-31 via r.jina.ai rendered a score: 4.2 out of 5 on 5,001 reviews, rated Great. This does not match the about 2.3 figure reported by third parties that /tools/heygen carried as unverified from 2026-08-15; that figure is dropped. The defined 40-review sample above is unchanged.",
+          "quote": "HeyGen is rated \"Great\" with 4.2 / 5 on Trustpilot ... 5,001"
+        }
+      ],
+      "claim": "Defined sample, HeyGen on Trustpilot: of the 40 reviews on pages 1 and 2 of the most-recent sort as read on 2026-10-28 (dated 2026-10-08 to 2026-10-28, plus one dated 2026-01-10 that the sort placed on page 2), 2 describe credit burn or whole-video re-rendering cost (EV-how-to-make-an-ai-avatar-video-35 and -36), 0 describe a stuck or failed render, 4 describe other billing matters (cancelling, removed features, an upgrade coupon), and the rest are praise, price-only, quality-only or unrelated. Not a population estimate.",
+      "source_url": "https://www.trustpilot.com/review/heygen.com?sort=recency&page=2",
+      "source_date": "2026-10-28",
+      "quote": "40 reviews read (pages 1 and 2, most-recent sort); 2 credit-burn or re-render-cost",
+      "platform": "Trustpilot (review platform; reviewer-reported; direct fetch returns HTTP 403 so text was read through the WebFetch tool's page summarizer; the quoted phrase was re-requested and matched across separate fetches on 2026-10-28)",
+      "target_slug": "/guides/how-to-make-an-ai-avatar-video",
+      "collected_at": "2026-10-28",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "how-to-make-an-ai-avatar-video-2026-10-28",
+      "screening": "included",
+      "label": "community-report",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "HeyGen",
+        "aspect": "sample count: credit burn and re-render cost complaints",
+        "stance": "mixed",
+        "plan_tier_if_stated": "mixed",
+        "item_date": "2026-10-28"
+      },
+      "coding_ambiguous": true,
+      "honesty_notes": [
+        "Single coding pass; categories assigned from the WebFetch summarizer's read of each review, not independently double-coded. Coding-ambiguous: Staab (re-render cost vs credit burn) and the billing-other items could be tagged differently. Tag counts (40): credit-burn 1, re-render-cost 1, billing-other 4, price-only 2, quality-only 5, other 27."
+      ],
+      "sample": {
+        "platform": "Trustpilot",
+        "denominator": 40,
+        "date_window": "2026-10-08..2026-10-28 (one item 2026-01-10)",
+        "unit": "review",
+        "numerator_credit_or_rerender": 2
+      }
+    },
+    {
+      "id": "EV-how-to-make-an-ai-avatar-video-41",
+      "claim": "Defined sample, Synthesia on Trustpilot: of the 20 reviews on page 1 of the most-recent sort as read on 2026-10-28 (dated 2026-07-03 to 2026-10-22), 1 describes unused credits expiring (EV-how-to-make-an-ai-avatar-video-37), 4 describe a video refused or delayed by content moderation (Stanislav Expert, CanadianBTC Guy, ChrisF, Robert D), 0 describe credits charged for a failed render, and the rest are praise (several of them webinar reviews), price-only, quality-only or unrelated. Not a population estimate.",
+      "source_url": "https://www.trustpilot.com/review/synthesia.io?sort=recency",
+      "source_date": "2026-10-28",
+      "quote": "20 reviews read (page 1, most-recent sort); 1 unused-credit expiry; 4 moderation refusal or delay",
+      "platform": "Trustpilot (review platform; reviewer-reported; direct fetch returns HTTP 403 so text was read through the WebFetch tool's page summarizer; the quoted phrase was re-requested and matched across separate fetches on 2026-10-28)",
+      "target_slug": "/guides/how-to-make-an-ai-avatar-video",
+      "collected_at": "2026-10-28",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "how-to-make-an-ai-avatar-video-2026-10-28",
+      "screening": "included",
+      "label": "community-report",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Synthesia",
+        "aspect": "sample count: credit expiry and moderation refusal complaints",
+        "stance": "mixed",
+        "plan_tier_if_stated": "mixed",
+        "item_date": "2026-10-28"
+      },
+      "coding_ambiguous": true,
+      "honesty_notes": [
+        "Single coding pass from the WebFetch summarizer's read. SR (credits), Robert D and Stanislav were re-confirmed verbatim in a second fetch; CanadianBTC Guy (2026-08-20) and ChrisF (2026-08-08) were read once and are counted on that single read. Coding-ambiguous for those two."
+      ],
+      "sample": {
+        "platform": "Trustpilot",
+        "denominator": 20,
+        "date_window": "2026-07-03..2026-10-22",
+        "unit": "review",
+        "numerator_credit_expiry": 1,
+        "numerator_moderation_refusal_or_delay": 4
+      }
+    }
+  ]
+}

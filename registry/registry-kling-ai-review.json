@@ -1,0 +1,989 @@
+{
+  "_meta": {
+    "flow_id": "kling-ai-review-2026-08-17",
+    "protocol_version": "MEP-1.0",
+    "target_slug": "/tools/kling-ai",
+    "target_keyword": "kling ai review",
+    "run_date": "2026-08-17",
+    "collector": "evidence-curator",
+    "page_class": "review-satellite (single-tool review for the /best/ai-video-generators hub, which already scored Kling AI 3.8/5 clip-generator #3 on a SHALLOW evidence set — this sweep goes deeper for a full 5-dimension ToolScores review: outputQuality/easeOfUse/value/evidenceBase). Kling AI (Kuaishou, China) — per-second/credit-metered text-to-video generator with multi-shot storyboarding.",
+    "inheritance_note": "Mined Data/seo/phases/kling-ai-review/1-keyword.json, 1-serp.json, 1-competitor.json, 1-backlink.json for leads per task instruction ('don't re-derive') — those Phase 1 agents already located the pricing contradiction, the China/commercial-use vacuum, the Product-Hunt-vs-Trustpilot rating gap, and the version-fragmentation signal, plus a working list of specific competitor URLs. EVERY URL used below (whether Phase-1-inherited or newly found via this run's own WebSearch queries) was independently WebFetched and verified THIS run per the hard constraint — no quote or figure was carried over from a Phase 1 agent's own prose without a fresh fetch. Two hub entries (EV-best-ai-video-generators-03, EV-best-ai-video-generators-19) are reused by ID per explicit task instruction, not re-fetched (see entries_reused).",
+    "sweep_strategy": "Four priority threads, in the task's stated order: (1) PRICING — captured 5 independently-dated, disagreeing Standard-tier figures ($3.88/$6.69/$6.99/$7-9/$10) each as its own entry, plus the free-tier credit conflict (66/day vs 166/mo-earned vs ~1,980/day across 3 non-monotonic dated sources), plus a fresh klingai.com/pricing re-attempt (HTTP 446, 2026-08-17 — the 4th confirmed instance across 3 sweeps). (2) CHINA/KUAISHOU/COMMERCIAL-USE — found and directly fetched Kling's own Terms of Service (kling.ai/docs/user-policy, via reader-proxy after a direct 446) with verbatim clauses on commercial use, output ownership, and the license Kling takes back for model training; corroborated Kuaishou/Beijing ownership via 3 independent sources (Wikipedia, Product Hunt, Unite.AI); found a 2024-dated political-censorship report; found zero China/data-residency discussion even in the single deepest competitor review (cybernews.com). (3) RATING DIVERGENCE — independently verified Product Hunt (4.9/5, n=21, 15 'Founder Reviews') via direct fetch; Trustpilot's own page 403-blocked on direct fetch this run, so its 1.3/5 figure is registered via a third-party relay (checkthat.ai, n=318) with the direct-attempt failure disclosed, not invented as a live citation; G2 confirmed unreachable (403), no relay found, left as an undocumented gap rather than forced. (4) VERSION CURRENCY — directly fetched a dated Kling 3.0 general-release confirmation (2026-02-04) and found a genuine, self-verified timing puzzle: cybernews's own review, titled 'Kling 3.0 Review 2026', published 2025-12-19 — about 7 weeks before that traceable release date.",
+    "flow_counter": {
+      "identified": 58,
+      "screened": 58,
+      "excluded": 41,
+      "excluded_by_reason": {
+        "no-methodology-affiliate": 25,
+        "off-topic": 10,
+        "unverifiable-this-run": 5,
+        "duplicate": 1
+      },
+      "included_sources": 17,
+      "registry_entries_new": 21,
+      "counter_note": "identified = 58: 45 unique candidate URLs surfaced across 5 documented WebSearch queries (46 raw results minus 1 exact-URL duplicate, en.wikipedia.org appearing in both the China-privacy and the Kling-3.0-release queries) + 13 direct-navigation URLs (Phase-1-inherited leads, mined per task instruction, not resurfaced by this run's own searches). 17 sources were included: 16 produced dedicated quoted registry entries (21 entries, since several sources — cybernews.com, checkthat.ai, unite.ai — each yield 2 distinct entries); the 17th, klingai.com/pricing, is included as a documented methodological finding (the vendor page is confirmed unreachable, HTTP 446) folded into this _meta block and cross-referenced in the honesty_notes of every pricing entry rather than given its own quote-bearing entry, since a blocked page has no page content to quote."
+    },
+    "coder_agreement_rate": "CURATOR-PROVISIONAL single-pass coding across all 21 new entries (dual-independent coding + resolver pass is orchestrated above this run). Stance calls: 8 n/a (pricing/ownership/ToS facts, no sentiment to code), 3 positive, 4 negative, 6 mixed. FLAGGED FOR ORCHESTRATED DUAL-CODING / RESOLVER ATTENTION: (1) EV-kling-ai-review-06 — the 66-credits/day-vs-660-credits/month 'transcription collision' theory is this curator's interpretation, not a confirmed fact; a resolver should decide whether to present it as a live hypothesis or drop it. (2) EV-kling-ai-review-12 vs EV-kling-ai-review-14 — Kling's own fetched ToS text (Section 4.6) does not visibly carve out a paid-tier commercial exception, while a secondary legal-guide (glbgpt.com) asserts paid tiers get full commercial rights; genuinely unresolved from what this sweep could retrieve — a resolver should decide how to word this tension on the page. (3) EV-kling-ai-review-15 — the 2024 censorship finding is dated to the ORIGINAL Kling model and was not independently re-tested against Kling 3.0 by this curator or, as far as this sweep found, by anyone; a resolver should confirm the page frames this with that currency caveat, not as a live 3.0 finding. (4) EV-kling-ai-review-17 — unite.ai's own unsourced 'many report lost credits, poor support' line is quoted only to document that a high-authority competitor makes this claim without support; a resolver should confirm this is never presented on the page as if Mimo verified it. (5) EV-kling-ai-review-20 — the cybernews-vs-bestphoto.ai version-timing puzzle is a genuine cross-reference finding, but which rollout checkpoint each source actually describes remains unresolved.",
+    "query_census": [
+      {
+        "q": "DIRECT: WebFetch https://klingai.com/pricing",
+        "candidates": 0,
+        "note": "Re-attempt of an already 2x-confirmed-blocked vendor URL (hub sweep, 2026-08-10). Returned HTTP 446 again — the 3rd confirmed attempt across 2 sweeps becomes the 4th here. Domain-wide access block reconfirmed, not a one-off glitch. Not registered as its own quote-bearing entry (no page content); documented here and cross-referenced in every pricing entry's honesty_notes."
+      },
+      {
+        "q": "DIRECT: WebFetch https://fritz.ai/kling-ai-review/",
+        "candidates": 0,
+        "note": "Phase-1-inherited lead. Fetched successfully → EV-kling-ai-review-01."
+      },
+      {
+        "q": "DIRECT: WebFetch https://www.mobileappdaily.com/product-review/kling-ai",
+        "candidates": 0,
+        "note": "Phase-1-inherited lead. Fetched successfully → EV-kling-ai-review-02."
+      },
+      {
+        "q": "DIRECT: WebFetch https://www.eesel.ai/blog/kling-ai-reviews",
+        "candidates": 0,
+        "note": "Phase-1-inherited lead (distinct URL from the already-registered eesel.ai/blog/kling-ai-pricing). Fetched successfully → EV-kling-ai-review-03, EV-kling-ai-review-04."
+      },
+      {
+        "q": "DIRECT: WebFetch https://testified.ai/ai-tools/kling-ai/review",
+        "candidates": 0,
+        "note": "Phase-1-inherited lead. Fetched successfully → EV-kling-ai-review-08."
+      },
+      {
+        "q": "DIRECT: WebFetch https://cybernews.com/ai-tools/kling-ai-review/",
+        "candidates": 0,
+        "note": "Phase-1-inherited lead. HTTP 403 (Cloudflare challenge), matching the SERP-analyzer's and competitor-auditor's own prior finding for this exact URL."
+      },
+      {
+        "q": "DIRECT: WebFetch https://r.jina.ai/https://cybernews.com/ai-tools/kling-ai-review/",
+        "candidates": 0,
+        "note": "Reader-proxy fallback of the same already-identified URL (not a new candidate) — mirrors the competitor-auditor's own documented workaround. Fetched successfully → EV-kling-ai-review-06, EV-kling-ai-review-07, EV-kling-ai-review-20."
+      },
+      {
+        "q": "DIRECT: WebFetch https://www.futurepedia.io/tool/kling-ai",
+        "candidates": 0,
+        "note": "Phase-1-inherited lead (surfaced in the competitor-auditor's additional_pages_analyzed). Fetched successfully → EV-kling-ai-review-05."
+      },
+      {
+        "q": "DIRECT: WebFetch https://www.producthunt.com/products/kling-ai-4/reviews",
+        "candidates": 0,
+        "note": "Phase-1-inherited lead. Fetched successfully → EV-kling-ai-review-18."
+      },
+      {
+        "q": "DIRECT: WebFetch https://www.trustpilot.com/review/klingai.com",
+        "candidates": 0,
+        "note": "Phase-1-inherited lead, named explicitly in the task. HTTP 403 — unverifiable-this-run. Per task instruction, NOT presented as a live citation; the rating is instead registered via a fetched third-party relay (checkthat.ai, EV-kling-ai-review-10) with this direct-attempt failure disclosed."
+      },
+      {
+        "q": "DIRECT: WebFetch https://checkthat.ai/brands/kling-ai/pricing",
+        "candidates": 0,
+        "note": "Phase-1-inherited lead (backlink-hunter shard). Fetched successfully → EV-kling-ai-review-09, EV-kling-ai-review-10."
+      },
+      {
+        "q": "DIRECT: WebFetch https://www.g2.com/products/kling-ai/reviews",
+        "candidates": 0,
+        "note": "Phase-1-inherited lead (SERP-analyzer reported G2 n=3 for Kling). HTTP 403 — unverifiable-this-run. No third-party relay of the specific G2 figure was found this run; left as an undocumented gap rather than forced (see evidence_gaps)."
+      },
+      {
+        "q": "DIRECT: WebFetch https://curiousrefuge.com/blog/kling-25-turbo-ai-video-generator-review",
+        "candidates": 0,
+        "note": "Phase-1-inherited lead. Fetched successfully → EV-kling-ai-review-21."
+      },
+      {
+        "q": "DIRECT: WebFetch https://www.unite.ai/kling-ai-review/",
+        "candidates": 0,
+        "note": "Phase-1-inherited lead (competitor-auditor's confirmed #7 organic rank). Fetched successfully → EV-kling-ai-review-16, EV-kling-ai-review-17."
+      },
+      {
+        "q": "WebSearch: Kling AI terms of service commercial use license output ownership",
+        "candidates": 9,
+        "note": "reelmind.ai (no-methodology-affiliate), kling.ai/docs/user-policy (INCLUDED — direct fetch 446, reader-proxy fetch succeeded → EV-kling-ai-review-12), milvus.io (no-methodology-affiliate), hackernoon.com (no-methodology-affiliate), cometapi.com/are-kling-videos-private (no-methodology-affiliate), glbgpt.com (INCLUDED, fetched directly → EV-kling-ai-review-14), verifywise.ai (INCLUDED, fetched directly → EV-kling-ai-review-13), kling-o1.pro/legal/terms (off-topic — unofficial third-party clone/wrapper site, not Kling's real domain), kling3.io/terms (off-topic — same unofficial-clone pattern already flagged in Phase 1's SERP-pollution finding)."
+      },
+      {
+        "q": "DIRECT: WebFetch https://kling.ai/docs/user-policy",
+        "candidates": 0,
+        "note": "Already-identified URL (previous query). HTTP 446 — same domain-wide block pattern as klingai.com."
+      },
+      {
+        "q": "DIRECT: WebFetch https://r.jina.ai/https://kling.ai/docs/user-policy",
+        "candidates": 0,
+        "note": "Reader-proxy fallback of the same URL. Fetched successfully, extracted verbatim ToS clauses → EV-kling-ai-review-12."
+      },
+      {
+        "q": "WebSearch: Kling AI Kuaishou data privacy China servers site:reddit.com OR site:news",
+        "candidates": 10,
+        "note": "en.wikipedia.org/wiki/Kling_AI (INCLUDED, fetched directly → EV-kling-ai-review-11), finance.yahoo.com/quote/KSHTY (off-topic, stock ticker page), finance.yahoo.com/news/kling-ai-celebrates-first-anniversary (no-methodology-affiliate, not individually pursued), techcrunch.com/?p=2814856 (off-topic, malformed/unresolvable URL), growthdragons.substack.com (no-methodology-affiliate), helloai.substack.com (no-methodology-affiliate), itiger.com (off-topic, stock-dividend news), offthegridxp.substack.com (no-methodology-affiliate), dev.to/hyscaler (no-methodology-affiliate), simplywall.st (off-topic, stock analysis)."
+      },
+      {
+        "q": "DIRECT: WebFetch https://en.wikipedia.org/wiki/Kling_(text-to-video_model)",
+        "candidates": 0,
+        "note": "Canonical-redirect target of the already-identified en.wikipedia.org/wiki/Kling_AI URL. Fetched successfully → EV-kling-ai-review-11."
+      },
+      {
+        "q": "WebSearch: Kling AI censors politically sensitive prompts Tiananmen Xi Jinping Democracy China",
+        "candidates": 9,
+        "note": "dig.watch/updates/chinas-new-video-generating-ai-faces-limitations-due-to-political-censorship (unverifiable-this-run, 403 on direct fetch), hix.ai (no-methodology-affiliate, competitor content-marketing), pollo.ai (no-methodology-affiliate, competing video-tool's own SEO content), magiclight.ai (no-methodology-affiliate), goenhance.ai (no-methodology-affiliate), vidau.ai (no-methodology-affiliate, competing tool), dreamlux.ai (no-methodology-affiliate), newsgpt.ai (INCLUDED, fetched directly → EV-kling-ai-review-15), fxis.ai (no-methodology-affiliate)."
+      },
+      {
+        "q": "DIRECT: WebFetch https://dig.watch/updates/chinas-new-video-generating-ai-faces-limitations-due-to-political-censorship",
+        "candidates": 0,
+        "note": "Already-identified URL (previous query). HTTP 403 — unverifiable-this-run."
+      },
+      {
+        "q": "DIRECT: WebFetch https://newsgpt.ai/2024/07/25/kling-ai-model-released-but-censors-politically-sensitive-topics/",
+        "candidates": 0,
+        "note": "Already-identified URL (previous query). Fetched successfully → EV-kling-ai-review-15."
+      },
+      {
+        "q": "WebSearch: \"Kling 3.0\" release date January 2026 Kuaishou announcement multimodal",
+        "candidates": 10,
+        "note": "wavespeed.ai (no-methodology-affiliate, competing API platform's own blog), bestphoto.ai (INCLUDED, fetched directly → EV-kling-ai-review-19), ir.kuaishou.com/news-releases/... (unverifiable-this-run — 2 direct-fetch attempts both timed out at 60s; the primary Kuaishou IR source could not be independently confirmed this run), en.wikipedia.org/wiki/Kling_AI (duplicate of the already-identified/counted Wikipedia URL from the China-privacy query), baike.baidu.com (off-topic, Chinese-language mirror not pursued this run), overchat.ai (no-methodology-affiliate), imagine.art (no-methodology-affiliate), kling.art (off-topic — appears to be another unofficial Kling-adjacent domain, not pursued), aiwiki.ai (no-methodology-affiliate), soracai.com (no-methodology-affiliate)."
+      },
+      {
+        "q": "DIRECT: WebFetch https://ir.kuaishou.com/news-releases/news-release-details/kling-ai-launches-30-model-ushering-era-where-everyone-can-be",
+        "candidates": 0,
+        "note": "Already-identified URL (previous query). 2 attempts, both timed out (60000ms) — unverifiable-this-run. This is Kuaishou's own investor-relations press release for Kling 3.0, the single best primary source found this run for the exact launch date; its content could not be independently confirmed, so version-currency instead rests on bestphoto.ai (EV-kling-ai-review-19), a third-party article published the same day as the reported launch."
+      },
+      {
+        "q": "DIRECT: WebFetch https://bestphoto.ai/blog/kling-3-0-now-available",
+        "candidates": 0,
+        "note": "Already-identified URL (previous query). Fetched successfully → EV-kling-ai-review-19."
+      },
+      {
+        "q": "WebSearch: \"Kling 2.6\" December 2025 Motion Control lip-sync native audio release",
+        "candidates": 8,
+        "note": "flux-context.org (no-methodology-affiliate), atlascloud.ai/blog/guides/kling-2-6-review (fetched directly — succeeded technically but yielded no exact release date and no claim beyond what better-dated sources already cover; excluded as duplicate/no-incremental-value), cometapi.com/kling-2-6-explained-whats-new-this-time (no-methodology-affiliate), medium.com/@CherryZhouTech (no-methodology-affiliate, individual blogger, no disclosed methodology), genmix.ai (no-methodology-affiliate), kling.ai/explore/lipsync_kling (off-topic — marketing page, not policy content, not pursued), alici.ai/blog/kling-2-6-is-here (unverifiable-this-run, 403 on direct fetch), kling.ai/blog/kling-video-3-omni-native-lip-sync-audio-guide (off-topic — marketing page, not pursued)."
+      },
+      {
+        "q": "DIRECT: WebFetch https://www.atlascloud.ai/blog/guides/kling-2-6-review",
+        "candidates": 0,
+        "note": "Already-identified URL (previous query). Fetched successfully but the article states no exact release date for Kling 2.6 and its own publish date (2026-07-14) postdates the event it's describing by 7 months — excluded as duplicate/no-incremental-value versus already-registered sources. RESULT: this run could NOT independently pin an exact, directly-fetched date for Kling 2.6 (December 2025 remains a WebSearch-synthesized claim only, not individually verified — see evidence_gaps)."
+      },
+      {
+        "q": "DIRECT: WebFetch https://alici.ai/blog/kling-2-6-is-here",
+        "candidates": 0,
+        "note": "Already-identified URL (previous query). HTTP 403 — unverifiable-this-run."
+      }
+    ],
+    "astroturf_note": "The astroturf screen (§3.1) was applied throughout. No templated look-alike-review-network pattern was found. The closest adjacent finding is NOT astroturf in the canonical sense but a related trust risk worth flagging explicitly: kling-o1.pro/legal/terms and kling3.io/terms are UNOFFICIAL third-party domains presenting themselves with Kling-branded naming and their own 'Terms of Service' pages — the same unofficial-clone-domain pattern the Phase 1 SERP-analyzer already flagged for this cluster (kling3.io, klingapi.com, kling3.me appearing in organic results). Neither was fetched or cited as if it were Kling's real ToS; Kling's actual terms were sourced from kling.ai/docs/user-policy only (EV-kling-ai-review-12). Several competing video-tool vendors (Pollo AI, VidAU.ai) also publish their own SEO content about 'Kling AI Censorship' as a sales angle against a rival — excluded as no-methodology-affiliate, not cited.",
+    "exclusion_log_notes": [
+      "no-methodology-affiliate (25): reelmind.ai, milvus.io, hackernoon.com, cometapi.com (2 separate pages), finance.yahoo.com/news/kling-ai-celebrates-first-anniversary, growthdragons.substack.com, helloai.substack.com, offthegridxp.substack.com, dev.to/hyscaler, hix.ai, pollo.ai, magiclight.ai, goenhance.ai, vidau.ai, dreamlux.ai, fxis.ai, wavespeed.ai, overchat.ai, imagine.art, aiwiki.ai, soracai.com, flux-context.org, medium.com/@CherryZhouTech, genmix.ai. None carry a disclosed testing methodology, sample, or dated primary sourcing distinct from what better sources in this shard already provide.",
+      "off-topic (10): kling-o1.pro/legal/terms, kling3.io/terms (unofficial clone domains, not Kling's real ToS), finance.yahoo.com/quote/KSHTY, techcrunch.com/?p=2814856 (malformed/unresolvable), itiger.com, simplywall.st (stock-market content, not product evaluation), baike.baidu.com (untranslated Chinese-language mirror, not pursued), kling.art (unclear/unofficial-adjacent domain), kling.ai/explore/lipsync_kling, kling.ai/blog/kling-video-3-omni-native-lip-sync-audio-guide (vendor marketing pages, not policy/pricing content).",
+      "unverifiable-this-run (5): dig.watch (403), alici.ai (403), ir.kuaishou.com (2 attempts, both timed out — Kuaishou's own IR press release for Kling 3.0 could not be independently confirmed), g2.com/products/kling-ai/reviews (403, no relay found), trustpilot.com/review/klingai.com (403 — NOT presented as a live citation anywhere on this page; the rating is registered only via checkthat.ai's fetched relay, EV-kling-ai-review-10, with this failed direct attempt disclosed).",
+      "duplicate (1): atlascloud.ai/blog/guides/kling-2-6-review — fetched successfully but content-overlaps with already-registered, better-dated sources with no incremental citable claim (see query_census)."
+    ],
+    "entries_reused": [
+      {
+        "id": "EV-best-ai-video-generators-03",
+        "original_flow_id": "best-ai-video-generators-2026-08-10",
+        "note": "Kling's 5-tier pricing ladder including ~1,980 credits/day free tier, third-party-relayed via eesel.ai/blog/kling-ai-pricing (dated 2026-06-05) because klingai.com/pricing was already unreachable at hub-sweep time. Reused verbatim per task instruction; not re-fetched this run. This run independently reconfirmed klingai.com/pricing STILL returns HTTP 446 (query_census, 2026-08-17) and found 6 additional independently-dated sources disagreeing with this $10/mo figure (EV-kling-ai-review-01 through -09) — present all of them together, not this one alone."
+      },
+      {
+        "id": "EV-best-ai-video-generators-19",
+        "original_flow_id": "best-ai-video-generators-2026-08-10",
+        "note": "curionic.net's disclosed 4-category comparison naming Kling 3.0 the 'price-to-quality leader' at roughly $0.10/second and citing its Multi-Shot Storyboard strength as the standout feature (dated June 2026). Reused verbatim per task instruction, not re-fetched this run; no contradicting per-second figure was found in this run's own sweep, so nothing here undermines it."
+      }
+    ],
+    "refreshes": [
+      {
+        "date": "2026-10-31",
+        "by": "refresh-2026-10-31",
+        "note": "Vendor pages readable; 446 block not observed. Plans, FAQ, developer rates, release log, 4.0 guide, Terms, Trustpilot and VerifyWise re-read; Product Hunt and G2 failed. Recaptures on entries 01, 02, 03, 09, 10, 12, 13, 14, 18, 19, 20."
+      }
+    ]
+  },
+  "entries": [
+    {
+      "id": "EV-kling-ai-review-01",
+      "claim": "Fritz.ai's pricing table (published 2025-01-27, never substantively updated — dateModified is 1 second after datePublished, making this review 567 days stale as of this capture and predating Kling 2.0's April 2025 release entirely) states Kling's Standard tier at $3.88/mo, the lowest of five disagreeing Standard-tier figures found in this sweep, and states the free tier grants 66 credits every 24 hours.",
+      "source_url": "https://fritz.ai/kling-ai-review/",
+      "source_date": "2025-01-27",
+      "quote": "Free: $0/month. Standard: $3.88/month. Pro: $12.88/month. Premier: $28.88/month. [Free tier includes] 66 free credits every 24 hours.",
+      "platform": "fritz.ai (independent editorial blog, affiliate-monetized; published 2025-01-27, captured 2026-08-17)",
+      "target_slug": "/tools/kling-ai",
+      "collected_at": "2026-08-17",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "kling-ai-review-2026-08-17",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Kling AI",
+        "aspect": "Standard-tier pricing ($3.88/mo) and free-tier daily credits (66/24hr), relayed via a 567-day-stale review of a pre-2.0 version",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Free (66 credits/24hr) – Premier $28.88/mo",
+        "item_date": "2025-01-27"
+      },
+      "honesty_notes": [
+        "klingai.com/pricing was independently re-attempted 2026-08-17 and again returned HTTP 446 — this figure cannot be checked against the vendor's own current page (see _meta.query_census).",
+        "This is the LOWEST of 5 independently-dated Standard-tier figures found this run ($3.88 / $6.69 / $6.99 / $7-9 / $10) — present the full spread, never this number alone."
+      ],
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-31",
+          "collector": "refresh-2026-10-31",
+          "source_url": "https://klingai.com/global/membership/membership-plan",
+          "status": "ok",
+          "claim": "The HTTP 446 block logged in August did not recur: klingai.com now answers a direct request with a 301 redirect to kling.ai, and kling.ai/app/membership/membership-plan answered HTTP 200 and rendered in full. The $3.88 Standard figure from fritz.ai matches no line on the vendor page.",
+          "quote": "Plans from $6.99",
+          "method": "curl status check; r.jina.ai render; live browser read, signed out"
+        }
+      ]
+    },
+    {
+      "id": "EV-kling-ai-review-02",
+      "claim": "MobileAppDaily's pricing table (page text states 'updated as of Oct'25') lists Kling's Standard tier at $6.69/mo for 660 credits/month, with no source citation given for the figures, alongside a 4.5/5 'MobileAppDailyCertified Rating' with sub-scores.",
+      "source_url": "https://www.mobileappdaily.com/product-review/kling-ai",
+      "source_date": "2025-10",
+      "quote": "Standard: 660 credits/month ($6.69/month or $79.2/year). Pro: 3000 credits/month ($25.99/month...). Premier: 8000 credits/month ($64.99/month...). Ultra: 26000 credits/month ($127.99/month...).",
+      "platform": "mobileappdaily.com (agency-style review site, star-rating badge format; page text states \"updated as of Oct'25\", captured 2026-08-17)",
+      "target_slug": "/tools/kling-ai",
+      "collected_at": "2026-08-17",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "kling-ai-review-2026-08-17",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Kling AI",
+        "aspect": "Standard-tier pricing ($6.69/mo, 660 credits/month), relayed with no source citation",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Standard $6.69/mo (660 credits) – Ultra $127.99/mo (26,000 credits)",
+        "item_date": "2025-10 (approximate, per page's own 'updated as of' text)"
+      },
+      "honesty_notes": [
+        "No source is cited for these figures anywhere on the page — treat as an independent third-party estimate, not a vendor-confirmed number."
+      ],
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-31",
+          "collector": "refresh-2026-10-31",
+          "source_url": "https://kling.ai/app/membership/membership-plan",
+          "status": "ok",
+          "claim": "The $6.69 Standard figure from mobileappdaily.com matches no line on the vendor page. Yearly Standard $79.20 / 12 = $6.60 is Mimo arithmetic, not a vendor figure.",
+          "quote": "$79.2 / Year $120 34% Off",
+          "method": "live browser read, Yearly tab, signed out"
+        }
+      ]
+    },
+    {
+      "id": "EV-kling-ai-review-03",
+      "claim": "A second, distinct eesel.ai article (different URL from the already-registered eesel.ai/blog/kling-ai-pricing) states Kling's Standard tier at $6.99/mo for 660 credits/month, and states the free Basic tier grants 166 credits/month, described as 'earned' rather than a daily refresh — a third, distinct free-tier structure from the same publisher's own two articles at two different points in time.",
+      "source_url": "https://www.eesel.ai/blog/kling-ai-reviews",
+      "source_date": "2025-10-12",
+      "quote": "Basic: $0/month, 166 credits monthly (earned). Standard: $6.99/month, 660 credits/month. Pro: $25.99/month, 3,000 credits/month. Premier: $64.99/month, 8,000 credits/month.",
+      "platform": "eesel.ai/blog (SaaS-company blog; distinct URL from eesel.ai/blog/kling-ai-pricing already registered as EV-best-ai-video-generators-03; last edited 2025-10-12, captured 2026-08-17)",
+      "target_slug": "/tools/kling-ai",
+      "collected_at": "2026-08-17",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "kling-ai-review-2026-08-17",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Kling AI",
+        "aspect": "Standard-tier pricing ($6.99/mo) and a third distinct free-tier structure (166 credits/mo, earned)",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Basic (166 credits/mo earned) – Premier $64.99/mo (8,000 credits/mo)",
+        "item_date": "2025-10-12"
+      },
+      "honesty_notes": [
+        "Same publisher (eesel.ai) states THREE different free-tier structures across two articles at two dates: 166 credits/mo 'earned' here (2025-10-12) vs ~1,980 credits/day in EV-best-ai-video-generators-03 (2026-06-05) — a genuine within-publisher divergence, not just a cross-publisher one."
+      ],
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-31",
+          "collector": "refresh-2026-10-31",
+          "source_url": "https://kling.ai/app/membership/membership-plan",
+          "status": "ok",
+          "claim": "Vendor FAQ: non-subscribers get MONTHLY free credits claimed on login; DAILY bonus credits belong to subscribers. Amount for non-subscribers is not shown signed out. Credit deduction factors and validity periods stated. Supersedes daily-refresh descriptions of the free tier; the shape fits the 166-a-month report without confirming the number.",
+          "quote": "Monthly Free Credits for Non-Subscribers: Claimed upon login each month and valid for 31 days. ... Daily Bonus Credits for Subscribers (excluding 7-Day Trial and 7-Day Pass users): Issued upon your first login each day and expire at 24:00:00 (local time) on the same day. ... the required number of Credits is automatically deducted based on factors such as the number of outputs, model type, duration, and resolution.",
+          "supersedes": "66/day and ~1,980/day free-tier figures as descriptions of the current free plan",
+          "method": "live browser read with FAQ expanded, signed out"
+        }
+      ]
+    },
+    {
+      "id": "EV-kling-ai-review-04",
+      "claim": "The same eesel.ai review states it drew on Reddit, Trustpilot, and App Store/Google Play complaints to reach a 'too risky to recommend' verdict for most businesses and serious creators, citing customer-service and billing-related themes specifically. Mimo did not independently re-verify Reddit or the App Store this run (both are outside the platforms directly fetched); this is eesel.ai's own reported synthesis, not a Mimo-verified community finding.",
+      "source_url": "https://www.eesel.ai/blog/kling-ai-reviews",
+      "source_date": "2025-10-12",
+      "quote": "For most people, especially businesses or serious creators who need a tool they can depend on, Kling AI is just too risky to recommend right now... complete and utter lack of customer service.",
+      "platform": "eesel.ai/blog (SaaS-company blog's own editorial synthesis, citing Reddit/Trustpilot/app-store themes it read; last edited 2025-10-12, captured 2026-08-17)",
+      "target_slug": "/tools/kling-ai",
+      "collected_at": "2026-08-17",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "kling-ai-review-2026-08-17",
+      "screening": "included",
+      "label": "community-report",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Kling AI",
+        "aspect": "overall risk verdict citing Reddit/Trustpilot/app-store complaint themes (source's own synthesis, not independently re-verified by Mimo)",
+        "stance": "negative",
+        "plan_tier_if_stated": null,
+        "item_date": "2025-10-12"
+      },
+      "honesty_notes": [
+        "MUST be attributed on the page as 'eesel.ai reports drawing on Reddit/Trustpilot/app-store complaints' — never phrase this as if Mimo itself fetched and verified Reddit or App Store content, since it did not (Reddit remains environment-blocked, consistent with every prior Mimo sweep since 2026-07-10).",
+        "No denominator or link list is given by eesel.ai for 'complaints' — do not convert this into a percentage or count on the page."
+      ]
+    },
+    {
+      "id": "EV-kling-ai-review-05",
+      "claim": "Futurepedia.io's listing (page states 'Updated 08/10/2026', the same week as this sweep) states Standard/Pro/Premier pricing of $6.99/$25.99/$64.99 per month, but explicitly marks all three as 'first month only' promotional pricing with no standing renewal rate given.",
+      "source_url": "https://www.futurepedia.io/tool/kling-ai",
+      "source_date": "2026-08-10",
+      "quote": "Standard: $6.99/month (first month only). Pro: $25.99/month (first month only). Premier: $64.99/month (first month only). Pricing is subject to change.",
+      "platform": "futurepedia.io/tool/kling-ai (AI-tool directory/review hybrid; page states \"Updated 08/10/2026\", captured 2026-08-17)",
+      "target_slug": "/tools/kling-ai",
+      "collected_at": "2026-08-17",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "kling-ai-review-2026-08-17",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Kling AI",
+        "aspect": "Standard/Pro/Premier pricing explicitly flagged as first-month-only promotional rates, no standing rate given",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Standard $6.99/mo (first month only) – Premier $64.99/mo (first month only)",
+        "item_date": "2026-08-10"
+      },
+      "honesty_notes": [
+        "This is the ONLY source in this sweep to explicitly flag its own figures as promotional/introductory-only — the $6.99 figure recurs elsewhere (EV-kling-ai-review-06, checkthat.ai's 'introductory' note in EV-kling-ai-review-09) without that same disclosure, suggesting $6.99 may be a first-month rate being silently presented as a standing rate by other publishers."
+      ]
+    },
+    {
+      "id": "EV-kling-ai-review-06",
+      "claim": "Cybernews' own pricing table (published 2025-12-19) states Standard at $6.99/mo for 660 credits/month, while separately stating the Basic (free) tier grants '66 credits per day' — the same publisher's own two figures show a 66-vs-660 pattern that plausibly reflects a transcription collision between the free-tier daily figure and the Standard tier's monthly credit count, though this cannot be confirmed without the vendor's own unreachable page.",
+      "source_url": "https://cybernews.com/ai-tools/kling-ai-review/",
+      "source_date": "2025-12-19",
+      "quote": "Standard: $6.99/month, 660 credits. Pro: $25.99/month, 3,000 credits. Premier: $64.99/month, 8,000 credits. Ultra: $127.99/month, 26,000 credits. [Basic plan gives] 66 credits per day.",
+      "platform": "cybernews.com/ai-tools/kling-ai-review/ (mid-size tech-news publisher; direct fetch and curl both returned HTTP 403/Cloudflare-blocked this run, content retrieved via r.jina.ai reader-proxy fetch of the same URL; published 2025-12-19T07:44:00+00:00, captured 2026-08-17)",
+      "target_slug": "/tools/kling-ai",
+      "collected_at": "2026-08-17",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "kling-ai-review-2026-08-17",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "Kling AI",
+        "aspect": "Standard-tier pricing ($6.99/mo, 660 credits/month) and free-tier daily credits (66/day) from the same source, raising a possible transcription-collision hypothesis",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Basic (66 credits/day) – Ultra $127.99/mo (26,000 credits/mo)",
+        "item_date": "2025-12-19"
+      },
+      "honesty_notes": [
+        "FLAGGED for resolver: the '66 vs 660' collision is this curator's hypothesis, not a confirmed error — note that fritz.ai (EV-kling-ai-review-01, published 13 months earlier) independently states the SAME '66 credits/24hr' figure, which weakens (but does not disprove) a pure-typo theory and leaves open that 66/day may have been genuinely accurate at some earlier point before EV-best-ai-video-generators-03's ~1,980/day figure (captured 2026-06-05).",
+        "This is a THIRD independently-dated free-tier figure (66/day) disagreeing with both eesel.ai/kling-ai-reviews' 166/mo-earned (EV-kling-ai-review-03, 2025-10-12) and EV-best-ai-video-generators-03's ~1,980/day (2026-06-05) — present all three, the pattern is non-monotonic and genuinely unresolved, not a clean 'it increased over time' story."
+      ]
+    },
+    {
+      "id": "EV-kling-ai-review-07",
+      "claim": "Cybernews' commercial-use FAQ answer — from the single most rigorously-tested competitor review found in this sweep (5 disclosed test categories, 7 embedded output videos, documented failure cases) — states commercial use is generally allowed but defers entirely to unquoted 'terms of service' language rather than citing the actual clause. The same ~4,000-word review contains zero mentions of Kuaishou, China, data residency, or content moderation anywhere, confirming this is a vacuum even in the best-tested public review of the tool found this run.",
+      "source_url": "https://cybernews.com/ai-tools/kling-ai-review/",
+      "source_date": "2025-12-19",
+      "quote": "Yes. Kling generally allows commercial use, but check the terms of service and any licensing rules for specific models and third-party audio. We recommend reading the licensing section before publishing paid work.",
+      "platform": "cybernews.com/ai-tools/kling-ai-review/ (via r.jina.ai reader-proxy fetch, direct fetch 403-blocked; published 2025-12-19, captured 2026-08-17)",
+      "target_slug": "/tools/kling-ai",
+      "collected_at": "2026-08-17",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "kling-ai-review-2026-08-17",
+      "screening": "included",
+      "label": "research-finding",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Kling AI",
+        "aspect": "commercial-use FAQ answer that defers to unquoted ToS language; zero China/Kuaishou/data-residency mentions in the deepest-tested competitor review found this run",
+        "stance": "mixed",
+        "plan_tier_if_stated": null,
+        "item_date": "2025-12-19"
+      },
+      "honesty_notes": [
+        "Mimo's own review can be the only page in this comp set that actually quotes the ToS clause instead of deflecting to it — see EV-kling-ai-review-12."
+      ]
+    },
+    {
+      "id": "EV-kling-ai-review-08",
+      "claim": "Testified.ai (published 2026-04-22, with a named author and a named fact-checker credited) states Kling's Standard tier at $7/mo billed annually or $9/mo billed monthly, and is the only page in this sweep that links directly to a live vendor pricing URL rather than merely naming the vendor as its source.",
+      "source_url": "https://testified.ai/ai-tools/kling-ai/review",
+      "source_date": "2026-04-22",
+      "quote": "Annual: $7/month when billed yearly. Monthly: $9/month (standard monthly billing). Save 25% for annual commitment. [Vendor pricing URL:] app.klingai.com/global/membership/membership-plan",
+      "platform": "testified.ai/ai-tools/kling-ai/review (review site with disclosed author + fact-checker byline; published 2026-04-22, captured 2026-08-17)",
+      "target_slug": "/tools/kling-ai",
+      "collected_at": "2026-08-17",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "kling-ai-review-2026-08-17",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Kling AI",
+        "aspect": "Standard-tier pricing ($7-9/mo) with a direct live link to the vendor's own pricing URL",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Standard $7/mo annual, $9/mo monthly",
+        "item_date": "2026-04-22"
+      },
+      "honesty_notes": [
+        "The linked vendor URL (app.klingai.com, not klingai.com/pricing) was not independently re-fetched this run — a subdomain worth trying at publish time in case it is not subject to the same 446 block as the root domain."
+      ]
+    },
+    {
+      "id": "EV-kling-ai-review-09",
+      "claim": "Checkthat.ai (last updated 2026-06-29) states Kling's second pricing tier at $10/mo standard with a '$6.99 introductory' rate — bridging the low ($6.99-ish) and high ($10) camps found elsewhere in this sweep in a single table — and explicitly states that Kling does not publish per-clip totals or resolution-specific rates.",
+      "source_url": "https://checkthat.ai/brands/kling-ai/pricing",
+      "source_date": "2026-06-29",
+      "quote": "Tier 2: $10/month ($6.99 introductory). Tier 3: $37/month. Tier 4: $92/month. Tier 5: $180/month. Kling does not publish per-clip totals or resolution-specific rates, stating only that consumption is subject to the interface display at the time.",
+      "platform": "checkthat.ai/brands/kling-ai/pricing (\"Built by GrowthX\" pricing/comparison tracker, cites Trustpilot and G2; last updated 2026-06-29, captured 2026-08-17)",
+      "target_slug": "/tools/kling-ai",
+      "collected_at": "2026-08-17",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "kling-ai-review-2026-08-17",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Kling AI",
+        "aspect": "Standard-tier pricing ($10/mo, '$6.99 introductory') and an explicit statement that Kling does not publish per-clip totals",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Free $0 – Tier 5 $180/mo",
+        "item_date": "2026-06-29"
+      },
+      "honesty_notes": [
+        "This is the closest any source in this sweep comes to explicitly RECONCILING the $6.99-vs-$10 divergence (framing $6.99 as introductory, $10 as standing) — still not vendor-confirmed, since klingai.com/pricing remains unreachable."
+      ],
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-31",
+          "collector": "refresh-2026-10-31",
+          "source_url": "https://kling.ai/app/membership/membership-plan",
+          "status": "ok",
+          "claim": "Vendor plan page, signed out, USD. Monthly tab: Standard list $10, first month $6.99, then $8.80/month, 660 credits, $1.06 per 100; Pro $37, $25.99, then $32.56, 3,000 credits, $0.87; Premier (18K default) $207, $144.99, then $181.99, 18,000 credits, $0.81; Ultra+ $619, $432.99, then $544.99, 57,000 credits, $0.76. Yearly tab: Standard $79.20, Pro $293.04, Premier $1,639.99, Ultra+ $4,902.99. Basic $0. Commercial use, watermark removal and 1080p/4K generation show no entry for Basic and are listed on paid cards. Max videos per generation: Basic 1, paid 4. Cancellation routes in Q11. Credits expire on lapse per Q10. Offer marked valid until Dec.31, 2026.",
+          "quote": "$6.99 / 1st mo $10 30% Off 1st Then $8.8/month First-purchase offer available once. ... 660 Credits/month 100 Credits = $1.06 ... Generated content is for commercial use ... Offer valid until Dec.31, 2026, UTC-8",
+          "supersedes": "third-party Standard price spread as the current price; those figures stay as dated history",
+          "method": "r.jina.ai render plus live browser read of Monthly and Yearly tabs, signed out"
+        }
+      ]
+    },
+    {
+      "id": "EV-kling-ai-review-10",
+      "claim": "The same checkthat.ai page (last updated 2026-06-29) cites a Trustpilot rating of 1.3/5 across 318 reviews for klingai.com. This is a third-party relay: Trustpilot's own page returned HTTP 403 on direct fetch this run and could not be independently verified by Mimo.",
+      "source_url": "https://checkthat.ai/brands/kling-ai/pricing",
+      "source_date": "2026-06-29",
+      "quote": "1.3/5 rating across 318 reviews on Trustpilot for Kling AI.",
+      "platform": "checkthat.ai/brands/kling-ai/pricing (relaying Trustpilot data; trustpilot.com/review/klingai.com itself returned HTTP 403 on direct fetch this run — see _meta.query_census; checkthat.ai last updated 2026-06-29, captured 2026-08-17)",
+      "target_slug": "/tools/kling-ai",
+      "collected_at": "2026-08-17",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "kling-ai-review-2026-08-17",
+      "screening": "included",
+      "label": "community-report",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Kling AI",
+        "aspect": "third-party relay of Trustpilot's aggregate rating for klingai.com",
+        "stance": "negative",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-06-29"
+      },
+      "honesty_notes": [
+        "MUST be labeled 'reported via a third-party relay, not independently verified by Mimo' per MEP's honest ceiling — Trustpilot's own page is 403-blocked, and this figure (n=318) should NOT be conflated with the different n≈340/89%-one-star figures seen in Phase 1's own WebSearch-only synthesis, which were never independently fetched by any Mimo agent and must not be used.",
+        "G2's reported n=3 rating for Kling (per Phase 1's SERP capture) could NOT be independently verified or relayed this run — g2.com returned 403 and no fetchable third-party relay of the specific figure was found; do not state a G2 number on the page without a source."
+      ],
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-31",
+          "collector": "refresh-2026-10-31",
+          "source_url": "https://www.trustpilot.com/review/klingai.com",
+          "status": "ok",
+          "claim": "Trustpilot's own page was readable for the first time: title gives 1.2/5. No review count rendered. checkthat.ai still relays 1.3/5 across 318 reviews. Top mentions lead with Subscription, Refund, Payment. One reviewer dated October 29, 2026 alleges price rises with the new model (single unverified report).",
+          "quote": "Klingai is rated \"Bad\" with 1.2 / 5 on Trustpilot ... Top mentions Subscription Refund Payment Cancellation Service Spam ... Kling AI had MASSIVELY increased their prices while releasing a new model",
+          "supersedes": "1.3/5 as the current Trustpilot score (1.3 remains the relayed checkthat.ai figure)",
+          "method": "r.jina.ai render"
+        },
+        {
+          "recaptured_at": "2026-10-31",
+          "collector": "refresh-2026-10-31",
+          "source_url": "https://www.g2.com/products/kling-ai/reviews",
+          "status": "failed",
+          "claim": "FAILED FETCH: reader returned a CAPTCHA page with no content. No G2 figure available.",
+          "quote": "",
+          "method": "r.jina.ai render"
+        }
+      ]
+    },
+    {
+      "id": "EV-kling-ai-review-11",
+      "claim": "Wikipedia's Kling article confirms Kuaishou Technology — described as 'a Chinese publicly traded partly state-owned holding company based in Haidian District, Beijing' — as Kling's developer, and states that early public access to Kling via Kuaishou's KwaiCut app required a waitlist signup gated by a Chinese phone number.",
+      "source_url": "https://en.wikipedia.org/wiki/Kling_(text-to-video_model)",
+      "source_date": "2026-08-17",
+      "quote": "Kuaishou developed Kling... a Chinese publicly traded partly state-owned holding company based in Haidian District, Beijing... accessible to the public on Kuaishou's video editing app KwaiCut via signing up for a waitlist with a Chinese phone number.",
+      "platform": "en.wikipedia.org (living reference article, continuously edited, no single publish date — captured 2026-08-17)",
+      "target_slug": "/tools/kling-ai",
+      "collected_at": "2026-08-17",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "kling-ai-review-2026-08-17",
+      "screening": "included",
+      "label": "research-finding",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Kling AI",
+        "aspect": "parent-company ownership, Beijing HQ, partly-state-owned structure, and China-phone-number gating on early access",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "living document, captured 2026-08-17"
+      },
+      "honesty_notes": [
+        "Wikipedia carries no version-release-history detail for Kling — version currency is sourced separately (EV-kling-ai-review-19)."
+      ]
+    },
+    {
+      "id": "EV-kling-ai-review-12",
+      "claim": "Kling's own Terms of Service (effective 2026-04-21) restricts commercial use of Output without written permission (Section 4.6), grants the user IP ownership of Content (Section 4.4) but simultaneously grants Kling a broad, non-exclusive, royalty-free license to host, reproduce, modify, and create derivative works from that same content — including for training future models (Sections 4.7.1-4.7.2) — and requires visible Kling branding on shared Output (Section 4.5). The retrieved sections do not visibly state a distinct commercial-use carve-out for paid subscribers.",
+      "source_url": "https://kling.ai/docs/user-policy",
+      "source_date": "2026-04-21",
+      "quote": "[4.6] without our written permission, you may not use, reproduce, distribute, and create derivative works of, and make modifications to, the Output for any commercial purposes. [4.7.1] Kling AI has a non-exclusive, royalty-free right and license...to use the Content...to create, test, improve, train.",
+      "platform": "kling.ai/docs/user-policy (Kling's own primary Terms of Service; direct fetch returned HTTP 446, content retrieved via r.jina.ai reader-proxy fetch of the same URL; effective/last-updated 2026/04/21, captured 2026-08-17)",
+      "target_slug": "/tools/kling-ai",
+      "collected_at": "2026-08-17",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "kling-ai-review-2026-08-17",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "Kling AI",
+        "aspect": "primary ToS clauses covering commercial-use restriction, output ownership, broad license-back to Kling (incl. model training), and watermark/branding requirement",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-04-21 (effective date)"
+      },
+      "honesty_notes": [
+        "FLAGGED for resolver: this is the single strongest find of this sweep (the actual vendor ToS, reached only via a reader-proxy workaround since the domain is otherwise blocked) — but Section 4.6's restriction is stated without a visible paid-tier exception in what was extracted; a secondary source (EV-kling-ai-review-14) claims paid tiers DO unlock full commercial rights. Present this as an open tension, not a resolved answer.",
+        "This IS the primary source the task asked for — cite it directly rather than any secondary paraphrase wherever possible."
+      ],
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-31",
+          "collector": "refresh-2026-10-31",
+          "source_url": "https://kling.ai/docs/user-policy",
+          "status": "ok",
+          "claim": "Terms still dated 2026/04/21 (Section 4.6 wording unchanged). Training language sits in Section 4.7.3(f), not 4.7.1-4.7.2 as earlier worded on the page; revocation by email in 4.7.4. The plan-page FAQ's 'Kling AI Paid Services Agreement' link opened /docs/user-policy, so no separate agreement text was read.",
+          "quote": "Specifically, without our written permission, you may not use, reproduce, distribute, and create derivative works of, and make modifications to, the Output for any commercial purposes. ... (f) create, test, improve, train, or otherwise develop the artificial intelligence or machine learning models ... 4.7.4 If you do not wish us to continue using all or part of the Content, you may notify us to revoke the authorization by sending an email",
+          "method": "r.jina.ai render; live browser click captured window.open target"
+        }
+      ]
+    },
+    {
+      "id": "EV-kling-ai-review-13",
+      "claim": "VerifyWise's AI Trust Index (policy dated 2026-04-21, assessment dated 2026-08-13) grades Kling AI's data practices B (62/100), citing as its central concern that Kling's content-training license (matching EV-kling-ai-review-12's Section 4.7) is opt-out rather than opt-in for user inputs. The assessment states no specifics about server location or data residency.",
+      "source_url": "https://verifywise.ai/ai-trust-index/kling-ai",
+      "source_date": "2026-08-13",
+      "quote": "Kling AI 'discloses most of its data practices' [Grade B, 62/100]. [Kling] claims 'non-exclusive, royalty-free right and license... to use the Content... to create, test, improve, train, or otherwise develop' AI models, with an opt-out mechanism rather than opt-in protection.",
+      "platform": "verifywise.ai/ai-trust-index/kling-ai (third-party AI-governance/trust-assessment site with a disclosed grading rubric; policy dated 2026-04-21, assessment dated 2026-08-13, captured 2026-08-17)",
+      "target_slug": "/tools/kling-ai",
+      "collected_at": "2026-08-17",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "kling-ai-review-2026-08-17",
+      "screening": "included",
+      "label": "independent-test",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Kling AI",
+        "aspect": "third-party data-trust grade (B, 62/100), independently corroborating the opt-out training-use concern found in the primary ToS",
+        "stance": "mixed",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-08-13 (assessment); policy dated 2026-04-21"
+      },
+      "honesty_notes": [
+        "Independently corroborates EV-kling-ai-review-12's own directly-fetched ToS finding — two differently-sourced reads of the same underlying clause reaching the same concern."
+      ],
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-31",
+          "collector": "refresh-2026-10-31",
+          "source_url": "https://verifywise.ai/ai-trust-index/kling-ai",
+          "status": "ok",
+          "claim": "VerifyWise grade moved from B, 62/100 (assessed 2026-08-13) to D, 36/100, range 31-41, last assessed 2026-10-13; it says the range crosses the D/F cut and that grades measure the transparency of documents, not actual practices.",
+          "quote": "Kling AI earns a D (36/100)because it leaves much about its data practices unstated. ... That range crosses the D/F cut, so read this app as D or F rather than firmly either. ... Last assessed 2026-10-13",
+          "supersedes": "B, 62/100",
+          "method": "r.jina.ai render"
+        }
+      ]
+    },
+    {
+      "id": "EV-kling-ai-review-14",
+      "claim": "A secondary legal-guide (published 2026-01-13) states Kling's free tier is restricted to personal, non-commercial use with a mandatory watermark, while paid Standard/Pro/Premier subscribers gain a 'commercial license' with watermarks automatically removed — a more permissive paid-tier characterization than Mimo's own direct fetch of the ToS's Section 4.6 shows (EV-kling-ai-review-12), which does not visibly state a paid-tier commercial carve-out in the retrieved text.",
+      "source_url": "https://www.glbgpt.com/hub/can-i-use-kling-ai-for-commercial-use/",
+      "source_date": "2026-01-13",
+      "quote": "Free tier: users are 'legally restricted to personal, non-commercial use.' Paid tier: subscribers to Standard, Pro, or Premier plans gain 'commercial license' rights. Free users must 'retain the official Kling watermark;' paid subscribers automatically have watermarks removed.",
+      "platform": "glbgpt.com/hub (third-party legal-guide blog; does not quote the ToS verbatim; published/updated 2026-01-13, captured 2026-08-17)",
+      "target_slug": "/tools/kling-ai",
+      "collected_at": "2026-08-17",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "kling-ai-review-2026-08-17",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "Kling AI",
+        "aspect": "secondary claim that paid tiers unlock full commercial rights and watermark removal, in tension with the ToS's own Section 4.6 text",
+        "stance": "mixed",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-01-13"
+      },
+      "honesty_notes": [
+        "FLAGGED for resolver: directly tensions with EV-kling-ai-review-12's own fetched primary-source text; this article never quotes the ToS itself, so it cannot be weighted above the primary source — present both and disclose the tension, do not silently adopt this more favorable reading."
+      ],
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-31",
+          "collector": "refresh-2026-10-31",
+          "source_url": "https://kling.ai/app/membership/membership-plan",
+          "status": "ok",
+          "claim": "Vendor FAQ Q8 now states paid subscribers may use output commercially, excluding competing products. This agrees with the secondary guide's direction and is the vendor's own wording; Section 4.6 of the Terms carries no matching exception.",
+          "quote": "Paid Subscribers may lawfully use, reproduce, distribute, modify, and create derivative works from content generated through Kling AI's products and services for commercial purposes, provided that such content is not used to develop products or services that compete with Kling AI.",
+          "supersedes": "'commercial-use rights unresolved' as the page's finding",
+          "method": "live browser read with FAQ expanded, signed out"
+        }
+      ]
+    },
+    {
+      "id": "EV-kling-ai-review-15",
+      "claim": "A tech-news report (published 2024-07-25, shortly after Kling's original June 2024 release) states that prompts including 'Democracy in China,' a named reference to China's president, and 'Tiananmen Square protests' returned a nonspecific error/generation-failure message rather than output. This finding is dated to Kling's ORIGINAL model and was not independently re-tested against the current Kling 3.0 by Mimo, nor — as far as this sweep found — by any other reviewer.",
+      "source_url": "https://newsgpt.ai/2024/07/25/kling-ai-model-released-but-censors-politically-sensitive-topics/",
+      "source_date": "2024-07-25",
+      "quote": "Prompts like 'Democracy in China,' 'Chinese President Xi Jinping walking down the street,' and 'Tiananmen Square protests' yield a nonspecific error message. Kling's curious behaviour is likely the result of intense political pressure from the Chinese government.",
+      "platform": "newsgpt.ai (independent AI-news outlet; published 2024-07-25 — does not itself disclose a testing methodology or cite an original source for the finding — captured 2026-08-17)",
+      "target_slug": "/tools/kling-ai",
+      "collected_at": "2026-08-17",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "kling-ai-review-2026-08-17",
+      "screening": "included",
+      "label": "research-finding",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "Kling AI",
+        "aspect": "political-prompt content-moderation behavior reported on the original 2024 model",
+        "stance": "negative",
+        "plan_tier_if_stated": null,
+        "item_date": "2024-07-25"
+      },
+      "honesty_notes": [
+        "FLAGGED for resolver: the source itself does not disclose its own testing methodology or cite a named tester/original publication — treat as a reported finding of unclear primary provenance, not a first-party Mimo test.",
+        "MUST be framed on the page as dated to the ORIGINAL 2024 Kling model, over 19 months before Kling 3.0 — do not present this as a live characteristic of the current version without that caveat, since no source in this sweep re-tested it against 3.0."
+      ]
+    },
+    {
+      "id": "EV-kling-ai-review-16",
+      "claim": "Unite.AI (published 2026-03-11, updated 2026-03-30, named author Janine Heinrichs) documents specific generation failures from its own hands-on testing — a distorted logo on a chef's shirt, missing described background noises, and ignored prompt elements — and states Kling's pricing is entirely credit-based with no dollar figures given anywhere in its roughly 3,500-4,000-word review, the largest single pricing silence found in this sweep from the highest-authority page checked.",
+      "source_url": "https://www.unite.ai/kling-ai-review/",
+      "source_date": "2026-03-30",
+      "quote": "Kling AI quickly makes short, high-quality videos with realistic motion, audio, and lip-synced dialogue. But glitches, ignored prompts, and short video limits can be frustrating. [E.g.] the logo on the chef's shirt looked distorted... parts of the prompts are sometimes ignored.",
+      "platform": "unite.ai/kling-ai-review/ (high-authority independent AI-news/review site, named author with a disclosed personal-site sameAs link; published 2026-03-11, updated 2026-03-30, captured 2026-08-17)",
+      "target_slug": "/tools/kling-ai",
+      "collected_at": "2026-08-17",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "kling-ai-review-2026-08-17",
+      "screening": "included",
+      "label": "independent-test",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Kling AI",
+        "aspect": "hands-on documented generation failures and total absence of any dollar pricing figure across the review",
+        "stance": "mixed",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-03-11 (published) / 2026-03-30 (updated)"
+      },
+      "honesty_notes": [
+        "Corroborates the multi-source pattern that pricing is genuinely hard to pin down even for the highest-authority reviewers, not just smaller content-mill sites."
+      ]
+    },
+    {
+      "id": "EV-kling-ai-review-17",
+      "claim": "The same Unite.AI review independently corroborates Kuaishou/Beijing ownership (a third independent confirmation this run, alongside Wikipedia and Product Hunt's own product description) and states the free plan explicitly 'cannot be used for commercial use' while paid plans 'appear to permit it' — a hedged, not fully confirmed, claim. The review separately makes an unsourced statement that 'many report lost credits, poor support, and trouble canceling,' with no links, dates, or count given; Mimo does not adopt this generalization as fact.",
+      "source_url": "https://www.unite.ai/kling-ai-review/",
+      "source_date": "2026-03-30",
+      "quote": "[Kling is] built by Kuaishou Technology, a Chinese tech giant... a Chinese product developed by the Beijing-based technology company Kuaishou Technology. [Free plan] cannot be used for 'commercial use,' [paid plans] appear to permit it. Many report lost credits, poor support, and trouble canceling.",
+      "platform": "unite.ai/kling-ai-review/ (published 2026-03-11, updated 2026-03-30, captured 2026-08-17)",
+      "target_slug": "/tools/kling-ai",
+      "collected_at": "2026-08-17",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "kling-ai-review-2026-08-17",
+      "screening": "included",
+      "label": "research-finding",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "Kling AI",
+        "aspect": "third independent Kuaishou/Beijing ownership corroboration; hedged free-vs-paid commercial-use claim; an unsourced complaint generalization Mimo does not adopt",
+        "stance": "mixed",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-03-11 / 2026-03-30"
+      },
+      "honesty_notes": [
+        "FLAGGED for resolver: the 'many report lost credits...' sentence is UNSOURCED inside Unite.AI's own article (no denominator, no links) — quoted here ONLY to document that a high-authority competitor makes this claim without support. NEVER present this on the Mimo page as if independently verified; it is exactly the anecdote-to-claim pattern MEP exists to catch."
+      ]
+    },
+    {
+      "id": "EV-kling-ai-review-18",
+      "claim": "Product Hunt's own reviews page shows Kling AI at 4.9/5 from 21 total reviews, split by the platform's own UI into 15 'Founder Reviews' and 6 'Other Reviews' — a launch-incentivized sample, not organic customer volume. Individual review dates are given only relatively ('1 year ago'), not as exact calendar dates.",
+      "source_url": "https://www.producthunt.com/products/kling-ai-4/reviews",
+      "source_date": "2026-08-17",
+      "quote": "4.9 stars based on 21 reviews. Founder Reviews: 15. Other Reviews: 6. 'Just amazing, I've tried many (MANY) video generators but this is the best one.' – Terry Ann, 1 year ago.",
+      "platform": "producthunt.com/products/kling-ai-4/reviews (review aggregator/UGC platform; captured 2026-08-17, underlying individual reviews dated only relatively by the platform itself)",
+      "target_slug": "/tools/kling-ai",
+      "collected_at": "2026-08-17",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "kling-ai-review-2026-08-17",
+      "screening": "included",
+      "label": "community-report",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Kling AI",
+        "aspect": "aggregate rating (4.9/5, n=21, 15 founder-labeled + 6 other) on a launch-incentivized platform sample",
+        "stance": "positive",
+        "plan_tier_if_stated": null,
+        "item_date": "captured 2026-08-17; underlying reviews dated only relatively"
+      },
+      "honesty_notes": [
+        "This 4.9/5 (n=21, 71% self-labeled 'Founder Reviews') sits directly against EV-kling-ai-review-10's Trustpilot relay (1.3/5, n=318, real-customer) — present BOTH numbers together as the rating-divergence finding the task specifically asked for, with the sample composition named for each.",
+        "G2's reported n=3 could not be independently verified or relayed this run (403, no working relay found) — do not add a third rating figure without a source."
+      ],
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-31",
+          "collector": "refresh-2026-10-31",
+          "source_url": "https://www.producthunt.com/products/kling-ai-4/reviews",
+          "status": "failed",
+          "claim": "FAILED FETCH: reader returned a 'Just a moment...' CAPTCHA page. The 4.9/5, n=21 figure stays dated 2026-08-17.",
+          "quote": "",
+          "method": "r.jina.ai render"
+        }
+      ]
+    },
+    {
+      "id": "EV-kling-ai-review-19",
+      "claim": "Kling 3.0 general-released on 2026-02-04 per a dated third-party article published the same day, with native 4K at 60fps, clips up to 15 seconds, up to 6 camera cuts per multi-shot generation, an Elements character-consistency system, 3-speaker dialogue support, and availability in 5 languages.",
+      "source_url": "https://bestphoto.ai/blog/kling-3-0-now-available",
+      "source_date": "2026-02-04",
+      "quote": "Native 4K (3840x2160) at 60fps. 15 seconds maximum with customizable timing. Up to 6 camera cuts per generation. Elements system for maintaining character consistency across shots, support for 3-speaker dialogue with individual voice tracking, and availability in 5 languages.",
+      "platform": "bestphoto.ai/blog/kling-3-0-now-available (independent AI-tool blog; published 2026-02-04, captured 2026-08-17)",
+      "target_slug": "/tools/kling-ai",
+      "collected_at": "2026-08-17",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "kling-ai-review-2026-08-17",
+      "screening": "included",
+      "label": "research-finding",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Kling AI",
+        "aspect": "Kling 3.0 general-release date and headline feature set",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-02-04"
+      },
+      "honesty_notes": [
+        "Kuaishou's own investor-relations press release for this same launch (ir.kuaishou.com) could not be independently fetched this run (2 attempts, both timed out) — this third-party date is the best available substitute, not a primary-source confirmation."
+      ],
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-31",
+          "collector": "refresh-2026-10-31",
+          "source_url": "https://kling.ai/release-note/release-history",
+          "status": "ok",
+          "claim": "Vendor release log: Kling 4.0 on 2026-10-15; Kling 3.0 Turbo 2026-06-17; native 4K 2026-04-23; Kling 3.0 fully rolled out 2026-01-31 (the third-party date in this entry is 2026-02-04).",
+          "quote": "2026-10-15 Major Meet All-New Kling 4.0! ... 2026-04-23 Cinema-Grade Native 4K, Now on Kling AI! ... 2026-01-31 Major KlingAI Enters the 3.0 Era: All in One, One for All! Kling 3.0 Model Now Fully Rolled Out.",
+          "supersedes": "Kling 3.0 as the current flagship",
+          "method": "r.jina.ai render"
+        },
+        {
+          "recaptured_at": "2026-10-31",
+          "collector": "refresh-2026-10-31",
+          "source_url": "https://kling.ai/quickstart/kling-4-model-user-guide",
+          "status": "ok",
+          "claim": "Vendor Kling 4.0 guide dated Oct 26, 2026: up to 30 seconds per generation, up to 15 reference assets per task, stereo audio, 10-bit HDR marked coming soon. Vendor claims, not independently measured.",
+          "quote": "Generate up to 30 seconds of video in a single generation, supporting long takes and continuous storytelling. ... Each task supports up to 15 reference assets ... 10-bit HDR output (coming soon)",
+          "method": "live browser read"
+        },
+        {
+          "recaptured_at": "2026-10-31",
+          "collector": "refresh-2026-10-31",
+          "source_url": "https://kling.ai/dev/pricing",
+          "status": "ok",
+          "claim": "Vendor developer price list. General 180-day packages list $0.14 per unit and are not compatible with Kling 4.0. Flagship package 1: $500 (list $510), discounted unit price $0.15386, 3,250 units. Kling 3.0 no native audio: 0.6 units/s 720p, 0.8 units/s 1080p, 3.0 units/s 4K. Kling 4.0 no input video: 1.0 unit/s 720p, 1.5 units/s 1080p. Dollar-per-second figures on the page are Mimo multiplication (3.0: about $0.08 and $0.11; 4.0: about $0.15 and $0.23). Developer rates, not subscription-app credit rates, which are not shown signed out.",
+          "quote": "$0.14 per unit ... Please note that the following resource packs are not compatible with Kling 4.0 or Kling 4.0 Flash. ... 2% off, discounted unit price $0.15386 ... Kling 4.0 | No Input Video | Per second Total duration = Output duration | 1.0 Unit/s | 1.5 Units/s ... Kling 3.0 | No Native Audio | ... 0.6 Units/s | 0.8 Units/s | 3.0 Units/s",
+          "method": "r.jina.ai render plus live browser read of package tabs"
+        }
+      ]
+    },
+    {
+      "id": "EV-kling-ai-review-20",
+      "claim": "Cybernews titled its own review 'Kling 3.0 Review 2026' and published it 2025-12-19 (EV-kling-ai-review-06/07) — roughly seven weeks BEFORE Kling 3.0's traceable general-release date of 2026-02-04 (EV-kling-ai-review-19, independently confirmed via a separate source). Either Cybernews tested a staged/early-access rollout ahead of general release, or the two sources describe different rollout checkpoints inside the same '3.0' line — genuinely unresolved from what this sweep could verify.",
+      "source_url": "https://cybernews.com/ai-tools/kling-ai-review/",
+      "source_date": "2025-12-19",
+      "quote": "Kling 3.0 review (2026): is this the AI director creators have been waiting for? [published 2025-12-19T07:44:00+00:00]",
+      "platform": "cybernews.com/ai-tools/kling-ai-review/ (via r.jina.ai reader-proxy fetch; cross-referenced against bestphoto.ai/blog/kling-3-0-now-available's 2026-02-04 date, both independently fetched this run; captured 2026-08-17)",
+      "target_slug": "/tools/kling-ai",
+      "collected_at": "2026-08-17",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "kling-ai-review-2026-08-17",
+      "screening": "included",
+      "label": "research-finding",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "Kling AI",
+        "aspect": "internal timing inconsistency between a review titled 'Kling 3.0' (published 2025-12-19) and Kling 3.0's traceable general-release date (2026-02-04)",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "cross-references 2025-12-19 and 2026-02-04"
+      },
+      "honesty_notes": [
+        "FLAGGED for resolver: genuinely unresolved which rollout checkpoint each source describes — state this plainly on the page as an open question, do not silently resolve it either direction."
+      ],
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-31",
+          "collector": "refresh-2026-10-31",
+          "source_url": "https://kling.ai/release-note/release-history",
+          "status": "ok",
+          "claim": "Vendor rollout date 2026-01-31 replaces the third-party 2026-02-04 as the reference point; the cybernews 2025-12-19 'Kling 3.0' title still predates it.",
+          "quote": "2026-01-31 Major KlingAI Enters the 3.0 Era",
+          "method": "r.jina.ai render"
+        }
+      ]
+    },
+    {
+      "id": "EV-kling-ai-review-21",
+      "claim": "Curious Refuge's disclosed benchmark (testing Kling 2.5 Turbo specifically, not the current 3.0) scored it 7.4/10 overall across five sub-scores, with Visual Fidelity highest (8.1/10) and Temporal Consistency lowest (6.8/10, specifically flagged as weak with multiple characters in frame or movements demanding micro-precision). The article's exact publish year could not be confirmed from the fetched content (only 'October 10' is stated); it is likely 2025 given it reviews the September-2025-released 2.5 Turbo version, but this is not independently confirmed.",
+      "source_url": "https://curiousrefuge.com/blog/kling-25-turbo-ai-video-generator-review",
+      "source_date": "2025-10-10 (year not confirmed in fetched content; inferred from the 2.5 Turbo version under test)",
+      "quote": "Prompt Adherence: 7.4/10. Temporal Consistency: 6.8/10. Visual Fidelity: 8.1/10. Motion Quality: 7.4/10. Style & Cinematic Realism: 7.4/10. [Weakest] when there are multiple characters in frame, or a particular movement demands micro-precision.",
+      "platform": "curiousrefuge.com/blog (niche AI-filmmaking education site, disclosed benchmark sub-categories, named author Brian Dalton; publish date states \"October 10\" without a confirmed year in the fetched content, captured 2026-08-17)",
+      "target_slug": "/tools/kling-ai",
+      "collected_at": "2026-08-17",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "kling-ai-review-2026-08-17",
+      "screening": "included",
+      "label": "independent-test",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Kling AI",
+        "aspect": "disclosed 5-category benchmark score for Kling 2.5 Turbo specifically, not the current 3.0",
+        "stance": "mixed",
+        "plan_tier_if_stated": null,
+        "item_date": "stated as 'October 10', year not confirmed — likely 2025"
+      },
+      "honesty_notes": [
+        "MUST be labeled as testing Kling 2.5 Turbo (the Sep-2025 version), not Kling 3.0 — pair with EV-kling-ai-review-19's 3.0 feature set so the writer doesn't conflate benchmark scores across versions."
+      ]
+    }
+  ]
+}

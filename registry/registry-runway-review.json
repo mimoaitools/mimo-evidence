@@ -1,0 +1,715 @@
+{
+  "_meta": {
+    "flow_id": "runway-review-2026-08-29",
+    "protocol_version": "MEP-1.0",
+    "target_slug": "/tools/runway",
+    "target_keyword": "runway ai review",
+    "run_date": "2026-08-29",
+    "collector": "evidence-curator",
+    "date_instruction_note": "The task brief specified 'capture date 2026-08-17' for this shard's flow counter. That date is the /tools/kling-ai ship date referenced repeatedly elsewhere in this pipeline and does not match either the environment's actual current date (2026-08-29) or the same-day 'generated' timestamp on all four upstream Phase-1 files this run reads from (1-keyword.json, 1-serp.json, 1-competitor.json, 1-backlink.json, all dated 2026-08-29). Every fetch in this shard was actually performed 2026-08-29 — backdating capture timestamps to 2026-08-17 would misstate when the evidence was actually collected, which MEP exists to prevent. This shard therefore dates every entry 2026-08-29 (the real capture date) and flags the discrepancy here rather than silently complying or silently overriding.",
+    "page_class": "review-satellite (3rd video-cluster satellite, 1st Runway-specific sweep; hub /best/ai-video-generators already scored Runway 4.1/5 with a shallow, single-source-per-fact sweep — this shard goes deeper for a full single-tool review with 5-dim ToolScores). Candidates swept: Runway's own vendor pricing/policy/changelog surfaces, independent third-party pricing/review trackers, review-aggregator platforms (G2, Capterra, Product Hunt, 5 Trustpilot domain-listings), and the Artificial Analysis Video Arena leaderboard. No deepfake/face-swap/NSFW material was searched for, fetched, or cited at any point.",
+    "sweep_strategy": "Read all 4 same-day upstream Phase-1 files plus registry-best-ai-video-generators.json before searching, per instructions, to avoid re-deriving what discovery agents already located and to identify the specific open contradictions this shard needed to resolve: (1) the fragmented G2/Capterra/Trustpilot-x5/Product-Hunt community ratings, (2) Gen-3 Alpha retirement dates, (3) a 25-vs-12-credits/second Gen-4.5 contradiction and the Unlimited-vs-Max plan-name staleness flag, (4) the curionic.net-vs-'Artificial Analysis' Video Arena leaderboard attribution and the free-tier usability dispute. Ran 9 documented WebSearch queries this run (Gen-3 Alpha retirement, Gen-4.5 credit rate, ToS/commercial-use, Video Arena/Artificial Analysis attribution, Unlimited-to-Max transition, a quoted-terms retirement-date recheck, a primary credits-explainer hunt, a site:reddit.com census check, a site:quora.com census check), then followed up with 11 direct-navigation fetches of specific URLs already flagged by the upstream Phase-1 files (vendor pricing/ToS/changelog pages, G2, Capterra, Product Hunt, all 5 Trustpilot domain-listings, one Wayback Machine attempt). Every URL registered below was re-fetched and verified THIS run — nothing is carried over from the upstream agents' own fetches without an independent re-fetch by this shard. help.runwayml.com and comparebestai.com both 403-block direct WebFetch but were successfully reached via the r.jina.ai reader-proxy; g2.com and web.archive.org were blocked by BOTH direct fetch and reader-proxy and are registered as unverifiable-this-run, not silently skipped. All 5 Trustpilot domain fetches succeeded only via reader-proxy (direct WebFetch 403s every time, consistent with every prior Mimo shard's Trustpilot experience) and are labeled 'reader-proxy-relayed, not independently verified via direct fetch' per the task's explicit honest-ceiling instruction.",
+    "flow_counter": {
+      "identified": 91,
+      "screened": 91,
+      "excluded": 69,
+      "excluded_by_reason": {
+        "duplicate": 36,
+        "off-topic": 14,
+        "no-methodology-affiliate": 8,
+        "unverifiable-this-run": 11
+      },
+      "included_sources": 22,
+      "registry_entries_new": 21,
+      "counter_note": "identified = 91 distinct candidate URLs: 80 surfaced across 9 documented WebSearch queries (10 Gen-3-Alpha-retirement, 6 Gen-4.5-credit-rate, 9 ToS/commercial-use, 9 Video-Arena-attribution, 10 Unlimited-to-Max, 10 quoted-terms retirement recheck, 8 primary-credits-explainer, 8 site:reddit.com [0 real reddit.com urls returned], 10 site:quora.com [10 real quora.com urls returned, none re-fetched successfully]) plus 11 direct-navigation URLs already flagged by the same-day upstream Phase-1 files and independently re-fetched by this shard (comparebestai.com, aitoolanalysis.com, g2.com, capterra.com, producthunt.com, 5 Trustpilot domains, 1 Wayback Machine attempt). 22 distinct sources were included, producing 21 registry entries (one included source, comparebestai.com, contributes corroborating detail folded into an existing entry's honesty_notes rather than a standalone entry to avoid double-counting its retirement-date claim against EV-runway-review-03)."
+    },
+    "coder_agreement_rate": "CURATOR-PROVISIONAL single-pass coding across all 21 included entries (dual-independent coding + resolver pass is orchestrated above this run). Stance calls: 11 n/a (vendor-primary factual claims), 6 negative, 1 positive, 3 mixed. FLAGGED FOR ORCHESTRATED DUAL-CODING / RESOLVER ATTENTION: (1) EV-runway-review-06 vs EV-runway-review-07 — a genuine, dated, primary-vs-third-party credit-rate contradiction (12 vs 25 credits/second for Gen-4.5); a resolver should confirm this shard's judgment that the fresher vendor API doc outweighs the older third-party figure rather than presenting them as equally-weighted; (2) EV-runway-review-09 vs EV-runway-review-10 — Runway's own ToS text does not state a free-vs-paid commercial-use carve-out, but a third-party legal-analysis site claims one exists; a resolver should decide whether to present this as resolved-in-favor-of-the-primary-source or as a genuinely open disagreement; (3) EV-runway-review-12 — coded 'negative' because it undercuts a circulating marketing/review claim, but a resolver could reasonably code this 'n/a' (leaderboards are dynamic by design, not a product defect) rather than a negative finding about Runway itself; (4) EV-runway-review-14 — the G2 rating is relayed at second hand (g2.com itself blocked both direct and reader-proxy this run) — a resolver should weigh how much confidence this figure deserves relative to the directly-verified Capterra/Product-Hunt/Trustpilot entries.",
+    "query_census": [
+      { "q": "WebSearch: Runway Gen-3 Alpha retirement deprecated 2026 changelog", "candidates": 10, "note": "help.runwayml.com/.../Gen-3-Alpha-and-Gen-3-Alpha-Turbo (INCLUDED, fetched via r.jina.ai after direct 403 → EV-03), docs.dev.runwayml.com/api-details/api_changelog/ (INCLUDED, direct fetch → EV-04), runway.com/changelog (INCLUDED, direct fetch → EV-05; confirmed it contains NO Gen-3-Alpha-retirement entry, only Gen-4.5's Dec 2025 launch), 4 further help.runwayml.com legacy Gen-3-Alpha feature-doc pages (duplicate — same retirement fact, not separately fetched), help.runwayml.com's Gen-3-Alpha section index (duplicate), releasebot.io (no-methodology-affiliate release tracker), aiwiki.ai (off-topic generic wiki mirror), nextbigfuture.substack.com (off-topic — covers Gen-3 Alpha's original 2024 LAUNCH, not its 2026 retirement)." },
+      { "q": "WebSearch: Runway Gen-4.5 credits per second magichour.ai pricing", "candidates": 6, "note": "magichour.ai/blog/runway-gen-45-pricing (fetched directly — no clean per-second rate extractable, only a hedged aggregate estimate; unverifiable-this-run), runway.com/pricing (INCLUDED, direct fetch → EV-01), eesel.ai/blog/runway-ai-pricing (INCLUDED, direct fetch → EV-07), magichour.ai/blog/runway-ml-pricing (fetched directly — different hedged 4K-specific figures, no clean per-second rate; unverifiable-this-run), dynalord.com (no-methodology-affiliate), stacksheriff.com/ai-tools/runway-pricing/ (duplicate — same ground already covered with more precision by eesel.ai + comparebestai.com, not separately fetched this run)." },
+      { "q": "WebSearch: Runway AI commercial use rights terms of service output ownership", "candidates": 9, "note": "terms.law/ai-output-rights/runway/ (INCLUDED, direct fetch → EV-10), help.runwayml.com/.../Runway-s-Usage-Policy (attempted via r.jina.ai — 403/JS-wall even through the proxy; unverifiable-this-run), runwayml.com/terms-of-use → 308 redirect → runway.com/terms-of-use (INCLUDED, direct fetch → EV-09), help.runwayml.com/.../Can-I-use-the-content-I-made-in-Runway-for-commercial-purposes (attempted BOTH direct and r.jina.ai — 403 both ways; unverifiable-this-run), help.runwayml.com/.../Usage-rights (duplicate topic, not separately fetched), terms.law/forum/thread/runway-ml-video-commercial-rights.html (duplicate, same site/topic as terms.law's main article), xpiksapp.com (off-topic — general microstock-eligibility piece, not Runway-specific), joinrunway.io/terms (off-topic — a DIFFERENT company entirely, not runwayml.com/runway.com; flagged as an entity-collision risk, not fetched), lisapeyton.com (off-topic general AI-copyright commentary)." },
+      { "q": "WebSearch: \"Video Arena\" leaderboard AI video generation \"Artificial Analysis\" Runway", "candidates": 9, "note": "x.com/ArtificialAnlys status (duplicate/stale — a 2024 tweet about Hailuo/Mochi, not Runway; operator-confirmation achieved elsewhere), artificialanalysis.ai/video/arena (INCLUDED, direct fetch → EV-11), artificialanalysis.ai/video/leaderboard/text-to-video (INCLUDED, direct fetch → EV-12), artificialanalysis.ai/video/leaderboard/image-to-video (INCLUDED, direct fetch → EV-12), huggingface.co Video-Generation-Arena-Leaderboard (duplicate mirror), llm-stats.com (off-topic — a different, unrelated leaderboard site), artificialanalysis.ai/video/models (duplicate domain), artificialanalysis.ai/text-to-video/arena?tab=Leaderboard (duplicate URL), arena.ai/leaderboard/image-to-video (off-topic — a different domain, unclear if the same operator; not pursued)." },
+      { "q": "WebSearch: Runway Unlimited plan replaced by Max 2026", "candidates": 10, "note": "help.runwayml.com/.../Which-plan-is-right-for-me (duplicate topic), help.runwayml.com/.../Unlimited-plan-is-switching-to-Max (INCLUDED, fetched via r.jina.ai after direct 403 → EV-02), help.runwayml.com/.../Unlimited-plan-details (duplicate legacy detail page), note.com/yudai_book (off-topic — personal low-trust blog post), saascrmreview.com / melies.co / usagepricing.com / fluxnote.io/guides/runway-pricing-breakdown-2026 / aumiqx.com (5x no-methodology-affiliate pricing-mill pages), aivid.video/blog/runway-unlimited-vs-max... (duplicate — same topic already resolved via the primary vendor source, not separately fetched)." },
+      { "q": "WebSearch: \"Runway\" \"Gen-3 Alpha\" retired OR deprecated \"July 8\" 2026", "candidates": 10, "note": "7 further help.runwayml.com legacy Gen-3-Alpha/Gen-3-Alpha-Turbo feature-doc pages (duplicates of query 1's candidates, same underlying retirement fact — 2 of the 10 here, the Gen-3-Alpha-and-Turbo page and the API changelog, are literal repeats of query 1's already-included URLs), help.runwayml.com/.../Remove-Background (off-topic, unrelated feature), aitooltier.com/tools/runway (duplicate — repeats the now-superseded '#1' framing already addressed via EV-11/EV-12, not separately fetched)." },
+      { "q": "WebSearch: help.runwayml.com credits explained how much does each model cost", "candidates": 8, "note": "help.runwayml.com/.../Enterprise-Credits (off-topic — enterprise-specific, not the general per-model rate), docs.dev.runwayml.com/guides/pricing/ (INCLUDED, direct fetch → EV-06, the key vendor credit-rate source), eesel.ai/blog/runway-ai-pricing + runway.com/pricing (duplicates of query 2's already-included URLs), melies.co / saascrmreview.com / aumiqx.com (duplicates of query 5's excluded candidates), propicked.com/blog/runway-ml-pricing-2026-hidden-costs (no-methodology-affiliate)." },
+      { "q": "WebSearch: site:reddit.com runway ai gen-4.5 credits worth it 2026", "candidates": 8, "note": "ZERO real reddit.com URLs returned despite the site: operator — the 7th consecutive confirmation of this environment's Reddit block across this media cluster (hub, heygen-review, synthesia-review, kling-ai-review, this slug's own 1-keyword.json, this slug's own 1-serp.json, now this evidence sweep). The 8 off-target results returned (magichour.ai, eesel.ai duplicates; similarlabs.com/blog/runway-review [INCLUDED, direct fetch → EV-14]; academy.techpresso.co, aitoolbolt.com, toolixlab.com, toolindex.net [4x duplicate review-landscape coverage]; aumiqx.com duplicate) were screened individually, not silently dropped." },
+      { "q": "WebSearch: site:quora.com Runway AI video generator worth it credits", "candidates": 10, "note": "10 real quora.com/subdomain URLs returned (unlike Reddit) but NONE individually re-fetched with a usable, specific, dated quote this run — the single most promising-titled thread ('Has anyone been using RUNWAY AI... I really need to know who the real target audience is') was directly attempted and returned HTTP 403 (unverifiable-this-run); the remaining 9 were screened by title only: 5 unverifiable-this-run (not individually fetched given the confirmed 403 pattern), 4 off-topic (generic 'best AI video generator' / definitional / AI-YouTube-channel questions not specific to Runway usage experience), 1 duplicate. Logged as an evidence gap per protocol, not fabricated from search-snippet paraphrase." },
+      { "q": "DIRECT: WebFetch https://runway.com/pricing", "candidates": 0, "note": "Already-identified URL (query 2). Fetched successfully, fresh capture 2026-08-29 → EV-01. Confirms no tier named 'Unlimited' exists on the current page." },
+      { "q": "DIRECT: WebFetch https://help.runwayml.com/hc/en-us/articles/52068047744019-Unlimited-plan-is-switching-to-Max", "candidates": 0, "note": "Already-identified URL (query 5). Direct WebFetch returned HTTP 403; r.jina.ai reader-proxy succeeded → EV-02." },
+      { "q": "DIRECT: WebFetch https://help.runwayml.com/hc/en-us/articles/30266515017875-Creating-with-Gen-3-Alpha-and-Gen-3-Alpha-Turbo", "candidates": 0, "note": "Already-identified URL (queries 1 & 6). Direct WebFetch not attempted separately (queries 1/6 already showed the domain-wide 403 pattern); r.jina.ai reader-proxy succeeded, surfacing an explicit retirement banner → EV-03." },
+      { "q": "DIRECT: WebFetch https://docs.dev.runwayml.com/api-details/api_changelog/ and https://docs.dev.runwayml.com/guides/pricing/", "candidates": 0, "note": "Already-identified URLs (queries 1 and 7). Both fetched successfully with no block → EV-04, EV-06." },
+      { "q": "DIRECT: WebFetch https://runway.com/changelog", "candidates": 0, "note": "Already-identified URL (query 1). Fetched successfully → EV-05." },
+      { "q": "DIRECT: WebFetch https://runwayml.com/terms-of-use (redirected) and https://terms.law/ai-output-rights/runway/", "candidates": 0, "note": "Already-identified URLs (query 3). Both fetched successfully with no block → EV-09, EV-10." },
+      { "q": "DIRECT: WebFetch https://comparebestai.com/articles/runway-ai-video-generation-review", "candidates": 1, "note": "New URL this run, flagged by the same-day upstream 1-competitor.json as the sweep's single most factually-dense but entirely uncited competitor page. Direct WebFetch returned HTTP 403; r.jina.ai reader-proxy succeeded → EV-08 (corroborates EV-03's retirement dates and EV-06's credit rate, independently, though it cites no source of its own)." },
+      { "q": "DIRECT: WebFetch https://aitoolanalysis.com/runway-review/", "candidates": 1, "note": "New URL this run, flagged by the same-day upstream 1-competitor.json for its explicit 'reality check' framing and the 'Artificial Analysis' leaderboard-operator naming. Fetched successfully, no block → EV-13." },
+      { "q": "DIRECT: WebFetch https://www.g2.com/products/runway-2022-01-04/reviews", "candidates": 1, "note": "New URL this run (pre-flagged by upstream files). Direct WebFetch returned HTTP 403; r.jina.ai reader-proxy ALSO returned an empty/CAPTCHA-blocked response — unverifiable-this-run via either method. A relayed figure was later found via similarlabs.com (EV-14), labeled accordingly." },
+      { "q": "DIRECT: WebFetch https://www.capterra.com/p/10014838/Runway-Gen-2/", "candidates": 1, "note": "New URL this run (pre-flagged by upstream files). Fetched successfully, no block → EV-15." },
+      { "q": "DIRECT: WebFetch https://www.producthunt.com/products/runwayml/reviews", "candidates": 1, "note": "New URL this run (pre-flagged by upstream files). Fetched successfully TWICE (re-verification pass) with consistent results both times, no block → EV-16. Result (4.4/5, n=18) differs from the 4.7/5 n≈42 figure assumed in the same-day upstream 1-serp.json/1-competitor.json files — this shard's fresh, twice-reproduced figure is registered as the current ground truth." },
+      { "q": "DIRECT: WebFetch (via r.jina.ai) all 5 Trustpilot domain-listings: runwayml.com, runway.ai, runway.com, runway.bz, runway.ml", "candidates": 5, "note": "All 5 are pre-flagged by the task brief itself and the same-day upstream 1-serp.json/1-competitor.json files. Direct WebFetch 403'd on every domain (consistent with every prior Mimo shard's Trustpilot experience); r.jina.ai reader-proxy succeeded on all 5 → EV-17 through EV-21. Every figure captured today differs slightly from the upstream files' own estimates (e.g. runway.ai: 1.5/5 today vs. 1.8/5 estimated; runway.com: 2.8/5 today vs. 3.1/5 estimated) — expected drift for a live, continuously-updated UGC review feed; this shard's 2026-08-29 figures are registered as current." },
+      { "q": "DIRECT: WebFetch https://web.archive.org/web/2026/https://www.g2.com/products/runway-2022-01-04/reviews", "candidates": 1, "note": "Attempted as a last-resort route to independently verify G2's rating after both direct and reader-proxy fetches failed. Tool-blocked: 'Claude Code is unable to fetch from web.archive.org.' Unverifiable-this-run." },
+      { "q": "DIRECT: WebFetch https://www.quora.com/Has-anyone-been-using-RUNWAY-AI-https-runwayml-com-I-really-need-to-know-who-the-real-target-audience-is", "candidates": 0, "note": "Already-identified URL (query 9). HTTP 403 — unverifiable-this-run." }
+    ],
+    "reddit_access_note": "Reconfirmed empty a 7th consecutive time this run (1 dedicated site:reddit.com query, zero real reddit.com URLs returned) — consistent with every prior Mimo shard in this media cluster since 2026-07-10. NO Reddit sentiment is registered anywhere in this shard; the task brief's instruction to register none is honored.",
+    "quora_note": "Real quora.com URLs exist for this query (unlike Reddit) but none were successfully re-fetched this run — the single most promising thread returned HTTP 403 on direct attempt. Logged as an evidence gap (query_census) rather than paraphrased from search snippets.",
+    "astroturf_note": "The astroturf screen (templated look-alike threads, recurring fresh personas, all funneling to one vendor) was applied to every candidate this run. No templated-persona-network pattern was detected anywhere, including across the 5 Trustpilot domain-listings (each shows genuinely distinct complaint language, dates, and named reviewers, not a copy-paste pattern) and the pricing-mill population excluded as no-methodology-affiliate. No MikeAppsReviewer-style network or equivalent was found in this sweep.",
+    "exclusion_log_notes": [
+      "duplicate (36): the dominant category — repeat domain/page hits across the 9 queries, chiefly Runway's own legacy Gen-3-Alpha help-center feature-documentation pages (returned by both query 1 and query 6, ~9 URLs total), the eesel.ai/magichour.ai/runway.com pricing-page trio recurring across queries 2 and 7 (~6 URLs), the Artificial-Analysis-domain leaderboard/model sub-pages recurring within query 4 (~4 URLs), and the pricing-mill/review-landscape domains (stacksheriff.com, aivid.video, academy.techpresso.co, aitoolbolt.com, toolixlab.com, toolindex.net, aumiqx.com) recurring across queries 2, 5, 7, and 8.",
+      "off-topic (14): joinrunway.io (a DIFFERENT company from runwayml.com/runway.com — entity-collision risk, not fetched or cited), llm-stats.com and arena.ai (different, unrelated leaderboard platforms, not Artificial Analysis's Video Arena), xpiksapp.com and lisapeyton.com (general AI-copyright commentary, not Runway-specific), help.runwayml.com's Remove-Background and Enterprise-Credits pages (real Runway docs, wrong topic for this sweep), aiwiki.ai and nextbigfuture.substack.com (generic wiki mirror and a 2024 Gen-3-Alpha LAUNCH announcement, not its 2026 retirement), note.com/yudai_book (personal low-trust blog, non-primary), x.com/ArtificialAnlys (a 2024 tweet about different models, not Runway), 4 generic/definitional Quora threads not about Runway usage experience specifically.",
+      "no-methodology-affiliate (8): releasebot.io, dynalord.com, saascrmreview.com, melies.co, usagepricing.com, fluxnote.io/guides/runway-pricing-breakdown-2026, aumiqx.com, propicked.com — the recurring 'X Pricing 2026' pricing-mill template with no disclosed sample size, prompt set, or dated testing methodology.",
+      "unverifiable-this-run (11): help.runwayml.com's Usage-Policy and Can-I-use-the-content-commercially pages (403 via BOTH direct fetch and r.jina.ai reader-proxy), g2.com/products/runway-2022-01-04/reviews (403 direct, empty/CAPTCHA-blocked via reader-proxy), web.archive.org (tool cannot fetch this domain at all), magichour.ai's two Runway pricing articles (loaded fine but contained no clean, extractable per-second credit figure despite specific attempts to find one), 5 Quora threads not individually re-fetched after the most-promising one returned HTTP 403.",
+      "OWNED-BORDER + HARD-SCOPE held (0 registered): no deepfake/nonconsensual-likeness/celebrity-face-swap/NSFW claim was searched for, found, registered, or cited anywhere in this sweep."
+    ],
+    "entries_reused": [
+      { "id": "EV-best-ai-video-generators-01", "status": "reused and re-verified", "note": "Runway's vendor-stated 4-tier pricing ladder (captured 2026-08-10 on the hub) matches this shard's own fresh 2026-08-29 re-fetch (EV-runway-review-01) exactly — figures hold stable across 19 days. This shard's fresh entry additionally confirms explicitly that no 'Unlimited'-named tier exists on the current page, which the original hub entry did not state outright." },
+      { "id": "EV-best-ai-video-generators-18", "status": "reused with a MAJOR caveat added", "note": "curionic.net's June 2026 claim that Runway Gen-4.5 is 'workflow leader... ranked #1 on Video Arena leaderboard' is reused as a dated historical finding, but must now be paired with EV-runway-review-12: as of this shard's direct 2026-08-29 fetch of Artificial Analysis's own live Video Arena leaderboards, Runway does not appear in the current top 10 of either the Text-to-Video or Image-to-Video board. The '#1' claim is time-bound and stale, not a current fact." },
+      { "id": "EV-best-ai-video-generators-22", "status": "reused as-is", "note": "Magic Hour's COI-flagged benchmark (Runway highest usability/speed 9.0/10, lowest raw-quality 7.8/10 of 4 models) remains directly relevant to this page's output-quality-vs-ease-of-use ToolScores tension and requires no updates from this run's findings." }
+    ]
+  },
+  "entries": [
+    {
+      "id": "EV-runway-review-01",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-31",
+          "source_url": "https://runway.com/pricing",
+          "claim": "Pricing page read 2026-10-31 via reader proxy (runwayml.com/pricing redirects to runway.com/pricing): ladder unchanged vs 2026-08-29. Free 125 one-time credits; Standard $15 or $12 billed annually, 625 credits; Pro $35 or $28, 2,250; Max $95 or $76, 9,500. The page itself now prints seconds per plan (52s, 187s, 791s of Gen-4.5). Max rolls over one month. Lists App Studio, Runway Ads, agentic collaborator, Kling 4.0 and Seedance 2.5.",
+          "quote": "625 credits monthly = 52s of Gen-4.5, 104s of Gen-4 Turbo, or 78 Gen-4 Images (1080p)."
+        },
+        {
+          "recaptured_at": "2026-10-31",
+          "source_url": "https://help.runwayml.com/hc/en-us/articles/50404627334547-Free-plan-details",
+          "claim": "Free plan help article read 2026-10-31: one-time deposit, limited models, no credit purchase, watermark on all Free video. Vendor confirmation of the watermark the pricing page only implies.",
+          "quote": "All videos generated on a Free plan feature a Runway watermark."
+        },
+        {
+          "recaptured_at": "2026-10-31",
+          "source_url": "https://help.runwayml.com/hc/en-us/articles/50404627334547-Free-plan-details",
+          "claim": "Same article: free credits neither expire nor renew.",
+          "quote": "Your one-time deposit of 125 credits does not expire, and does not renew or refresh once spent."
+        },
+        {
+          "recaptured_at": "2026-10-31",
+          "source_url": "https://help.runwayml.com/hc/en-us/articles/15124877443219-How-do-credits-work",
+          "claim": "Credits article read 2026-10-31: Standard and Pro monthly credits expire on the billing date; Max rolls up to one month.",
+          "quote": "Up to one month of unused credits may roll over to the following month."
+        }
+      ],
+      "claim": "On its current pricing page (re-verified 2026-08-29, matching the hub's 2026-08-10 capture exactly) Runway lists Free (125 one-time credits), Standard ($12/mo annual, $15/mo monthly; 625 credits/mo), Pro ($28/mo annual, $35/mo monthly; 2,250 credits/mo), and Max ($76/mo annual, $95/mo monthly; 9,500 credits/mo), plus custom Enterprise. No tier named 'Unlimited' exists on the current page.",
+      "source_url": "https://runway.com/pricing",
+      "source_date": "2026-08-29",
+      "quote": "Free Plan: 125 one-time credits to explore Runway's AI tools. Standard Plan: $12/month (billed annually, reduced from $15), 625 credits/mo. Pro Plan: $28/month, 2250 credits/mo. Max Plan: $76/month, 9500 credits/mo.",
+      "platform": "runway.com/pricing (vendor pricing page — self-interested; direct fetch, no block; captured 2026-08-29)",
+      "target_slug": "/tools/runway",
+      "collected_at": "2026-08-29",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "runway-review-2026-08-29",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": { "tool": "Runway", "aspect": "current 4-tier pricing ladder reconfirmed; Unlimited tier explicitly absent", "stance": "n/a", "plan_tier_if_stated": "Free (125 one-time credits) – Max $76-95/mo (9,500 credits/mo)", "item_date": "2026-08-29" },
+      "honesty_notes": ["Directly answers the task's confirmation request: there is no 'Unlimited' plan on the live pricing page as of this capture — see EV-runway-review-02 for the transition timeline explaining why."]
+    },
+    {
+      "id": "EV-runway-review-02",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-31",
+          "source_url": "https://help.runwayml.com/hc/en-us/articles/52068047744019-Unlimited-plan-is-switching-to-Max",
+          "claim": "Re-read 2026-10-31 (article still dated August 27, 2026): unchanged. Monthly holders move to Max at $95 on November 30; annual holders choose a refund or a credits bonus.",
+          "quote": "On November 30th, Unlimited subscribers move to Max. Monthly subscribers move automatically at the same $95/month price."
+        }
+      ],
+      "claim": "Per Runway's own help-center article (updated 2026-08-27), Unlimited has not been offered to new subscribers since 2026-06-01 ('Max is now the go-to plan'); existing legacy Unlimited subscribers keep their current plan unchanged through 2026-11-30, then auto-switch to Max. Max carries 9,500 credits with no 'Explore Mode'; Unlimited carried 2,250 credits plus an Explore Mode allowing unlimited generation at a relaxed rate.",
+      "source_url": "https://help.runwayml.com/hc/en-us/articles/52068047744019-Unlimited-plan-is-switching-to-Max",
+      "source_date": "2026-08-27",
+      "quote": "As of June 1, 2026, Unlimited is no longer offered — Max is now the go-to plan. Eligible legacy Unlimited plans remain unchanged through November 30th, 2026. Max: 9,500 monthly credits. Explore Mode won't be available on the Max plan.",
+      "platform": "help.runwayml.com (Runway's own help center — self-interested; direct WebFetch returned HTTP 403, content obtained via r.jina.ai reader-proxy relay; captured 2026-08-29)",
+      "target_slug": "/tools/runway",
+      "collected_at": "2026-08-29",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "runway-review-2026-08-29",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": { "tool": "Runway", "aspect": "Unlimited-to-Max plan transition timeline", "stance": "mixed", "plan_tier_if_stated": "Unlimited (legacy, sunsetting) -> Max", "item_date": "2026-08-27" },
+      "honesty_notes": [
+        "This vendor page, updated only 2 days before this capture, states Nov 30 2026 as the auto-switch date for existing subscribers — a separate (uncaptured-source) WebSearch summary suggested Sept 1 2026; use THIS directly-fetched vendor date, not the earlier unverified figure.",
+        "The kling-ai-review page's own file asserts 'above ~50 clips/mo Runway's Unlimited plan becomes more economical' — this is now doubly stale: Unlimited itself is being fully retired, not merely less competitive. The writer must not repeat that economics claim without this correction."
+      ]
+    },
+    {
+      "id": "EV-runway-review-03",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-31",
+          "source_url": "https://help.runwayml.com/hc/en-us/articles/30266515017875-Creating-with-Gen-3-Alpha-and-Gen-3-Alpha-Turbo",
+          "claim": "Re-read 2026-10-31: retirement dates unchanged; the banner now names replacements (Gen-4.5, Animate Frames app, Edit Studio Aleph 2.0). The Gen-3 Camera Control article carries the same retirement banner.",
+          "quote": "Gen-3 Alpha was retired on July 8, 2026, and Gen-3 Alpha Turbo was retired on July 30, 2026."
+        }
+      ],
+      "claim": "Runway's own help center confirms Gen-3 Alpha was retired 2026-07-08 and Gen-3 Alpha Turbo was retired 2026-07-30 — both no longer available in the product, with Gen-4.5 or Gen-4 Turbo named as replacements. This is the primary-vendor confirmation that multiple third-party review sites cite without ever sourcing.",
+      "source_url": "https://help.runwayml.com/hc/en-us/articles/30266515017875-Creating-with-Gen-3-Alpha-and-Gen-3-Alpha-Turbo",
+      "source_date": "2026-07-30",
+      "quote": "This feature is no longer available. Gen-3 Alpha was retired on July 8, 2026, and Gen-3 Alpha Turbo was retired on July 30, 2026.",
+      "platform": "help.runwayml.com (Runway's own help center — self-interested; direct WebFetch returned HTTP 403, content obtained via r.jina.ai reader-proxy relay; captured 2026-08-29)",
+      "target_slug": "/tools/runway",
+      "collected_at": "2026-08-29",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "runway-review-2026-08-29",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": { "tool": "Runway", "aspect": "Gen-3 Alpha and Gen-3 Alpha Turbo retirement dates", "stance": "n/a", "plan_tier_if_stated": null, "item_date": "2026-07-30" },
+      "honesty_notes": [
+        "This is the PRIMARY-SOURCE confirmation the SERP/competitor discovery sweeps could not find; comparebestai.com (EV-runway-review-08) states the identical two dates but cites nothing — this entry is what makes the dates safe to publish with a citation.",
+        "Runway's general product changelog (runway.com/changelog, checked this same run) contains NO corresponding retirement entry — this specific class of change was documented only in the help-center article, not the changelog."
+      ]
+    },
+    {
+      "id": "EV-runway-review-04",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-31",
+          "source_url": "https://docs.dev.runwayml.com/api-details/api_changelog/",
+          "claim": "CORRECTION to how the page used this entry: Gen-4 Aleph left the API on 2026-07-30 but has a named successor, Aleph 2.0 (on Runway Dev since 2026-06-02). In-context video editing was not retired.",
+          "quote": "Upgrade from Gen-3 Alpha Turbo to Gen-4.5 (best quality) or Gen-4 Turbo (fastest), and from Gen-4 Aleph to Aleph 2.0 (aleph2)."
+        },
+        {
+          "recaptured_at": "2026-10-31",
+          "source_url": "https://help.runwayml.com/hc/en-us/articles/51683104370451",
+          "claim": "Edit Studio article read 2026-10-31: prompt-based editing of existing footage on Aleph 2.0.",
+          "quote": "Edit Studio is a video editing experience that lets you transform existing traditional or generated footage using simple prompts to make adjustments, powered by Aleph 2.0."
+        },
+        {
+          "recaptured_at": "2026-10-31",
+          "source_url": "https://docs.dev.runwayml.com/guides/pricing/",
+          "claim": "Developer rate for Aleph 2.0.",
+          "quote": "28 credits per second (56 credit minimum per generation)"
+        }
+      ],
+      "claim": "Runway's own API changelog confirms that as of 2026-07-30, Gen-3 Alpha Turbo (gen3a_turbo) and Gen-4 Aleph (gen4_aleph) are no longer available via the Runway Dev API specifically; requests using those model identifiers fail, with Gen-4.5 or Gen-4 Turbo named as recommended upgrades.",
+      "source_url": "https://docs.dev.runwayml.com/api-details/api_changelog/",
+      "source_date": "2026-07-30",
+      "quote": "Gen-3 Alpha Turbo (gen3a_turbo) and Gen-4 Aleph (gen4_aleph) are no longer available on Runway Dev. Requests that use these model identifiers will fail.",
+      "platform": "docs.dev.runwayml.com (Runway's own developer-API documentation — self-interested; direct fetch, no block; captured 2026-08-29)",
+      "target_slug": "/tools/runway",
+      "collected_at": "2026-08-29",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "runway-review-2026-08-29",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": { "tool": "Runway", "aspect": "API-specific Gen-3 Alpha Turbo and Gen-4 Aleph removal, independently corroborating EV-03's July 30 date from a second vendor surface", "stance": "n/a", "plan_tier_if_stated": null, "item_date": "2026-07-30" },
+      "honesty_notes": ["Scoped to the developer API only; does not by itself confirm the creative web-app enforces an identical cutoff, though EV-03's 'no longer available' wording reads as product-wide."]
+    },
+    {
+      "id": "EV-runway-review-05",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-31",
+          "source_url": "https://docs.dev.runwayml.com/guides/models/",
+          "claim": "Models list read 2026-10-31: Gen-4.5 remains Runway's own top generator; no newer numbered generation listed. List also carries Wan 3.0, Seedance 2.5, Kling 4.0.",
+          "quote": "Runway's state-of-the-art text to video and image to video model."
+        }
+      ],
+      "claim": "Runway's own changelog dates Gen-4.5's launch for paid web/app plans to 2025-12-04 ('Introducing Gen-4.5, the world's best video model. Now available for all paid plans'); Runway's separate developer-API changelog dates Gen-4.5's API availability to 2026-02-10 — roughly a 10-week gap between the creative-app and developer-API rollout of the same model.",
+      "source_url": "https://runway.com/changelog",
+      "source_date": "2025-12-04",
+      "quote": "Dec 4, 2025 Paid Plans Gen-4.5. Introducing Gen-4.5, the world's best video model. Now available for all paid plans.",
+      "platform": "runway.com/changelog (Runway's own product changelog — self-interested; direct fetch, no block; captured 2026-08-29)",
+      "target_slug": "/tools/runway",
+      "collected_at": "2026-08-29",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "runway-review-2026-08-29",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": { "tool": "Runway", "aspect": "Gen-4.5 launch timeline across two distinct vendor surfaces", "stance": "n/a", "plan_tier_if_stated": null, "item_date": "2025-12-04" },
+      "honesty_notes": ["Two dated vendor sources, two different surfaces (creative app vs. developer API) — do not present a single 'Gen-4.5 launched on X' date without specifying which surface; the API-side date (2026-02-10) is confirmed separately via docs.dev.runwayml.com/api-details/api_changelog/ (same source as EV-04)."]
+    },
+    {
+      "id": "EV-runway-review-06",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-31",
+          "source_url": "https://docs.dev.runwayml.com/guides/pricing/",
+          "claim": "Developer pricing re-read 2026-10-31: Gen-4.5 12, Gen-4 Turbo 5, Act-Two 5 credits per second, unchanged. Quote is the gen4.5 table cell.",
+          "quote": "12 credits per second"
+        },
+        {
+          "recaptured_at": "2026-10-31",
+          "source_url": "https://help.runwayml.com/hc/en-us/articles/15124877443219-How-do-credits-work",
+          "claim": "Help center states the same 12 for the app, closing the earlier gap that the rate was API-documented only.",
+          "quote": "Gen-4.5 uses 12 credits per second of generated video."
+        },
+        {
+          "recaptured_at": "2026-10-31",
+          "source_url": "https://help.runwayml.com/hc/en-us/articles/46974685288467-Creating-with-Gen-4-5",
+          "claim": "CORRECTION: Gen-4.5 spec lists plan requirement Standard and higher, 2 to 10 seconds, 720p, so the Free plan's 125 credits are not ten seconds of Gen-4.5 in practice. Same article on camera direction in the prompt.",
+          "quote": "You can specify detailed camera choreography, intricate scene compositions, precise timing of events and subtle atmospheric changes"
+        },
+        {
+          "recaptured_at": "2026-10-31",
+          "source_url": "https://help.runwayml.com/hc/en-us/articles/46974685288467-Creating-with-Gen-4-5",
+          "claim": "Plan requirement line of the Gen-4.5 spec table.",
+          "quote": "Plan requirementStandard and higher"
+        },
+        {
+          "recaptured_at": "2026-10-31",
+          "source_url": "https://help.runwayml.com/hc/en-us/articles/41072248471187-Gen-2-Deprecation",
+          "claim": "CORRECTION: Motion Brush is not live on Gen-4.5. Runway says it was specific to Gen-2, deprecated May 11, 2025. The page's earlier 'Motion Brush, camera data export, Act-Two all live on Gen-4.5' had no support in this entry.",
+          "quote": "No, Motion Brush is a feature specific to the Gen-2 model, and is not available on newer models."
+        },
+        {
+          "recaptured_at": "2026-10-31",
+          "source_url": "https://help.runwayml.com/hc/en-us/articles/42311337895827-Performance-Capture-with-Act-Two",
+          "claim": "Act-Two confirmed current: Standard and above, up to 30 seconds.",
+          "quote": "Cost 5 credits per second, 3 second minimum"
+        }
+      ],
+      "claim": "Runway's own developer-API pricing documentation states exact per-second credit costs: Gen-4.5 costs 12 credits/second, Gen-4 Turbo costs 5 credits/second, and Act-Two costs 5 credits/second. This primary-vendor figure matches comparebestai.com's third-party claim (EV-08) and contradicts eesel.ai's third-party claim of 25 credits/second for Gen-4.5 (EV-07).",
+      "source_url": "https://docs.dev.runwayml.com/guides/pricing/",
+      "source_date": "2026-08-29",
+      "quote": "Gen-4.5: 12 credits per second. Gen-4 Turbo: 5 credits per second. Act-Two: 5 credits per second.",
+      "platform": "docs.dev.runwayml.com (Runway's own developer-API pricing documentation — self-interested; direct fetch, no block; captured 2026-08-29)",
+      "target_slug": "/tools/runway",
+      "collected_at": "2026-08-29",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "runway-review-2026-08-29",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": ["A", "B"],
+      "coder_agreement": false,
+      "coding": { "tool": "Runway", "aspect": "vendor-confirmed per-second-per-model credit rate, resolving the 12-vs-25 contradiction on the vendor side", "stance": "n/a", "plan_tier_if_stated": null, "item_date": "2026-08-29" },
+      "honesty_notes": [
+        "FLAGGED for resolver: this is API-documented pricing; the creative web-app's in-editor credit meter was not independently re-verified this run to confirm identical deduction. Still the clearest primary-vendor anchor found — use 12 credits/second as the vendor-sourced figure for Gen-4.5 and present eesel.ai's 25 credits/second (EV-07) as an older, conflicting third-party claim rather than an equally-weighted alternative.",
+        "This is the figure to use for the finished per-tier $/second and $/clip cost math (paired with EV-01's pricing ladder)."
+      ]
+    },
+    {
+      "id": "EV-runway-review-07",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-31",
+          "source_url": "https://www.eesel.ai/blog/runway-ai-pricing",
+          "claim": "Re-read 2026-10-31: eesel.ai's guide now lists 12 credits per second for Gen-4.5, so the 12-versus-25 disagreement is closed in favour of the vendor figure.",
+          "quote": "| Gen-4.5 (best quality) | 12 credits/second | ~52 seconds | ~187 seconds | ~791 seconds |"
+        }
+      ],
+      "claim": "eesel.ai's Runway pricing guide (last updated 2026-06-05) states Gen-4.5 costs 25 credits per second — roughly double the 12 credits/second Runway's own current developer-API documentation states (EV-06). eesel.ai's figure is nearly 3 months older than this shard's vendor-doc capture.",
+      "source_url": "https://www.eesel.ai/blog/runway-ai-pricing",
+      "source_date": "2026-06-05",
+      "quote": "1 second of Gen-4.5 — Runway's benchmark-topping flagship model — costs 25 credits.",
+      "platform": "eesel.ai/blog (independent third-party pricing tracker, not Runway-affiliated; author Rama Adi Nugraha; last updated 2026-06-05; direct fetch, no block; captured 2026-08-29)",
+      "target_slug": "/tools/runway",
+      "collected_at": "2026-08-29",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "runway-review-2026-08-29",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": ["A", "B"],
+      "coder_agreement": false,
+      "coding": { "tool": "Runway", "aspect": "third-party-relayed Gen-4.5 credit rate, conflicting with the current vendor API doc", "stance": "n/a", "plan_tier_if_stated": null, "item_date": "2026-06-05" },
+      "honesty_notes": ["FLAGGED for resolver: this is the more widely-repeated figure across the review ecosystem (other third-party pricing guides imply the same ~25/sec rate via aggregate math), yet it conflicts with Runway's own current API docs (EV-06). Not resolved this run whether eesel.ai's figure is simply stale or describes a different surface (web-app UI meter) not independently checked — present as an open, dated disagreement, not a settled number."]
+    },
+    {
+      "id": "EV-runway-review-08",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-31",
+          "source_url": "https://help.runwayml.com/hc/en-us/articles/15124877443219-How-do-credits-work",
+          "claim": "Vendor partly confirms the shared pool: the help center lists a Team plan at 6,900 credits per seat shared across the workspace. Team price not read.",
+          "quote": "6,900 per seat, shared across the workspace"
+        }
+      ],
+      "claim": "comparebestai.com (published 2026-07-14) independently states Gen-3 Alpha retired 2026-07-08 and Gen-3 Alpha Turbo retired 2026-07-30 (matching Runway's own help-center dates, EV-03) and that Gen-4.5 and Gen-4 both cost 12 credits/second (matching Runway's own API docs, EV-06) — plus a shared-workspace-credit-pool finding not found anywhere else this run — but the article itself cites no source for any of these numbers.",
+      "source_url": "https://comparebestai.com/articles/runway-ai-video-generation-review",
+      "source_date": "2026-07-14",
+      "quote": "Adding another paid editor does not add another 625, 2,250 or 9,500 credits. All workspace members use the same monthly credit pool.",
+      "platform": "comparebestai.com (independent third-party review site, no disclosed methodology or sourcing for its own numeric claims; direct WebFetch returned HTTP 403, content obtained via r.jina.ai reader-proxy relay; published 2026-07-14; captured 2026-08-29)",
+      "target_slug": "/tools/runway",
+      "collected_at": "2026-08-29",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "runway-review-2026-08-29",
+      "screening": "included",
+      "label": "community-report",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": { "tool": "Runway", "aspect": "third-party corroboration of retirement dates and credit rate, plus a distinct team-seat credit-pool gotcha", "stance": "mixed", "plan_tier_if_stated": null, "item_date": "2026-07-14" },
+      "honesty_notes": ["This unsourced third-party page is the one multiple competitor pages point to for the retirement dates and credit rate — its value here is that this shard independently verified its claims against Runway's own vendor pages (EV-03, EV-06) rather than repeating its numbers on trust alone. The shared-credit-pool claim (a real, checkable trap for team buyers) has NOT been independently vendor-confirmed this run and should be labeled as a single, unsourced third-party report if used."]
+    },
+    {
+      "id": "EV-runway-review-09",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-31",
+          "source_url": "https://runway.com/terms-of-use",
+          "claim": "Terms re-read 2026-10-31: now last updated October 23, 2026 (was May 11, 2026). Ownership, commercial-use and Powered by Runway wording stand. Same clause licenses Inputs and Outputs for training. No plan-based split found.",
+          "quote": "The Company does not claim ownership of any of your Inputs or Outputs. Subject to your compliance with the Agreement, the Company does not restrict your commercial use of your Outputs."
+        },
+        {
+          "recaptured_at": "2026-10-31",
+          "source_url": "https://runway.com/terms-of-use",
+          "claim": "Training licence in clause 4.4.",
+          "quote": "You acknowledge that Inputs and Outputs may be used by the Company to train and improve its AI models"
+        }
+      ],
+      "claim": "Runway's own Terms of Use (last updated 2026-05-11) state the company claims no ownership of user content and does not restrict commercial use of Outputs, with no attribution required for content made in the app — but third-party applications built on Runway's API must display 'Powered by Runway' branding per Runway's Branding Guidelines. The ToS text itself does not state a free-vs-paid split on commercial-use rights.",
+      "source_url": "https://runway.com/terms-of-use",
+      "source_date": "2026-05-11",
+      "quote": "The Company does not claim ownership of any of your Inputs or Outputs... the Company does not restrict your commercial use of your Outputs. Applications using the APIs must prominently display 'Powered by Runway' and link to runway.com.",
+      "platform": "runway.com/terms-of-use (Runway's own Terms of Use — self-interested; direct fetch, no block; last updated 2026-05-11; captured 2026-08-29)",
+      "target_slug": "/tools/runway",
+      "collected_at": "2026-08-29",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "runway-review-2026-08-29",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": ["A", "B"],
+      "coder_agreement": false,
+      "coding": { "tool": "Runway", "aspect": "primary ToS commercial-use and output-ownership language, plus an API-application branding requirement", "stance": "n/a", "plan_tier_if_stated": null, "item_date": "2026-05-11" },
+      "honesty_notes": ["This closes a genuine competitor vacuum (0 of 7 profiled competitor pages sourced commercial-use language from the ToS itself). Compare against EV-10 (terms.law), which claims a free-vs-paid carve-out this primary ToS text does not itself state — flag as an open discrepancy, not silently resolved in either direction."]
+    },
+    {
+      "id": "EV-runway-review-10",
+      "claim": "terms.law's third-party legal-analysis page states Runway's free plan is restricted to non-commercial use and that commercial rights begin at the Standard paid tier — a claim not found verbatim in the ToS text this shard independently fetched (EV-09), which does not state a plan-based commercial-use carve-out.",
+      "source_url": "https://terms.law/ai-output-rights/runway/",
+      "source_date": "2026-08-29",
+      "quote": "Paid Runway subscribers retain output ownership and can use generated content commercially starting at the Standard tier ($15/month). Free plan users are restricted to non-commercial use.",
+      "platform": "terms.law (independent third-party legal-information site; does not link the specific ToS section/version it analyzed, references 'Runway Terms of Use current as of March 2026' with no hyperlink; direct fetch, no block; captured 2026-08-29)",
+      "target_slug": "/tools/runway",
+      "collected_at": "2026-08-29",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "runway-review-2026-08-29",
+      "screening": "included",
+      "label": "community-report",
+      "coders": ["A", "B"],
+      "coder_agreement": false,
+      "coding": { "tool": "Runway", "aspect": "third-party legal claim of a free-vs-paid commercial-use restriction, conflicting with the primary ToS text", "stance": "mixed", "plan_tier_if_stated": "Free (claimed non-commercial only)", "item_date": "2026-03" },
+      "honesty_notes": ["FLAGGED for resolver: conflicts with EV-09's primary ToS text, which states no plan-based split. Present both, dated, without silently picking a winner. Note separately: even absent a hard legal restriction, the free plan's mandatory watermark (EV-01/EV-best-ai-video-generators-01) makes clean commercial use impractical regardless of the technical-rights question."]
+    },
+    {
+      "id": "EV-runway-review-11",
+      "claim": "Artificial Analysis operates and maintains the 'Video Arena' leaderboard, which ranks AI video models via an Elo rating system derived from blind human votes. This independently confirms the operator name aitoolanalysis.com and similarlabs.com both cite for the leaderboard curionic.net (EV-best-ai-video-generators-18) references only as 'Video Arena leaderboard' without naming an operator.",
+      "source_url": "https://artificialanalysis.ai/video/arena",
+      "source_date": "2026-08-29",
+      "quote": "Models are ranked using an Elo rating system derived from user votes in blind comparisons. Vote to reveal your model preference.",
+      "platform": "artificialanalysis.ai (the leaderboard operator's own site; direct fetch, no block; captured 2026-08-29)",
+      "target_slug": "/tools/runway",
+      "collected_at": "2026-08-29",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "runway-review-2026-08-29",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": { "tool": "Video Arena leaderboard (not Runway itself)", "aspect": "leaderboard operator identity and Elo-blind-vote methodology", "stance": "n/a", "plan_tier_if_stated": null, "item_date": "2026-08-29" },
+      "honesty_notes": ["Resolves the attribution question as 'the same real leaderboard, differently named/cited' rather than two competing leaderboards — curionic.net simply didn't name the operator, it did not name a DIFFERENT one."]
+    },
+    {
+      "id": "EV-runway-review-12",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-31",
+          "source_url": "https://artificialanalysis.ai/video/leaderboard/text-to-video",
+          "claim": "Read 2026-10-31 via reader proxy: Wan 3.0 still leads text to video at Elo 1175 (boards now labelled AA-Video v2.1). No Runway model in the 30 rows returned.",
+          "quote": "Wan 3.0 1175±14"
+        },
+        {
+          "recaptured_at": "2026-10-31",
+          "source_url": "https://artificialanalysis.ai/video/leaderboard/image-to-video",
+          "claim": "Read 2026-10-31: CHANGED leader, Dreamina Seedance 2.5 at 1153, replacing Minimax H3 Max. No Runway model in the 28 rows returned.",
+          "quote": "Dreamina Seedance 2.5 1153±17"
+        }
+      ],
+      "claim": "As of this direct capture (2026-08-29), Runway (Gen-4, Gen-4.5, or Gen-4 Turbo) does not appear in Artificial Analysis's live Video Arena top-10 for either Text-to-Video-with-audio (led by Wan 3.0, Elo 1,241) or Image-to-Video-with-audio (led by Minimax H3 Max, Elo 1,202). The 'Runway Gen-4.5 is #1 on Video Arena' claim circulating in reviews traces to a June 2026 test and an April-2026-updated claim, both now stale relative to this capture.",
+      "source_url": "https://artificialanalysis.ai/video/leaderboard/text-to-video ; https://artificialanalysis.ai/video/leaderboard/image-to-video",
+      "source_date": "2026-08-29",
+      "quote": "1. Wan 3.0 - Elo 1,241 [Text to Video, top rank]. 1. Minimax H3 Max (post-trained by fal) - Elo 1,202 [Image to Video, top rank]. Runway not listed in either top 10.",
+      "platform": "artificialanalysis.ai (leaderboard operator's own live rankings; direct fetch, no block; captured 2026-08-29)",
+      "target_slug": "/tools/runway",
+      "collected_at": "2026-08-29",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "runway-review-2026-08-29",
+      "screening": "included",
+      "label": "research-finding",
+      "coders": ["A", "B"],
+      "coder_agreement": false,
+      "coding": { "tool": "Runway", "aspect": "current standing (absent from top 10) on the same leaderboard a widely-repeated '#1' claim cites", "stance": "negative", "plan_tier_if_stated": null, "item_date": "2026-08-29" },
+      "honesty_notes": [
+        "LOAD-BEARING FINDING: the writer must NOT state 'Runway Gen-4.5 is #1 on the Video Arena leaderboard' as a current fact. If citing the #1 claim at all, date it to when it was reported true (curionic.net, June 2026; aitoolanalysis.com, updated April 2026) and flag it as time-bound — Video Arena is a live, continuously-updated leaderboard and Runway's position has evidently changed since.",
+        "FLAGGED for resolver: could reasonably be coded 'n/a' rather than 'negative' since leaderboard churn is expected/structural, not a defect specific to Runway."
+      ]
+    },
+    {
+      "id": "EV-runway-review-13",
+      "claim": "aitoolanalysis.com (published 2025-11-07, updated 2026-04-25) credits Runway Gen-4.5 with (then-)holding the top Video Arena spot while explicitly caveating that Sora 2 and Veo 3.1 beat it on raw single-clip quality in side-by-side blind tests — an honest strength-with-a-tradeoff framing. The same article computes a per-clip cost example: $35 / 45 generations = $0.78 per 5-second clip at Pro monthly pricing ($0.62 at Pro annual).",
+      "source_url": "https://aitoolanalysis.com/runway-review/",
+      "source_date": "2026-04-25",
+      "quote": "'World's leading' requires a footnote. Gen-4.5 holds #1 on Video Arena (independent benchmark, real result). But for raw single-clip cinematic quality, Sora 2 and Veo 3.1 produce higher-quality outputs from scratch in side-by-side blind tests.",
+      "platform": "aitoolanalysis.com (independent AI-tools review site, named founder-author; published 2025-11-07, last updated 2026-04-25; direct fetch, no block; captured 2026-08-29)",
+      "target_slug": "/tools/runway",
+      "collected_at": "2026-08-29",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "runway-review-2026-08-29",
+      "screening": "included",
+      "label": "independent-test",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": { "tool": "Runway", "aspect": "quality-vs-leaderboard-position tradeoff framing, plus a worked per-clip cost example", "stance": "mixed", "plan_tier_if_stated": "Pro ($28-35/mo)", "item_date": "2026-04-25" },
+      "honesty_notes": ["Its own #1 claim is now superseded by EV-12's live check (2026-08-29) — cite this source for the QUALITY-TRADEOFF framing and per-clip-math METHOD, not for the current truth of the ranking. Its $0.78/$0.62-per-clip figures are this competitor's own calculation on its own assumed generation count (45/mo); Mimo's page should show its own worked math from vendor-confirmed rates (EV-01, EV-06) rather than adopting this number as Mimo's own."]
+    },
+    {
+      "id": "EV-runway-review-14",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-31",
+          "source_url": "https://similarlabs.com/blog/runway-review",
+          "claim": "Relayed G2 figure re-read 2026-10-31, unchanged. g2.com not opened.",
+          "quote": "G2 shows Runway at 3.8/5 from 18 reviews."
+        }
+      ],
+      "claim": "G2 shows Runway rated 3.8/5 from 18 reviews, per similarlabs.com's citation — g2.com's own review page could not be independently verified this run (blocked on both direct fetch and reader-proxy retrieval).",
+      "source_url": "https://similarlabs.com/blog/runway-review",
+      "source_date": "2026-08-29",
+      "quote": "G2 shows Runway at 3.8/5 from 18 reviews.",
+      "platform": "similarlabs.com (independent third-party review site, relaying a G2 figure with no hyperlink to the G2 page itself; direct fetch, no block; article states pricing/model verification 'July 2026'; captured 2026-08-29)",
+      "target_slug": "/tools/runway",
+      "collected_at": "2026-08-29",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "runway-review-2026-08-29",
+      "screening": "included",
+      "label": "community-report",
+      "coders": ["A", "B"],
+      "coder_agreement": false,
+      "coding": { "tool": "Runway", "aspect": "G2 aggregate rating, relayed at second hand", "stance": "mixed", "plan_tier_if_stated": null, "item_date": "2026-08-29" },
+      "honesty_notes": ["g2.com/products/runway-2022-01-04/reviews returned HTTP 403 on direct WebFetch AND an empty/CAPTCHA-blocked response via r.jina.ai reader-proxy this run — this figure is RELAYED, not independently verified at the source, and must be labeled as such wherever used, unlike the Trustpilot entries below (which this shard did independently reach via reader-proxy). Thin sample (n=18) regardless of exact figure."]
+    },
+    {
+      "id": "EV-runway-review-15",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-31",
+          "source_url": "https://www.capterra.com/p/10014838/Runway-Gen-2/",
+          "claim": "NOT re-read 2026-10-31: the reader proxy hit a security check. The 4.5/5 from 2 reviews stays an August 29 value.",
+          "quote": "Performing security verification"
+        }
+      ],
+      "claim": "Capterra rates Runway 4.5/5 from exactly 2 reviews, filed under the legacy 'Runway Gen-2' product listing rather than a unified current 'Runway' listing. One 5-star review (Jan 2025) praises prompt-execution performance; one 4-star review (Dec 2023) cites unnatural-looking output and limited free-tier features.",
+      "source_url": "https://www.capterra.com/p/10014838/Runway-Gen-2/",
+      "source_date": "2025-01-17",
+      "quote": "The outstanding performance when executing the inputted prompts is awesome. [Cons:] it some time give a unnatural video free version have a limited features.",
+      "platform": "Capterra (review-platform aggregator; direct fetch, no block; captured 2026-08-29)",
+      "target_slug": "/tools/runway",
+      "collected_at": "2026-08-29",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "runway-review-2026-08-29",
+      "screening": "included",
+      "label": "community-report",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": { "tool": "Runway", "aspect": "Capterra aggregate rating filed under a stale legacy product name", "stance": "mixed", "plan_tier_if_stated": null, "item_date": "2025-01-17" },
+      "honesty_notes": ["Extremely thin sample (n=2) and a stale product-name filing ('Gen-2', a generation retired well before Gen-3 Alpha even launched) — do not present 4.5/5 as a meaningful aggregate; name the n and the stale listing every time this figure is used."]
+    },
+    {
+      "id": "EV-runway-review-16",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-31",
+          "source_url": "https://www.producthunt.com/products/runwayml/reviews",
+          "claim": "NOT re-read 2026-10-31: the reader proxy hit a security check. The 4.4/5 from 18 reviews stays an August 29 value.",
+          "quote": "Performing security verification"
+        }
+      ],
+      "claim": "Product Hunt shows RunwayML rated 4.4/5 from 18 reviews as of this direct capture — differing from a 4.7/5 (n≈42) figure assumed in this cluster's earlier discovery-phase files; this fresh, twice-reproduced fetch supersedes that earlier assumption. A critical review calls pricing 'exorbitant' with 'almost no prompt adherence'; a mixed review calls it useful 'for concepting or low-budget indie projects' but 'not yet dependable for commercial work.'",
+      "source_url": "https://www.producthunt.com/products/runwayml/reviews",
+      "source_date": "2026-08-29",
+      "quote": "Nowhere near worth the exorbitant pricing...there is almost no prompt adherence, even if you follow their prompting guide. [Separately:] great for concepting or low-budget indie projects, [but] not yet dependable for commercial work.",
+      "platform": "Product Hunt (launch-community UGC review aggregator; direct fetch, performed twice with consistent results, no block; captured 2026-08-29)",
+      "target_slug": "/tools/runway",
+      "collected_at": "2026-08-29",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "runway-review-2026-08-29",
+      "screening": "included",
+      "label": "community-report",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": { "tool": "Runway", "aspect": "Product Hunt aggregate rating and dated review excerpts", "stance": "mixed", "plan_tier_if_stated": null, "item_date": "2026-08-29" },
+      "honesty_notes": ["IMPORTANT DISCREPANCY: this cluster's own same-day discovery-phase files (1-serp.json, 1-competitor.json) assumed 4.7/5 from 42 reviews, apparently from an earlier or cached view. This shard's fresh, twice-confirmed direct fetch shows 4.4/5 from 18 reviews — use THIS verified figure, and note Product Hunt's rating/count can shift over time."]
+    },
+    {
+      "id": "EV-runway-review-17",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-31",
+          "source_url": "https://www.trustpilot.com/review/runwayml.com",
+          "claim": "Read 2026-10-31 via reader proxy: still 1.1/5 'Bad'. Count 380 printed in Trustpilot's suggested-companies strip on the runway.bz profile, resolving the earlier unconfirmed count. Newest review seen 2026-10-29. Oct 27 reviewer on Pro reports 30 credits billed per upscale.",
+          "quote": "runwayml.com is rated \"Bad\" with 1.1 / 5 on Trustpilot"
+        },
+        {
+          "recaptured_at": "2026-10-31",
+          "source_url": "https://www.trustpilot.com/review/runway.bz",
+          "claim": "Source of the 380 count.",
+          "quote": "runwayml.com runwayml.com•380 reviews"
+        },
+        {
+          "recaptured_at": "2026-10-31",
+          "source_url": "https://help.runwayml.com/hc/en-us/articles/34266159290003-Can-I-have-credits-refunded",
+          "claim": "Vendor refund policy read 2026-10-31: credits return automatically only on a generation error.",
+          "quote": "credits are consumed and cannot be automatically reinstated"
+        }
+      ],
+      "claim": "Trustpilot's runwayml.com listing shows a 1.1/5 TrustScore rated 'Bad,' profile marked Unclaimed by Runway. Recent dated complaints (Aug 2026) center on credits consumed with no usable output and the cost of finishing even a short video.",
+      "source_url": "https://www.trustpilot.com/review/runwayml.com",
+      "source_date": "2026-08-23",
+      "quote": "My credits are gone. My money is gone. And I have nothing usable to show for it. Runway SUCKS! [Separately, Jul 31 2026:] If you have to use their credit system, you will spend $300.00 at least to make one 10 minute video.",
+      "platform": "Trustpilot (review-platform aggregator; direct WebFetch returned HTTP 403 — content obtained via r.jina.ai reader-proxy relay; reported per MEP's honest ceiling as reader-proxy-relayed, NOT independently verified via a direct fetch; captured 2026-08-29)",
+      "target_slug": "/tools/runway",
+      "collected_at": "2026-08-29",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "runway-review-2026-08-29",
+      "screening": "included",
+      "label": "community-report",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": { "tool": "Runway", "aspect": "Trustpilot rating and dated complaints on the primary runwayml.com domain-listing", "stance": "negative", "plan_tier_if_stated": null, "item_date": "2026-08-23" },
+      "honesty_notes": ["Total review count (n) was not captured in this specific fetch — earlier discovery-phase files estimated n≈310, ~93% one-star; that headline number is NOT independently reconfirmed by this entry and should not be repeated without its own caveat. This is 1 of 5 differently-scored Trustpilot domain-listings for the same company (EV-17 through EV-21) — never present this number alone as 'the' Trustpilot score for Runway."]
+    },
+    {
+      "id": "EV-runway-review-18",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-31",
+          "source_url": "https://www.trustpilot.com/review/runway.ai",
+          "claim": "Read 2026-10-31: CHANGED, 1.5 to 1.3; 79 reviews per Trustpilot's strip on runway.bz. Newest seen 2026-10-29.",
+          "quote": "Runway is rated \"Bad\" with 1.3 / 5 on Trustpilot"
+        }
+      ],
+      "claim": "Trustpilot's runway.ai listing shows a 1.5/5 rating, profile Unclaimed. A dated complaint (Aug 2026) describes unauthorized recurring subscription charges with no response to refund requests.",
+      "source_url": "https://www.trustpilot.com/review/runway.ai",
+      "source_date": "2026-08-20",
+      "quote": "Charged monthly for 10 months for a subscription I never agreed to and never used, with zero response to refund requests.",
+      "platform": "Trustpilot (review-platform aggregator; direct WebFetch returned HTTP 403 — content obtained via r.jina.ai reader-proxy relay; captured 2026-08-29)",
+      "target_slug": "/tools/runway",
+      "collected_at": "2026-08-29",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "runway-review-2026-08-29",
+      "screening": "included",
+      "label": "community-report",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": { "tool": "Runway", "aspect": "Trustpilot rating and dated complaint on the runway.ai domain-listing", "stance": "negative", "plan_tier_if_stated": null, "item_date": "2026-08-20" },
+      "honesty_notes": ["This figure (1.5/5) differs from a 1.8/5 figure estimated in this cluster's same-day discovery-phase files — Trustpilot is a live rolling feed and drifts day to day; this entry's 2026-08-29 capture is the current figure, not the earlier estimate. Total review count not captured in this fetch."]
+    },
+    {
+      "id": "EV-runway-review-19",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-31",
+          "source_url": "https://www.trustpilot.com/review/runway.com",
+          "claim": "Read 2026-10-31: CHANGED, 2.8 from 3 reviews to 2.2 from 8. Newest seen 2026-10-28.",
+          "quote": "runway.com is rated \"Poor\" with 2.2 / 5 on Trustpilot"
+        },
+        {
+          "recaptured_at": "2026-10-31",
+          "source_url": "https://help.runwayml.com/hc/en-us/articles/40521953538451-Where-are-my-Free-Credits",
+          "claim": "Vendor names one case where free credits are withheld, relevant to the free-tier dispute. Not proof of what happened to that reviewer.",
+          "quote": "if your account or network has previously been associated with fraudulent activity on our systems, these credits will not be issued."
+        }
+      ],
+      "claim": "Trustpilot's runway.com listing shows a 2.8/5 rating from 3 reviews, profile Unclaimed. A dated complaint (Aug 2026) directly documents the free-tier usability dispute: a named reviewer states Runway 'advertise[s] a free tier for testing' but 'upon receiving credits they refuse to let you use them' — a real, dated, first-person contradiction of the vendor's own stated free-tier terms (EV-01).",
+      "source_url": "https://www.trustpilot.com/review/runway.com",
+      "source_date": "2026-08-07",
+      "quote": "They advertise a free tier for testing of services before purchasing a higher tier, but upon receiving credits they refuse to let you use them.",
+      "platform": "Trustpilot (review-platform aggregator; direct WebFetch returned HTTP 403 — content obtained via r.jina.ai reader-proxy relay; captured 2026-08-29)",
+      "target_slug": "/tools/runway",
+      "collected_at": "2026-08-29",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "runway-review-2026-08-29",
+      "screening": "included",
+      "label": "community-report",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": { "tool": "Runway", "aspect": "free-tier usability dispute, directly contradicting the vendor's standalone-125-credits framing", "stance": "negative", "plan_tier_if_stated": "Free", "item_date": "2026-08-07" },
+      "honesty_notes": ["A single, dated, named complaint disputing usability of the vendor-stated free tier — present as one specific reported experience, not proof the free tier is universally unusable; this shard could not independently reproduce the reported behavior. n=3 is extremely thin for this domain-listing specifically."]
+    },
+    {
+      "id": "EV-runway-review-20",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-31",
+          "source_url": "https://www.trustpilot.com/review/runway.bz",
+          "claim": "ENTITY CORRECTION 2026-10-31: this listing is filed under SEO Service and its 2021 review praises a business-growth firm, so runway.bz is not Runway AI. Now 2.9/5 from 2 reviews. Removed from the page's spread; Trustpilot listings for Runway are four, not five.",
+          "quote": "Runway is rated \"Average\" with 2.9 / 5 on Trustpilot"
+        }
+      ],
+      "claim": "Trustpilot's runway.bz listing shows a 3.7/5 'Average' rating from exactly 1 review, dated November 2021 — nearly 5 years old and the single thinnest Trustpilot domain-listing found for Runway across all 5 domains checked.",
+      "source_url": "https://www.trustpilot.com/review/runway.bz",
+      "source_date": "2021-11-15",
+      "quote": "These guys are incredible. They've helped us to grow our business and now the biggest problem we seem to come across is having too much business.",
+      "platform": "Trustpilot (review-platform aggregator; direct WebFetch returned HTTP 403 — content obtained via r.jina.ai reader-proxy relay; captured 2026-08-29)",
+      "target_slug": "/tools/runway",
+      "collected_at": "2026-08-29",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "runway-review-2026-08-29",
+      "screening": "included",
+      "label": "community-report",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": { "tool": "Runway", "aspect": "Trustpilot rating on the thinnest of the 5 domain-listings, effectively uninformative about the current product", "stance": "positive", "plan_tier_if_stated": null, "item_date": "2021-11-15" },
+      "honesty_notes": ["n=1, and that single review predates Gen-3, Gen-4, and Gen-4.5 entirely — the clearest illustration in this sweep of why a single Trustpilot number cannot be treated as 'the' community verdict for Runway."]
+    },
+    {
+      "id": "EV-runway-review-21",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-31",
+          "source_url": "https://www.trustpilot.com/review/runway.ml",
+          "claim": "Read 2026-10-31: CHANGED, 1.9 from 14 reviews to 1.8 from 16 (all languages). Newest seen 2026-10-30.",
+          "quote": "Runway is rated \"Poor\" with 1.8 / 5 on Trustpilot"
+        }
+      ],
+      "claim": "Trustpilot's runway.ml listing shows a 1.9/5 rating from 14 reviews, profile Unclaimed. Dated 2026 complaints describe poor output quality despite detailed prompts and advertising reviewers characterize as misleading about 'priority access.'",
+      "source_url": "https://www.trustpilot.com/review/runway.ml",
+      "source_date": "2026-08-19",
+      "quote": "Makes awful videos even with detailed description, then wants more money to edit the video. [Separately, May 10 2026:] They use misleading advertising, luring you in with priority access, then dramatically slowing you down after a few days.",
+      "platform": "Trustpilot (review-platform aggregator; direct WebFetch returned HTTP 403 — content obtained via r.jina.ai reader-proxy relay; captured 2026-08-29)",
+      "target_slug": "/tools/runway",
+      "collected_at": "2026-08-29",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "runway-review-2026-08-29",
+      "screening": "included",
+      "label": "community-report",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": { "tool": "Runway", "aspect": "Trustpilot rating and dated complaints on the runway.ml domain-listing", "stance": "negative", "plan_tier_if_stated": null, "item_date": "2026-08-19" },
+      "honesty_notes": ["5th and final Trustpilot domain-listing checked — across all 5 (EV-17 through EV-21), ratings span 1.1 to 3.7 with n ranging from 1 to an uncaptured-but-larger figure on runwayml.com, all marked Unclaimed. This fragmentation across the SAME company's differently-branded/regional domains, not genuine multi-vendor competition, is itself the headline community-evidence finding — present the scatter, never a blended average."]
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "protocol": "MEP-1.0",
   "site": "mimoaitools.com",
-  "updated": "2026-10-29",
+  "updated": "2026-10-31",
   "note": "Per-page evidence shards. Each EV id is cited inline in the matching Mimo article. See README.",
   "shards": [
     {
@@ -88,7 +88,37 @@
       "file": "registry-rytr-review.json",
       "page": "/tools/rytr",
       "entries": 26
+    },
+    {
+      "file": "registry-how-to-make-an-ai-avatar-video.json",
+      "page": "/guides/how-to-make-an-ai-avatar-video",
+      "entries": 41
+    },
+    {
+      "file": "registry-heygen-review.json",
+      "page": "/tools/heygen",
+      "entries": 17
+    },
+    {
+      "file": "registry-synthesia-review.json",
+      "page": "/tools/synthesia",
+      "entries": 22
+    },
+    {
+      "file": "registry-kling-ai-review.json",
+      "page": "/tools/kling-ai",
+      "entries": 21
+    },
+    {
+      "file": "registry-runway-review.json",
+      "page": "/tools/runway",
+      "entries": 21
+    },
+    {
+      "file": "registry-synthesia-vs-heygen.json",
+      "page": "/vs/synthesia-vs-heygen",
+      "entries": 15
     }
   ],
-  "total_entries": 178
+  "total_entries": 341
 }

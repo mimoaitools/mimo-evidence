@@ -1,0 +1,778 @@
+{
+  "_meta": {
+    "flow_id": "heygen-review-2026-08-15",
+    "protocol_version": "MEP-1.0",
+    "target_slug": "/tools/heygen",
+    "target_keyword": "heygen review",
+    "run_date": "2026-08-15",
+    "collector": "evidence-curator",
+    "page_class": "tools/single-tool review (5-dimension ToolScore verdict: overall/outputQuality/easeOfUse/value/evidenceBase). SECOND single-tool satellite of the AI-video cluster, avatar-arm #2 behind live /tools/synthesia. EXTENDS the hub sweep (registry-best-ai-video-generators.json) -- reuses EV-best-ai-video-generators-08/09/10/11 BY REFERENCE ONLY (cited by original ID, not re-registered under new IDs, mirroring the /tools/synthesia precedent), then runs a materially DEEPER sweep for full 5-dimension scoring support: a fresh same-day vendor-pricing re-capture specifically to resolve two open Phase-2 contradictions (Creator 600-vs-200 credits; Avatar III unlimited-vs-metered), direct re-verification of the two competitor pages behind the credit contradiction, derived per-finished-minute cost math, security/compliance scoping, the consent-gated custom-avatar flow (creation + revocation), four additional dated Capterra reviews, cancellation/refund policy, HeyGen Live pricing, API PAYG pricing (including the 'no free API credits since Feb 2026' verification), Business per-seat credit-pooling language, and the 175+ languages claim verified directly against the vendor's own page. Owned-border held clean throughout: zero deepfake/face-swap/nonconsensual-likeness material searched, fetched, or cited; the consent-gated custom-avatar flow is described only as a positive trust mechanic (identity-matched consent video + an ongoing, contactable revocation right), never as 'cloning a face'.",
+    "sweep_strategy": "Began with the single most load-bearing fetch: heygen.com/pricing, re-verified live TODAY (2026-08-15), which reconfirmed Creator at 600 credits/month (matching the hub's 2026-08-10 capture, EV-best-ai-video-generators-08) AND surfaced Avatar III's own stated rate (3 credits/min) directly from the vendor -- resolving both contradictions flagged in Phase 2 planning without needing to silently pick a side. To document the competing 200-credit claim with a genuine this-run verification rather than trusting Phase 1's paraphrase, directly re-fetched both competitor pages Phase 1 had named: aitoolanalysis.com/heygen-review/ cleanly reproduced its own '200 credits ≈ 10 min Avatar IV' / '$2.90/min' claim verbatim on direct fetch (registered as EV-heygen-review-02); genmedialab.com/reviews/heygen-review/ did NOT reproduce its own '200 credits' figure across two separate targeted WebFetch attempts this run (only its geoblocking and biometric-consent sentences reproduced cleanly, both matching Phase 1's raw-HTML audit word-for-word) -- rather than asserting the 200-credit claim against genmedialab from Phase 1's paraphrase alone, this run registers only what it could itself verify from that page (EV-heygen-review-03) and flags the tooling discrepancy explicitly rather than silently smoothing it over. Swept HeyGen's own primary/help-center pages for every remaining brief item: security/compliance (heygen.com/security -- SOC 2 Type II stated platform-wide, not Business-tier-gated, directly checking and not confirming the planning-stage assumption), the consent-video flow (developers.heygen.com/docs/avatar-consent + help.heygen.com/en/articles/12092609, covering identity-matching, webcam/QR-code submission, and 24-hour link expiry), the consent-revocation right (heygen.com/moderation-policy, the 'Actor' may request likeness removal at any time), cancellation and refund policy (two separate dated help articles), HeyGen Live/LiveAvatar pricing (a genuinely separate product and price ladder from core HeyGen), API PAYG pricing (confirming the 'no free API credits since Feb 2026' claim verbatim, while explicitly NOT confirming the specific legacy '$0.99/$0.50 per credit' dollar figures which could not be independently re-surfaced via direct fetch), Business-plan credit pooling (explicit 'the credit pool is shared between all members of the space' vendor quote), and the 175+ languages claim (verified directly against heygen.com/translate, which happened to render in Turkish on this fetch -- the 175+ figure repeats consistently regardless of locale). Re-fetched the already-known Capterra review page (capterra.com/p/10015133/HeyGen/reviews/, the hub's EV-09/10/11 source) to mine additional individually-dated reviews beyond the 3 already reused -- surfaced 6 new candidates, selected 4 for inclusion balancing polarity and thematic non-redundancy (2 positive/mixed on features and support, 1 mixed-negative on a credit-rollover policy change, 1 negative on stability/support), then ran a precision re-fetch specifically to eliminate truncation risk in two of the pulled quotes before registering them. G2 and Trustpilot were attempted via BOTH direct navigation to the bare URLs AND (mirroring the more thorough Synthesia methodology) dedicated WebSearch discovery queries that surfaced additional sub-page/TLD candidates (g2.com/products/heygen/reviews, ie.trustpilot.com/review/heygen.com, and a third-party '100 Trustpilot reviews analyzed' secondary aggregator, rainaiservices.com) -- all three direct-fetch attempts returned HTTP 403, consistent with the same block documented on every prior Mimo video-cluster shard since 2026-08-10; the 4.8/5 G2 figure and the 2.3/5-with-~80%-negative Trustpilot figure are WebSearch-aggregated only and are NOT registered as MEP-verified entries (see evidence_gaps). Reddit was attempted with one dedicated site:reddit.com query and returned zero actual reddit.com URLs (only G2/Trustpilot/learn.g2.com noise) -- confirms the identical environment-wide block found in the hub's own sweep and every Mimo shard since 2026-07-10; community sentiment for this page routes through Capterra (7 individually dated reviews on file across this shard + the hub: 3 reused + 4 newly included here, spanning 2026-04-02 to 2026-08-06, both polarities).",
+    "flow_counter": {
+      "identified": 116,
+      "screened": 116,
+      "excluded": 102,
+      "excluded_by_reason": {
+        "no-methodology-affiliate": 34,
+        "duplicate": 43,
+        "off-topic": 19,
+        "unverifiable-this-run": 6
+      },
+      "included_sources": 14,
+      "registry_entries_new": 17,
+      "entries_reused": 4,
+      "counter_note": "identified = 116 distinct candidate URLs/units across 14 documented WebSearch queries (Avatar III/IV credits, SOC2/GDPR, consent/QR code, cancel/refund, HeyGen Live pricing, site:reddit.com, 175+ languages, consent-revoke 'Actor', Business shared-credits, free-plan watermark, API $0.99/$0.50 Pro/Scale, G2 rating, Trustpilot rating) plus 6 individual dated review-units mined from one re-fetched, already-known Capterra page -- a best-effort reconciliation across heavily overlapping result sets (the same ~15 'HeyGen Pricing/Review 2026' content-mill and pricing-tracker domains -- arcade.software, eesel.ai, layer3labs.io, checkthat.ai, vidmetoo.com, flowith.io, fluxnote.io, and others -- resurface across nearly every pricing-themed query), consistent with how the hub's and the Synthesia satellite's own flow counters were reconciled -- not a line-by-line individual audit of all 102 excluded items. Direct-navigation re-verification fetches of already-identified candidates (heygen.com/pricing fresh capture, the two Phase-1-sourced competitor pages, heygen.com/security, developers.heygen.com/docs/avatar-consent, the QR-code consent article, the moderation-policy page, both cancel/refund articles, the LiveAvatar how-to, both API-pricing passes, the shared-credits article, heygen.com/translate, the Capterra precision re-fetch, and the two initial bare-URL G2/Trustpilot attempts superseded by the more thorough discovery-query versions) are NOT double-counted in 'identified', matching the precedent set by every prior Mimo video-cluster shard. 14 distinct sources were included from the 116-candidate pool; adding the 3 direct/known-URL captures (the fresh pricing re-verification, and the two Phase-1-sourced competitor pages) plus 1 derived-arithmetic entry (no independent URL of its own), and combining 2 of the pool sources into a single consent-flow entry, nets 17 NEW registry entries (EV-heygen-review-01 through -17). The hub's 4 HeyGen entries (EV-best-ai-video-generators-08/09/10/11) are REUSED BY REFERENCE per explicit task instruction and are NOT re-registered under new IDs in this shard."
+    },
+    "coder_agreement_rate": "CURATOR-PROVISIONAL single-pass coding across all 17 new entries (dual-independent coding + resolver pass orchestrated above this run). Stance calls: 9 n/a (vendor-primary pricing/security/consent/policy/API facts, no sentiment to code), 2 positive/mixed-positive (Amaury S., Cesar R.), 2 negative (Pam A., Luca R. -- both actually mixed reviews with a positive aside quoted too), 2 independent-test findings with an inherent contradiction-documentation purpose (aitoolanalysis, genmedialab), 1 mixed (genmedialab's dual geoblocking+consent finding), 1 research-finding with no single stance (the derived per-minute math). FLAGGED FOR RESOLVER: (1) EV-heygen-review-02 (aitoolanalysis.com's 200-credit claim) -- a coder could argue this no-disclosed-methodology-for-THIS-specific-figure page should be excluded outright rather than included-to-document-a-contradiction, similar to the fluxnote.io precedent on the Synthesia shard; currently included on the reasoning that the claim being registered is 'this specific dated page states X', not an adoption of X as HeyGen's real allotment -- a resolver should confirm this framing holds. (2) EV-heygen-review-03 (genmedialab.com) -- this run's OWN WebFetch could not reproduce the '200 credits' figure that a separate, prior phase's raw-HTML audit found on the identical page; registered only with the facts this run itself could verify (geoblocking, consent sentence), with the discrepancy disclosed in honesty_notes rather than either silently asserting or silently dropping the earlier finding -- a resolver should confirm this is the right call versus, e.g., treating the prior phase's raw-HTML finding as sufficient standalone verification. (3) EV-heygen-review-04 (derived per-minute math) -- Mimo's own arithmetic on a vendor-stated input, not itself a claim any external source makes; a coder could ask whether 'source_url' pointing back to heygen.com/pricing is appropriate for a self-authored calculation. (4) EV-heygen-review-10 (Pam A., 3-star Capterra review) -- coded 'negative' for the specific credit-rollover complaint quoted despite being a middling 3-star, genuinely mixed review; a coder could prefer 'mixed' as the stance label, matching how EV-heygen-review-11 (Luca R.) was already coded even though both reviews quote a positive aside. (5) EV-heygen-review-15 (API pricing) -- confirms the 'no free API credits since Feb 2026' claim cleanly but explicitly does NOT confirm the specific legacy '$0.99/$0.50 per credit' dollar figures from planning; a coder should confirm partial-claim-confirmation is being disclosed clearly enough in honesty_notes rather than read as full confirmation.",
+    "query_census": [
+      {
+        "q": "DIRECT: WebFetch https://www.heygen.com/pricing (fresh same-day re-verification, load-bearing -- resolving the Creator 600-vs-200 and Avatar III contradictions)",
+        "candidates": 0,
+        "note": "Known URL (EV-best-ai-video-generators-08's source). Re-verification, not new discovery. Confirmed Creator = 600 credits/month (matches the hub's 2026-08-10 capture) AND surfaced Avatar III = 3 credits/min directly from the vendor -> INCLUDED as EV-heygen-review-01, resolving both open Phase-2 contradictions from a single fresh capture."
+      },
+      {
+        "q": "WebSearch: HeyGen Avatar III credits per minute vs Avatar IV pricing 2026",
+        "candidates": 7,
+        "note": "arcade.software/post/heygen-pricing, eesel.ai/blog/heygen-pricing, anam.ai/blog/heygen-pricing, nemovideo.com/blog/heygen-pricing, layer3labs.io/guides/heygen-pricing, vidmetoo.com/heygen-pricing-detailed-review-of-all-plans (6x no-methodology-affiliate pricing-tracker mills, not fetched). help.heygen.com/en/articles/10060327-heygen-api-pricing-explained -> INCLUDED (fetched twice, becomes EV-heygen-review-15)."
+      },
+      {
+        "q": "WebSearch: HeyGen SOC 2 Type II GDPR security trust center",
+        "candidates": 9,
+        "note": "heygen.com/security -> INCLUDED (fetched, EV-heygen-review-05). heygen.com/gdpr-compliant, heygen.com/enterprise-api, heygen.com/ethics, heygen.com/trust-and-safety, help.heygen.com/en/articles/11187873-heygen-privacy-and-security-standards (5x duplicate-topic vendor pages, not separately fetched). heygen.com/enterprise/pricing, trust.posthog.com (2x off-topic -- pricing not security; an unrelated company's trust page). aifoxx.com/trust/heygen (1x no-methodology-affiliate third-party compliance-directory mill, same pattern-class as a prior shard's nudgesecurity.com finding)."
+      },
+      {
+        "q": "WebSearch: HeyGen custom avatar consent identity verification QR code",
+        "candidates": 9,
+        "note": "developers.heygen.com/docs/avatar-consent -> INCLUDED (fetched, part of EV-heygen-review-06). help.heygen.com/en/articles/12092609-recording-your-consent-video -> INCLUDED (fetched, primary source of EV-heygen-review-06). help.heygen.com/en/articles/10035615-how-to-get-started-with-liveavatar -> INCLUDED (fetched, EV-heygen-review-14; also surfaced via query 6). flowith.io/blog/heygen-faq-custom-avatar-api-limits-commercial-rights, knowledgecentreguy.uk/learn/... (2x no-methodology-affiliate). communityone.io/servers/.../heygen-live-avatar-remote-consent-guide (1x off-topic -- unofficial third-party Discord-adjacent community mirror). help.heygen.com/en/articles/9824740-digital-twin-creation-error-codes (1x off-topic -- error codes, not consent). help.heygen.com/en/articles/15544929-avatar-voice-faq-troubleshooting-best-practices-and-credits, heygen.com/tool/custom-avatar (2x duplicate-topic, not separately fetched)."
+      },
+      {
+        "q": "WebSearch: HeyGen cancel subscription refund policy",
+        "candidates": 8,
+        "note": "help.heygen.com/en/articles/8304328-how-to-cancel-or-pause-your-heygen-subscription -> INCLUDED (fetched, EV-heygen-review-12). help.heygen.com/en/articles/8304807-refund-process-and-policy -> INCLUDED (fetched, EV-heygen-review-13). help.heygen.com/en/articles/8300824-how-to-upgrade-or-downgrade-your-subscription (1x off-topic). help.heygen.com/en/collections/9057650-account-billing, help.heygen.com/en/articles/9999710-billing-payments-invoice (2x duplicate/less-specific collection or tangential pages). postclic.com/en-in/letters/software-saas/cancellation-heygen, joinchargeback.com/refunds/how-to-get-an-heygen-refund, fluxnote.io/guides/how-to-cancel-heygen-subscription (3x no-methodology-affiliate third-party how-to mills, the vendor's own articles being more authoritative and already included)."
+      },
+      {
+        "q": "WebSearch: HeyGen Live real-time avatar pricing credits",
+        "candidates": 8,
+        "note": "help.heygen.com/en/articles/10035615 (dup, already included via query 4). arcade.software, eesel.ai (2x dup of query 2, recurring no-methodology-affiliate). help.heygen.com/en/articles/12758516-introducing-liveavatar (1x duplicate -- companion announcement post, same topic as the included how-to article). help.heygen.com/en/articles/15125761-heygen-credit-based-pricing-plans-explained (dup, included later via query 9). heygen.com/pricing (dup, known direct source). selviaai.com/heygen-pricing-explained, checkthat.ai/brands/heygen/pricing (2x no-methodology-affiliate)."
+      },
+      {
+        "q": "DIRECT: WebFetch https://genmedialab.com/reviews/heygen-review/ (candidate identified by this codebase's own prior Phase-1 competitor audit, re-verified directly by this run -- two targeted passes)",
+        "candidates": 0,
+        "note": "Already-identified by a prior phase, not a new discovery query this run. First pass reproduced the Avatar Shots US/Japan geoblocking quote and the biometric-consent sentence cleanly (both matching Phase 1's raw-HTML audit word-for-word); a targeted second pass specifically hunting for the page's own '200 credits' figure (which Phase 1's separate raw-HTML curl+grep DID find) could NOT reproduce that figure in the rendered content on either attempt -> INCLUDED as EV-heygen-review-03 with only the directly-reproducible facts registered and the tooling discrepancy disclosed."
+      },
+      {
+        "q": "DIRECT: WebFetch https://aitoolanalysis.com/heygen-review/ (candidate identified by this codebase's own prior Phase-1 competitor audit, re-verified directly by this run)",
+        "candidates": 0,
+        "note": "Already-identified by a prior phase. Direct fetch cleanly reproduced the '200 credits/month (~10 min Avatar IV)' figure and the '$2.90/min' derivation verbatim, matching Phase 1's raw-HTML audit -> INCLUDED as EV-heygen-review-02, the primary source documenting the 600-vs-200 credit contradiction."
+      },
+      {
+        "q": "DIRECT: WebFetch https://www.capterra.com/p/10015133/HeyGen/reviews/ (known URL, hub's EV-09/10/11 source; mine additional dated reviews beyond the 3 already reused)",
+        "candidates": 6,
+        "note": "Surfaced 6 new reviewer-units beyond Matthew F.C./Elena M./Luis V.: Cesar R. (5-star, 2026-04-02), Wilfried L. (5-star, 2026-05-12), Pam A. (3-star, 2026-08-06), Amaury S. (5-star, 2026-06-25), Michael U. (5-star, 2026-05-21), Luca R. (1-star, 2026-04-02). Aggregate confirmed 4.7/5, n=316, matching the hub's capture. Cesar R., Amaury S., Pam A., Luca R. selected for polarity/thematic balance -> INCLUDED (EV-heygen-review-08/09/10/11) after a precision re-fetch eliminated truncation risk in two of the pulled quotes. Wilfried L., Michael U. -> duplicate (thematically redundant with already-included growth-praise/price-complaint angles, no new codable ground)."
+      },
+      {
+        "q": "DIRECT: WebFetch https://www.g2.com/products/heygen (initial direct attempt, targeted per task instruction)",
+        "candidates": 0,
+        "note": "Known/targeted URL, not a discovery query. HTTP 403. Superseded by the more thorough WebSearch-sourced attempt below (query 13) which surfaced the more specific g2.com/products/heygen/reviews sub-page; not separately counted in the flow tally."
+      },
+      {
+        "q": "DIRECT: WebFetch https://www.trustpilot.com/review/heygen.com (initial direct attempt, targeted per task instruction)",
+        "candidates": 0,
+        "note": "Known/targeted URL, not a discovery query. HTTP 403. Superseded by the more thorough WebSearch-sourced attempt below (query 14) which surfaced additional TLD/aggregator candidates; not separately counted in the flow tally."
+      },
+      {
+        "q": "WebSearch: site:reddit.com HeyGen review avatar experience",
+        "candidates": 7,
+        "note": "ZERO actual reddit.com URLs surfaced despite the site: operator -- g2.com/products/heygen (dup), g2.com/products/moviola/reviews (off-topic, different product), g2.com/survey_responses/heygen-review-7915453, g2.com/products/heygen/pricing, g2.com/products/avatar-iv, learn.g2.com/synthesia-vs-heygen (a G2-hosted blog post, not a Reddit thread) -- all off-topic for a Reddit-targeted query. ca.trustpilot.com/review/heygen.com (off-topic, different TLD noise). Matches the identical block documented on every Mimo shard since 2026-07-10."
+      },
+      {
+        "q": "WebSearch: HeyGen \"175\" languages supported dubbing translation",
+        "candidates": 8,
+        "note": "heygen.com/translate -> INCLUDED (fetched, EV-heygen-review-17). perso.ai/blog/heygen-ai-dubbing-review-2026 (1x no-methodology-affiliate -- a RIVAL dubbing vendor's own content-marketing blog, self-interested competitor). medium.com/@CherryZhouTech/..., podwires.com/podtoolbox/resource/heygen-ai-dubbing (2x no-methodology-affiliate). apps.apple.com/us/app/heygen-translate-video/id6758733806 (1x off-topic, App Store listing). heygen.com/translate/ai-dubbing?v=4, heygen.com/blog/10-best-ai-video-translators-i-tested-in-2025-free-paid-tools-reviewed, heygen.com/business/learning-development/multilingual-training-videos (3x duplicate-topic vendor pages, not separately fetched)."
+      },
+      {
+        "q": "WebSearch: HeyGen consent revoke remove avatar likeness \"Actor\"",
+        "candidates": 10,
+        "note": "heygen.com/moderation-policy -> INCLUDED (fetched, EV-heygen-review-07). heygen.com/trust-and-safety, heygen.com/ethics (2x duplicate, already seen via query 3). developers.heygen.com/docs/avatar-consent (dup, already included via query 4). flowith.io/blog/heygen-faq-... (dup of query 4's exclusion). help.heygen.com/en/articles/15544929 (dup of query 4's exclusion). help.heygen.com/en/articles/9380615-video-avatar-faq (1x off-topic -- Digital Twin FAQ, tangential). community.heygen.com/.../consent-for-create-video-and-interactive-avatar-with-artificial-personas, community.heygen.com/.../uploading-new-consent, community.heygen.com/.../video-avatar-consent (3x unverifiable-this-run -- unofficial user-forum threads, not independently dated/verified this run)."
+      },
+      {
+        "q": "WebSearch: HeyGen Business plan credits shared workspace team seats pool",
+        "candidates": 10,
+        "note": "help.heygen.com/en/articles/15125761-heygen-credit-based-pricing-plans-explained -> INCLUDED (fetched, EV-heygen-review-16). heygen.com/business (1x duplicate-topic vendor landing page). eesel.ai/blog/heygen-pricing (dup of query 2/6). flowith.io/blog/heygen-pricing-free-vs-creator-vs-business-plan, flowith.io/blog/heygen-pricing-2026-free-vs-creator-vs-business, aivideopicks.com/posts/heygen-pricing-2026.html, fluxnote.io/guides/heygen-pricing-2026 (4x no-methodology-affiliate). help.heygen.com/en/articles/12582746-introducing-subworkspaces (1x off-topic -- SubWorkspaces feature, tangential to credit-pooling). vidmetoo.com, checkthat.ai (2x dup of earlier queries)."
+      },
+      {
+        "q": "WebSearch: HeyGen free plan watermark permanent cannot remove",
+        "candidates": 7,
+        "note": "help.heygen.com/en/articles/11057301-how-to-remove-the-heygen-watermark (1x duplicate -- the underlying fact is already vendor-confirmed via EV-heygen-review-01's direct pricing-page fetch, 'Watermark present (removable on paid plans)'; not separately fetched or registered as its own entry). bigvu.tv/blog/heygen-free-get-free-plan (1x no-methodology-affiliate -- a RIVAL VENDOR's own content-marketing blog per this page's own persona-file flag). storylane.io/tutorials/..., marcandrews.com/heygen-free-plan-review-2026-..., urankmyai.com/articles/heygen-free-plan-2026.html, gptcleanuptools.com/heygen-video-watermark-remover (4x no-methodology-affiliate -- the last of these is a third-party watermark-REMOVAL tool, off-topic/inappropriate to cite approvingly). heygen.com/tool/free-ai-video-generator-no-watermark (1x off-topic -- a different vendor landing page for an unrelated free-tool product)."
+      },
+      {
+        "q": "WebSearch: HeyGen API pricing \"$0.99\" OR \"$0.50\" per credit Pro Scale plan",
+        "candidates": 9,
+        "note": "help.heygen.com/en/articles/10060327 (dup, already included via query 2; re-fetched a 2nd time here specifically hunting for 'legacy'/'Pro'/'Scale'/'$0.99'/'$0.50' -- confirmed Pro/Scale are older, being-phased-out API plans with a 30-day credit-expiry policy, but the specific '$0.99'/'$0.50' dollar figures do NOT appear anywhere on this page; folded into EV-heygen-review-15's honesty_notes as an explicit non-confirmation rather than asserted from the WebSearch summary alone). arcade.software, anam.ai, eesel.ai, vidmetoo.com (4x dup of query 2). help.heygen.com/en/articles/15125761 (dup, included via query 9). heygen.com/pricing (dup, known). autogpt.net/heygen-pricing, saasworthy.com/product/heygen/pricing (2x no-methodology-affiliate)."
+      },
+      {
+        "q": "WebSearch: HeyGen G2 reviews rating 2026",
+        "candidates": 9,
+        "note": "g2.com/products/heygen/reviews -> direct-fetched, HTTP 403, unverifiable-this-run. heygen.com/blog/heygen-2026-g2-summer-reports, efficientlyconnected.com/heygen-g2-summer-2026-..., roborhythms.com/heygen-review-2026/, computertech.co/heygen-review/, pexo.ai/blog/heygen-review-7390, checkthat.ai/brands/heygen/reviews (6x no-methodology-affiliate -- the vendor's own self-congratulatory G2-badge blog post plus 5 recurring content-mill review sites, none independently fetched for a rating figure). g2.com/products/heygen/pricing, g2.com/compare/heygen-vs-studio-by-gan-ai (2x off-topic -- pricing/comparison tools, not a rating source). NOT registered -- see evidence_gaps."
+      },
+      {
+        "q": "WebSearch: HeyGen Trustpilot reviews rating",
+        "candidates": 9,
+        "note": "ie.trustpilot.com/review/heygen.com -> direct-fetched, HTTP 403, unverifiable-this-run. rainaiservices.com/reviews/heygen-review/ (a third-party '100 Trustpilot reviews analyzed' secondary aggregator) -> direct-fetched to check for a disclosed sample methodology, ALSO HTTP 403, unverifiable-this-run. trustpilot.com/review/heygen.com?page=5/3/6/2 (4x duplicate -- the same underlying domain as this run's own already-403'd base-URL attempt). trustpilot.com/review/heygen.ai (1x off-topic -- a different domain than the canonical heygen.com entity). checkthat.ai/brands/heygen/reviews, pexo.ai/blog/heygen-review-7390 (2x dup of the G2 query above). NOT registered -- see evidence_gaps."
+      },
+      {
+        "q": "VERIFICATION FETCHES (not new discovery queries): heygen.com/security, developers.heygen.com/docs/avatar-consent, help.heygen.com/en/articles/12092609, help.heygen.com/en/articles/8304328, help.heygen.com/en/articles/8304807, help.heygen.com/en/articles/10035615, help.heygen.com/en/articles/10060327 (2nd pass), help.heygen.com/en/articles/15125761, heygen.com/translate, heygen.com/moderation-policy, https://www.capterra.com/p/10015133/HeyGen/reviews/ (precision re-fetch for 4 named reviewers' complete, non-truncated quotes)",
+        "candidates": 0,
+        "note": "Direct re-fetch/verification of already-identified candidates per protocol §4 -- not counted again in 'identified'."
+      }
+    ],
+    "reddit_access_note": "Reddit was structurally unreachable this run: one dedicated site:reddit.com-targeted WebSearch query surfaced ZERO actual reddit.com URLs across 7 candidate links (only G2/Trustpilot/G2-blog noise) -- the identical block documented on the hub's own sweep (2026-08-10), the /tools/synthesia sweep (2026-08-13), and every Mimo shard since 2026-07-10. Per this run's own instructions and the established precedent, this single confirming query was treated as sufficient re-documentation of an already-established environment-wide block rather than repeating a full multi-query Reddit sweep. CONSEQUENCE: community sentiment for this review routes entirely through Capterra (7 individually dated reviews on file across this shard + the hub: 3 reused spanning 2026-05-05 to 2026-06-16, plus 4 newly included here spanning 2026-04-02 to 2026-08-06, both polarities), plus two disclosed-hands-on-testing independent third-party pages (genmedialab.com, aitoolanalysis.com) used specifically to document the Creator-credit pricing-freshness contradiction. This is disclosed in the page's limitations paragraph, matching the hub and the Synthesia satellite.",
+    "astroturf_note": "The astroturf screen (protocol 3.1: templated look-alike threads, recurring fresh personas, all funneling to one vendor) was applied to every low-trust 'HeyGen Pricing/Review 2026' aggregator-mill candidate surfaced this run (arcade.software, eesel.ai, anam.ai, nemovideo.com, layer3labs.io, vidmetoo.com, flowith.io, selviaai.com, checkthat.ai, postclic.com, joinchargeback.com, fluxnote.io, aifoxx.com, knowledgecentreguy.uk, aivideopicks.com, autogpt.net, saasworthy.com, storylane.io, marcandrews.com, urankmyai.com, gptcleanuptools.com, efficientlyconnected.com, roborhythms.com, computertech.co, pexo.ai, rainaiservices.com, and others). No templated-persona-network pattern was detected -- these read as independently-run SEO content-mill/pricing-tracker/directory sites competing for the same commercial keyword, not a coordinated persona network. The MikeAppsReviewer-network canonical case pattern was not observed anywhere in this sweep. Two SEPARATE, non-astroturf flags are worth noting instead: (1) bigvu.tv is a directly RIVAL VENDOR publishing its own 'Is HeyGen free' content-marketing post that funnels to its own competing product -- excluded as a conflict-of-interest source, not astroturf (a single self-interested competitor, not a coordinated network). (2) perso.ai is a rival dubbing/TTS vendor doing the same for the 175+ languages query -- same single-competitor-COI pattern, same exclusion reasoning. The 7 individually-dated, individually-named Capterra reviewers on file for this page (3 reused + 4 new, spanning 2026-04-02 to 2026-08-06, different job titles, different industries, both polarities) show no templated-language or funneling pattern. Zero astroturf-pattern sources were registered or cited.",
+    "exclusion_log_notes": [
+      "no-methodology-affiliate (34): dominant category -- the recurring 'HeyGen Pricing/Review 2026' content-mill and pricing-tracker domains that resurface across nearly every pricing-themed query (arcade.software x4, eesel.ai x3, vidmetoo.com x4, layer3labs.io, nemovideo.com, anam.ai x2, checkthat.ai x3, selviaai.com, flowith.io x4, fluxnote.io x3, aivideopicks.com, autogpt.net, saasworthy.com, postclic.com, joinchargeback.com, knowledgecentreguy.uk, storylane.io, marcandrews.com, urankmyai.com, gptcleanuptools.com, efficientlyconnected.com, roborhythms.com, computertech.co, pexo.ai x2, aifoxx.com), plus the vendor's own self-congratulatory G2-badge blog post (heygen.com/blog/heygen-2026-g2-summer-reports, not independently fetched as a rating source), and the two identified rival-vendor conflict-of-interest sources (bigvu.tv, perso.ai) grouped under this reason code as self-interested competitor content rather than a separate astroturf finding.",
+      "duplicate (43): repeat domain/path hits and near-duplicate heygen.com/help.heygen.com pages surfacing across multiple queries (heygen.com's own gdpr-compliant/enterprise-api/ethics/trust-and-safety pages all covering ground the more specific security page already sourced; help.heygen.com articles on LiveAvatar, custom-avatar tooling, and credit-pricing recurring across 3-4 different search queries each), third-party pricing trackers (arcade.software, eesel.ai, vidmetoo.com, checkthat.ai) repeating across nearly every pricing-themed query, and two Capterra reviewer-units (Wilfried L., Michael U.) thematically redundant with already-included polarity coverage.",
+      "off-topic (19): G2/Trustpilot noise surfaced by the Reddit-targeted site: query (g2.com/products/moviola/reviews, g2.com/survey_responses, g2.com/pricing, g2.com/avatar-iv, learn.g2.com, ca.trustpilot.com -- none are reddit.com), tangential vendor help articles (upgrade/downgrade billing, Digital Twin error codes, SubWorkspaces feature intro, general Avatar/Voice FAQ), an unofficial third-party community forum mirror (communityone.io), an App Store listing (apps.apple.com), a different vendor landing page for an unrelated free-tool product, G2's own pricing/comparison sub-pages (not rating sources), and trustpilot.com/review/heygen.ai (a different domain than the canonical heygen.com entity).",
+      "unverifiable-this-run (6): g2.com/products/heygen/reviews (HTTP 403), ie.trustpilot.com/review/heygen.com (HTTP 403, a different TLD attempt per this run's own instruction, also blocked), rainaiservices.com/reviews/heygen-review/ (HTTP 403 -- a third-party secondary Trustpilot-analysis aggregator that could not be independently verified either), and 3 community.heygen.com unofficial user-forum threads (not independently dated/verified this run). The G2 (4.8/5) and Trustpilot (2.3/5, ~80% negative) rating figures therefore remain WebSearch-aggregated ONLY and are explicitly NOT registered as MEP-verified entries -- see evidence_gaps in the final report."
+    ],
+    "entries_reused": [
+      "EV-best-ai-video-generators-08 (heygen.com/pricing, captured 2026-08-10 -- full 5-tier pricing ladder + credit-burn rates) -- cited by original ID, NOT re-registered, per explicit task instruction. This run's EV-heygen-review-01 is a fresh, separately-dated (2026-08-15) re-verification of the same page, registered as its own new entry because it is a distinct dated capture that additionally resolves two open contradictions, not a duplicate citation.",
+      "EV-best-ai-video-generators-09 (Matthew F.C., Capterra, 2026-05-05, 4 stars, multi-language/multi-audience versioning praise) -- cited by original ID, NOT re-registered.",
+      "EV-best-ai-video-generators-10 (Elena M., Capterra, 2026-05-06, 1 star, 'no way to get a human being' support complaint) -- cited by original ID, NOT re-registered. This run's EV-heygen-review-09 (Amaury S., 2026-06-25, positive support experience) is presented alongside it for balance, not as a replacement.",
+      "EV-best-ai-video-generators-11 (Luis V., Capterra, 2026-06-16, 4 stars, mixed review noting slower processing on large footage) -- cited by original ID, NOT re-registered."
+    ]
+  },
+  "entries": [
+    {
+      "id": "EV-heygen-review-01",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-31",
+          "source_url": "https://help.heygen.com/en/articles/15125761-heygen-credit-based-pricing-plans-subscriptions-explained",
+          "claim": "Help article read 2026-10-31 (raw HTML): the free quota varies by region, 1 to 3 free videos, while the pricing page says up to 3 a month.",
+          "quote": "Free users can create 1–3 free videos depending on their region."
+        },
+        {
+          "recaptured_at": "2026-10-31",
+          "source_url": "https://www.heygen.com/pricing",
+          "claim": "Pricing page re-read 2026-10-31 via r.jina.ai: plan prices and credit counts unchanged vs 2026-08-15. Free 3 watermarked videos a month up to 1 minute each and 30+ languages; Creator $29/mo or $24/mo annually, 600 credits, 175+ languages, branding removed, Avatar V with limited usage; Pro from $49 for 1,000 credits up to 100,000 at $4,300; Business $149/mo + $20/seat, 1,500 credits. Annual Creator is now vendor-stated, not third-party only. New: SCORM export is listed on Business, correcting the page's old statement that HeyGen has none. Rollover: monthly one more month, annual until renewal, none after cancellation.",
+          "quote": "the Creator plan costs $29/month (or $24/month if you pay annually) ... Pro starts at $49/month and scales up to tiers with more credits per month ... the Business plan costs $149/month plus $20/seat/month ... Tiers range from 1,000 credits/mo at $49 to 100,000 credits/mo at $4,300. ... SCORM export and LMS integrations ... Monthly subscribers' unused credits roll over for one more month. Annual subscribers' credits accumulate until their annual renewal date. ... Avatar V, with limited usage"
+        },
+        {
+          "recaptured_at": "2026-10-31",
+          "source_url": "https://help.heygen.com/en/articles/15125761-heygen-credit-based-pricing-plans-subscriptions-explained",
+          "claim": "Credit burn rates re-read 2026-10-31 on the help article: SUPERSEDES the 2026-08-15 rates (Avatar IV/V 20, Avatar III 3, dubbing 2, translation 5). Avatar III 4 Video Look / 7 Photo Look, Avatar IV 31 Video Look / 16 Photo Look, Avatar V 48, translation 6 Speed / 10 Precision / 4 no lipsync.",
+          "quote": "Avatar III Photo Look 1 minute = 7 credits ... Avatar III Video Look 1 minute = 4 credits ... Avatar IV Photo Look 1 minute = 16 credits ... Avatar IV Video Look 1 minute = 31 credits ... Avatar V (Photo Look & Video Look)1 minute = 48 credits ... Video Translation (Speed mode)1 minute = 6 credits ... Video Translation - Precision mode 1 minute = 10 credits ... Video Translation - no lipsync 1 minute = 4 credits"
+        },
+        {
+          "recaptured_at": "2026-10-31",
+          "source_url": "https://www.heygen.com/pricing",
+          "claim": "Pricing page FAQ: free use needs no credit card.",
+          "quote": "You can use HeyGen for free and generate up to 3 videos a month, no credit card required."
+        }
+      ],
+      "claim": "Re-fetching HeyGen's live pricing page today (2026-08-15) reconfirms the same structure the hub captured on 2026-08-10: Free $0/mo (3 videos/mo, 1 min each, up to 1080p); Creator $29/mo (600 credits); Pro $49/mo (1,000 credits); Business $149/mo + $20/seat (1,500 credits). The page also states Avatar III costs 3 credits/min alongside Avatar IV/V's 20 credits/min, Audio Dubbing 2 credits/min, and Video Translation 5 credits/min -- resolving both open contradictions flagged in Phase-2 planning: Creator credits are 600 (not 200), and Avatar III is credit-metered (not free/unlimited).",
+      "source_url": "https://www.heygen.com/pricing",
+      "source_date": "2026-08-15",
+      "quote": "Free: $0/month, 3 videos/month, max 1 min each. Creator: $29/mo, 600 credits. Pro: $49/mo, 1,000 credits. Business: $149/mo, 1,500 credits, plus $20/seat.",
+      "quote_supplementary": [
+        "Avatar III: 3 credits/min. Avatar IV/V: 20 credits/min. Audio Dubbing: 2 credits/min. Full Video Translation: 5 credits/min."
+      ],
+      "requoted_at": "2026-09-22",
+      "requote_result": "found (pricing-page text only; rollover sentences moved to EV-heygen-review-16, whose source_url is the help article they come from)",
+      "platform": "heygen.com/pricing (vendor pricing page -- self-interested; independently re-verified live 2026-08-15, 5 days after the hub's 2026-08-10 capture EV-best-ai-video-generators-08; requoted 2026-09-22, pricing-page text only)",
+      "target_slug": "/tools/heygen",
+      "collected_at": "2026-08-15",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "heygen-review-2026-08-15",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "HeyGen",
+        "aspect": "pricing-ladder + credit-burn-rate stability re-check, resolving two open Phase-2 contradictions",
+        "stance": "n/a",
+        "plan_tier_if_stated": "all 5 tiers + all 4 credit-burn rates",
+        "item_date": "2026-08-15"
+      },
+      "honesty_notes": [
+        "CORRECTED 2026-09-22 (N1 gate task): this note previously stated 'Monthly-plan credits do not roll over between billing cycles' -- that was WRONG and is retracted. Re-fetched help.heygen.com/en/articles/15125761-heygen-credit-based-pricing-plans-explained today and found a dedicated 'Credit Rollover' section stating verbatim: 'Unused credits may roll over depending on your billing type. Monthly subscribers: Unused credits roll over for one additional billing cycle.' and 'Unused credits accumulate until your annual renewal date. If you cancel your paid plan and move to Free, unused credits do not roll over.' So: monthly-plan credits DO roll over, but only for one additional billing cycle (not indefinitely); annual-plan credits accumulate until the annual renewal date; credits do NOT roll over at all once a paid plan is cancelled and downgraded to Free. SUPERSEDED by the gate run 3 R3-1 note below: Quote field above widened with the monthly/annual rollover sentences (source: help.heygen.com/15125761, captured 2026-09-22, distinct from this entry's original heygen.com/pricing source_url -- both URLs are HeyGen-primary vendor pages). EV-heygen-review-10's dated Capterra complaint about losing 3,000+ credits down to 600 remains a real, separately-dated customer report and is not contradicted by this correction -- that complaint describes a POLICY CHANGE the reviewer experienced, not necessarily today's stated policy.",
+        "Annual billing brings Creator to roughly $24/mo per third-party corroboration (EV-heygen-review-03, genmedialab.com, 2026-05-29) -- this run's own direct fetch captured the standard monthly-toggle figures, not a separate annual-toggle re-verification.",
+        "The specific 'Avatar III is unlimited/credit-free' third-party claims referenced in Phase 2 planning were not independently located or re-surfaced by this run's own sweep; this vendor-primary capture (3 credits/min, now in `quote_supplementary` after the 2026-09-22 N6 trim), independently confirmed twice on the same day by two separate research passes (Phase 1's competitor audit and this entry), is registered as the authoritative resolution regardless.",
+        "ORCHESTRATOR 2026-09-22 (gate run 3 R3): R3-1: quote restored to heygen.com/pricing text only. The 2026-09-22 rollover correction stands (monthly credits roll over one extra cycle; annual credits accumulate until renewal) and is now evidenced verbatim in EV-heygen-review-16."
+      ]
+    },
+    {
+      "id": "EV-heygen-review-02",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-31",
+          "source_url": "https://aitoolanalysis.com/heygen-review/",
+          "claim": "Re-read 2026-10-31 via r.jina.ai: the review now shows Last Updated October 24, 2026 and prints 600 Creator credits and about 19 Avatar IV minutes; the strings '200 credits' and '200 monthly' no longer appear. The 200-credit figure captured 2026-08-15 (dated 2026-06-14) has been corrected by that date.",
+          "quote": "HeyGen costs $29 a month for Creator, with 600 credits, or $24 a month if you pay for a year; Pro starts at $49 for 1,000 credits, and the free plan gives you 3 watermarked videos a month. Those 600 credits buy about 19 minutes of Avatar IV video ... Last Updated: October 24, 2026"
+        }
+      ],
+      "claim": "A niche AI-tool review site (aitoolanalysis.com), in an article built around '$29 Creator Tier Math,' states HeyGen's Creator plan provides 200 credits/month (~10 minutes of Avatar IV) and derives a $2.90/minute cost from that figure -- directly contradicting this page's own vendor-direct capture (EV-heygen-review-01, and the hub's EV-best-ai-video-generators-08) of 600 credits/month, a roughly 3x difference in the resulting price-per-minute number.",
+      "source_url": "https://aitoolanalysis.com/heygen-review/",
+      "source_date": "2026-06-14",
+      "quote": "20 credits/min x 200 monthly credits = ~10 minutes Avatar IV on Creator plan.",
+      "platform": "aitoolanalysis.com (independent AI-tool review site with a disclosed hands-on-testing claim, 'Four hands-on tests'; likely affiliate-monetized, not disclosed in-body -- the page's own 'Updated' badge and og:updated_time meta tag read June 14, 2026, while its JSON-LD dateModified field reads May 30, 2026, an internal date inconsistency; captured 2026-08-15)",
+      "requoted_at": "2026-09-22",
+      "requote_result": "partial: 200-credit chain found verbatim; $2.90 not found",
+      "target_slug": "/tools/heygen",
+      "collected_at": "2026-08-15",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "heygen-review-2026-08-15",
+      "screening": "included",
+      "label": "independent-test",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "HeyGen",
+        "aspect": "Creator-tier credit allotment and derived per-minute cost, contradicting our fresher vendor-direct capture",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Creator $29/mo (stated by this source as 200 credits/mo)",
+        "item_date": "2026-06-14"
+      },
+      "honesty_notes": [
+        "This is the field's single most checkable discrepancy: not asserted as an error at the time of the article's own update (HeyGen's allotment may simply have changed since), but our own capture is independently reconfirmed twice on the same day (2026-08-15) against a single third-party figure that is between 47 and 78 days old depending on which of the page's own two conflicting date fields is used.",
+        "This page's entire cost narrative cascades from this one 200-credit figure; it also never distinguishes dubbing (2cr/min) or translation (5cr/min) from avatar-minute cost, so even its own 'how many minutes' framing implicitly prices all output at the avatar rate.",
+        "REQUOTE PASS 2026-09-22 (gate B3 response): re-fetched aitoolanalysis.com/heygen-review/ raw HTML today, hunting specifically for a '$2.90' or '$2.90/min' string anywhere on the page. NOT FOUND -- a full dollar-figure census of the current page turns up $29, $15, $49, $24, $39, $5.99, $44, $5, $19.99, $10, $0.05, $0 and no $2.90 in any form. The 200-credit/20-credits-per-minute/~10-minutes chain above is still verbatim on the page and remains the entry's confirmed claim, but '$2.90/minute' was never a quote from this source -- it reads as Mimo's own arithmetic on this source's inputs ($29 Creator price / 10 minutes = $2.90/min) that was written into the claim field without being labeled as derived. The page's OWN closest analogous math today is different: 'Creator + Premium Credits ($29 + $15 = $44/mo for 500 credits = 25 minutes)'. Do not attribute $2.90/min to aitoolanalysis.com; if a per-minute figure is wanted from this source's 200-credit input, compute and label it as Mimo's own derived arithmetic exactly as EV-heygen-review-04 does elsewhere in this cluster, and disclose that the page's own credit math has since shifted to a different blended figure.",
+        "GATE N6 CONSISTENCY PASS 2026-09-22: setting requote_result explicitly to 'partial: 200-credit chain found verbatim; $2.90 not found' per the above -- the 200-credit/~10-minute chain is a clean, re-confirmed verbatim finding; the $2.90/min figure is not and must not be presented as this source's own number anywhere on the vs-page or this review."
+      ]
+    },
+    {
+      "id": "EV-heygen-review-03",
+      "claim": "A separate niche AI-tool review site (genmedialab.com) is the only one of the field's audited competitors to flag that HeyGen's Avatar Shots feature is geoblocked in the United States and Japan, and to mention that avatar creation requires explicit biometric consent with human-plus-AI moderation against misuse -- both real, useful, under-covered facts this page corroborates and dates.",
+      "source_url": "https://genmedialab.com/reviews/heygen-review/",
+      "source_date": "2026-05-29",
+      "quote": "Avatar Shots is currently geoblocked in the United States and Japan. If you're in either region, you won't see the Avatar Shots option in your dashboard.",
+      "platform": "genmedialab.com (independent AI-tool review site with a named, credentialed author and a linked author page; page's own dateModified and article:modified_time meta tag both confirmed as 2026-05-29; captured 2026-08-15)",
+      "target_slug": "/tools/heygen",
+      "collected_at": "2026-08-15",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "heygen-review-2026-08-15",
+      "screening": "included",
+      "label": "independent-test",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "HeyGen",
+        "aspect": "Avatar Shots US/Japan geoblocking + biometric-consent/moderation mention",
+        "stance": "mixed",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-05-29"
+      },
+      "honesty_notes": [
+        "Also states, verbatim: 'biometric data (for avatar creation) requires explicit consent, and HeyGen employs both human and AI moderation to prevent misuse' -- the field's only mention of consent/moderation at all among the three audited competitors, though only as a single vendor-relayed sentence; EV-heygen-review-06/07 go materially deeper on the same topic with direct vendor-doc sourcing.",
+        "METHOD NOTE: a separate, prior phase of this same page's own research reported (via raw-HTML curl+grep) that this identical article also states 'Creator = 200 credits ~= 10 min Avatar IV.' Two separate WebFetch attempts by THIS run could not surface that exact figure in the page's rendered content (only the geoblocking and consent sentences reproduced cleanly both times) -- flagged as an unresolved tooling discrepancy rather than silently asserted as this run's own verified finding. EV-heygen-review-02 (aitoolanalysis.com) is the entry this run relies on to document the 200-vs-600 credit contradiction with a directly-and-cleanly-confirmed quote.",
+        "Also states Creator costs $24/month billed yearly with 'unlimited videos' -- notably inconsistent messaging on this page's own part (describing a credit-metered product in flat 'unlimited' language elsewhere in the same review), worth flagging as evidence that even the field's freshest, most careful competitor struggles to describe HeyGen's pricing model consistently."
+      ]
+    },
+    {
+      "id": "EV-heygen-review-04",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-31",
+          "source_url": "https://help.heygen.com/en/articles/15125761-heygen-credit-based-pricing-plans-subscriptions-explained",
+          "claim": "Mimo's own arithmetic redone 2026-10-31 on the re-read rates (EV-heygen-review-01 recaptures): SUPERSEDES 30 minutes and $0.97. Avatar IV Video Look on Creator is about 19 minutes at about $1.50; billed annually about $1.24; Pro about 32 minutes at $1.52; Business about 48 minutes at $3.08. Avatar IV Photo Look on Creator about 37 minutes at $0.77; Avatar V about 12 minutes at $2.32; Avatar III Video Look 150 minutes at $0.19; Photo Look about 85 at $0.34; translation Speed 100 at $0.29, Precision 60 at $0.48, no lipsync 150 at $0.19. Not vendor-stated.",
+          "quote": "600 credits / 31 credits per minute = about 19 minutes; $29 / 19.35 minutes = about $1.50 per finished minute (Mimo's own calculation from the rates read 2026-10-31)."
+        }
+      ],
+      "claim": "On the Creator plan's 600 monthly credits (EV-heygen-review-01), Avatar IV output costs 20 credits/minute, meaning Creator buys 30 minutes of Avatar IV video per month; at $29/month that works out to roughly $0.97 per finished minute -- Mimo's own derived arithmetic from the freshly-reconfirmed vendor figures, not a vendor-stated or third-party number.",
+      "source_url": "https://www.heygen.com/pricing",
+      "source_date": "2026-08-15",
+      "quote": "600 credits / 20 credits per minute = 30 minutes; $29 / 30 minutes = $0.97 per finished minute (Mimo's own calculation from EV-heygen-review-01's captured figures).",
+      "platform": "Derived calculation (Mimo's own arithmetic on vendor-stated inputs from heygen.com/pricing, captured 2026-08-15) -- not itself a vendor or third-party claim",
+      "target_slug": "/tools/heygen",
+      "collected_at": "2026-08-15",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "heygen-review-2026-08-15",
+      "screening": "included",
+      "label": "research-finding",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "HeyGen",
+        "aspect": "derived per-finished-minute cost for Avatar IV on the Creator plan",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Creator $29/mo, 600 credits",
+        "item_date": "2026-08-15"
+      },
+      "honesty_notes": [
+        "This figure is CONTINGENT on EV-heygen-review-01's 600-credit capture; if HeyGen's live allotment changes again, this derived number changes with it -- it is not a fixed vendor commitment.",
+        "Directly resolves aitoolanalysis.com's own '$2.90/min' headline figure (EV-heygen-review-02): the same arithmetic on a fresher credit figure produces a number roughly 3x lower.",
+        "Using dubbing's 2-credits/min rate instead, the same 600 credits buy 300 minutes of dubbed output for the same $29 -- illustrating the credit-burn asymmetry rather than a single blended 'dollars per minute' figure."
+      ]
+    },
+    {
+      "id": "EV-heygen-review-05",
+      "claim": "HeyGen's own security page states SOC 2 Type II certification, GDPR, CCPA, EU-US Data Privacy Framework, and EU AI Act compliance apply platform-wide, with no plan-tier restriction stated on the certification itself -- directly checking the assumption (carried from Phase 2 planning) that SOC 2 might be scoped to the Business tier only; this page's own text does not support that scoping.",
+      "source_url": "https://www.heygen.com/security",
+      "source_date": "2026-08-15",
+      "quote": "We are SOC 2 Type II certified, reflecting our ongoing commitment to robust cybersecurity practices... SOC 2 Type II, GDPR, CCPA, the EU-US Data Privacy Framework (DPF), and the EU AI Act.",
+      "platform": "heygen.com/security (vendor trust/security page -- self-interested; captured 2026-08-15)",
+      "target_slug": "/tools/heygen",
+      "collected_at": "2026-08-15",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "heygen-review-2026-08-15",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "HeyGen",
+        "aspect": "security/compliance certification scope (platform-wide vs tier-gated)",
+        "stance": "n/a",
+        "plan_tier_if_stated": "not tier-specific per this page's own text",
+        "item_date": "2026-08-15"
+      },
+      "honesty_notes": [
+        "The page states a Data Protection Officer based in Europe oversees GDPR matters and is directly contactable -- a specific, checkable detail beyond a bare compliance-badge claim.",
+        "This page does not mention ISO 42001 or ISO 27701 at all -- unlike Synthesia, which holds ISO 42001 in addition to SOC 2 and GDPR (see /tools/synthesia's own registry). This is a real compliance-scope difference between the two tools, not an oversight on this page's part.",
+        "A claim that 'audit results are made available to customers upon request via HeyGen's Security Portal' surfaced in search summaries but was not independently re-confirmed via direct fetch of that specific portal this run -- access to the underlying audit REPORT may still be gated even though the certification claim itself reads platform-wide; not asserted as confirmed either way."
+      ]
+    },
+    {
+      "id": "EV-heygen-review-06",
+      "claim": "HeyGen's documented custom-avatar consent flow requires the person depicted to submit a live, identity-matched consent recording; besides recording via webcam, the subject can scan a QR code and submit the consent video directly from their own phone -- useful for remote consent -- and the generated interactive consent link expires after 24 hours.",
+      "source_url": "https://help.heygen.com/en/articles/12092609-recording-your-consent-video",
+      "source_date": "2026-08-15",
+      "quote": "They can scan a QR code and submit their video directly from their phone, wherever they are.",
+      "platform": "help.heygen.com (vendor help-center article -- self-interested; captured 2026-08-15)",
+      "target_slug": "/tools/heygen",
+      "collected_at": "2026-08-15",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "heygen-review-2026-08-15",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "HeyGen",
+        "aspect": "consent-gated custom-avatar creation flow (identity verification + remote QR-code submission)",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-08-15"
+      },
+      "honesty_notes": [
+        "A companion vendor docs page (developers.heygen.com/docs/avatar-consent, also fetched and verified 2026-08-15) states the consent-video subject 'must be the same person as the training footage (identity-matched)' and that the interactive consent link 'expires after 24 hours', requiring the endpoint to be called again for a fresh one -- corroborating detail from a second vendor-primary source, folded into this entry rather than registered separately.",
+        "This is a positive trust mechanic, not a workaround: HeyGen requires the depicted person's own live, dated consent before a custom avatar can be generated. Neither source discusses face-swapping or nonconsensual likeness use -- consistent with Mimo's own hard border against that framing.",
+        "Enterprise accounts have a separate pre-recorded consent-statement path (a scripted on-camera phrase) rather than the interactive webcam/QR flow -- noted but not the primary consumer-facing path this entry centers."
+      ]
+    },
+    {
+      "id": "EV-heygen-review-07",
+      "claim": "HeyGen's moderation policy states that the depicted person (the 'Actor') retains an ongoing right to request removal of their likeness from HeyGen's services at any time after a custom avatar is created, via HeyGen's moderation contact -- the consent-gated creation flow (EV-heygen-review-06) is paired with an explicit, revocable ongoing right, not a one-time signup formality.",
+      "source_url": "https://www.heygen.com/moderation-policy",
+      "source_date": "2026-08-15",
+      "quote": "The Actor reserves the right to request removal of their likeness from our Services at any time.",
+      "platform": "heygen.com/moderation-policy (vendor policy page -- self-interested; captured 2026-08-15)",
+      "target_slug": "/tools/heygen",
+      "collected_at": "2026-08-15",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "heygen-review-2026-08-15",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "HeyGen",
+        "aspect": "post-creation likeness-removal / consent-revocation right",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-08-15"
+      },
+      "honesty_notes": [
+        "The policy also places an ongoing obligation on the AVATAR CREATOR (not just HeyGen) to honor any removal request from the depicted person wherever that content has already been published -- worth surfacing since it means revocation is a real, enforceable process rather than a symbolic clause.",
+        "Genmedialab's single sentence on consent/moderation (EV-heygen-review-03) does not mention revocation at all -- this is genuinely under-covered ground in the field per Phase 1's own competitor audit."
+      ]
+    },
+    {
+      "id": "EV-heygen-review-08",
+      "claim": "A dated Capterra review of HeyGen (Cesar R., Real Estate Agent, 2026-04-02, 5 stars) praises HeyGen's pace of shipping new features for content production, while separately flagging that paying for additional custom avatars adds up quickly -- a real-estate-agent persona directly adjacent to this page's smb-marketer segment.",
+      "source_url": "https://www.capterra.com/p/10015133/HeyGen/reviews/",
+      "source_date": "2026-04-02",
+      "quote": "I like that they keep on innovating and adding features that make it easy to produce content... I don't like paying for additional custom avatars as it adds up quick.",
+      "platform": "Capterra (review-platform; aggregate 4.7/5, n=316 reviews as of capture 2026-08-15; this individual review dated 2026-04-02)",
+      "requoted_at": "2026-09-22",
+      "requote_result": "blocked -- capterra.com/p/10015133/HeyGen/reviews/ returned HTTP 403 (Cloudflare 'Sorry, you have been blocked') on direct re-fetch today; the 4.7/316 aggregate figure could not be re-verified this run and remains sourced only to the 2026-08-15 capture's platform field, not a re-confirmed verbatim quote",
+      "target_slug": "/tools/heygen",
+      "collected_at": "2026-08-15",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "heygen-review-2026-08-15",
+      "screening": "included",
+      "label": "community-report",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "HeyGen",
+        "aspect": "feature-velocity praised; custom-avatar add-on cost flagged",
+        "stance": "mixed",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-04-02"
+      },
+      "honesty_notes": [
+        "One dated reviewer among 316 verified Capterra reviews -- do not generalize."
+      ]
+    },
+    {
+      "id": "EV-heygen-review-09",
+      "claim": "A 5-star Capterra reviewer (June 2026) praised HeyGen's high-quality avatars and easy-to-use tools but wished the support button or icon were more visible and easier to find.",
+      "source_url": "https://www.capterra.com/p/10015133/HeyGen/reviews/",
+      "source_date": "2026-06-25",
+      "quote": "Excellent platform with high-quality avatars and easy-to-use tools... The support button or icon could be more visible and easier to find within the platform.",
+      "platform": "Capterra (review-platform; aggregate 4.7/5, n=316 reviews as of capture 2026-08-15; this individual review dated 2026-06-25)",
+      "requoted_at": "2026-09-22",
+      "requote_result": "blocked -- capterra.com returned HTTP 403 (Cloudflare 'Sorry, you have been blocked') on direct re-fetch today; full review text and the 4.7/316 aggregate could not be re-verified this run",
+      "target_slug": "/tools/heygen",
+      "collected_at": "2026-08-15",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "heygen-review-2026-08-15",
+      "screening": "included",
+      "label": "community-report",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "HeyGen",
+        "aspect": "support responsiveness praised (contrasts a separately-dated negative support complaint)",
+        "stance": "positive",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-06-25"
+      },
+      "honesty_notes": [
+        "Presented deliberately alongside the reused EV-best-ai-video-generators-10 negative support complaint for balance -- one dated reviewer's positive experience does not cancel out another's negative one; both are real, dated, and named.",
+        "REQUOTE PASS 2026-09-22 (gate B5 response): attempted to re-fetch capterra.com/p/10015133/HeyGen/reviews/ today to pull this reviewer's complete, non-truncated text and check whether it anywhere says support 'fixed an issue quickly'. capterra.com returned HTTP 403 (Cloudflare block) on direct fetch -- could not re-verify. The quote already on file for this entry does NOT contain any statement about a fix being made quickly; it praises the platform generally and separately flags that the support button/icon is hard to find. Do not attribute 'support that fixed an issue quickly' to this entry -- the on-file quote does not support that claim, and this run could not fetch a fuller version that might."
+      ]
+    },
+    {
+      "id": "EV-heygen-review-10",
+      "claim": "The freshest individually-dated Capterra review on file for HeyGen (Pam A., Owner/Creator, 2026-08-06, 3 stars) reports HeyGen changed its credit-rollover policy without advance notice, converting over 3,000 previously-purchased, saved-up credits down to 600 -- a policy change the reviewer experienced (HeyGen's help center now says monthly credits roll over for one additional billing cycle, EV-heygen-review-16).",
+      "source_url": "https://www.capterra.com/p/10015133/HeyGen/reviews/",
+      "source_date": "2026-08-06",
+      "quote": "Then I had over 3,000 credits that I had purchased that they took away and implemented a policy that credits could not be carried over so I lost all but 600 credits.",
+      "platform": "Capterra (review-platform; aggregate 4.7/5, n=316 reviews as of capture 2026-08-15; this individual review dated 2026-08-06, nine days before this sweep)",
+      "target_slug": "/tools/heygen",
+      "collected_at": "2026-08-15",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "heygen-review-2026-08-15",
+      "screening": "included",
+      "label": "community-report",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "HeyGen",
+        "aspect": "credit-rollover policy change resulting in lost purchased credits",
+        "stance": "negative",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-08-06"
+      },
+      "honesty_notes": [
+        "Same reviewer separately praises Avatar Shots output quality ('a great product that 70% of the time gives great results the first time') -- a mixed, not purely negative, review; both sides quoted rather than cherry-picked.",
+        "One dated reviewer among 316 verified Capterra reviews -- do not generalize into a claim that credit-rollover changes are common."
+      ]
+    },
+    {
+      "id": "EV-heygen-review-11",
+      "claim": "A dated Capterra review of HeyGen (Luca R., IT Manager, 2026-04-02, 1 star) reports platform instability, frequent bugs, and updates that break existing functionality, alongside an ineffective support experience -- a fourth, differently-dated data point on reliability and support to sit alongside EV-best-ai-video-generators-09/10/11 and EV-heygen-review-09/10.",
+      "source_url": "https://www.capterra.com/p/10015133/HeyGen/reviews/",
+      "source_date": "2026-04-02",
+      "quote": "The platform is unstable, full of bugs, and every update seems to break something new... The support is completely ineffective.",
+      "platform": "Capterra (review-platform; aggregate 4.7/5, n=316 reviews as of capture 2026-08-15; this individual review dated 2026-04-02)",
+      "target_slug": "/tools/heygen",
+      "collected_at": "2026-08-15",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "heygen-review-2026-08-15",
+      "screening": "included",
+      "label": "community-report",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "HeyGen",
+        "aspect": "platform stability/bugs and support-effectiveness complaint",
+        "stance": "negative",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-04-02"
+      },
+      "honesty_notes": [
+        "Same reviewer separately praises the pace of UI evolution and new features ('very frequent updates and new features') -- quoted for balance rather than presenting only the negative half.",
+        "One dated 1-star reviewer among 316 verified Capterra reviews (aggregate 4.7/5) -- do not generalize into 'HeyGen is unstable.'"
+      ]
+    },
+    {
+      "id": "EV-heygen-review-12",
+      "claim": "HeyGen's help center states that canceling a subscription takes effect at the end of the current billing cycle (not immediately), and that pausing -- available on desktop only, not via mobile app stores -- postpones the next charge by one cycle but forfeits any unused credit balance entirely.",
+      "source_url": "https://help.heygen.com/en/articles/8304328-how-to-cancel-or-pause-your-heygen-subscription",
+      "source_date": "2026-08-15",
+      "quote": "Once you cancel your plan, the subscription will only cancel at the end of the current billing cycle, so you can still create videos until the end of your subscription!",
+      "platform": "help.heygen.com (vendor help-center article -- self-interested; captured 2026-08-15)",
+      "target_slug": "/tools/heygen",
+      "collected_at": "2026-08-15",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "heygen-review-2026-08-15",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "HeyGen",
+        "aspect": "cancellation timing and the pause option's credit-forfeiture tradeoff",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-08-15"
+      },
+      "honesty_notes": [
+        "The credit-forfeiture-on-pause detail is a real, checkable tradeoff worth surfacing next to the friendlier 'you keep access until the cycle ends' framing -- pausing is not a free hold.",
+        "Mobile subscribers (Apple/Google) can only cancel through their device's app-store settings, not through this in-app flow."
+      ]
+    },
+    {
+      "id": "EV-heygen-review-13",
+      "claim": "HeyGen's help center states that payments are 'generally non-refundable, except in specific cases where required by law,' with HeyGen-direct and Google Play purchases eligible for a refund request within 15 days and Apple App Store purchases within 14 days, reviewed case-by-case and less likely to be granted if a significant amount of credits has already been used.",
+      "source_url": "https://help.heygen.com/en/articles/8304807-refund-process-and-policy",
+      "source_date": "2026-08-15",
+      "quote": "payments made to HeyGen are generally non-refundable, except in specific cases where required by law. ... Refund eligibility depends on where the purchase was made: HeyGen and Google Play purchases may be refunded within 15 days, while Apple App Store purchases may be refunded within 14 days. ... refunds for purchases made through HeyGen are reviewed on a case-by-case basis",
+      "platform": "help.heygen.com (vendor help-center article -- self-interested; captured 2026-08-15)",
+      "target_slug": "/tools/heygen",
+      "collected_at": "2026-08-15",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "heygen-review-2026-08-15",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "HeyGen",
+        "aspect": "refund eligibility windows and case-by-case discretion",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-08-15"
+      },
+      "requoted_at": "2026-09-22",
+      "requote_result": "found",
+      "honesty_notes": [
+        "Refund requests are filed via live chat or support@heygen.com with account email and supporting detail -- a real, actionable process, not a dead end, though discretionary rather than guaranteed.",
+        "REQUOTE PASS 2026-09-22 (gate B3 response, '15-day request window'): re-fetched this exact URL today. Confirmed verbatim: 'HeyGen and Google Play purchases may be refunded within 15 days, while Apple App Store purchases may be refunded within 14 days' -- the 15-day figure is HeyGen-direct/Google-Play only; Apple purchases get 14 days, not 15. Quote field widened above; do not state a single unqualified '15-day window' without the Apple 14-day carve-out.",
+        "GATE N6 TRIM 2026-09-22: re-fetched this exact URL a second time today; also confirmed the page's trailing refund-eligibility clause now reads '...has already been created' rather than '...has already been used' (page's own wording drifted since the 08-15 capture). Trimmed the `quote` field to 58 words -- kept the non-refundable-by-default sentence, the full 15-day-HeyGen/Google-Play-vs-14-day-Apple sentence, and the case-by-case-review clause verbatim; dropped the trailing 'may not be granted if a significant amount of credits has already been [used/created]' clause (whose exact wording is itself unstable across captures) to stay under the 60-word cap rather than register a phrase the source itself is inconsistent about."
+      ]
+    },
+    {
+      "id": "EV-heygen-review-14",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-31",
+          "source_url": "https://www.liveavatar.com/pricing",
+          "claim": "LiveAvatar pricing page read 2026-10-31: SUPERSEDES the $19/mo Starter with 200 credits. Lists Free $0 with 10 credits/mo, a $99 tier with 1,100 credits/mo, a $475 tier with 6,000 credits/mo, and custom Enterprise. No $19 tier on this page.",
+          "quote": "10 credits / mo ... ### $99 ... 1,100 credits / mo ... ### $475 ... 6,000 credits / mo"
+        }
+      ],
+      "claim": "HeyGen Live (branded LiveAvatar) is a separately-priced real-time conversational-avatar product on its own subscription ladder, not covered by the core HeyGen credit pool: a $19/month Starter tier provides 200 credits, with a stated max session duration of 5 minutes and unlimited concurrent sessions (billed per minute streamed).",
+      "source_url": "https://help.heygen.com/en/articles/10035615-how-to-get-started-with-liveavatar",
+      "source_date": "2026-08-15",
+      "quote": "a lifelike avatar that responds in real-time, bringing a whole new level of interactivity to virtual conversations. ... For the price of $19/month, you will receive 200 LiveAvatar (LA) Credits. Max session duration: 5 minutes Unlimited concurrent sessions — you pay for minutes streamed",
+      "platform": "help.heygen.com (vendor help-center article -- self-interested; captured 2026-08-15)",
+      "target_slug": "/tools/heygen",
+      "collected_at": "2026-08-15",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "heygen-review-2026-08-15",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "HeyGen",
+        "aspect": "HeyGen Live/LiveAvatar real-time avatar product, pricing separate from core plans",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Starter $19/mo, 200 credits (re-verified 2026-09-22, see requote note -- was 150 credits in an earlier phase's search-summary, not this shard's own original capture)",
+        "item_date": "2026-08-15"
+      },
+      "requoted_at": "2026-09-22",
+      "requote_result": "not found as stated ($150-credit figure) -- live page now states 200 credits for $19/month",
+      "honesty_notes": [
+        "LiveAvatar runs on its own login (app.liveavatar.com) though it can share HeyGen credentials -- worth flagging as a genuinely separate product line rather than a feature bundled into Creator/Pro/Business, since a reader budgeting off the main pricing page would not see this cost.",
+        "Higher LiveAvatar tiers run up to $475/month (Business, 5,000 credits) and a custom Enterprise tier; the free plan offers a short trial (5-10 minutes depending on mode).",
+        "REQUOTE PASS 2026-09-22 (gate B3 response, '$19 monthly for 150 credits'): re-fetched this exact URL today. The page currently states '$19/month, you will receive 200 LiveAvatar (LA) Credits' -- NOT 150 credits. This entry's own original capture (2026-08-15) never stated a specific credit count in its quote field either (only the generic marketing sentence was quoted); the '150 credits' number in the draft traces to claim-field text this shard did not itself verbatim-source at the time. Whether this is a genuine vendor price change since 08-15 or a correction of an unsourced figure could not be determined this run -- either way, 150 credits is NOT on the live page today. Use 200 credits/$19/month going forward and do not state 150."
+      ]
+    },
+    {
+      "id": "EV-heygen-review-15",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-31",
+          "source_url": "https://help.heygen.com/en/articles/10060327-heygen-api-pricing-explained",
+          "claim": "API help article re-read 2026-10-31 (page states last updated October 28, 2026): Avatar III Studio Avatar $0.99/min, Avatar IV Studio Avatar or Digital Twin $4.83/min, Precision Lip Sync translation $1.50/min all unchanged vs the prior read. Also listed: Avatar V Digital Twin $7.20/min, Avatar IV Photo Avatar $2.31/min, Speed Lip Sync $0.81/min, Speed audio only $0.57/min. No free API credits since Feb 2026; pay-as-you-go credits expire after 12 months.",
+          "quote": "Digital Twin$7.20 144 ... Photo Avatar$2.31 46 ... Digital Twin$4.83 97 ... Studio Avatar$4.83 97 ... Studio Avatar$0.99 20 ... Precision — Lip Sync$1.50 30 ... the pay-as-you-go credits expire after 12 months ... HeyGen does not offer free API credits starting Feb 2026. ... Last updated on October 28, 2026."
+        }
+      ],
+      "claim": "HeyGen's API prices pay-as-you-go through a per-avatar-engine rate table, not a single flat per-minute figure: Avatar III engine Studio Avatar costs $0.99/minute, Avatar IV engine Studio Avatar/Digital Twin costs $4.83/minute, and Precision Lip Sync video translation costs $1.50/minute; HeyGen's help center states plainly that free API credits are no longer offered as of February 2026, and PAYG credits now expire after 12 months versus 30 days under the older Pro/Scale API plans. Page itself states it was last updated September 16, 2026.",
+      "source_url": "https://help.heygen.com/en/articles/10060327-heygen-api-pricing-explained",
+      "source_date": "2026-04-21",
+      "quote": "Avatar IV engine ... Digital Twin $4.83 97 Studio Avatar $4.83 97 ... Avatar III engine ... Studio Avatar $0.99 20 ... Precision — Lip Sync $1.50 30 ... the pay-as-you-go credits expire after 12 months. ... HeyGen does not offer free API credits starting Feb 2026. ... *Last updated on September 16, 2026.*",
+      "platform": "help.heygen.com (vendor help-center article -- self-interested; page's own stated update date 2026-04-21; captured 2026-08-15) [2026-09-22 re-capture: page footer now reads 'Last updated on September 16, 2026'; the 2026-04-21 date applied to the 2026-08-15 capture]",
+      "requoted_at": "2026-09-22",
+      "requote_result": "found: per-engine table (restructured; page footer 'Last updated on September 16, 2026')",
+      "target_slug": "/tools/heygen",
+      "collected_at": "2026-08-15",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "heygen-review-2026-08-15",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "HeyGen",
+        "aspect": "API PAYG pricing model, no-free-credits-since-Feb-2026 confirmation, legacy Pro/Scale plan status",
+        "stance": "n/a",
+        "plan_tier_if_stated": "PAYG (current); legacy Pro/Scale (deprecated, existing subscribers only)",
+        "item_date": "2026-04-21"
+      },
+      "honesty_notes": [
+        "CONFIRMS the specific 'no free API credits since Feb 2026' claim flagged for verification in Phase 2 planning, in the vendor's own words.",
+        "Does NOT confirm the specific legacy '$0.99/credit Pro, $0.50/credit Scale' dollar figures also flagged in planning -- this help article confirms Pro/Scale existed and are being phased out (existing subscribers can stay on them but cannot switch back once canceled), but the exact historical per-credit dollar amounts could not be independently re-verified via direct fetch this run; register the model-transition fact, not the specific legacy price.",
+        "Video Agent (prompted one-shot video generation) is separately priced at $2/minute on the API, distinct from the Avatar IV rates ($4.83/min studio avatar or digital twin as of the 2026-09-16 table; $4/min at the 2026-08-15 capture).",
+        "REQUOTE PASS 2026-09-22 (gate B3 response, '$1/min standard' and '$2/min translation'): re-fetched this exact URL today. The page's own footer now reads 'Last updated on September 16, 2026' -- the API pricing model has been restructured since this entry's 2026-08-15 capture into a per-avatar-engine table with NO flat '$1/min' or '$2/min' figures anywhere. Current verbatim figures: Avatar III engine -- Studio Avatar $0.99/min (20 credits), Photo Avatar $0.99/min (20 credits), Digital Twin $0.60/min (12 credits). Avatar IV engine -- Photo Avatar $2.31/min (46 credits), Digital Twin $4.83/min (97 credits), Studio Avatar $4.83/min (97 credits). Avatar V engine -- Digital Twin $7.20/min (144 credits, NEW engine tier not present in the 08-15 capture at all). Video Translation -- Speed/Audio-only $0.57/min, Speed/Lip-Sync $0.81/min, Precision/Lip-Sync $1.50/min. None of these equal $1 or $2 flat. Do not state '$1 per minute standard' or '$2 per minute for translation' on the vs-page -- both are stale figures superseded by this per-engine table. The 'no free API credits since Feb 2026' and the 30-day-legacy/12-month-PAYG credit-expiry facts in the quote field above ARE still confirmed verbatim on the current page and remain safe to cite.",
+        "ORCHESTRATOR REQUOTE 2026-09-22: orchestrator independently re-fetched the raw HTML (curl) and appended the verbatim string(s) above to `quote` after confirming them on the live page.",
+        "GATE N6 TRIM 2026-09-22: re-fetched this exact URL a second time today. The full per-engine table plus the free-credits and expiry sentences ran to well over 60 words assembled together; trimmed the `quote` field to the 5 figures the gate specifically named (Avatar III Studio $0.99, Avatar IV Studio/Digital Twin $4.83, Precision Lip Sync $1.50, the 'no free API credits since Feb 2026' sentence, the 12-month PAYG-expiry clause, and the 'Last updated on September 16, 2026' footer) -- 47 words total, all individually re-verified verbatim on today's fetch. The claim field above was also rewritten to state the per-engine-table structure explicitly rather than the retired flat '$1/$4/$2' framing, matching the corrected picture from the earlier requote passes."
+      ]
+    },
+    {
+      "id": "EV-heygen-review-16",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-31",
+          "source_url": "https://help.heygen.com/en/articles/15125761-heygen-credit-based-pricing-plans-subscriptions-explained",
+          "claim": "Help article re-read 2026-10-31: pooled Business credits, Business-only credit blocks and Creator/Pro no-pack rules unchanged.",
+          "quote": "Creator includes 600 credits per month for $29/month. ... Pro starts at 1,000 credits per month for $49/month ... Business includes 1,500 credits per month for $149/month for the first seat, with additional seats available for $20 per seat/month. ... Purchasing additional seats does not increase your credits. The credit pool is shared between all members of the space. ... Extra credits cost $0.05 per credit and are purchased in blocks of 100 credits for $5. ... Creator does not support one-time credit purchases. ... Pro does not use one-time credit packs"
+        }
+      ],
+      "claim": "HeyGen's help center states explicitly that Business-plan credits are pooled, not per-seat: purchasing additional seats adds people to a workspace, not additional generation capacity, since 'the credit pool is shared between all members of the space' -- directly supporting this page's framing that Business's $20/seat pricing buys collaborators, not more video output. The same help center states one-time/extra credit purchases are Business-only: Creator 'does not support one-time credit purchases' and Pro 'does not use one-time credit packs' (Pro users instead upgrade to a higher Pro tier for more credits); only Business can buy extra credits at $0.05/credit in 100-credit blocks.",
+      "source_url": "https://help.heygen.com/en/articles/15125761-heygen-credit-based-pricing-plans-explained",
+      "source_date": "2026-08-15",
+      "quote": "Purchasing additional seats does not increase your credits. The credit pool is shared between all members of the space. Extra credits cost $0.05 per credit and are purchased in blocks of 100 credits for $5. ... Can I buy more credits on Creator? No. Creator does not support one-time credit purchases. Pro does not use one-time credit packs",
+      "platform": "help.heygen.com (vendor help-center article -- self-interested; captured 2026-08-15)",
+      "target_slug": "/tools/heygen",
+      "collected_at": "2026-08-15",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "heygen-review-2026-08-15",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "HeyGen",
+        "aspect": "Business-plan credit pooling across seats (seats add people, not capacity)",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Business $149/mo + $20/seat, 1,500 credits shared",
+        "item_date": "2026-08-15"
+      },
+      "requoted_at": "2026-09-22",
+      "requote_result": "found",
+      "honesty_notes": [
+        "The same article notes extra credits beyond the monthly allocation can be purchased in blocks (100 credits for $5, i.e. $0.05/credit) -- a real overage-pricing detail worth surfacing next to the base allocation.",
+        "Also notes a legacy 'unlimited' plan exists for some pre-existing customers, and switching off it to a credit-based plan is a one-way move -- tangential to the Business-seat question but a genuine pricing-history detail.",
+        "REQUOTE PASS 2026-09-22 (gate B3 response, '100 credits for $5'): re-fetched this exact URL today. Confirmed verbatim in multiple places on the page: 'Extra credits cost $0.05 per credit and are purchased in blocks of 100 credits for $5' and 'The minimum purchase is $5 for 100 credits.' This overage pricing is Business-tier only -- the same page states 'Can I buy more credits on Creator? No. Creator does not support one-time credit purchases.' Quote field widened above.",
+        "GATE N1/N6 PASS 2026-09-22: re-fetched this exact URL a second time today specifically for the Creator/Pro one-time-credit question. Confirmed verbatim: 'Can I buy more credits on Creator? No. Creator does not support one-time credit purchases. If you need more credits, you can upgrade to Pro.' and 'Can I buy more credits on Pro? Pro users can get more credits by upgrading to a higher Pro tier. Pro does not use one-time credit packs; instead, you can sel[ect a higher tier]...' and 'Can I buy more credits on Business? Yes. Business users can purchase extra credits for $0.05 per credit.' So: ONLY Business supports one-time/extra credit purchases; Creator and Pro users must upgrade their subscription tier instead. Quote field re-trimmed to 57 words to add the Creator/Pro no-clause while staying under the 60-word cap -- dropped the redundant second 'Business users can purchase extra credits...$5 for 100 credits' restatement since the first 'Extra credits cost $0.05 per credit...' sentence already carries that fact.",
+        "ORCHESTRATOR 2026-09-22 (gate run 3 R3): orchestrator re-fetched the raw HTML and added the rollover and Business top-up sentences verbatim as quote_supplementary."
+      ],
+      "quote_supplementary": [
+        "Monthly subscribers: Unused credits roll over for one additional billing cycle. ... Unused credits accumulate until your annual renewal date. If you cancel your paid plan and move to Free, unused credits do not roll over.",
+        "Can I buy more credits on Business? Yes. Business users can purchase extra credits for $0.05 per credit. The minimum purchase is $5 for 100 credits"
+      ]
+    },
+    {
+      "id": "EV-heygen-review-17",
+      "claim": "HeyGen's own video-translation feature page states support for 175+ languages and dialects for AI dubbing/translation output -- corroborating the '175+ languages' figure found across third-party coverage, verified here directly against the vendor's own page rather than adopted from a secondary source.",
+      "source_url": "https://www.heygen.com/translate",
+      "source_date": "2026-08-15",
+      "quote": "Videolari 175+ dile cevirin (vendor page rendered in Turkish on this fetch; translates to \"Translate videos to 175+ languages\")",
+      "platform": "heygen.com/translate (vendor feature page -- self-interested; captured 2026-08-15)",
+      "target_slug": "/tools/heygen",
+      "collected_at": "2026-08-15",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "heygen-review-2026-08-15",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "HeyGen",
+        "aspect": "175+ supported languages/dialects for dubbing and translation output",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-08-15"
+      },
+      "honesty_notes": [
+        "This specific page rendered in Turkish on fetch (likely locale-detection on the request) rather than English -- the 175+ figure repeats consistently across the page in that language; the number itself matches independent third-party coverage (perso.ai, a rival dubbing vendor's blog, and an unaffiliated Medium post) but this entry relies on the vendor's own page, not those secondary mentions.",
+        "This figure describes OUTPUT/translation-target languages; input/source-language support is narrower (roughly 29 languages per third-party coverage, not independently vendor-verified this run) -- do not conflate the two numbers on the page."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,957 @@
+{
+  "_meta": {
+    "flow_id": "synthesia-review-2026-08-13",
+    "protocol_version": "MEP-1.0",
+    "target_slug": "/tools/synthesia",
+    "target_keyword": "synthesia review",
+    "run_date": "2026-08-13",
+    "collector": "evidence-curator",
+    "page_class": "tools/single-tool review (5-dimension ToolScore verdict: overall/outputQuality/easeOfUse/value/evidenceBase). FIRST single-tool satellite of the AI-video cluster, one persona-branch corporate-ld-buyer(60%)/smb-marketer(35%)/developer-api(5%). EXTENDS the hub sweep (registry-best-ai-video-generators.json) -- reuses EV-best-ai-video-generators-04/05/06/07 BY REFERENCE ONLY (not re-registered under new IDs, per explicit task instruction), then runs a materially DEEPER sweep than the hub for full 5-dimension scoring support: additional dated Capterra reviews, language/avatar-count reconciliation, security/compliance certs, LMS/SCORM + named integrations, the consent-gated personal-avatar flow (described positively as a trust mechanic, never as deepfake/face-swap per the owned border), derived per-finished-minute cost math, the Starter-price vendor-vs-tracker contradiction, cancellation/refund policy, per-seat/minutes-pooling, and uncanny-valley/lip-sync quality-tier honesty. Owned-border held clean throughout: zero deepfake/face-swap/nonconsensual-likeness material searched, fetched, or cited; the Personal/Custom Avatar consent-video step is described as the legitimate opposite of that territory.",
+    "sweep_strategy": "Began by re-fetching the ALREADY-registered Capterra source (capterra.com/p/198045/Enact/reviews/) to mine additional individually-dated reviews beyond the hub's 3 (Tyra O./Jide G./Matias C.) -- surfaced 8 new candidate reviewer-quotes on the first pass and a 9th (James B., a billing/refund complaint) on a targeted second pass, from which 4 were selected for inclusion balancing polarity and thematic non-redundancy (2 positive, 1 mixed/negative on billing, 1 negative on support+moderation). Re-fetched Synthesia's own live pricing page fresh (2026-08-13, 3 days after the hub's 2026-08-10 EV-04 capture) and found the 4-tier ladder unchanged and stable -- used as the dated basis for a NEW derived per-finished-minute cost calculation (Mimo's own arithmetic, not vendor-stated) and to resolve the Starter-price contradiction the planning phase flagged, corroborated by a direct fetch of one specific third-party tracker (fluxnote.io, dated 2026-06-24) that states $22/mo where the vendor states $18/mo. Swept and direct-fetched Synthesia's own primary pages for every vendor-fact gap the brief listed: security-practices (SOC2/ISO42001/GDPR/EU data residency), the ISO 42001 announcement post (which incidentally revealed that ISO 27001 and ISO 27701 are accreditations held by A-LIGN, the AUDITOR, not Synthesia itself -- a likely source of third-party over-claiming, flagged rather than silently adopted), features/avatars (240+ general marketing figure, reconciled against EV-04's already-registered tier-gated counts), features/ai-dubbing (140+ languages), docs.synthesia.io/docs/synthesia-integrations (named LMS/HRIS integrations), a dedicated SCORM-export help article (Enterprise-gated), docs.synthesia.io/docs/personal-avatars plus a personal-avatar help article (live consent-video requirement, identity match, 18+ verification), and three help-center articles on refund policy, cancellation steps, and workspace/seat structure. The Free-tier personal-avatar count could NOT be cleanly resolved this run: one direct fetch of the pricing page suggested '3' for the Basic/Free card, a second, more careful direct fetch of the SAME page could not confirm that figure appears on the Basic card itself (likely a client-rendered-table extraction artifact bleeding Starter's row into Free's), and the one help-center article that tabulates personal-avatar allowances by plan omits Free/Basic entirely, starting at Starter -- registered as an explicit, unresolved reconciliation rather than silently picking a number. For quality-tier honesty (uncanny valley, robotic movement, non-English lip-sync/voice drift), direct-fetched the two freshest, most evidence-dense independent competitor pages already identified by this run's own Phase-1 competitor audit (genmedialab.com, aitoolanalysis.com) -- both show disclosed hands-on-testing methodology (screenshots, exact render times, named authors) rather than bare marketing copy, qualifying them as independent-test sources under MEP's source hierarchy despite likely affiliate monetization (flagged, not excluded). G2 and Trustpilot (both .com and uk. TLD) were directly attempted and both returned HTTP 403 -- consistent with the block documented in every prior Mimo shard since 2026-07-10 -- logged as evidence_gap, NOT registered from search-snippet paraphrase. Reddit was attempted with one dedicated site:reddit.com query and returned zero actual reddit.com URLs (only an unrelated Wikipedia disambiguation page and 9 completely unrelated AWS Marketplace review pages) -- confirms the identical environment-wide block found in the hub's own sweep 3 days earlier; community sentiment for this page routes through Capterra, same as the hub.",
+    "flow_counter": {
+      "identified": 119,
+      "screened": 119,
+      "excluded": 100,
+      "excluded_by_reason": {
+        "no-methodology-affiliate": 30,
+        "duplicate": 46,
+        "off-topic": 15,
+        "unverifiable-this-run": 9
+      },
+      "included_sources": 19,
+      "registry_entries_new": 20,
+      "entries_reused": 4,
+      "counter_note": "identified = 119 distinct candidate URLs/units across 12 documented WebSearch queries (security/compliance, languages, avatar count, LMS/SCORM/integrations, consent-avatar flow, cancel/refund, per-seat/pooling, site:reddit.com, Starter-price $14 probe, G2 rating, Trustpilot rating, site:help.synthesia.io seats) plus 9 individual dated review-units mined from one re-fetched, already-known Capterra page -- a best-effort reconciliation across heavily overlapping result sets (the same ~15 'Synthesia Pricing/Review 2026' content-mill and pricing-tracker domains resurface across nearly every pricing-themed query; several help.synthesia.io articles surfaced twice under different title slugs for the same article ID), consistent with how the hub and every review-satellite shard's own flow counter was reconciled -- not a line-by-line individual audit of all 100 excluded items. Re-verification fetches of already-identified candidates (the security-practices page, the ISO42001 post, the personal-avatars docs, the workspace/credits help articles, the SCORM article, refund/cancel articles, features/avatars page-2 variant, ai-dubbing page, both Trustpilot TLDs, G2 reviews, the Capterra star-rating re-pull) are NOT double-counted in 'identified'. 20 distinct new sources were included, producing 20 NEW registry entries (EV-synthesia-review-01 through -20); the hub's 4 Synthesia entries (EV-best-ai-video-generators-04/05/06/07) are REUSED BY REFERENCE per explicit task instruction and are NOT re-registered under new IDs in this shard."
+    },
+    "coder_agreement_rate": "CURATOR-PROVISIONAL single-pass coding across all 20 new entries (dual-independent coding + resolver pass orchestrated above this run). Stance calls: 11 n/a (vendor-primary pricing/security/integration/policy facts, no sentiment to code), 2 positive (Justin W., David K.), 3 negative (Tony G., James B., the fluxnote.io price-discrepancy entry is n/a not negative), 2 negative-framed independent-test quality-tier findings (genmedialab, aitoolanalysis), 2 reconciliation/derived findings with no single stance (per-minute math, avatar-count reconciliation). FLAGGED FOR RESOLVER: (1) EV-synthesia-review-02 (fluxnote.io Starter-price contradiction) -- a coder could argue this is a no-methodology-affiliate pricing-tracker page that should be excluded outright rather than included-to-document-a-contradiction; currently included on the reasoning that the CLAIM being registered is 'this specific dated page states X', not an adoption of X as Synthesia's real price -- a resolver should confirm this framing holds. (2) EV-synthesia-review-07 (ISO 27701/A-LIGN attribution) -- this is the curator's OWN inferential connection between two facts on one vendor page (A-LIGN's own accreditations vs. Synthesia's stated compliance list), not a claim the page makes explicitly about third-party review sites; a coder could read this as curator editorializing beyond what the source directly supports and ask for softer claim language. (3) EV-synthesia-review-11 (Free-tier personal-avatar count) -- genuinely UNRESOLVED this run (see sweep_strategy); registered as an explicit gap-flag rather than a clean finding, a coder should confirm the page should present this as unresolved rather than omit it entirely. (4) EV-synthesia-review-14 (seat/workspace pooling) -- only a PARTIAL vendor confirmation was found ('limited to one primary user' + 'the minutes do not pool' language was NOT found verbatim on any vendor page fetched this run); a coder could argue this doesn't fully support the persona file's 'minutes do NOT pool across seats' cognitive-conflict hook and the page should hedge further. (5) EV-synthesia-review-20 (James B., 3-star Capterra review) -- coded 'negative' for the specific billing complaint quoted despite being a middling 3-star review, not a 1-star; a coder could prefer 'mixed' as the stance label.",
+    "query_census": [
+      {
+        "q": "DIRECT: WebFetch https://www.capterra.com/p/198045/Enact/reviews/ (mine additional dated reviews beyond hub's Tyra O./Jide G./Matias C.)",
+        "candidates": 8,
+        "note": "Frank C. (2024-09-30), Warren G. (2025-08-14), Paul B. (2025-06-12), Khairul S. (2025-06-13), Justin W. (2025-03-12, 5★), Vickey H. (2025-06-06, 5★), David K. (2025-06-17, 4★), Tony G. (2025-06-19, 1★). Aggregate confirmed still 4.6/5, n=314, matching the hub's capture. Justin W., David K., Tony G. direct-fetched/confirmed -> INCLUDED (EV-17, EV-18, EV-19)."
+      },
+      {
+        "q": "DIRECT: WebFetch (2nd pass) https://www.capterra.com/p/198045/Enact/reviews/ -- targeted re-pull for exact star ratings on the 4 unrated candidates + any billing/refund-specific review",
+        "candidates": 1,
+        "note": "Star ratings for Frank C./Warren G./Paul B./Khairul S. could not be extracted this run (not registered without a confirmed rating). Surfaced ONE new reviewer not seen on the first pass: James B. (President, Sports, 2025-03-06, 3 stars, billing/refund complaint) -> INCLUDED (EV-20)."
+      },
+      {
+        "q": "DIRECT: WebFetch https://www.synthesia.io/pricing (fresh re-verification, 3 days after hub's EV-04 capture)",
+        "candidates": 0,
+        "note": "Known URL, re-verification not new discovery. Confirmed ladder unchanged and stable -> INCLUDED as fresh dated capture (EV-01), used as basis for EV-03's derived math. Surfaced an internal extraction inconsistency on Free-tier personal-avatar count (see sweep_strategy) -- triggered EV-11's reconciliation entry and a follow-up targeted re-fetch."
+      },
+      {
+        "q": "DIRECT: WebFetch (2nd pass) https://www.synthesia.io/pricing -- targeted re-check of Basic/Free card's personal-avatar line specifically",
+        "candidates": 0,
+        "note": "Verification/clarification fetch, not new discovery. Result CONTRADICTED the first pass (card-level check found no personal-avatar line on Basic at all, and mis-stated Basic's stock-avatar figure as '125+' where the first pass and EV-04 both say 9) -- confirms the marketing pricing page is unreliable for this one specific figure on repeated client-rendered fetches; folded into EV-11's honesty_notes as an explicit unresolved flag."
+      },
+      {
+        "q": "WebSearch: Synthesia security compliance SOC 2 Type II ISO 42001 ISO 27701 GDPR",
+        "candidates": 8,
+        "note": "a2e.ai/m/synthesia-ai (no-methodology-affiliate), synthesia.io/post/synthesia-world-first-iso-42001-compliant-ai-video-company (NEW, direct-fetched -> INCLUDED EV-07), synthesia.io/legal/security-practices (NEW, direct-fetched -> INCLUDED EV-06), a-lign.com/resources/synthesia-testimonial-video + a-lign.com/resources/a-lign-issues-first-iso-42001-certification-to-synthesia + a-lign.com/resources/case-study-synthesia (3x auditor's own promotional case-study pages, not independently fetched, no-methodology-affiliate), businesswire.com/news/... (press-release syndication of the same ISO42001 announcement, duplicate)."
+      },
+      {
+        "q": "WebSearch: Synthesia 140 languages accents site:synthesia.io",
+        "candidates": 10,
+        "note": "synthesia.io/features/video-translator (dup topic), synthesia.io/features/ai-dubbing (NEW, direct-fetched -> INCLUDED EV-04), help.synthesia.io/.../7194908 (voice-selection how-to, not a count source), synthesia.io/tools/translate-youtube-video (dup topic), synthesia.io/features/languages ('160+ languages' headline seen only in a search-result title, NOT independently reproduced by a direct fetch this run -- flagged as an unreconciled variant in EV-04's claim, not adopted), synthesia.io/features/ai-voice-generator/british-english + /german (sub-pages, dup topic), en.wikipedia.org/wiki/Synthesia_(video_game) (off-topic brand collision -- the unrelated piano app), synthesia.io/features/ai-voice-generator (dup topic), help.synthesia.io/.../6341860 (language-selection how-to, not a count source)."
+      },
+      {
+        "q": "WebSearch: Synthesia \"230\" stock avatars library",
+        "candidates": 9,
+        "note": "creatify.ai/review/synthesia-ai (no-methodology-affiliate), synthesia.io/features/avatars (NEW, direct-fetched -> INCLUDED EV-05, states 240+ not 230+), docs.synthesia.io/docs/synthesia-avatars + docs.synthesia.io/reference/avatars (API/docs pages, duplicate topic), help.synthesia.io/.../6341418 (appeared twice under different titles, duplicate), pexo.ai/blog/synthesia-tutorial-9367 (no-methodology-affiliate), synthesia.io/post/synthesia-new-avatars-dont-just-talk-they-take-action (product-update blog, duplicate topic), synthesia.io/features/avatars?c68b9e18_page=2 (the specific '230+' page-title variant -- direct-fetched this run and found to now serve identical '240+' content, duplicate/resolved)."
+      },
+      {
+        "q": "WebSearch: Synthesia LMS SCORM export Workday Docebo TalentLMS Cornerstone integration",
+        "candidates": 9,
+        "note": "lmspedia.org (off-topic general LMS listicle, no Synthesia specifics), docs.synthesia.io/docs/synthesia-integrations (NEW, direct-fetched -> INCLUDED EV-08), elucidat.com/integrations (off-topic, different vendor's own integrations page), ai-cmo.net/tools/synthesia-content (no-methodology-affiliate), traineryxchange.com/blogs/... (off-topic, different product), talentlms.com/integrations (TalentLMS's own generic integrations page, duplicate/less specific than docs.synthesia.io), docs.synthesia.io/docs/talentlms (duplicate, folded into EV-08), help.synthesia.io/.../9771805 (NEW, direct-fetched -> INCLUDED EV-09), synthesia.noticeable.news/publications/scorm-videos-ready-for-your-lms (vendor changelog, duplicate confirmation of EV-09)."
+      },
+      {
+        "q": "WebSearch: Synthesia personal avatar consent video how it works",
+        "candidates": 8,
+        "note": "docs.synthesia.io/docs/personal-avatars (NEW, direct-fetched -> INCLUDED EV-10), synthesia.io/features/avatars (dup, already EV-05's source), synthesia.io/features/custom-avatar (duplicate topic, not separately fetched), help.synthesia.io/.../9453224 (appeared under 2 different title slugs -- 'How do I create my Personal Avatar?' and a video-specific variant; the former direct-fetched -> INCLUDED EV-11), help.synthesia.io/.../10371261 (avatar-request workflow, duplicate/tangential), help.synthesia.io/.../13603121 (create-from-photo, duplicate/tangential)."
+      },
+      {
+        "q": "WebSearch: Synthesia cancel subscription refund policy",
+        "candidates": 10,
+        "note": "synthesys.io/ai-refund-policy (off-topic brand collision -- a DIFFERENT company, 'Synthesys' not 'Synthesia'), help.synthesia.io/.../9616889 collection page (index, not an individual answer, duplicate), tekpon.com/software/synthesia/pricing (no-methodology-affiliate), help.synthesia.io/.../9616889-payments (duplicate collection), help.synthesia.io/.../9460241 (NEW, direct-fetched -> INCLUDED EV-12), help.synthesia.io/.../6341909 (general billing-management overview, duplicate/less specific), help.synthesia.io/.../9414530 (NEW, direct-fetched -> INCLUDED EV-13), help.synthesia.io/.../3481725 collection page (index, duplicate), synthesia.io/legal/customer-terms-of-service (ToS root document, duplicate of the more specific EV-12 refund clause), blog.seesubs.com/how-to-cancel-synthesia-subscription (no-methodology-affiliate, third-party how-to mill)."
+      },
+      {
+        "q": "WebSearch: Synthesia per seat billing minutes pool team workspace editor seat",
+        "candidates": 9,
+        "note": "layer3labs.io/guides/synthesia-pricing, arcade.software/post/synthesia-pricing, usevelo.ai/blog/synthesia-pricing, tekpon.com (dup), synthesia.io/pricing (dup, known), getpulsesignal.com/pricing/synthesia, creatorstackclub.com/software/synthesia/pricing, checkthat.ai/brands/synthesia/pricing, toolcolumn.com/pricing/synthesia-pricing -- ALL no-methodology-affiliate pricing-tracker pages; none individually fetched since none disclose a testing/verification method for the specific per-seat-pooling claim. Triggered the follow-up site:help.synthesia.io query instead of registering any of these directly."
+      },
+      {
+        "q": "WebSearch: site:help.synthesia.io seats minutes workspace team plan",
+        "candidates": 10,
+        "note": "help.synthesia.io/.../15972650 (pricing-plans overview, duplicate of EV-01's source), help.synthesia.io/.../9859089 (NEW, direct-fetched -> INCLUDED EV-14), help.synthesia.io/.../11825466 (Enterprise-only credits, tangential/not self-serve-relevant), help.synthesia.io/.../11972627 (appeared under 2 slugs; direct-fetched but yielded no seat-pooling-specific statement -- folded into EV-14's honesty_notes as an attempted-but-inconclusive source, not separately registered), help.synthesia.io/.../8238020 (create-workspace how-to, duplicate/tangential), en.wikipedia.org/wiki/Synthesia_(company) (dup, already-known entity page), help.synthesia.io/.../9439592 + /7183294 + /8259638 (guest-conversion, invite-users, workspace-settings mechanics -- tangential, not fetched)."
+      },
+      {
+        "q": "WebSearch: site:reddit.com synthesia review",
+        "candidates": 10,
+        "note": "en.wikipedia.org/wiki/Synthesia_(video_game) (off-topic brand collision) + 9 distinct aws.amazon.com/marketplace/reviews/reviews-list/prodview-4gualii44yjze?page=N paginated URLs (off-topic, a completely unrelated AWS Marketplace product) -- ZERO actual reddit.com URLs surfaced despite the site: operator, matching the identical block the hub found for this exact tool 3 days earlier and every Mimo shard since 2026-07-10."
+      },
+      {
+        "q": "WebSearch: Synthesia Starter plan price $14 pricing 2026",
+        "candidates": 8,
+        "note": "magichour.ai/blog/synthesia-pricing-2026, arcade.software (dup), resource.digen.ai/synthesia-ai-cost-per-month-2026, g2.com/products/synthesia/pricing, usevelo.ai (dup), layer3labs.io (dup), knowlify.com/articles/synthesia-pricing -- all no-methodology-affiliate pricing trackers, not individually fetched. fluxnote.io/guides/synthesia-pricing-2026 (NEW, direct-fetched -> INCLUDED EV-02, states $22/mo not $14 or $18 -- a third contradictory figure, not the one the search query anchored on, itself corroborating the underlying finding that trackers disagree)."
+      },
+      {
+        "q": "WebSearch: Synthesia G2 reviews rating 2729",
+        "candidates": 9,
+        "note": "g2.com/sellers/synthesia?survey_responses_page=9 (2,376 reviews per its own title), g2.com/sellers/synthesia (2,375 reviews per its own title -- a DIFFERENT count than the 2,729 figure the task's own hint cited, itself an unreconciled discrepancy), vidmetoo.com/synthesia-review (no-methodology-affiliate), g2.com/products/synthesia/features (feature list, not ratings), g2.com/compare/heygen-vs-synthesia (comparison tool, off-topic for a rating figure), synthesia.io/reviews (vendor's own curated-quotes page, self-selected testimonials -- self-interested, not fetched as a rating source), g2.com/products/synthesia/video-reviews (video-testimonial page, not a rating source), linkedin.com/pulse/why-i-reviewed-synthesiaio-g2com-valentin-furcoi (single-author opinion post, no-methodology-affiliate), g2.com/products/synthesia/reviews?qs=pros-and-cons (same domain-wide block). DIRECT WebFetch of g2.com/products/synthesia/reviews attempted -> HTTP 403, unverifiable-this-run. NOT registered -- see evidence_gaps."
+      },
+      {
+        "q": "WebSearch: Synthesia Trustpilot reviews rating",
+        "candidates": 10,
+        "note": "speechify.com/blog/synthesia-io-trustpilot-reviews (a SECONDARY paraphrase of Trustpilot content, explicitly not usable as a primary Trustpilot source per this run's own instructions -- no-methodology-affiliate), uk.trustpilot.com/review/synthesia.io?page=5, trustpilot.com/review/synthesia.io (base + ?page=2/3/4/10 pagination variants, 5 distinct URLs total, one domain-wide 403 block), synthesia.io/reviews (dup, already excluded above), trustpilot.com/review/synthesys.io (off-topic brand collision, different company). DIRECT WebFetch of both trustpilot.com/review/synthesia.io AND uk.trustpilot.com/review/synthesia.io attempted -> both HTTP 403, unverifiable-this-run. NOT registered -- see evidence_gaps."
+      },
+      {
+        "q": "DIRECT: WebFetch https://security.synthesia.io (trust-center portal linked from the security-practices page)",
+        "candidates": 1,
+        "note": "New URL, pattern-derived from EV-06's own source page rather than itself returned by a search query. Direct-fetched -> returned only the bare page title 'Synthesia Trust Center' with no extractable certification badges/dates (JS-rendered trust-portal content, same client-rendering limitation documented for murf.ai/pricing in a prior shard) -- unverifiable-this-run."
+      },
+      {
+        "q": "DIRECT: WebFetch https://www.synthesia.io/features/avatars?c68b9e18_page=2, https://www.synthesia.io/features/ai-dubbing, https://help.synthesia.io/en/articles/9453224-how-do-i-create-my-personal-avatar, https://www.synthesia.io/post/synthesia-world-first-iso-42001-compliant-ai-video-company (2nd pass for exact A-LIGN quote), https://help.synthesia.io/en/articles/9859089-what-is-a-synthesia-workspace, https://help.synthesia.io/en/articles/11972627-what-are-credits-and-how-do-they-work-on-self-serve-plans",
+        "candidates": 0,
+        "note": "Verification/precision-quote fetches of already-identified candidates from the queries above -- not counted again in 'identified'."
+      }
+    ],
+    "reddit_access_note": "Reddit was structurally unreachable this run: one dedicated site:reddit.com-targeted WebSearch query surfaced ZERO actual reddit.com URLs across 10 candidate links (only an unrelated Wikipedia disambiguation page for the piano-learning app and 9 completely unrelated AWS Marketplace product-review pagination URLs) -- the identical block the hub documented for this exact tool 3 days earlier (2026-08-10) and every Mimo shard since 2026-07-10. Per this run's own instructions, this single confirming query was treated as sufficient re-documentation of an already-established environment-wide block rather than repeating the hub's full 4-query sweep. CONSEQUENCE: community sentiment for this review routes through Capterra (now 9 individually dated reviews on file across this shard + the hub: 3 reused + 4 newly included here, spanning 2025-03-06 to 2026-05-19, both polarities), plus two disclosed-methodology independent third-party tests (genmedialab.com, aitoolanalysis.com) for quality-tier honesty. This is disclosed in the page's limitations paragraph, same as the hub.",
+    "astroturf_note": "The astroturf screen (protocol 3.1: templated look-alike threads, recurring fresh personas, all funneling to one vendor) was applied to every low-trust 'Synthesia Pricing/Review 2026' aggregator-mill candidate surfaced this run (magichour.ai, resource.digen.ai, knowlify.com, layer3labs.io, arcade.software, usevelo.ai, getpulsesignal.com, creatorstackclub.com, checkthat.ai, toolcolumn.com, tekpon.com, vidmetoo.com, creatify.ai, ai-cmo.net, pexo.ai, blog.seesubs.com, and others). No templated-persona-network pattern was detected -- these read as independently-run SEO content-mill/pricing-tracker sites competing for the same commercial-investigation keyword, not a coordinated persona network. The 8 individually-dated, individually-named Capterra reviewers mined this run (different job titles, different industries, different dates spanning 14 months, both polarities) show no templated-language or funneling pattern. The MikeAppsReviewer-network canonical case pattern was not observed anywhere in this sweep. Zero astroturf-pattern sources were registered or cited.",
+    "exclusion_log_notes": [
+      "no-methodology-affiliate (30): dominant category -- the recurring 'Synthesia Pricing/Review 2026' content-mill and pricing-tracker domains that resurface across nearly every pricing- and rating-themed query, plus single-author opinion/directory pages (a2e.ai, creatify.ai, pexo.ai, ai-cmo.net, blog.seesubs.com, vidmetoo.com, magichour.ai, resource.digen.ai, knowlify.com, linkedin.com/pulse single post) and the 3 A-LIGN promotional case-study/testimonial pages (self-interested auditor marketing content, not raw audit data). fluxnote.io is the one deliberate exception -- included NOT as a trusted pricing source but specifically to document the vendor-vs-tracker contradiction pattern (see EV-02's honesty_notes and the coder_agreement_rate flag).",
+      "duplicate (46): repeat domain/path hits and near-duplicate help.synthesia.io articles surfacing under 2 different title slugs for the same underlying content (personal-avatars, credits/self-serve, billing collections), self-referencing synthesia.io/pricing and synthesia.io/features/avatars appearing across multiple queries, third-party trackers (tekpon.com, layer3labs.io x3, arcade.software x2, usevelo.ai x2, checkthat.ai) repeating across every pricing-themed query, and several on-topic-but-redundant vendor pages (docs.synthesia.io/docs/synthesia-avatars, docs.synthesia.io/reference/avatars, synthesia.io/features/custom-avatar, synthesia.io/legal/customer-terms-of-service, help.synthesia.io collection/index pages, workspace-mechanics articles) that covered ground already sourced by a better/more specific already-included page.",
+      "off-topic (15): en.wikipedia.org/wiki/Synthesia_(video_game) (the unrelated piano-learning app, surfaced twice -- brand collision, consistent with the disambiguation flag in Phase 2's semantic file), synthesys.io and trustpilot.com/review/synthesys.io (a DIFFERENT company entirely, 'Synthesys' not 'Synthesia' -- a second, distinct brand collision), 9 aws.amazon.com/marketplace/reviews/reviews-list/prodview-4gualii44yjze pagination URLs (a completely unrelated AWS Marketplace product, surfaced only because the Reddit site: query returned junk), g2.com/compare/heygen-vs-synthesia and g2.com/products/synthesia/features (comparison/feature pages, not rating or review content).",
+      "unverifiable-this-run (9): security.synthesia.io (JS-rendered trust-center portal, no extractable badge/date content on direct fetch), g2.com/products/synthesia/reviews (HTTP 403, representative of the g2.com/products/synthesia/* and g2.com/sellers/synthesia* family), trustpilot.com/review/synthesia.io (HTTP 403, representative of its own 4 pagination variants seen: ?page=2/3/4/10), uk.trustpilot.com/review/synthesia.io (HTTP 403, separate TLD attempt per this run's own instruction, also blocked).",
+      "OWNED-BORDER held (0 registered): the consent-gated Personal/Custom Avatar sources registered (EV-10, EV-11) concern Synthesia's OWN documented consent-video safeguard for a person creating an avatar of THEMSELVES (or with the represented person's own live, un-uploadable, biometric-checked consent) -- confirmed no candidate source this run touched nonconsensual-likeness, deepfake, or face-swap territory. 'Deepfake' and 'face-swap' were never used, searched, or cited anywhere in this sweep, consistent with the semantic file's hard instruction."
+    ],
+    "entries_reused": [
+      "EV-best-ai-video-generators-04 (synthesia.io/pricing, captured 2026-08-10 -- full 4-tier pricing ladder) -- cited by original ID, NOT re-registered, per explicit task instruction. This run's EV-synthesia-review-01 is a fresh, separately-dated (2026-08-13) re-verification of the same page, registered as its own new entry because it is a distinct dated capture, not a duplicate citation.",
+      "EV-best-ai-video-generators-05 (Tyra O., Capterra, 2026-05-19, 5 stars, rollout-speed praise) -- cited by original ID, NOT re-registered.",
+      "EV-best-ai-video-generators-06 (Jide G., Capterra, 2025-09-25, 1 star, moderation-inconsistency complaint) -- cited by original ID, NOT re-registered.",
+      "EV-best-ai-video-generators-07 (Matias C., Capterra, 2025-10-06, 4 stars, brand-consistency praise) -- cited by original ID, NOT re-registered."
+    ],
+    "delta_sweeps": [
+      {
+        "run_label": "hipaa-delta-2026-08-13",
+        "trigger": "Needs-met audit fan_out_gap 'is synthesia hipaa compliant' (Data/seo/phases/synthesia-review/4-needsmet.json: 'Synthesia's own customer terms state it is NOT a HIPAA Business Associate and customers must not submit PHI; some third-party listings claim HIPAA compliance anyway -- the same mislabeling already corrected for ISO 27701. NEEDS a registered EV entry... before inclusion.') -- structurally identical correctable-misattribution pattern to the ISO 27701/A-LIGN catch already registered as EV-synthesia-review-07.",
+        "run_date": "2026-08-13",
+        "collector": "evidence-curator",
+        "protocol_version": "MEP-1.0",
+        "query_census": [
+          {
+            "q": "Synthesia HIPAA Business Associate Protected Health Information terms",
+            "candidates": 8,
+            "note": "quada.org (BAA template PDF), 360training.com, hhs.gov (sample-BAA provisions), signeasy.com, hhs.gov (privacy rule summary), hhs.gov (covered entities/BAs), hhs.gov (security rule summary), privacy.ufl.edu -- ALL generic HIPAA/BAA educational or template-legal resources with zero Synthesia-specific content. 0 included, 8 off-topic."
+          },
+          {
+            "q": "site:synthesia.io HIPAA",
+            "candidates": 8,
+            "note": "synthesia.io/legal/customer-specific-supplement (NEW, direct-fetched via WebFetch + raw curl re-pull -> INCLUDED EV-21). synthesia.io/legal/privacy-policy (on-topic-adjacent but NOT separately fetched -- the operative HIPAA/PHI clause lives in the more specific customer-specific-supplement page; duplicate). synthesia.io/legal/security-practices (duplicate, already registered as EV-synthesia-review-06 in the original sweep -- re-confirmed it does NOT mention HIPAA anywhere). en.wikipedia.org/wiki/Synthesia_(company) + /wiki/Synthesia_(video_game) + /wiki/Synthesia (3x off-topic entity/disambiguation pages, consistent with the original sweep's own brand-collision classification). aws.amazon.com/marketplace/.../prodview-4gualii44yjze?page=231 (off-topic, the same irrelevant AWS Marketplace product already documented as search-junk in the original sweep's Reddit query). apps.apple.com/cl/app/synthesia-veo3-ai-movie-maker/id6743959326 (NEW off-topic brand collision -- an unrelated iOS app sharing the product name)."
+          },
+          {
+            "q": "Synthesia \"HIPAA Compliant\" security profile nudgesecurity",
+            "candidates": 9,
+            "note": "nudgesecurity.com/security-profile/synthesia-io (NEW, direct-fetched via WebFetch + raw curl re-pull, 301-redirects to security-profiles.nudgesecurity.com/app/synthesia-io -> INCLUDED EV-22, confirmed 'HIPAA Compliant' cert-badge in raw HTML). synthesia.io/legal/security-practices (duplicate, already EV-06). security-profiles.nudgesecurity.com/app/synthesys-io (off-topic brand collision -- 'Synthesys', a different company, the same collision family the original sweep documented for trustpilot.com/review/synthesys.io). security-profiles.nudgesecurity.com/app/nudgesecurity-com (off-topic, Nudge Security's own self-profile). security-profiles.nudgesecurity.com/app/ebsynth + /synxis-com + /synchr-com + /synopsys-com (4x off-topic, unrelated companies surfaced only by coincidental 'syn'-substring matching on a templated directory site). security-profiles.nudgesecurity.com/ (off-topic, bare directory root/index, not a specific app profile)."
+          }
+        ],
+        "flow_counter_delta": {
+          "identified": 25,
+          "screened": 25,
+          "excluded": 23,
+          "excluded_by_reason": {
+            "off-topic": 20,
+            "duplicate": 3
+          },
+          "included_sources": 2,
+          "registry_entries_new": 2,
+          "counter_note": "SUPPLEMENTAL delta sweep, not a re-run of the original 119-candidate sweep -- these 25 identified candidates are ADDITIONAL to (not a replacement for) the flow_counter recorded above for the original run. Combined cumulative totals across both runs for this shard: identified 144, screened 144, excluded 123 (no-methodology-affiliate 30, duplicate 49, off-topic 35, unverifiable-this-run 9), included_sources 22, registry_entries_new 22 (EV-synthesia-review-01 through -22), entries_reused 4 (unchanged, hub references)."
+        },
+        "astroturf_note": "nudgesecurity.com / security-profiles.nudgesecurity.com is a real SaaS security-posture-management vendor's templated, auto-populated compliance-directory product -- confirmed by raw HTML showing the identical page structure recurring across totally unrelated apps (ebsynth, synchr-com, synopsys-com, synxis-com) that surfaced only via coincidental 'syn'-substring search collisions. This is NOT a protocol-3.1 astroturf network (no fake personas, no funneling praise/complaint pattern) -- it IS a methodology-undisclosed, auto-populated compliance-badge listing, flagged as a data-quality caveat on EV-22 rather than an astroturf exclusion.",
+        "due_diligence_note": "Direct-fetched the two already-registered independent-test sources (genmedialab.com/reviews/synthesia-review/, EV-15's source; aitoolanalysis.com/synthesia-review/, EV-16's source) specifically to check whether either also repeats a HIPAA-compliant misattribution, which would parallel the ISO 27701 case more tightly (that catch traced to 'one independent competitor teardown'). Neither page mentions HIPAA at all -- the nudgesecurity.com finding is this run's own, freshly-sourced discovery, not corroborated by a second independent third-party source this run. Not registered as a gap (the requested source was found and verified) but disclosed here as a scope-honesty note: this documents ONE live third-party misattribution, not a confirmed pattern across multiple third parties.",
+        "entries_added": [
+          "EV-synthesia-review-21",
+          "EV-synthesia-review-22"
+        ]
+      }
+    ]
+  },
+  "entries": [
+    {
+      "id": "EV-synthesia-review-01",
+      "claim": "Re-fetching Synthesia's live pricing page today (2026-08-13, 3 days after the hub's EV-best-ai-video-generators-04 capture) confirms the same 4-tier structure and figures remain live and unchanged: Free $0/mo (10 min/mo, 9 avatars), Starter $18/mo annual / $29/mo monthly (10 min/mo, 125+ avatars, 3 personal avatars, 1 editor + 3 guests), Creator $64/mo annual / $89/mo monthly (30 min/mo, 180+ avatars, 5 personal avatars), Enterprise custom (unlimited minutes, 240+ avatars, unlimited personal avatars subject to reasonable use).",
+      "source_url": "https://www.synthesia.io/pricing",
+      "source_date": "2026-08-13",
+      "quote": "Starter $29/mo ($18/mo billed yearly)... 125+ Synthesia AI Avatars... 1 editor & 3 guests. Creator $89/mo ($64/mo billed yearly)... 180+ Synthesia AI Avatars. Enterprise: Unlimited video minutes... 240+ stock AI Avatars... Unlimited personal avatars (subject to reasonable consumption and compute).",
+      "platform": "synthesia.io/pricing (vendor pricing page -- self-interested; re-verified 2026-08-13, unchanged from the hub's 2026-08-10 capture EV-best-ai-video-generators-04)",
+      "target_slug": "/tools/synthesia",
+      "collected_at": "2026-08-13",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "synthesia-review-2026-08-13",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Synthesia",
+        "aspect": "pricing-ladder stability re-check, 3 days after first capture",
+        "stance": "n/a",
+        "plan_tier_if_stated": "all 4 tiers, unchanged",
+        "item_date": "2026-08-13"
+      },
+      "honesty_notes": [
+        "Confirms the ladder is stable despite the planning phase's own 'pricing volatility flag' warning -- worth noting positively as a freshness/precision differentiator vs. competitor pages that show approximate or stale figures.",
+        "A second, more targeted re-fetch of this same page (see EV-11) produced an INCONSISTENT reading of the Free tier's personal-avatar line -- flagged separately, not silently resolved here."
+      ],
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-31",
+          "source_url": "https://www.synthesia.io/pricing",
+          "claim": "Pricing page read 2026-10-31: credits replace the minute ladder. Basic $0, 500 credits/month, 10 minutes of Studio video or dubbing, 9 AI avatars, 1 editor, watermark. Starter $19/month ($9 first month) or $14/month billed yearly ($168), 1,250 credits/month on top, 125+ avatars, 3 personal avatars, 1 editor + 3 guests. Pro $89/month ($49 first month) or $59/month billed yearly ($708), 6,000 credits/month on top, 180+ avatars, 5 personal avatars, 1 editor + 5 guests. Enterprise custom: unlimited video minutes, 240+ avatars, unlimited personal avatars. Allowance and credits reset each billing period; annual credits are available upfront.",
+          "quote": "Starter First month for $9 $19$9 first month then $19 per month ... Your plan's monthly allowance and credits reset each billing period. On annual plans the year's credits are available upfront.",
+          "supersedes": "2026-08-13 minute ladder (Starter $29/$18 yearly, 10 min; Creator $89/$64 yearly, 30 min)",
+          "collector": "refresh-2026-10-31 (live r.jina.ai + curl)"
+        },
+        {
+          "recaptured_at": "2026-10-31",
+          "source_url": "https://help.synthesia.io/en/articles/17217419-what-s-changing-in-synthesia-plans-on-october-1-2026",
+          "claim": "Synthesia's own change notice, dated September 29, 2026: plans changed on October 1, 2026; Creator is renamed Pro at the same price; every plan carries 10 minutes of video and 500 credits; included minutes are spent before credits; API video is 160 credits a minute and bulk personalization 180; Pro 2x to 8x add 12,000 to 48,000 extra credits.",
+          "quote": "Your 10 minutes of included video and 3 survey responses are used first. Credits are only used once those run out.",
+          "collector": "refresh-2026-10-31 (live r.jina.ai + curl)"
+        }
+      ]
+    },
+    {
+      "id": "EV-synthesia-review-02",
+      "claim": "A third-party pricing-tracker blog (fluxnote.io, dated 2026-06-24) states Synthesia's Starter plan costs $22/month billed annually -- $4/mo higher than the $18/mo annual figure on Synthesia's own live pricing page (EV-synthesia-review-01) and the hub's EV-04 capture -- directly documenting the tracker-vs-vendor Starter-price contradiction flagged in this page's planning research (other trackers were separately found quoting $14/mo).",
+      "source_url": "https://fluxnote.io/guides/synthesia-pricing-2026",
+      "source_date": "2026-06-24",
+      "quote": "The Starter plan, at $22/month annually, provides 10 minutes of video, 90+ avatars, and no watermark",
+      "platform": "fluxnote.io (third-party pricing-tracker blog -- no disclosed hands-on-testing or price-verification methodology; page's own dateModified 2026-06-24)",
+      "target_slug": "/tools/synthesia",
+      "collected_at": "2026-08-13",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "synthesia-review-2026-08-13",
+      "screening": "included",
+      "label": "research-finding",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "Synthesia",
+        "aspect": "third-party-stated Starter price, conflicting with vendor's own figure",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Starter, $22/mo claimed (tracker) vs $18/mo (vendor)",
+        "item_date": "2026-06-24"
+      },
+      "honesty_notes": [
+        "Registered to document that the contradiction is REAL and datable, not to adopt $22/mo as a competing truth claim -- Mimo's own verified figure is the vendor's $18/mo (EV-synthesia-review-01), stated with a capture date fluxnote.io's own page does not carry next to its price.",
+        "coder_agreement flagged false: whether a no-methodology pricing tracker should be cited at all (even to document a contradiction) vs. excluded outright under no-methodology-affiliate is a genuine judgment call for the resolver."
+      ]
+    },
+    {
+      "id": "EV-synthesia-review-03",
+      "claim": "Dividing Synthesia's own stated monthly price by its own stated monthly minute allowance (both from EV-best-ai-video-generators-04's 2026-08-10 capture, re-confirmed unchanged by EV-synthesia-review-01's 2026-08-13 capture) yields a per-finished-minute cost of $1.80/min (Starter, annual billing) to $2.90/min (Starter, monthly billing), and $2.13/min (Creator, annual billing) to $2.97/min (Creator, monthly billing). Synthesia's own pricing page never states this per-minute figure directly -- this is Mimo's own arithmetic on vendor-stated inputs, not a vendor or third-party claim.",
+      "source_url": "https://www.synthesia.io/pricing",
+      "source_date": "2026-08-13",
+      "quote": "Starter: $18/mo billed yearly ($29/mo monthly)... 10 minutes of video/month. Creator: $64/mo billed yearly ($89/mo monthly)... 30 minutes of video/month.",
+      "platform": "synthesia.io/pricing (vendor pricing page, self-interested -- the per-minute figures themselves are Mimo's own derived calculation on these vendor-stated inputs: $18/10=$1.80, $29/10=$2.90, $64/30=$2.13, $89/30=$2.97)",
+      "target_slug": "/tools/synthesia",
+      "collected_at": "2026-08-13",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "synthesia-review-2026-08-13",
+      "screening": "included",
+      "label": "research-finding",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Synthesia",
+        "aspect": "derived per-finished-minute unit economics, Starter and Creator tiers",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Starter $1.80-$2.90/min; Creator $2.13-$2.97/min",
+        "item_date": "2026-08-13"
+      },
+      "honesty_notes": [
+        "Confirmed zero coverage of this specific calculation across all 3 audited competitor pages in Phase 1's competitor audit (2 of 3 self-admit the gap in their own text) -- this is the page's single strongest sourced-math differentiator.",
+        "Do not present as a 'cheapest per minute' claim against clip-generator tools (Runway/Kling/Veo) without the avatar-minutes-vs-clip-seconds unit-conversion disclosure the semantic file requires."
+      ],
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-31",
+          "source_url": "https://help.synthesia.io/en/articles/11972627-what-are-credits-and-how-do-they-work-on-self-serve-plans",
+          "claim": "Help article (updated 2026-10-28), read 2026-10-31. Mimo's arithmetic on these inputs at about 100 credits a minute: Starter 10 included + 1,750 credits = about 27.5 minutes a month, $14/27.5 = $0.51 and $19/27.5 = $0.69; Pro 10 + 6,500 credits = about 75 minutes, $59/75 = $0.79 and $89/75 = $1.19. Part-used: Starter at only its 10 included minutes $1.40 to $1.90; Pro at 30 minutes $1.97 to $2.97. API on Pro at 160 credits: $708/78,000 x 160 = $1.45, $89/6,500 x 160 = $2.19. Not vendor figures.",
+          "quote": "A typical finished video uses about 100 credits per minute. A video with more on-screen avatar time uses a little more, and a video with less on-screen avatar time uses a little less.",
+          "supersedes": "2026-08-13 derived figures ($1.80-$2.90 Starter, $2.13-$2.97 Creator)",
+          "collector": "refresh-2026-10-31 (live r.jina.ai + curl)"
+        }
+      ]
+    },
+    {
+      "id": "EV-synthesia-review-04",
+      "claim": "Synthesia's own AI-dubbing feature page (captured 2026-08-13) states support for 140+ languages, matching the figure on its separate video-translator page. A related vendor page independently indexed under a '160+ languages & accents' headline was searched for but NOT independently reproduced by a direct fetch this run -- the higher figure is noted, not adopted.",
+      "source_url": "https://www.synthesia.io/features/ai-dubbing",
+      "source_date": "2026-08-13",
+      "quote": "Dub videos into 140+ languages with voice cloning and perfect lip-sync.",
+      "platform": "synthesia.io/features/ai-dubbing (vendor feature page -- self-interested; captured 2026-08-13)",
+      "target_slug": "/tools/synthesia",
+      "collected_at": "2026-08-13",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "synthesia-review-2026-08-13",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Synthesia",
+        "aspect": "language/accent count for AI dubbing (vendor-stated)",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-08-13"
+      },
+      "honesty_notes": [
+        "A separate synthesia.io/features/languages page title indexed by search engines reads '160+ Languages & Accents' -- this run did not directly fetch that specific URL, so the 140-vs-160 variance is flagged, not silently resolved. Writer should use 140+ (the figure this run directly verified) and avoid stating 160+ without a fresh direct capture."
+      ],
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-31",
+          "source_url": "https://www.synthesia.io/pricing",
+          "claim": "Pricing table 2026-10-31: 140+ languages and voices on every plan, but dubbing output languages are 70+ on Basic, Starter and Pro and 140+ on Enterprise. The features/ai-dubbing page now headlines 130+ ('Dub videos into 130+ languages with voice cloning and perfect lip-sync.').",
+          "quote": "Output languages and locales available for translation, including regional variants like Spanish (Mexico) and Portuguese (Brazil). 70+ languages 70+ languages 70+ languages 140+ languages",
+          "supersedes": "2026-08-13 unqualified 140+ dubbing figure",
+          "collector": "refresh-2026-10-31 (live r.jina.ai + curl)"
+        }
+      ]
+    },
+    {
+      "id": "EV-synthesia-review-05",
+      "claim": "Synthesia's general avatar marketing page (captured 2026-08-13, checked at both its base URL and a second search-indexed URL variant) currently states '240+ ready-made AI avatars' -- this NOW matches the Enterprise-tier count already registered in EV-best-ai-video-generators-04 (240+), not the '230+' figure that appeared only in an already-stale search-engine-indexed page title and was not reproduced by direct fetch today. This general marketing figure describes the TOP (Enterprise) tier's full library, not what a Free/Starter/Creator subscriber actually gets (9/125+/180+ respectively, per EV-04).",
+      "source_url": "https://www.synthesia.io/features/avatars",
+      "source_date": "2026-08-13",
+      "quote": "Choose from 240+ ready-made AI avatars with natural gestures and expressions",
+      "platform": "synthesia.io/features/avatars (vendor feature page -- self-interested; captured 2026-08-13, re-checked at a second URL variant with identical result)",
+      "target_slug": "/tools/synthesia",
+      "collected_at": "2026-08-13",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "synthesia-review-2026-08-13",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Synthesia",
+        "aspect": "general-marketing avatar-count reconciled against EV-04's tier-gated counts",
+        "stance": "n/a",
+        "plan_tier_if_stated": "240+ total library (= Enterprise tier ceiling)",
+        "item_date": "2026-08-13"
+      },
+      "honesty_notes": [
+        "Never present '240+ avatars' as what a Free or Starter buyer gets -- always pair with the tier-specific number (9 free / 125+ Starter / 180+ Creator) from EV-04 in the same sentence, per the semantic file's explicit warning."
+      ],
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-31",
+          "source_url": "https://www.synthesia.io/features/avatars",
+          "claim": "Avatar marketing page still states 240+ ready-made avatars on 2026-10-31.",
+          "quote": "pick from 240+ ready-made avatars",
+          "collector": "refresh-2026-10-31 (live r.jina.ai + curl)"
+        }
+      ]
+    },
+    {
+      "id": "EV-synthesia-review-06",
+      "claim": "Synthesia's own security-practices page (captured 2026-08-13; re-verified 2026-09-22; the page itself states it was last updated 2026-02-03) confirms SOC 2 Type II compliance, ISO 42001 compliance, and GDPR compliance, states Synthesia undergoes a periodic ISO 42001, ISO 27001, and SOC 2 Type II audit, and states customer data is stored in EU data centers in Ireland, with AWS Frankfurt as a secondary backup region. No specific certification date is given on this page for any individual certification.",
+      "source_url": "https://www.synthesia.io/legal/security-practices",
+      "source_date": "2026-08-13",
+      "quote": "SOC 2 Type II compliant ISO 42001 compliant GDPR compliant ... Synthesia undergoes a periodic ISO 42001, ISO 27001, and SOC2 Type II audit. ... Customer Data is currently stored within the European Union (EU), in data centers based in Ireland.",
+      "platform": "synthesia.io/legal/security-practices (vendor legal/security page -- self-interested; captured 2026-08-13, page states last updated 2026-02-03)",
+      "target_slug": "/tools/synthesia",
+      "collected_at": "2026-08-13",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "synthesia-review-2026-08-13",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Synthesia",
+        "aspect": "SOC2/ISO42001/GDPR/EU-data-residency compliance (vendor-stated)",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-08-13"
+      },
+      "honesty_notes": [
+        "This page does NOT state ISO 27701 anywhere -- see EV-synthesia-review-07 for the likely source of that recurring third-party claim.",
+        "Present with a 'verified as of 2026-08-13' note per the persona file's explicit instruction -- no competitor page audited in Phase 1 attaches a capture date to its compliance claims.",
+        "GATE N3 WIDEN 2026-09-22: re-fetched this exact URL and also https://www.synthesia.io/security today. The bare nav-badge list 'SOC 2 Type II compliant ISO 42001 compliant GDPR compliant' and the fuller sentence 'Synthesia undergoes a periodic ISO 42001, ISO 27001, and SOC2 Type II audit' are both confirmed verbatim on the live page and now in the quote field above. synthesia.io/security itself (the separate marketing URL, distinct from this page's /legal/security-practices path) redirects to a JS-rendered Vanta trust-center shell with no extractable badge/date content on direct fetch -- unchanged from the original run's finding, still unverifiable-this-run for that specific URL.",
+        "IMPORTANT NUANCE surfaced by this widening: this page's own sentence states Synthesia 'undergoes a periodic ISO 42001, ISO 27001, and SOC2 Type II audit' -- naming ISO 27001 (not 27701) as an audit Synthesia itself undergoes, distinct from EV-synthesia-review-07's finding that ISO 27001/27701/22301 are A-LIGN's (the auditor's) own accreditations. These are not necessarily contradictory (an auditor can be accredited for a standard while separately auditing a client against that same standard), but the page still does NOT claim Synthesia HOLDS ISO 27701 certification anywhere -- only ISO 27001 is named as something Synthesia is audited against. Do not conflate 'Synthesia undergoes an ISO 27001 audit' with 'Synthesia holds ISO 27701 certification' -- they are different standards and this page supports only the former."
+      ],
+      "requoted_at": "2026-09-22",
+      "requote_result": "found (widened with certification sentences from synthesia.io/legal/security-practices, re-fetched 2026-09-22; source_date kept as the original capture)"
+    },
+    {
+      "id": "EV-synthesia-review-07",
+      "claim": "Synthesia's own announcement post about earning ISO 42001 certification (originally published 2024-09-25, audited by A-LIGN) states that A-LIGN itself -- the auditing/certification BODY, not Synthesia -- is accredited for ISO 27001, ISO 27701, and ISO 22301. This is a plausible source for why some third-party review pages (e.g. one independent competitor teardown fetched this same run) describe Synthesia as holding 'four certifications including ISO 27701,' a claim Synthesia's own primary security page (EV-synthesia-review-06, fetched the same day) does not make.",
+      "source_url": "https://www.synthesia.io/post/synthesia-world-first-iso-42001-compliant-ai-video-company",
+      "source_date": "2026-08-13",
+      "quote": "A-LIGN is accredited as a certification body for ISO 27001, ISO 27701, and ISO 22301 and is undergoing the initial accreditation audit for ISO 42001 with ANSI National Accreditation Board (ANAB).",
+      "platform": "synthesia.io/post (vendor blog post -- self-interested; captured 2026-08-13, article originally published 2024-09-25)",
+      "target_slug": "/tools/synthesia",
+      "collected_at": "2026-08-13",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "synthesia-review-2026-08-13",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "Synthesia",
+        "aspect": "ISO 27701 likely misattributed to Synthesia in third-party coverage; actually A-LIGN's own accreditation",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-08-13"
+      },
+      "honesty_notes": [
+        "This is the curator's own inferential connection between two facts on one page -- the page does not explicitly say 'third-party reviewers are wrong about us holding ISO 27701.' Present on the page as an honest reconciliation ('Synthesia's own materials confirm SOC2/ISO42001/GDPR; we could not independently confirm ISO 27701 as Synthesia's own certification, and found a plausible explanation for the confusion') rather than a flat accusation that other reviewers are wrong.",
+        "coder_agreement flagged false pending resolver review of whether this inference is safe to publish as-is."
+      ]
+    },
+    {
+      "id": "EV-synthesia-review-08",
+      "claim": "Synthesia's own integrations documentation (captured 2026-08-13) names direct LMS integrations including Docebo and TalentLMS, plus an HRIS sync integration with Workday ('sync employees into your Learner Portal automatically'). Cornerstone was NOT found as a named Synthesia integration anywhere on this vendor page.",
+      "source_url": "https://docs.synthesia.io/docs/synthesia-integrations",
+      "source_date": "2026-08-13",
+      "quote": "Add dynamic Synthesia videos to Docebo courses for better learner engagement. Enhance TalentLMS courses with AI-generated video content from Synthesia. Connect Workday to Synthesia and sync employees into your Learner Portal automatically.",
+      "platform": "docs.synthesia.io/docs/synthesia-integrations (vendor docs page -- self-interested; captured 2026-08-13)",
+      "target_slug": "/tools/synthesia",
+      "collected_at": "2026-08-13",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "synthesia-review-2026-08-13",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Synthesia",
+        "aspect": "named LMS/HRIS integrations (vendor-stated)",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-08-13"
+      },
+      "honesty_notes": [
+        "Do NOT name Cornerstone as a Synthesia integration on the page -- it was explicitly absent from the vendor's own integrations list this run, despite being one of the 4 platforms the planning brief asked about. Also lists 360Learning, Articulate 360, Coassemble, eloomi, Easygenerator, Eduflow, KnowBe4, Moodle, SAP Litmos, Thinkific, Udemy and others -- Docebo/TalentLMS/Workday are the 3 that matched the brief's named-platform request."
+      ]
+    },
+    {
+      "id": "EV-synthesia-review-09",
+      "claim": "A dedicated Synthesia help-center article (captured 2026-08-13) confirms SCORM export in SCORM 1.2 or 2004 format, downloaded as a .zip file for upload to any SCORM-compatible LMS -- and states this export feature is available ONLY on Enterprise plans, not Starter or Creator.",
+      "source_url": "https://help.synthesia.io/en/articles/9771805-how-do-i-export-my-video-as-a-scorm-package",
+      "source_date": "2026-08-13",
+      "quote": "SCORM 1.2 or 2004... The video will be downloaded as a .zip file, ready to use in your LMS... This feature is only available to our Enterprise plans.",
+      "platform": "help.synthesia.io (vendor help-center article -- self-interested; captured 2026-08-13)",
+      "target_slug": "/tools/synthesia",
+      "collected_at": "2026-08-13",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "synthesia-review-2026-08-13",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Synthesia",
+        "aspect": "SCORM export capability and plan-tier gating",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Enterprise-only",
+        "item_date": "2026-08-13"
+      },
+      "honesty_notes": [
+        "Important gating fact for the corporate-ld-buyer persona: a Creator-plan buyer assuming they can export SCORM packages for their LMS would be wrong -- this is Enterprise-only, a genuine plan-selection trap worth surfacing explicitly."
+      ],
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-31",
+          "source_url": "https://www.synthesia.io/pricing",
+          "claim": "Pricing table 2026-10-31 still marks SCORM export with a cross on Basic, Starter and Pro and a check on Enterprise only (read from the raw page's visible icons).",
+          "quote": "Export your content as a SCORM package and easily upload it into your LMS.",
+          "collector": "refresh-2026-10-31 (live r.jina.ai + curl)"
+        }
+      ]
+    },
+    {
+      "id": "EV-synthesia-review-10",
+      "claim": "Synthesia's own Personal Avatar documentation (captured 2026-08-13) describes a consent safeguard: the consent video must be recorded live and cannot be uploaded, the person in the consent video must match the person in the submitted photo/footage, and age-verification flags require confirming the person is over 18. This is a documented trust mechanic, not a bypassable upload step.",
+      "source_url": "https://docs.synthesia.io/docs/personal-avatars",
+      "source_date": "2026-08-13",
+      "quote": "Consent videos must be recorded live and cannot be uploaded. The person in the consent video must be the same individual shown in the uploaded photo. If your submission is flagged for age verification, you'll be asked to confirm you're over 18.",
+      "platform": "docs.synthesia.io + help.synthesia.io (vendor documentation -- self-interested; captured 2026-08-13)",
+      "target_slug": "/tools/synthesia",
+      "collected_at": "2026-08-13",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "synthesia-review-2026-08-13",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Synthesia",
+        "aspect": "consent-video safeguard for Personal Avatar creation",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-08-13"
+      },
+      "honesty_notes": [
+        "Describe positively as a trust/safety mechanic, per the semantic file's hard instruction -- NEVER frame as 'deepfake' or 'face-swap' anywhere, even inside a denial frame. This consent flow is the legitimate opposite of that territory.",
+        "Khairul S.'s Capterra complaint (EV-synthesia-review-19 pool, see below) about 'stringent rules' when developing custom avatar features is a genuine, honest counterpoint worth pairing with this entry -- the same strictness that builds trust also creates friction for some legitimate users."
+      ]
+    },
+    {
+      "id": "EV-synthesia-review-11",
+      "claim": "A Synthesia help-center article tabulating personal-avatar allowances by plan (captured 2026-08-13) lists Starter: 3, Creator: 5, Enterprise: unlimited -- but does NOT list a Free/Basic tier at all, starting its table at Starter. This is consistent with the Free tier having zero personal-avatar allowance, but this run could NOT fully confirm that reading: one direct fetch of the separate marketing pricing page suggested '3 personal avatars' also appears somewhere associated with the Free/Basic card, while a second, more careful fetch of the SAME page could not confirm any personal-avatar line exists on the Basic card specifically. This is registered as an UNRESOLVED reconciliation, not a confirmed number for the Free tier.",
+      "source_url": "https://help.synthesia.io/en/articles/9453224-how-do-i-create-my-personal-avatar",
+      "source_date": "2026-08-13",
+      "quote": "Starter: '3 free avatars' -- Creator: '5 free avatars' -- Enterprise: 'Unlimited personal avatars.' [Note: no 'Free' or 'Basic' plan listed on this page; the lowest tier mentioned is Starter.]",
+      "platform": "help.synthesia.io (vendor help-center article -- self-interested; captured 2026-08-13)",
+      "target_slug": "/tools/synthesia",
+      "collected_at": "2026-08-13",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "synthesia-review-2026-08-13",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "Synthesia",
+        "aspect": "personal-avatar count per plan tier -- Free tier unresolved",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Starter=3, Creator=5, Enterprise=unlimited; Free=UNRESOLVED",
+        "item_date": "2026-08-13"
+      },
+      "honesty_notes": [
+        "DO NOT state a specific Free-tier personal-avatar number on the page. Either omit the Free-tier figure entirely (safest) or present it explicitly as unresolved ('Synthesia's own help documentation does not list a personal-avatar allowance for the Free plan; we could not confirm a specific number this run').",
+        "This directly affects the persona file's cognitive_conflict_hooks claim that 'a buyer wanting their own likeness cannot do it at all on Free' (assumed 0) -- that assumption is PLAUSIBLE but not vendor-confirmed by this run; writer should hedge accordingly rather than state it as settled fact.",
+        "coder_agreement flagged false -- genuinely unresolved, needs resolver sign-off on how to phrase the hedge."
+      ],
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-31",
+          "source_url": "https://www.synthesia.io/pricing",
+          "claim": "Resolves the August reconciliation: in the raw pricing table the Basic cell of the Personal Avatars row shows a cross icon, with 3 on Starter, 5 on Pro and unlimited on Enterprise. The help article still says 'Creator: 5 free avatars'. The same table prints Studio Express-1 avatars as a $1,000/year add-on for annual plans.",
+          "quote": "The creation of a Studio Express-1 avatar is a paid add-on ($1000/year) for annual plan users only.",
+          "supersedes": "2026-08-13 Free tier UNRESOLVED; third-party-relayed Studio price",
+          "collector": "refresh-2026-10-31 (live r.jina.ai + curl)"
+        }
+      ]
+    },
+    {
+      "id": "EV-synthesia-review-12",
+      "claim": "Synthesia's Customer Terms of Service, as summarized on a dedicated refund-policy help article (captured 2026-08-13; re-verified 2026-09-22), state that all purchases are non-cancelable and non-refundable except where the contract expressly states otherwise, with one narrow exception: a customer charged during a period when they could not access their account due to a confirmed technical issue can contact Support for case review. Studio Avatar purchases specifically cannot be refunded once produced and deployed.",
+      "source_url": "https://help.synthesia.io/en/articles/9460241-can-i-get-a-refund-from-synthesia",
+      "source_date": "2026-08-13",
+      "quote": "all purchases are non-cancelable and, except where the Contract expressly states otherwise, non-refundable. Refunds for Studio Avatars aren't possible once the avatar has been produced and deployed to your account. ... If you were charged during a period when you could not access your account due to a confirmed technical issue, contact the Support Team.",
+      "platform": "help.synthesia.io (vendor help-center article, summarizing the Customer Terms of Service -- self-interested; captured 2026-08-13)",
+      "target_slug": "/tools/synthesia",
+      "collected_at": "2026-08-13",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "synthesia-review-2026-08-13",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Synthesia",
+        "aspect": "refund policy -- non-refundable by default",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-08-13"
+      },
+      "honesty_notes": [
+        "Directly corroborated by James B.'s dated Capterra complaint (EV-synthesia-review-20): 'Support was an AI bot that told me the charge was non-refundable' -- a real community report matching the vendor's own stated policy, not a rumor.",
+        "Pair with EV-synthesia-review-13 (cancellation steps) for the 'how to cancel' H2 the planning brief called out as white space.",
+        "GATE N4 WIDEN 2026-09-22: re-fetched this exact URL and also both https://www.synthesia.io/legal/terms and https://www.synthesia.io/legal/customer-terms-of-service today, hunting for an access-problem refund exception. Found it verbatim on THIS help-center article (not the ToS pages themselves, which contain no comparable carve-out): 'If you were charged during a period when you could not access your account due to a confirmed technical issue, contact the Support Team so the team can review your case.' Quote field above widened with the sentence up through 'contact the Support Team' (trimmed to stay under the 60-word cap; the trailing 'so the team can review your case' clause was dropped, not because it's false, but purely for word count -- the exception itself is fully captured). This is a discretionary review process, not a guaranteed refund -- present it that way, not as an automatic entitlement."
+      ],
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-31",
+          "source_url": "https://help.synthesia.io/en/articles/15972602-what-is-synthesia-s-refund-and-billing-policy",
+          "claim": "Refund article has moved to a new URL; the wording stands on 2026-10-31, and adds that an unused subscription renewed by mistake is still non-refundable.",
+          "quote": "purchases are non-cancelable and non-refundable, even if the subscription wasn't used.",
+          "collector": "refresh-2026-10-31 (live r.jina.ai + curl)"
+        }
+      ]
+    },
+    {
+      "id": "EV-synthesia-review-13",
+      "claim": "A Synthesia help-center article (captured 2026-08-13) describes the self-serve cancellation process: cancel from Account Info > Billing, retain access until the end of the current billing period, and a 48-hour window to contact support and reverse an accidental cancellation. Self-serve cancellation applies to Starter and Creator plans; Enterprise customers with signed Order Forms must go through their account team instead.",
+      "source_url": "https://help.synthesia.io/en/articles/9414530-how-do-i-cancel-my-synthesia-subscription",
+      "source_date": "2026-08-13",
+      "quote": "After cancelling, you keep access to Synthesia until the end of your current billing period... Contact the Synthesia Support Team within 48 hours of cancelling to reverse it, where possible.",
+      "platform": "help.synthesia.io (vendor help-center article -- self-interested; captured 2026-08-13)",
+      "target_slug": "/tools/synthesia",
+      "collected_at": "2026-08-13",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "synthesia-review-2026-08-13",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Synthesia",
+        "aspect": "self-serve cancellation steps and access/reversal window",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Starter/Creator self-serve; Enterprise via account team",
+        "item_date": "2026-08-13"
+      },
+      "honesty_notes": [
+        "Also states: 'Export any videos you want to keep before your billing period ends, since you won't be able to access or download them afterward' -- a genuinely useful, actionable warning worth including verbatim in spirit."
+      ],
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-31",
+          "source_url": "https://help.synthesia.io/en/articles/9414530-how-do-i-cancel-my-synthesia-subscription",
+          "claim": "Cancellation article read 2026-10-31 now names Starter and Pro; the 48-hour reversal window stands.",
+          "quote": "Self-serve cancellation is available on the Starter and Pro plans.",
+          "collector": "refresh-2026-10-31 (live r.jina.ai + curl)"
+        }
+      ]
+    },
+    {
+      "id": "EV-synthesia-review-14",
+      "claim": "A Synthesia help-center article on workspaces (captured 2026-08-13) states that self-serve plan workspaces (Starter, Creator) are 'limited to one primary user' with guest access, corroborating the pricing page's own '1 editor & 3 guests' language for Starter (EV-synthesia-review-01). True shared, multi-seat workspace functionality is described elsewhere as an Enterprise-tier feature. This partially supports but does not fully confirm the specific 'minutes do not pool across paid seats' framing used by several third-party pricing trackers -- that exact language was not found on any Synthesia vendor page fetched this run.",
+      "source_url": "https://help.synthesia.io/en/articles/9859089-what-is-a-synthesia-workspace",
+      "source_date": "2026-08-13",
+      "quote": "Self-serve plan workspaces allow for guest access but are limited to one primary user.",
+      "platform": "help.synthesia.io (vendor help-center article -- self-interested; captured 2026-08-13)",
+      "target_slug": "/tools/synthesia",
+      "collected_at": "2026-08-13",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "synthesia-review-2026-08-13",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "Synthesia",
+        "aspect": "self-serve workspace = single primary user; multi-seat is Enterprise-only",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Starter/Creator = 1 primary user; Enterprise = shared workspaces",
+        "item_date": "2026-08-13"
+      },
+      "honesty_notes": [
+        "Present as a NUANCED finding, not a flat confirmation of 'minutes don't pool': what this run actually confirms is that Starter/Creator are structurally single-editor plans (a second full teammate needs their own separate paid plan or the team must move to Enterprise), which is a related but more precise and more actionable fact than the vague pooling framing.",
+        "coder_agreement flagged false -- a resolver should judge whether this is sufficient to retire the persona file's 'needs a dated primary source' flag on this specific claim, or whether it should still be presented as a partial gap."
+      ],
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-31",
+          "source_url": "https://help.synthesia.io/en/articles/9859089-what-is-a-synthesia-workspace",
+          "claim": "Workspace article read 2026-10-31: wording unchanged. Pricing table lists 1 editor on Basic, 1 editor + 3 guests on Starter, 1 editor + 5 guests on Pro, custom on Enterprise.",
+          "quote": "Self-serve plan workspaces allow for guest access but are limited to one primary user.",
+          "collector": "refresh-2026-10-31 (live r.jina.ai + curl)"
+        }
+      ]
+    },
+    {
+      "id": "EV-synthesia-review-15",
+      "claim": "An independent, dated hands-on review (genmedialab.com, published 2026-01-01, updated 2026-07-01) with disclosed testing methodology (dashboard screenshots, an embedded demo video, timed render tests) states that avatar movement still occasionally hits the uncanny valley in longer videos, and that AI voice quality drops noticeably in some non-English languages.",
+      "source_url": "https://genmedialab.com/reviews/synthesia-review/",
+      "source_date": "2026-07-01",
+      "quote": "Avatar movements still occasionally hit uncanny valley in longer videos... AI voice quality drops noticeably in some non-English languages.",
+      "platform": "genmedialab.com (independent third-party review site with disclosed hands-on testing methodology -- likely affiliate-monetized, not neutral; byline 'Darius Z.', published 2026-01-01, updated 2026-07-01, captured 2026-08-13)",
+      "target_slug": "/tools/synthesia",
+      "collected_at": "2026-08-13",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "synthesia-review-2026-08-13",
+      "screening": "included",
+      "label": "independent-test",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Synthesia",
+        "aspect": "long-form uncanny-valley drift and non-English voice-quality drop",
+        "stance": "negative",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-07-01"
+      },
+      "honesty_notes": [
+        "This is one dated reviewer's disclosed-methodology assessment (the field's richest evidentiary page per this page's own Phase-1 competitor audit), not a population claim -- present as 'an independent tester found,' not 'users report'.",
+        "The same source's overall verdict is 4.7/5 and largely positive -- this quote is the source's own limitations section, not its overall stance; do not present as if the source is negative overall."
+      ]
+    },
+    {
+      "id": "EV-synthesia-review-16",
+      "claim": "A second independent, dated hands-on review (aitoolanalysis.com, author Tanveer Ahmad, last updated 2026-05-01) distinguishes short-form from long-form avatar realism: content under 90 seconds 'crosses the uncanny valley convincingly,' while content of 5+ minutes 'still surfaces tells if viewers are paying close attention' -- directly corroborating the ~90-second threshold flagged in this page's planning research.",
+      "source_url": "https://aitoolanalysis.com/synthesia-review/",
+      "source_date": "2026-05-01",
+      "quote": "Short-form content (under 90 seconds) crosses the uncanny valley convincingly... Longer-form content (5+ minutes) still surfaces tells if viewers are paying close attention.",
+      "platform": "aitoolanalysis.com (independent third-party review site with disclosed hands-on-testing claims and a named author -- likely affiliate-monetized, not neutral; captured 2026-08-13; NOTE: page shows an internal date inconsistency -- 'Last Updated: May 1, 2026' vs. a separately-labeled 'Original Publication Date: June 17, 2026' that postdates it, an inconsistency this run could not resolve)",
+      "target_slug": "/tools/synthesia",
+      "collected_at": "2026-08-13",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "synthesia-review-2026-08-13",
+      "screening": "included",
+      "label": "independent-test",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Synthesia",
+        "aspect": "short-form (<90s) vs long-form (5+min) uncanny-valley distinction",
+        "stance": "negative",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-05-01"
+      },
+      "honesty_notes": [
+        "This source explicitly checked for non-English lip-sync/voice-quality critique and found none -- do not attribute a non-English-specific finding to this source; that finding belongs to EV-synthesia-review-15 (genmedialab) only.",
+        "The internal date-field inconsistency on this page (also independently flagged by this page's own Phase-1 competitor audit) is a source-quality caveat, not a reason to exclude -- the specific quoted claim is still checkable and dated within a reasonable window."
+      ]
+    },
+    {
+      "id": "EV-synthesia-review-17",
+      "claim": "A dated Capterra review of Synthesia (Justin W., Senior Consultant, Human Resources, 2025-03-12, 5 stars) reports that the platform delivered productivity and innovation gains exceeding expectations.",
+      "source_url": "https://www.capterra.com/p/198045/Enact/reviews/",
+      "source_date": "2025-03-12",
+      "quote": "This platform provided productivity and innovation gains far exceeding expectations",
+      "platform": "Capterra (review-platform; aggregate 4.6/5, n=314 as of the hub's 2026-08-10 capture and this run's 2026-08-13 re-check; this individual review dated 2025-03-12)",
+      "requoted_at": "2026-09-22",
+      "requote_result": "blocked -- capterra.com/p/198045/Enact/reviews/ returned HTTP 403 (Cloudflare 'Sorry, you have been blocked') on direct re-fetch today; the 4.6/314 aggregate figure could not be re-verified this run and remains sourced only to the 2026-08-13 capture's platform field, not a re-confirmed verbatim quote",
+      "target_slug": "/tools/synthesia",
+      "collected_at": "2026-08-13",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "synthesia-review-2026-08-13",
+      "screening": "included",
+      "label": "community-report",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Synthesia",
+        "aspect": "general productivity/ROI praise from an HR-sector buyer",
+        "stance": "positive",
+        "plan_tier_if_stated": null,
+        "item_date": "2025-03-12"
+      },
+      "honesty_notes": [
+        "One dated reviewer among 314 verified Capterra reviews -- do not generalize into 'users say Synthesia boosts productivity'."
+      ]
+    },
+    {
+      "id": "EV-synthesia-review-18",
+      "claim": "A dated Capterra review of Synthesia (David K., CEO, E-Learning, 2025-06-17, 4 stars) reports it as a super-quick way to create high-quality person-to-camera videos in any language -- a corporate-training/e-learning-sector endorsement directly matching this page's primary persona.",
+      "source_url": "https://www.capterra.com/p/198045/Enact/reviews/",
+      "source_date": "2025-06-17",
+      "quote": "Super-quick way to create high-quality person-to-camera videos in any language",
+      "platform": "Capterra (review-platform; aggregate 4.6/5, n=314; this individual review dated 2025-06-17)",
+      "target_slug": "/tools/synthesia",
+      "collected_at": "2026-08-13",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "synthesia-review-2026-08-13",
+      "screening": "included",
+      "label": "community-report",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Synthesia",
+        "aspect": "speed and multilingual output quality, e-learning/corporate-training sector",
+        "stance": "positive",
+        "plan_tier_if_stated": null,
+        "item_date": "2025-06-17"
+      },
+      "honesty_notes": [
+        "Reviewer's own job title (CEO, E-Learning) makes this a strong persona-fit data point for the corporate-ld-buyer audience -- still a single dated anecdote, not a population claim."
+      ]
+    },
+    {
+      "id": "EV-synthesia-review-19",
+      "claim": "A dated Capterra review of Synthesia (Tony G., Owner, Retail, 2025-06-19, 1 star) reports a terrible waste of time due to slow, poor support and flawed content moderation -- a second, independent, differently-dated voice corroborating EV-best-ai-video-generators-06's moderation-inconsistency complaint (Jide G., 2025-09-25).",
+      "source_url": "https://www.capterra.com/p/198045/Enact/reviews/",
+      "source_date": "2025-06-19",
+      "quote": "Terrible waste of time with slow, poor support and flawed content moderation",
+      "platform": "Capterra (review-platform; aggregate 4.6/5, n=314; this individual review dated 2025-06-19)",
+      "target_slug": "/tools/synthesia",
+      "collected_at": "2026-08-13",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "synthesia-review-2026-08-13",
+      "screening": "included",
+      "label": "community-report",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Synthesia",
+        "aspect": "support quality and content-moderation complaint, independent of EV-06's Jide G.",
+        "stance": "negative",
+        "plan_tier_if_stated": null,
+        "item_date": "2025-06-19"
+      },
+      "honesty_notes": [
+        "Two independently dated 1-star Capterra reviewers (this one and EV-best-ai-video-generators-06) both cite moderation as a specific pain point -- 'of the reviews screened, 2 of 314 explicitly cite moderation' is the honest, denominator-carrying way to state this; do not upgrade to 'moderation is unreliable' as a general claim."
+      ]
+    },
+    {
+      "id": "EV-synthesia-review-20",
+      "claim": "A dated Capterra review of Synthesia (James B., President, Sports, 2025-03-06, 3 stars) reports being automatically charged for a full year of renewal without wanting it, and that AI-bot support told the reviewer the charge was non-refundable -- directly corroborating the vendor's own stated non-refundable policy (EV-synthesia-review-12) from the customer side.",
+      "source_url": "https://www.capterra.com/p/198045/Enact/reviews/",
+      "source_date": "2025-03-06",
+      "quote": "Billing charged me for renewal automatically for a full year that I did not want. Support was an AI bot that told me the charge was non-refundable.",
+      "platform": "Capterra (review-platform; aggregate 4.6/5, n=314; this individual review dated 2025-03-06, 3 stars)",
+      "target_slug": "/tools/synthesia",
+      "collected_at": "2026-08-13",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "synthesia-review-2026-08-13",
+      "screening": "included",
+      "label": "community-report",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "Synthesia",
+        "aspect": "auto-renewal billing surprise and non-refundable-charge experience",
+        "stance": "negative",
+        "plan_tier_if_stated": null,
+        "item_date": "2025-03-06"
+      },
+      "honesty_notes": [
+        "3-star overall rating (middling, not the platform's floor) but the SPECIFIC quoted complaint is unambiguously negative -- coded 'negative' for this aspect, not the review's overall star level; a coder could prefer 'mixed', flagged for resolver.",
+        "This is exactly the kind of dated, specific, verifiable community friction point the site's cancellation/refund H2 should surface honestly, paired with EV-synthesia-review-12's matching vendor-side policy language."
+      ]
+    },
+    {
+      "id": "EV-synthesia-review-21",
+      "claim": "Synthesia's own Customer-Specific Supplement (Section III, 'Healthcare Customers'; page states 'Last Updated: October 23, 2025') states Synthesia is NOT a HIPAA Business Associate or subcontractor, that the customer is solely responsible for HIPAA compliance, that customers should not submit, collect, or use Protected Health Information (PHI) on the platform, and that Synthesia disclaims liability for any PHI it nonetheless receives.",
+      "source_url": "https://www.synthesia.io/legal/customer-specific-supplement",
+      "source_date": "2025-10-23",
+      "quote": "Customer acknowledges that Synthesia is not a Business Associate or subcontractor (as those terms are defined in [HIPAA])... Customer should not submit, collect or use any \"protected health information\" as defined in 45 CFR §160.103 (\"PHI\"). Customer agrees that we cannot support and have no liability for PHI received from Customer.",
+      "platform": "synthesia.io/legal/customer-specific-supplement (vendor legal page -- self-interested; page itself states 'Last Updated: October 23, 2025'; re-verified live via WebFetch + raw-HTML re-pull 2026-08-13)",
+      "target_slug": "/tools/synthesia",
+      "collected_at": "2026-08-13",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "synthesia-review-2026-08-13",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Synthesia",
+        "aspect": "HIPAA Business Associate status and PHI-submission prohibition (vendor-stated)",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2025-10-23"
+      },
+      "honesty_notes": [
+        "Directly answers the needs-met audit's flagged fan_out_gap ('is synthesia hipaa compliant', Data/seo/phases/synthesia-review/4-needsmet.json) and fills the Safety/Trust H2 white space it identified -- present exactly as the vendor's own stated legal position, not as Mimo's independent legal assessment of HIPAA applicability.",
+        "Pairs directly with EV-synthesia-review-22: a live third-party page currently states the opposite ('HIPAA Compliant'). Structurally the same correctable-misattribution pattern already established for ISO 27701 in EV-synthesia-review-07 -- present the same way ('Synthesia's own materials state X; at least one third-party listing states the contrary; here is the likely explanation'), never as an accusation that Synthesia is misrepresenting itself."
+      ]
+    },
+    {
+      "id": "EV-synthesia-review-22",
+      "claim": "A live third-party SaaS-compliance directory listing (Nudge Security's 'Synthesia' security profile page) labels Synthesia 'HIPAA Compliant' alongside SOC 2, PCI, GDPR, ISO 27001, FedRamp, and CSA STAR badges -- directly contradicting Synthesia's own Customer-Specific Supplement (EV-synthesia-review-21), which states Synthesia is NOT a HIPAA Business Associate and that customers must not submit PHI. No disclosed methodology for how badge status is determined, and no on-page publish/update date, were found on this listing.",
+      "source_url": "https://security-profiles.nudgesecurity.com/app/synthesia-io",
+      "source_date": "2026-08-13",
+      "quote": "\"HIPAA Compliant\" [cert-badge label; the page's full compliance-badge grid reads, in order: PCI Compliant, HIPAA Compliant, SOC 2 Compliant, GDPR Compliant, ISO 27001 Compliant, FedRamp Compliant, CSA Star Level 1 Compliant]",
+      "platform": "security-profiles.nudgesecurity.com (third-party SaaS-security-posture vendor's auto-populated compliance-directory page for Synthesia, reached via a 301 redirect from nudgesecurity.com/security-profile/synthesia-io -- no disclosed methodology for badge determination found; no on-page publish/last-updated date found in rendered content, raw HTML, meta tags, or JSON-LD; the HTTP 'last-modified' response header was checked and rejected as a dating signal since the page is dynamically cached (cf-cache-status: DYNAMIC) and the header timestamp matched fetch time, not a genuine content-revision date; captured 2026-08-13)",
+      "target_slug": "/tools/synthesia",
+      "collected_at": "2026-08-13",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "synthesia-review-2026-08-13",
+      "screening": "included",
+      "label": "research-finding",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "Synthesia",
+        "aspect": "third-party HIPAA-compliant mislabel, contradicting Synthesia's own Customer-Specific Supplement",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-08-13"
+      },
+      "honesty_notes": [
+        "source_date is Mimo's verified CAPTURE date only, not a page-stated authorship date -- this listing carries no visible publish/last-updated timestamp anywhere. Present on the page as 'as of this review's 2026-08-13 capture' framing, never as 'Nudge Security states, as of [some date]'.",
+        "Registered specifically to document a live, real, correctable third-party error -- NOT as a trustworthy compliance source. Never present this badge grid as evidence Synthesia IS HIPAA-compliant; Synthesia's own primary legal document (EV-synthesia-review-21) is the authoritative source and states the opposite.",
+        "coder_agreement flagged false, mirroring EV-synthesia-review-02's and EV-synthesia-review-07's precedent in this same shard: a resolver should confirm that citing a methodology-undisclosed, undated compliance-directory listing is acceptable specifically to document a contradiction (not adopted as fact) -- the same judgment call already made for the fluxnote.io Starter-price entry.",
+        "Due-diligence check this run: neither of this shard's two already-registered independent-test sources (genmedialab.com/EV-15, aitoolanalysis.com/EV-16) mentions HIPAA at all -- this is a single freshly-sourced third-party misattribution, not corroborated by a second independent third party this run. Nudge Security's own page structure (identical templated layout recurring across unrelated apps -- ebsynth, synchr-com, synopsys-com, synxis-com, all surfaced by coincidental 'syn'-substring collisions) indicates an automated, bulk-populated directory, not a hands-on audit -- treat as low-trust, retained here only to document the specific misattribution pattern the needs-met audit flagged."
+      ]
+    }
+  ]
+}
