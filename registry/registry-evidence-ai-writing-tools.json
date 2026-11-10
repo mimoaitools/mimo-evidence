@@ -114,7 +114,100 @@
       "unverifiable-this-run (27) includes: all trustpilot.com pages (6, HTTP 403), all quora.com pages (3, HTTP 403), help.jasper.ai cancel+pause (2, HTTP 403), g2.com/products/jasper-ai/reviews (403), openai.com/chatgpt/pricing (403), seowriting.ai/pricing (JS-rendered, empty), link.springer.com 10.1007/s10639-025-13775-3 (cookie-wall redirect loop), plus 12 academic/leaderboard candidates not fetched within run budget (arxiv 2403.04307, 2510.15977, 2401.03205, 2606.01629, 2503.05244; PMC12518350, PMC11548250; asu.elsevierpure; openreview 3A71qNKWAS; anthropic.com/claude-opus-4-5-system-card; llm-stats.com; awesomeagents.ai).",
       "off-topic (12): tiktok cancel-jasper video (no codable text); originality.ai/blog/seowriting-ai-review (AI-detector vendor, detection-centric — owned-border adjacency); ilampadmanabhan.medium.com (methodology = AI-detection scores — border category); medrxiv clinical hallucination attacks; arxiv 2503.14797 (verification-tool paper); arxiv 2605.17007 HalluScore (FETCHED: Arabic-LLM QA benchmark, abstract contains NO model hallucination-rate figures — search-snippet figures 'GPT-5 25.15% / Claude Opus 33.01%' FAILED verification, must never be cited); sciencedirect S1871402124000079, PMC10524821, arxiv 2409.16695, arxiv 2411.09768, arxiv 2506.12317 (ChatGPT-as-peer-reviewer/research-evaluation, not writing tools); morphllm.com (API benchmark aggregator).",
       "no-methodology-affiliate (39): affiliate reviews/listicles without disclosed methodology (subscribed.fyi, jasperaiblog, subdelete, youraisoft, smartpubtools [also astroturf-suspect: 'Reddit reviews' page funneling to own 'RankFlow' alternative — single site, not confirmed network], stacklighthouse, deeperinsights, autoposting.ai, reviewmytools, automateed, rohitbadgal, inboundblogging, wpthink, bymilliepham, wolfheart, eyesift, demandsage, essaydone, onsaas, blogginglift, aiprodsuite, seoptimer, imnights, kripeshadwani, imeanmarketing, clippie, egcreativecontent, rankdots, cybernews, officechai, buildmvpfast) + vendor-authored competitor comparisons/testimonial pages excluded per MEP §1 vendor-primary-only rule (sudowrite blog, eesel.ai x3, jasper.ai/blog/copy-ai-alternatives, rytr.me/comparisons/rytr-vs-jasper-ai, koala.sh/pages/reviews, yomu.ai)."
-    ]
+    ],
+    "refresh_2026_11_06": {
+      "kind": "targeted delta (B7)",
+      "entries_cited_on_page": 15,
+      "included_sources": 13,
+      "vendor_pages_reread": [
+        "EV-09",
+        "EV-10",
+        "EV-11",
+        "EV-12",
+        "EV-13",
+        "EV-15"
+      ],
+      "unreadable": [
+        "EV-14"
+      ],
+      "source_class_split": {
+        "community-report (platform user review)": 1,
+        "independent-test (first-person tester write-ups)": 5,
+        "vendor-claim": 6,
+        "research-finding": 3
+      },
+      "note": "No new entries; flow_counter unchanged (91/91/78/13, 15 entries).",
+      "best_ai_writing_tools_counts": {
+        "page": "/best/ai-writing-tools",
+        "page_figures": {
+          "identified": 295,
+          "screened": 295,
+          "excluded": 244,
+          "sources_kept": 51,
+          "distinct_entries": 62
+        },
+        "previous_page_figures": {
+          "identified": 293,
+          "excluded": 244,
+          "sources_kept": 49,
+          "distinct_entries": 60
+        },
+        "six_sweeps": [
+          {
+            "shard": "registry-evidence-ai-writing-tools.json",
+            "run": "2026-07-10",
+            "identified": 91,
+            "excluded": 78,
+            "sources_kept": 13,
+            "entries": 15
+          },
+          {
+            "shard": "registry-jasper-alternatives.json",
+            "run": "2026-07-10",
+            "identified": 81,
+            "excluded": 76,
+            "sources_kept": 5,
+            "entries": 6
+          },
+          {
+            "shard": "registry-koala-ai-review.json",
+            "run": "2026-07-10",
+            "identified": 27,
+            "excluded": 21,
+            "sources_kept": 6,
+            "entries": 10
+          },
+          {
+            "shard": "registry-seowriting-ai-review.json",
+            "run": "2026-07-10",
+            "identified": 60,
+            "excluded": 54,
+            "sources_kept": 6,
+            "entries": 8
+          },
+          {
+            "shard": "registry-koala-ai-vs-seowriting-ai.json",
+            "run": "2026-07-10",
+            "identified": 13,
+            "excluded": 11,
+            "sources_kept": 2,
+            "entries": 4
+          },
+          {
+            "shard": "registry-humanizemyai-review.json",
+            "run": "2026-09-12",
+            "identified": 23,
+            "excluded": 4,
+            "sources_kept": 19,
+            "entries": 19
+          }
+        ],
+        "sums": "identified 91+81+27+60+13+23 = 295; excluded 78+76+21+54+11+4 = 244; sources kept 13+5+6+6+2+19 = 51; entries 15+6+10+8+4+19 = 62. Exclusion buckets: no-methodology-affiliate 39+52+6+25+4+1 = 127, off-topic 12+7+7+26+3 = 55, unverifiable-this-run 27+11+5+3+3 = 49, duplicate 6+3+1+2 = 12, provider-listing-no-reviews 1 (HumanizeMyAI shard; its 4 exclusions are 1+2+1, inferred from the page buckets because the shard's meta.flow does not split them).",
+        "what_was_added": "The +2 sources and +2 entries are both in the HumanizeMyAI shard, whose meta.flow moved from 21/21/4/17 to 23/23/4/19 in commit c03aea1 (2026-09-12): EV-HMY-18 (humanizemy.ai/bypass-turnitin, Turnitin report with no AI percentage on 31 Aug 2026, vendor-reported) and EV-HMY-19 (humanizemy.ai/api/mcp, MCP endpoint). Excluded stayed 4, so the old page figures (293/49/60) were stale against the shard since 2026-09-12; the refresh corrected them. It is NOT J-05 or J-07.",
+        "not_in_the_sums": "EV-jasper-alternatives-07 (seowriting.ai/pricing, 2026-11-06) is a price re-read entry outside the July census (the Jasper shard's flow_counter stays 81/5/6), so it is not counted in the 62, the same way the Jasper page labels it '1 added November 6'. Recaptures on existing entries (EV-HMY-01, EV-HMY-19, J-05, E-09..E-15) do not add entries. EV-seowriting-ai-review-09 (seowriting.ai/pricing, 2026-11-06) is likewise a price re-read entry outside the SEOWriting shard's July census (flow_counter stays 60/6/8), so it is not counted in the 62 either; /tools/seowriting-ai labels it '1 added November 6'. EV-heygen-review-18 and EV-synthesia-review-23 (Trustpilot reads, 2026-11-06) are outside the writing cluster and never enter these sums.",
+        "verified": "2026-11-06, arithmetic re-run from each shard's flow counter; page numbers unchanged"
+      }
+    }
   },
   "entries": [
     {
@@ -367,6 +460,23 @@
           "quote": "If you aren't satisfied within the first 15 days of a new plan and have used minimal credits (under 15,000 words and 100 credits), just contact us for a prompt refund.",
           "supersedes": "2026-07-10 Essentials $9/15,000 words; refund condition worded as 100 messages",
           "collector": "fix-wave-2026-10-21 (live curl + WebFetch)"
+        },
+        {
+          "recaptured_at": "2026-11-06",
+          "source_url": "https://koala.sh/pricing",
+          "status": "read",
+          "claim": "CHANGED (rollover added). Starter still $25/month for 45,000 KoalaWriter words; free account 5,000 words + 25 credits one-time, no card; 15-day refund when under 15,000 words and 100 credits. NEW: on monthly plans unused words and credits go to a rollover bank of up to 3 months of the plan's allowance, banked amounts do not expire and are used after the monthly allowance runs out.",
+          "quote": "unused words and credits go to a rollover bank up to 3 months of your plan's allowance",
+          "supersedes": "2026-10-21 recapture had no rollover statement; price, words and refund condition unchanged",
+          "collector": "refresh-B7-2026-11-06 (WebFetch; Rytr yearly toggle and Capterra in the built-in browser)"
+        },
+        {
+          "recaptured_at": "2026-11-06",
+          "source_url": "https://koala.sh/pricing",
+          "status": "read",
+          "claim": "Starter $25/month, 45,000 KoalaWriter words; free: 5,000 words + 25 credits, one-time, no card; GPT-6.1 Sol and Claude Sonnet 5 count words at 2x, Claude Opus 5.5 at 3x (base GPT-6 Luna); on monthly plans unused words roll into a bank holding up to 3 months of the plan's allowance, banked words do not expire, bank deleted when the plan ends.",
+          "supersedes": "hub line 'monthly credits expire' and 'premium models bill 2x'",
+          "collector": "B7 /best/ai-writing-tools agent"
         }
       ]
     },
@@ -411,6 +521,30 @@
             "EV-rytr-review-06",
             "EV-rytr-review-07"
           ]
+        },
+        {
+          "recaptured_at": "2026-10-28",
+          "source_url": "https://rytr.me/pricing",
+          "claim": "Re-read 2026-10-28: free plan still 10,000 characters a month; the former 'Unlimited' plan is now named Lite at the same $9 monthly and $7.50 a month billed annually (yearly view). Same capture as EV-rytr-review-03/04 recaptures.",
+          "quote": "Lite Unlimited content creation $9 /mo",
+          "supersedes": "none (confirms the 2026-10-25 recapture)",
+          "collector": "mimo-auto-content publish re-check (live curl + browser)"
+        },
+        {
+          "recaptured_at": "2026-11-06",
+          "source_url": "https://rytr.me/pricing",
+          "status": "read",
+          "claim": "Unchanged since 2026-10-28: Free 10,000 characters per month; Lite $9/mo monthly, $7.50/mo billed annually ('Unlimited characters per month'); Personal $15 and Pro $39 per month billed annually ($19 / $49 monthly). No plan is named 'Unlimited'.",
+          "quote": "Lite Unlimited content creation $7.50 /mo billed annually",
+          "supersedes": "none (confirms 2026-10-25 and 2026-10-28 recaptures)",
+          "collector": "refresh-B7-2026-11-06 (WebFetch; Rytr yearly toggle and Capterra in the built-in browser)"
+        },
+        {
+          "recaptured_at": "2026-11-06",
+          "source_url": "https://rytr.me/pricing",
+          "status": "read",
+          "claim": "Free 10,000 characters per month; Lite $9/mo monthly, $7.50/mo billed annually (Yearly toggle); Personal $15, Pro $39 billed annually. Unchanged since 2026-10-25.",
+          "collector": "B7 /best/ai-writing-tools agent"
         }
       ]
     },
@@ -439,7 +573,25 @@
         "stance": "n/a",
         "plan_tier_if_stated": "Starter — $79/month billed annually, 15 AI articles/month",
         "item_date": "2026-07-10"
-      }
+      },
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-06",
+          "source_url": "https://writesonic.com/pricing",
+          "status": "read",
+          "claim": "Unchanged: Starter $79 per month billed annually, 15 AI articles per month; no sentence about unused credits or articles rolling over. The page prints no separate monthly-billing Starter price (only 'Save $240/year'), so none is stated on Mimo's page.",
+          "quote": "15 AI articles per month",
+          "supersedes": "none",
+          "collector": "refresh-B7-2026-11-06 (WebFetch; Rytr yearly toggle and Capterra in the built-in browser)"
+        },
+        {
+          "recaptured_at": "2026-11-06",
+          "source_url": "https://writesonic.com/pricing",
+          "status": "read",
+          "claim": "Starter $79/month billed annually, 15 AI articles per month; no free plan, free start with no credit card. Unchanged.",
+          "collector": "B7 /best/ai-writing-tools agent"
+        }
+      ]
     },
     {
       "id": "EV-evidence-ai-writing-tools-12",
@@ -467,7 +619,25 @@
         "plan_tier_if_stated": "Pro — $69/month/seat ($59 annual); 7-day free trial",
         "item_date": "2026-07-10"
       },
-      "resolver_note": "Coders A and B agreed on all coding dimensions; B placed the 7-day trial in the tier field while A placed it in the aspect — field-placement variance only, merged by resolver."
+      "resolver_note": "Coders A and B agreed on all coding dimensions; B placed the 7-day trial in the tier field while A placed it in the aspect — field-placement variance only, merged by resolver.",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-06",
+          "source_url": "https://www.jasper.ai/pricing",
+          "status": "read",
+          "claim": "Unchanged: Pro $69/month billed monthly or $59/month billed yearly per seat; 7-day free trial; cancel anytime with access through the billing period; no refund or money-back wording on the page.",
+          "quote": "$59/month billed yearly or $69/month billed monthly (cancel anytime)",
+          "supersedes": "none",
+          "collector": "refresh-B7-2026-11-06 (WebFetch; Rytr yearly toggle and Capterra in the built-in browser)"
+        },
+        {
+          "recaptured_at": "2026-11-06",
+          "source_url": "https://www.jasper.ai/pricing",
+          "status": "read",
+          "claim": "Pro $69/seat/month monthly, $59 billed yearly; 7-day free trial; no permanent free plan visible. Unchanged.",
+          "collector": "B7 /best/ai-writing-tools agent"
+        }
+      ]
     },
     {
       "id": "EV-evidence-ai-writing-tools-13",
@@ -494,7 +664,42 @@
         "stance": "n/a",
         "plan_tier_if_stated": null,
         "item_date": "2026-07-10"
-      }
+      },
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-05",
+          "source_url": "https://seowriting.ai/",
+          "claim": "CHANGED. Homepage now says 50+ languages and 'auto-post up to 100 articles in a batch' to WordPress; the '1000+ articles in hours' line and the 48-language figure no longer appear. Vendor-stated.",
+          "quote": "Run Bulk Article Generation and auto-post up to 100 articles in a batch to WordPress automatically.",
+          "supersedes": "48 languages and '1000+ articles in hours' as current homepage statements (kept as July history)",
+          "collector": "refresh-B6-2026-11-05 (live curl, browser UA, r.jina.ai; Writesonic monthly toggle read in a browser)"
+        },
+        {
+          "recaptured_at": "2026-11-06",
+          "source_url": "https://seowriting.ai/",
+          "status": "read",
+          "claim": "Confirms the 2026-11-05 change: homepage says 50+ languages and bulk auto-post of up to 100 articles in a batch to WordPress; 1-click generate-and-publish from a title. The '1000+ articles in hours' line and the 48-language figure are not on the page.",
+          "quote": "Run Bulk Article Generation and auto-post up to 100 articles in a batch to WordPress automatically.",
+          "supersedes": "48 languages and '1000+ articles in hours' (July history only)",
+          "collector": "refresh-B7-2026-11-06 (WebFetch; Rytr yearly toggle and Capterra in the built-in browser)"
+        },
+        {
+          "recaptured_at": "2026-11-06",
+          "source_url": "https://seowriting.ai/",
+          "status": "read",
+          "claim": "Homepage: article in one of 50+ languages; generate and publish from a title in 1 click; Bulk Article Generation can auto-post up to 100 articles in a batch to WordPress; no '1000+ articles in hours' line.",
+          "supersedes": "48 languages and '1000+ articles in hours' (July)",
+          "collector": "B7 /best/ai-writing-tools agent"
+        },
+        {
+          "recaptured_at": "2026-11-06",
+          "source_url": "https://seowriting.ai/pricing",
+          "status": "read",
+          "claim": "Pricing page now readable: Starter $19/month billed monthly ($14 billed yearly), up to 50 articles; Professional $79/250; Professional Plus 1 $159/500; Professional Plus 2 $307/1000; free plan 3 articles, no credit card.",
+          "supersedes": "July: pricing page rendered empty",
+          "collector": "B7 /best/ai-writing-tools agent"
+        }
+      ]
     },
     {
       "id": "EV-evidence-ai-writing-tools-14",
@@ -522,7 +727,26 @@
         "plan_tier_if_stated": null,
         "item_date": "2025-08-15"
       },
-      "resolver_note": "Curator flagged positive-vs-n/a outcome coding as ambiguous, but coders A and B independently both coded stance=positive — agreement stands, no resolution needed; claim text already frames it as a defined platform sample."
+      "resolver_note": "Curator flagged positive-vs-n/a outcome coding as ambiguous, but coders A and B independently both coded stance=positive — agreement stands, no resolution needed; claim text already frames it as a defined platform sample.",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-06",
+          "source_url": "https://www.capterra.com/p/10017894/SEOWRITING-AI/reviews/",
+          "status": "unreadable",
+          "claim": "Not re-read: curl returned HTTP 403 and the browser stopped at a Cloudflare challenge page (not bypassed). The 4.8/5 from 78 reviews figure stays as the July 2026-07-10 capture and is labelled 'at the July capture' on the page.",
+          "supersedes": "none (fact unchanged, not re-verified)",
+          "collector": "refresh-B7-2026-11-06 (WebFetch; Rytr yearly toggle and Capterra in the built-in browser)",
+          "note_after": "Superseded the same day: a built-in-browser read succeeded (77 reviews), see next block."
+        },
+        {
+          "recaptured_at": "2026-11-06",
+          "source_url": "https://www.capterra.com/p/10017894/SEOWRITING-AI/reviews/",
+          "status": "read (browser; WebFetch 403)",
+          "claim": "SEO WRITING 4.8 (77 reviews), page 'Last updated September 30th, 2026'.",
+          "supersedes": "4.8 from 78 reviews (July)",
+          "collector": "B7 /best/ai-writing-tools agent"
+        }
+      ]
     },
     {
       "id": "EV-evidence-ai-writing-tools-15",
@@ -549,7 +773,25 @@
         "stance": "n/a",
         "plan_tier_if_stated": "Pro — $17/month annual ($200 up front; $20 monthly); Max — from $100/month, 5x/20x usage",
         "item_date": "2026-07-10"
-      }
+      },
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-06",
+          "source_url": "https://claude.com/pricing",
+          "status": "read",
+          "claim": "Unchanged: Pro $17/month with annual subscription ($200 billed up front), $20 billed monthly; Max from $100/month with 5x Pro usage.",
+          "quote": "$20 if billed monthly",
+          "supersedes": "none",
+          "collector": "refresh-B7-2026-11-06 (WebFetch; Rytr yearly toggle and Capterra in the built-in browser)"
+        },
+        {
+          "recaptured_at": "2026-11-06",
+          "source_url": "https://claude.com/pricing",
+          "status": "read",
+          "claim": "Free plan $0; Pro $17/month with annual subscription ($200 billed up front), $20 billed monthly. Unchanged.",
+          "collector": "B7 /best/ai-writing-tools agent"
+        }
+      ]
     }
   ]
 }

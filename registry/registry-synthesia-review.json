@@ -174,7 +174,24 @@
           "EV-synthesia-review-22"
         ]
       }
-    ]
+    ],
+    "refresh_2026_11_06": {
+      "date": "2026-11-06",
+      "scope": "targeted delta refresh B7: Trustpilot opened on a direct read; EvidenceBox count, count label and prose totals updated on /tools/synthesia",
+      "entries_added": [
+        "EV-synthesia-review-23"
+      ],
+      "flow_counter_note": "The August flow_counter (119 identified, 100 excluded, 19 included sources, 20 new entries, 4 reused) is unchanged; the hipaa-delta-2026-08-13 follow-up added EV-21 and EV-22, and the 2026-11-06 Trustpilot read adds one entry. Page entry count after: 20 + 4 reused + 2 + 1 = 27 (EvidenceBox previously showed 24).",
+      "page_counts": {
+        "entries_logged": 27,
+        "entries_own": 23,
+        "entries_reused": 4,
+        "from_august_sweep": 24,
+        "healthcare_follow_up": 2,
+        "added_2026_11_06": 1
+      },
+      "note": "Second coding pass run 2026-11-06 by a separate agent (live re-read before seeing the first coding); agreement recorded on the entry."
+    }
   },
   "entries": [
     {
@@ -222,6 +239,15 @@
           "claim": "Synthesia's own change notice, dated September 29, 2026: plans changed on October 1, 2026; Creator is renamed Pro at the same price; every plan carries 10 minutes of video and 500 credits; included minutes are spent before credits; API video is 160 credits a minute and bulk personalization 180; Pro 2x to 8x add 12,000 to 48,000 extra credits.",
           "quote": "Your 10 minutes of included video and 3 survey responses are used first. Credits are only used once those run out.",
           "collector": "refresh-2026-10-31 (live r.jina.ai + curl)"
+        },
+        {
+          "recaptured_at": "2026-11-06",
+          "source_url": "https://www.synthesia.io/pricing",
+          "status": "read",
+          "claim": "Pricing table lists '140+ languages & voices' on Basic, Starter, Pro and Enterprise; AI dubbing '70+ languages' on Basic, Starter and Pro and '140+ languages' on Enterprise only. Stock avatars 9 / 125+ / 180+ / 240+. Starter $19/mo ($9 first month, $14/mo yearly), Pro $89/mo ($49 first month, $59/mo yearly).",
+          "quote": "AI dubbing ... 70+ languages ... Enterprise ... 140+ languages",
+          "supersedes": "2026-08-13 page reading that the dubbing count was 140+ without a per-plan split (this recapture only adds the dubbing split; tier names and prices are tracked in EV-synthesia-vs-heygen-02)",
+          "collector": "B7 sibling sweep"
         }
       ]
     },
@@ -334,6 +360,24 @@
           "quote": "Output languages and locales available for translation, including regional variants like Spanish (Mexico) and Portuguese (Brazil). 70+ languages 70+ languages 70+ languages 140+ languages",
           "supersedes": "2026-08-13 unqualified 140+ dubbing figure",
           "collector": "refresh-2026-10-31 (live r.jina.ai + curl)"
+        },
+        {
+          "recaptured_at": "2026-11-06",
+          "source_url": "https://www.synthesia.io/features/ai-dubbing",
+          "status": "read",
+          "claim": "CHANGED. The AI-dubbing page now headlines 130+ languages (title 'AI Dubbing - Free Video Dubbing Tool (130+ Languages)', subheading and FAQ), not 140+.",
+          "quote": "Synthesia supports 130+ languages and dialects for AI dubbing, including right-to-left scripts and regional variants.",
+          "supersedes": "2026-08-13 capture: dubbing across 140+ languages and accents",
+          "collector": "B7 sibling sweep"
+        },
+        {
+          "recaptured_at": "2026-11-06",
+          "source_url": "https://www.synthesia.io/features/languages",
+          "status": "read",
+          "claim": "The languages page title reads 'Make Videos in 140+ Languages & Accents in 5 Mins'; '160+' appears only as the voice-picker search label ('Search 160+ languages'), not as a headline.",
+          "quote": "Make Videos in 140+ Languages & Accents in 5 Mins",
+          "supersedes": "2026-08-13 note that a separate page carried a '160-plus' headline that could not be direct-fetched",
+          "collector": "B7 sibling sweep"
         }
       ]
     },
@@ -952,6 +996,55 @@
         "coder_agreement flagged false, mirroring EV-synthesia-review-02's and EV-synthesia-review-07's precedent in this same shard: a resolver should confirm that citing a methodology-undisclosed, undated compliance-directory listing is acceptable specifically to document a contradiction (not adopted as fact) -- the same judgment call already made for the fluxnote.io Starter-price entry.",
         "Due-diligence check this run: neither of this shard's two already-registered independent-test sources (genmedialab.com/EV-15, aitoolanalysis.com/EV-16) mentions HIPAA at all -- this is a single freshly-sourced third-party misattribution, not corroborated by a second independent third party this run. Nudge Security's own page structure (identical templated layout recurring across unrelated apps -- ebsynth, synchr-com, synopsys-com, synxis-com, all surfaced by coincidental 'syn'-substring collisions) indicates an automated, bulk-populated directory, not a hands-on audit -- treat as low-trust, retained here only to document the specific misattribution pattern the needs-met audit flagged."
       ]
+    },
+    {
+      "id": "EV-synthesia-review-23",
+      "claim": "Synthesia's Trustpilot profile, opened directly on 2026-11-06, shows a TrustScore of 3.8 out of 5 ('Great') across 1,830 reviews; star split 5-star 72%, 4-star 11%, 3-star 2%, 2-star 2%, 1-star 13%.",
+      "source_url": "https://www.trustpilot.com/review/synthesia.io",
+      "source_date": "2026-11-06",
+      "quote": "3.8 ... 1,830",
+      "platform": "trustpilot.com (open review platform; anyone can post)",
+      "target_slug": "/tools/synthesia",
+      "collected_at": "2026-11-06",
+      "collector": "B7 sibling sweep",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "synthesia-review-refresh-2026-11-06",
+      "screening": "included",
+      "label": "aggregate-rating",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Synthesia",
+        "aspect": "Trustpilot score and review count",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-11-06"
+      },
+      "related": [
+        "EV-synthesia-vs-heygen-19"
+      ],
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-06",
+          "source_url": "https://www.trustpilot.com/review/synthesia.io",
+          "status": "read",
+          "claim": "TrustScore 3.8/5 on 1,830 reviews (WebFetch, live). Matches EV-synthesia-vs-heygen-19 read the same day.",
+          "quote": "3.8 ... 1,830",
+          "supersedes": "2026-08-13 sweep: trustpilot.com and uk.trustpilot.com refused automated capture (HTTP 403)",
+          "collector": "B7 sibling sweep"
+        }
+      ],
+      "honesty_notes": [
+        "A one-day snapshot of an open review platform, never a satisfaction rate for the user base."
+      ],
+      "second_pass": {
+        "date": "2026-11-06",
+        "method": "independent live re-read by a separate agent before seeing the first coding",
+        "reading": "Agrees: TrustScore 3.8/5, 1,830 reviews, split 72/11/2/2/13, read 2026-11-06; quote score and count as displayed, derive nothing."
+      }
     }
   ]
 }

@@ -1,0 +1,305 @@
+{
+  "meta": {
+    "page": "/tools/humanizemyai",
+    "protocol": "MEP-1.0",
+    "captured_at": "2026-09-12",
+    "flow": {
+      "identified": 28,
+      "screened": 28,
+      "excluded": 4,
+      "included": 24
+    },
+    "conflict": "The author owns HumanizeMyAI and Mimo. Vendor documents and owner-run tests are not independent evidence.",
+    "recaptured_at": "2026-11-10",
+    "removed_2026-11-10": "The unsourced '100 passages, GPTZero 93 human, 5 October 2026' sentence and 'checked about 50 times' were removed from the page: no public page carried them on 2026-11-10."
+  },
+  "entries": [
+    {
+      "id": "EV-HMY-01",
+      "label": "vendor-claim",
+      "url": "https://humanizemy.ai/",
+      "claim": "Homepage FAQ: a free account gets four humanizations of up to 250 words, one-time, no card; the AI detector is free without an account. Rechecked live 2026-09-12.",
+      "source_date": "2026-09-12",
+      "quote": "Yes. A free account gets 4 humanizations at up to 250 words each, with no credit card. The four runs are a one-off welcome allowance rather than a daily reset, since each run uses real compute. The AI detector needs no account at all, and when you want more, paid plans start at $12/mo billed yearly or $18/mo monthly.",
+      "collected_at": "2026-09-12",
+      "protocol_version": "MEP-1.0",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-06",
+          "source_url": "https://humanizemy.ai/pricing",
+          "status": "read",
+          "claim": "Free account: four rewrites of up to 250 words, no card; Basic $12/mo annual ($144/yr), $18 monthly; Pro $18/$27; Ultra $36/$48. Homepage: detector 250 words, four times a day, no account. Unchanged.",
+          "collector": "B7 /best/ai-writing-tools agent"
+        },
+        {
+          "recaptured_at": "2026-11-10",
+          "source_url": "https://humanizemy.ai/",
+          "status": "read",
+          "claim": "Unchanged: free account four humanizations of up to 250 words, no card; detector 250 words, four times a day, no account.",
+          "collector": "B9 refresh (auto-content routine)"
+        }
+      ]
+    },
+    {
+      "id": "EV-HMY-02",
+      "label": "vendor-claim",
+      "url": "https://humanizemy.ai/pricing",
+      "claim": "Plan prices, requests and word limits (Pro 150,000 and Ultra 300,000 words a month; Ultra 250 requests), rechecked live 2026-09-12.",
+      "source_date": "2026-09-12",
+      "quote": "Basic allows 80 rewrites of up to 1,000 words apiece. Pro allows 200 rewrites of up to 1,200 words, under a ceiling of 150,000 words a month. Ultra allows 250 rewrites of up to 3,000 words, under a ceiling of 300,000 words a month.",
+      "collected_at": "2026-09-12",
+      "protocol_version": "MEP-1.0",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-10",
+          "source_url": "https://humanizemy.ai/pricing",
+          "status": "read",
+          "claim": "Unchanged: Basic $18 monthly / $12 annual, Pro $27 / $18, Ultra $48 / $36; Basic 80 rewrites of up to 1,000 words, Pro 200 of up to 1,200 (150,000 words a month), Ultra 250 of up to 3,000 (300,000 words a month); free account four rewrites of 250 words, no card.",
+          "collector": "B9 refresh (auto-content routine)"
+        }
+      ]
+    },
+    {
+      "id": "EV-HMY-03",
+      "label": "vendor-claim",
+      "url": "https://humanizemy.ai/about",
+      "claim": "Permissioned 2,590-essay corpus and public research process.",
+      "source_date": "2026-09-13",
+      "quote": "The research corpus contains 2,590 long-form English essays, over 5 million words of real writing, collected with permission.",
+      "collected_at": "2026-11-10",
+      "protocol_version": "MEP-1.0",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-10",
+          "source_url": "https://humanizemy.ai/about",
+          "status": "read",
+          "claim": "On 2026-11-10 the corpus description (2,590 essays, over 5 million words, collected with permission; page last reviewed 13 September 2026) is on /about; /research now lists studies and carries only the line 'Trained on 2,590 real student essays'. The homepage calls it 'a published corpus of 2,590 real student essays (over five million words)'.",
+          "collector": "B9 refresh (auto-content routine)"
+        }
+      ]
+    },
+    {
+      "id": "EV-HMY-04",
+      "label": "vendor-claim",
+      "url": "https://humanizemy.ai/about",
+      "claim": "Founder identity and product background.",
+      "source_date": "2026-09-12",
+      "quote": "HumanizeMyAI is built and operated by Fırat Mıhcı, an ESL writing researcher. ... The product is a research project that became a product, not a product retrofitted with a research narrative.",
+      "collected_at": "2026-09-12",
+      "protocol_version": "MEP-1.0"
+    },
+    {
+      "id": "EV-HMY-05",
+      "label": "vendor-claim",
+      "url": "https://humanizemy.ai/privacy",
+      "claim": "Text handling and named external providers.",
+      "source_date": "2026-07-29",
+      "quote": "Humanize / detect inputs: the text you paste into the tool is sent to our LLM providers (Anthropic, OpenAI) for processing and a detector vendor (GPTZero) for scoring. We do not retain your inputs after the request completes. We do not train our models on your inputs.",
+      "collected_at": "2026-09-12",
+      "protocol_version": "MEP-1.0"
+    },
+    {
+      "id": "EV-HMY-06",
+      "label": "vendor-claim",
+      "url": "https://humanizemy.ai/terms",
+      "claim": "Renewal, cancellation and service terms.",
+      "source_date": "2026-07-29",
+      "quote": "Subscriptions are recurring. ... You can cancel at any time from your account page, and cancellation stops all future charges while leaving your access intact until the end of the period you already paid for.",
+      "collected_at": "2026-09-12",
+      "protocol_version": "MEP-1.0"
+    },
+    {
+      "id": "EV-HMY-07",
+      "label": "vendor-claim",
+      "url": "https://humanizemy.ai/refund-policy",
+      "claim": "Generally non-refundable after access, with defined exceptions.",
+      "source_date": "2026-07-29",
+      "quote": "Paid subscription charges are generally non-refundable after digital access is provided. We will issue or consider a refund when required by applicable law, when a duplicate or incorrect charge occurred, or when a documented material service failure prevented access to the paid service.",
+      "collected_at": "2026-09-12",
+      "protocol_version": "MEP-1.0"
+    },
+    {
+      "id": "EV-HMY-08",
+      "label": "research-finding",
+      "url": "https://arxiv.org/abs/2303.11156",
+      "claim": "Recursive paraphrasing reduces detector performance with some quality cost.",
+      "source_date": "2025-01-17",
+      "quote": "Our findings indicate that while our recursive paraphrasing method can significantly reduce detection rates, it only slightly degrades text quality in many cases, highlighting potential vulnerabilities in current detection systems in the presence of an attacker.",
+      "collected_at": "2026-09-12",
+      "protocol_version": "MEP-1.0"
+    },
+    {
+      "id": "EV-HMY-09",
+      "label": "research-finding",
+      "url": "https://link.springer.com/article/10.1007/s40979-023-00146-z",
+      "claim": "Evaluated detectors were neither accurate nor reliable; obfuscation worsened performance."
+    },
+    {
+      "id": "EV-HMY-10",
+      "label": "research-finding",
+      "url": "https://aclanthology.org/2024.acl-long.674/",
+      "claim": "RAID benchmark covers more than six million generations and documents robustness failures.",
+      "source_date": "2024-08",
+      "quote": "RAID includes over 6 million generations spanning 11 models, 8 domains, 11 adversarial attacks and 4 decoding strategies. Using RAID, we evaluate the out-of-domain and adversarial robustness of 8 open- and 4 closed-source detectors and find that current detectors are easily fooled by adversarial attacks, variations in sampling strategies, repetition penalties, and unseen generative models.",
+      "collected_at": "2026-09-12",
+      "protocol_version": "MEP-1.0"
+    },
+    {
+      "id": "EV-HMY-11",
+      "label": "research-finding",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37521038/",
+      "claim": "AI detectors can misclassify non-native English writing.",
+      "source_date": "2023-07-10 (Patterns 4(7):100779, eCollection 2023-07-14)",
+      "quote": "GPT detectors frequently misclassify non-native English writing as AI generated, raising concerns about fairness and robustness.",
+      "collected_at": "2026-09-12",
+      "protocol_version": "MEP-1.0"
+    },
+    {
+      "id": "EV-HMY-12",
+      "label": "community-report",
+      "url": "https://detectiondrama.com/humanizemy-review/",
+      "claim": "Affiliate review reports positive use; detector figures are vendor-reported, not reproduced.",
+      "source_date": "2026-09-01",
+      "quote": "These are vendor numbers, not my independent test ... HumanizeMyAI is the most intellectually honest humanizer I have reviewed: it documents its corpus, dates its numbers, names its weakest detector, and tells you what it should not be used for.",
+      "collected_at": "2026-09-12",
+      "protocol_version": "MEP-1.0"
+    },
+    {
+      "id": "EV-HMY-13",
+      "label": "vendor-claim",
+      "url": "https://writehuman.ai/pricing",
+      "claim": "WriteHuman pricing, limits, language breadth, API and MCP comparison.",
+      "source_date": "2026-09-12",
+      "quote": "80 requests / month ... Up to 600 words per request ... MCP access ... Humanize AI text at scale with a single REST endpoint. Word-based pricing, 40+ languages, and code examples in JavaScript, Python & cURL.",
+      "collected_at": "2026-09-12",
+      "protocol_version": "MEP-1.0"
+    },
+    {
+      "id": "EV-HMY-14",
+      "label": "vendor-claim",
+      "url": "https://www.stealthgpt.ai/pricing",
+      "claim": "StealthGPT pricing, daily volume, language and app breadth."
+    },
+    {
+      "id": "EV-HMY-15",
+      "label": "vendor-claim",
+      "url": "https://quillbot.com/ai-humanizer",
+      "claim": "QuillBot free limit, language support and product ecosystem."
+    },
+    {
+      "id": "EV-HMY-16",
+      "label": "owner-test",
+      "url": "https://mimoaitools.com/tools/humanizemyai#does-humanizemyai-preserve-meaning",
+      "claim": "Two owner-run fixed-input spot checks (10 August 2026, run by the product's owner, not a research study) preserved core meaning and every stated number; not independent replication."
+    },
+    {
+      "id": "EV-HMY-17",
+      "label": "vendor-claim",
+      "url": "https://humanizemy.ai/api-docs",
+      "claim": "Published humanization API with monthly word plans from 200,000 words for $59, keyed server-to-server integration and a Zapier path; rechecked live 2026-09-12.",
+      "source_date": "2026-09-12",
+      "quote": "200k words | 200,000 | $ 59 /mo | $ 0.295 ... Cloudflare closes origin connections at about 100 seconds, Zapier actions must return inside 30, and Make defaults to 40.",
+      "collected_at": "2026-09-12",
+      "protocol_version": "MEP-1.0",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-06",
+          "source_url": "https://humanizemy.ai/api-docs",
+          "status": "read",
+          "claim": "API plans billed monthly: 200k words $59/mo, 1,000k words $189/mo; allowance does not roll over; REST bearer-key endpoints /api/v1/humanize, /api/v1/jobs/{id}, /api/v1/detect.",
+          "collector": "B7 /best/ai-writing-tools agent"
+        }
+      ]
+    },
+    {
+      "id": "EV-HMY-18",
+      "label": "vendor-claim",
+      "url": "https://humanizemy.ai/bypass-turnitin",
+      "claim": "Turnitin's report on HumanizeMyAI output carried no AI percentage on 31 August 2026 (vendor-reported); captured live 2026-09-12.",
+      "source_date": "2026-09-12",
+      "quote": "On 31 August 2026 the report on HumanizeMyAI output carried no AI percentage at all, which is what Turnitin shows for anything under 20%, while synonym-swap tools ranged 22 to 65%.",
+      "collected_at": "2026-09-12",
+      "protocol_version": "MEP-1.0",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-10",
+          "source_url": "https://humanizemy.ai/bypass-turnitin",
+          "status": "read",
+          "claim": "The 31 August 2026 run used one 668-word academic essay sent to six AI detectors the same day; Turnitin report came back with the AI field empty (vendor-reported). Quote: 'One 668-word academic essay went through HumanizeMyAI, and the output went to six AI detectors that day.'",
+          "collector": "B9 refresh (auto-content routine)"
+        }
+      ],
+      "quote_note": "Range rewritten without a dash; the live page read \"22% to 65%\" on 2026-11-10."
+    },
+    {
+      "id": "EV-HMY-19",
+      "label": "vendor-claim",
+      "url": "https://humanizemy.ai/api/mcp",
+      "claim": "Live MCP endpoint tools/list returns one tool, detect_ai_text, for AI-text detection; checked 2026-09-12.",
+      "source_date": "2026-09-12",
+      "quote": "Score a passage for AI-generated writing using HumanizeMy's own trained detector. Returns a probability, a verdict, and the word count it judged.",
+      "collected_at": "2026-09-12",
+      "protocol_version": "MEP-1.0",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-06",
+          "source_url": "https://humanizemy.ai/api-docs",
+          "status": "read (docs, not tools/list)",
+          "claim": "CHANGED per docs: MCP server at /api/mcp now documents three tools, humanize_text, get_humanize_result and detect_ai_text; without a key it offers the free detector only.",
+          "supersedes": "2026-09-12 tools/list returned only detect_ai_text",
+          "collector": "B7 /best/ai-writing-tools agent"
+        }
+      ]
+    },
+    {
+      "id": "EV-HMY-20",
+      "label": "vendor-claim",
+      "url": "https://humanizemy.ai/",
+      "claim": "Homepage detector tables: 23 September 2026 run (one 353-word cited academic essay; GPTZero 0% AI / 100% human, Pangram 100% human-written, Copyleaks 0% AI, Grammarly 0% AI, Originality AI likely original, 15% or less) and 31 August 2026 run (GPTZero, Copyleaks, QuillBot 0% AI; ZeroGPT 0-3%; Turnitin human, no score under 20%; Originality AI 15% or less). Vendor-run, one source document per run.",
+      "source_date": "2026-09-23",
+      "quote": "Our newest run, from 23 September 2026: a cited academic essay of 353 words, rewritten once by HumanizeMyAI. GPTZero and Pangram both scored it fully human, Copyleaks and Grammarly found no AI in it, and Originality AI called it likely original.",
+      "collected_at": "2026-11-10",
+      "protocol_version": "MEP-1.0"
+    },
+    {
+      "id": "EV-HMY-21",
+      "label": "vendor-claim",
+      "url": "https://humanizemy.ai/blog/model-update-september-2026",
+      "claim": "September 2026 product update with the five detector screenshots of the 23 September run (GPTZero model 4.10b). The same five screenshots are hosted on this page under /evidence/humanizemyai/2026-09-23-*.webp. Vendor-run.",
+      "source_date": "2026-09-23",
+      "quote": "On 23 September 2026 we took a single HumanizeMyAI rewrite, a 353-word academic essay with APA-style citations, and pasted it into each detector's own interface. Nothing was edited between runs.",
+      "collected_at": "2026-11-10",
+      "protocol_version": "MEP-1.0"
+    },
+    {
+      "id": "EV-HMY-22",
+      "label": "vendor-claim",
+      "url": "https://humanizemy.ai/seo-humanizer",
+      "claim": "Vendor-run 20-article SEO test, 26 October 2026: the SEO engine kept headings 100%, links 100%, list items 101 of 101; 20 of 20 articles fully intact.",
+      "source_date": "2026-10-26",
+      "quote": "On 26 October 2026 we ran 20 SEO articles through a humanizer that rewrites the whole text and through our SEO engine. Every article came back intact from our SEO engine, and none did from the other route.",
+      "collected_at": "2026-11-10",
+      "protocol_version": "MEP-1.0"
+    },
+    {
+      "id": "EV-HMY-23",
+      "label": "vendor-claim",
+      "url": "https://humanizemy.ai/multilingual-ai-humanizer",
+      "claim": "Rewrites Spanish, German, French and Italian with automatic language detection; page last updated 30 October 2026; same price as English (pricing page).",
+      "source_date": "2026-10-30",
+      "quote": "Paste your draft, let the language be detected, and start with the 4 runs of 250 words in your free account.",
+      "collected_at": "2026-11-10",
+      "protocol_version": "MEP-1.0"
+    },
+    {
+      "id": "EV-HMY-24",
+      "label": "vendor-claim",
+      "url": "https://humanizemy.ai/extension",
+      "claim": "Chrome extension (version 1.1.0, downloaded from the site) rewrites selected text on any page and draws on the same account allowance.",
+      "source_date": "2026-11-10",
+      "quote": "Select text on any page, right-click, and get a rewrite that reads like you wrote it. It runs on your own account, so there is nothing new to pay for or set up.",
+      "collected_at": "2026-11-10",
+      "protocol_version": "MEP-1.0"
+    }
+  ]
+}

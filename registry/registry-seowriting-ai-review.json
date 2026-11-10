@@ -20,37 +20,152 @@
       "registry_entries_new": 8,
       "entries_reused_from_other_shard": 4
     },
-    "coder_agreement_rate": "8/8 included registry entries: coders A and B agree on tool, aspect, and final stance (rate 1.0 = 100%; ambiguous_count 0). EV-seowriting-ai-review-08 was pre-flagged coder_agreement:false by the curator placeholder anticipating an n/a-vs-negative split; the resolver (2026-07-10) found both independent coders actually coded n/a (coder B explicitly rejected the 'buyer-friction → negative' reading), so it resolves as AGREED n/a — not coding-ambiguous. See phases/seowriting-ai-review/2-evidence.json → coding_resolution.",
+    "coder_agreement_rate": "9/9",
     "query_census": [
-      { "q": "WebFetch https://seowriting.ai/ (vendor homepage — model/languages/1-click/bulk/humanize/WP)", "candidates": 1, "note": "included; yields EV-05; model-provider line folded into EV-01 context" },
-      { "q": "WebFetch https://seowriting.ai/pricing (vendor pricing)", "candidates": 1, "note": "unverifiable-this-run — JS-rendered, body returned title only (same failure as evidence-ai-writing-tools run)" },
-      { "q": "WebFetch https://seowriting.ai/terms-of-service (vendor ToS)", "candidates": 1, "note": "included; yields EV-02 (refund) + EV-03 (recurring/auto-renew/no-LTD)" },
-      { "q": "WebFetch https://docs.seowriting.ai/article/downgrade-subscription (vendor docs)", "candidates": 1, "note": "included; yields EV-04 (30-day data retention)" },
-      { "q": "WebFetch https://docs.seowriting.ai/article/ai-models (vendor docs)", "candidates": 1, "note": "included; yields EV-01 (16-model user-selectable menu, credit-weighted)" },
-      { "q": "WebFetch https://docs.seowriting.ai/ (vendor docs index)", "candidates": 1, "note": "off-topic — category index only ('Basic Guide … affiliate articles' 22, FAQ 7); no specific claim to register" },
-      { "q": "WebFetch https://www.g2.com/products/seo-writing/reviews", "candidates": 1, "note": "unverifiable-this-run — HTTP 403 (search snippet claimed ~84 reviews; NOT registerable from snippet)" },
-      { "q": "WebFetch https://www.trustpilot.com/review/seowriting.ai", "candidates": 1, "note": "unverifiable-this-run — HTTP 403 (search snippet claimed ~4/~371; NOT registerable from snippet)" },
-      { "q": "WebFetch https://www.capterra.com/p/10017894/SEOWRITING-AI/reviews/", "candidates": 1, "note": "included; re-verified 4.8/78 (EV-14 reuse) + yields EV-06 (image cap review 2025-09-04) + EV-07 (repetitive/polishing review 2025-01-21)" },
-      { "q": "WebFetch https://www.capterra.com/p/10017894/SEOWRITING-AI/ (product page)", "candidates": 1, "note": "included; yields EV-08 — Capterra lists $19 flat/no-free, contradicting vendor free tier (documents the pricing inconsistency)" },
-      { "q": "seowriting ai review reddit experience", "candidates": 0, "note": "search tool returned no links" },
-      { "q": "seowriting ai chatgpt reskin worth it reddit", "candidates": 1, "note": "only toksta.com aggregator — excluded no-methodology-affiliate (secondary Reddit-sentiment aggregator; brief forbids citing as primary)" },
-      { "q": "seowriting.ai pricing free plan credits expire billing cycle", "candidates": 9, "note": "seowriting.ai/pricing+ToS+capterra+docs (dups); NEW seowritingaireview.com, saasworthy x2, futurepedia (affiliate/aggregator → excluded); surferseo/seo.ai (off-topic)" },
-      { "q": "seowriting ai lifetime deal coupon code black friday", "candidates": 10, "note": "all coupon-scraper/affiliate pages (simplycodes, tenereteam, saaspirate, whatinai, github/AiDealzs, worthepenny, bretech, seowritingaicouponcode.site, colormango, coolaisoftware) → excluded no-methodology-affiliate; low-trust, none primary" },
-      { "q": "seowriting ai docs help credits articles do not roll over expire", "candidates": 8, "note": "NEW off-topic other-tool credit docs (surferseo, seopress, simplified, aioseo, agilitywriter, rankmath, webflow, mockit) — none state SEOWriting's rollover; docs/ai-models dup" },
-      { "q": "seowriting ai g2 reviews rating stars", "candidates": 6, "note": "g2/seo-writing (dup, 403); NEW off-topic g2 other-products (seo-ai, ai-writer, rytr, seobility, writer); progenmax affiliate (excluded)" },
-      { "q": "seowriting ai trustpilot rating number of reviews", "candidates": 3, "note": "trustpilot (dup, 403) + paginated variants; NEW seoengine.ai + automateed (affiliate/competitor → excluded); wpseoai trustpilot (off-topic other product)" },
-      { "q": "seowriting ai text in image garbled quality complaint", "candidates": 8, "note": "NEW off-topic generic AI-image-text explainers (gpt-watermark-remover, gowinston, nanobananastudio, productic, imagine.art, capcut, onlycopilotfans, wpbeginner) — not SEOWriting-specific; the ONE SEOWriting-specific image report is EV-06 (Capterra)" },
-      { "q": "seowriting ai reddit juststart niche site which ai writer", "candidates": 0, "note": "search tool returned no links — Reddit terrain not surfaceable via search tool this run" },
-      { "q": "\"seowriting\" reddit blogging content quality editing", "candidates": 0, "note": "search tool returned no links" },
-      { "q": "seowriting ai free plan 5 articles per month no credit card", "candidates": 4, "note": "NEW eesel.ai (vendor-authored), inboundblogging, coincodecap (affiliate), originality.ai (detector-vendor COI) → all excluded; free-plan article count (3 vs 5) conflicts across affiliate snippets, NONE vendor-verified" },
-      { "q": "seowriting ai independent test hands-on review methodology word count SERP", "candidates": 4, "note": "NEW techhunters, scribehow, onfolio/reviewed, siteefy → excluded no-methodology-affiliate (affiliate roundups/directories; onfolio multi-tool test not fetched/verified this run)" }
+      {
+        "q": "WebFetch https://seowriting.ai/ (vendor homepage — model/languages/1-click/bulk/humanize/WP)",
+        "candidates": 1,
+        "note": "included; yields EV-05; model-provider line folded into EV-01 context"
+      },
+      {
+        "q": "WebFetch https://seowriting.ai/pricing (vendor pricing)",
+        "candidates": 1,
+        "note": "unverifiable-this-run — JS-rendered, body returned title only (same failure as evidence-ai-writing-tools run)"
+      },
+      {
+        "q": "WebFetch https://seowriting.ai/terms-of-service (vendor ToS)",
+        "candidates": 1,
+        "note": "included; yields EV-02 (refund) + EV-03 (recurring/auto-renew/no-LTD)"
+      },
+      {
+        "q": "WebFetch https://docs.seowriting.ai/article/downgrade-subscription (vendor docs)",
+        "candidates": 1,
+        "note": "included; yields EV-04 (30-day data retention)"
+      },
+      {
+        "q": "WebFetch https://docs.seowriting.ai/article/ai-models (vendor docs)",
+        "candidates": 1,
+        "note": "included; yields EV-01 (16-model user-selectable menu, credit-weighted)"
+      },
+      {
+        "q": "WebFetch https://docs.seowriting.ai/ (vendor docs index)",
+        "candidates": 1,
+        "note": "off-topic — category index only ('Basic Guide … affiliate articles' 22, FAQ 7); no specific claim to register"
+      },
+      {
+        "q": "WebFetch https://www.g2.com/products/seo-writing/reviews",
+        "candidates": 1,
+        "note": "unverifiable-this-run — HTTP 403 (search snippet claimed ~84 reviews; NOT registerable from snippet)"
+      },
+      {
+        "q": "WebFetch https://www.trustpilot.com/review/seowriting.ai",
+        "candidates": 1,
+        "note": "unverifiable-this-run — HTTP 403 (search snippet claimed ~4/~371; NOT registerable from snippet)"
+      },
+      {
+        "q": "WebFetch https://www.capterra.com/p/10017894/SEOWRITING-AI/reviews/",
+        "candidates": 1,
+        "note": "included; re-verified 4.8/78 (EV-14 reuse) + yields EV-06 (image cap review 2025-09-04) + EV-07 (repetitive/polishing review 2025-01-21)"
+      },
+      {
+        "q": "WebFetch https://www.capterra.com/p/10017894/SEOWRITING-AI/ (product page)",
+        "candidates": 1,
+        "note": "included; yields EV-08 — Capterra lists $19 flat/no-free, contradicting vendor free tier (documents the pricing inconsistency)"
+      },
+      {
+        "q": "seowriting ai review reddit experience",
+        "candidates": 0,
+        "note": "search tool returned no links"
+      },
+      {
+        "q": "seowriting ai chatgpt reskin worth it reddit",
+        "candidates": 1,
+        "note": "only toksta.com aggregator — excluded no-methodology-affiliate (secondary Reddit-sentiment aggregator; brief forbids citing as primary)"
+      },
+      {
+        "q": "seowriting.ai pricing free plan credits expire billing cycle",
+        "candidates": 9,
+        "note": "seowriting.ai/pricing+ToS+capterra+docs (dups); NEW seowritingaireview.com, saasworthy x2, futurepedia (affiliate/aggregator → excluded); surferseo/seo.ai (off-topic)"
+      },
+      {
+        "q": "seowriting ai lifetime deal coupon code black friday",
+        "candidates": 10,
+        "note": "all coupon-scraper/affiliate pages (simplycodes, tenereteam, saaspirate, whatinai, github/AiDealzs, worthepenny, bretech, seowritingaicouponcode.site, colormango, coolaisoftware) → excluded no-methodology-affiliate; low-trust, none primary"
+      },
+      {
+        "q": "seowriting ai docs help credits articles do not roll over expire",
+        "candidates": 8,
+        "note": "NEW off-topic other-tool credit docs (surferseo, seopress, simplified, aioseo, agilitywriter, rankmath, webflow, mockit) — none state SEOWriting's rollover; docs/ai-models dup"
+      },
+      {
+        "q": "seowriting ai g2 reviews rating stars",
+        "candidates": 6,
+        "note": "g2/seo-writing (dup, 403); NEW off-topic g2 other-products (seo-ai, ai-writer, rytr, seobility, writer); progenmax affiliate (excluded)"
+      },
+      {
+        "q": "seowriting ai trustpilot rating number of reviews",
+        "candidates": 3,
+        "note": "trustpilot (dup, 403) + paginated variants; NEW seoengine.ai + automateed (affiliate/competitor → excluded); wpseoai trustpilot (off-topic other product)"
+      },
+      {
+        "q": "seowriting ai text in image garbled quality complaint",
+        "candidates": 8,
+        "note": "NEW off-topic generic AI-image-text explainers (gpt-watermark-remover, gowinston, nanobananastudio, productic, imagine.art, capcut, onlycopilotfans, wpbeginner) — not SEOWriting-specific; the ONE SEOWriting-specific image report is EV-06 (Capterra)"
+      },
+      {
+        "q": "seowriting ai reddit juststart niche site which ai writer",
+        "candidates": 0,
+        "note": "search tool returned no links — Reddit terrain not surfaceable via search tool this run"
+      },
+      {
+        "q": "\"seowriting\" reddit blogging content quality editing",
+        "candidates": 0,
+        "note": "search tool returned no links"
+      },
+      {
+        "q": "seowriting ai free plan 5 articles per month no credit card",
+        "candidates": 4,
+        "note": "NEW eesel.ai (vendor-authored), inboundblogging, coincodecap (affiliate), originality.ai (detector-vendor COI) → all excluded; free-plan article count (3 vs 5) conflicts across affiliate snippets, NONE vendor-verified"
+      },
+      {
+        "q": "seowriting ai independent test hands-on review methodology word count SERP",
+        "candidates": 4,
+        "note": "NEW techhunters, scribehow, onfolio/reviewed, siteefy → excluded no-methodology-affiliate (affiliate roundups/directories; onfolio multi-tool test not fetched/verified this run)"
+      }
     ],
     "reddit_access_note": "PRIMARY Reddit threads were NOT obtainable this run: the search tool surfaced zero reddit.com URLs across three Reddit-targeted queries (site: operator unsupported), and direct reddit.com fetch is blocked in this environment (inherited + re-confirmed by null search results). The 'ChatGPT reskin' + editing-burden theme therefore exists in our data ONLY via (a) the toksta aggregator — excluded as non-primary per the persona/topical brief — and (b) verifiable Capterra reviews (EV-06/EV-07). The writer must NOT attribute the 'ChatGPT reskin' epithet to named/dated primary threads; reframe around what the pipeline verifiably adds (SERP analysis, internal linking, WP auto-post) vs raw ChatGPT, and source editing-burden from EV-07, not Reddit.",
     "exclusion_log_notes": [
       "unverifiable-this-run (3): seowriting.ai/pricing (JS-rendered; body = title only — tier prices could not be captured as static text on 2026-07-10); g2.com/products/seo-writing/reviews (HTTP 403); trustpilot.com/review/seowriting.ai (HTTP 403). Consequence: the specific tier prices ($14/$59/$119 seen in search snippets), the G2 count (~84), and the Trustpilot score (~4.x/~371) are NOT registered — they cannot be echoed on the page as verified. Only the free-tier existence (vendor homepage), the recurring/auto-renew billing model + conditional refund (ToS), and the Capterra rating (4.8/78, re-verified) are citable pricing/rating facts.",
       "off-topic (26): docs.seowriting.ai/ index (no claim); other-tool credit/help docs (surferseo x1, seopress, simplified, aioseo, agilitywriter, rankmath, webflow, mockit, seo.ai) = 9; g2 other-product review pages (seo-ai, ai-writer, rytr, seobility, writer) = 5; trustpilot wpseoai (different product) = 1; generic AI-image-text explainers not about SEOWriting (gpt-watermark-remover, gowinston, nanobananastudio, productic, imagine.art, capcut, onlycopilotfans, wpbeginner) = 8; originality.ai/blog/seowriting-ai-review = 1 (AI-detector vendor reviewing a neighbor tool — detection-centric, owned-products-border adjacency; excluded as in the evidence-ai-writing-tools run).",
       "no-methodology-affiliate (25): toksta.com/products/seowritingai (Reddit-sentiment aggregator, second-hand, no primary links/dates — persona/topical brief explicitly forbids citing it); affiliate reviews/aggregators without disclosed reproducible methodology (seowritingaireview.com, saasworthy x2, futurepedia.io, progenmax.com, seoengine.ai, automateed.com [SERP competitor: rival AI-content product + taaft.co affiliate redirect], eesel.ai [vendor-authored], inboundblogging.com, coincodecap.com, techhunters.net, scribehow.com, onfolio.com/reviewed [multi-tool affiliate roundup, not fetched/verified this run], siteefy.com) = 14; coupon-scraper/promo pages (simplycodes, tenereteam, saaspirate, whatinai, github/AiDealzs, worthepenny, bretech, seowritingaicouponcode.site, colormango, coolaisoftware) = 10."
-    ]
+    ],
+    "refreshes": [
+      {
+        "date": "2026-11-03",
+        "batch": "B5",
+        "note": "Live recapture with browser-UA curl. https://seowriting.ai/pricing is now server-rendered and readable (empty to our fetch on 2026-07-10): Free 3 articles / 25,000 words / no card; Starter $19 ($14 yearly), Professional $79 ($59), Professional Plus 1 $159 ($119), Professional Plus 2 $307 ($230); logged as new EV-seowriting-ai-review-09. Terms of service (refund, auto-renewal) and downgrade doc MATCH July. AI-models doc CHANGED from 16 models to 10 options (1 to 10 credits). Homepage CHANGED: 50+ languages, 'up to 100 articles in a batch', no GPT-5 naming. Capterra, Trustpilot and G2 returned 403; July Capterra values kept with their date. Credit rollover still unstated anywhere."
+      }
+    ],
+    "refresh_2026_11_06": {
+      "date": "2026-11-06",
+      "scope": "targeted delta refresh B7: vendor pricing page read (it rendered empty on 2026-07-10) and homepage re-read; EvidenceBox, limitations and Capterra wording updated on /tools/seowriting-ai",
+      "entries_added": [
+        "EV-seowriting-ai-review-09"
+      ],
+      "entries_recaptured": [
+        "EV-seowriting-ai-review-05",
+        "EV-evidence-ai-writing-tools-14"
+      ],
+      "flow_counter_note": "The July flow_counter (60 identified, 54 excluded, 6 included sources, 8 entries) is unchanged; the 2026-11-06 pricing read sits outside that census and adds one entry (EV-seowriting-ai-review-09) and one source. Entries in this shard after the refresh: 9 (8 + 1), of which 6 are vendor pages (01-05, 09) and 3 are Capterra (06-08). The page EvidenceBox shows 7 sources (6 from the July sweep, 1 added November 6); the FlowCounter stays the July sweep (6 included).",
+      "page_counts": {
+        "entries_own_after": 9,
+        "vendor_page_entries": 6,
+        "capterra_entries": 3,
+        "sources_after": 7,
+        "entries_reused_from_other_shard": 4
+      },
+      "note": "Second coding pass run 2026-11-06 by a separate agent (live re-read before seeing the first coding); agreement recorded on the entry."
+    }
   },
   "entries": [
     {
@@ -67,7 +182,10 @@
       "flow_id": "seowriting-ai-review-2026-07-10",
       "screening": "included",
       "label": "vendor-claim",
-      "coders": ["A", "B"],
+      "coders": [
+        "A",
+        "B"
+      ],
       "coder_agreement": true,
       "coding": {
         "tool": "SEOWriting.ai",
@@ -75,7 +193,25 @@
         "stance": "n/a",
         "plan_tier_if_stated": null,
         "item_date": "2026-07-10"
-      }
+      },
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-03",
+          "source_url": "https://docs.seowriting.ai/article/ai-models",
+          "claim": "CHANGED. The AI-models help page now says 'There are 10 AI models' (ten options): Claude Sonnet 5 + Real-Time SERP 1 credit, DeepSeek V4 Pro + Real-Time SERP 1, GPT-6 Luna + Real-Time SERP 1, Default 1, GPT-6 Luna 1, Gemini 3.6 Flash Lite 1, DeepSeek V4 Pro 1, GPT-6 Sol 4, Claude Sonnet 5 4, Opus 5.5 10 workflow credits per generation. The 'Default' option does not name its model. Replaces the 2026-07-10 16-model list (GPT-5.2, Claude 4.5 Sonnet, Llama 4, DeepSeek V3.2...) for current-state statements on /tools/seowriting-ai; the July list stays as dated history. Vendor-stated.",
+          "quote": "There are 10 AI models for creating content. ... Default - 1 credit. GPT-6 Luna - 1 credit. Gemini 3.6 Flash Lite - 1 credit. DeepSeek V4 Pro - 1 credit. GPT-6 Sol - 4 credits. Claude Sonnet 5 - 4 credits. Opus 5.5 - 10 credits.",
+          "supersedes": "the 16-model menu as a current fact (July value kept as dated history)",
+          "collector": "refresh-B5-2026-11-03 (live curl, browser UA)"
+        },
+        {
+          "recaptured_at": "2026-11-05",
+          "source_url": "https://seowriting.ai/pricing",
+          "claim": "CHANGED from the July 16-model menu as a current fact. The pricing page now says most models use 1 credit per article, advanced OpenAI and Anthropic models use 4, and the most powerful Anthropic model uses 10; the homepage credits models from OpenAI, Anthropic, Google and DeepSeek. Vendor-stated.",
+          "quote": "Most AI models use 1 credit per article; advanced models from OpenAI and Anthropic use 4 credits, and the most powerful Anthropic model uses 10.",
+          "supersedes": "16-model menu as a current statement (kept as July history)",
+          "collector": "refresh-B6-2026-11-05 (live curl, browser UA)"
+        }
+      ]
     },
     {
       "id": "EV-seowriting-ai-review-02",
@@ -91,7 +227,10 @@
       "flow_id": "seowriting-ai-review-2026-07-10",
       "screening": "included",
       "label": "vendor-claim",
-      "coders": ["A", "B"],
+      "coders": [
+        "A",
+        "B"
+      ],
       "coder_agreement": true,
       "coding": {
         "tool": "SEOWriting.ai",
@@ -99,7 +238,17 @@
         "stance": "n/a",
         "plan_tier_if_stated": null,
         "item_date": "2026-07-10"
-      }
+      },
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-03",
+          "source_url": "https://seowriting.ai/terms-of-service",
+          "claim": "MATCH. Refund clause worded exactly as on 2026-07-10: full refund within 14 calendar days of initial purchase if under 50,000 words and 5 generations, otherwise final. The old /terms-of-use path now returns 404; the live path is /terms-of-service.",
+          "quote": "You may cancel your Subscription for a full refund within fourteen (14) calendar days of your initial purchase, provided that you have used less than 50,000 words and 5 generations. AFTER THAT, YOUR PURCHASE IS FINAL",
+          "supersedes": "nothing (confirmed)",
+          "collector": "refresh-B5-2026-11-03 (live curl, browser UA)"
+        }
+      ]
     },
     {
       "id": "EV-seowriting-ai-review-03",
@@ -115,7 +264,10 @@
       "flow_id": "seowriting-ai-review-2026-07-10",
       "screening": "included",
       "label": "vendor-claim",
-      "coders": ["A", "B"],
+      "coders": [
+        "A",
+        "B"
+      ],
       "coder_agreement": true,
       "coding": {
         "tool": "SEOWriting.ai",
@@ -124,7 +276,17 @@
         "plan_tier_if_stated": null,
         "item_date": "2026-07-10"
       },
-      "resolver_note": "The 'no lifetime deal' inference is an ABSENCE (the ToS is silent on lifetime access), not a vendor statement that no LTD exists. Writer must frame as 'the vendor sells only recurring subscriptions (ToS, captured 2026-07-10); no lifetime deal is offered in its terms', never as 'the vendor says there is no lifetime deal'."
+      "resolver_note": "The 'no lifetime deal' inference is an ABSENCE (the ToS is silent on lifetime access), not a vendor statement that no LTD exists. Writer must frame as 'the vendor sells only recurring subscriptions (ToS, captured 2026-07-10); no lifetime deal is offered in its terms', never as 'the vendor says there is no lifetime deal'.",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-03",
+          "source_url": "https://seowriting.ai/terms-of-service",
+          "claim": "MATCH. Recurring monthly, quarterly or annual billing that auto-renews; no lifetime or one-time option in the terms. Terms and the pricing FAQ still say nothing about unused-credit rollover.",
+          "quote": "You will be billed on a recurring and periodic basis (monthly, Quarterly or annually) ... At the end of each period, Your Subscription will automatically renew under the exact same conditions unless You cancel it",
+          "supersedes": "nothing (confirmed)",
+          "collector": "refresh-B5-2026-11-03 (live curl, browser UA)"
+        }
+      ]
     },
     {
       "id": "EV-seowriting-ai-review-04",
@@ -140,7 +302,10 @@
       "flow_id": "seowriting-ai-review-2026-07-10",
       "screening": "included",
       "label": "vendor-claim",
-      "coders": ["A", "B"],
+      "coders": [
+        "A",
+        "B"
+      ],
       "coder_agreement": true,
       "coding": {
         "tool": "SEOWriting.ai",
@@ -148,7 +313,17 @@
         "stance": "n/a",
         "plan_tier_if_stated": null,
         "item_date": "2026-07-10"
-      }
+      },
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-03",
+          "source_url": "https://docs.seowriting.ai/article/downgrade-subscription",
+          "claim": "MATCH. Documents kept 30 days after the subscription period ends; still silent on credit rollover.",
+          "quote": "Please note that we keep your documents for 30 days after the end of the subscription period.",
+          "supersedes": "nothing (confirmed)",
+          "collector": "refresh-B5-2026-11-03 (live curl, browser UA)"
+        }
+      ]
     },
     {
       "id": "EV-seowriting-ai-review-05",
@@ -164,7 +339,10 @@
       "flow_id": "seowriting-ai-review-2026-07-10",
       "screening": "included",
       "label": "vendor-claim",
-      "coders": ["A", "B"],
+      "coders": [
+        "A",
+        "B"
+      ],
       "coder_agreement": true,
       "coding": {
         "tool": "SEOWriting.ai",
@@ -172,7 +350,26 @@
         "stance": "n/a",
         "plan_tier_if_stated": null,
         "item_date": "2026-07-10"
-      }
+      },
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-03",
+          "source_url": "https://seowriting.ai/",
+          "claim": "MATCH on 1-click title-to-article and WordPress auto-posting. CHANGED homepage figures that /tools/seowriting-ai previously cited from EV-evidence-ai-writing-tools-13 (2026-07-10): languages now '50+' (was 48); the bulk claim now reads 'auto-post up to 100 articles in a batch' and the '1000+ articles in hours' line no longer appears; the homepage no longer names 'GPT-5' and instead credits 'AI Models from OpenAI, Anthropic, Google and DeepSeek'. CTA button text is 'Get Started - It's Free' (plain hyphen). Vendor-stated. Note for the orchestrator: EV-evidence-ai-writing-tools-13 lives in another shard and was not edited here.",
+          "quote": "Create the perfect article using only Title, generate and publish it in 1 click. Run Bulk Article Generation and auto-post up to 100 articles in a batch to WordPress automatically. ... Create an article in one of 50+ languages ... AI Models from OpenAI, Anthropic, Google and DeepSeek",
+          "supersedes": "48 languages, '1000+ articles in hours' and the GPT-5 naming as current homepage statements (kept as dated July history)",
+          "collector": "refresh-B5-2026-11-03 (live curl, browser UA)"
+        },
+        {
+          "recaptured_at": "2026-11-06",
+          "source_url": "https://seowriting.ai/",
+          "status": "read",
+          "claim": "Homepage now says 'Available in 50+ languages' and 'Run Bulk Article Generation and auto-post up to 100 articles in a batch to WordPress automatically.' The July '48 languages' and '1000+ articles in hours' lines are no longer on the page. One-click WordPress auto-posting still marketed.",
+          "quote": "Run Bulk Article Generation and auto-post up to 100 articles in a batch to WordPress automatically.",
+          "supersedes": "2026-07-10 homepage reading: 48 languages, '1000+ articles in hours' (logged in EV-evidence-ai-writing-tools-13)",
+          "collector": "B7 sibling sweep"
+        }
+      ]
     },
     {
       "id": "EV-seowriting-ai-review-06",
@@ -188,7 +385,10 @@
       "flow_id": "seowriting-ai-review-2026-07-10",
       "screening": "included",
       "label": "community-report",
-      "coders": ["A", "B"],
+      "coders": [
+        "A",
+        "B"
+      ],
       "coder_agreement": true,
       "coding": {
         "tool": "SEOWriting.ai",
@@ -196,7 +396,17 @@
         "stance": "negative",
         "plan_tier_if_stated": null,
         "item_date": "2025-09-04"
-      }
+      },
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-03",
+          "source_url": "https://www.capterra.com/p/10017894/SEOWRITING-AI/reviews/",
+          "claim": "UNREADABLE on 2026-11-03: Capterra returned HTTP 403 to the fetch. The 2026-07-10 value stays, dated to July, on /tools/seowriting-ai.",
+          "quote": null,
+          "supersedes": "nothing",
+          "collector": "refresh-B5-2026-11-03 (live curl, browser UA)"
+        }
+      ]
     },
     {
       "id": "EV-seowriting-ai-review-07",
@@ -212,7 +422,10 @@
       "flow_id": "seowriting-ai-review-2026-07-10",
       "screening": "included",
       "label": "community-report",
-      "coders": ["A", "B"],
+      "coders": [
+        "A",
+        "B"
+      ],
       "coder_agreement": true,
       "coding": {
         "tool": "SEOWriting.ai",
@@ -220,7 +433,17 @@
         "stance": "mixed",
         "plan_tier_if_stated": null,
         "item_date": "2025-01-21"
-      }
+      },
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-03",
+          "source_url": "https://www.capterra.com/p/10017894/SEOWRITING-AI/reviews/",
+          "claim": "UNREADABLE on 2026-11-03: Capterra returned HTTP 403 to the fetch. The 2026-07-10 value stays, dated to July, on /tools/seowriting-ai.",
+          "quote": null,
+          "supersedes": "nothing",
+          "collector": "refresh-B5-2026-11-03 (live curl, browser UA)"
+        }
+      ]
     },
     {
       "id": "EV-seowriting-ai-review-08",
@@ -236,7 +459,10 @@
       "flow_id": "seowriting-ai-review-2026-07-10",
       "screening": "included",
       "label": "community-report",
-      "coders": ["A", "B"],
+      "coders": [
+        "A",
+        "B"
+      ],
       "coder_agreement": true,
       "coding": {
         "tool": "SEOWriting.ai",
@@ -245,7 +471,68 @@
         "plan_tier_if_stated": "Capterra-listed: $19.00 flat/month, no free version",
         "item_date": "2026-07-10"
       },
-      "resolver_note": "RESOLVED (resolver, 2026-07-10): the curator placeholder anticipated an n/a-vs-negative stance split and pre-set coder_agreement:false / resolved_by:pending-orchestrated-resolver. The two independent coders' ACTUAL outputs BOTH coded stance n/a — coder A read it as a neutral cross-source pricing-discrepancy observation, and coder B independently coded n/a after explicitly considering and rejecting the 'buyer-friction → negative' reading as requiring inference beyond the quote+claim. No genuine A/B disagreement exists, so this is a confirmed agreement (stance n/a), NOT coding-ambiguous; the pending resolved_by is dropped (per §8, resolved_by is set only for a genuine disagreement). Writer presents this strictly as a documented, neutral pricing inconsistency, never as a scored negative."
+      "resolver_note": "RESOLVED (resolver, 2026-07-10): the curator placeholder anticipated an n/a-vs-negative stance split and pre-set coder_agreement:false / resolved_by:pending-orchestrated-resolver. The two independent coders' ACTUAL outputs BOTH coded stance n/a — coder A read it as a neutral cross-source pricing-discrepancy observation, and coder B independently coded n/a after explicitly considering and rejecting the 'buyer-friction → negative' reading as requiring inference beyond the quote+claim. No genuine A/B disagreement exists, so this is a confirmed agreement (stance n/a), NOT coding-ambiguous; the pending resolved_by is dropped (per §8, resolved_by is set only for a genuine disagreement). Writer presents this strictly as a documented, neutral pricing inconsistency, never as a scored negative.",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-03",
+          "source_url": "https://www.capterra.com/p/10017894/SEOWRITING-AI/",
+          "claim": "UNREADABLE on 2026-11-03: Capterra returned HTTP 403 to the fetch. The 2026-07-10 value stays, dated to July, on /tools/seowriting-ai.",
+          "quote": null,
+          "supersedes": "nothing",
+          "collector": "refresh-B5-2026-11-03 (live curl, browser UA)"
+        }
+      ]
+    },
+    {
+      "id": "EV-seowriting-ai-review-09",
+      "claim": "On its pricing page read 2026-11-03 SEOWriting.ai lists a free plan and four paid plans. Free: 3 articles, 25,000-word limit, no payment details; no bulk generation, no internal or external linking, no brand voice; paid plans add 'all AI models including the most powerful ones'. Starter $19/mo or $14/mo billed yearly ($168/yr), up to 50 articles, 50 credits, 1 brand voice, internal linking 500 URLs per site. Professional $79/mo or $59/mo yearly ($708/yr), up to 250 articles, 250 credits, 5 brand voices, 5,000 URLs. Professional Plus 1 ('Most Popular') $159/mo or $119/mo yearly ($1,428/yr), up to 500 articles, 500 credits, 10 brand voices, 15,000 URLs. Professional Plus 2 $307/mo or $230/mo yearly ($2,760/yr), up to 1000 articles, 1000 credits, 25 brand voices, 50,000 URLs. WordPress integration and AI image generator on every plan including free. The page displays 'Trustpilot: 4.7' and 'G2: 4.6' (vendor-displayed; both platforms returned 403 to our fetch the same day). The page states no refund terms and nothing on credit rollover; whether the 3 free articles renew is not stated. Prices match the 2026-04-16 Wayback copy used in EV-koala-ai-vs-seowriting-ai-01. Vendor-stated, self-interested.",
+      "source_url": "https://seowriting.ai/pricing",
+      "source_date": "2026-11-03",
+      "quote": "Starter $19 /month, billed monthly $14 /month, billed yearly ($168/year, save 25%) Up to 50 Articles ... Get 3 Free Articles No credit card required ... Professional $79 /month ... $59 /month, billed yearly ($708/year ...) Up to 250 Articles ... Professional Plus 1 Most Popular $159 /month ... $119 /month, billed yearly ($1,428/year ...) Up to 500 Articles ... Professional Plus 2 $307 /month ... $230 /month, billed yearly ($2,760/year ...) Up to 1000 Articles ... Articles Included 3 Up to 50 Up to 250 Up to 500 Up to 1000 Word Limit 25,000 words Unlimited ... Yes, you can start for free with 3 articles. The free plan doesn't require any payment details.",
+      "platform": "seowriting.ai/pricing (vendor pricing page, self-interested; server-rendered HTML read 2026-11-03, rendered empty on 2026-07-10)",
+      "target_slug": "/tools/seowriting-ai",
+      "collected_at": "2026-11-03",
+      "collector": "refresh-B5-2026-11-03 (live curl, browser UA)",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "seowriting-ai-refresh-2026-11-03",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "SEOWriting.ai",
+        "aspect": "pricing ladder, free-plan ceiling, plan features (vendor-stated)",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Free / Starter $19 to Professional Plus 2 $307 per month",
+        "item_date": "2026-11-03"
+      },
+      "honesty_notes": [
+        "Single-reading vendor price capture made during a refresh, not part of the 2026-07-10 dual-coded sweep; it moves the pricing page from the July 'unverifiable-this-run' bucket to a readable source. The July flow counter (60/60/54/6) is left as the July record.",
+        "Per-article figures on the page are straight division of price by credits, valid only for 1-credit models (AI-models doc, EV-01 recapture: 4 credits for GPT-6 Sol / Claude Sonnet 5, 10 for Opus 5.5).",
+        "Merged 2026-11-08: B5 (2026-11-03) and B7 (2026-11-06) each registered this id from the same pricing page; the B5 claim is kept, the B7 read is a recapture, and the B7 second pass (separate agent, live re-read) agrees with the tier prices and free-plan allowance, so the entry now carries two coding passes."
+      ],
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-06",
+          "source_url": "https://seowriting.ai/pricing",
+          "status": "read",
+          "claim": "Pricing page readable (it rendered empty on 2026-07-10). Starter $19/month or $14/month billed yearly ($168/year), up to 50 articles; Professional $79 or $59 yearly, up to 250; Professional Plus 1 $159 or $119 yearly, up to 500; Professional Plus 2 $307 or $230 yearly, up to 1000. Free plan 3 articles (25,000-word limit), no payment details required. No statement on whether unused article credits roll over.",
+          "quote": "The free plan doesn't require any payment details",
+          "supersedes": "2026-07-10: pricing page rendered empty (JavaScript), no tier price verified; free allowance contradicted (3 vs 5) across affiliate pages",
+          "collector": "B7 sibling sweep"
+        }
+      ],
+      "second_pass": {
+        "date": "2026-11-06",
+        "method": "independent live re-read by a separate agent before seeing the first coding",
+        "reading": "Agrees: Starter $19/mo or $14/mo yearly, up to 50 articles; free 3 articles, 25,000-word limit, no payment details; rollover not mentioned; no refund policy stated."
+      },
+      "related": [
+        "EV-jasper-alternatives-07"
+      ]
     }
   ]
 }

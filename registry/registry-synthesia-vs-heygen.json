@@ -139,6 +139,138 @@
     "date": "2026-10-27",
     "by": "refresh-2026-10-27 (live curl/WebFetch)",
     "note": "Price re-check promised for 2026-10-29 run early: Synthesia moved to a credit ladder, HeyGen help center changed per-minute credit burn; recaptures on -01, -02, -04, -09; new entries -14, -15 (sources already on file, so included-source count stays 48)."
+   },
+   {
+    "date": "2026-11-06",
+    "by": "refresh-2026-11-06 B7 (live curl raw HTML, r.jina.ai, WebFetch)",
+    "note": "B7 targeted correction delta (editorial gate ruling 2026-10-31; leads from parked branch ship/b3-avatar-guide-2026-10-31, each re-verified live). Recaptures on -01, -02, -03, -04, -05, -06, -09, -14, -15. New entries -16 (liveavatar.com, new source), -17 (aitoolanalysis.com, source already on file as EV-heygen-review-02), -18 and -19 (Trustpilot profiles, new as included sources; refused in the August passes). Live values that differ from the B3 leads: HeyGen Trustpilot count 5,170 (lead 5,001); Synthesia API add-ons now in credits, the October dollar rates gone; Synthesia languages page now headlines 140+ (was 160+), dubbing page 130+; blogrecode update date now 2026-09-30.",
+    "pass_counter": {
+     "identified_new_sources": 3,
+     "included_new_sources": 3,
+     "excluded": 0,
+     "entries_new": 4,
+     "note": "Re-reads of sources already on file are not counted as candidates."
+    },
+    "page_totals_after": {
+     "identified": 282,
+     "screened": 282,
+     "excluded": 231,
+     "excluded_by_reason": {
+      "duplicate": 95,
+      "no method disclosed, or affiliate-only": 65,
+      "off-topic": 54,
+      "blocked or unverifiable this run": 17
+     },
+     "included_sources": 51,
+     "entries_logged_for_page": 58,
+     "entries_cited_on_page": 49,
+     "cited_ids": [
+      "H-01",
+      "H-02",
+      "H-03",
+      "H-05",
+      "H-06",
+      "H-07",
+      "H-08",
+      "H-09",
+      "H-10",
+      "H-11",
+      "H-12",
+      "H-13",
+      "H-14",
+      "H-15",
+      "H-16",
+      "H-17",
+      "S-03",
+      "S-06",
+      "S-07",
+      "S-08",
+      "S-09",
+      "S-10",
+      "S-12",
+      "S-13",
+      "S-14",
+      "S-15",
+      "S-16",
+      "S-19",
+      "S-20",
+      "S-21",
+      "SH-01",
+      "SH-02",
+      "SH-03",
+      "SH-04",
+      "SH-05",
+      "SH-06",
+      "SH-07",
+      "SH-08",
+      "SH-09",
+      "SH-10",
+      "SH-11",
+      "SH-12",
+      "SH-13",
+      "SH-14",
+      "SH-15",
+      "SH-16",
+      "SH-17",
+      "SH-18",
+      "SH-19"
+     ],
+     "cited_from_this_shard": [
+      "SH-01",
+      "SH-02",
+      "SH-03",
+      "SH-04",
+      "SH-05",
+      "SH-06",
+      "SH-07",
+      "SH-08",
+      "SH-09",
+      "SH-10",
+      "SH-11",
+      "SH-12",
+      "SH-13",
+      "SH-14",
+      "SH-15",
+      "SH-16",
+      "SH-17",
+      "SH-18",
+      "SH-19"
+     ],
+     "entries_reused_from_other_shards": [
+      "EV-heygen-review-01",
+      "EV-heygen-review-02",
+      "EV-heygen-review-03",
+      "EV-heygen-review-05",
+      "EV-heygen-review-06",
+      "EV-heygen-review-07",
+      "EV-heygen-review-08",
+      "EV-heygen-review-09",
+      "EV-heygen-review-10",
+      "EV-heygen-review-11",
+      "EV-heygen-review-12",
+      "EV-heygen-review-13",
+      "EV-heygen-review-14",
+      "EV-heygen-review-15",
+      "EV-heygen-review-16",
+      "EV-heygen-review-17",
+      "EV-synthesia-review-03",
+      "EV-synthesia-review-06",
+      "EV-synthesia-review-07",
+      "EV-synthesia-review-08",
+      "EV-synthesia-review-09",
+      "EV-synthesia-review-10",
+      "EV-synthesia-review-12",
+      "EV-synthesia-review-13",
+      "EV-synthesia-review-14",
+      "EV-synthesia-review-15",
+      "EV-synthesia-review-16",
+      "EV-synthesia-review-19",
+      "EV-synthesia-review-20",
+      "EV-synthesia-review-21"
+     ],
+     "entries_reused_count": 30,
+     "basis_note": "279/48/54 are the totals the 2026-10-27 gate accepted for the first four passes; this pass adds 3 sources and 4 entries."
+    }
    }
   ]
  },
@@ -181,6 +313,14 @@
      "quote": "For solo creators, the Creator plan costs $29/month (or $24/month if you pay annually). ... Tiers range from 1,000 credits/mo at $49 to 100,000 credits/mo at $4,300.",
      "supersedes": "nothing in the ladder; adds the annual Creator price ($24/mo) not captured on 2026-09-22",
      "collector": "refresh-2026-10-27 (live curl/WebFetch)"
+    },
+    {
+     "recaptured_at": "2026-11-06",
+     "source_url": "https://www.heygen.com/pricing",
+     "claim": "Re-read 2026-11-06 (r.jina.ai render): Free 3 watermarked videos a month up to 1 minute each, 30+ languages; Creator $29/mo ($24/mo annually), 600 credits, 175+ languages and dialects, credits roll over one month; Pro $49/mo 1,000 credits, tiers 1,000 at $49 to 100,000 at $4,300; Business $149/mo 1,500 credits, +$20/seat/month, SCORM export and LMS integrations. Unchanged vs 2026-10-27.",
+     "quote": "For solo creators, the Creator plan costs $29/month (or $24/month if you pay annually) ... Tiers range from 1,000 credits/mo at $49 to 100,000 credits/mo at $4,300.",
+     "supersedes": "nothing (confirmation)",
+     "collector": "refresh-2026-11-06 B7 (live curl raw HTML, r.jina.ai, WebFetch)"
     }
    ]
   },
@@ -222,6 +362,14 @@
      "quote": "Starter First month for $9 $19 ... 1,250 credits / month ... Pro Most popular First month for $49 $89 ... 6,000 credits / month ... A typical finished minute uses about 100 credits, more if the avatar is on screen throughout.",
      "supersedes": "2026-09-22 minute ladder (Starter $29/$18 yearly, Creator $89/$64 yearly with 30 min/mo)",
      "collector": "refresh-2026-10-27 (live curl/WebFetch)"
+    },
+    {
+     "recaptured_at": "2026-11-06",
+     "source_url": "https://www.synthesia.io/pricing",
+     "claim": "Re-read 2026-11-06 (raw HTML via curl, cross-checked with WebFetch): plan prices unchanged (Starter $19, $9 first month, $14/mo yearly, $168/yr, 1,250 credits/mo; Pro $89, $49 first month, $59/mo yearly, $708/yr, 6,000 credits/mo; 9 / 125+ / 180+ / 240+ avatars; 3 and 5 personal avatars; 3 and 5 guests; SCORM export Enterprise only). Language rows: 140+ languages & voices on every plan; dubbing output languages 70+ on Basic, Starter and Pro, 140+ on Enterprise. FAQ now states API add-ons in credits: dubbing 80 credits/min with lip-sync, 40 without; Interactive Avatars (API) 10 credits/min avatar only, 20 with the full widget. The $0.40/$0.80 dubbing and $0.10 Interactive Avatar dollar rates captured 2026-10-27 no longer appear anywhere in the page text (WebFetch over both halves of the page confirmed no per-minute dollar prices). Credits reset each billing period.",
+     "quote": "Output languages and locales available for translation ... 70+ languages 70+ languages 70+ languages 140+ languages ... Dubbing - per minute of video dubbed: 80 credits with lip-sync, 40 without ... Interactive Avatars (API) - per minute of conversation: 10 credits for the avatar only, 20 with the full widget.",
+     "supersedes": "2026-10-27 API dollar rates ($0.40/$0.80 dubbing, $0.10 Interactive Avatars, full stack $0.20 coming soon); page's unqualified Synthesia dubbing count",
+     "collector": "refresh-2026-11-06 B7 (live curl raw HTML, r.jina.ai, WebFetch)"
     }
    ]
   },
@@ -266,7 +414,17 @@
     "ORCHESTRATOR REQUOTE 2026-09-22: orchestrator independently re-fetched the raw HTML (curl) and appended the verbatim string(s) above to `quote` after confirming them on the live page.",
     "GATE N6 TRIM 2026-09-22: the assembled quote had grown to 84 words across 7 verbatim fragments, exceeding the protocol's 60-word cap. Re-fetched blogrecode.com's raw HTML again today and confirmed all 7 fragments still verbatim. Kept the 5 most load-bearing fragments in the main `quote` field (60 words, page order: Synthesia $95 total+itemization, the 200-credit/Avatar-IV chain, HeyGen Avatar III $72 total, HeyGen Avatar IV $384 base+credit-pack breakdown, the 2-minute script-length parameter) and moved the 2 remaining required fragments (HeyGen's alternate $384 itemization, the '50 identical videos' test-scope sentence) into a new `quote_supplementary` array, each independently re-verified against today's fetch and each individually under 60 words. No fact from the original honesty_notes reconciliation (the three-way internal-inconsistency finding, the wrong-divisor finding, the 200-credit-vs-600-credit contradiction) is lost -- all source material remains registered, just split across `quote` and `quote_supplementary` per the word cap."
    ],
-   "requote_result": "found"
+   "requote_result": "found",
+   "recaptures": [
+    {
+     "recaptured_at": "2026-11-06",
+     "source_url": "https://blogrecode.com/synthesia-vs-heygen-comparison-creating-ai-videos/",
+     "claim": "Raw HTML re-read 2026-11-06: byline now shows March 12, 2026 and September 30, 2026 (schema dateModified 2026-09-30T16:03:47+03:00), replacing the August 17 update date. Totals unchanged ($384 HeyGen Avatar IV, $95 Synthesia, $72 Avatar III) and the Avatar IV run still rests on a 200-credit Creator month ('1,000 / 200 = 5').",
+     "quote": "By Mia Elvasia March 12, 2026 September 30, 2026 ... HeyGen's \"unlimited\" plan cost me $384. Synthesia's \"limited\" plan cost me $95.",
+     "supersedes": "update date 2026-08-17 -> 2026-09-30; figures unchanged",
+     "collector": "refresh-2026-11-06 B7 (live curl raw HTML, r.jina.ai, WebFetch)"
+    }
+   ]
   },
   {
    "id": "EV-synthesia-vs-heygen-04",
@@ -306,6 +464,14 @@
      "quote": "Video creation uses about 100 credits per minute of finished video. ... 1 minute of API usage = 160 credits",
      "supersedes": "2026-09-22 rates (editor 120 credits/min, API 75 credits/min, API bundled into Creator+ plans)",
      "collector": "refresh-2026-10-27 (live curl/WebFetch)"
+    },
+    {
+     "recaptured_at": "2026-11-06",
+     "source_url": "https://help.synthesia.io/en/articles/11972627-what-are-credits-and-how-do-they-work-on-self-serve-plans",
+     "claim": "Raw HTML re-read 2026-11-06 ('Updated over a week ago'): 500 credits on every plan, Starter 1,750/mo, Pro 6,500/mo; about 100 credits per finished minute; '1 minute of API usage = 160 credits'; Interactive Avatar API 10 credits/min; credits reset, no accumulation. Unchanged vs 2026-10-27.",
+     "quote": "1 minute of API usage = 160 credits 1 minute of Interactive Avatar API usage = 10 credits",
+     "supersedes": "nothing (confirmation)",
+     "collector": "refresh-2026-11-06 B7 (live curl raw HTML, r.jina.ai, WebFetch)"
     }
    ]
   },
@@ -337,6 +503,16 @@
    },
    "honesty_notes": [
     "Pair with EV-synthesia-vs-heygen-06 (160+ languages, a DIFFERENT feature) -- never merge these into a single '160+' or '140+' headline figure without specifying which feature it describes."
+   ],
+   "recaptures": [
+    {
+     "recaptured_at": "2026-11-06",
+     "source_url": "https://www.synthesia.io/features/ai-dubbing",
+     "claim": "Re-read 2026-11-06 (raw HTML): the dubbing feature page now headlines 130+ languages (title and FAQ), not 140+. The pricing table (EV-synthesia-vs-heygen-02 recapture) gives 70+ on self-serve plans and 140+ on Enterprise.",
+     "quote": "Dub videos into 130+ languages with voice cloning and perfect lip-sync. ... Synthesia supports 130+ languages and dialects for AI dubbing",
+     "supersedes": "2026-09-22 140+ dubbing figure",
+     "collector": "refresh-2026-11-06 B7 (live curl raw HTML, r.jina.ai, WebFetch)"
+    }
    ]
   },
   {
@@ -368,6 +544,16 @@
    "honesty_notes": [
     "This resolves the flag left open in EV-synthesia-review-04's honesty_notes ('a separate...page title...reads 160+...this run did not directly fetch that specific URL'). Use 140+ when the page discusses AI dubbing/translation specifically; use 160+ when discussing overall voice/language selection for video creation.",
     "Do not state a single unqualified 'Synthesia supports X languages' figure on the vs-page without naming which feature it refers to -- the two vendor pages describe genuinely different scopes."
+   ],
+   "recaptures": [
+    {
+     "recaptured_at": "2026-11-06",
+     "source_url": "https://www.synthesia.io/features/languages",
+     "claim": "Re-read 2026-11-06 (raw HTML): page title now 'Make Videos in 140+ Languages & Accents in 5 Mins' and FAQ 'over 140+ languages and accents'; '160+ languages' survives only as a label in the voice-picker filter. The page no longer headlines 160+.",
+     "quote": "Make Videos in 140+ Languages & Accents in 5 Mins ... With over 140+ languages and accents we already cater for a diverse range of cultures.",
+     "supersedes": "2026-09-22 160+ languages & accents headline",
+     "collector": "refresh-2026-11-06 B7 (live curl raw HTML, r.jina.ai, WebFetch)"
+    }
    ]
   },
   {
@@ -474,6 +660,14 @@
      "quote": "SCORM export and LMS integrations",
      "supersedes": "nothing (confirmation)",
      "collector": "refresh-2026-10-27 (live curl/WebFetch)"
+    },
+    {
+     "recaptured_at": "2026-11-06",
+     "source_url": "https://www.heygen.com/pricing",
+     "claim": "Re-read 2026-11-06: SCORM export and LMS integrations still listed only under Business (and Enterprise); Global Language Suite row 30+ on Free, 175 languages and dialects on paid tiers.",
+     "quote": "SCORM export and LMS integrations ... Free: 30+ languages ... Creator: 175 languages and dialects",
+     "supersedes": "nothing (confirmation)",
+     "collector": "refresh-2026-11-06 B7 (live curl raw HTML, r.jina.ai, WebFetch)"
     }
    ]
   },
@@ -627,6 +821,16 @@
    "honesty_notes": [
     "Supersedes the August capture's Avatar IV 20 cr/min and Avatar III 3 cr/min (EV-heygen-review-01) for this page's arithmetic.",
     "Single coding pass on a refresh re-read; no second pass run."
+   ],
+   "recaptures": [
+    {
+     "recaptured_at": "2026-11-06",
+     "source_url": "https://help.heygen.com/en/articles/15125761-heygen-credit-based-pricing-plans-subscriptions-explained",
+     "claim": "Re-read 2026-11-06 (r.jina.ai): Avatar III 7 Photo / 4 Video Look, Avatar IV 16 / 31, Avatar V 48, translation 6 Speed / 10 Precision / 4 no lipsync credits per minute; Business extra credits $0.05 each in 100-credit blocks for $5; cancelled plans lose rollover. Unchanged. Also states free users get 1 to 3 free videos depending on region (not used on the page).",
+     "quote": "Avatar IV Video Look 1 minute = 31 credits ... Extra credits cost $0.05 per credit and are purchased in blocks of 100 credits for $5",
+     "supersedes": "nothing (confirmation)",
+     "collector": "refresh-2026-11-06 B7 (live curl raw HTML, r.jina.ai, WebFetch)"
+    }
    ]
   },
   {
@@ -657,6 +861,135 @@
    "honesty_notes": [
     "Confirms the September figures used on the page; adds the $0.60 Avatar III digital twin and $2.31 Avatar IV photo avatar rates.",
     "Single coding pass on a refresh re-read; no second pass run."
+   ],
+   "recaptures": [
+    {
+     "recaptured_at": "2026-11-06",
+     "source_url": "https://help.heygen.com/en/articles/10060327-heygen-api-pricing-credits-explained",
+     "claim": "Re-read 2026-11-06 (r.jina.ai; article says last updated October 28, 2026): Avatar III Studio Avatar $0.99/min, Avatar IV Studio Avatar or Digital Twin $4.83/min, Precision Lip Sync translation $1.50/min, no free API credits since Feb 2026, pay-as-you-go credits expire after 12 months. Unchanged.",
+     "quote": "Studio Avatar$0.99 20 ... Studio Avatar$4.83 97 ... Precision - Lip Sync$1.50 30 ... HeyGen does not offer free API credits starting Feb 2026.",
+     "supersedes": "nothing (confirmation)",
+     "collector": "refresh-2026-11-06 B7 (live curl raw HTML, r.jina.ai, WebFetch)"
+    }
+   ]
+  },
+  {
+   "target_slug": "/vs/synthesia-vs-heygen",
+   "collected_at": "2026-11-06",
+   "collector": "refresh-2026-11-06 B7 (live curl raw HTML, r.jina.ai, WebFetch)",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "synthesia-vs-heygen-2026-11-06",
+   "screening": "included",
+   "coders": [
+    "A"
+   ],
+   "coder_agreement": null,
+   "id": "EV-synthesia-vs-heygen-16",
+   "label": "vendor-claim",
+   "claim": "LiveAvatar (HeyGen's real-time avatar product, billed apart from HeyGen Creator/Pro/Business credits) printed its own ladder on 2026-11-06: Free $0 with 10 credits a month (watermark, max 1 concurrency, max 2 min per session), a $99 tier with 1,100 credits a month, a $475 tier with 6,000 credits a month, and custom Enterprise. No $19 tier appears. liveavatar.com/pricing now redirects to the liveavatar.com home page, which carries the price block.",
+   "source_url": "https://www.liveavatar.com/pricing",
+   "source_date": "2026-11-06",
+   "quote": "Free Full API access. Zero commitment. $0 10 credits / mo ... $99 1,100 credits / mo ... $475 6,000 credits / mo ... Enterprise ... Custom",
+   "platform": "liveavatar.com (vendor price list, LiveAvatar by HeyGen; self-interested)",
+   "coding": {
+    "tool": "HeyGen (LiveAvatar)",
+    "aspect": "real-time avatar price ladder",
+    "stance": "n/a",
+    "plan_tier_if_stated": "Free, $99, $475, Enterprise",
+    "item_date": "2026-11-06"
+   },
+   "honesty_notes": [
+    "Supersedes EV-heygen-review-14's $19/200-credit Starter (help-center capture 2026-08-15) for this page; the lead came from the parked B3 recapture (2026-10-31) and was re-verified live today. Billing period (monthly vs annual) is not stated next to the prices, so the page does not call them monthly.",
+    "Single coding pass on a refresh re-read."
+   ]
+  },
+  {
+   "target_slug": "/vs/synthesia-vs-heygen",
+   "collected_at": "2026-11-06",
+   "collector": "refresh-2026-11-06 B7 (live curl raw HTML, r.jina.ai, WebFetch)",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "synthesia-vs-heygen-2026-11-06",
+   "screening": "included",
+   "coders": [
+    "A"
+   ],
+   "coder_agreement": null,
+   "id": "EV-synthesia-vs-heygen-17",
+   "label": "research-finding",
+   "claim": "aitoolanalysis.com's HeyGen review, re-read 2026-11-06, shows 'Last Updated: October 24, 2026' and now prints Creator at 600 credits and about 19 minutes of Avatar IV with a video avatar; the 200-credit figure it carried on 2026-06-14 (EV-heygen-review-02) no longer appears.",
+   "source_url": "https://aitoolanalysis.com/heygen-review/",
+   "source_date": "2026-10-24",
+   "quote": "HeyGen costs $29 a month for Creator, with 600 credits, or $24 a month if you pay for a year ... Those 600 credits buy about 19 minutes of Avatar IV video ... Last Updated: October 24, 2026",
+   "platform": "aitoolanalysis.com (independent review site; source already on file as EV-heygen-review-02)",
+   "coding": {
+    "tool": "HeyGen",
+    "aspect": "third-party correction of the 200-credit Creator figure",
+    "stance": "n/a",
+    "plan_tier_if_stated": "Creator",
+    "item_date": "2026-10-24"
+   },
+   "honesty_notes": [
+    "Not a new source: same URL as EV-heygen-review-02, so the included-source count does not move for it.",
+    "Lead from parked B3 (2026-10-31), re-verified live today; single coding pass."
+   ]
+  },
+  {
+   "target_slug": "/vs/synthesia-vs-heygen",
+   "collected_at": "2026-11-06",
+   "collector": "refresh-2026-11-06 B7 (live curl raw HTML, r.jina.ai, WebFetch)",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "synthesia-vs-heygen-2026-11-06",
+   "screening": "included",
+   "coders": [
+    "A"
+   ],
+   "coder_agreement": null,
+   "id": "EV-synthesia-vs-heygen-18",
+   "label": "aggregate-rating",
+   "claim": "HeyGen's Trustpilot profile, read 2026-11-06, shows 4.2 out of 5, rated 'Great', on 5,170 reviews. Earlier attempts (2026-08-15) were refused with HTTP 403; the parked B3 read of 2026-10-31 had 4.2 on 5,001.",
+   "source_url": "https://www.trustpilot.com/review/heygen.com",
+   "source_date": "2026-11-06",
+   "quote": "HeyGen is rated \"Great\" with 4.2 / 5 on Trustpilot ... HeyGen Reviews 5,170",
+   "platform": "trustpilot.com (open review platform; anyone can post)",
+   "coding": {
+    "tool": "HeyGen",
+    "aspect": "Trustpilot score and review count",
+    "stance": "n/a",
+    "plan_tier_if_stated": null,
+    "item_date": "2026-11-06"
+   },
+   "honesty_notes": [
+    "Read via r.jina.ai render; score in the page title and header, count in the header. A one-day snapshot, never a trend or a satisfaction rate.",
+    "Live count 5,170 wins over the B3 lead 5,001."
+   ]
+  },
+  {
+   "target_slug": "/vs/synthesia-vs-heygen",
+   "collected_at": "2026-11-06",
+   "collector": "refresh-2026-11-06 B7 (live curl raw HTML, r.jina.ai, WebFetch)",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "synthesia-vs-heygen-2026-11-06",
+   "screening": "included",
+   "coders": [
+    "A"
+   ],
+   "coder_agreement": null,
+   "id": "EV-synthesia-vs-heygen-19",
+   "label": "aggregate-rating",
+   "claim": "Synthesia's Trustpilot profile, read 2026-11-06, shows 3.8 out of 5, rated 'Great', on 1,830 reviews. Earlier attempts on 2026-08-13 (trustpilot.com and uk.trustpilot.com) were refused with HTTP 403.",
+   "source_url": "https://www.trustpilot.com/review/synthesia.io",
+   "source_date": "2026-11-06",
+   "quote": "Synthesia is rated \"Great\" with 3.8 / 5 on Trustpilot ... 1,830",
+   "platform": "trustpilot.com (open review platform; anyone can post)",
+   "coding": {
+    "tool": "Synthesia",
+    "aspect": "Trustpilot score and review count",
+    "stance": "n/a",
+    "plan_tier_if_stated": null,
+    "item_date": "2026-11-06"
+   },
+   "honesty_notes": [
+    "Score from the r.jina.ai render's page title; the 1,830 count did not render there and was read with WebFetch twice (two separate prompts, same figure). A one-day snapshot."
    ]
   }
  ]

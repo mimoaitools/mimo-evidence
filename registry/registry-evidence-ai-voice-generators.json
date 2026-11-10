@@ -1,0 +1,2072 @@
+{
+  "_meta": {
+    "flow_id": "evidence-ai-voice-generators-2026-10-01",
+    "protocol_version": "MEP-1.0",
+    "target_slug": "/evidence/ai-voice-generators",
+    "target_keyword": "ai voice generator user reviews",
+    "run_date": "2026-10-01",
+    "collector": "evidence-curator",
+    "page_class": "evidence-record page (delta shard). REUSES by id the six existing voice shards: registry-best-ai-voice-generators.json (21), registry-elevenlabs-review.json (17), registry-wellsaid-labs-review.json (17), registry-murf-review.json (18), registry-speechify-review.json (18), registry-elevenlabs-vs-wellsaid-labs.json (8). This shard holds NEW entries only.",
+    "sweep_strategy": "1) coverage audit of the 99 existing entries against nine failure modes; 2) newly reachable review platforms: Trustpilot individual reviews through the r.jina.ai reader proxy (earlier voice sweeps logged Trustpilot as blocked) and BBB complaint profiles; 3) vendor-primary docs for the rules behind user complaints (credit forfeiture, non-determinism); 4) disclosed-method tests (Labelbox, Synthio DOSE via its PR Newswire release, Artificial Analysis leaderboard and method page); 5) four vendor homepage claims captured verbatim; 6) Murf and Speechify pricing re-capture (Murf Studio tiers blocked: client-rendered).",
+    "flow_counter": {
+      "identified": 297,
+      "screened": 297,
+      "excluded": 250,
+      "excluded_by_reason": {
+        "no-methodology-affiliate": 49,
+        "duplicate": 95,
+        "off-topic": 65,
+        "unverifiable-this-run": 29,
+        "astroturf": 12
+      },
+      "included_sources": 47,
+      "entries": 49,
+      "counter_note": "identified = 297 candidate sightings: 132 WebSearch result links over 15 documented queries (after removing same-URL repeats across queries), 27 direct-navigation targets, 137 distinct Trustpilot review permalinks and 1 Trustpilot list page that hit a verification wall. 47 distinct sources included (29 Trustpilot reviews, 3 BBB profiles, 4 vendor homepages, 3 vendor pricing pages, 1 vendor help article, 1 vendor docs page, 1 press-reported vendor launch, 2 Artificial Analysis pages, 1 Labelbox test, 1 press release, 1 secondary benchmark report) producing 49 entries (the Artificial Analysis leaderboard supplies 3 per-tool entries). Affiliate roundups were excluded on title/domain judgement without fetching (reason code no-methodology-affiliate); items never fetched are NOT claimed as verified.",
+      "trustpilot_unit_note": "Trustpilot unit = one review. 'duplicate' for a Trustpilot review means it describes a tool + failure mode already represented by a registered review; 'off-topic' means no failure-mode or quality detail (e.g. 'great tool, nice to use')."
+    },
+    "page_flow_counter": {
+      "identified": 999,
+      "screened": 999,
+      "excluded": 863,
+      "excluded_by_reason": {
+        "no-methodology-affiliate": 294,
+        "duplicate": 233,
+        "off-topic": 212,
+        "unverifiable-this-run": 112,
+        "astroturf": 12
+      },
+      "included": 136,
+      "dated_entries": 135,
+      "derivation": "Sum of counters as PUBLISHED on the live feeder pages (read from the FlowCounter props) plus this sweep, without double-counting the vs page. /best/ai-voice-generators: identified 247, excluded 226 (134 no-method, 35 duplicate, 34 off-topic, 23 unverifiable), included 21. /tools/elevenlabs: 111; 30 no-method, 18 unverifiable, 13 off-topic, 33 duplicate-or-consolidated; included 17. /tools/wellsaid-labs: 79; 25/15/14/12 (no-method/duplicate/off-topic/unverifiable); included 13. /tools/murf: 108; 24 no-method, 30 duplicate, 28 off-topic, 11 unverifiable; included 15. /tools/speechify: 110; 22/16/44/13 (no-method/duplicate/off-topic/unverifiable); included 15. /vs/elevenlabs-vs-wellsaid-labs publishes 237/38 but that counter ALREADY CONTAINS the elevenlabs (111/17) and wellsaid-labs (79/13) counters; only its own delta is added here: 47 identified (237-111-79), excluded 39 (10 no-method, 9 duplicate, 14 off-topic, 6 unverifiable), included 8 (38-17-13). This sweep: 297 identified, 250 excluded (49/95/65/29/12), included 47. Totals: identified 247+111+79+108+110+47+297 = 999; included 21+17+13+15+15+8+47 = 136; excluded 999-136 = 863.",
+      "caveats": [
+        "'identified' is a sum of per-sweep candidate sightings, not distinct URLs: the same Capterra, vendor-pricing and review-platform pages were sighted in several sweeps and earlier shards keep no URL-level log from which to de-duplicate.",
+        "'included' mixes the units each feeder page published (hub 21 = entries; tool pages = sources). Thirteen entries were re-registered from the hub into the four tool shards (EV-elevenlabs-review-01..03, EV-wellsaid-labs-review-01..04, EV-murf-review-01..03, EV-speechify-review-01..03), so a source counted in the hub's 21 can recur in a tool page's count; the distinct-entry figure in dated_entries is the number to cite for 'how many dated entries'.",
+        "Individual Trustpilot reviews in this sweep are counted as separate candidates, unlike the earlier sweeps where review platforms were mostly unreachable."
+      ],
+      "date_range": "2021-03-12 to 2026-10-01",
+      "dated_entries_breakdown": "86 distinct existing entries (99 registered across the six voice shards minus 13 re-registrations of hub entries) + 49 new entries in this shard; every one carries an ISO source_date. Capture-dated vendor material is included in both parts: by label, existing distinct = {'vendor-claim': 34, 'community-report': 25, 'independent-test': 11, 'research-finding': 16}, new = {'community-report': 32, 'vendor-claim': 10, 'independent-test': 7}."
+    },
+    "query_census": [
+      {
+        "q": "WebSearch: ElevenLabs voice inconsistency between generations same voice changes tone user complaint reddit",
+        "candidates": 9,
+        "note": "1 included (elevenlabs.io/docs/eleven-creative/troubleshooting); github.com podcastfy discussion blocked by reader proxy (unverifiable); 2 duplicate vendor-help pages; 5 off-topic (tomsguide x3, MS Learn, dev.to)"
+      },
+      {
+        "q": "WebSearch: AI voice generator mispronounces words test pronunciation errors evaluation methodology 2026",
+        "candidates": 9,
+        "note": "0 included; 5 off-topic (academic pronunciation-assessment papers for language learners/STT); 4 no-methodology-affiliate (futureagi x3 eval-vendor blog, anangsha.me)"
+      },
+      {
+        "q": "WebSearch: Murf AI studio plan pricing Creator Growth Business per month 2026",
+        "candidates": 9,
+        "note": "smallest.ai duplicate (already murf-review-07); g2 pricing page unverifiable; 7 affiliate roundups (judged from title/domain, not fetched). Murf Studio plan prices remain uncaptured."
+      },
+      {
+        "q": "WebSearch: Speechify refund charged after free trial cancelled complaints 2026",
+        "candidates": 9,
+        "note": "1 included (bbb.org Speechify complaints); 6 off-topic (Adobe community x3, audiobooks.com Trustpilot x2, JustAnswer); 2 aggregator/affiliate"
+      },
+      {
+        "q": "WebSearch: PlayHT shutdown users lost voice clones migration ElevenLabs alternative 2026",
+        "candidates": 9,
+        "note": "x.com post unverifiable; theplanettools duplicate (hub-20); 7 migration-vendor/affiliate pages"
+      },
+      {
+        "q": "WebSearch: reddit r/ElevenLabs credits wasted regenerate pronunciation wrong support refund",
+        "candidates": 9,
+        "note": "no reddit.com result returned; capterra duplicate; 7 off-topic (Adobe/Figma community, app-store, HF code); substack blog not fetched"
+      },
+      {
+        "q": "WebSearch: quora Murf AI vs ElevenLabs voice quality experience",
+        "candidates": 9,
+        "note": "no quora.com result returned; 9 comparison/affiliate pages (judged from title/domain, not fetched)"
+      },
+      {
+        "q": "WebSearch: blind listening test AI text-to-speech ElevenLabs Murf WellSaid Speechify participants rated naturalness methodology",
+        "candidates": 9,
+        "note": "murf.ai homepage included as vendor claim source; murf.ai alternative page duplicate; 6 affiliate/vendor roundups; fahimai murf-vs-elevenlabs already counted in the previous query (not recounted)"
+      },
+      {
+        "q": "WebSearch: WellSaid Labs reviews customer support billing cancel complaints",
+        "candidates": 9,
+        "note": "trustpilot (old and AU domain) and capterra duplicates; g2 and getapp blocked; help.wellsaidlabs cancel page 404; 2 affiliate; 1 unrelated company"
+      },
+      {
+        "q": "WebSearch: G2 ElevenLabs reviews cons credits pronunciation customer support",
+        "candidates": 9,
+        "note": "g2 x2 and getapp.ca blocked (unverifiable); au.trustpilot and devopscube duplicates; elevenlabsreviews.com/g2 is an affiliate-linked aggregator (excluded no-methodology-affiliate); capterra counted already"
+      },
+      {
+        "q": "WebSearch: bbb.org ElevenLabs complaints business profile",
+        "candidates": 9,
+        "note": "1 included (BBB Eleven Labs Inc complaints); BBB main page + ToS duplicates; 6 off-topic (unrelated BBB/Wikipedia/Glassdoor/biotech)"
+      },
+      {
+        "q": "WebSearch: bbb.org Murf AI OR \"Murf Labs\" complaints",
+        "candidates": 9,
+        "note": "1 included (BBB Murf AI complaints page: 0 complaints); trustpilot murf duplicate; elearningindustry/cybernews(403)/g2 unverifiable; 3 affiliate"
+      },
+      {
+        "q": "WebSearch: AI voice cloning consent complaint voice actor ElevenLabs terms court 2026",
+        "candidates": 9,
+        "note": "terms.law x2 and voiceovernews duplicate existing EW/E entries; law360 and bloomberglaw paywalled; 1 unrelated (Tokyo court); 3 affiliate/explainers"
+      },
+      {
+        "q": "WebSearch: independent test text-to-speech services mispronunciation rate numbers dates names 100 sentences tested ElevenLabs OpenAI Google",
+        "candidates": 10,
+        "note": "3 included (labelbox 500-prompt test, alphasignal, elevenlabs.io homepage); 3 speech-to-text pages off-topic; 3 vendor/affiliate; shattered.io duplicate of the primary press release"
+      },
+      {
+        "q": "WebSearch: Synthio Labs DOSE benchmark Drug-name Oral Synthesis Evaluation press release 274 drug names",
+        "candidates": 9,
+        "note": "1 included (PR Newswire primary release); 3 reprints/duplicates; 4 off-topic; shattered.io already counted"
+      },
+      {
+        "q": "DIRECT (reddit): www.reddit.com/r/ElevenLabs/search.json; old.reddit.com/r/ElevenLabs/; r.jina.ai proxy of reddit top, search, old.reddit search, top.json",
+        "candidates": 6,
+        "note": "ALL BLOCKED: HTTP 403 'blocked by network security' (also through reader proxy). One old.reddit.com response returned the generic 'Welcome to Reddit' shell with no thread data."
+      },
+      {
+        "q": "DIRECT (quora): quora.com/search?q=elevenlabs; quora.com/topic/ElevenLabs",
+        "candidates": 2,
+        "note": "BLOCKED: HTTP 403 / Cloudflare verification (also via reader proxy)"
+      },
+      {
+        "q": "DIRECT (G2/GetApp): g2.com/products/elevenlabs/reviews; g2.com/products/elevenlabsio/reviews; getapp.com wellsaid reviews",
+        "candidates": 3,
+        "note": "BLOCKED: 403 / CAPTCHA via curl and reader proxy"
+      },
+      {
+        "q": "DIRECT (Murf pricing variants): murf.ai/pricing?tab=studio; murf.ai/pricing#studio; murf.ai/studio-pricing; murf.ai/pricing/studio",
+        "candidates": 4,
+        "note": "first two return the same API-tab page as murf.ai/pricing (duplicate); last two empty (unverifiable). Studio tier prices NOT captured."
+      },
+      {
+        "q": "DIRECT (vendor primary): murf.ai/pricing, speechify.com/pricing/, speechify.com/pricing-studio/, speechify.com, wellsaid.io, help.elevenlabs.io credits article, status.elevenlabs.io",
+        "candidates": 7,
+        "note": "6 included; status.elevenlabs.io off-topic (no incident history exposed in fetched text)"
+      },
+      {
+        "q": "DIRECT (Artificial Analysis): artificialanalysis.ai/text-to-speech/leaderboard/provider-voice, /methodology/text-to-speech/pronunciation-robustness-overview, /text-to-speech, /text-to-speech/arena; techcrunch v4 article",
+        "candidates": 5,
+        "note": "leaderboard, methodology and techcrunch included; /text-to-speech and /arena duplicate"
+      },
+      {
+        "q": "DIRECT (Trustpilot via reader proxy): trustpilot.com/review/{elevenlabs.io, murf.ai, wellsaid.io, speechify.com} with default, ?stars=1 and ?stars=2 filters",
+        "candidates": 137,
+        "note": "candidate unit = individual review permalink; 137 distinct reviews seen across 11 list pages (EL stars=2 page returned a verification wall: 1 unverifiable). 29 registered; 12 named-support-rep praise reviews on speechify.com screened as pattern-astroturf (not cited); 26 off-topic (no failure-mode detail or generic praise); 70 duplicate (same tool + same failure mode as a registered entry)."
+      }
+    ],
+    "blocked_log": [
+      "reddit.com / old.reddit.com (HTTP 403 network block, also through r.jina.ai) - NO Reddit evidence this run",
+      "quora.com (403 / Cloudflare challenge, also via reader proxy)",
+      "g2.com ElevenLabs/Murf/WellSaid review pages (403 / CAPTCHA)",
+      "getapp.com (Cloudflare challenge)",
+      "github.com via reader proxy (rate-block message)",
+      "trustpilot.com direct curl (HTTP 403); reachable only through r.jina.ai; EL ?stars=2 page hit a verification wall",
+      "murf.ai/pricing Studio tab (client-rendered; only the API tab is in fetched text) - Murf Studio prices NOT captured",
+      "help.wellsaidlabs.com cancel article (404)",
+      "law360 / bloomberglaw (paywall)",
+      "x.com (not fetched)"
+    ],
+    "astroturf_note": "Pattern screen (canon 3.1) on Trustpilot: on speechify.com's default list page, 12 of 15 reviews dated 2026-09-25 to 2026-10-01 are short 'agent NAME was amazing' support-praise posts naming five or six different representatives. Trustpilot labels all of them 'Unprompted review', so this is a pattern-only flag (templated look-alikes, tight window), not a finding that they are fake. They are excluded under 'astroturf', not cited or linked, and the Speechify Trustpilot aggregate score (shown as 4.7 on 7,098 reviews) was deliberately NOT registered because it rests on that review stream. No such pattern was found for ElevenLabs, Murf or WellSaid pages. elevenlabsreviews.com carries an ElevenLabs affiliate link (try.elevenlabs.io) and is excluded as an affiliate aggregator.",
+    "reddit_access_note": "Reddit unreachable this run (403 on every route, including the reader proxy). The page must not claim Reddit coverage. Same state as the writing-tools and voice-cluster sweeps.",
+    "date_note": "Trustpilot review dates are the date printed on the review (Trustpilot labels this the date of experience on its own pages; the reader-proxy text shows the bare date). Treat as 'date shown'.",
+    "coder_agreement_rate": "CURATOR-PROVISIONAL single-pass coding on all entries; dual-independent coding + resolver orchestrated above this run. FLAGGED FOR RESOLVER: EV-evidence-ai-voice-generators-04 (drift claim is about software updates in general, reviewer does not name the model) | EV-evidence-ai-voice-generators-05 (refund eventually granted; stance mixed) | EV-evidence-ai-voice-generators-08 (2 stars, not 1 as the list-page order might suggest; credit-burn claim is about the SFX tool) | EV-evidence-ai-voice-generators-12 (mixed: reviewer says the loss was disclosed at cancellation) | EV-evidence-ai-voice-generators-20 (mixed: praises the tech, complains about billing) | EV-evidence-ai-voice-generators-24 (5-star review that mentions 'voice changes' without saying what changed; do not code as a negative drift report) | EV-evidence-ai-voice-generators-36 (test/benchmark with COI, stale model, or secondary reporting; stance coding is judgement-heavy) | EV-evidence-ai-voice-generators-37 (test/benchmark with COI, stale model, or secondary reporting; stance coding is judgement-heavy) | EV-evidence-ai-voice-generators-38 (test/benchmark with COI, stale model, or secondary reporting; stance coding is judgement-heavy) | EV-evidence-ai-voice-generators-39 (test/benchmark with COI, stale model, or secondary reporting; stance coding is judgement-heavy) | EV-evidence-ai-voice-generators-40 (test/benchmark with COI, stale model, or secondary reporting; stance coding is judgement-heavy) | EV-evidence-ai-voice-generators-41 (test/benchmark with COI, stale model, or secondary reporting; stance coding is judgement-heavy) | EV-evidence-ai-voice-generators-42 (test/benchmark with COI, stale model, or secondary reporting; stance coding is judgement-heavy)",
+    "failure_mode_note": "see final report coverage map",
+    "entries_reused": [],
+    "staleness_flag": "ElevenLabs launched v4 and v4 Turbo on 2026-09-28 (TechCrunch, entry in this shard). User reports on ElevenLabs credits, billing and support are not model-specific; reports of voice drift or pronunciation may concern v3 or earlier models and the page must not describe them as v4 behaviour.",
+    "refresh_2026_10_27": {
+      "note": "B1 refresh re-check of every vendor price, policy and homepage line the page prints. User reports were not re-swept. Reused-entry re-checks (those entries live in other shards and are recorded here so this shard stays the only one touched):",
+      "reused_rechecks": [
+        {
+          "id": "EV-elevenlabs-review-01 (E-01)",
+          "url": "https://elevenlabs.io/pricing",
+          "result": "unchanged: Free $0, 10k credits/month, 3 Studio projects; commercial license starts at Starter ($6/mo, 30k credits; time-limited $1 first month 'Until Nov 1')"
+        },
+        {
+          "id": "W-01 (wellsaid-labs review pricing entry)",
+          "url": "https://www.wellsaid.io/pricing",
+          "result": "prices unchanged (Trial $0; Starter $19 monthly / $10 annual; Pro $49 / $33; Business $160/user annual); the Trial now reads '3 download minutes per month (no commercial rights)', generation 10 minutes on Trial"
+        },
+        {
+          "id": "EV-elevenlabs-vs-wellsaid-labs-01/02",
+          "url": "https://elevenlabs.io/pricing",
+          "result": "unchanged: per-generation charging, 1 credit per character on Multilingual v2 (0.5-1 on Flash/Turbo API), rollover up to two months, balance at most 3x the monthly quota"
+        },
+        {
+          "id": "EV-elevenlabs-vs-wellsaid-labs-03",
+          "url": "https://www.wellsaid.io/pricing",
+          "result": "unchanged: regenerating does not count against downloaded minutes"
+        },
+        {
+          "id": "EV-speechify-review-13 (S-13)",
+          "url": "https://speechify.com/refund-policy/",
+          "result": "unchanged: 7 days incl. trial; 500 HD words / 2 minutes; monthly, quarterly and discounted subscriptions non-refundable"
+        }
+      ],
+      "unreadable": [
+        "Murf Studio tier prices (murf.ai/pricing Studio tab, client-rendered)"
+      ],
+      "recaptured_entries": 9
+    }
+  },
+  "entries": [
+    {
+      "id": "EV-evidence-ai-voice-generators-01",
+      "claim": "A Trustpilot reviewer (1 star, date shown 2026-09-11) says paid credits are lost on unsubscribing.",
+      "source_url": "https://www.trustpilot.com/reviews/6ab98e6bd3ba86910f08ab5c",
+      "source_date": "2026-09-11",
+      "quote": "You spend months paying for credits and then if you unsubscribe you have your credits stolen.",
+      "quote_supplementary": [
+        "gave ElevenLabs 1 star."
+      ],
+      "platform": "Trustpilot (open review platform; individual review; reviewer self-reported, unverified)",
+      "target_slug": "/evidence/ai-voice-generators",
+      "collected_at": "2026-10-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-voice-generators-2026-10-01",
+      "screening": "included",
+      "label": "community-report",
+      "tool": "ElevenLabs",
+      "failure_mode": "credit-expiry/billing",
+      "star_rating": 1,
+      "date_basis": "date shown on the Trustpilot review; rating read from the permalink page or the star-filtered list page",
+      "verification": "permalink + list page re-fetched via r.jina.ai reader proxy on 2026-10-01 (trustpilot.com returns HTTP 403 to direct curl)",
+      "tier_if_stated": null,
+      "coders": [],
+      "coder_agreement": null,
+      "coding": {
+        "tool": "ElevenLabs",
+        "aspect": "credit loss on cancellation",
+        "stance": "negative",
+        "plan_tier_if_stated": "not stated",
+        "item_date": "2026-09-11"
+      },
+      "coding_status": "CURATOR-PROVISIONAL single pass; dual-independent coding + resolver orchestrated above this run",
+      "honesty_notes": [
+        "Open review platform: anyone can post, reviewers self-report, Trustpilot does not verify claims; one reviewer's account is an anecdote, never a rate."
+      ]
+    },
+    {
+      "id": "EV-evidence-ai-voice-generators-02",
+      "claim": "A Trustpilot reviewer (1 star, date shown 2026-09-01) reports accumulated paid credits vanishing, then being restored only as expiring 'courtesy credits' after a month of support back-and-forth.",
+      "source_url": "https://www.trustpilot.com/reviews/6a9769e1e3e07d16b8d016b3",
+      "source_date": "2026-09-01",
+      "quote": "I paid month after month, accumulated around 100,000 credits, and then discovered that those credits were gone.",
+      "quote_supplementary": [
+        "ElevenLabs classified them as \"courtesy credits\" with a short expiration period.",
+        "30 days wasted going back and forth, with no actual solution.",
+        "gave ElevenLabs 1 star."
+      ],
+      "platform": "Trustpilot (open review platform; individual review; reviewer self-reported, unverified)",
+      "target_slug": "/evidence/ai-voice-generators",
+      "collected_at": "2026-10-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-voice-generators-2026-10-01",
+      "screening": "included",
+      "label": "community-report",
+      "tool": "ElevenLabs",
+      "failure_mode": "credit-expiry/support",
+      "star_rating": 1,
+      "date_basis": "date shown on the Trustpilot review; rating read from the permalink page or the star-filtered list page",
+      "verification": "permalink + list page re-fetched via r.jina.ai reader proxy on 2026-10-01 (trustpilot.com returns HTTP 403 to direct curl)",
+      "tier_if_stated": null,
+      "coders": [],
+      "coder_agreement": null,
+      "coding": {
+        "tool": "ElevenLabs",
+        "aspect": "credit expiry; support resolution",
+        "stance": "negative",
+        "plan_tier_if_stated": "not stated",
+        "item_date": "2026-09-01"
+      },
+      "coding_status": "CURATOR-PROVISIONAL single pass; dual-independent coding + resolver orchestrated above this run",
+      "honesty_notes": [
+        "Open review platform: anyone can post, reviewers self-report, Trustpilot does not verify claims; one reviewer's account is an anecdote, never a rate."
+      ]
+    },
+    {
+      "id": "EV-evidence-ai-voice-generators-03",
+      "claim": "A Trustpilot reviewer (1 star, Pro plan, date shown 2026-08-27) reports narration speed changing within one generation and failed attempts consuming paid credits.",
+      "source_url": "https://www.trustpilot.com/reviews/6a9040130bfc953f4c25290e",
+      "source_date": "2026-08-27",
+      "quote": "generated speech randomly changes speed within the same piece of text.",
+      "quote_supplementary": [
+        "every failed attempt consumes paid credits.",
+        "I subscribed to ElevenLabs' Pro plan specifically to create long-form narration for my audiobook",
+        "gave ElevenLabs 1 star."
+      ],
+      "platform": "Trustpilot (open review platform; individual review; reviewer self-reported, unverified)",
+      "target_slug": "/evidence/ai-voice-generators",
+      "collected_at": "2026-10-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-voice-generators-2026-10-01",
+      "screening": "included",
+      "label": "community-report",
+      "tool": "ElevenLabs",
+      "failure_mode": "voice-drift/credit-burn",
+      "star_rating": 1,
+      "date_basis": "date shown on the Trustpilot review; rating read from the permalink page or the star-filtered list page",
+      "verification": "permalink + list page re-fetched via r.jina.ai reader proxy on 2026-10-01 (trustpilot.com returns HTTP 403 to direct curl)",
+      "tier_if_stated": "Pro",
+      "coders": [],
+      "coder_agreement": null,
+      "coding": {
+        "tool": "ElevenLabs",
+        "aspect": "long-form consistency; credit burn on retries",
+        "stance": "negative",
+        "plan_tier_if_stated": "Pro",
+        "item_date": "2026-08-27"
+      },
+      "coding_status": "CURATOR-PROVISIONAL single pass; dual-independent coding + resolver orchestrated above this run",
+      "honesty_notes": [
+        "Open review platform: anyone can post, reviewers self-report, Trustpilot does not verify claims; one reviewer's account is an anecdote, never a rate."
+      ]
+    },
+    {
+      "id": "EV-evidence-ai-voice-generators-04",
+      "claim": "A Trustpilot reviewer (1 star, date shown 2026-09-17) says voice tone and speed change after software updates.",
+      "source_url": "https://www.trustpilot.com/reviews/6aabfa6249c1f4946d79b59d",
+      "source_date": "2026-09-17",
+      "quote": "every time they update the software, the tone of your voice will change and the speed at which your voice speaks will slow down drastically.",
+      "quote_supplementary": [
+        "gave ElevenLabs 1 star."
+      ],
+      "platform": "Trustpilot (open review platform; individual review; reviewer self-reported, unverified)",
+      "target_slug": "/evidence/ai-voice-generators",
+      "collected_at": "2026-10-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-voice-generators-2026-10-01",
+      "screening": "included",
+      "label": "community-report",
+      "tool": "ElevenLabs",
+      "failure_mode": "voice-drift",
+      "star_rating": 1,
+      "date_basis": "date shown on the Trustpilot review; rating read from the permalink page or the star-filtered list page",
+      "verification": "permalink + list page re-fetched via r.jina.ai reader proxy on 2026-10-01 (trustpilot.com returns HTTP 403 to direct curl)",
+      "tier_if_stated": null,
+      "coders": [],
+      "coder_agreement": null,
+      "coding": {
+        "tool": "ElevenLabs",
+        "aspect": "voice change after model/software updates",
+        "stance": "negative",
+        "plan_tier_if_stated": "not stated",
+        "item_date": "2026-09-17"
+      },
+      "coding_status": "CURATOR-PROVISIONAL single pass; dual-independent coding + resolver orchestrated above this run",
+      "honesty_notes": [
+        "Open review platform: anyone can post, reviewers self-report, Trustpilot does not verify claims; one reviewer's account is an anecdote, never a rate."
+      ]
+    },
+    {
+      "id": "EV-evidence-ai-voice-generators-05",
+      "claim": "A Trustpilot reviewer (1 star, date shown 2026-08-31) says ElevenLabs first refused a refund four days after purchase, then reversed after the reviewer cited its refund policy and EU consumer rights; cloned voice would not follow pacing instructions.",
+      "source_url": "https://www.trustpilot.com/reviews/6a95311e5a5bcc352ba8452c",
+      "source_date": "2026-08-31",
+      "quote": "ElevenLabs initially refused the refund because I had used some of the features.",
+      "quote_supplementary": [
+        "I requested a refund only four days after purchasing the service.",
+        "Once I clearly pointed out the applicable terms and their own policy, ElevenLabs reversed its position and issued the refund.",
+        "I then challenged the refusal by referring directly to their own refund policy and to my rights as an EU consumer.",
+        "gave ElevenLabs 1 star."
+      ],
+      "platform": "Trustpilot (open review platform; individual review; reviewer self-reported, unverified)",
+      "target_slug": "/evidence/ai-voice-generators",
+      "collected_at": "2026-10-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-voice-generators-2026-10-01",
+      "screening": "included",
+      "label": "community-report",
+      "tool": "ElevenLabs",
+      "failure_mode": "refund/cloning",
+      "star_rating": 1,
+      "date_basis": "date shown on the Trustpilot review; rating read from the permalink page or the star-filtered list page",
+      "verification": "permalink + list page re-fetched via r.jina.ai reader proxy on 2026-10-01 (trustpilot.com returns HTTP 403 to direct curl)",
+      "tier_if_stated": null,
+      "coders": [],
+      "coder_agreement": null,
+      "coding": {
+        "tool": "ElevenLabs",
+        "aspect": "refund handling; voice cloning pacing",
+        "stance": "mixed",
+        "plan_tier_if_stated": "not stated",
+        "item_date": "2026-08-31"
+      },
+      "coding_status": "CURATOR-PROVISIONAL single pass; dual-independent coding + resolver orchestrated above this run",
+      "honesty_notes": [
+        "Open review platform: anyone can post, reviewers self-report, Trustpilot does not verify claims; one reviewer's account is an anecdote, never a rate."
+      ]
+    },
+    {
+      "id": "EV-evidence-ai-voice-generators-06",
+      "claim": "A Trustpilot reviewer (1 star, date shown 2026-09-13) says support did not resolve billing or credit failures beyond telling them to raise a ticket.",
+      "source_url": "https://www.trustpilot.com/reviews/6aa69ff7c356201d3accb0d2",
+      "source_date": "2026-09-13",
+      "quote": "their customer support is virtually non-existent",
+      "quote_supplementary": [
+        "Whenever you face a critical bug, billing issue, or credit failure, their automated system or support agents simply give you the runaround and tell you to raise a ticket, which leads nowhere.",
+        "gave ElevenLabs 1 star."
+      ],
+      "platform": "Trustpilot (open review platform; individual review; reviewer self-reported, unverified)",
+      "target_slug": "/evidence/ai-voice-generators",
+      "collected_at": "2026-10-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-voice-generators-2026-10-01",
+      "screening": "included",
+      "label": "community-report",
+      "tool": "ElevenLabs",
+      "failure_mode": "support-reachability",
+      "star_rating": 1,
+      "date_basis": "date shown on the Trustpilot review; rating read from the permalink page or the star-filtered list page",
+      "verification": "permalink + list page re-fetched via r.jina.ai reader proxy on 2026-10-01 (trustpilot.com returns HTTP 403 to direct curl)",
+      "tier_if_stated": null,
+      "coders": [],
+      "coder_agreement": null,
+      "coding": {
+        "tool": "ElevenLabs",
+        "aspect": "support reachability (API)",
+        "stance": "negative",
+        "plan_tier_if_stated": "not stated",
+        "item_date": "2026-09-13"
+      },
+      "coding_status": "CURATOR-PROVISIONAL single pass; dual-independent coding + resolver orchestrated above this run",
+      "honesty_notes": [
+        "Open review platform: anyone can post, reviewers self-report, Trustpilot does not verify claims; one reviewer's account is an anecdote, never a rate."
+      ]
+    },
+    {
+      "id": "EV-evidence-ai-voice-generators-07",
+      "claim": "A Trustpilot reviewer (1 star, date shown 2026-09-29) says a request to delay a payment by one day led to account suspension with unused credits inside.",
+      "source_url": "https://www.trustpilot.com/reviews/6abbb7426e24d77a7acd3d26",
+      "source_date": "2026-09-29",
+      "quote": "I asked a simple request to delay my subscription by one day because I didn't have access to my bank details and needed to work.",
+      "quote_supplementary": [
+        "suspended my account which had theee months of unused credits in it.",
+        "gave ElevenLabs 1 star."
+      ],
+      "platform": "Trustpilot (open review platform; individual review; reviewer self-reported, unverified)",
+      "target_slug": "/evidence/ai-voice-generators",
+      "collected_at": "2026-10-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-voice-generators-2026-10-01",
+      "screening": "included",
+      "label": "community-report",
+      "tool": "ElevenLabs",
+      "failure_mode": "billing/support",
+      "star_rating": 1,
+      "date_basis": "date shown on the Trustpilot review; rating read from the permalink page or the star-filtered list page",
+      "verification": "permalink + list page re-fetched via r.jina.ai reader proxy on 2026-10-01 (trustpilot.com returns HTTP 403 to direct curl)",
+      "tier_if_stated": null,
+      "coders": [],
+      "coder_agreement": null,
+      "coding": {
+        "tool": "ElevenLabs",
+        "aspect": "billing delay request; account suspension",
+        "stance": "negative",
+        "plan_tier_if_stated": "not stated",
+        "item_date": "2026-09-29"
+      },
+      "coding_status": "CURATOR-PROVISIONAL single pass; dual-independent coding + resolver orchestrated above this run",
+      "honesty_notes": [
+        "Open review platform: anyone can post, reviewers self-report, Trustpilot does not verify claims; one reviewer's account is an anecdote, never a rate."
+      ]
+    },
+    {
+      "id": "EV-evidence-ai-voice-generators-08",
+      "claim": "A Trustpilot reviewer (2 stars, date shown 2026-09-28) reports cloned voices drifting to a generic accent and says the sound-effects tool burns credits without usable output.",
+      "source_url": "https://www.trustpilot.com/reviews/6aba6e4a833e03c9c212a1ca",
+      "source_date": "2026-09-28",
+      "quote": "every single other accent will drift into a random generic accent that doesn't belong anywhere.",
+      "quote_supplementary": [
+        "you will just get a vague mess that will obviously burn through credits as you try in vain to get anything usable.",
+        "gave ElevenLabs 2 stars."
+      ],
+      "platform": "Trustpilot (open review platform; individual review; reviewer self-reported, unverified)",
+      "target_slug": "/evidence/ai-voice-generators",
+      "collected_at": "2026-10-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-voice-generators-2026-10-01",
+      "screening": "included",
+      "label": "community-report",
+      "tool": "ElevenLabs",
+      "failure_mode": "voice-drift/cloning/credit-burn",
+      "star_rating": 2,
+      "date_basis": "date shown on the Trustpilot review; rating read from the permalink page or the star-filtered list page",
+      "verification": "permalink + list page re-fetched via r.jina.ai reader proxy on 2026-10-01 (trustpilot.com returns HTTP 403 to direct curl)",
+      "tier_if_stated": null,
+      "coders": [],
+      "coder_agreement": null,
+      "coding": {
+        "tool": "ElevenLabs",
+        "aspect": "voice-clone accent drift; SFX credit burn",
+        "stance": "negative",
+        "plan_tier_if_stated": "not stated",
+        "item_date": "2026-09-28"
+      },
+      "coding_status": "CURATOR-PROVISIONAL single pass; dual-independent coding + resolver orchestrated above this run",
+      "honesty_notes": [
+        "Open review platform: anyone can post, reviewers self-report, Trustpilot does not verify claims; one reviewer's account is an anecdote, never a rate."
+      ]
+    },
+    {
+      "id": "EV-evidence-ai-voice-generators-09",
+      "claim": "A Trustpilot reviewer (1 star, date shown 2026-08-26) reports the free 10,000 credits being blocked on an IP-abuse rule.",
+      "source_url": "https://www.trustpilot.com/reviews/6a8f0cbf1889bbbb592aa830",
+      "source_date": "2026-08-26",
+      "quote": "Tried to use the initial free offering of 10,000 credits, but they prevent access claiming that the IP is being used for multiple requests.",
+      "quote_supplementary": [
+        "gave ElevenLabs 1 star."
+      ],
+      "platform": "Trustpilot (open review platform; individual review; reviewer self-reported, unverified)",
+      "target_slug": "/evidence/ai-voice-generators",
+      "collected_at": "2026-10-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-voice-generators-2026-10-01",
+      "screening": "included",
+      "label": "community-report",
+      "tool": "ElevenLabs",
+      "failure_mode": "free-tier",
+      "star_rating": 1,
+      "date_basis": "date shown on the Trustpilot review; rating read from the permalink page or the star-filtered list page",
+      "verification": "permalink + list page re-fetched via r.jina.ai reader proxy on 2026-10-01 (trustpilot.com returns HTTP 403 to direct curl)",
+      "tier_if_stated": null,
+      "coders": [],
+      "coder_agreement": null,
+      "coding": {
+        "tool": "ElevenLabs",
+        "aspect": "free-tier access blocked",
+        "stance": "negative",
+        "plan_tier_if_stated": "not stated",
+        "item_date": "2026-08-26"
+      },
+      "coding_status": "CURATOR-PROVISIONAL single pass; dual-independent coding + resolver orchestrated above this run",
+      "honesty_notes": [
+        "Open review platform: anyone can post, reviewers self-report, Trustpilot does not verify claims; one reviewer's account is an anecdote, never a rate."
+      ]
+    },
+    {
+      "id": "EV-evidence-ai-voice-generators-10",
+      "claim": "A Trustpilot reviewer (5 stars, date shown 2026-09-25) praises ElevenLabs support for resolving an account issue and adding 10,000 credits.",
+      "source_url": "https://www.trustpilot.com/reviews/6ab6aa8bf8ee5fdeca69a388",
+      "source_date": "2026-09-25",
+      "quote": "Excellent support and great customer service!",
+      "quote_supplementary": [
+        "She even followed up regarding the 10,000 credits that had been added to my account as a small gesture of appreciation.",
+        "gave ElevenLabs 5 stars."
+      ],
+      "platform": "Trustpilot (open review platform; individual review; reviewer self-reported, unverified)",
+      "target_slug": "/evidence/ai-voice-generators",
+      "collected_at": "2026-10-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-voice-generators-2026-10-01",
+      "screening": "included",
+      "label": "community-report",
+      "tool": "ElevenLabs",
+      "failure_mode": "support-reachability",
+      "star_rating": 5,
+      "date_basis": "date shown on the Trustpilot review; rating read from the permalink page or the star-filtered list page",
+      "verification": "permalink + list page re-fetched via r.jina.ai reader proxy on 2026-10-01 (trustpilot.com returns HTTP 403 to direct curl)",
+      "tier_if_stated": null,
+      "coders": [],
+      "coder_agreement": null,
+      "coding": {
+        "tool": "ElevenLabs",
+        "aspect": "support experience (counter-example)",
+        "stance": "positive",
+        "plan_tier_if_stated": "not stated",
+        "item_date": "2026-09-25"
+      },
+      "coding_status": "CURATOR-PROVISIONAL single pass; dual-independent coding + resolver orchestrated above this run",
+      "honesty_notes": [
+        "Open review platform: anyone can post, reviewers self-report, Trustpilot does not verify claims; one reviewer's account is an anecdote, never a rate."
+      ]
+    },
+    {
+      "id": "EV-evidence-ai-voice-generators-11",
+      "claim": "A Trustpilot reviewer (1 star, date shown 2026-08-17) says Murf did not process cancellation requests and kept charging via PayPal.",
+      "source_url": "https://www.trustpilot.com/reviews/6aaae0b9e063764f7206f242",
+      "source_date": "2026-08-17",
+      "quote": "They DO NOT CANCEL SUBSCRIPTIONS. They do not reply to requests.",
+      "quote_supplementary": [
+        "Each month they take money through my PayPal.",
+        "gave Murf.ai 1 star."
+      ],
+      "platform": "Trustpilot (open review platform; individual review; reviewer self-reported, unverified)",
+      "target_slug": "/evidence/ai-voice-generators",
+      "collected_at": "2026-10-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-voice-generators-2026-10-01",
+      "screening": "included",
+      "label": "community-report",
+      "tool": "Murf",
+      "failure_mode": "billing/support",
+      "star_rating": 1,
+      "date_basis": "date shown on the Trustpilot review; rating read from the permalink page or the star-filtered list page",
+      "verification": "permalink + list page re-fetched via r.jina.ai reader proxy on 2026-10-01 (trustpilot.com returns HTTP 403 to direct curl)",
+      "tier_if_stated": null,
+      "coders": [],
+      "coder_agreement": null,
+      "coding": {
+        "tool": "Murf",
+        "aspect": "cancellation not honored",
+        "stance": "negative",
+        "plan_tier_if_stated": "not stated",
+        "item_date": "2026-08-17"
+      },
+      "coding_status": "CURATOR-PROVISIONAL single pass; dual-independent coding + resolver orchestrated above this run",
+      "honesty_notes": [
+        "Open review platform: anyone can post, reviewers self-report, Trustpilot does not verify claims; one reviewer's account is an anecdote, never a rate."
+      ]
+    },
+    {
+      "id": "EV-evidence-ai-voice-generators-12",
+      "claim": "A Trustpilot reviewer (2 stars, date shown 2025-07-08) says cancelling forfeited accumulated voiceover minutes, while acknowledging the cancellation flow warns of it.",
+      "source_url": "https://www.trustpilot.com/reviews/686c9ac21899fcd87e156c73",
+      "source_date": "2025-07-08",
+      "quote": "upon cancelling I lost all of my accumulated voiceover minutes that I had essentially been paying for for the last year.",
+      "quote_supplementary": [
+        "While you are informed of this during the cancellation process",
+        "gave Murf.ai 2 stars."
+      ],
+      "platform": "Trustpilot (open review platform; individual review; reviewer self-reported, unverified)",
+      "target_slug": "/evidence/ai-voice-generators",
+      "collected_at": "2026-10-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-voice-generators-2026-10-01",
+      "screening": "included",
+      "label": "community-report",
+      "tool": "Murf",
+      "failure_mode": "credit-expiry",
+      "star_rating": 2,
+      "date_basis": "date shown on the Trustpilot review; rating read from the permalink page or the star-filtered list page",
+      "verification": "permalink + list page re-fetched via r.jina.ai reader proxy on 2026-10-01 (trustpilot.com returns HTTP 403 to direct curl)",
+      "tier_if_stated": null,
+      "coders": [],
+      "coder_agreement": null,
+      "coding": {
+        "tool": "Murf",
+        "aspect": "minutes forfeited on cancel",
+        "stance": "mixed",
+        "plan_tier_if_stated": "not stated",
+        "item_date": "2025-07-08"
+      },
+      "coding_status": "CURATOR-PROVISIONAL single pass; dual-independent coding + resolver orchestrated above this run",
+      "honesty_notes": [
+        "Open review platform: anyone can post, reviewers self-report, Trustpilot does not verify claims; one reviewer's account is an anecdote, never a rate."
+      ]
+    },
+    {
+      "id": "EV-evidence-ai-voice-generators-13",
+      "claim": "A Trustpilot reviewer (2 stars, date shown 2026-02-13) reports no refunds for unwanted renewals and unused minutes vanishing monthly.",
+      "source_url": "https://www.trustpilot.com/reviews/69b0450c989c2a62c4225370",
+      "source_date": "2026-02-13",
+      "quote": "they won't give refunds for renewals I didn't want, especially since any minutes I paid for but didn't use just vanish at the end of the month.",
+      "quote_supplementary": [
+        "The voices sound great, but the high prices and automatic credit card charges feel like a total \"gotcha\".",
+        "gave Murf.ai 2 stars."
+      ],
+      "platform": "Trustpilot (open review platform; individual review; reviewer self-reported, unverified)",
+      "target_slug": "/evidence/ai-voice-generators",
+      "collected_at": "2026-10-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-voice-generators-2026-10-01",
+      "screening": "included",
+      "label": "community-report",
+      "tool": "Murf",
+      "failure_mode": "billing/refund",
+      "star_rating": 2,
+      "date_basis": "date shown on the Trustpilot review; rating read from the permalink page or the star-filtered list page",
+      "verification": "permalink + list page re-fetched via r.jina.ai reader proxy on 2026-10-01 (trustpilot.com returns HTTP 403 to direct curl)",
+      "tier_if_stated": null,
+      "coders": [],
+      "coder_agreement": null,
+      "coding": {
+        "tool": "Murf",
+        "aspect": "renewal refunds; unused minutes",
+        "stance": "mixed",
+        "plan_tier_if_stated": "not stated",
+        "item_date": "2026-02-13"
+      },
+      "coding_status": "CURATOR-PROVISIONAL single pass; dual-independent coding + resolver orchestrated above this run",
+      "honesty_notes": [
+        "Open review platform: anyone can post, reviewers self-report, Trustpilot does not verify claims; one reviewer's account is an anecdote, never a rate."
+      ]
+    },
+    {
+      "id": "EV-evidence-ai-voice-generators-14",
+      "claim": "A Trustpilot reviewer (1 star, date shown 2023-07-05) says every small edit on Murf requires regenerating and draws down the monthly quota.",
+      "source_url": "https://www.trustpilot.com/reviews/64a7285c38ba4abf08501870",
+      "source_date": "2023-07-05",
+      "quote": "Each simple change you make, like adding a comma requires you regenerate the voice and reduces your quota.",
+      "quote_supplementary": [
+        "It is a far too little (4 hours in Pro plan) to get any consequential amount of work done.",
+        "gave Murf.ai 1 star."
+      ],
+      "platform": "Trustpilot (open review platform; individual review; reviewer self-reported, unverified)",
+      "target_slug": "/evidence/ai-voice-generators",
+      "collected_at": "2026-10-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-voice-generators-2026-10-01",
+      "screening": "included",
+      "label": "community-report",
+      "tool": "Murf",
+      "failure_mode": "credit-burn/regeneration",
+      "star_rating": 1,
+      "date_basis": "date shown on the Trustpilot review; rating read from the permalink page or the star-filtered list page",
+      "verification": "permalink + list page re-fetched via r.jina.ai reader proxy on 2026-10-01 (trustpilot.com returns HTTP 403 to direct curl)",
+      "tier_if_stated": "Pro",
+      "coders": [],
+      "coder_agreement": null,
+      "coding": {
+        "tool": "Murf",
+        "aspect": "regeneration consumes quota",
+        "stance": "negative",
+        "plan_tier_if_stated": "Pro",
+        "item_date": "2023-07-05"
+      },
+      "coding_status": "CURATOR-PROVISIONAL single pass; dual-independent coding + resolver orchestrated above this run",
+      "honesty_notes": [
+        "Open review platform: anyone can post, reviewers self-report, Trustpilot does not verify claims; one reviewer's account is an anecdote, never a rate."
+      ]
+    },
+    {
+      "id": "EV-evidence-ai-voice-generators-15",
+      "claim": "A Trustpilot reviewer (2 stars, date shown 2025-07-18) says pronunciation and emphasis controls sat behind a higher plan tier.",
+      "source_url": "https://www.trustpilot.com/reviews/687ae16e13a97075a1a5262a",
+      "source_date": "2025-07-18",
+      "quote": "You cannot teach the program how to pronounce words, or add emphasis without upgrading to the $299 a month plan.",
+      "quote_supplementary": [
+        "Their AI voices were robotic.",
+        "gave Murf.ai 2 stars."
+      ],
+      "platform": "Trustpilot (open review platform; individual review; reviewer self-reported, unverified)",
+      "target_slug": "/evidence/ai-voice-generators",
+      "collected_at": "2026-10-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-voice-generators-2026-10-01",
+      "screening": "included",
+      "label": "community-report",
+      "tool": "Murf",
+      "failure_mode": "pronunciation",
+      "star_rating": 2,
+      "date_basis": "date shown on the Trustpilot review; rating read from the permalink page or the star-filtered list page",
+      "verification": "permalink + list page re-fetched via r.jina.ai reader proxy on 2026-10-01 (trustpilot.com returns HTTP 403 to direct curl)",
+      "tier_if_stated": null,
+      "coders": [],
+      "coder_agreement": null,
+      "coding": {
+        "tool": "Murf",
+        "aspect": "pronunciation control paywalled",
+        "stance": "negative",
+        "plan_tier_if_stated": "not stated",
+        "item_date": "2025-07-18"
+      },
+      "coding_status": "CURATOR-PROVISIONAL single pass; dual-independent coding + resolver orchestrated above this run",
+      "honesty_notes": [
+        "Open review platform: anyone can post, reviewers self-report, Trustpilot does not verify claims; one reviewer's account is an anecdote, never a rate."
+      ]
+    },
+    {
+      "id": "EV-evidence-ai-voice-generators-16",
+      "claim": "A Trustpilot reviewer (1 star, date shown 2023-08-08) says an undisclosed content filter blocked audio and a refund came only after a card-dispute threat.",
+      "source_url": "https://www.trustpilot.com/reviews/64d290b1b909199e5dd3dd2d",
+      "source_date": "2023-08-08",
+      "quote": "does not disclose that it has a naughty word filter that disables everything.",
+      "quote_supplementary": [
+        "Only when I told them I would dispute the charges with AMEX did they agree to refund.",
+        "gave Murf.ai 1 star."
+      ],
+      "platform": "Trustpilot (open review platform; individual review; reviewer self-reported, unverified)",
+      "target_slug": "/evidence/ai-voice-generators",
+      "collected_at": "2026-10-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-voice-generators-2026-10-01",
+      "screening": "included",
+      "label": "community-report",
+      "tool": "Murf",
+      "failure_mode": "refund/content-filter",
+      "star_rating": 1,
+      "date_basis": "date shown on the Trustpilot review; rating read from the permalink page or the star-filtered list page",
+      "verification": "permalink + list page re-fetched via r.jina.ai reader proxy on 2026-10-01 (trustpilot.com returns HTTP 403 to direct curl)",
+      "tier_if_stated": null,
+      "coders": [],
+      "coder_agreement": null,
+      "coding": {
+        "tool": "Murf",
+        "aspect": "content filter; refund friction",
+        "stance": "negative",
+        "plan_tier_if_stated": "not stated",
+        "item_date": "2023-08-08"
+      },
+      "coding_status": "CURATOR-PROVISIONAL single pass; dual-independent coding + resolver orchestrated above this run",
+      "honesty_notes": [
+        "Open review platform: anyone can post, reviewers self-report, Trustpilot does not verify claims; one reviewer's account is an anecdote, never a rate."
+      ]
+    },
+    {
+      "id": "EV-evidence-ai-voice-generators-17",
+      "claim": "A Trustpilot reviewer (1 star, date shown 2023-05-08) says the paid voice sounded different from the trial demo voice for the same named voice.",
+      "source_url": "https://www.trustpilot.com/reviews/6458fb7666eb019a5deb79d3",
+      "source_date": "2023-05-08",
+      "quote": "Adam's actual 'voice' when you put your own text into it (on the premium plan; on the demo, it sounded perfect) sounded very different to the demo voice.",
+      "quote_supplementary": [
+        "you pay $40 a month for the premium version (four hours a month).",
+        "gave Murf.ai 1 star."
+      ],
+      "platform": "Trustpilot (open review platform; individual review; reviewer self-reported, unverified)",
+      "target_slug": "/evidence/ai-voice-generators",
+      "collected_at": "2026-10-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-voice-generators-2026-10-01",
+      "screening": "included",
+      "label": "community-report",
+      "tool": "Murf",
+      "failure_mode": "voice-consistency/vendor-claim-gap",
+      "star_rating": 1,
+      "date_basis": "date shown on the Trustpilot review; rating read from the permalink page or the star-filtered list page",
+      "verification": "permalink + list page re-fetched via r.jina.ai reader proxy on 2026-10-01 (trustpilot.com returns HTTP 403 to direct curl)",
+      "tier_if_stated": "Premium",
+      "coders": [],
+      "coder_agreement": null,
+      "coding": {
+        "tool": "Murf",
+        "aspect": "demo vs paid voice mismatch",
+        "stance": "negative",
+        "plan_tier_if_stated": "Premium",
+        "item_date": "2023-05-08"
+      },
+      "coding_status": "CURATOR-PROVISIONAL single pass; dual-independent coding + resolver orchestrated above this run",
+      "honesty_notes": [
+        "Open review platform: anyone can post, reviewers self-report, Trustpilot does not verify claims; one reviewer's account is an anecdote, never a rate."
+      ]
+    },
+    {
+      "id": "EV-evidence-ai-voice-generators-18",
+      "claim": "A Trustpilot reviewer (5 stars, date shown 2026-02-12) praises Murf voice naturalness and controls.",
+      "source_url": "https://www.trustpilot.com/reviews/698e9b401c27d67ec0b36423",
+      "source_date": "2026-02-12",
+      "quote": "The voice quality is extremely natural and realistic, with proper tone control, pacing, and emotion.",
+      "quote_supplementary": [
+        "It does not sound robotic or flat like most text to speech tools.",
+        "gave Murf.ai 5 stars."
+      ],
+      "platform": "Trustpilot (open review platform; individual review; reviewer self-reported, unverified)",
+      "target_slug": "/evidence/ai-voice-generators",
+      "collected_at": "2026-10-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-voice-generators-2026-10-01",
+      "screening": "included",
+      "label": "community-report",
+      "tool": "Murf",
+      "failure_mode": "quality",
+      "star_rating": 5,
+      "date_basis": "date shown on the Trustpilot review; rating read from the permalink page or the star-filtered list page",
+      "verification": "permalink + list page re-fetched via r.jina.ai reader proxy on 2026-10-01 (trustpilot.com returns HTTP 403 to direct curl)",
+      "tier_if_stated": null,
+      "coders": [],
+      "coder_agreement": null,
+      "coding": {
+        "tool": "Murf",
+        "aspect": "voice quality (counter-example)",
+        "stance": "positive",
+        "plan_tier_if_stated": "not stated",
+        "item_date": "2026-02-12"
+      },
+      "coding_status": "CURATOR-PROVISIONAL single pass; dual-independent coding + resolver orchestrated above this run",
+      "honesty_notes": [
+        "Open review platform: anyone can post, reviewers self-report, Trustpilot does not verify claims; one reviewer's account is an anecdote, never a rate."
+      ]
+    },
+    {
+      "id": "EV-evidence-ai-voice-generators-19",
+      "claim": "A Trustpilot reviewer (1 star, date shown 2024-08-28) says a cancellation did not go through and a $550 renewal was charged.",
+      "source_url": "https://www.trustpilot.com/reviews/66cf9d5e3ef877286a9711f2",
+      "source_date": "2024-08-28",
+      "quote": "We cancelled our subscription 2 months before renewal, but somehow it \"didn't go through.\" So we got charged a $550 renewal even though we haven't used the service in months.",
+      "quote_supplementary": [
+        "Contacted customer support and they weren't willing to do anything.",
+        "gave WellSaid 1 star."
+      ],
+      "platform": "Trustpilot (open review platform; individual review; reviewer self-reported, unverified)",
+      "target_slug": "/evidence/ai-voice-generators",
+      "collected_at": "2026-10-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-voice-generators-2026-10-01",
+      "screening": "included",
+      "label": "community-report",
+      "tool": "WellSaid Labs",
+      "failure_mode": "billing/renewal",
+      "star_rating": 1,
+      "date_basis": "date shown on the Trustpilot review; rating read from the permalink page or the star-filtered list page",
+      "verification": "permalink + list page re-fetched via r.jina.ai reader proxy on 2026-10-01 (trustpilot.com returns HTTP 403 to direct curl)",
+      "tier_if_stated": null,
+      "coders": [],
+      "coder_agreement": null,
+      "coding": {
+        "tool": "WellSaid Labs",
+        "aspect": "failed cancellation; renewal charge",
+        "stance": "negative",
+        "plan_tier_if_stated": "not stated",
+        "item_date": "2024-08-28"
+      },
+      "coding_status": "CURATOR-PROVISIONAL single pass; dual-independent coding + resolver orchestrated above this run",
+      "honesty_notes": [
+        "Open review platform: anyone can post, reviewers self-report, Trustpilot does not verify claims; one reviewer's account is an anecdote, never a rate."
+      ]
+    },
+    {
+      "id": "EV-evidence-ai-voice-generators-20",
+      "claim": "A Trustpilot reviewer (1 star, date shown 2025-07-09) says a plan change cancelled a paid $99 subscription and support did not respond.",
+      "source_url": "https://www.trustpilot.com/reviews/686f98c11164beca60ba1fef",
+      "source_date": "2025-07-09",
+      "quote": "My Subscription Automatically got cancelled. I contacted Support but they did not respond so my $99 is out.",
+      "quote_supplementary": [
+        "The Tech is Awesome! But the billing Service is very Bad",
+        "gave WellSaid 1 star."
+      ],
+      "platform": "Trustpilot (open review platform; individual review; reviewer self-reported, unverified)",
+      "target_slug": "/evidence/ai-voice-generators",
+      "collected_at": "2026-10-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-voice-generators-2026-10-01",
+      "screening": "included",
+      "label": "community-report",
+      "tool": "WellSaid Labs",
+      "failure_mode": "billing/support",
+      "star_rating": 1,
+      "date_basis": "date shown on the Trustpilot review; rating read from the permalink page or the star-filtered list page",
+      "verification": "permalink + list page re-fetched via r.jina.ai reader proxy on 2026-10-01 (trustpilot.com returns HTTP 403 to direct curl)",
+      "tier_if_stated": null,
+      "coders": [],
+      "coder_agreement": null,
+      "coding": {
+        "tool": "WellSaid Labs",
+        "aspect": "auto-cancel after policy change; support silence",
+        "stance": "mixed",
+        "plan_tier_if_stated": "not stated",
+        "item_date": "2025-07-09"
+      },
+      "coding_status": "CURATOR-PROVISIONAL single pass; dual-independent coding + resolver orchestrated above this run",
+      "honesty_notes": [
+        "Open review platform: anyone can post, reviewers self-report, Trustpilot does not verify claims; one reviewer's account is an anecdote, never a rate."
+      ]
+    },
+    {
+      "id": "EV-evidence-ai-voice-generators-21",
+      "claim": "A Trustpilot reviewer (1 star, date shown 2026-02-12) says a flow marked free led to a payment prompt.",
+      "source_url": "https://www.trustpilot.com/reviews/698e299266f57883d90756f8",
+      "source_date": "2026-02-12",
+      "quote": "Says free, you login generate, and suprise payment pops out ..",
+      "quote_supplementary": [
+        "gave WellSaid 1 star."
+      ],
+      "platform": "Trustpilot (open review platform; individual review; reviewer self-reported, unverified)",
+      "target_slug": "/evidence/ai-voice-generators",
+      "collected_at": "2026-10-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-voice-generators-2026-10-01",
+      "screening": "included",
+      "label": "community-report",
+      "tool": "WellSaid Labs",
+      "failure_mode": "free-tier",
+      "star_rating": 1,
+      "date_basis": "date shown on the Trustpilot review; rating read from the permalink page or the star-filtered list page",
+      "verification": "permalink + list page re-fetched via r.jina.ai reader proxy on 2026-10-01 (trustpilot.com returns HTTP 403 to direct curl)",
+      "tier_if_stated": null,
+      "coders": [],
+      "coder_agreement": null,
+      "coding": {
+        "tool": "WellSaid Labs",
+        "aspect": "free-tier expectation vs payment prompt",
+        "stance": "negative",
+        "plan_tier_if_stated": "not stated",
+        "item_date": "2026-02-12"
+      },
+      "coding_status": "CURATOR-PROVISIONAL single pass; dual-independent coding + resolver orchestrated above this run",
+      "honesty_notes": [
+        "Open review platform: anyone can post, reviewers self-report, Trustpilot does not verify claims; one reviewer's account is an anecdote, never a rate."
+      ]
+    },
+    {
+      "id": "EV-evidence-ai-voice-generators-22",
+      "claim": "A Trustpilot reviewer (1 star, date shown 2026-01-16) reports poor support and monotone delivery needing manual tweaking.",
+      "source_url": "https://www.trustpilot.com/reviews/696a674c67a12c945a7bde7d",
+      "source_date": "2026-01-16",
+      "quote": "Good luck if you need support.",
+      "quote_supplementary": [
+        "the AI is fairly monotone unless you spend hours tweaking every word to attempt to form inflection.",
+        "gave WellSaid 1 star."
+      ],
+      "platform": "Trustpilot (open review platform; individual review; reviewer self-reported, unverified)",
+      "target_slug": "/evidence/ai-voice-generators",
+      "collected_at": "2026-10-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-voice-generators-2026-10-01",
+      "screening": "included",
+      "label": "community-report",
+      "tool": "WellSaid Labs",
+      "failure_mode": "support-reachability/prosody",
+      "star_rating": 1,
+      "date_basis": "date shown on the Trustpilot review; rating read from the permalink page or the star-filtered list page",
+      "verification": "permalink + list page re-fetched via r.jina.ai reader proxy on 2026-10-01 (trustpilot.com returns HTTP 403 to direct curl)",
+      "tier_if_stated": null,
+      "coders": [],
+      "coder_agreement": null,
+      "coding": {
+        "tool": "WellSaid Labs",
+        "aspect": "support; prosody",
+        "stance": "negative",
+        "plan_tier_if_stated": "not stated",
+        "item_date": "2026-01-16"
+      },
+      "coding_status": "CURATOR-PROVISIONAL single pass; dual-independent coding + resolver orchestrated above this run",
+      "honesty_notes": [
+        "Open review platform: anyone can post, reviewers self-report, Trustpilot does not verify claims; one reviewer's account is an anecdote, never a rate."
+      ]
+    },
+    {
+      "id": "EV-evidence-ai-voice-generators-23",
+      "claim": "A Trustpilot reviewer (1 star, date shown 2023-04-05) reports mispronounced single letters.",
+      "source_url": "https://www.trustpilot.com/reviews/64450ccf604718fdb1b13935",
+      "source_date": "2023-04-05",
+      "quote": "Didn't pronounce many words like ( A, I, Q, W, H, Y etc ).",
+      "quote_supplementary": [
+        "gave WellSaid 1 star."
+      ],
+      "platform": "Trustpilot (open review platform; individual review; reviewer self-reported, unverified)",
+      "target_slug": "/evidence/ai-voice-generators",
+      "collected_at": "2026-10-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-voice-generators-2026-10-01",
+      "screening": "included",
+      "label": "community-report",
+      "tool": "WellSaid Labs",
+      "failure_mode": "pronunciation",
+      "star_rating": 1,
+      "date_basis": "date shown on the Trustpilot review; rating read from the permalink page or the star-filtered list page",
+      "verification": "permalink + list page re-fetched via r.jina.ai reader proxy on 2026-10-01 (trustpilot.com returns HTTP 403 to direct curl)",
+      "tier_if_stated": null,
+      "coders": [],
+      "coder_agreement": null,
+      "coding": {
+        "tool": "WellSaid Labs",
+        "aspect": "letter pronunciation",
+        "stance": "negative",
+        "plan_tier_if_stated": "not stated",
+        "item_date": "2023-04-05"
+      },
+      "coding_status": "CURATOR-PROVISIONAL single pass; dual-independent coding + resolver orchestrated above this run",
+      "honesty_notes": [
+        "Open review platform: anyone can post, reviewers self-report, Trustpilot does not verify claims; one reviewer's account is an anecdote, never a rate."
+      ]
+    },
+    {
+      "id": "EV-evidence-ai-voice-generators-24",
+      "claim": "A Trustpilot reviewer (5 stars, date shown 2026-05-19) refers to 'voice changes' experienced while using WellSaid and praises the team's handling of the questions.",
+      "source_url": "https://www.trustpilot.com/reviews/6a0cdd75a8e7dbaaff307692",
+      "source_date": "2026-05-19",
+      "quote": "The Wellsaid team at ATD was engaging and helpful in addressing some questions we had regarding voice changes we've experienced while using the solution.",
+      "quote_supplementary": [
+        "gave WellSaid 5 stars."
+      ],
+      "platform": "Trustpilot (open review platform; individual review; reviewer self-reported, unverified)",
+      "target_slug": "/evidence/ai-voice-generators",
+      "collected_at": "2026-10-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-voice-generators-2026-10-01",
+      "screening": "included",
+      "label": "community-report",
+      "tool": "WellSaid Labs",
+      "failure_mode": "voice-drift/support",
+      "star_rating": 5,
+      "date_basis": "date shown on the Trustpilot review; rating read from the permalink page or the star-filtered list page",
+      "verification": "permalink + list page re-fetched via r.jina.ai reader proxy on 2026-10-01 (trustpilot.com returns HTTP 403 to direct curl)",
+      "tier_if_stated": null,
+      "coders": [],
+      "coder_agreement": null,
+      "coding": {
+        "tool": "WellSaid Labs",
+        "aspect": "voice changes over time (reported, unspecified); support (counter-example)",
+        "stance": "mixed",
+        "plan_tier_if_stated": "not stated",
+        "item_date": "2026-05-19"
+      },
+      "coding_status": "CURATOR-PROVISIONAL single pass; dual-independent coding + resolver orchestrated above this run",
+      "honesty_notes": [
+        "Open review platform: anyone can post, reviewers self-report, Trustpilot does not verify claims; one reviewer's account is an anecdote, never a rate."
+      ]
+    },
+    {
+      "id": "EV-evidence-ai-voice-generators-25",
+      "claim": "A Trustpilot reviewer (1 star, date shown 2026-09-22) reports a $139.00 charge after cancelling during a three-day trial and no support reply.",
+      "source_url": "https://www.trustpilot.com/reviews/6ab308a82b8d30d019129db0",
+      "source_date": "2026-09-22",
+      "quote": "I had a three-day free trial on Speechify and cancelled my subscription before I should've been charged. Then I saw $139.00 was taken out of bank card",
+      "quote_supplementary": [
+        "Customer service didn't answer me.",
+        "gave Speechify 1 star."
+      ],
+      "platform": "Trustpilot (open review platform; individual review; reviewer self-reported, unverified)",
+      "target_slug": "/evidence/ai-voice-generators",
+      "collected_at": "2026-10-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-voice-generators-2026-10-01",
+      "screening": "included",
+      "label": "community-report",
+      "tool": "Speechify",
+      "failure_mode": "billing/trial",
+      "star_rating": 1,
+      "date_basis": "date shown on the Trustpilot review; rating read from the permalink page or the star-filtered list page",
+      "verification": "permalink + list page re-fetched via r.jina.ai reader proxy on 2026-10-01 (trustpilot.com returns HTTP 403 to direct curl)",
+      "tier_if_stated": null,
+      "coders": [],
+      "coder_agreement": null,
+      "coding": {
+        "tool": "Speechify",
+        "aspect": "trial cancellation; unexpected charge",
+        "stance": "negative",
+        "plan_tier_if_stated": "not stated",
+        "item_date": "2026-09-22"
+      },
+      "coding_status": "CURATOR-PROVISIONAL single pass; dual-independent coding + resolver orchestrated above this run",
+      "honesty_notes": [
+        "Open review platform: anyone can post, reviewers self-report, Trustpilot does not verify claims; one reviewer's account is an anecdote, never a rate."
+      ]
+    },
+    {
+      "id": "EV-evidence-ai-voice-generators-26",
+      "claim": "A Trustpilot reviewer (1 star, date shown 2026-09-24) says an update degraded Slovenian voices and no partial refunds were offered.",
+      "source_url": "https://www.trustpilot.com/reviews/6aba6a3ed31468266e70938c",
+      "source_date": "2026-09-24",
+      "quote": "a recent update completely ruined the Slovenian language support.",
+      "quote_supplementary": [
+        "Since they do not offer partial refunds, I am stuck with a useless app and wasted money for the next 5 months.",
+        "gave Speechify 1 star."
+      ],
+      "platform": "Trustpilot (open review platform; individual review; reviewer self-reported, unverified)",
+      "target_slug": "/evidence/ai-voice-generators",
+      "collected_at": "2026-10-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-voice-generators-2026-10-01",
+      "screening": "included",
+      "label": "community-report",
+      "tool": "Speechify",
+      "failure_mode": "voice-drift/refund",
+      "star_rating": 1,
+      "date_basis": "date shown on the Trustpilot review; rating read from the permalink page or the star-filtered list page",
+      "verification": "permalink + list page re-fetched via r.jina.ai reader proxy on 2026-10-01 (trustpilot.com returns HTTP 403 to direct curl)",
+      "tier_if_stated": null,
+      "coders": [],
+      "coder_agreement": null,
+      "coding": {
+        "tool": "Speechify",
+        "aspect": "voice quality after update; refund policy",
+        "stance": "negative",
+        "plan_tier_if_stated": "not stated",
+        "item_date": "2026-09-24"
+      },
+      "coding_status": "CURATOR-PROVISIONAL single pass; dual-independent coding + resolver orchestrated above this run",
+      "honesty_notes": [
+        "Open review platform: anyone can post, reviewers self-report, Trustpilot does not verify claims; one reviewer's account is an anecdote, never a rate."
+      ]
+    },
+    {
+      "id": "EV-evidence-ai-voice-generators-27",
+      "claim": "A Trustpilot reviewer (2 stars, date shown 2025-12-22) says the reading voice sometimes changes unprompted and cannot be changed back.",
+      "source_url": "https://www.trustpilot.com/reviews/69496e2c8728ad107b7d2c0a",
+      "source_date": "2025-12-22",
+      "quote": "other times the voice just changes out of nowhere without the ability to change it back.",
+      "quote_supplementary": [
+        "gave Speechify 2 stars."
+      ],
+      "platform": "Trustpilot (open review platform; individual review; reviewer self-reported, unverified)",
+      "target_slug": "/evidence/ai-voice-generators",
+      "collected_at": "2026-10-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-voice-generators-2026-10-01",
+      "screening": "included",
+      "label": "community-report",
+      "tool": "Speechify",
+      "failure_mode": "voice-drift",
+      "star_rating": 2,
+      "date_basis": "date shown on the Trustpilot review; rating read from the permalink page or the star-filtered list page",
+      "verification": "permalink + list page re-fetched via r.jina.ai reader proxy on 2026-10-01 (trustpilot.com returns HTTP 403 to direct curl)",
+      "tier_if_stated": null,
+      "coders": [],
+      "coder_agreement": null,
+      "coding": {
+        "tool": "Speechify",
+        "aspect": "voice switching",
+        "stance": "negative",
+        "plan_tier_if_stated": "not stated",
+        "item_date": "2025-12-22"
+      },
+      "coding_status": "CURATOR-PROVISIONAL single pass; dual-independent coding + resolver orchestrated above this run",
+      "honesty_notes": [
+        "Open review platform: anyone can post, reviewers self-report, Trustpilot does not verify claims; one reviewer's account is an anecdote, never a rate."
+      ]
+    },
+    {
+      "id": "EV-evidence-ai-voice-generators-28",
+      "claim": "A Trustpilot reviewer (2 stars, date shown 2026-05-04) says Speechify skipped sentences on long manuscripts and sounded robotic.",
+      "source_url": "https://www.trustpilot.com/reviews/69f8a4180b9845e9e231f4da",
+      "source_date": "2026-05-04",
+      "quote": "Skips sentences and if it's a long manuscript , it starts messing up all the text. Also sounds very robotic.",
+      "quote_supplementary": [
+        "gave Speechify 2 stars."
+      ],
+      "platform": "Trustpilot (open review platform; individual review; reviewer self-reported, unverified)",
+      "target_slug": "/evidence/ai-voice-generators",
+      "collected_at": "2026-10-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-voice-generators-2026-10-01",
+      "screening": "included",
+      "label": "community-report",
+      "tool": "Speechify",
+      "failure_mode": "reading-accuracy",
+      "star_rating": 2,
+      "date_basis": "date shown on the Trustpilot review; rating read from the permalink page or the star-filtered list page",
+      "verification": "permalink + list page re-fetched via r.jina.ai reader proxy on 2026-10-01 (trustpilot.com returns HTTP 403 to direct curl)",
+      "tier_if_stated": null,
+      "coders": [],
+      "coder_agreement": null,
+      "coding": {
+        "tool": "Speechify",
+        "aspect": "skipped text; robotic voice",
+        "stance": "negative",
+        "plan_tier_if_stated": "not stated",
+        "item_date": "2026-05-04"
+      },
+      "coding_status": "CURATOR-PROVISIONAL single pass; dual-independent coding + resolver orchestrated above this run",
+      "honesty_notes": [
+        "Open review platform: anyone can post, reviewers self-report, Trustpilot does not verify claims; one reviewer's account is an anecdote, never a rate."
+      ]
+    },
+    {
+      "id": "EV-evidence-ai-voice-generators-29",
+      "claim": "A Trustpilot reviewer (2 stars, date shown 2026-02-23) reports a trial converting to an annual charge and no support response to a refund request.",
+      "source_url": "https://www.trustpilot.com/reviews/69a5ed19c0fa21b5f139f405",
+      "source_date": "2026-02-23",
+      "quote": "I accidentally allowed my trial to convert into an annual subscription.",
+      "quote_supplementary": [
+        "I have received no response at all, despite multiple attempts.",
+        "gave Speechify 2 stars."
+      ],
+      "platform": "Trustpilot (open review platform; individual review; reviewer self-reported, unverified)",
+      "target_slug": "/evidence/ai-voice-generators",
+      "collected_at": "2026-10-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-voice-generators-2026-10-01",
+      "screening": "included",
+      "label": "community-report",
+      "tool": "Speechify",
+      "failure_mode": "billing/support",
+      "star_rating": 2,
+      "date_basis": "date shown on the Trustpilot review; rating read from the permalink page or the star-filtered list page",
+      "verification": "permalink + list page re-fetched via r.jina.ai reader proxy on 2026-10-01 (trustpilot.com returns HTTP 403 to direct curl)",
+      "tier_if_stated": null,
+      "coders": [],
+      "coder_agreement": null,
+      "coding": {
+        "tool": "Speechify",
+        "aspect": "trial-to-annual conversion; refund request unanswered",
+        "stance": "negative",
+        "plan_tier_if_stated": "not stated",
+        "item_date": "2026-02-23"
+      },
+      "coding_status": "CURATOR-PROVISIONAL single pass; dual-independent coding + resolver orchestrated above this run",
+      "honesty_notes": [
+        "Open review platform: anyone can post, reviewers self-report, Trustpilot does not verify claims; one reviewer's account is an anecdote, never a rate."
+      ]
+    },
+    {
+      "id": "EV-evidence-ai-voice-generators-30",
+      "claim": "BBB's Speechify Inc profile (captured 2026-10-01) shows a 3-year complaint total with a type breakdown led by product issues, with billing issues at 17.",
+      "source_url": "https://www.bbb.org/us/fl/miami/profile/education/speechify-inc-0633-92046942/complaints?page=1",
+      "source_date": "2026-10-01",
+      "quote": "88 total complaints in the last 3 years.",
+      "quote_supplementary": [
+        "Product Issues (32)",
+        "Billing Issues (17)",
+        "Complaint Unanswered (9)"
+      ],
+      "platform": "Better Business Bureau complaint profile (review platform; complaints are filed by consumers, unverified by BBB)",
+      "target_slug": "/evidence/ai-voice-generators",
+      "collected_at": "2026-10-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-voice-generators-2026-10-01",
+      "screening": "included",
+      "label": "community-report",
+      "tool": "Speechify",
+      "failure_mode": "billing/support",
+      "verification": "re-fetched 2026-10-01 via r.jina.ai reader proxy",
+      "coders": [],
+      "coder_agreement": null,
+      "coding": {
+        "tool": "Speechify",
+        "aspect": "BBB complaint count and types",
+        "stance": "negative",
+        "plan_tier_if_stated": "not stated",
+        "item_date": "2026-10-01"
+      },
+      "coding_status": "CURATOR-PROVISIONAL single pass; dual-independent coding + resolver orchestrated above this run",
+      "honesty_notes": [
+        "Count is of complaints on one BBB profile, not of users. BBB profile is not accredited per the page."
+      ]
+    },
+    {
+      "id": "EV-evidence-ai-voice-generators-31",
+      "claim": "BBB's Eleven Labs Inc profile (captured 2026-10-01) shows a 3-year complaint total with billing and product issues the largest types.",
+      "source_url": "https://www.bbb.org/us/ny/new-york/profile/speech-to-text-software/eleven-labs-inc-0121-87177777/complaints",
+      "source_date": "2026-10-01",
+      "quote": "12 total complaints in the last 3 years.",
+      "quote_supplementary": [
+        "Billing Issues (4)",
+        "Product Issues (4)",
+        "Complaint Unanswered (5)"
+      ],
+      "platform": "Better Business Bureau complaint profile (review platform; complaints are filed by consumers, unverified by BBB)",
+      "target_slug": "/evidence/ai-voice-generators",
+      "collected_at": "2026-10-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-voice-generators-2026-10-01",
+      "screening": "included",
+      "label": "community-report",
+      "tool": "ElevenLabs",
+      "failure_mode": "billing/support",
+      "verification": "re-fetched 2026-10-01 via r.jina.ai reader proxy",
+      "coders": [],
+      "coder_agreement": null,
+      "coding": {
+        "tool": "ElevenLabs",
+        "aspect": "BBB complaint count and types",
+        "stance": "negative",
+        "plan_tier_if_stated": "not stated",
+        "item_date": "2026-10-01"
+      },
+      "coding_status": "CURATOR-PROVISIONAL single pass; dual-independent coding + resolver orchestrated above this run"
+    },
+    {
+      "id": "EV-evidence-ai-voice-generators-32",
+      "claim": "BBB's Murf AI profile (captured 2026-10-01) shows no complaints filed, set against Trustpilot reports of cancellation and renewal friction for Murf: the two platforms disagree in volume.",
+      "source_url": "https://www.bbb.org/us/ut/salt-lake-city/profile/computer-software-developers/murf-ai-1166-90045592/complaints",
+      "source_date": "2026-10-01",
+      "quote": "This business has 0 complaints",
+      "platform": "Better Business Bureau complaint profile (review platform)",
+      "target_slug": "/evidence/ai-voice-generators",
+      "collected_at": "2026-10-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-voice-generators-2026-10-01",
+      "screening": "included",
+      "label": "community-report",
+      "tool": "Murf",
+      "failure_mode": "billing/support",
+      "verification": "re-fetched 2026-10-01 via r.jina.ai reader proxy",
+      "coders": [],
+      "coder_agreement": null,
+      "coding": {
+        "tool": "Murf",
+        "aspect": "BBB complaint count (counter-example)",
+        "stance": "n/a",
+        "plan_tier_if_stated": "not stated",
+        "item_date": "2026-10-01"
+      },
+      "coding_status": "CURATOR-PROVISIONAL single pass; dual-independent coding + resolver orchestrated above this run",
+      "honesty_notes": [
+        "Absence of BBB complaints is not absence of problems; BBB is used mainly by US consumers."
+      ]
+    },
+    {
+      "id": "EV-evidence-ai-voice-generators-33",
+      "claim": "The vendor states that cancelling or downgrading forfeits unused subscription credits at the end of the billing cycle, and that credits roll over up to twice the monthly quota otherwise; this is the documented rule behind the Trustpilot reports of lost credits.",
+      "source_url": "https://help.elevenlabs.io/hc/en-us/articles/27561768104081-How-do-credits-work",
+      "source_date": "2026-10-01",
+      "quote": "If you cancel or downgrade your subscription, this will take effect at the end of your current billing cycle, and you will lose any unused credits on your account when this happens.",
+      "quote_supplementary": [
+        "you will automatically rollover up to twice your usual monthly quota.",
+        "credit rollover does not apply to accounts on the free tier."
+      ],
+      "platform": "elevenlabs help center (vendor documentation; self-interested; no on-page date, captured 2026-10-01)",
+      "target_slug": "/evidence/ai-voice-generators",
+      "collected_at": "2026-10-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-voice-generators-2026-10-01",
+      "screening": "included",
+      "label": "vendor-claim",
+      "tool": "ElevenLabs",
+      "failure_mode": "credit-expiry",
+      "verification": "re-fetched 2026-10-01 via r.jina.ai reader proxy",
+      "coders": [],
+      "coder_agreement": null,
+      "coding": {
+        "tool": "ElevenLabs",
+        "aspect": "credit expiry rule (vendor-stated)",
+        "stance": "n/a",
+        "plan_tier_if_stated": "not stated",
+        "item_date": "2026-10-01"
+      },
+      "coding_status": "CURATOR-PROVISIONAL single pass; dual-independent coding + resolver orchestrated above this run",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-27",
+          "source_url": "https://elevenlabs.io/docs/help-center/account/general/how-does-credit-rollover-work",
+          "claim": "Unchanged in substance: ElevenLabs' help center (moved from help.elevenlabs.io, whose old article URL now shows a support form) still says cancelling or downgrading forfeits unused credits at the end of the billing cycle and that rollover does not apply on the free tier.",
+          "quote": "If you cancel or downgrade your subscription, this will take effect at the end of your current billing cycle, and you will lose any unused credits on your account when this happens.",
+          "supersedes": "source URL only (old help.elevenlabs.io article retired); wording unchanged",
+          "collector": "refresh-2026-10-27 (live curl/WebFetch)"
+        }
+      ]
+    },
+    {
+      "id": "EV-evidence-ai-voice-generators-34",
+      "claim": "The vendor's own troubleshooting guide says its models are non-deterministic and documents mispronunciation and accent/language drift within one generation; it is the vendor-side statement against which the user reports of inconsistency can be read.",
+      "source_url": "https://elevenlabs.io/docs/eleven-creative/troubleshooting",
+      "source_date": "2026-10-01",
+      "quote": "Our models are non-deterministic, meaning outputs can vary based on inputs.",
+      "quote_supplementary": [
+        "The multilingual models may rarely mispronounce certain words, even in English.",
+        "The AI can sometimes switch languages or accents throughout a single generation, especially if that generation is longer in length."
+      ],
+      "platform": "elevenlabs.io docs (vendor documentation; self-interested; no on-page date, captured 2026-10-01)",
+      "target_slug": "/evidence/ai-voice-generators",
+      "collected_at": "2026-10-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-voice-generators-2026-10-01",
+      "screening": "included",
+      "label": "vendor-claim",
+      "tool": "ElevenLabs",
+      "failure_mode": "voice-drift/pronunciation",
+      "verification": "re-fetched 2026-10-01 via r.jina.ai reader proxy",
+      "coders": [],
+      "coder_agreement": null,
+      "coding": {
+        "tool": "ElevenLabs",
+        "aspect": "vendor-documented variability",
+        "stance": "n/a",
+        "plan_tier_if_stated": "not stated",
+        "item_date": "2026-10-01"
+      },
+      "coding_status": "CURATOR-PROVISIONAL single pass; dual-independent coding + resolver orchestrated above this run",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-27",
+          "source_url": "https://elevenlabs.io/docs/eleven-creative/troubleshooting",
+          "claim": "Unchanged: troubleshooting page still states non-determinism, rare mispronunciation in multilingual models, and accent/language switching in longer generations.",
+          "quote": "Our models are non-deterministic, meaning outputs can vary based on inputs.",
+          "collector": "refresh-2026-10-27 (live curl/WebFetch)"
+        }
+      ]
+    },
+    {
+      "id": "EV-evidence-ai-voice-generators-35",
+      "claim": "TechCrunch reported on 2026-09-28 that ElevenLabs launched v4 and v4 Turbo and that the company says the new model handles voice identity better over longer text; most user reports in this record predate or straddle that launch.",
+      "source_url": "https://techcrunch.com/2026/09/28/elevenlabs-new-v4-speech-model-supports-more-expression-control-and-90-languages/",
+      "source_date": "2026-09-28",
+      "quote": "the model handles voice identity better over longer chunks of text.",
+      "quote_supplementary": [
+        "ElevenLabs launched two new speech models on Monday, called ElevenLabs v4 and v4 Turbo",
+        "The previous version supported 70 languages, and ElevenLabs has worked to get that number up to 90 languages with the new version."
+      ],
+      "platform": "TechCrunch (news report of a vendor launch; vendor statements reported second-hand)",
+      "target_slug": "/evidence/ai-voice-generators",
+      "collected_at": "2026-10-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-voice-generators-2026-10-01",
+      "screening": "included",
+      "label": "vendor-claim",
+      "tool": "ElevenLabs",
+      "failure_mode": "voice-drift/versioning",
+      "verification": "re-fetched 2026-10-01 via r.jina.ai reader proxy",
+      "coders": [],
+      "coder_agreement": null,
+      "coding": {
+        "tool": "ElevenLabs",
+        "aspect": "new model release (staleness marker)",
+        "stance": "n/a",
+        "plan_tier_if_stated": "not stated",
+        "item_date": "2026-09-28"
+      },
+      "coding_status": "CURATOR-PROVISIONAL single pass; dual-independent coding + resolver orchestrated above this run"
+    },
+    {
+      "id": "EV-evidence-ai-voice-generators-36",
+      "claim": "A disclosed-method test (Labelbox, published 2024-08-17) of six TTS models on 500 prompts rated by three labelers each found ElevenLabs with the lowest word error rate (2.8302%) but 'High' pronunciation accuracy in 81.97% of cases, behind OpenAI TTS at 87.13%; the ElevenLabs model tested was a then-current monolingual model that the page itself calls outdated.",
+      "source_url": "https://labelbox.com/guides/evaluating-leading-text-to-speech-models/",
+      "source_date": "2024-08-17",
+      "quote": "we evaluated each model on 500 prompts. Each prompt was reviewed by three expert labelers",
+      "quote_supplementary": [
+        "We recently evaluated the performance of six leading TTS models",
+        "Pronunciation Accuracy: High in 81.97% of cases",
+        "Pronunciation accuracy**: High in 87.13% of cases",
+        "Word Error Rate (WER): 2.8302%",
+        "eleven_monolingual_v1 (As of 30th September, eleven_monolingual_v1 is an outdated version"
+      ],
+      "platform": "Labelbox guide (vendor of data-labeling services; disclosed-method test; page JSON shows published_at 2024-08-17)",
+      "target_slug": "/evidence/ai-voice-generators",
+      "collected_at": "2026-10-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-voice-generators-2026-10-01",
+      "screening": "included",
+      "label": "independent-test",
+      "tool": "ElevenLabs",
+      "failure_mode": "pronunciation",
+      "verification": "re-fetched 2026-10-01 via r.jina.ai reader proxy",
+      "coders": [],
+      "coder_agreement": null,
+      "coding": {
+        "tool": "ElevenLabs",
+        "aspect": "500-prompt TTS rating; pronunciation",
+        "stance": "mixed",
+        "plan_tier_if_stated": "not stated",
+        "item_date": "2024-08-17"
+      },
+      "coding_status": "CURATOR-PROVISIONAL single pass; dual-independent coding + resolver orchestrated above this run",
+      "honesty_notes": [
+        "Older ElevenLabs model (eleven_monolingual_v1); tests only ElevenLabs among the four scored tools. Labelbox sells labeling services (COI)."
+      ]
+    },
+    {
+      "id": "EV-evidence-ai-voice-generators-37",
+      "claim": "A vendor-run benchmark (Synthio Labs, released 2026-09-17) of nine TTS systems on 274 drug names found ElevenLabs eleven_v3 fell from 93.0% to 67.1% on newly approved names; Synthio's own model is one of the nine tested, so the ranking is self-interested.",
+      "source_url": "https://www.prnewswire.com/news-releases/synthio-labs-launches-dose-benchmark-leading-voice-ai-models-mispronounce-up-to-one-in-three-newly-approved-drug-names-302880963.html",
+      "source_date": "2026-09-17",
+      "quote": "ElevenLabs' eleven_v3 dropped from 93.0% on established names to 67.1%",
+      "quote_supplementary": [
+        "Nine commercial text-to-speech systems tested on 274 medicines in clinical sentences",
+        "Synthio Labs' own RxPronounce model is one of the nine; it passed 91.2% of names overall and 87.0% of newly approved names"
+      ],
+      "platform": "PR Newswire press release from Synthio Labs (vendor-run benchmark; self-interested - Synthio sells a competing pronunciation model)",
+      "target_slug": "/evidence/ai-voice-generators",
+      "collected_at": "2026-10-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-voice-generators-2026-10-01",
+      "screening": "included",
+      "label": "independent-test",
+      "tool": "ElevenLabs",
+      "failure_mode": "pronunciation",
+      "verification": "re-fetched 2026-10-01 via r.jina.ai reader proxy",
+      "coders": [],
+      "coder_agreement": null,
+      "coding": {
+        "tool": "ElevenLabs",
+        "aspect": "domain-specific pronunciation (drug names)",
+        "stance": "mixed",
+        "plan_tier_if_stated": "not stated",
+        "item_date": "2026-09-17"
+      },
+      "coding_status": "CURATOR-PROVISIONAL single pass; dual-independent coding + resolver orchestrated above this run",
+      "honesty_notes": [
+        "Narrow domain (pharma names); COI: the publisher's own model is in the test set."
+      ]
+    },
+    {
+      "id": "EV-evidence-ai-voice-generators-38",
+      "claim": "AlphaSignal reported on 2026-09-28 that Artificial Analysis measured ElevenLabs' new Eleven v4 at 91.7% composite pronunciation robustness, with exact character sequences the weakest category.",
+      "source_url": "https://alphasignal.ai/news/elevenlabs-eleven-v4-tops-english-voice-ai-with-91-7-pronunciation-score",
+      "source_date": "2026-09-28",
+      "quote": "The 91.7% composite is the highest Artificial Analysis has measured for a TTS model.",
+      "quote_supplementary": [
+        "Exact character sequences remain its weakest category at 78.8%.",
+        "Eleven v4 is also the only model above 93% in three of the four categories."
+      ],
+      "platform": "AlphaSignal news report on an Artificial Analysis benchmark (secondary source)",
+      "target_slug": "/evidence/ai-voice-generators",
+      "collected_at": "2026-10-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-voice-generators-2026-10-01",
+      "screening": "included",
+      "label": "independent-test",
+      "tool": "ElevenLabs",
+      "failure_mode": "pronunciation",
+      "verification": "re-fetched 2026-10-01 via r.jina.ai reader proxy",
+      "coders": [],
+      "coder_agreement": null,
+      "coding": {
+        "tool": "ElevenLabs",
+        "aspect": "pronunciation robustness (newest model)",
+        "stance": "positive",
+        "plan_tier_if_stated": "not stated",
+        "item_date": "2026-09-28"
+      },
+      "coding_status": "CURATOR-PROVISIONAL single pass; dual-independent coding + resolver orchestrated above this run",
+      "honesty_notes": [
+        "Secondary report; covers v4 (launched 2026-09-28), not the models behind the older user reports."
+      ]
+    },
+    {
+      "id": "EV-evidence-ai-voice-generators-39",
+      "claim": "On Artificial Analysis' blind-preference leaderboard as captured 2026-10-01, ElevenLabs' newest model Eleven v4 ranks first by Elo.",
+      "source_url": "https://artificialanalysis.ai/text-to-speech/leaderboard/provider-voice",
+      "source_date": "2026-10-01",
+      "quote": "1 1 Eleven v4 1320±18 95% interval 1302 to 1338 1,803 Sept 2026",
+      "quote_supplementary": [
+        "16 15-18 Eleven v3 1171±11 95% interval 1160 to 1182 4,481 Feb 2026"
+      ],
+      "platform": "Artificial Analysis Speech Arena leaderboard (independent blind human-preference arena; live page, captured 2026-10-01)",
+      "target_slug": "/evidence/ai-voice-generators",
+      "collected_at": "2026-10-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-voice-generators-2026-10-01",
+      "screening": "included",
+      "label": "independent-test",
+      "tool": "ElevenLabs",
+      "failure_mode": "quality-ranking",
+      "verification": "re-fetched 2026-10-01 via r.jina.ai reader proxy",
+      "coders": [],
+      "coder_agreement": null,
+      "coding": {
+        "tool": "ElevenLabs",
+        "aspect": "blind-preference Elo (provider voice arena)",
+        "stance": "positive",
+        "plan_tier_if_stated": "not stated",
+        "item_date": "2026-10-01"
+      },
+      "coding_status": "CURATOR-PROVISIONAL single pass; dual-independent coding + resolver orchestrated above this run",
+      "honesty_notes": [
+        "Live leaderboard; ranks move. WellSaid Labs does not appear in the captured page text."
+      ]
+    },
+    {
+      "id": "EV-evidence-ai-voice-generators-40",
+      "claim": "On the same leaderboard as captured 2026-10-01, Murf's Falcon 2 model ranks 19th and its older Speech Gen 2 model 76th by Elo.",
+      "source_url": "https://artificialanalysis.ai/text-to-speech/leaderboard/provider-voice",
+      "source_date": "2026-10-01",
+      "quote": "19 19-21 Falcon 2 1154±14 95% interval 1140 to 1168 1,868 Jul 2026",
+      "quote_supplementary": [
+        "76 76 Murf Speech Gen 2 982±12 95% interval 970 to 994 4,965 Jul 2024"
+      ],
+      "platform": "Artificial Analysis Speech Arena leaderboard (independent blind human-preference arena; live page, captured 2026-10-01)",
+      "target_slug": "/evidence/ai-voice-generators",
+      "collected_at": "2026-10-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-voice-generators-2026-10-01",
+      "screening": "included",
+      "label": "independent-test",
+      "tool": "Murf",
+      "failure_mode": "quality-ranking",
+      "verification": "re-fetched 2026-10-01 via r.jina.ai reader proxy",
+      "coders": [],
+      "coder_agreement": null,
+      "coding": {
+        "tool": "Murf",
+        "aspect": "blind-preference Elo (provider voice arena)",
+        "stance": "mixed",
+        "plan_tier_if_stated": "not stated",
+        "item_date": "2026-10-01"
+      },
+      "coding_status": "CURATOR-PROVISIONAL single pass; dual-independent coding + resolver orchestrated above this run",
+      "honesty_notes": [
+        "Falcon 2 is Murf's API/agent model; the Studio product's voice model is not identified on the leaderboard."
+      ]
+    },
+    {
+      "id": "EV-evidence-ai-voice-generators-41",
+      "claim": "On the same leaderboard as captured 2026-10-01, SpeechifyAI's Simba 3.2 ranks 7th and Simba 3.0 28th by Elo.",
+      "source_url": "https://artificialanalysis.ai/text-to-speech/leaderboard/provider-voice",
+      "source_date": "2026-10-01",
+      "quote": "7 5-8 Simba 3.2 1239±13 95% interval 1226 to 1252 2,669 Jul 2026",
+      "quote_supplementary": [
+        "28 23-32 Simba 3.0 1123±12 95% interval 1111 to 1135 2,568 Feb 2026"
+      ],
+      "platform": "Artificial Analysis Speech Arena leaderboard (independent blind human-preference arena; live page, captured 2026-10-01)",
+      "target_slug": "/evidence/ai-voice-generators",
+      "collected_at": "2026-10-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-voice-generators-2026-10-01",
+      "screening": "included",
+      "label": "independent-test",
+      "tool": "Speechify",
+      "failure_mode": "quality-ranking",
+      "verification": "re-fetched 2026-10-01 via r.jina.ai reader proxy",
+      "coders": [],
+      "coder_agreement": null,
+      "coding": {
+        "tool": "Speechify",
+        "aspect": "blind-preference Elo (provider voice arena)",
+        "stance": "positive",
+        "plan_tier_if_stated": "not stated",
+        "item_date": "2026-10-01"
+      },
+      "coding_status": "CURATOR-PROVISIONAL single pass; dual-independent coding + resolver orchestrated above this run",
+      "honesty_notes": [
+        "Simba is the API model line from SpeechifyAI; whether the consumer app uses it is not stated on the page."
+      ]
+    },
+    {
+      "id": "EV-evidence-ai-voice-generators-42",
+      "claim": "Artificial Analysis publishes how its pronunciation benchmark works: one fixed sentence set, blind human judgements of highlighted spans, attention checks that remove failing reviewers.",
+      "source_url": "https://artificialanalysis.ai/methodology/text-to-speech/pronunciation-robustness-overview",
+      "source_date": "2026-10-01",
+      "quote": "Every model reads the same set of sentences.",
+      "quote_supplementary": [
+        "At least three third party reviewers judge over 95% of clips for each published model.",
+        "Reviewers who miss any answered check are excluded entirely."
+      ],
+      "platform": "Artificial Analysis methodology page (disclosed method; no on-page date, captured 2026-10-01)",
+      "target_slug": "/evidence/ai-voice-generators",
+      "collected_at": "2026-10-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-voice-generators-2026-10-01",
+      "screening": "included",
+      "label": "independent-test",
+      "tool": "(all four)",
+      "failure_mode": "pronunciation",
+      "verification": "re-fetched 2026-10-01 via r.jina.ai reader proxy",
+      "coders": [],
+      "coder_agreement": null,
+      "coding": {
+        "tool": "(all four)",
+        "aspect": "benchmark method disclosure",
+        "stance": "n/a",
+        "plan_tier_if_stated": "not stated",
+        "item_date": "2026-10-01"
+      },
+      "coding_status": "CURATOR-PROVISIONAL single pass; dual-independent coding + resolver orchestrated above this run"
+    },
+    {
+      "id": "EV-evidence-ai-voice-generators-43",
+      "claim": "The vendor states on its homepage that it offers lifelike speech with 5,000+ voices in 70+ languages and 'ultra-realistic' speech.",
+      "source_url": "https://elevenlabs.io/",
+      "source_date": "2026-10-01",
+      "quote": "Create lifelike speech with our AI voice generator and voice agents platform. Access 5,000+ voices in 70+ languages with secure APIs and SDKs.",
+      "quote_supplementary": [
+        "Generate ultra-realistic speech, videos, music, and sound effects."
+      ],
+      "platform": "elevenlabs.io homepage (vendor marketing; self-interested; captured 2026-10-01)",
+      "target_slug": "/evidence/ai-voice-generators",
+      "collected_at": "2026-10-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-voice-generators-2026-10-01",
+      "screening": "included",
+      "label": "vendor-claim",
+      "tool": "ElevenLabs",
+      "failure_mode": "vendor-claim",
+      "verification": "re-fetched 2026-10-01 (raw HTML)",
+      "coders": [],
+      "coder_agreement": null,
+      "coding": {
+        "tool": "ElevenLabs",
+        "aspect": "realism and scale claim",
+        "stance": "n/a",
+        "plan_tier_if_stated": "not stated",
+        "item_date": "2026-10-01"
+      },
+      "coding_status": "CURATOR-PROVISIONAL single pass; dual-independent coding + resolver orchestrated above this run",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-27",
+          "source_url": "https://elevenlabs.io/",
+          "claim": "CHANGED: the ElevenLabs homepage description now claims 17,500+ voices in 90+ languages (was 5,000+ voices in 70+ languages on 2026-10-01); 'Generate ultra-realistic speech' still appears (now '... speech, videos, music, and sound effects').",
+          "quote": "Access 17,500+ voices in 90+ languages with secure APIs and SDKs.",
+          "supersedes": "2026-10-01 homepage line 'Access 5,000+ voices in 70+ languages'",
+          "collector": "refresh-2026-10-27 (live curl/WebFetch)"
+        }
+      ]
+    },
+    {
+      "id": "EV-evidence-ai-voice-generators-44",
+      "claim": "The vendor states on its homepage a 99.38% pronunciation accuracy figure, 200+ voices across 35+ languages and 'ranked among the most natural'.",
+      "source_url": "https://murf.ai/",
+      "source_date": "2026-10-01",
+      "quote": "99.38% pronunciation accuracy with humanlike delivery for natural and precise speech.",
+      "quote_supplementary": [
+        "200+ Expressive Voices Across 35+ Languages",
+        "Ranked Among the Most Natural."
+      ],
+      "platform": "murf.ai homepage (vendor marketing; self-interested; captured 2026-10-01)",
+      "target_slug": "/evidence/ai-voice-generators",
+      "collected_at": "2026-10-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-voice-generators-2026-10-01",
+      "screening": "included",
+      "label": "vendor-claim",
+      "tool": "Murf",
+      "failure_mode": "vendor-claim",
+      "verification": "re-fetched 2026-10-01 (raw HTML)",
+      "coders": [],
+      "coder_agreement": null,
+      "coding": {
+        "tool": "Murf",
+        "aspect": "pronunciation accuracy claim",
+        "stance": "n/a",
+        "plan_tier_if_stated": "not stated",
+        "item_date": "2026-10-01"
+      },
+      "coding_status": "CURATOR-PROVISIONAL single pass; dual-independent coding + resolver orchestrated above this run",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-27",
+          "source_url": "https://murf.ai/",
+          "claim": "Unchanged: Murf homepage still prints 99.38% pronunciation accuracy and '200+ Expressive Voices Across 35+ Languages'.",
+          "quote": "99.38% pronunciation accuracy with humanlike delivery for natural and precise speech.",
+          "collector": "refresh-2026-10-27 (live curl/WebFetch)"
+        }
+      ]
+    },
+    {
+      "id": "EV-evidence-ai-voice-generators-45",
+      "claim": "The vendor states on its homepage 280+ voices described as the most realistic and full commercial usage rights on every voice; the same page also says '240+' voice models and gives two different language counts.",
+      "source_url": "https://www.wellsaid.io/",
+      "source_date": "2026-10-01",
+      "quote": "Choose from 280+ of the most realistic voices with an AI voice generator built for text to speech across accents, languages, tones, and styles.",
+      "quote_supplementary": [
+        "Every AI voice in the library includes full commercial usage rights.",
+        "That means 240+ voice models",
+        "Explore 50+ languages and accents",
+        "WellSaid supports 18 languages across regional variants"
+      ],
+      "platform": "wellsaid.io homepage (vendor marketing; self-interested; captured 2026-10-01)",
+      "target_slug": "/evidence/ai-voice-generators",
+      "collected_at": "2026-10-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-voice-generators-2026-10-01",
+      "screening": "included",
+      "label": "vendor-claim",
+      "tool": "WellSaid Labs",
+      "failure_mode": "vendor-claim",
+      "verification": "re-fetched 2026-10-01 (raw HTML)",
+      "coders": [],
+      "coder_agreement": null,
+      "coding": {
+        "tool": "WellSaid Labs",
+        "aspect": "realism, commercial rights, count claims",
+        "stance": "n/a",
+        "plan_tier_if_stated": "not stated",
+        "item_date": "2026-10-01"
+      },
+      "coding_status": "CURATOR-PROVISIONAL single pass; dual-independent coding + resolver orchestrated above this run",
+      "honesty_notes": [
+        "Same page states 280+, 240+ voices and 50+ vs 18 languages."
+      ],
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-27",
+          "source_url": "https://www.wellsaid.io/",
+          "claim": "Unchanged: WellSaid homepage still gives 280+ and 240+ voice counts, 50+ languages and accents and 18 languages, and the line that every AI voice includes full commercial usage rights.",
+          "quote": "Choose from 280+ of the most realistic voices ... That means 240+ voice models ... Explore 50+ languages and accents ... WellSaid supports 18 languages across regional variants",
+          "collector": "refresh-2026-10-27 (live curl/WebFetch)"
+        }
+      ]
+    },
+    {
+      "id": "EV-evidence-ai-voice-generators-46",
+      "claim": "The vendor states on its homepage FAQ that its voices are 'indistinguishable from human voices' and the 'most natural' on the market.",
+      "source_url": "https://speechify.com/",
+      "source_date": "2026-10-01",
+      "quote": "has the most natural, human-sounding voice overs available on the market. The AI voices are now indistinguishable from human voices",
+      "quote_supplementary": [
+        "Turn PDFs, docs, and more into lifelike and",
+        "Speechify offers over 1,000 natural-sounding text to speech voices in more than 60 languages"
+      ],
+      "platform": "speechify.com homepage FAQ (vendor marketing; self-interested; captured 2026-10-01)",
+      "target_slug": "/evidence/ai-voice-generators",
+      "collected_at": "2026-10-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-voice-generators-2026-10-01",
+      "screening": "included",
+      "label": "vendor-claim",
+      "tool": "Speechify",
+      "failure_mode": "vendor-claim",
+      "verification": "re-fetched 2026-10-01 via r.jina.ai reader proxy",
+      "coders": [],
+      "coder_agreement": null,
+      "coding": {
+        "tool": "Speechify",
+        "aspect": "indistinguishable-from-human claim",
+        "stance": "n/a",
+        "plan_tier_if_stated": "not stated",
+        "item_date": "2026-10-01"
+      },
+      "coding_status": "CURATOR-PROVISIONAL single pass; dual-independent coding + resolver orchestrated above this run",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-27",
+          "source_url": "https://speechify.com/",
+          "claim": "Unchanged: Speechify homepage FAQ still says its AI voices are indistinguishable from human voices.",
+          "quote": "The AI voices are now indistinguishable from human voices",
+          "collector": "refresh-2026-10-27 (live curl/WebFetch)"
+        }
+      ]
+    },
+    {
+      "id": "EV-evidence-ai-voice-generators-47",
+      "claim": "Murf's pricing page as captured 2026-10-01 (API tab, the default view) lists a free API trial of $10 every month and pay-as-you-go at $0.01 per 1,000 characters for the Falcon model and $0.03 per 1,000 for its studio-quality model; the Studio subscription tiers could not be captured.",
+      "source_url": "https://murf.ai/pricing",
+      "source_date": "2026-10-01",
+      "quote": "$10 FREE, every month ... $0.01/1000 characters for Falcon ... Purchased credit never expires",
+      "quote_supplementary": [
+        "Studio-quality speech synthesis, ideal for multimedia applications requiring rich, expressive voiceovers $0.03 / 1000 characters"
+      ],
+      "platform": "murf.ai/pricing via reader proxy (vendor pricing page; self-interested; API tab only - Studio plan tiers are client-rendered and were not captured)",
+      "target_slug": "/evidence/ai-voice-generators",
+      "collected_at": "2026-10-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-voice-generators-2026-10-01",
+      "screening": "included",
+      "label": "vendor-claim",
+      "tool": "Murf",
+      "failure_mode": "pricing",
+      "verification": "re-fetched 2026-10-01 via r.jina.ai reader proxy",
+      "coders": [],
+      "coder_agreement": null,
+      "coding": {
+        "tool": "Murf",
+        "aspect": "API pricing (Studio tiers unavailable)",
+        "stance": "n/a",
+        "plan_tier_if_stated": "not stated",
+        "item_date": "2026-10-01"
+      },
+      "coding_status": "CURATOR-PROVISIONAL single pass; dual-independent coding + resolver orchestrated above this run",
+      "honesty_notes": [
+        "Murf Studio subscription prices NOT captured: tab is JS-rendered; reader proxy returns the API tab only."
+      ],
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-27",
+          "source_url": "https://murf.ai/pricing",
+          "claim": "CHANGED wording: the Murf pricing page (read through the r.jina.ai text reader; static curl returns an empty shell) lists '$10 FREE for API calls' under a 'Free Trial' plan with no 'every month' wording; rates unchanged at $0.01/1,000 characters for Falcon (now 'Falcon 2.1') and $0.03/1,000 for the studio-quality model; 'Purchased credit never expires' unchanged. Murf Studio tier prices still not readable (client-rendered tab).",
+          "quote": "Free Trial ... $10 FREE for API calls ... $0.01/1000 characters for Falcon 2.1 ... Purchased credit never expires",
+          "supersedes": "2026-10-01 wording '$10 FREE, every month'",
+          "collector": "refresh-2026-10-27 (live curl/WebFetch)"
+        }
+      ]
+    },
+    {
+      "id": "EV-evidence-ai-voice-generators-48",
+      "claim": "Speechify's reader pricing page re-captured 2026-10-01 (monthly view) lists a Free plan with 10 'robotic sounding' voices and Premium at $29/Month; unchanged from the 2026-08-09 capture in the Speechify review shard.",
+      "source_url": "https://speechify.com/pricing/",
+      "source_date": "2026-10-01",
+      "quote": "Prices shown per month, billed monthly ... 10 robotic sounding voices ... $29/Month ... 1000+ high quality, natural voices ... 60+ different languages",
+      "quote_supplementary": [
+        "Listen at speeds up to 1.5x",
+        "Listen at 5x faster speeds"
+      ],
+      "platform": "speechify.com/pricing via reader proxy (vendor pricing page; self-interested; monthly view; captured 2026-10-01)",
+      "target_slug": "/evidence/ai-voice-generators",
+      "collected_at": "2026-10-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-voice-generators-2026-10-01",
+      "screening": "included",
+      "label": "vendor-claim",
+      "tool": "Speechify",
+      "failure_mode": "pricing",
+      "verification": "re-fetched 2026-10-01 via r.jina.ai reader proxy",
+      "coders": [],
+      "coder_agreement": null,
+      "coding": {
+        "tool": "Speechify",
+        "aspect": "reader plan pricing",
+        "stance": "n/a",
+        "plan_tier_if_stated": "not stated",
+        "item_date": "2026-10-01"
+      },
+      "coding_status": "CURATOR-PROVISIONAL single pass; dual-independent coding + resolver orchestrated above this run",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-27",
+          "source_url": "https://speechify.com/pricing/",
+          "claim": "Unchanged: Free with 10 robotic sounding voices; Premium $29/Month.",
+          "quote": "Free ... 10 robotic sounding voices ... Premium MOST POPULAR $29 /Month",
+          "collector": "refresh-2026-10-27 (live curl/WebFetch)"
+        }
+      ]
+    },
+    {
+      "id": "EV-evidence-ai-voice-generators-49",
+      "claim": "Speechify Studio's pricing page re-captured 2026-10-01 lists a free tier of 600 credits without commercial rights, Starter at $100 a year and Creator at $300 a year, and states that pitch, speed or emotion changes cost credits again.",
+      "source_url": "https://speechify.com/pricing-studio/",
+      "source_date": "2026-10-01",
+      "quote": "Studio Starter $100 /Year ... 86,400 Studio credits ... Studio Creator Best Value $300 /Year ... 345,600 Studio credits",
+      "quote_supplementary": [
+        "600 Studio credits",
+        "No commercial usage rights",
+        "pitch, speed, or emotional prosody changes go back through the AI and do cost credits.",
+        "Voiceover → 1 credit per second"
+      ],
+      "platform": "speechify.com/pricing-studio via reader proxy (vendor pricing page; self-interested; captured 2026-10-01)",
+      "target_slug": "/evidence/ai-voice-generators",
+      "collected_at": "2026-10-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "evidence-ai-voice-generators-2026-10-01",
+      "screening": "included",
+      "label": "vendor-claim",
+      "tool": "Speechify",
+      "failure_mode": "pricing/credit-burn",
+      "verification": "re-fetched 2026-10-01 via r.jina.ai reader proxy",
+      "coders": [],
+      "coder_agreement": null,
+      "coding": {
+        "tool": "Speechify",
+        "aspect": "Studio credit metering and regeneration cost",
+        "stance": "n/a",
+        "plan_tier_if_stated": "not stated",
+        "item_date": "2026-10-01"
+      },
+      "coding_status": "CURATOR-PROVISIONAL single pass; dual-independent coding + resolver orchestrated above this run",
+      "honesty_notes": [
+        "Unchanged in structure from speechify-review-06 (2026-08-09)."
+      ],
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-27",
+          "source_url": "https://speechify.com/pricing-studio/",
+          "claim": "Unchanged: Studio Free 600 credits with no commercial usage rights; Studio Starter $100/year, 86,400 credits; Studio Creator $300/year, 345,600 credits; pitch/speed/emotion changes cost credits.",
+          "quote": "Free Plan $0 ... 600 Studio credits ... No commercial usage rights ... Studio Starter $100 /Year ... 86,400 Studio credits ... Studio Creator Best Value $300 /Year ... 345,600 Studio credits",
+          "collector": "refresh-2026-10-27 (live curl/WebFetch)"
+        }
+      ]
+    }
+  ]
+}

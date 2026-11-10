@@ -56,7 +56,14 @@
       "off-topic (4): neuronwriter.com/neuronwriter-vs-surfer-seo-a-complete-comparison-for-content-creators-in-2026 (a rival vendor's self-serving comparison page, not a neutral claim about Surfer); surferseo.com/blog/best-ai-seo-tools (Surfer's own competitor roundup naming itself, self-serving, not a specific dated claim); capterra.com/compare/218703-219202/Surfer-vs-Yoast-SEO and capterra.com/compare/176340-218703/Ahrefs-vs-Surfer (Capterra's auto-generated tool-comparison pages, no disclosed review content, different sub-topic).",
       "OWNED-BORDER held (0 registered): no AI-humanizer/AI-detector/paraphraser claim was found, registered, or cited as fact anywhere in this sweep — Surfer's category (AI SEO content-optimization) does not touch that border, and no candidate source strayed into it."
     ],
-    "entries_reused": []
+    "entries_reused": [],
+    "refreshes": [
+      {
+        "date": "2026-11-02",
+        "batch": "B4",
+        "note": "Live recapture of https://surferseo.com/pricing/ (HTTP 200, server-rendered HTML read with a browser user-agent curl; yearly and monthly figures taken from the plan cards and their data-yearly / data-monthly attributes). Result logged as a recaptures block on EV-surfer-seo-review-01. MATCH: Discovery $49 (120 documents), Standard $99 (360), Pro $182, Peace of Mind $299 (unlimited, fair usage) per month billed yearly. CHANGED: Pro now shows 360 documents (July capture showed none); Enterprise shows 'Custom' with no $999 figure anywhere on the page; a sixth plan 'AI Search Analytics' $82/mo billed yearly (AI-visibility tracking, no document allowance listed) was not in the July capture; 'Recommended' badge on Pro not present in the text read. NEW FACTS READ: month-to-month prices $59 / $119 / $219 / $359 / $95 (AI Search Analytics); FAQ states annual plans are charged upfront with a discount of up to 17% vs monthly, annual credits reset yearly, plans auto-renew and auto-renewal can be turned off any time with access to the end of the paid period; every plan button reads 'Start for Free' but no trial length, free allowance or refund policy is stated. Page /tools/surfer-seo corrected on 2026-11-02. Entry count unchanged: 9 entries from 8 included sources."
+      }
+    ]
   },
   "entries": [
     {
@@ -85,6 +92,15 @@
       "honesty_notes": [
         "This is markedly more expensive than NeuronWriter's 5-tier ladder ($23-$117/mo, per EV-neuronwriter-review-01) — a factual pricing contrast, not an adopted value judgment.",
         "Historic pricing (Essential $89/mo referenced in dated 2026-01 community posts below) differs from this capture's 'Discovery $49/mo' — the plan NAMES and PRICES appear to have changed between Jan 2026 and this Jul 2026 capture; frame any older community complaint about a specific price point as dated to its own month, not as describing current pricing."
+      ],
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-02",
+          "source_url": "https://surferseo.com/pricing/",
+          "claim": "Live pricing page (yearly billing default) lists Discovery $49/mo (Create or Optimize 120 Documents), Standard $99/mo (360 Documents), Pro $182/mo (360 Documents), Peace of Mind $299/mo (Unlimited* Documents), AI Search Analytics $82/mo (AI-visibility tracking: 50 AI prompts refreshed daily, 5 Brand Spaces; no document allowance listed) and Enterprise 'Custom' (tailored packages, custom limits). Month-to-month prices from the billing toggle: Discovery $59, Standard $119, Pro $219, Peace of Mind $359, AI Search Analytics $95. MATCH vs 2026-07-16: Discovery, Standard, Pro and Peace of Mind yearly prices and the 120/360/unlimited allowances. CHANGED vs 2026-07-16: Pro now states 360 documents; Enterprise no longer shows a $999 figure (custom only); AI Search Analytics plan is new. Same page FAQ: annual plan charged upfront for the year, 'a discount of up to 17%' vs monthly; annual credits 'reset yearly or after changing your plan'; plans auto-renew, auto-renewal can be turned off at any point via the in-app Billing page, access continues until the end of the already-paid period. Every plan button reads 'Start for Free'; no trial length, free allowance or refund terms are stated on the page. Old values kept above.",
+          "quote": "Discovery 49 USD per month Billed yearly ... Create or Optimize 120 Documents ... Standard 99 USD per month ... Create or Optimize 360 Documents ... Pro 182 USD per month ... Create or Optimize 360 Documents ... Peace of Mind 299 USD per month ... Create or Optimize Unlimited* Documents ... AI Search Analytics 82 USD per month ... Enterprise Custom Tailored packages ... You'll have access to the app until the end of the already-paid billing period",
+          "method": "curl with a desktop Chrome user-agent (HTTP 200, server-rendered HTML); plan cards read as text, month-to-month prices from the data-monthly attributes of the price toggle"
+        }
       ]
     },
     {

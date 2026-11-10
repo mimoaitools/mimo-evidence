@@ -1,0 +1,412 @@
+{
+  "_meta": {
+    "flow_id": "elevenlabs-vs-wellsaid-labs-2026-09-24",
+    "protocol_version": "MEP-1.0",
+    "target_slug": "/vs/elevenlabs-vs-wellsaid-labs",
+    "target_keyword": "elevenlabs vs wellsaid labs",
+    "run_date": "2026-09-24",
+    "collector": "evidence-curator",
+    "page_class": "vs/head-to-head comparison. REUSES both single-tool review shards in full (registry-elevenlabs-review.json, 17 entries; registry-wellsaid-labs-review.json, 17 entries) by citation shorthand (E-NN / W-NN) rather than re-registering them. This shard captures ONLY delta facts a pure head-to-head needs that neither review shard holds: today's live re-verification of both pricing ladders (checking for drift since the July captures), the WellSaid-vs-ElevenLabs vendor comparison page and its specific claims, a fact-check of those claims against ElevenLabs' own Terms of Use and compliance pages, and a search for disclosed-methodology third-party tests comparing the two tools directly.",
+    "sweep_strategy": "Re-fetched (via r.jina.ai reader proxy, since elevenlabs.io/pricing and wellsaid.io/ai-voice-pricing are JS-hydrated SPAs that return near-empty HTML to a raw curl) both vendors' current pricing pages today, 2026-09-24 — both confirmed UNCHANGED in ladder structure/figures from the July 2026 review-shard captures. Direct-fetched the WellSaid-authored vendor comparison page (wellsaid.io/wellsaid-and-eleven-labs), the one URL the task explicitly named, and used it to drive two fact-check fetches: ElevenLabs' own Terms of Use (elevenlabs.io/terms-of-use, pattern-derived from the vendor's own footer nav, not found by search) to verify a ToS quote WellSaid's page attributes to ElevenLabs, and ElevenLabs' own Trust/compliance page (found via a documented WebSearch query after compliance.elevenlabs.io itself returned empty/JS-blocked) to check WellSaid's 'stronger data protection' claim against ElevenLabs' own stated certifications. Ran 2 documented WebSearch queries to independently verify the two lawsuits WellSaid's comparison page names (BIPA class action, Vacker DMCA/misappropriation suit) — both confirmed via independently-fetched sources (CBS Chicago journalism; the actual federal court settlement stipulation filing), rather than citing WellSaid's own framing of them. Ran 2 documented WebSearch queries hunting for a disclosed-methodology third-party test that compares the two tools head-to-head; none of the 5 comparison pages found (aipedia.wiki, kanshoai.com, fahimai.com, aistackpicks.com, plus assorted affiliate/vendor-programmatic pages) survived direct-fetch verification with a genuine per-article disclosed sample/date — logged as a evidence gap, not stretched into a citation.",
+    "flow_counter": {
+      "identified": 47,
+      "screened": 47,
+      "excluded": 39,
+      "excluded_by_reason": {
+        "no-methodology-affiliate": 10,
+        "off-topic": 14,
+        "duplicate": 9,
+        "unverifiable-this-run": 6
+      },
+      "included_sources": 8,
+      "registry_entries_new": 8,
+      "counter_note": "identified = 45 distinct candidate URLs surfaced across 5 documented WebSearch queries (9 each) + 2 pattern-derived direct-fetch URLs not returned by any search query this run (wellsaid.io/wellsaid-and-eleven-labs, given directly in the task brief; elevenlabs.io/terms-of-use, guessed from ElevenLabs' own footer nav while fact-checking the WellSaid page). Re-verification fetches of THREE already-known URLs from the two review shards (elevenlabs.io/pricing, wellsaid.io/ai-voice-pricing, wellsaid.io/features/ai-voices) are NOT counted in identified, per the re-verification convention established in both prior shards — all three confirmed unchanged/consistent except for one new same-day internal discrepancy on WellSaid's own site (folded into EV-elevenlabs-vs-wellsaid-labs-04's honesty_notes, not a separate registry entry). Excluded-by-reason bucketing is a best-effort reconciliation across the 5 overlapping WebSearch result sets (recurring vendor-programmatic compare pages, affiliate 'X vs Y 2026' content-mill domains, law-firm general-topic roundups, and one page that returned HTTP 500 and one that returned empty JS-rendered content on direct fetch) rather than a line-by-line individual audit of all 39, consistent with how both review shards' own flow counters were reconciled."
+    },
+    "coder_agreement_rate": "CURATOR-PROVISIONAL single-pass coding across all 8 new entries (dual-independent coding + resolver pass orchestrated above this run). Stance calls: 5 n/a (vendor-primary pricing/ToS/compliance facts), 2 mixed (WellSaid's own attack page, coded mixed because it is self-interested marketing copy built on independently-verifiable underlying facts), 1 n/a (independent legal-press confirmation). FLAGGED FOR RESOLVER: (1) EV-elevenlabs-vs-wellsaid-labs-04 (WellSaid's own comparison page) — a coder could argue this whole page should carry a heavier 'self-interested marketing, verify every sub-claim independently' framing rather than being cited claim-by-claim; the underlying lawsuit and ToS claims ARE independently confirmed in EV-05/06/07, but WellSaid's framing ('opaque sources', 'uses customer data for model training' with no mention of the opt-out) is argumentative and should not be adopted as neutral fact. (2) EV-elevenlabs-vs-wellsaid-labs-07 (Vacker settlement) — the primary court filing confirms a settlement was reached and stayed proceedings, but does NOT itself state the DMCA/misappropriation claims in its own text (those come from the original complaint and secondary legal reporting, not independently re-fetched this run); do not present the specific legal theories as confirmed by the cited stipulation document alone.",
+    "query_census": [
+      {
+        "q": "WebSearch: ElevenLabs lawsuit BIPA class action voice actors 2025",
+        "candidates": 9,
+        "note": "loevy.com/class-actions (law firm's own case page), loevy.com/illinois-vocal-artists-sue-big-tech (dup topic), loevy.com PDF complaint (Eleven-Labs-BIPA-Complaint.pdf, not fetched), americanbar.org (general BIPA background, off-topic/not ElevenLabs-specific), law360.com (paywalled, unverifiable-this-run), x.com/marketsday post (off-topic social media), cbsnews.com/chicago (INCLUDED, EV-06), capitolnewsillinois.com (duplicate coverage of the same filing), jdsupra.com (general AI-litigation topic index, off-topic). cbsnews.com direct-fetched → INCLUDED."
+      },
+      {
+        "q": "WebSearch: ElevenLabs lawsuit audiobook DMCA voice cloning settled",
+        "candidates": 9,
+        "note": "loevy.com (dup, already logged query 1), p4sc4l.substack.com (Vacker settlement analysis, not independently fetched — duplicate/unverifiable, used chatgptiseatingtheworld's primary filing instead), deadline.com/2025/11/michael-caine (off-topic, unrelated Michael Caine voice-partnership story), chatgptiseatingtheworld.com/.../Vacker-COMPLAINT.pdf (the original complaint, not fetched — duplicate of the settlement stipulation actually fetched), chatgptiseatingtheworld.com/2025/08/23/...settlement (INCLUDED, EV-07), munckwilson.com (general AI-litigation roundup, off-topic/not ElevenLabs-specific detail), loevy.com PDF (dup), thevocalmarket.com (general AI-music-lawsuit tracker, off-topic), blankrome.com (general law-firm article on voice rights, off-topic), terms.law/forum/thread (duplicate — already covered by the elevenlabs-review shard's EV-16). chatgptiseatingtheworld.com settlement-stipulation page direct-fetched → INCLUDED."
+      },
+      {
+        "q": "WebSearch: ElevenLabs SOC 2 GDPR HIPAA compliance security page",
+        "candidates": 9,
+        "note": "elevenlabs.io/agents/hipaa-compliant-answering-service (a product landing page, not a compliance-certification statement — off-topic for this specific claim), elevenlabs.io/docs/overview/administration/data-residency (redundant with the trust-and-reliability page actually fetched), elevenlabs.io/agents/ai-trust-and-reliability (INCLUDED, EV-08), elevenlabs.io/blog/introducing-european-data-residency (duplicate topic), elevenlabs.io/dpa (redundant, not independently fetched), companyscope.io/vendors/elevenlabs (third-party compliance-summary aggregator, not fetched — no-methodology-affiliate), nudgesecurity.com/security-profile/elevenlabs-io (third-party security-tool profile page, not fetched — no-methodology-affiliate), deepgram.com/learn/elevenlabs-security-review-enterprise-guide (competitor-published guide, not fetched — no-methodology-affiliate), elevenlabs.io/privacy-policy (off-topic for certification-specific claim). elevenlabs.io/agents/ai-trust-and-reliability direct-fetched → INCLUDED."
+      },
+      {
+        "q": "WebSearch: ElevenLabs vs WellSaid Labs comparison test 2026 voice quality",
+        "candidates": 9,
+        "note": "wellsaid.io/wellsaid-and-eleven-labs (dup, already the primary target fetched directly — see EV-04), wellsaid.io/resources/blog/elevenlabs-competitors-alternatives (a different WellSaid blog page, not fetched, off-topic for this page's direct-duel angle), theaiquest.in/elevenlabs-vs-wellsaid-labs-ai-voice-comparison (not fetched — recurring 'X vs Y 2026' aggregator-mill pattern), aivideovoicetools.com/compare/elevenlabs-vs-wellsaid (same pattern, not fetched), aistackpicks.com/reviews/elevenlabs-vs-wellsaid-2026 (fetched — EXCLUDED no-methodology-affiliate, see notes below), fahimai.com/elevenlabs-vs-wellsaid-labs (fetched — EXCLUDED no-methodology-affiliate, see notes below), soloa.ai/blog/elevenlabs-vs-wellsaid-labs... (not fetched, same aggregator pattern), onepin.ai/blog/wellsaid-labs-vs-elevenlabs-2026 (not fetched, same pattern), aigearbase.com/wellsaid-labs-vs-elevenlabs (not fetched, same pattern; aigearbase.com was already flagged no-methodology-affiliate in the wellsaid-labs-review shard)."
+      },
+      {
+        "q": "WebSearch: \"ElevenLabs\" \"WellSaid\" head to head review blind test",
+        "candidates": 9,
+        "note": "peerspot.com/products/comparisons (crowdsourced review-aggregator, not fetched — no-methodology-affiliate), cartesia.ai/vs/elevenlabs-vs-wellsaid (a THIRD competitor's own vendor-programmatic comparison page — off-topic self-interested source, not fetched), murf.ai/compare/elevenlabs-vs-wellsaid-labs (same pattern, a fourth competitor's vendor page — off-topic), aipedia.wiki/compare/elevenlabs-vs-wellsaid (fetched — EXCLUDED no-methodology-affiliate, no disclosed sample/test date despite the '44.98%/81.97%/WER 2.83%' figures appearing in search-engine summaries of this cluster of pages — those specific figures were NEVER traced to a verifiable disclosed-methodology source this run and are NOT registered anywhere in this shard), aistackpicks.com/reviews (dup, query 4), fahimai.com (dup, query 4), kanshoai.com/compare/elevenlabs-vs-wellsaid (fetched — EXCLUDED unverifiable-this-run, HTTP 500), soloa.ai (dup), g2.com/compare/elevenlabsio-vs-wellsaid-studio (platform-wide G2 block, consistent with every prior Mimo shard)."
+      },
+      {
+        "q": "DIRECT: WebFetch https://www.wellsaid.io/wellsaid-and-eleven-labs (given directly in the task brief, not returned by any search query this run)",
+        "candidates": 1,
+        "note": "New URL. INCLUDED → EV-04 (WellSaid's own vendor comparison/attack page)."
+      },
+      {
+        "q": "DIRECT: WebFetch https://elevenlabs.io/terms-of-use (pattern-derived from ElevenLabs' own footer nav, to fact-check a specific ToS quote EV-04's source attributes to ElevenLabs)",
+        "candidates": 1,
+        "note": "New URL. INCLUDED → EV-05 (verbatim match confirmed for WellSaid's quoted license language, plus the training-data opt-out WellSaid's page omits)."
+      },
+      {
+        "q": "DIRECT (re-verification, not new discovery): WebFetch https://elevenlabs.io/pricing, https://www.wellsaid.io/ai-voice-pricing, https://www.wellsaid.io/features/ai-voices (all 3 already known from the review shards)",
+        "candidates": 0,
+        "note": "Not counted in identified. All 3 re-fetched via r.jina.ai reader proxy (raw curl returns a near-empty JS shell for the two pricing SPAs). ElevenLabs pricing ladder confirmed unchanged since the July 2026-07-22 capture → re-registered with new Creator-promo and regeneration/rollover detail as EV-01/EV-02. WellSaid pricing ladder confirmed unchanged since the July 2026-07-26 capture → re-registered with new regeneration-mechanics detail as EV-03. wellsaid.io/features/ai-voices still states '240+' voices today, 2026-09-24 — contradicting the SAME-DAY wellsaid-and-eleven-labs comparison page's '280+' figure; this internal same-vendor discrepancy is logged in EV-04's honesty_notes, not registered as a separate fact."
+      },
+      {
+        "q": "DIRECT: WebFetch https://compliance.elevenlabs.io/ (ElevenLabs' own linked Trust Center, referenced by both elevenlabs.io/pricing and the ai-trust-and-reliability page)",
+        "candidates": 0,
+        "note": "Returned an empty JS-rendered shell via the reader proxy (\"This page maybe not yet fully loaded\") — unverifiable-this-run. The SOC 2/ISO/PCI/HIPAA/GDPR claim was instead sourced from elevenlabs.io/agents/ai-trust-and-reliability, which states the same certifications in static page text (EV-08)."
+      }
+    ],
+    "reused_shards": [
+      "registry-elevenlabs-review.json (17 entries, EV-elevenlabs-review-01..17) — cited by shorthand E-01..E-17 in the page for pricing baseline, Capterra community reports (24 reviews screened, 8 individual + 2 defined-sample entries), voice-library size (10,000+ community voices), dubbing language count (90+), model/latency tradeoffs, Conversational AI Agents pricing, ToS/commercial-rights analysis (terms.law), and the free-tier credit-count contradiction-resolution finding.",
+      "registry-wellsaid-labs-review.json (17 entries, EV-wellsaid-labs-review-01..17) — cited by shorthand W-01..W-17 for pricing baseline, Capterra community reports (14 reviews screened, 3 individual + 3 defined-sample entries), company history/CEO transition, named enterprise customers, compliance page (SOC2 Type II + GDPR + WCAG-target caveat), HINTS word-level control, the dated 240+/25-language multilingual-expansion correction, Vendr real-contract-value data, and two independent hands-on tests (unite.ai, fahimai.com solo review)."
+    ],
+    "page_flow_counter": {
+      "identified": 237,
+      "screened": 237,
+      "excluded": 199,
+      "excluded_by_reason": {
+        "duplicate": 57,
+        "no-methodology-affiliate": 65,
+        "off-topic": 41,
+        "unverifiable-this-run": 36
+      },
+      "included": 38,
+      "dated_entries": 42,
+      "derivation": "Sum of the counters as PUBLISHED on the live feeder pages plus this sweep: /tools/elevenlabs FlowCounter (111 identified; excluded 30 no-method, 18 unverifiable, 13 off-topic, 33 duplicate-or-consolidated; included 17), /tools/wellsaid-labs FlowCounter (79; 25/15/14/12; included 13), this sweep (47; 10/9/14/6; included 8). The ElevenLabs shard's own _meta records duplicate 18 and 32 included items because it counts 24 Capterra review-units individually; its live page consolidated 15 of them under duplicate-or-consolidated (33) to publish 17 included. This page follows the published live counters so a reader sees one consistent number across the cluster (orchestrator decision 2026-09-24).",
+      "dated_entries_breakdown": "17 (ElevenLabs shard) + 17 (WellSaid shard) + 8 (this sweep)",
+      "date_range": "2021-07-08 to 2026-09-24"
+    },
+    "last_recapture": "2026-10-27"
+  },
+  "entries": [
+    {
+      "id": "EV-elevenlabs-vs-wellsaid-labs-01",
+      "claim": "Re-verified live today (2026-09-24, two months after the review shard's 2026-07-22 capture), ElevenLabs' pricing ladder and credit allotments are UNCHANGED: Free $0/10k credits, Starter $6/mo/30k, Creator $22/mo/121k (billed monthly; the vendor's own page separately shows a first-month-only 50%-off promo bringing the FIRST payment to $11 — not an ongoing price), Pro $99/mo/600k, Scale $299/mo/1.8M (3 seats), Business $990/mo/6M (10 seats), custom Enterprise. Annual billing is priced at monthly-price×10 (2 months free); the vendor states the annual monthly-equivalent for Creator specifically as $18.33.",
+      "source_url": "https://elevenlabs.io/pricing",
+      "source_date": "2026-09-24",
+      "quote": "Creator ### Popular $22 First month 50% off $11 per month ... 121k credits per month ... Do you offer annual billing, and what does it cost? Yes... The equivalent monthly price on an annual plan is $5 for Starter, $18.33 for Creator, $82.50 for Pro, $249.17 for Scale, and $825 for Business.",
+      "platform": "elevenlabs.io/pricing (vendor pricing page, fetched via r.jina.ai reader proxy since the page is a JS-hydrated SPA — self-interested; re-verified 2026-09-24, confirming the review shard's 2026-07-22 capture unchanged)",
+      "target_slug": "/vs/elevenlabs-vs-wellsaid-labs",
+      "collected_at": "2026-09-24",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "elevenlabs-vs-wellsaid-labs-2026-09-24",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "ElevenLabs",
+        "aspect": "current pricing ladder re-verified two months after the review shard's capture, with the Creator-tier promo-vs-ongoing-price distinction the task explicitly required",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Free $0 – Business $990/mo (6 tiers + custom Enterprise)",
+        "item_date": "2026-09-24"
+      },
+      "honesty_notes": [
+        "CRITICAL for this page's pricing table: Creator's ONGOING price is $22/month; $11 is a first-payment-only 50%-off promo the vendor's own page prints directly above the ongoing price. Do not print $11 as Creator's standing monthly cost — several third-party aggregator pages found this run (theaiquest.in, fahimai.com) do exactly this and are excluded partly for that reason.",
+        "Figures unchanged from the elevenlabs-review shard's EV-elevenlabs-review-01 (captured 2026-07-22) — this entry exists to give the vs-page its own dated re-verification, not to duplicate the claim.",
+        "ORCHESTRATOR 2026-09-24: orchestrator re-fetched this entry's own source_url (raw HTML) and added the verbatim string(s) in quote_supplementary."
+      ],
+      "quote_supplementary": [
+        "Free $0 per month ... 10k credits per month Starter $6 per month ... Commercial License Instant Voice Cloning ... 30k credits per month Creator Popular $22 First month 50% off $11 per month ... 121k credits per month Pro $99 per month ... 600k credits per month",
+        "For V2 Multilingual models, 1 text character equals 1 credit. For V2 Flash/Turbo English and V2.5 Flash/Turbo Multilingual models, discounted pricing applies for API usage, costing between 0.5 and 1 credit per character."
+      ],
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-27",
+          "source_url": "https://elevenlabs.io/pricing",
+          "claim": "List prices and credit allotments unchanged since 2026-09-24: Free $0/10k credits; Starter $6/30k with Commercial License; Creator $22/121k ($11 first month at 50% off); Pro $99/600k; Scale $299/1.8M; Business $990/6M; annual = monthly x10 ($5, $18.33, $82.50, $249.17, $825 per month). New time-limited promotion: Starter first month $1 (83% off), labelled 'Until Nov 1'.",
+          "quote": "Starter Until Nov 1 $6 First month 83% off $1 per month ... Creator Popular $22 First month 50% off $11 per month ... 121k credits per month",
+          "supersedes": "none for list prices; adds the dated Starter $1 first-month promotion",
+          "collector": "refresh-2026-10-27 (live curl/WebFetch)"
+        }
+      ]
+    },
+    {
+      "id": "EV-elevenlabs-vs-wellsaid-labs-02",
+      "claim": "ElevenLabs' own pricing-page FAQ (re-verified 2026-09-24) states credits are charged per generation REQUEST, not per download, with a limited number of free regenerations available under certain conditions (content/settings must not change); unused credits roll over for up to two months, capping the usable balance at up to 3× the monthly allotment, but only while the subscription stays active and is not downgraded or cancelled.",
+      "source_url": "https://elevenlabs.io/pricing",
+      "source_date": "2026-09-24",
+      "quote": "Credits are charged per generation request, not per download. If you are not satisfied with the output, a limited number of free regenerations may be available as long as the content and certain settings do not change... Unused credits roll over for up to two months — up to 2× your monthly quota — so your balance can reach at most 3× your monthly quota.",
+      "platform": "elevenlabs.io/pricing FAQ section (vendor page, fetched via r.jina.ai reader proxy — self-interested; captured 2026-09-24)",
+      "target_slug": "/vs/elevenlabs-vs-wellsaid-labs",
+      "collected_at": "2026-09-24",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "elevenlabs-vs-wellsaid-labs-2026-09-24",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "ElevenLabs",
+        "aspect": "regeneration/re-render cost model (credits consumed per generation attempt, with limited free retries and a capped rollover) — the direct comparison point against WellSaid's unlimited-generation model (EV-03)",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-09-24"
+      },
+      "honesty_notes": [
+        "'A limited number of free regenerations may be available' is deliberately vague vendor language — do not present this as 'ElevenLabs gives free retakes' as a blanket fact; the page itself says eligibility is shown per-generation before you generate, and does not disclose a specific number or percentage.",
+        "Pairs directly with EV-03 (WellSaid: unlimited generation, no rollover) for the page's regeneration-cost comparison section."
+      ],
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-27",
+          "source_url": "https://elevenlabs.io/pricing",
+          "claim": "Pricing FAQ unchanged: credits charged per generation request, not per download, with limited free regenerations; unused credits roll over up to two months, balance capped at 3x the monthly quota.",
+          "quote": "Credits are charged per generation request, not per download. ... Unused credits roll over for up to two months ... your balance can reach at most 3× your monthly quota",
+          "supersedes": "none (confirms the 2026-09-24 capture)",
+          "collector": "refresh-2026-10-27 (live curl/WebFetch)"
+        }
+      ]
+    },
+    {
+      "id": "EV-elevenlabs-vs-wellsaid-labs-03",
+      "claim": "Re-verified live today (2026-09-24, two months after the review shard's 2026-07-26 capture), WellSaid's pricing ladder is UNCHANGED: Trial $0/3 download-min/mo (no commercial rights), Starter $10/mo billed annually ($120/yr) or $19/mo billed monthly/20 download-min/mo, Pro $33/mo annually ($396/yr) or $49/mo monthly/180 download-min/mo, Business $160/mo/seat billed annually ($1,920/yr/seat, up to 5 seats)/2,880 download-min/yr/seat, custom Enterprise. The pricing page's own usage-comparison table states generation is unlimited on every tier and does NOT count against the download-minute allowance, and that unused download minutes do NOT roll over between billing cycles.",
+      "source_url": "https://www.wellsaid.io/ai-voice-pricing",
+      "source_date": "2026-09-24",
+      "quote": "Generation ... Regenerate or modify your audio clips. This does not count against downloaded minutes ... 10 minutes [Trial] / Unlimited [Starter/Pro/Business/Enterprise]. ... Do unused download minutes roll over? No. Unused download minutes reset at the start of each billing cycle.",
+      "platform": "wellsaid.io/ai-voice-pricing (vendor pricing page, fetched via r.jina.ai reader proxy — self-interested; re-verified 2026-09-24, confirming the review shard's 2026-07-26 capture unchanged)",
+      "target_slug": "/vs/elevenlabs-vs-wellsaid-labs",
+      "collected_at": "2026-09-24",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "elevenlabs-vs-wellsaid-labs-2026-09-24",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "WellSaid Labs",
+        "aspect": "current pricing ladder re-verified two months after the review shard's capture, plus the explicit unlimited-generation/download-metered/no-rollover mechanics the task's regeneration-cost question needs",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Trial $0 – Business $160/mo/seat (4 tiers + custom Enterprise)",
+        "item_date": "2026-09-24"
+      },
+      "honesty_notes": [
+        "Figures unchanged from the wellsaid-labs-review shard's EV-wellsaid-labs-review-01 (captured 2026-07-26) — this entry exists to give the vs-page its own dated re-verification.",
+        "The task-supplied external claim of a 'Creative $50 / Business $160-or-$99/$199' ladder was NOT found on WellSaid's own current pricing page this run — today's page shows Starter/Pro/Business/Enterprise, not 'Creative'. Any third-party page using 'Creative $50' terminology (e.g. fahimai.com's WellSaid coverage cited in the review shard's EV-14) is describing an OLDER or mislabeled tier structure and should not be presented as WellSaid's current naming without that caveat.",
+        "ORCHESTRATOR 2026-09-24 (gate run 1 blocker 3 option): re-fetched wellsaid.io/ai-voice-pricing raw HTML and added the verbatim price and allowance strings, so every WellSaid price on the page is dated 2026-09-24."
+      ],
+      "quote_supplementary": [
+        "Starter $19 /mo Billed monthly Get started with voiceover Choose Starter 20 minutes/month downloaded audio ... Pro $49 /mo Billed monthly More features and minutes Choose Pro 180 minutes/month downloaded audio",
+        "Business $160 /mo/user Billed annually at $1,920/year Collaborate and scale Choose Business 2,880 minutes/year/user downloaded audio",
+        "Starter $10 /mo Save 47% Save $108/yr Billed annually at $120/year ... Pro $33 /mo Save 33% Save $192/yr Billed annually at $396/year"
+      ],
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-27",
+          "source_url": "https://www.wellsaid.io/ai-voice-pricing",
+          "claim": "Pricing ladder and terms unchanged: Trial $0, 3 download min/month, no commercial rights; Starter $19 monthly or $10/mo annually (240 min/yr); Pro $49 monthly or $33/mo annually (2,160 min/yr); Business $160/mo/user billed annually (2,880 min/yr); regeneration does not count against downloaded minutes and is unlimited on paid plans; unused minutes reset each billing cycle; full commercial rights on Starter and Pro.",
+          "quote": "Regenerate or modify your audio clips. This does not count against downloaded minutes ... No. Unused download minutes reset at the start of each billing cycle",
+          "supersedes": "none (confirms the 2026-09-24 capture)",
+          "collector": "refresh-2026-10-27 (live curl/WebFetch)"
+        }
+      ]
+    },
+    {
+      "id": "EV-elevenlabs-vs-wellsaid-labs-04",
+      "claim": "WellSaid's own vendor comparison page (captured 2026-09-24) frames its pricing as 'output-based' (only downloaded minutes count) against what it calls ElevenLabs' 'token-based' pricing ('every click of generated audio costs you'); claims WellSaid voices carry 'documented provenance' from consenting paid actors versus ElevenLabs' 'opaque sources' and 'BIPA challenges'; states WellSaid 'never trains on customer data' versus ElevenLabs which it says 'uses customer data for model training' and 'retains IP rights to use your content'; and states '280+' curated voices and '0' lawsuits over voice rights for WellSaid itself.",
+      "source_url": "https://www.wellsaid.io/wellsaid-and-eleven-labs",
+      "source_date": "2026-09-24",
+      "quote": "WellSaid: Predictable, output-based pricing... Unmetered generations... Commercial rights with documented provenance. ElevenLabs: Variable, input-based pricing... Charges you tokens for every take... Opaque sources, has faced BIPA challenges... Retains IP rights to use your content... Uses customer data for model training.",
+      "platform": "wellsaid.io/wellsaid-and-eleven-labs (WellSaid's own competitor-comparison marketing page, targeting 'Ready to switch from ElevenLabs?' — heavily self-interested; captured 2026-09-24)",
+      "target_slug": "/vs/elevenlabs-vs-wellsaid-labs",
+      "collected_at": "2026-09-24",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "elevenlabs-vs-wellsaid-labs-2026-09-24",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "WellSaid Labs vs ElevenLabs",
+        "aspect": "vendor's own self-interested feature/pricing/legal-risk comparison; several sub-claims independently fact-checked this run (see EV-05, EV-06, EV-07)",
+        "stance": "mixed",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-09-24"
+      },
+      "honesty_notes": [
+        "FLAGGED for resolver: this is a direct competitor's attack page — present every sub-claim as 'WellSaid states...', never as neutral fact. The pricing-model framing (output- vs token-based) matches the two vendors' own pricing-page mechanics independently confirmed in EV-02/EV-03. The lawsuit claims are independently confirmed in EV-06/EV-07. The 'uses customer data for model training' claim OMITS that ElevenLabs' own ToS documents a per-account opt-out from training use (see EV-05) — do not repeat WellSaid's framing as if ElevenLabs offers no choice.",
+        "SAME-DAY internal discrepancy on WellSaid's own site: this comparison page states '280+' curated voices, while wellsaid.io/features/ai-voices (re-verified the same day, 2026-09-24) still states '240+' voices in both its title tag and body copy. Cite '240+' as the more specific, feature-page-sourced figure, and flag the '280+' marketing-page figure as inconsistent rather than presenting either as the single current count without qualification.",
+        "The '0 Lawsuits over voice rights' stat is WellSaid's own claim about itself, not independently audited this run — present as a vendor self-claim, not a verified fact.",
+        "ORCHESTRATOR 2026-09-24: orchestrator re-fetched this entry's own source_url (raw HTML) and added the verbatim string(s) in quote_supplementary."
+      ],
+      "quote_supplementary": [
+        "Why enterprise companies choose WellSaid 280+ Curated, professional voices 500,000+ Pronunciation transcriptions"
+      ]
+    },
+    {
+      "id": "EV-elevenlabs-vs-wellsaid-labs-05",
+      "claim": "ElevenLabs' own Terms of Use (re-verified 2026-09-24) confirm the license language WellSaid's comparison page quotes is accurate: users grant ElevenLabs a broad, perpetual, royalty-free license to reproduce/modify/distribute Content INCLUDING voice. However, the same clause states ElevenLabs 'will not commercialize your voice on a standalone basis without your permission,' and a separate clause confirms users 'may opt out of our use of your Content for training at any time' via account settings — both details WellSaid's comparison page omits.",
+      "source_url": "https://elevenlabs.io/terms-of-use",
+      "source_date": "2026-09-24",
+      "quote": "You hereby grant to ElevenLabs a license to use, reproduce, modify, adapt, publish, translate, create derivative works from, distribute, publicly or otherwise perform and display, and use your Content... Notwithstanding the foregoing, we will not commercialize your voice on a standalone basis without your permission to do so... you may opt out of our use of your Content for training at any time by navigating to the 'Data use' menu.",
+      "platform": "elevenlabs.io/terms-of-use (vendor legal page, fetched via r.jina.ai reader proxy — self-interested/primary source; captured 2026-09-24)",
+      "target_slug": "/vs/elevenlabs-vs-wellsaid-labs",
+      "collected_at": "2026-09-24",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "elevenlabs-vs-wellsaid-labs-2026-09-24",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "ElevenLabs",
+        "aspect": "fact-check of a rival vendor's (WellSaid's) quoted ToS language against ElevenLabs' own current Terms of Use — the quote is verbatim-accurate, but WellSaid's page omits the permission carve-out and the training opt-out",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-09-24"
+      },
+      "honesty_notes": [
+        "This is the fact-check this page's brief explicitly requested: WellSaid's quoted ToS excerpt is NOT fabricated — it matches ElevenLabs' own current Terms of Use word-for-word in the operative license grant. But the fuller context (standalone-commercialization consent requirement, per-account training opt-out) is missing from WellSaid's page and materially softens the 'no ambiguity/opaque' framing.",
+        "Corroborated by EV-elevenlabs-review-16 (terms.law's independent legal analysis in the review shard), which separately confirms paid users retain commercial rights to their own outputs — a different clause from the Content-license clause quoted here."
+      ],
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-27",
+          "source_url": "https://elevenlabs.io/terms-of-use",
+          "claim": "Terms of Use unchanged on the cited lines: broad content license, the no-standalone-voice-commercialization promise, and the training opt-out via the 'Data use' menu.",
+          "quote": "we will not commercialize your voice on a standalone basis without your permission to do so ... you may opt out of our use of your Content for training at any time by navigating to the 'Data use' menu",
+          "supersedes": "none (confirms the 2026-09-24 capture)",
+          "collector": "refresh-2026-10-27 (live curl/WebFetch)"
+        }
+      ]
+    },
+    {
+      "id": "EV-elevenlabs-vs-wellsaid-labs-06",
+      "claim": "Nine Illinois BIPA (Biometric Information Privacy Act) class-action lawsuits were filed in Chicago federal court in mid-May 2026 against Amazon, Adobe, Google/Alphabet, Apple, Microsoft, Samsung, Meta, NVIDIA, and ElevenLabs by broadcast journalists, podcast hosts, and voice actors alleging their voice recordings were used to train AI 'foundational voice models' without consent.",
+      "source_url": "https://www.cbsnews.com/chicago/news/illinois-class-action-lawsuits-voices-stolen-train-ai-bipa/",
+      "source_date": "2026-05-19",
+      "quote": "The nine class action lawsuits, filed in Chicago's federal court between Monday and Wednesday... locally famous broadcast journalists like Carol Marin and Phil Rogers... along with podcast hosts and voice actors allege the companies ingested recordings of their voices in order to train their AI 'foundational voice models.' The lawsuits name Amazon, Adobe, Google and its parent company Alphabet, Apple, Microsoft and Samsung, as well as Facebook parent company Meta, text-to-speech AI company ElevenLabs, and advanced computer chip maker NVIDIA.",
+      "platform": "cbsnews.com/chicago (independent regional broadcast-news outlet; published 2026-05-19, captured 2026-09-24)",
+      "target_slug": "/vs/elevenlabs-vs-wellsaid-labs",
+      "collected_at": "2026-09-24",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "elevenlabs-vs-wellsaid-labs-2026-09-24",
+      "screening": "included",
+      "label": "research-finding",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "ElevenLabs",
+        "aspect": "independent confirmation of the BIPA class action WellSaid's comparison page (EV-04) references, via a non-vendor journalism source",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-05-19"
+      },
+      "honesty_notes": [
+        "This is filing-stage news (lawsuits filed, allegations only) — the article states 'None of the companies responded to a request for comment,' and there is no ruling or verdict to report. Present as 'ElevenLabs is named, along with 8 other major tech companies, in a filed BIPA class action (as of May 2026, status: filed, unresolved)' — not as an established finding of wrongdoing.",
+        "ElevenLabs is one of nine co-defendants in a multi-company suit, not the sole or primary target — WellSaid's comparison page framing ('has faced BIPA challenges') is accurate but should not imply ElevenLabs was singled out."
+      ]
+    },
+    {
+      "id": "EV-elevenlabs-vs-wellsaid-labs-07",
+      "claim": "A separate, earlier federal lawsuit (Vacker, Boyett, Larson, Iron Tower Press, and Heppner v. Eleven Labs, Inc., D. Del., C.A. No. 24-987) reached a settlement: the parties jointly filed a stipulation on 2025-08-20 confirming they 'reached a settlement agreement and signed a term sheet' following an August 18, 2025 mediation, staying proceedings while a Long Form Agreement was finalized.",
+      "source_url": "https://chatgptiseatingtheworld.com/2025/08/23/parties-in-vacker-v-eleven-labs-tell-judge-theyve-reached-a-settlement-1st-in-the-ai-copyright-litigation/",
+      "source_date": "2025-08-20",
+      "quote": "WHEREAS, on August 18, 2025, the parties engaged in a mediation facilitated by Jeff Kichaven of Jeff Kichaven Commercial Mediation; WHEREAS, as a result of this mediation, the Parties reached a settlement agreement and signed a term sheet... IT IS HEREBY STIPULATED by the parties... that: 1. All proceedings in this case shall be stayed through September 18, 2025.",
+      "platform": "chatgptiseatingtheworld.com, hosting the primary federal court filing (Case 1:24-cv-00987-RGA, District of Delaware) — a primary legal document, not vendor- or plaintiff-authored commentary; filed 2025-08-20, captured 2026-09-24",
+      "target_slug": "/vs/elevenlabs-vs-wellsaid-labs",
+      "collected_at": "2026-09-24",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "elevenlabs-vs-wellsaid-labs-2026-09-24",
+      "screening": "included",
+      "label": "research-finding",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "ElevenLabs",
+        "aspect": "independent primary-document confirmation of the second lawsuit WellSaid's comparison page references (voice actors/publisher/author suit, settled)",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2025-08-20"
+      },
+      "honesty_notes": [
+        "FLAGGED for resolver: this stipulation document itself only confirms a settlement was reached and proceedings stayed — it does NOT state the underlying legal theories (right of publicity, DMCA anti-circumvention/CMI removal, misappropriation) in its own text. Those specific claims come from the original complaint and secondary legal reporting, which were surfaced via WebSearch but NOT independently re-fetched and verified this run — do not cite the specific legal theories as confirmed by THIS document alone; attribute them generically to 'the original complaint' if used.",
+        "Settlement terms are confidential/undisclosed — do not speculate about a dollar amount or admission of liability; WellSaid's comparison page does not claim one either."
+      ]
+    },
+    {
+      "id": "EV-elevenlabs-vs-wellsaid-labs-08",
+      "claim": "ElevenLabs' own trust/security page (captured 2026-09-24) states the company is 'SOC 2 Type II, ISO 27001, and PCI DSS Level 1 certified, with HIPAA and GDPR attestations,' and separately offers configurable regional data residency and a 'Zero Retention Mode.' This is a broader certification set than WellSaid's own stated 'SOC2 Type 2 certified and GDPR-compliant' (per the wellsaid-labs-review shard's EV-08), though WellSaid's ADA/WCAG accessibility commitment carries a since-passed 2025 target date that ElevenLabs' page does not analogously address either way.",
+      "source_url": "https://elevenlabs.io/agents/ai-trust-and-reliability",
+      "source_date": "2026-09-24",
+      "quote": "ElevenLabs is SOC 2 Type II, ISO 27001, and PCI DSS Level 1 certified, with HIPAA and GDPR attestations. You can configure regional data residency, apply Zero Retention Mode, and control data access at a granular level.",
+      "platform": "elevenlabs.io/agents/ai-trust-and-reliability (vendor trust/compliance page — self-interested; captured 2026-09-24)",
+      "target_slug": "/vs/elevenlabs-vs-wellsaid-labs",
+      "collected_at": "2026-09-24",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "elevenlabs-vs-wellsaid-labs-2026-09-24",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "ElevenLabs vs WellSaid Labs",
+        "aspect": "side-by-side compliance-certification comparison (item 5 of the task brief) — both vendors' own self-reported certifications, neither independently audited by Mimo",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-09-24"
+      },
+      "honesty_notes": [
+        "'Attestation' (HIPAA/GDPR) is vendor-chosen wording distinct from a formal 'certification' (SOC 2/ISO/PCI) — preserve that distinction if the page reproduces this claim; do not round HIPAA/GDPR up to 'certified' status.",
+        "compliance.elevenlabs.io (the vendor's own linked Trust Center with a presumably fuller/audit-dated certification list) returned an empty JS-rendered shell this run — unverifiable-this-run; this entry's claim rests on the ai-trust-and-reliability page's static text only, not the fuller Trust Center.",
+        "Directly comparable to wellsaid-labs-review shard's EV-08 (WellSaid: SOC2 Type II + GDPR stated as current/complete; HIPAA framed only as an infrastructure-hosting claim, not a WellSaid certification; ADA/WCAG stated as a still-in-progress 2025 target already passed as of the 2026-07-26 capture)."
+      ],
+      "recaptures": [
+        {
+          "recaptured_at": "2026-10-27",
+          "source_url": "https://elevenlabs.io/agents/ai-trust-and-reliability",
+          "claim": "Trust page FAQ wording unchanged (SOC 2 Type II, ISO 27001, PCI DSS Level 1 certified, HIPAA and GDPR attestations). The page's structured data now also lists 'AIUC-1 (insurable agents)' and 'HIPAA + BAAs available for healthcare'; not used on the page.",
+          "quote": "ElevenLabs is SOC 2 Type II, ISO 27001, and PCI DSS Level 1 certified, with HIPAA and GDPR attestations.",
+          "supersedes": "none (confirms the 2026-09-24 capture)",
+          "collector": "refresh-2026-10-27 (live curl/WebFetch)"
+        }
+      ]
+    }
+  ]
+}

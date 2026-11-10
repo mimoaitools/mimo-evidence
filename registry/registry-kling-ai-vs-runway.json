@@ -1,0 +1,261 @@
+{
+  "_meta": {
+    "flow_id": "kling-ai-vs-runway-2026-09-11",
+    "protocol_version": "MEP-1.0",
+    "target_slug": "/vs/kling-ai-vs-runway",
+    "target_keyword": "kling ai vs runway",
+    "run_date": "2026-09-11",
+    "collector": "evidence-curator",
+    "page_class": "vs (two-tool DECISION page, clip-generator sub-category of the /best/ai-video-generators cluster; Kling AI reviewed at /tools/kling-ai 3.8/5, Runway reviewed at /tools/runway 4.1/5; no single winner crowned -- Phase 1's own page_split_recommendation and this page's own competitive set both converge on a use-case-forked verdict, not a flat winner)",
+    "sweep_strategy": "REUSE-FIRST per task instruction. Read Data/seo/topical-map.json (evidence_policy + borders), Data/seo/methodology/evidence-protocol-v1.md, this page's own same-day Phase 1 files (1-keyword.json, 1-serp.json, 1-competitor.json, 1-backlink.json, all generated 2026-09-11), and BOTH full existing review shards (registry-kling-ai-review.json, 21 entries, run 2026-08-17; registry-runway-review.json, 21 entries, run 2026-08-29) before any new discovery. registry-neuronwriter-vs-surfer-seo.json was also read for the established /vs-page reuse-pattern precedent (per task instruction), though that shard's own 1-keyword.json equivalent does not exist on disk -- confirmed absent, consistent with this page's own 1-keyword.json data_provenance note. THIS run's own new-discovery work targeted ONLY the 5 gaps the task named that neither review shard already closes: (1) a genuine per-second/per-clip cost comparison finishing math no competitor page completes, (2) a dated head-to-head test naming which versions it actually tested, (3) the '66 credits/day' Kling free-tier figure's cross-source triangulation, (4) whether Runway now bundles Kling as a selectable in-platform model, (5) the cross-page Kling-pricing staleness the keyword agent flagged (a reconciliation note, not new evidence). All 6 new-discovery sources below (tomsguide.com, techsifted.com, fahimai.com, toolixlab.com, aialleyway.com, runway.com/product/models/kling-3.0) were independently WebFetched or curl+regex-extracted (for tomsguide.com, whose WebFetch response truncated on length -- recovered via direct curl of the 2.44MB raw HTML plus targeted extraction of the JSON-LD block and the article's scoring tables, the same recovery method this page's own same-day Phase 1 serp-analyzer and competitor-auditor independently used) and VERIFIED THIS RUN, even though several were already identified as leads by this page's own same-day Phase 1 agents -- no quote or figure below is carried over from a Phase 1 agent's own prose without an independent fresh fetch by this curator.",
+    "flow_counter": {
+      "identified": 15,
+      "screened": 15,
+      "excluded": 9,
+      "excluded_by_reason": {
+        "duplicate": 9
+      },
+      "included_sources": 6,
+      "registry_entries_new": 6,
+      "counter_note": "identified = 15: 5 direct-navigation fetches of URLs this page's own same-day Phase 1 files (1-serp.json, 1-competitor.json, 1-backlink.json) had already identified as leads (tomsguide.com, techsifted.com, fahimai.com, toolixlab.com, aialleyway.com -- all 5 independently re-fetched and verified by this curator this run, all 5 INCLUDED) + 10 candidates surfaced by ONE documented WebSearch query this run ('Runway \"Kling\" third-party models available Runway platform 2026', run specifically to close gap #4) of which 1 was included (runway.com/product/models/kling-3.0, a vendor-primary page not previously surfaced by any Phase 1 file on this cluster) and 9 were excluded as duplicate (repeat coverage of the same 'Kling runs inside Runway' fact already captured via the included page, an Enterprise-scoped subset of the same fact, or a URL already independently fetched elsewhere in this same run -- see query_census). 6 included sources produced 6 new registry entries: EV-kling-ai-vs-runway-01 is Mimo's OWN derived arithmetic (built from 3 already-REUSED figures, not a new external source, and therefore not part of this identified/screened count); the other 5 entries (-02 through -06) map to the 6 fetched sources with two sources feeding jointly into single combined entries (techsifted.com + fahimai.com -> entry -05; runway.com + toolixlab.com -> entry -06)."
+    },
+    "page_evidence_merged_total": {
+      "_doc": "MERGED total per task instruction: this page's full evidence base = both single-tool review shards' new entries (reused wholesale, zero re-fetch) + the 5 hub entries already threaded through those two shards (reused wholesale, zero re-fetch) + this shard's own new entries. Each EV-id exists in exactly ONE shard's entries[] array -- reuse elsewhere is always by reference/id only, so this sum does not double-count any single id.",
+      "kling_ai_review_shard": { "file": "registry-kling-ai-review.json", "flow_id": "kling-ai-review-2026-08-17", "new_entries": 21, "ids": "EV-kling-ai-review-01 through -21" },
+      "runway_review_shard": { "file": "registry-runway-review.json", "flow_id": "runway-review-2026-08-29", "new_entries": 21, "ids": "EV-runway-review-01 through -21" },
+      "hub_entries_reused_through_both_reviews": { "file": "registry-best-ai-video-generators.json", "flow_id": "best-ai-video-generators-2026-08-10", "count": 5, "ids": ["EV-best-ai-video-generators-01", "EV-best-ai-video-generators-03", "EV-best-ai-video-generators-18", "EV-best-ai-video-generators-19", "EV-best-ai-video-generators-22"], "note": "01/18/22 reused via runway-review; 03/19 reused via kling-ai-review -- already inside the 21+21 figures above as reused-by-reference, not additional entries[] rows in those files, and not double-counted here either." },
+      "this_shard_new_entries": { "file": "registry-kling-ai-vs-runway.json", "flow_id": "kling-ai-vs-runway-2026-09-11", "new_entries": 6, "ids": "EV-kling-ai-vs-runway-01 through -06" },
+      "merged_flow_counter_across_the_3_sweeps": {
+        "_doc": "Sum of the 3 DISTINCT discovery sweeps that produced this page's own-cluster evidence (kling-ai-review + runway-review + this shard). Excludes the hub's own separate flow counter, since only 5 of its entries feed this page by reference -- summing the hub's full census here would overstate this page's own discovery effort.",
+        "identified": 164,
+        "screened": 164,
+        "excluded": 119,
+        "included_sources": 45,
+        "registry_entries_new_across_cluster": 48
+      },
+      "total_registry_entries_citable_on_this_page": 53,
+      "total_registry_entries_citable_math": "21 (kling-ai-review) + 21 (runway-review) + 5 (hub, reused through both) + 6 (this shard) = 53"
+    },
+    "coder_agreement_rate": "CURATOR-PROVISIONAL single-pass coding across all 6 new entries (dual-independent coding + resolver pass is orchestrated above this run). Stance calls: 1 n/a (the derived cost-math entry), 3 mixed, 1 mixed, 1 n/a (vendor-confirmed bundling fact). FLAGGED FOR ORCHESTRATED DUAL-CODING / RESOLVER ATTENTION: (1) EV-kling-ai-vs-runway-02 (tomsguide.com) -- genuinely ambiguous whether the 150-152 tally should be presented at all given its 709-day staleness and retired-generation testing, or omitted entirely in favor of only citing its unmatched methodology as a bar to meet; (2) EV-kling-ai-vs-runway-03 (techsifted.com) -- a coder could reasonably discount this entire source given its own internal 720p/4K self-contradiction and its uncritical repetition of the disputed 66-credits/day figure, versus treating it as still the best available current-version-naming source despite those flaws; (3) EV-kling-ai-vs-runway-05 (66-credits/day triangulation) -- whether 3 sources repeating a figure should be framed as strengthening or merely as documenting a possibly-shared upstream error (fahimai.com's own internal math inconsistency around the same figure argues for the latter) is unresolved and needs a second independent read.",
+    "query_census": [
+      { "q": "DIRECT: WebFetch https://www.tomsguide.com/ai/ai-image-video/i-put-runway-vs-kling-through-a-5-round-face-off-heres-which-ai-video-generator-wins", "candidates": 0, "note": "Phase-1-inherited lead (this page's own 1-serp.json #1, 1-competitor.json rank 1). WebFetch tool response truncated on content length; recovered via direct curl (HTTP 200, 2,444,282 bytes) + Python regex extraction of the JSON-LD Article block (independently confirming datePublished 2024-10-02T05:00:35+00:00) and the article's per-round + summary scoring tables. Fetched successfully -> EV-kling-ai-vs-runway-02." },
+      { "q": "DIRECT: WebFetch https://techsifted.com/comparisons/kling-ai-vs-runway-2026/", "candidates": 0, "note": "Phase-1-inherited lead (this page's own 1-serp.json #4, 1-competitor.json rank 3, 1-backlink.json new-find). Fetched successfully -> EV-kling-ai-vs-runway-03, and contributes to EV-kling-ai-vs-runway-05 and EV-kling-ai-vs-runway-06." },
+      { "q": "DIRECT: WebFetch https://www.fahimai.com/runway-vs-kling", "candidates": 0, "note": "Phase-1-inherited lead (this page's own 1-serp.json #5, 1-competitor.json additional_pages_analyzed, 1-backlink.json carried-forward candidate). Fetched successfully -> contributes to EV-kling-ai-vs-runway-05 (66-credits triangulation); explicitly checked for and found NO mention of Runway bundling third-party models -- see EV-kling-ai-vs-runway-06 honesty_notes for the negative-finding timing implication." },
+      { "q": "DIRECT: WebFetch https://toolixlab.com/blog/runway-vs-kling-vs-pika-vs-veo-2026", "candidates": 0, "note": "Phase-1-inherited lead (this page's own 1-backlink.json dual_coverage_cluster_resolved, reachability newly confirmed that same file's run after 2x prior HTTP 503). Fetched successfully -> EV-kling-ai-vs-runway-06." },
+      { "q": "DIRECT: WebFetch https://aialleyway.com/runway-vs-kling/", "candidates": 0, "note": "Phase-1-inherited lead (this page's own 1-backlink.json new-find this cluster, task brief's own named candidate). Fetched successfully -> EV-kling-ai-vs-runway-04." },
+      { "q": "WebSearch: Runway \"Kling\" third-party models available Runway platform 2026", "candidates": 10, "note": "Run specifically to verify/refute the Runway-bundles-Kling claim against a vendor-primary source. runway.com/product/models/kling-3.0 (INCLUDED -- vendor's own dedicated product page, fetched directly -> EV-kling-ai-vs-runway-06), help.runwayml.com/hc/en-us/articles/51248305153683-Enterprise-FAQ-Third-party-Models-in-Runway (excluded duplicate -- Enterprise-tier-scoped subset of the same fact, not needed once the general paid-plan page was confirmed), help.runwayml.com/hc/en-us/sections/50270919144339-Third-Party-Models (excluded duplicate -- support-center section index, same underlying fact), help.runwayml.com/hc/en-us/sections/54758948966547-Third-Party-Video-Models (excluded duplicate, same reason), help.runwayml.com/hc/en-us/articles/18053095835795-Unlimited-plan-details-Legacy (excluded duplicate -- unrelated fact already registered as EV-runway-review-02, surfaced only because of shared help-center domain), help.runwayml.com/hc/en-us/articles/48649877897107-Available-Models-on-Runway (excluded duplicate -- same 'Kling runs inside Runway' fact, not separately fetched once the dedicated product page confirmed it), runway.com/product/models/kling-o3 (excluded duplicate -- a different, newer Kling-family model page, not needed once Kling 3.0's own page confirmed the bundling fact), runway.com/changelog (excluded duplicate -- already independently fetched and registered as EV-runway-review-05 in the reused runway-review shard), x.com/runwayml/status/2024955482935525398 (excluded duplicate -- Runway's own official tweet corroborating the same fact ('All of the world's best models... Including Kling 3.0, Kling 2.6 Pro, Kling 2.5 Turbo Pro... are now all available right inside of Runway') but not independently fetched since the stronger, dedicated vendor product page already confirms it directly), toolixlab.com/blog/runway-vs-kling-vs-pika-vs-veo-2026 (excluded duplicate -- already independently fetched separately this run, see above, not re-counted)." }
+    ],
+    "reddit_access_note": "NO Reddit entries in this shard, per the task's explicit integrity instruction. This page's own same-day 1-keyword.json, 1-serp.json, and 1-backlink.json all independently reconfirm reddit.com access/results remain empty for this exact query pairing -- consistent with every prior sweep across this cluster (kling-ai-review 2026-08-17, runway-review 2026-08-29, and this page's own Phase 1 files 2026-09-11). This curator did not re-run a 6th/7th redundant reddit-targeted query given that standing, repeated confirmation; zero Reddit sources appear anywhere in this shard.",
+    "astroturf_note": "The astroturf screen (MEP section 3.1) was applied to all 6 new sources. No templated look-alike-network pattern was found in any of them. videoai.me (Phase-1-identified, not independently re-fetched by this curator this run -- see excluded_sources_note below) carries an UNDISCLOSED conflict of interest (its named author is the founder of a Kling-integration platform) per this page's own same-day 1-competitor.json finding -- this is a COI/disclosure problem, not the templated-network pattern MEP's astroturf definition targets, and is excluded on that basis (no-methodology-affiliate) rather than flagged as astroturf.",
+    "excluded_sources_note": "Several competitor pages this page's own same-day Phase 1 agents (serp-analyzer, competitor-auditor, backlink-hunter) already identified and screened were NOT independently re-fetched by this curator this run, since they add no incremental registrable claim beyond what this shard's 6 new sources already establish and this shard's job is the specific 5-item gap list, not a full re-teardown of the whole SERP. These are listed in the top-level excluded_sources output for transparency, explicitly marked as Phase-1-identified/not-independently-reverified-this-run rather than curator-fetched, per protocol honesty.",
+    "entries_reused": {
+      "_doc": "WHOLESALE reuse of both full single-tool review shards, zero re-fetch, per task instruction ('the bulk of this page's evidence is REUSED from the two review shards by id'). All 21 registry-kling-ai-review.json entries (EV-kling-ai-review-01 through -21) and all 21 registry-runway-review.json entries (EV-runway-review-01 through -21) remain available to /vs/kling-ai-vs-runway exactly as already published in those two shards -- not re-listed claim-by-claim here to avoid duplicating an already-public record; see those two files for full text. The 5 hub entries the task named (EV-best-ai-video-generators-01/03/18/19/22) are already threaded into those two shards' own entries_reused blocks (03+19 via kling-ai-review; 01+18+22 via runway-review) and are available the same way, at no additional count (already included in the 21+21 totals below, not double-counted). Axis-map below groups the 42 reused entries by the comparison axis this vs-page is expected to structure around, for Phase 5's convenience -- a navigation aid, not a re-statement of each claim.",
+      "axis_map": {
+        "pricing_and_tiers": ["EV-kling-ai-review-01", "EV-kling-ai-review-02", "EV-kling-ai-review-03", "EV-kling-ai-review-05", "EV-kling-ai-review-06", "EV-kling-ai-review-08", "EV-kling-ai-review-09", "EV-best-ai-video-generators-03 (via kling-ai-review)", "EV-runway-review-01", "EV-runway-review-06", "EV-runway-review-07", "EV-best-ai-video-generators-01 (via runway-review)"],
+        "free_tier_shape_and_unlimited_to_max": ["EV-kling-ai-review-01 (66/24hr, earliest source)", "EV-kling-ai-review-03 (166/mo earned, third structure)", "EV-runway-review-01 (125 one-time credits, confirmed no Unlimited tier live)", "EV-runway-review-02 (Unlimited retiring, auto-switch to Max by 2026-11-30 -- kills the '50+ clips/mo Unlimited is cheaper' claim kling-ai-review's own file originated)"],
+        "ratings_and_community_reality": ["EV-kling-ai-review-10 (Trustpilot 1.3/5 n=318, relayed)", "EV-kling-ai-review-18 (Product Hunt 4.9/5 n=21, launch-incentivized)", "EV-runway-review-14 (G2 3.8/5 n=18, relayed, unverifiable at source)", "EV-runway-review-15 (Capterra 4.5/5 n=2, stale Gen-2 listing)", "EV-runway-review-16 (Product Hunt 4.4/5 n=18)", "EV-runway-review-17", "EV-runway-review-18", "EV-runway-review-19", "EV-runway-review-20", "EV-runway-review-21 (5 differently-branded Trustpilot domain-listings, 1.1-3.7/5, all Unclaimed -- present as a scatter, never a blended average)"],
+        "china_tos_commercial_use": ["EV-kling-ai-review-11 (Kuaishou/Beijing ownership)", "EV-kling-ai-review-12 (Kling's own ToS, primary)", "EV-kling-ai-review-13 (VerifyWise B/62 data-trust grade)", "EV-kling-ai-review-14 (secondary paid-tier commercial claim, tensioned against -12)", "EV-kling-ai-review-15 (2024 censorship report, dated to original model only)", "EV-runway-review-09 (Runway's own ToS, primary, no plan-based commercial split stated)", "EV-runway-review-10 (terms.law's claim of a free-vs-paid split, tensioned against -09)"],
+        "version_currency": ["EV-kling-ai-review-19 (Kling 3.0 general-release 2026-02-04)", "EV-kling-ai-review-20 (cybernews timing puzzle, unresolved)", "EV-kling-ai-review-21 (Kling 2.5 Turbo benchmark -- NOT 3.0, do not conflate)", "EV-runway-review-03", "EV-runway-review-04 (Gen-3 Alpha retirement, vendor-primary, dual-surface-confirmed)", "EV-runway-review-05 (Gen-4.5 launch dates, two surfaces)"],
+        "quality_and_consistency": ["EV-best-ai-video-generators-18 (via runway-review; Runway 'workflow leader' claim -- now STALE per EV-runway-review-12's live check)", "EV-best-ai-video-generators-19 (via kling-ai-review; Kling 'price-to-quality leader' ~$0.10/sec -- the Kling-side input to this shard's own EV-kling-ai-vs-runway-01)", "EV-best-ai-video-generators-22 (via runway-review; Magic Hour 4-model benchmark, COI-flagged)", "EV-runway-review-11 (Video Arena leaderboard operator ID)", "EV-runway-review-12 (LIVE check: Runway absent from current top-10 -- the '#1' claim is stale, do not repeat as current)", "EV-runway-review-13 (aitoolanalysis.com quality-vs-leaderboard tradeoff framing + per-clip cost method)", "EV-kling-ai-review-16 (Unite.AI hands-on generation failures)", "EV-kling-ai-review-17 (Unite.AI ownership corroboration + hedged commercial claim)"],
+        "general_review_and_synthesis": ["EV-kling-ai-review-04 (eesel.ai's 'too risky to recommend' synthesis)", "EV-runway-review-08 (comparebestai.com corroboration + shared-workspace-credit-pool finding)"]
+      }
+    },
+    "recaptures": [
+      {
+        "date": "2026-11-02",
+        "by": "refresh-B4-2026-11-02",
+        "vendor": "Kling AI",
+        "url": "https://kling.ai/app/membership/membership-plan",
+        "checked_also": [
+          "https://klingai.com/global/membership/membership-plan (301 to kling.ai/membership/membership-plan)",
+          "https://kling.ai/release-note/release-history"
+        ],
+        "method": "curl status check with browser user agent (HTTP 200); r.jina.ai render, signed out, Monthly tab",
+        "read": "Plans from $6.99. Standard $10 list, $6.99 first month, then $8.80/month, 660 credits, 100 credits = $1.06; Pro $37, $25.99, then $32.56, 3,000 credits, $0.87; Premier (18K) $207, $144.99, then $181.99, 18,000 credits, $0.81; Ultra+ $619, $432.99, then $544.99, 57,000 credits, $0.76. Basic $0. 'Generated content is for commercial use' on paid cards only; Max videos per generation Basic 1, paid 4. Offer valid until Dec.31, 2026, UTC-8. FAQ answers collapsed in the render (questions only). Release log: newest major entry still 2026-10-15 Kling 4.0.",
+        "result": "match",
+        "vs_previous": "Monthly tab matches EV-kling-ai-review-09 recapture of 2026-10-31 line for line. Yearly tab and FAQ answer text (EV-kling-ai-review-03, -14) not re-read today; the 2026-10-31 reads stand. No per-second app credit rate shown signed out.",
+        "ev_ids": [
+          "EV-kling-ai-review-09",
+          "EV-kling-ai-review-01",
+          "EV-kling-ai-review-19"
+        ]
+      },
+      {
+        "date": "2026-11-02",
+        "by": "refresh-B4-2026-11-02",
+        "vendor": "Runway",
+        "url": "https://runwayml.com/pricing",
+        "checked_also": [
+          "https://runway.com/pricing (runwayml.com/pricing answers 308 to it)"
+        ],
+        "method": "curl status check with browser user agent (308 then 200); r.jina.ai render",
+        "read": "Free $0, 125 one-time credits. Standard $15 or $12 billed annually, 625 credits = 52s of Gen-4.5. Pro $35 or $28, 2,250 credits = 187s of Gen-4.5. Max $95 or $76, 9,500 credits = 791s of Gen-4.5, credits roll over 1 month. Standard, Pro and Max cards: 'Kling 4.0 25% off 25% off Kling 4.0 generations until November 30.' Standard card: 'Access to all AI video & image models'.",
+        "result": "match (prices and credits); changed (new Kling 4.0 promotion line)",
+        "vs_previous": "Prices, credits and seconds per plan match EV-runway-review-01 (2026-08-29 and 2026-10-31). New since 10-31 read as recorded: the 25% off Kling 4.0 generations until November 30 promotion on paid cards. No credits-per-second figure for Kling inside Runway on the page.",
+        "ev_ids": [
+          "EV-runway-review-01",
+          "EV-runway-review-06",
+          "EV-kling-ai-vs-runway-01",
+          "EV-kling-ai-vs-runway-06"
+        ]
+      }
+    ],
+    "refreshes": [
+      {
+        "date": "2026-11-02",
+        "by": "refresh-B4-2026-11-02",
+        "note": "Page delta: carry-over corrections from registry-kling-ai-review and registry-runway-review 2026-10-31 recaptures (Kling plan table vendor-read, free tier monthly, plan-FAQ commercial use, Kling 4.0, Trustpilot 1.2; Runway Motion Brush Gen-2 only and Gen-3 camera control retired, Gen-4.5 needs Standard, four Trustpilot listings 1.1-2.2, runway.bz not Runway). Live price recaptures on 2026-11-02 in _meta.recaptures. No new EV entries; claims cite existing ids."
+      }
+    ]
+  },
+  "entries": [
+    {
+      "id": "EV-kling-ai-vs-runway-01",
+      "claim": "MIMO'S OWN DERIVED CALCULATION (not stated by any single source): using Runway's vendor-confirmed Gen-4.5 rate (12 credits/second) against its vendor-confirmed per-tier dollar-per-credit cost, Runway's per-second price ranges from ~$0.096/sec (Max, annual) up to ~$0.288/sec (Standard, monthly) depending on plan and billing cycle. Kling 3.0's only available per-second figure is a single third-party author's own derived estimate of ~$0.10/second (not vendor-confirmed). Finished per-clip math: a 5-second clip costs Kling ~$0.50 (estimated) versus Runway ~$0.48 (Max annual) to ~$1.44 (Standard monthly); a 10-second clip costs Kling ~$1.00 (estimated) versus Runway ~$0.96 to ~$2.88 across the same tier range.",
+      "source_url": "https://runway.com/pricing ; https://docs.dev.runwayml.com/guides/pricing/ ; https://www.curionic.net/2026/06/runway-vs-kling-vs-veo-vs-sora-ai-video-generator-comparison-2026.html",
+      "source_date": "2026-09-11 (Mimo's own calculation, computed this run; underlying inputs dated 2026-08-29 [runway.com/pricing, docs.dev.runwayml.com/guides/pricing/] and June 2026 [curionic.net])",
+      "quote": "MIMO'S OWN CALCULATION (not from a source page): Runway Gen-4.5 = 12 credits/sec (vendor) x $0.008-$0.024/credit by tier (vendor) = ~$0.10-$0.29/sec ($0.48-$2.30 per 5-10s clip). Kling 3.0 = curionic.net's ~$0.10/sec estimate = $0.50-$1.00 per 5-10s clip.",
+      "platform": "Mimo's own arithmetic, derived from two already-REUSED registry figures (Runway side vendor-stated; Kling side a single third-party estimate, NOT vendor-stated) -- computed and registered this run, 2026-09-11",
+      "target_slug": "/vs/kling-ai-vs-runway",
+      "collected_at": "2026-09-11",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "kling-ai-vs-runway-2026-09-11",
+      "screening": "included",
+      "label": "research-finding",
+      "derivation": "mimo-own-calculation (not an external source claim -- see honesty_notes for full computation and its two source inputs)",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": { "tool": "Kling AI + Runway (derived cross-tool comparison)", "aspect": "computed per-second and per-clip cost across Runway's 3 tiers vs. Kling's single third-party estimate -- not itself a claim any source makes", "stance": "n/a", "plan_tier_if_stated": "Runway Standard/Pro/Max, annual and monthly; Kling flat third-party estimate (no vendor tier structure available)", "item_date": "2026-09-11 (calculation date)" },
+      "honesty_notes": [
+        "THE MOAT FINDING: no page in this page's entire competitive set (9 pages deep-fetched across this page's own same-day Phase 1 competitor audit) finishes this math. tomsguide.com hands readers the raw ingredients ($92/8,000 credits, 70 credits per 10-second Kling clip) but never multiplies them out; techsifted.com and selecthub.com attempt none. This entry is the completed version.",
+        "ASYMMETRIC CONFIDENCE, MUST BE STATED ON THE PAGE: the Runway side rests on TWO vendor-primary figures (EV-runway-review-01, runway.com/pricing, captured 2026-08-29; EV-runway-review-06, docs.dev.runwayml.com/guides/pricing/, captured 2026-08-29). The Kling side rests on ONE third-party author's own derived estimate (EV-best-ai-video-generators-19, curionic.net, June 2026, explicitly the author's own calculation, not a vendor-quoted rate). Kling publishes NO vendor-confirmed per-second rate anywhere found across 3 separate sweeps of this cluster -- klingai.com/pricing has returned HTTP 446 on 4 confirmed attempts (hub sweep 2026-08-10, kling-ai-review sweep 2026-08-17 x2, and this page's own 1-keyword.json/1-competitor.json notes). Do not present both sides of this math as equally sourced.",
+        "Uses CURRENT-version-to-current-version figures only: Runway's flagship Gen-4.5 (12 credits/sec, EV-runway-review-06's vendor-confirmed figure -- NOT eesel.ai's older, disputed 25-credits/sec figure, EV-runway-review-07) against Kling's flagship 3.0 (the version curionic.net's own June 2026 test names). This deliberately avoids the version-mismatch trap this page's whole competitive set falls into (3 of 9 competitor pages independently test/describe a stale Runway generation).",
+        "Full worked math for the writer's reference (annual billing): Standard $12/mo / 625 credits = $0.0192/credit x 12 credits/sec = $0.230/sec. Pro $28/mo / 2,250 credits = $0.01244/credit x 12 = $0.149/sec. Max $76/mo / 9,500 credits = $0.008/credit x 12 = $0.096/sec. Monthly (non-annual) billing runs roughly 20-25% higher per tier ($15/$35/$95 in place of $12/$28/$76).",
+        "Notable finding worth surfacing on the page: Runway's cheapest per-second rate (Max, annual, ~$0.096/sec) sits almost exactly AT Kling's ~$0.10/sec estimate -- the popular 'Kling is always cheaper' framing (repeated by techsifted.com and fahimai.com, both EV-kling-ai-vs-runway-03/-05) only holds clearly at Runway's Standard tier, not at Max. Do not repeat the flat 'Kling wins on price' framing without this tier caveat."
+      ]
+    },
+    {
+      "id": "EV-kling-ai-vs-runway-02",
+      "claim": "Tom's Guide's disclosed 5-round, 5-category (10-point each) hands-on test (published 2024-10-02, author Ryan Morrison) scored Runway 150 to Kling 152 across Vehicle/People/Rocket/Nature/Abstract-Concept prompts -- a near-tie the author calls 'a VERY close race' -- but tested Runway in 'normal Gen-3 Alpha (not turbo mode)', a generation Runway's own help center confirms was retired 2026-07-08 (EV-runway-review-03), and never states which Kling version was used.",
+      "source_url": "https://www.tomsguide.com/ai/ai-image-video/i-put-runway-vs-kling-through-a-5-round-face-off-heres-which-ai-video-generator-wins",
+      "source_date": "2024-10-02",
+      "quote": "I ran all the tests in professional mode for 10 seconds in Kling and in normal Gen-3 Alpha (not turbo mode) in Runway... Total: Runway 150, Kling 152... This was a VERY close race between the two models.",
+      "platform": "tomsguide.com (Future plc media property; WebFetch truncated on content length, recovered via direct curl of the raw 2.44MB HTML + regex extraction of the article body and the raw JSON-LD Article block, independently re-verified this run 2026-09-11 -- the same recovery method this page's own same-day Phase 1 serp-analyzer and competitor-auditor independently used; datePublished 2024-10-02T05:00:35+00:00 confirmed via raw JSON-LD, no substantive revision since)",
+      "target_slug": "/vs/kling-ai-vs-runway",
+      "collected_at": "2026-09-11",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "kling-ai-vs-runway-2026-09-11",
+      "screening": "included",
+      "label": "independent-test",
+      "coders": ["A", "B"],
+      "coder_agreement": false,
+      "coding": { "tool": "Runway (Gen-3 Alpha, since retired) + Kling (version unstated)", "aspect": "disclosed 5-round/5-category hands-on scoring test, near-tie result", "stance": "mixed", "plan_tier_if_stated": null, "item_date": "2024-10-02" },
+      "honesty_notes": [
+        "LOAD-BEARING STALENESS FLAG: tests 'Gen-3 Alpha (not turbo mode)' -- Runway's own help center (EV-runway-review-03, fetched 2026-08-29) confirms Gen-3 Alpha was retired 2026-07-08, roughly 21 months after this test published and about 14 months before this page's own capture. The writer MUST date-stamp this as describing a since-retired Runway generation, not current Gen-4.5 -- do not cite the 150-152 tally as describing Runway's current output quality.",
+        "Kling's version is never stated anywhere in the article (only 'professional mode' at 10 seconds) -- cannot confirm which Kling generation was tested; likely predates Kling 3.0 (general-released 2026-02-04 per EV-kling-ai-review-19, ~4 months after this article published).",
+        "Author (Ryan Morrison, named, bio'd, Person-schema-confirmed via this curator's own raw JSON-LD check) discloses full per-round prompts and a numeric rubric -- the single most rigorous disclosed methodology found across this page's entire competitive set (9 pages checked in this page's own same-day competitor audit). Present the DISCLOSED-METHODOLOGY BAR as something to match on current versions, not the 150-152 score as a current fact.",
+        "The article's own intro hands readers unfinished cost-math ingredients: 'Runway includes unlimited video generations in Explore Mode for $95 per month. Kling's Premier plan is $92 per month for 8,000 credits. A 10-second generation costs 70 credits.' This is yet another disagreeing Kling pricing figure (Premier $92, distinct from the wider $64.99-$180 spread already documented across the reused kling-ai-review entries) but the article never multiplies it into a per-clip number -- see EV-kling-ai-vs-runway-01 for Mimo's own completed math, built on different, more current inputs, not this one.",
+        "A self-contained internal inconsistency worth naming as an example on the page: the article's own per-round scoring table states Runway's Vehicle-test total as 28, while its own separate summary roll-up table states 26 for the same round; the final grand total (150) is computed from the summary table, not the per-round table. Cite this as a concrete illustration of exactly the kind of unresolved single-source error a dated, cross-checked registry exists to avoid -- not as a criticism to dwell on."
+      ]
+    },
+    {
+      "id": "EV-kling-ai-vs-runway-03",
+      "claim": "TechSifted's comparison (published 2026-08-18, last updated 2026-09-07 -- the freshest dated 'kling vs runway' piece found across this page's own competitive set) is the only page in that set to correctly name BOTH tools' current versions together -- 'Kling 3.0' and 'Runway Gen-4.5, released in May 2026' -- opening with a forward-loaded verdict: Runway wins on raw quality, Kling wins on value at every price tier.",
+      "source_url": "https://techsifted.com/comparisons/kling-ai-vs-runway-2026/",
+      "source_date": "2026-09-07",
+      "quote": "Runway Gen-4.5 is still the quality benchmark leader. Kling 3.0 is the better deal at every price point.",
+      "platform": "techsifted.com (independent comparison-vertical blog running a recurring /comparisons/ section; named author Ray Whitfield, 'Enterprise Tech Analyst'; direct WebFetch, no block; published 2026-08-18, last updated 2026-09-07 per the page itself; captured 2026-09-11)",
+      "target_slug": "/vs/kling-ai-vs-runway",
+      "collected_at": "2026-09-11",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "kling-ai-vs-runway-2026-09-11",
+      "screening": "included",
+      "label": "research-finding",
+      "coders": ["A", "B"],
+      "coder_agreement": false,
+      "coding": { "tool": "Kling AI (3.0) + Runway (Gen-4.5)", "aspect": "freshest dated comparison correctly naming both current versions together; forward-loaded per-axis verdict structure", "stance": "mixed", "plan_tier_if_stated": "Kling Standard $10/mo, Pro $37/mo; Runway Standard $12/mo, Pro $28/mo", "item_date": "2026-09-07" },
+      "honesty_notes": [
+        "ONLY page in this page's entire competitive set (9 pages checked in this page's own same-day competitor audit) to correctly name Kling 3.0 AND Runway Gen-4.5 together with a stated release context ('released in May 2026') -- worth citing for this version-accuracy bar. BUT the article contains a real, checkable self-contradiction independently reconfirmed by this curator's own fetch: it states Runway Gen-4.5 has '720p output (Gen-4.5 has no 4K mode)' in one section, then separately states 'Runway does output at 4K' elsewhere. Present this AS the illustration of exactly why every figure on Mimo's page is dated and sourced -- do not silently pick one of the two contradicting numbers and repeat it as fact.",
+        "REPEATS the disputed '66 credits per day' Kling free-tier figure verbatim ('Kling gives you 66 credits per day, resetting every 24 hours') -- see EV-kling-ai-vs-runway-05 for the full 3-source triangulation and the required disputed-spread framing; do not treat 66/day as settled just because this is the freshest source repeating it.",
+        "Independently states (the FIRST of two corroborating sources found this run for the same claim, see EV-kling-ai-vs-runway-06): 'If you subscribe to Runway Pro, you can actually use Kling's model within the Runway platform.'",
+        "No disclosed hands-on testing of its own -- cites an unlinked 'Artificial Analysis leaderboard' benchmark rather than first-party generation, which is why this entry is labeled research-finding rather than independent-test (contrast EV-kling-ai-vs-runway-02 and -04, which describe genuine disclosed hands-on tests)."
+      ]
+    },
+    {
+      "id": "EV-kling-ai-vs-runway-04",
+      "claim": "A named hands-on reviewer (Maya Chen, 'Senior Reviewer' at aialleyway.com, published 2026-07-15) ran the same prompt through both tools' free tiers, checked outputs for watermarks/sound, priced both from inside the apps, and scored both 4.2/5 -- a genuine tie, not a forced single winner -- while separately citing Trustpilot ratings of roughly 1.2 stars for Runway and roughly 1.3 stars for Kling, closely matching Mimo's own independently-sourced Trustpilot figures for both tools.",
+      "source_url": "https://aialleyway.com/runway-vs-kling/",
+      "source_date": "2026-07-15",
+      "quote": "I ran the same barista prompt through both, downloaded each clip to check for watermarks and sound, and priced both from inside the tools... Runway and Kling both scored 4.2 in our hands-on testing.",
+      "platform": "aialleyway.com (independent AI-tool review blog, named reviewer Maya Chen, 'Senior Reviewer'; direct WebFetch, no block; published 2026-07-15; captured 2026-09-11)",
+      "target_slug": "/vs/kling-ai-vs-runway",
+      "collected_at": "2026-09-11",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "kling-ai-vs-runway-2026-09-11",
+      "screening": "included",
+      "label": "independent-test",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": { "tool": "Kling AI + Runway (both, direct identical-prompt hands-on comparison)", "aspect": "identical-prompt hands-on tie (4.2/5 both) plus a third independent Trustpilot-rating data point for both tools", "stance": "mixed", "plan_tier_if_stated": "free tier, both tools, tested from inside the apps", "item_date": "2026-07-15" },
+      "honesty_notes": [
+        "The 4.2-vs-4.2 tie is a genuine, disclosed SINGLE-prompt test ('the same barista prompt', free tiers only) -- a real data point, but a much lighter test than EV-kling-ai-vs-runway-02's 5-round/25-category tomsguide test. Present as one reviewer's single-prompt tie, not a resolved multi-round verdict.",
+        "TRUSTPILOT CROSS-CHECK, worth surfacing explicitly: this source's ~1.2-star Runway figure and ~1.3-star Kling figure land squarely inside the range Mimo's own two reused review shards independently sourced (Runway 1.1-2.8/5 across 5 differently-branded Trustpilot domain-listings, EV-runway-review-17 through -21; Kling 1.3/5, n=318, via a third-party relay, EV-kling-ai-review-10) -- a THIRD, independent source reaching a closely matching negative-rating reality for BOTH tools. Cite as corroboration of the existing, more-detailed entries, not as a replacement number.",
+        "Also states Runway offers 'multi-model access via marketplace' as a reason to pick Runway for editors -- generic corroboration of Runway's multi-model positioning, though this specific sentence does not name Kling; the Kling-specific confirmation is EV-kling-ai-vs-runway-06, sourced separately and more directly.",
+        "Flags Google Veo (scored 4.6, described as 'higher than either of these') as a third safer option -- out of this page's two-tool scope, not pursued further, noted only so the writer doesn't accidentally drop this source's actual framing."
+      ]
+    },
+    {
+      "id": "EV-kling-ai-vs-runway-05",
+      "claim": "The disputed 'Kling free tier = 66 credits/day' figure -- already flagged in the reused kling-ai-review shard as a likely transcription-collision error against Mimo's own sourced ~1,980-credits/day figure (EV-kling-ai-review-06, cybernews.com, 2025-12-19; EV-best-ai-video-generators-03, eesel.ai, 2026-06-05) -- is now independently repeated by two MORE dated sources found on this page's own comparison SERP: techsifted.com (2026-09-07) and fahimai.com (last modified 2026-05-12), for a 3-source total. This is a triangulated-across-sources but still-CONTESTED figure within Kling's already-disputed free-tier spread, not a newly-settled fact.",
+      "source_url": "https://techsifted.com/comparisons/kling-ai-vs-runway-2026/ ; https://www.fahimai.com/runway-vs-kling",
+      "source_date": "2026-09-07 (techsifted.com, last updated) ; 2026-05-12 (fahimai.com, last modified)",
+      "quote": "Kling gives you 66 credits per day, resetting every 24 hours. [techsifted.com] / Kling AI offers a free plan that provides six high-quality generations per day, plus 66 credits every 24 hours for free. [fahimai.com]",
+      "platform": "techsifted.com + fahimai.com (two independent third-party comparison/review blogs; both direct WebFetch, no block; techsifted.com last updated 2026-09-07, fahimai.com last modified 2026-05-12; both captured 2026-09-11)",
+      "target_slug": "/vs/kling-ai-vs-runway",
+      "collected_at": "2026-09-11",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "kling-ai-vs-runway-2026-09-11",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": ["A", "B"],
+      "coder_agreement": false,
+      "coding": { "tool": "Kling AI", "aspect": "free-tier daily-credit figure, now independently stated by 2 more dated third-party sources beyond the already-registered cybernews.com figure -- a triangulation of REPETITION, not of independent verification against the vendor's own page", "stance": "n/a", "plan_tier_if_stated": "Free (66 credits/day per these 2 sources, vs. ~1,980 credits/day per Mimo's own sourced figure)", "item_date": "2026-09-07 / 2026-05-12" },
+      "honesty_notes": [
+        "FLAGGED FOR RESOLVER, inherited from the kling-ai-review shard's own open hypothesis (EV-kling-ai-review-06): whether '66 credits/day' is a genuine (possibly older or regional) figure, or a recurring transcription-collision with the Standard tier's 660-credits/MONTH allowance, remains UNRESOLVED. This entry documents that the figure now recurs on 3 independently-dated third-party sources total (cybernews.com 2025-12-19 via EV-kling-ai-review-06; techsifted.com 2026-09-07; fahimai.com modified 2026-05-12) against Mimo's own sourced ~1,980-credits/day figure (EV-best-ai-video-generators-03, eesel.ai, 2026-06-05, itself third-party-relayed since klingai.com/pricing is unreachable). Three sources REPEATING a number is NOT the same as three sources INDEPENDENTLY VERIFYING it against Kling's own page, which remains blocked (HTTP 446, confirmed 4x across this pipeline's 3 separate sweeps).",
+        "fahimai.com's OWN article contains an internal arithmetic inconsistency around this exact figure, independently reconfirmed by this curator's own fetch: it separately states the free tier gives 'six high-quality generations per day' AND (elsewhere in its pricing table) that 'a 10-second generation costs 70 credits' -- 66 divided by 6 is 11 credits per generation, nowhere near the stated 70-credit cost of a 10-second clip. This internal math failure is a concrete, citable reason to treat fahimai.com's repetition of 66/day as weak corroboration (possibly copied from the same upstream error), not as independent confirmation.",
+        "DO NOT present 66/day as resolved, and do not resolve it by simple source-count. Required framing: 'Kling's free-tier daily-credit figure is contested across sources (three third-party sources state 66/day; one third-party source, tied to a stated per-second consumption context, states ~1,980/day) -- direct vendor confirmation is unavailable, klingai.com/pricing is unreachable.' Keep this consistent with the disputed-spread framing already established on /tools/kling-ai -- do not let this vs-page silently converge on a single number that contradicts its own sibling review.",
+        "PAGE-CONSISTENCY FLAG (feeds task item 5, reconciling the keyword agent's own cross-page staleness note): the LIVE /best/ai-video-generators hub's COMPARE_ROWS table currently shows a THIRD framing again ('~1,980 credits/day, $10/mo Standard') -- the older EV-best-ai-video-generators-03 figures, unchanged since 2026-08-10. All three pages (hub, /tools/kling-ai, this vs-page) must agree that Kling's free-tier credit figure is a DISPUTED SPREAD, not each independently pick a different single number. This is a content-consistency item for Phase 3/5 to action, not something this evidence shard can resolve by itself -- Kling's own pricing page remains unreachable."
+      ]
+    },
+    {
+      "id": "EV-kling-ai-vs-runway-06",
+      "claim": "CONFIRMED, vendor-primary: Runway's own product page states Kling 3.0 runs directly inside Runway's own platform on all paid and Enterprise plans (free-tier users must upgrade to access it), corroborated by two independent third-party sources (techsifted.com and toolixlab.com) describing the same bundled multi-model access. This materially changes the 'do you need both tools?' question -- a Runway Standard-or-above subscriber can generate with Kling's model from inside Runway itself, not only by paying for both tools separately.",
+      "source_url": "https://runway.com/product/models/kling-3.0 ; https://techsifted.com/comparisons/kling-ai-vs-runway-2026/ ; https://toolixlab.com/blog/runway-vs-kling-vs-pika-vs-veo-2026",
+      "source_date": "2026-09-11 (runway.com, captured this run -- page carries no visible content date) ; 2026-09-07 (techsifted.com) ; 2026-06-14 (toolixlab.com)",
+      "quote": "Kling 3.0 is Kling's most advanced video generation model family, available inside Runway... Kling 3.0 is available on all paid and Enterprise plans. Free plan users can upgrade to get access.",
+      "platform": "runway.com (Runway's own vendor product page -- self-interested, but a straightforward factual availability claim about Runway's own platform, not a comparative marketing claim about a rival's shortcomings; direct WebFetch, no block; page carries no visible publish/update timestamp beyond an unrelated 'Runway AI Summit: 9/30' promo banner; captured 2026-09-11) -- corroborated by techsifted.com (2026-09-07) and toolixlab.com (2026-06-14), full corroborating quotes in honesty_notes",
+      "target_slug": "/vs/kling-ai-vs-runway",
+      "collected_at": "2026-09-11",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "kling-ai-vs-runway-2026-09-11",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": { "tool": "Runway (describing Kling's availability inside its own platform)", "aspect": "vendor-primary confirmation that Kling 3.0 is a selectable model inside Runway's paid workspace, corroborated by 2 independent third-party sources", "stance": "n/a", "plan_tier_if_stated": "Runway paid plans (Standard and above) + Enterprise; free-tier requires upgrade", "item_date": "captured 2026-09-11 (vendor page itself is undated)" },
+      "honesty_notes": [
+        "RESOLVES the task's open verification question: YES, CONFIRMED. Runway's own page (runway.com/product/models/kling-3.0) states Kling 3.0 runs inside Runway itself on paid/Enterprise plans. Two independent third-party sources corroborate with matching specifics: techsifted.com (2026-09-07) states 'If you subscribe to Runway Pro, you can actually use Kling's model within the Runway platform'; toolixlab.com (2026-06-14) states 'Every paid plan now includes access to Kling 3.0 Pro, Veo 3 and 3.1, Seedance 2.0, and multiple image generation models' and, more specifically, 'As of 2026, all Runway paid plans (Standard and above) include access to Veo 3.1, Kling 3.0 Pro, and Seedance 2.0 as third-party models.'",
+        "TIMING NOTE: fahimai.com (last modified 2026-05-12, independently fetched by this curator this run specifically to check this claim) describes Runway as offering 'over 30 creative AI tools' with ZERO mention of any third-party model bundling -- all described as Runway's own products. This is consistent with the bundling feature having been added to Runway sometime between May and June 2026 (toolixlab.com's June 14, 2026 date is the earliest confirmation found this run). Do not present this as something Runway has 'always' offered -- date it.",
+        "Runway's own page does NOT state a separate credit-cost for generating with Kling inside Runway versus using Runway's own Gen-4.5/Gen-4-Turbo models -- unconfirmed whether Kling-inside-Runway draws from the same credit pool at the same 12-credits/sec rate or a different one. Flag as an open question on the page; do not assume parity with EV-runway-review-06's Gen-4.5 rate.",
+        "MATERIAL IMPACT ON THE 'CAN YOU USE BOTH?' PAA this page is expected to answer: a reader does not strictly need two separate subscriptions to access both models' output -- a single Runway Standard-or-above subscription includes Kling 3.0 Pro access. This does NOT make the tools equivalent (Kling-inside-Runway is gated behind Runway's own UI, credit system, and generation limits, not Kling's native app or pricing) -- the honest answer changes from 'you need two separate subscriptions' to 'you can reach Kling's model through one Runway subscription, with tradeoffs neither vendor documents in detail.'",
+        "Runway's own product page does not attribute Kling to its developer (no Kuaishou mention) -- it lists Kling generically alongside other third-party models 'from Google, OpenAI, Kling, ByteDance and more.' Mimo's own already-registered Kuaishou/Beijing ownership finding (EV-kling-ai-review-11) still applies regardless of which platform surfaces the model."
+      ]
+    }
+  ]
+}

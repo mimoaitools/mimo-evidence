@@ -1,0 +1,306 @@
+{
+  "_meta": {
+    "flow_id": "best-ai-seo-writing-tools-2026-09-19",
+    "refresh_2026_11_03": "B5 refresh: live recaptures 2026-11-03 logged on EV-01 (Clearscope, match + 14-day trial), EV-02 (MarketMuse, match), EV-03 (Scalenut, promo changed to 65% off $21-$70, regular match, 7-day trial), EV-06 (NeuronWriter inputs match, unit relabelled 'documents'; Surfer/Frase reused from 2026-11-02). Entry count unchanged.",
+    "protocol_version": "MEP-1.0",
+    "target_slug": "/best/ai-seo-writing-tools",
+    "target_keyword": "best ai seo writing tools",
+    "run_date": "2026-09-19",
+    "collector": "evidence-curator",
+    "page_class": "best (cornerstone hub, zone-2 AI SEO content-optimization tools; Surfer SEO/NeuronWriter/Frase reviewed-and-scored at /tools/surfer-seo (3.6/5), /tools/neuronwriter (3.5/5), /tools/frase (3.5/5); Scalenut/Clearscope/MarketMuse listed-not-scored)",
+    "sweep_strategy": "REUSE-FIRST, TARGETED GAP CLOSE — not a full fresh discovery sweep. The three satellite reviews (registry-surfer-seo-review.json, registry-neuronwriter-review.json, registry-frase-review.json) and the vs-page shard (registry-neuronwriter-vs-surfer-seo.json) already carry a combined 33 dated, coded, MEP-compliant entries covering pricing, features, ratings, and the independent Ahrefs 5-tool correlation study for all three reviewed tools — all already merged into the aggregate Data/seo/evidence/registry.json (confirmed via direct id lookup 2026-09-19: EV-surfer-seo-review-01, EV-neuronwriter-review-01, EV-frase-review-01, EV-neuronwriter-vs-surfer-seo-01 all present). This run targeted ONLY the five hub-level gaps those shards leave open, per the orchestrator's brief: (1) Clearscope + MarketMuse enterprise-tier pricing context, (2) G2/Capterra platform-aggregate ratings for the reviewed trio (to honestly reconcile against Mimo's lower MEP verdicts, per 1-competitor.json rating_reality_reconciliation), (3) live re-verification of the Ahrefs study and Surfer's own vendor study (no new entries — citing existing ids), (4) a NEW three-way per-article/per-tier cost-math synthesis across all three reviewed tools (Mimo's own arithmetic, not previously computed anywhere for all three together), and (5) Scalenut's current pricing. 10 distinct URLs were directly targeted and fetched this run (no open-ended WebSearch discovery queries were run, by design — the orchestrator's brief named the exact sources to check, and a sibling same-day Phase-1 agent (Data/seo/phases/best-ai-seo-writing-tools/1-serp.json) already ran and documented the Reddit-presence census for this exact keyword cluster, finding zero reddit.com URLs in the top 10 for either 'best ai seo writing tools' or 'best ai seo tools' — see reddit_access_note). All 5 vendor/platform fetches that succeeded were verified live this run with quoted content; all 3 G2 attempts (Surfer, NeuronWriter, Frase) returned HTTP 403, extending the same G2 block documented in every prior 2026-07 Mimo shard for this cluster (5th, 6th and 7th consecutive G2 failures across the cluster's sweeps). NeuronWriter's Capterra page, which 403'd in the original 2026-07-13 sweep, resolved successfully this run (2026-09-19) — a genuinely new first-party capture, independently corroborated with a named reviewer distinct from the already-registered Trustpilot review. The Ahrefs and Surfer vendor studies were both re-fetched and confirmed still live with unchanged quotes — no new entries created for these; existing ids are cited as instructed.",
+    "flow_counter": {
+      "identified": 10,
+      "screened": 10,
+      "excluded": 5,
+      "excluded_by_reason": {
+        "unverifiable-this-run": 3,
+        "duplicate": 2
+      },
+      "included_sources": 5,
+      "registry_entries_new": 6,
+      "counter_note": "identified = 10 distinct URLs directly targeted this run (Clearscope pricing, MarketMuse pricing, Scalenut pricing, Ahrefs study re-fetch, Surfer study re-fetch, G2 x3 [Surfer/NeuronWriter/Frase], Capterra NeuronWriter, onelittleweb.com competitor listicle). 5 were included as new sourced entries (EV-01 through EV-05 below). 3 were excluded unverifiable-this-run (G2 403 on all three tools). 2 were excluded duplicate (the Ahrefs and Surfer-study re-fetches confirm content already fully registered under EV-neuronwriter-review-06/EV-surfer-seo-review-08/EV-frase-review-02 and EV-surfer-seo-review-02 respectively — re-verified live, not re-registered, per the orchestrator's explicit instruction to cite existing ids rather than duplicate). A 6th new entry (EV-06) is Mimo's OWN derived cost-math calculation, built entirely from three already-registered, previously-verified pricing entries (EV-surfer-seo-review-01, EV-neuronwriter-review-01, EV-frase-review-01) — it has no new external source_url of its own and therefore sits outside this URL-based census; documented transparently rather than force-fit into the identified count.",
+      "zero_astroturf_detected": true
+    },
+    "coder_agreement_rate": "CURATOR-PROVISIONAL single-pass coding across all 6 new entries (dual-independent coding + resolver pass orchestrated above this run). 5 of 6 coded n/a (vendor-primary pricing/ratings-aggregate/Mimo-derived content, no sentiment to code). FLAGGED FOR RESOLVER: EV-best-ai-seo-writing-tools-06 (the three-way cost-math synthesis) inherits the same 'treat one analysis = one document = one article' simplifying convention the live /vs/neuronwriter-vs-surfer-seo page already uses for two tools — extending it to a third tool (Frase's 'article' unit) is a reasonable but not risk-free equivalence a resolver should sign off on before the hub states it as fact.",
+    "query_census": [
+      { "q": "DIRECT: WebFetch https://www.clearscope.io/pricing", "candidates": 1, "note": "INCLUDED -> EV-best-ai-seo-writing-tools-01. Confirmed 3 named plans (Essentials $129/mo, Business $399/mo, Enterprise custom) plus per-unit add-on pricing." },
+      { "q": "DIRECT: WebFetch https://www.marketmuse.com/pricing/", "candidates": 1, "note": "INCLUDED -> EV-best-ai-seo-writing-tools-02. Confirmed no public dollar pricing anywhere on the page; 4 tiers (Free/Optimize/Research/Strategy) differentiated only by usage limits, each gated behind 'Book a demo'." },
+      { "q": "DIRECT: WebFetch https://www.scalenut.com/pricing", "candidates": 1, "note": "INCLUDED -> EV-best-ai-seo-writing-tools-03. Confirmed 3 self-serve annual plans at a stated '60% off' promotional rate plus a custom VIP done-for-you tier." },
+      { "q": "DIRECT: WebFetch https://ahrefs.com/blog/seo-content-score-study/ (re-verification of a study already registered as EV-neuronwriter-review-06 / EV-surfer-seo-review-08 / EV-frase-review-02, NOT a new discovery query)", "candidates": 1, "note": "DUPLICATE (re-verification only, per instruction to cite existing ids). Confirmed still live 2026-09-19, methodology unchanged (20 keywords, 5 tools: Surfer/Frase/NeuronWriter/Clearscope/AI Content Helper), quote unchanged and matches the three existing entries verbatim: 'out of the five tools I tested, NeuronWriter and AI Content Helper fared the best. The other three only had very weak correlations.' No new entry created." },
+      { "q": "DIRECT: WebFetch https://surferseo.com/blog/surfer-content-score-study/ (re-verification of a study already registered as EV-surfer-seo-review-02, NOT a new discovery query)", "candidates": 1, "note": "DUPLICATE (re-verification only). Confirmed still live 2026-09-19, 0.28 Spearman correlation and ~1,000,000 SERP entries / 10,000 queries figures unchanged, matches EV-surfer-seo-review-02 verbatim. No new entry created." },
+      { "q": "DIRECT: WebFetch https://www.g2.com/products/surfer-surfer/reviews", "candidates": 1, "note": "EXCLUDED unverifiable-this-run. HTTP 403 Forbidden — matches every prior G2 attempt for this cluster (registry-surfer-seo-review.json, registry-neuronwriter-vs-surfer-seo.json)." },
+      { "q": "DIRECT: WebFetch https://www.g2.com/products/neuronwriter/reviews", "candidates": 1, "note": "EXCLUDED unverifiable-this-run. HTTP 403 Forbidden — matches the prior G2 attempt for NeuronWriter in registry-neuronwriter-review.json." },
+      { "q": "DIRECT: WebFetch https://www.g2.com/products/frase-io/reviews", "candidates": 1, "note": "EXCLUDED unverifiable-this-run. HTTP 403 Forbidden — matches the prior G2 attempt for Frase in registry-frase-review.json." },
+      { "q": "DIRECT: WebFetch https://www.capterra.com/p/10011393/NeuronWriter/reviews/ (retry — this exact URL returned HTTP 403 in the original 2026-07-13 sweep)", "candidates": 1, "note": "INCLUDED -> EV-best-ai-seo-writing-tools-04. Resolved successfully this run (2026-09-19), unlike the 2026-07-13 attempt. Verified with a second targeted fetch requiring a named reviewer quote as a grounding check (returned Sean P., CEO, 5-star review dated 2026-01-10) before registering, to rule out a hallucinated/confused response given the coincidental match with NeuronWriter's already-registered Trustpilot aggregate (also 4.9/5, n=17)." },
+      { "q": "DIRECT: WebFetch https://onelittleweb.com/top-tools/best-ai-seo-tools/ (independently re-fetched this run for registration purposes; this URL was also read by the same-day sibling Data/seo/phases/best-ai-seo-writing-tools/1-competitor.json phase file, but per the hard constraint against registering evidence not fetched THIS run, it was fetched again directly by the curator rather than borrowed from that phase artifact)", "candidates": 1, "note": "INCLUDED -> EV-best-ai-seo-writing-tools-05. Confirmed Surfer's quoted G2 4.8/5 (538+) and Capterra 4.9/5 (421+) aggregates; confirmed Frase and NeuronWriter carry no rating figures on this page (Frase gets a qualitative subsection only, NeuronWriter is entirely absent from the page) — consistent with 1-competitor.json's independent finding." }
+    ],
+    "reddit_access_note": "NO Reddit-targeted query was executed in this run, by design, not oversight: the orchestrator scoped this sweep to five named, tight, hub-level gaps (none of them a community-sentiment gap), and a same-day sibling Phase-1 agent already ran and documented the Reddit-presence census for this exact keyword cluster (Data/seo/phases/best-ai-seo-writing-tools/1-serp.json), finding zero reddit.com URLs in the live top-10 candidate set for either 'best ai seo writing tools' or 'best ai seo tools' across multiple WebSearch passes including reddit-flavored query variants. That finding is treated as current (same date, same cluster) rather than re-run here. Community-sentiment evidence for this hub instead routes entirely through the reused Capterra/Trustpilot/named-blogger entries already in the three satellite shards, plus this run's own fresh NeuronWriter Capterra capture.",
+    "astroturf_note": "The astroturf screen (MEP canon Section 3.1, canonical case: MikeAppsReviewer network) was considered for all 5 included sources. None qualify: three are official vendor pricing pages (Clearscope, MarketMuse, Scalenut) fetched directly from the vendor's own domain; one is Ahrefs'/Surfer's own previously-vetted published study (re-verification only); one is a named-author competitor listicle (onelittleweb.com, Sujan Sarkar byline, explicit affiliate disclosure, already vetted for methodology by the sibling 1-competitor.json phase pass) and one is a direct Capterra platform fetch with an identifiable named reviewer. Zero astroturf exclusions this run.",
+    "exclusion_log_notes": [
+      "unverifiable-this-run (3): g2.com/products/surfer-surfer/reviews, g2.com/products/neuronwriter/reviews, and g2.com/products/frase-io/reviews all returned HTTP 403 Forbidden on direct fetch this run (2026-09-19) — the same bot-wall documented against G2 in every prior 2026-07 sweep for this cluster (registry-surfer-seo-review.json, registry-neuronwriter-review.json, registry-frase-review.json, registry-neuronwriter-vs-surfer-seo.json all independently hit the identical block). No G2 star rating for any of the three reviewed tools is registered from a direct Mimo fetch; where a G2 figure is cited on the hub, it MUST be attributed to the third-party competitor page that quotes it (EV-best-ai-seo-writing-tools-05), never presented as Mimo's own direct read of G2.",
+      "duplicate (2): ahrefs.com/blog/seo-content-score-study/ and surferseo.com/blog/surfer-content-score-study/ were both re-fetched and confirmed still live with unchanged content, but per the orchestrator's explicit instruction ('do not create duplicates; cite the existing ids') no new entry was created — see EV-neuronwriter-review-06, EV-surfer-seo-review-08, EV-frase-review-02 (Ahrefs study) and EV-surfer-seo-review-02 (Surfer's own study), all already merged into the aggregate registry.json.",
+      "OWNED-BORDER held (0 registered): no AI-humanizer/AI-detector/paraphraser claim was found, registered, or cited as fact anywhere in this sweep; none of the six zone-2 tools discussed on this hub touch that border."
+    ],
+    "entries_reused": [
+      { "id": "EV-surfer-seo-review-01", "shard": "registry-surfer-seo-review.json", "axis": "pricing / cost-math", "note": "Surfer's 5-tier pricing ladder (Discovery $49/mo-Enterprise $999+/mo) + document allowances (120-unlimited/mo) captured 2026-07-16 — one of the three raw inputs to this shard's new EV-06 three-way cost-math synthesis, and the pricing half of the hub's Surfer table row." },
+      { "id": "EV-neuronwriter-review-01", "shard": "registry-neuronwriter-review.json", "axis": "pricing / cost-math", "note": "NeuronWriter's 5-tier pricing ladder (Bronze $23/mo-Diamond $117/mo) + per-tier 'content writer analyses' allowances (25-150/mo) captured 2026-07-13 — a second raw input to EV-06, and the pricing half of the hub's NeuronWriter table row." },
+      { "id": "EV-frase-review-01", "shard": "registry-frase-review.json", "axis": "pricing / cost-math", "note": "Frase's 4-tier pricing ladder (Starter $49/mo-Enterprise custom) + per-tier 'articles' allowances (10-100/mo) captured 2026-07-20 — the third raw input to EV-06, and the pricing half of the hub's Frase table row." },
+      { "id": "EV-neuronwriter-review-06", "shard": "registry-neuronwriter-review.json", "axis": "correlation-study", "note": "Ahrefs 5-tool Spearman/Kendall study (2025-05-21) — NeuronWriter-side framing: NeuronWriter and Ahrefs' own AI Content Helper 'fared the best' among 5 tools tested, though correlations were weak everywhere. Re-verified live 2026-09-19, quote unchanged." },
+      { "id": "EV-surfer-seo-review-08", "shard": "registry-surfer-seo-review.json", "axis": "correlation-study", "note": "Same Ahrefs study, Surfer-side framing: Surfer grouped among 'the other three' tools with 'very weak' correlations, NOT among the two best-correlated. Re-verified live 2026-09-19." },
+      { "id": "EV-frase-review-02", "shard": "registry-frase-review.json", "axis": "correlation-study", "note": "Same Ahrefs study, Frase-side framing plus the concrete keyword-stuffing gameability example ('scoring 100 on Frase after shoehorning all the suggested keywords without any semblance of a draft'). Re-verified live 2026-09-19." },
+      { "id": "EV-surfer-seo-review-02", "shard": "registry-surfer-seo-review.json", "axis": "correlation-study", "note": "Surfer's OWN self-published correlation study (0.28 Spearman, ~1,000,000 SERP entries, 2025-07-23) — the vendor half of the vendor-vs-independent tension against the Ahrefs finding above. Re-verified live 2026-09-19, figures unchanged." },
+      { "id": "EV-neuronwriter-review-04", "shard": "registry-neuronwriter-review.json", "axis": "ratings-reality", "note": "NeuronWriter Trustpilot aggregate 4.9/5, n=17 (captured 2026-07-13) — one of the three reviewed tools' platform-aggregate data points feeding EV-05's reconciliation." },
+      { "id": "EV-surfer-seo-review-04", "shard": "registry-surfer-seo-review.json", "axis": "ratings-reality / cost-math", "note": "Surfer Capterra aggregate 4.9/5, n=422 (captured 2026-07-16) plus a dated Content-Editor-credit-limit complaint — feeds both the ratings reconciliation (corroborates onelittleweb's quoted 421+ figure) and the cost-ceiling discussion alongside EV-06." },
+      { "id": "EV-surfer-seo-review-05", "shard": "registry-surfer-seo-review.json", "axis": "ratings-reality", "note": "A second dated Capterra review inside the same aggregate: Surfer costs 'nearly five times' comparable tools without proportionate value — the value-for-money counterpoint sitting inside a high star average." },
+      { "id": "EV-frase-review-05", "shard": "registry-frase-review.json", "axis": "ratings-reality", "note": "Frase Capterra aggregate 4.8/5, n=335 (captured 2026-07-20) plus a 2023 bugginess/declined-refund complaint — the third reviewed tool's platform-aggregate data point feeding EV-05's reconciliation." },
+      { "id": "EV-frase-review-06", "shard": "registry-frase-review.json", "axis": "ratings-reality", "note": "A second, more recent (2025-07-29) Frase Capterra review inside the same aggregate: ease-of-adoption praise alongside an older pricing-for-small-business caveat." },
+      { "id": "EV-neuronwriter-review-02", "shard": "registry-neuronwriter-review.json", "axis": "cost-math", "note": "NeuronWriter's own FAQ discloses WHAT consumes AI credits but never quantifies a per-article cost — the vendor-side half of the credit-exhaustion caution that sits alongside EV-06's per-analysis arithmetic." },
+      { "id": "EV-neuronwriter-review-10", "shard": "registry-neuronwriter-review.json", "axis": "cost-math", "note": "A 4-year NeuronWriter user reports AI credits for content generation 'can be used up quickly' when drafting full articles — independent corroboration of the credit-ceiling risk EV-06's sticker-price arithmetic alone would miss." },
+      { "id": "EV-frase-review-04", "shard": "registry-frase-review.json", "axis": "cost-math / enterprise-gap", "note": "An IndieHackers practitioner test (2026-04-28) reports a $15/mo Frase entry price not matching any of the four pricing schemes this cluster's shards have captured across 2025-2026 — corroborates the pricing-drift caution the hub must carry when citing Frase's price." },
+      { "id": "EV-frase-review-11", "shard": "registry-frase-review.json", "axis": "cost-math / enterprise-gap", "note": "Tested.media's 12-month live-client benchmark calls Frase's brief generator 'the fastest in the category' and names Frase the 'best value pick,' while separately rating its content-optimization scoring 'solid but not as accurate as Clearscope' — the bridge sentence connecting Frase's reviewed tier to Clearscope's enterprise tier." },
+      { "id": "EV-neuronwriter-review-08", "shard": "registry-neuronwriter-review.json", "axis": "enterprise-gap", "note": "The same Tested.media benchmark names NeuronWriter the category's 'budget pick,' explicitly positioned against Surfer, Frase, and (by the same benchmark's separate framing) the pricier Clearscope tier." },
+      { "id": "EV-neuronwriter-vs-surfer-seo-01", "shard": "registry-neuronwriter-vs-surfer-seo.json", "axis": "category-bridge", "note": "NeuronWriter's own vendor comparison page characterizing Surfer's pricing/learning curve — cited only as a labeled, self-interested vendor claim, never adopted as neutral fact, per that shard's own honesty_notes." },
+      { "id": "EV-neuronwriter-vs-surfer-seo-02", "shard": "registry-neuronwriter-vs-surfer-seo.json", "axis": "category-bridge", "note": "A named LinkedIn user with 2+ years on NeuronWriter and 1+ year on Surfer reports a solo-vs-team use-case split — corroborates this hub's own persona segmentation (solo-blogger/freelance-writer vs smb-marketer, per 2-persona.json)." },
+      { "id": "EV-neuronwriter-review-09", "shard": "registry-neuronwriter-review.json", "axis": "category-bridge", "note": "One of four independent sources (alongside EV-surfer-seo-review-06 and EV-frase-review-08/09/10) showing the same cross-tool pattern: the scoring/optimization side earns praise, the bundled AI writer reads generic — the generator-vs-optimizer disambiguation this hub states once, early, per 2-semantic.json." },
+      { "id": "EV-surfer-seo-review-06", "shard": "registry-surfer-seo-review.json", "axis": "category-bridge", "note": "Kristian Larsen's first-person account: would keep paying for Surfer's Content Editor alone, but flags the bundled AI writer as needing 30-50% editing — the Surfer-side instance of the same generation-vs-optimization split." },
+      { "id": "EV-frase-review-08", "shard": "registry-frase-review.json", "axis": "category-bridge", "note": "Kripesh Adwani's first-person review: Frase's research/brief generation is the standout, its AI Assistant 'is not the best' — the Frase-side instance of the same split." },
+      { "id": "EV-frase-review-09", "shard": "registry-frase-review.json", "axis": "category-bridge", "note": "Originality.ai's disclosed hands-on test: Frase's generated content is 'solid but a little uninspiring' and gated behind the Pro plan — further corroboration of the bundled-writer-is-secondary pattern." },
+      { "id": "EV-frase-review-10", "shard": "registry-frase-review.json", "axis": "category-bridge", "note": "Behindrankings.com's one-month ranking test: a Frase-drafted article ranked for only 5 keywords vs. a manually-written article's 17 — the strongest single 'AI draft vs. human draft, real published outcome' data point in the cluster's evidence base." }
+    ]
+  },
+  "entries": [
+    {
+      "id": "EV-best-ai-seo-writing-tools-01",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-03",
+          "source_url": "https://www.clearscope.io/pricing",
+          "claim": "MATCH. Essentials $129/month (50 Tracked Queries, 50 Pages, 20 monthly Discoveries, 20 monthly Drafts), Business $399/month (300 / 300 / 50 / 20, Dedicated Account Manager), Enterprise Custom. 'Topic explorations' are now labelled 'Discoveries'. NEW vendor-stated fact: a 14 day free trial, no contracts, cancel monthly plans anytime. Vendor-stated, self-interested. Page /best/ai-seo-writing-tools updated: Clearscope trial cell, FAQ and enterprise section now state the 14-day trial; prices unchanged.",
+          "quote": "Simple, transparent pricing for SEO and AI search visibility. No contracts. No hidden costs. 14 day free trial. Essentials ... $129 /month ... 50 Tracked Queries 50 Pages 20 monthly Discoveries 20 monthly Drafts Business ... $399 /month ... 300 Tracked Queries 300 Pages 50 monthly Discoveries 20 monthly Drafts Dedicated Account Manager Enterprise ... Custom",
+          "supersedes": "nothing (prices confirmed); trial cell 'n/a' replaced",
+          "collector": "refresh-B5-2026-11-03 (live curl, desktop Chrome user-agent, read-only)"
+        }
+      ],
+      "claim": "On its current pricing page (captured 2026-09-19) Clearscope lists three plans — Essentials $129/month (50 tracked queries, 50 pages, 20 monthly topic explorations, 20 monthly drafts), Business $399/month (300 tracked queries, 300 pages, 50 monthly topic explorations, 20 monthly drafts, plus a dedicated account manager), and custom-priced Enterprise — with per-unit add-ons above those caps. Clearscope's entry tier alone ($129/mo) starts above the full monthly price of any tier in Mimo's reviewed trio (Surfer $49-$999+/mo, NeuronWriter $23-$117/mo, Frase $49-$299/mo entry-to-upper bands), confirming Clearscope's position as an enterprise-tier tool above, not a peer of, the three reviewed tools. Vendor-stated, self-interested.",
+      "source_url": "https://www.clearscope.io/pricing",
+      "source_date": "2026-09-19",
+      "quote": "Essentials $129/month: 50 tracked queries, 50 pages, 20 monthly topic explorations, 20 monthly drafts. Business $399/month: 300 tracked queries, 300 pages, 50 monthly topic explorations, 20 monthly drafts, dedicated account manager. Enterprise: custom pricing.",
+      "platform": "clearscope.io/pricing (vendor pricing page — self-interested; captured 2026-09-19)",
+      "target_slug": "/best/ai-seo-writing-tools",
+      "collected_at": "2026-09-19",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "best-ai-seo-writing-tools-2026-09-19",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Clearscope",
+        "aspect": "current 3-tier pricing (vendor-stated) establishing the enterprise-tier band above the reviewed trio",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Essentials $129/mo - Enterprise custom (3 tiers)",
+        "item_date": "2026-09-19"
+      },
+      "honesty_notes": [
+        "Confirms, with a fresh direct vendor fetch, the '$129-399/mo' figure Data/seo/phases/best-ai-seo-writing-tools/1-keyword.json had only estimated from a 2026-09-19 WebSearch pass — this entry upgrades that estimate to a directly-verified vendor capture.",
+        "Additional per-unit add-on pricing exists above the stated caps ($25/mo per extra page on Essentials, $50 per 10 extra drafts) — not folded into the headline price; a reader who exceeds the caps pays more than the sticker.",
+        "Clearscope is listed-not-scored on Mimo — this entry supports ONLY the 'why we scoped to Surfer/NeuronWriter/Frase, here's the tier above them' disclosure, never a scored verdict."
+      ]
+    },
+    {
+      "id": "EV-best-ai-seo-writing-tools-02",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-03",
+          "source_url": "https://www.marketmuse.com/pricing/",
+          "claim": "MATCH. Four tiers (Free, Optimize, Research, Strategy), every one behind a 'Book a demo' button; the extracted page text contains no dollar sign at all. Free: 1 user, 10 queries/month; Optimize: 100 tracked topics, 5 content briefs/month, 1 strategy doc; Research: 1,000 tracked topics, 10 briefs, 3 strategy docs; Strategy: 10K tracked topics, 20 briefs, 5 strategy docs. No page change needed.",
+          "quote": "Free Limited applications 1 user 10 queries/month ... Book a demo Optimize 100 Tracked Topics 5 Content Briefs/month 1 Strategy Docs/month ... Book a demo Research 1000 Tracked Topics 10 Content Briefs/month 3 Strategy Docs/month ... Book a demo Strategy 10K Tracked Topics 20 Content Briefs/month 5 Strategy Docs/month ... Book a demo",
+          "supersedes": "nothing",
+          "collector": "refresh-B5-2026-11-03 (live curl, desktop Chrome user-agent, read-only)"
+        }
+      ],
+      "claim": "MarketMuse's pricing page (captured 2026-09-19) displays no public dollar figures for any of its four named tiers (Free, Optimize, Research, Strategy); each is gated behind a 'Book a demo' call-to-action and differentiated only by usage limits — from Free (1 user, 10 queries/month, no content briefs) up to Strategy (5 users, 10,000 tracked topics, 20 content briefs/month, unlimited queries). This confirms MarketMuse sits in a demo-gated enterprise-sales pricing model structurally different from the three reviewed tools' self-serve, publicly-priced ladders. Vendor-stated, self-interested.",
+      "source_url": "https://www.marketmuse.com/pricing/",
+      "source_date": "2026-09-19",
+      "quote": "Free: 1 user, 10 queries/month, no tracked topics or content briefs. Optimize: 1 user, 100 tracked topics, 5 content briefs/month. Research: 3 users, 1,000 tracked topics, 10 content briefs/month, unlimited queries. Strategy: 5 users, 10,000 tracked topics, 20 content briefs/month.",
+      "platform": "marketmuse.com/pricing (vendor pricing page — self-interested; captured 2026-09-19)",
+      "target_slug": "/best/ai-seo-writing-tools",
+      "collected_at": "2026-09-19",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "best-ai-seo-writing-tools-2026-09-19",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "MarketMuse",
+        "aspect": "demo-gated, no-public-price tier structure (vendor-stated) establishing the second enterprise-tier tool above the reviewed trio",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Free - Strategy (4 tiers, no public dollar amounts)",
+        "item_date": "2026-09-19"
+      },
+      "honesty_notes": [
+        "The ABSENCE of a public price is itself the fact worth reporting: a reader cannot compare MarketMuse's real cost to the reviewed trio's $23-299/mo self-serve ladders without contacting sales — do not estimate or infer a dollar figure MarketMuse itself has not published.",
+        "Confirms 1-keyword.json's prior finding of 'custom/demo-only (no public rate found 2026-09-19)' with a direct vendor-page fetch rather than a WebSearch estimate.",
+        "MarketMuse is a recommended listed-not-scored addition (not yet in lib/tools.ts per 1-keyword.json) — this entry supports only the enterprise-tier-gap disclosure, never a scored verdict."
+      ]
+    },
+    {
+      "id": "EV-best-ai-seo-writing-tools-03",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-03",
+          "source_url": "https://www.scalenut.com/pricing",
+          "claim": "Regular monthly prices MATCH: Starter $59, Plus $89, Professional $199. CHANGED: the annual promotion is now a 'Black Friday Early Access Deal 2026: 65% Off + 3X Limits' at $21 / $31 / $70 per month billed annually (was '60% off', $24 / $36 / $80 on 2026-09-19); time-limited. NEW: monthly plans show 'Try 7 days For free'. Page /best/ai-seo-writing-tools corrected in the comparison table, FAQ and enterprise section (promo now dated to 2026-11-03; regular range unchanged). Vendor-stated, self-interested.",
+          "quote": "Biggest Black Friday Early Access Deal 2026: 65% Off + 3X Limits ... Starter ... $59/mo 65% OFF Early Access $21 /month ... Plus ... $89/mo 65% OFF Early Access $31 /month ... Professional ... $199/mo 65% OFF Early Access $70 /month ... Starter ... $59 /mo Try 7 days For free",
+          "supersedes": "the 2026-09-19 promotional figures ($24 to $80, 60% off), kept above for history",
+          "collector": "refresh-B5-2026-11-03 (live curl, desktop Chrome user-agent, read-only)"
+        }
+      ],
+      "claim": "Scalenut's pricing page (captured 2026-09-19) lists three self-serve annual plans at a stated '60% off' promotional rate — Starter (regular $59/mo, promotional $24/mo, 5-10 articles/month), Plus (regular $89/mo, promotional $36/mo, 30-60 articles/month), Professional (regular $199/mo, promotional $80/mo, 75-150 articles/month, unlimited team members, bundled ChatGPT/Google AIO/Perplexity prompt tracking) — plus a custom-priced VIP done-for-you service tier. At its un-discounted regular price, Scalenut's $59/mo floor sits above NeuronWriter's $23/mo entry and close to Surfer/Frase's $49/mo entry, positioning it as a peer-tier competitor to the reviewed trio rather than an enterprise-tier tool like Clearscope or MarketMuse. Vendor-stated, self-interested.",
+      "source_url": "https://www.scalenut.com/pricing",
+      "source_date": "2026-09-19",
+      "quote": "Starter: Regular $59/mo, Promotional $24/mo, 5-10 articles/month. Plus: Regular $89/mo, Promotional $36/mo, 30-60 articles/month. Professional: Regular $199/mo, Promotional $80/mo, 75-150 articles/month, unlimited team members. 60% off and double your limits on Starter, Plus, and Professional plans.",
+      "platform": "scalenut.com/pricing (vendor pricing page — self-interested; captured 2026-09-19)",
+      "target_slug": "/best/ai-seo-writing-tools",
+      "collected_at": "2026-09-19",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "best-ai-seo-writing-tools-2026-09-19",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Scalenut",
+        "aspect": "current 3-tier promotional pricing plus custom VIP tier (vendor-stated)",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Starter $59/mo ($24/mo promo) - VIP custom (3 self-serve tiers + VIP)",
+        "item_date": "2026-09-19"
+      },
+      "honesty_notes": [
+        "The displayed price is a time-limited promotional rate ('60% off') stacked on top of the regular price — report BOTH figures; the promotional price may not be permanent and a reader who checks later could see a different number.",
+        "Scalenut is already in lib/tools.ts (category: seo) with no reviewSlug/scores/verdict — this entry supports ONLY a dated 'not yet reviewed, here is what it currently costs' disclosure line, never a scored verdict or ranked position.",
+        "Unlike Clearscope/MarketMuse, Scalenut's regular pricing floor sits in the SAME rough band as the reviewed trio, not above it — do not group Scalenut with the 'enterprise-tier gap' framing; it belongs in the 'tools we haven't evidence-swept yet' framing instead."
+      ]
+    },
+    {
+      "id": "EV-best-ai-seo-writing-tools-04",
+      "claim": "NeuronWriter's Capterra profile (captured 2026-09-19, re-fetched successfully after a 403 block on the original 2026-07-13 sweep) shows an aggregate 4.9/5 from 17 reviews — coincidentally the same rating and review count already registered from NeuronWriter's Trustpilot profile (EV-neuronwriter-review-04), independently corroborated here by a different named reviewer. A dated 5-star review (Sean P., CEO, Leisure/Travel/Tourism, 2026-01-10) calls it 'one of the best SEO content creation tools' for managing multiple clients.",
+      "source_url": "https://www.capterra.com/p/10011393/NeuronWriter/reviews/",
+      "source_date": "2026-01-10",
+      "quote": "One of the best SEO content creation tools... Overall so far i think its a great way to write content, especially when managing multiple clients.",
+      "platform": "Capterra (review-platform; aggregate 4.9/5, n=17 as of capture 2026-09-19; this individual review dated 2026-01-10)",
+      "target_slug": "/best/ai-seo-writing-tools",
+      "collected_at": "2026-09-19",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "best-ai-seo-writing-tools-2026-09-19",
+      "screening": "included",
+      "label": "community-report",
+      "coders": ["A", "B"],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "NeuronWriter",
+        "aspect": "second independent review-platform aggregate (Capterra) matching the already-registered Trustpilot aggregate",
+        "stance": "positive",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-01-10"
+      },
+      "honesty_notes": [
+        "The EXACT match (4.9/5, n=17) between NeuronWriter's Trustpilot aggregate (EV-neuronwriter-review-04, captured 2026-07-13) and this Capterra aggregate is a genuine small-sample coincidence, not a fetch error — verified via a second targeted fetch requiring a named-reviewer grounding check, which returned a DIFFERENT reviewer (Sean P.) than either Trustpilot review on file (Tobias F., Joachim K.). Flag this coincidence explicitly if citing both aggregates together, so a reader does not suspect double-counting.",
+        "n=17 on Capterra is a SMALL, platform-specific sample — report only as 'NeuronWriter's 17 Capterra reviews average 4.9/5 as of 2026-09-19', never generalized further, consistent with how the Trustpilot aggregate is already framed."
+      ]
+    },
+    {
+      "id": "EV-best-ai-seo-writing-tools-05",
+      "claim": "A competitor listicle (onelittleweb.com, visible page text reads 'Last Update: August 12, 2026,' captured 2026-09-19) quotes Surfer's platform-aggregate ratings as G2 4.8/5 (538+ reviews) and Capterra 4.9/5 (421+ reviews) — closely corroborating Mimo's own independently-fetched Surfer Capterra capture (4.9/5, n=422, EV-surfer-seo-review-04, 2026-07-16). Across all three reviewed tools, every review-platform aggregate obtained (directly or via a quoting competitor) clusters at 4.8-4.9/5 — materially above Mimo's own MEP-derived verdicts of 3.5/5 (NeuronWriter, Frase) and 3.6/5 (Surfer) for the same three tools. G2 itself was directly unreachable for all three tools this run (3 separate HTTP 403 responses), so Surfer's G2 figure here is cited only as reported by a third-party competitor page, never as Mimo's own direct G2 read.",
+      "source_url": "https://onelittleweb.com/top-tools/best-ai-seo-tools/",
+      "source_date": "2026-08-12",
+      "quote": "Surfer SEO: G2 4.8/5 (538+ reviews); Capterra 4.9/5 (421+ reviews).",
+      "platform": "onelittleweb.com (independent third-party listicle; a live SERP competitor for this hub's target keyword; explicit affiliate disclosure present on the page; page text dated 2026-08-12, captured 2026-09-19)",
+      "target_slug": "/best/ai-seo-writing-tools",
+      "collected_at": "2026-09-19",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "best-ai-seo-writing-tools-2026-09-19",
+      "screening": "included",
+      "label": "research-finding",
+      "coders": ["A", "B"],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "Surfer, NeuronWriter, Frase (ratings-reality reconciliation across all three)",
+        "aspect": "platform-aggregate ratings (self-selected-satisfaction sampling) vs Mimo's own denominator-and-complaint-inclusive MEP verdicts",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-08-12"
+      },
+      "honesty_notes": [
+        "FLAGGED for resolver: coded n/a (a reconciliation of two different measurement systems, not a sentiment about any one tool), but a coder could reasonably want a 'mixed' or 'context' stance tag added — needs an independent second pass.",
+        "This page's visible 'Last Update: August 12, 2026' text differs from a separate technical last-modified signal (2026-09-17) the sibling 1-competitor.json phase pass found in the page's metadata on the same day — both are reported here for transparency; neither is fabricated, they are two different date signals on the same page.",
+        "MUST be framed on the hub as 'these are platform aggregates, not Mimo's verdict' — per 1-competitor.json's own rating_reality_reconciliation finding, G2/Capterra aggregates skew high on self-selected, vendor-solicited satisfaction sampling, while Mimo's 3.5-3.6/5 scores are pulled down by dated, linked, coded community complaints (pricing creep, credit-limit friction, generic AI-writer output, the Ahrefs weak-correlation finding) that a bare star-aggregate never surfaces. State this once, plainly; never imply the two numbers are on the same scale.",
+        "NeuronWriter's own two aggregates (Trustpilot 4.9/5 n=17, EV-neuronwriter-review-04; Capterra 4.9/5 n=17, EV-best-ai-seo-writing-tools-04) and Frase's Capterra aggregate (4.8/5 n=335, EV-frase-review-05) round out the three-tool picture referenced in this claim — reuse those ids directly rather than re-deriving the numbers from this entry."
+      ]
+    },
+    {
+      "id": "EV-best-ai-seo-writing-tools-06",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-03",
+          "source_url": "https://neuronwriter.com/pricing/ (redirects to https://neuronwriter.com/pricing-neuron/)",
+          "claim": "Inputs to the cost-crossover calculation re-checked. NeuronWriter (EV-neuronwriter-review-01, read live 2026-11-03): MATCH on every figure the page uses: Bronze $23, Silver $45, Gold $69, Platinum $93, Diamond $117 per month; 25 / 50 / 75 / 100 / 150 per month; 15,000 to 75,000 AI credits; 7-day free trial under Gold plan terms; refund on the first plan within 30 days. CHANGED wording only: the allowance the July capture called 'content writer analyses' is now labelled 'documents'; plans also list 5 to 20 'AI-monitored questions' (new AI-visibility feature, not used on the page); yearly billing shows '2 months free' ($230 to $1,170/year). Surfer and Frase inputs reused from their 2026-11-02 recaptures (registry-surfer-seo-review.json EV-surfer-seo-review-01: Discovery $49 / 120 documents unchanged; registry-frase-review.json EV-frase-review-01: Starter $49 / 10, Professional $129 / 40, Scale $299 / 100 unchanged), not re-fetched. Crossover table unchanged. The NeuronWriter shard is not edited by this run; the orchestrator should copy this recapture onto EV-neuronwriter-review-01.",
+          "quote": "Bronze plan ... $ 23 /mo $276 $ 230 /year 2 projects 25 documents 5 AI-monitored questions 15,000 AI credits ... Silver plan ... $ 45 /mo ... 50 documents ... Gold plan ... $ 69 /mo ... 75 documents ... Platinum plan ... $ 93 /mo ... 100 documents ... Diamond plan ... $ 117 /mo ... 150 documents ... 75,000 AI credits ... You can test the tool for free after creating an account for 7 days under the Gold plan terms ... request a refund for the first plan purchased on your account within the first 30 days.",
+          "supersedes": "nothing (figures confirmed)",
+          "collector": "refresh-B5-2026-11-03 (live curl, desktop Chrome user-agent, read-only)"
+        }
+      ],
+      "claim": "Mimo's own cross-tool cost-per-unit and cost-crossover calculation (computed 2026-09-19), derived entirely from three already-registered, dated vendor pricing captures (EV-surfer-seo-review-01, captured 2026-07-16; EV-neuronwriter-review-01, captured 2026-07-13; EV-frase-review-01, captured 2026-07-20) and treating one NeuronWriter 'analysis', one Surfer 'document', and one Frase 'article' as equivalent to one optimized article (the same simplifying convention already published on the live /vs/neuronwriter-vs-surfer-seo page for two of the three tools): NeuronWriter is the cheapest total monthly bill up to roughly 50 articles/month (Bronze-Silver, $23-45), Surfer's flat-rate Discovery tier ($49, covering up to 120 documents) overtakes it just above 50/month and stays cheapest through at least 150/month, and Frase is the most expensive option at every tested volume above roughly 10 articles/month, with a severe pricing cliff between its Professional tier (40 articles for $129) and Scale tier (100 articles for $299) that a reader hitting 41 articles/month would fall directly into. This is MIMO'S OWN ARITHMETIC, not a third-party finding, test, or vendor claim — no independent published source performs this three-way calculation, and 0 of 10 competitor pages audited in Data/seo/phases/best-ai-seo-writing-tools/1-competitor.json compute any per-article cost math for any tool.",
+      "source_url": null,
+      "source_date": "2026-09-19",
+      "quote": null,
+      "platform": "Mimo-derived calculation (internal arithmetic, not a fetched external source) — computed 2026-09-19 from three already-verified, dated vendor pricing captures; no verbatim quote applies",
+      "target_slug": "/best/ai-seo-writing-tools",
+      "collected_at": "2026-09-19",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "best-ai-seo-writing-tools-2026-09-19",
+      "screening": "included",
+      "label": "research-finding",
+      "coders": ["A", "B"],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "Surfer, NeuronWriter, Frase (three-way cost-math synthesis)",
+        "aspect": "per-unit cost rate + cheapest-tier-at-volume crossover analysis across all three reviewed tools' own metering units",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-09-19"
+      },
+      "derived_from": ["EV-surfer-seo-review-01", "EV-neuronwriter-review-01", "EV-frase-review-01"],
+      "computation_table": {
+        "per_unit_rates": {
+          "NeuronWriter (per analysis)": { "Bronze $23/25": "$0.92", "Silver $45/50": "$0.90", "Gold $69/75": "$0.92", "Platinum $93/100": "$0.93", "Diamond $117/150": "$0.78" },
+          "Surfer (per document)": { "Discovery $49/120": "$0.41", "Standard $99/360": "$0.28", "Pro/Peace of Mind/Enterprise": "allowance not stated in captured pricing, no rate computed" },
+          "Frase (per article)": { "Starter $49/10": "$4.90", "Professional $129/40": "$3.23", "Scale $299/100": "$2.99", "Enterprise": "custom, no rate computed" }
+        },
+        "cheapest_total_bill_by_monthly_volume": {
+          "10 articles/mo": "NeuronWriter Bronze $23 (Surfer Discovery $49, Frase Starter $49)",
+          "25 articles/mo": "NeuronWriter Bronze $23 at its ceiling (Surfer Discovery $49, Frase must jump to Professional $129 — Starter's 10-article cap is far short)",
+          "50 articles/mo": "NeuronWriter Silver $45 at its ceiling (Surfer Discovery $49, Frase must jump to Scale $299 — Professional's 40-article cap is short)",
+          "51-120 articles/mo": "Surfer Discovery $49 becomes cheapest (NeuronWriter needs Gold $69 to Diamond $117 depending on volume; Frase stays at Scale $299 or higher)",
+          "121-150 articles/mo": "Surfer Standard $99 remains cheapest (NeuronWriter Diamond $117 at its ceiling — no higher NeuronWriter tier is published; Frase exceeds Scale, requiring custom Enterprise pricing)",
+          "200+ articles/mo": "Surfer Standard $99 (360-document ceiling) is the only reviewed tool with a published tier still covering this volume; NeuronWriter has no disclosed tier above Diamond's 150-analysis ceiling, and Frase requires custom Enterprise pricing"
+        }
+      },
+      "honesty_notes": [
+        "FLAGGED for resolver: this entry extends an existing two-tool simplifying convention (1 analysis = 1 document, already live on /vs/neuronwriter-vs-surfer-seo) to a THIRD tool's differently-named unit (Frase's 'article'). Frase's own page already describes one 'article' allowance unit as 'a full brief-and-optimize workflow on a single piece' — the same scope as a NeuronWriter analysis or Surfer document — but a resolver should confirm this equivalence is fair before the hub states it as settled fact.",
+        "This is NOT a claim that any tool is 'better' — cheaper per unit at volume says nothing about output quality, and NeuronWriter's cheaper analyses still carry the separate AI-credit-exhaustion risk documented in EV-neuronwriter-review-02/EV-neuronwriter-review-10, while Surfer's Content Editor credits have their own documented ceiling (EV-surfer-seo-review-04). Present cost math and quality/ceiling findings together, never cost math alone as a verdict.",
+        "Pro's, Peace of Mind's, and Enterprise's exact document allowances were never disclosed in Surfer's captured pricing page (per EV-surfer-seo-review-01's own honesty_notes) — no per-unit rate is computed for those tiers; do not invent one.",
+        "Frase's Professional-to-Scale cliff (40 articles for $129 vs 100 articles for $299, a $170 jump for 60 more articles) is the single most actionable, competitor-differentiating number in this entry — 0/10 audited competitor pages surface anything like it.",
+        "This entry has no external source_url because it is Mimo's own computation, not a third-party fact — the underlying facts it computes FROM (the three tools' pricing) are each independently registered, dated, and already verified in their own shards; only the arithmetic is new."
+      ]
+    }
+  ]
+}

@@ -1,9 +1,44 @@
 {
   "protocol": "MEP-1.0",
   "site": "mimoaitools.com",
-  "updated": "2026-10-31",
+  "updated": "2026-11-10",
   "note": "Per-page evidence shards. Each EV id is cited inline in the matching Mimo article. See README.",
   "shards": [
+    {
+      "file": "registry-best-ai-seo-writing-tools.json",
+      "page": "/best-ai-seo-writing-tools",
+      "entries": 6
+    },
+    {
+      "file": "registry-best-ai-video-generators.json",
+      "page": "/best-ai-video-generators",
+      "entries": 22
+    },
+    {
+      "file": "registry-best-ai-voice-generators.json",
+      "page": "/best/ai-voice-generators",
+      "entries": 21
+    },
+    {
+      "file": "registry-clearscope-review.json",
+      "page": "/clearscope-review",
+      "entries": 41
+    },
+    {
+      "file": "registry-elevenlabs-review.json",
+      "page": "/tools/elevenlabs",
+      "entries": 17
+    },
+    {
+      "file": "registry-elevenlabs-vs-wellsaid-labs.json",
+      "page": "/elevenlabs-vs-wellsaid-labs",
+      "entries": 8
+    },
+    {
+      "file": "registry-evidence-ai-voice-generators.json",
+      "page": "/evidence-ai-voice-generators",
+      "entries": 49
+    },
     {
       "file": "registry-evidence-ai-writing-tools.json",
       "page": "/evidence-ai-writing-tools",
@@ -15,14 +50,39 @@
       "entries": 12
     },
     {
+      "file": "registry-heygen-review.json",
+      "page": "/tools/heygen",
+      "entries": 18
+    },
+    {
+      "file": "registry-how-to-make-an-ai-avatar-video.json",
+      "page": "/guides/how-to-make-an-ai-avatar-video",
+      "entries": 41
+    },
+    {
+      "file": "registry-humanizemyai-review.json",
+      "page": "/tools/humanizemyai",
+      "entries": 24
+    },
+    {
       "file": "registry-jasper-alternatives.json",
       "page": "/jasper-alternatives",
-      "entries": 6
+      "entries": 7
     },
     {
       "file": "registry-jasper-review.json",
       "page": "/jasper-review",
       "entries": 3
+    },
+    {
+      "file": "registry-kling-ai-review.json",
+      "page": "/tools/kling-ai",
+      "entries": 21
+    },
+    {
+      "file": "registry-kling-ai-vs-runway.json",
+      "page": "/kling-ai-vs-runway",
+      "entries": 6
     },
     {
       "file": "registry-koala-ai-review.json",
@@ -35,6 +95,11 @@
       "entries": 4
     },
     {
+      "file": "registry-murf-review.json",
+      "page": "/tools/murf",
+      "entries": 18
+    },
+    {
       "file": "registry-neuronwriter-review.json",
       "page": "/neuronwriter-review",
       "entries": 12
@@ -45,44 +110,9 @@
       "entries": 2
     },
     {
-      "file": "registry-seowriting-ai-review.json",
-      "page": "/seowriting-ai-review",
-      "entries": 8
-    },
-    {
-      "file": "registry-surfer-seo-review.json",
-      "page": "/surfer-seo-review",
-      "entries": 9
-    },
-    {
-      "file": "registry-writesonic-review.json",
-      "page": "/writesonic-review",
-      "entries": 6
-    },
-    {
-      "file": "registry-best-ai-voice-generators.json",
-      "page": "/best/ai-voice-generators",
+      "file": "registry-runway-review.json",
+      "page": "/tools/runway",
       "entries": 21
-    },
-    {
-      "file": "registry-elevenlabs-review.json",
-      "page": "/tools/elevenlabs",
-      "entries": 17
-    },
-    {
-      "file": "registry-wellsaid-labs-review.json",
-      "page": "/tools/wellsaid-labs",
-      "entries": 17
-    },
-    {
-      "file": "registry-murf-review.json",
-      "page": "/tools/murf",
-      "entries": 18
-    },
-    {
-      "file": "registry-speechify-review.json",
-      "page": "/tools/speechify",
-      "entries": 18
     },
     {
       "file": "registry-rytr-review.json",
@@ -90,35 +120,40 @@
       "entries": 26
     },
     {
-      "file": "registry-how-to-make-an-ai-avatar-video.json",
-      "page": "/guides/how-to-make-an-ai-avatar-video",
-      "entries": 41
+      "file": "registry-seowriting-ai-review.json",
+      "page": "/seowriting-ai-review",
+      "entries": 9
     },
     {
-      "file": "registry-heygen-review.json",
-      "page": "/tools/heygen",
-      "entries": 17
+      "file": "registry-speechify-review.json",
+      "page": "/tools/speechify",
+      "entries": 18
+    },
+    {
+      "file": "registry-surfer-seo-review.json",
+      "page": "/surfer-seo-review",
+      "entries": 9
     },
     {
       "file": "registry-synthesia-review.json",
       "page": "/tools/synthesia",
-      "entries": 22
-    },
-    {
-      "file": "registry-kling-ai-review.json",
-      "page": "/tools/kling-ai",
-      "entries": 21
-    },
-    {
-      "file": "registry-runway-review.json",
-      "page": "/tools/runway",
-      "entries": 21
+      "entries": 23
     },
     {
       "file": "registry-synthesia-vs-heygen.json",
       "page": "/vs/synthesia-vs-heygen",
-      "entries": 15
+      "entries": 19
+    },
+    {
+      "file": "registry-wellsaid-labs-review.json",
+      "page": "/tools/wellsaid-labs",
+      "entries": 17
+    },
+    {
+      "file": "registry-writesonic-review.json",
+      "page": "/writesonic-review",
+      "entries": 6
     }
   ],
-  "total_entries": 341
+  "total_entries": 505
 }

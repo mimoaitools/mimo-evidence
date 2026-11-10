@@ -1,0 +1,2147 @@
+{
+  "_meta": {
+    "flow_id": "clearscope-review-2026-11-01",
+    "protocol_version": "MEP-1.0",
+    "target_slug": "/tools/clearscope",
+    "target_keyword": "clearscope review",
+    "run_date": "2026-11-01",
+    "collector": "evidence-curator",
+    "flow_counter": {
+      "identified": 247,
+      "screened": 247,
+      "excluded": 146,
+      "excluded_by_reason": {
+        "undated": 6,
+        "no-methodology-affiliate": 67,
+        "unverifiable-this-run": 5,
+        "off-topic": 20,
+        "duplicate": 48
+      },
+      "included_items": 101,
+      "included_items_breakdown": {
+        "vendor_and_third_party_pages": 23,
+        "archive_captures_beyond_keyed": 8,
+        "capterra_reviews": 60,
+        "g2_reviews_with_text": 10
+      },
+      "registry_entries_new": 41,
+      "registry_entries_reused": 5,
+      "reused_entries": [
+        "EV-neuronwriter-review-06",
+        "EV-surfer-seo-review-08",
+        "EV-surfer-seo-review-01",
+        "EV-frase-review-01",
+        "EV-neuronwriter-review-01"
+      ],
+      "unit_note": "Unit = one page, archive capture or review. Capterra and G2 reviews are counted per item and registered as counted samples plus quote entries, so included items exceed registry entries. astroturf: 0 detected; none of the affiliate exclusions was classed as a network.",
+      "regeneration_1_note": "2026-11-01: three new pages added (clearscope.io/integrations, neuronwriter pricing, frase.io/pricing). Entries 37 and 41 come from the already counted Clearscope pricing page. Entries 37-41 had one verification pass."
+    },
+    "coder_agreement_rate": null,
+    "coder_note": "Only coding pass A exists at this point; B and resolver run above the curator.",
+    "query_log": [
+      {
+        "id": "Q1",
+        "query": "clearscope review",
+        "type": "search"
+      },
+      {
+        "id": "Q2",
+        "query": "clearscope content grade what does it measure F to A++ documentation",
+        "type": "search"
+      },
+      {
+        "id": "Q3",
+        "query": "clearscope reddit worth it (site restricted to reddit.com)",
+        "type": "search: REFUSED, reddit.com not accessible to the search tool"
+      },
+      {
+        "id": "Q4",
+        "query": "clearscope quora experience review alternative (site restricted to quora.com)",
+        "type": "search"
+      },
+      {
+        "id": "Q5",
+        "query": "clearscope reviews G2 Capterra Trustpilot TrustRadius",
+        "type": "search"
+      },
+      {
+        "id": "Q6",
+        "query": "clearscope content grade correlation rankings study methodology test",
+        "type": "search"
+      },
+      {
+        "id": "Q7",
+        "query": "clearscope vs surfer seo tested head-to-head results",
+        "type": "search"
+      },
+      {
+        "id": "Q8",
+        "query": "clearscope credits ran out expensive switched from clearscope",
+        "type": "search"
+      },
+      {
+        "id": "Q9",
+        "query": "originality.ai study content optimization tools correlation Surfer 26% Clearscope 17.5%",
+        "type": "search"
+      },
+      {
+        "id": "Q10",
+        "query": "clearscope A++ keyword stuffing grade gamed test",
+        "type": "search"
+      },
+      {
+        "id": "Q11",
+        "query": "reddit r/SEO clearscope experience surfer frase which content optimization tool",
+        "type": "search: returned no reddit.com URL"
+      },
+      {
+        "id": "Q12",
+        "query": "clearscope pricing change 2026 Essentials $129 $189 free trial",
+        "type": "search"
+      },
+      {
+        "id": "Q13",
+        "query": "Originality.ai content optimization score correlation Google rankings study Clearscope Surfer MarketMuse Frase 2,000 articles (site restricted to originality.ai)",
+        "type": "search"
+      },
+      {
+        "id": "D1",
+        "query": "Direct vendor reads: clearscope.io pricing, home, legal/tos, support articles, blog rebuttal, Pipedrive case study",
+        "type": "direct"
+      },
+      {
+        "id": "D2",
+        "query": "Direct: Wayback CDX list and captures of clearscope.io/pricing, 2023 onward",
+        "type": "direct"
+      },
+      {
+        "id": "D3",
+        "query": "Direct: Capterra reviews pages 1-3, G2 product reviews, Trustpilot profile",
+        "type": "direct"
+      },
+      {
+        "id": "D4",
+        "query": "Direct: reddit.com search via WebFetch, reddit search.json via curl, reddit via Chrome",
+        "type": "direct: all refused (Unable to fetch / 403 / site blocked by browser safety restriction)"
+      }
+    ],
+    "excluded_candidates": [
+      {
+        "url": "https://ahrefs.com/blog/es/?p=20478",
+        "reason": "duplicate"
+      },
+      {
+        "url": "https://ahrefs.com/blog/es/wp-json/wp/v2/posts/20478",
+        "reason": "duplicate"
+      },
+      {
+        "url": "https://ahrefs.com/de/blog/seo-content-score-study/",
+        "reason": "duplicate"
+      },
+      {
+        "url": "https://ahrefs.com/pt/blog/seo-content-score-study/",
+        "reason": "duplicate"
+      },
+      {
+        "url": "https://clearscope.io/blog/clearscope-vs-marketmuse-vs-surfer",
+        "reason": "duplicate"
+      },
+      {
+        "url": "https://clearscope.io/support/articles/how-does-clearscope-grade-your-content",
+        "reason": "duplicate"
+      },
+      {
+        "url": "https://clearscope.io/support/topics/billing-and-credits",
+        "reason": "duplicate"
+      },
+      {
+        "url": "https://fr.capterra.ca/software/161003/clearscope",
+        "reason": "duplicate"
+      },
+      {
+        "url": "https://g2.com/compare/clearscope-vs-frase-io-vs-grammarly-vs-surfer-surfer",
+        "reason": "duplicate"
+      },
+      {
+        "url": "https://g2.com/compare/clearscope-vs-grammarly-vs-frase-io-vs-surfer-surfer",
+        "reason": "duplicate"
+      },
+      {
+        "url": "https://g2.com/compare/clearscope-vs-se-ranking-vs-marketmuse-vs-surfer-surfer",
+        "reason": "duplicate"
+      },
+      {
+        "url": "https://g2.com/compare/clearscope-vs-writesonic-vs-surfer-surfer-vs-se-ranking-vs-semrush",
+        "reason": "duplicate"
+      },
+      {
+        "url": "https://www.capterra.be/reviews/161003/clearscope",
+        "reason": "duplicate"
+      },
+      {
+        "url": "https://www.capterra.be/software/161003/clearscope",
+        "reason": "duplicate"
+      },
+      {
+        "url": "https://www.capterra.ca/software/161003/clearscope",
+        "reason": "duplicate"
+      },
+      {
+        "url": "https://www.capterra.ch/reviews/161003/clearscope",
+        "reason": "duplicate"
+      },
+      {
+        "url": "https://www.capterra.co.nz/software/161003/clearscope",
+        "reason": "duplicate"
+      },
+      {
+        "url": "https://www.capterra.co.uk/reviews/161003/clearscope",
+        "reason": "duplicate"
+      },
+      {
+        "url": "https://www.capterra.co.uk/software/161003/clearscope",
+        "reason": "duplicate"
+      },
+      {
+        "url": "https://www.capterra.com.br/software/161003/clearscope",
+        "reason": "duplicate"
+      },
+      {
+        "url": "https://www.capterra.com.de/software/161003/clearscope",
+        "reason": "duplicate"
+      },
+      {
+        "url": "https://www.capterra.do/software/161003/clearscope",
+        "reason": "duplicate"
+      },
+      {
+        "url": "https://www.capterra.es/reviews/161003/clearscope",
+        "reason": "duplicate"
+      },
+      {
+        "url": "https://www.capterra.in/software/161003/clearscope",
+        "reason": "duplicate"
+      },
+      {
+        "url": "https://www.capterra.lu/software/161003/clearscope",
+        "reason": "duplicate"
+      },
+      {
+        "url": "https://www.capterra.nl/reviews/161003/clearscope",
+        "reason": "duplicate"
+      },
+      {
+        "url": "https://www.capterra.nl/software/161003/clearscope",
+        "reason": "duplicate"
+      },
+      {
+        "url": "https://www.capterra.pt/software/161003/clearscope",
+        "reason": "duplicate"
+      },
+      {
+        "url": "https://www.clearscope.io/blog/surfer-seo-alternative",
+        "reason": "duplicate"
+      },
+      {
+        "url": "https://www.clearscope.io/support/articles/getting-started-editor",
+        "reason": "duplicate"
+      },
+      {
+        "url": "https://www.clearscope.io/support/articles/how-do-clearscope-credits-work",
+        "reason": "duplicate"
+      },
+      {
+        "url": "https://www.clearscope.io/support/articles/how-do-plan-addons-work",
+        "reason": "duplicate"
+      },
+      {
+        "url": "https://www.clearscope.io/support/articles/why-is-there-sometimes-a-difference-between-grades",
+        "reason": "duplicate"
+      },
+      {
+        "url": "https://www.clearscope.io/support/topics/content-reports",
+        "reason": "duplicate"
+      },
+      {
+        "url": "https://www.clearscope.io/support?page=2",
+        "reason": "duplicate"
+      },
+      {
+        "url": "https://www.clearscope.io/support?page=3",
+        "reason": "duplicate"
+      },
+      {
+        "url": "https://www.g2.com/compare/clearscope",
+        "reason": "duplicate"
+      },
+      {
+        "url": "https://www.g2.com/compare/clearscope-vs-conductor-vs-brightedge-vs-surfer-surfer",
+        "reason": "duplicate"
+      },
+      {
+        "url": "https://www.g2.com/compare/clearscope-vs-frase-io",
+        "reason": "duplicate"
+      },
+      {
+        "url": "https://www.g2.com/compare/clearscope-vs-rytr-vs-grammarly-vs-surfer-surfer-vs-semrush",
+        "reason": "duplicate"
+      },
+      {
+        "url": "https://www.g2.com/compare/clearscope-vs-scalenut-vs-surfer-surfer",
+        "reason": "duplicate"
+      },
+      {
+        "url": "https://www.g2.com/compare/clearscope-vs-seo-powersuite-vs-surfer-surfer",
+        "reason": "duplicate"
+      },
+      {
+        "url": "https://www.g2.com/compare/clearscope-vs-seoclarity-vs-brightedge",
+        "reason": "duplicate"
+      },
+      {
+        "url": "https://www.g2.com/compare/surfer-surfer-vs-the-complete-seo-vs-clearscope",
+        "reason": "duplicate"
+      },
+      {
+        "url": "https://www.g2.com/products/clearscope/reviews_and_filters",
+        "reason": "duplicate"
+      },
+      {
+        "url": "https://www.g2.com/sellers/clearscope",
+        "reason": "duplicate"
+      },
+      {
+        "url": "https://www.getapp.ca/software/112125/clearscope",
+        "reason": "duplicate"
+      },
+      {
+        "url": "https://www.getapp.com/all-software/a/clearscope/",
+        "reason": "duplicate"
+      },
+      {
+        "url": "https://aiflowreview.com/blog/clearscope-pricing",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://aiindigo.com/tutorials/getting-started-with-clearscope-master-ai-driven-content-optimization-for-2026-s",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://aiproductivity.ai/pricing/clearscope/",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://aiproductivity.ai/tools/clearscope/",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://aisotools.com/pricing/clearscope",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://alternativeto.net/software/clearscope/about",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://blacksmith.agency/?p=9371",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://bloggingtips.com/assets/listings/clearscope",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://blogvault.net/surfer-seo-alternatives/",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://business.quora.com/marketing-advertising-resources/best-ai-visibility-tracking-tools",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://business.quora.com/marketing-advertising-resources/best-geo-tools-b2b-marketers",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://costbench.com/changelog/clearscope-price-decrease-2026-02/",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://costbench.com/changelog/clearscope-pricing-update-2026-08/",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://costbench.com/compare/clearscope-vs-rankprompt/",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://costbench.com/software/ai-seo-tools/clearscope/",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://costbench.com/software/ai-seo-tools/clearscope/alternatives/",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://costbench.com/software/ai-seo-tools/clearscope/calculator/",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://costbench.com/software/ai-seo-tools/clearscope/free-plan/",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://costbench.com/software/ai-seo-tools/clearscope/hidden-costs/",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://dev.to/zny10289/best-seo-content-optimization-tools-in-2026-fraseio-vs-surfer-seo-vs-clearscope-we-tested-all-4nca",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://eesel.ai/blog/surfer-seo-vs-clearscope",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://findstack.com/products/clearscope/reviews?page=5",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://firstsales.io/brand-review/clearscope/",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://geekflare.com/software/clearscope-review/",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://genesysgrowth.com/blog/surfer-seo-vs-clearscope-vs-marketmuse",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://geotoolbox.ai/blog/best-content-optimization-tools.md",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://getpulsesignal.com/compare/clearscope-vs-schemaapp",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://guptadeepak.com/tools/top-5-ai-seo-content-optimization-tools-2026/",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://marketermilk.com/blog/clearscope-alternatives",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://profiletree.com/?p=172321",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://rankai.ai/articles/clearscope-alternatives",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://rivalflow.com/blog/surfer-seo-vs-clearscope",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://searchatlas.com/blog/surfer-seo-vs-clearscope/",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://searchatlas.com/surfer-seo-vs-clearscope",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://subger.com/en/service/clearscope",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://subger.com/fr/service/clearscope",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://subscribed.fyi/?p=116212",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://surferseo.com/blog/clearscope-alternatives",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://surferseo.com/blog/surferseo-vs-clearscope/",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://surferseo.com/vs/clearscope",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://thestacc.com/blog/content-score-rankings-study/",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://thestacc.com/reviews/clearscope/",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://toolhalla.ai/compare/surfer-seo-vs-clearscope",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://toolradar.com/tools/clearscope/pricing",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://top50aitools.com/clearscope",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://ustechautomations.com/resources/blog/clearscope-vs-frase-2026",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://ustechautomations.com/resources/blog/clearscope-vs-us-tech-automations-2026",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://vantaige.io/ai-tool/surfer-seo",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://vantaige.io/fr/ai-tool/surfer-seo",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://www.costbench.com/compare/surfer-seo-vs-clearscope/",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://www.costbench.com/software/ai-seo-tools/clearscope/negotiation/",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://www.dashword.com/clearscope-vs-frase",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://www.digitechwebdesignaustin.com/resource/surferseo-vs-clearscope",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://www.eesel.ai/blog/clearscope-pricing",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://www.itechguides.com/products/clearscope/",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://www.madx.digital/learn/clearscope-alternatives",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://www.marketermilk.com/blog/clearscope-review",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://www.performance-suite.io/keyword-db/de-de/Clearscope/",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://www.performance-suite.io/keyword-db/de-de/clearscope/",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://www.rankability.com/blog/clearscope-content-optimization-tool-review/",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://www.rankability.com/comparisons/clearscope-vs-surfer-vs-rankability/",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://www.saaspricepulse.com/blog/clearscope-pricing-history",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://www.singlegrain.com/?p=33375",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://www.singlegrain.com/seo/surferseo-vs-clearscope/",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://www.stackscored.com/pricing/seo-content-tools/clearscope/",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://zoftwarehub.com/ar-ae/products/clearscope/pricing",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://zoftwarehub.com/en-ae/products/clearscope/reviews",
+        "reason": "no-methodology-affiliate"
+      },
+      {
+        "url": "https://arxiv.org/pdf/2602.01560",
+        "reason": "off-topic"
+      },
+      {
+        "url": "https://originality.ai/ai-content-in-google-search-results",
+        "reason": "off-topic"
+      },
+      {
+        "url": "https://originality.ai/blog/adsense-rejects-site-ai-content",
+        "reason": "off-topic"
+      },
+      {
+        "url": "https://originality.ai/blog/ai-overview-ai-citations-study",
+        "reason": "off-topic"
+      },
+      {
+        "url": "https://originality.ai/blog/best-readability-score-to-rank-in-google",
+        "reason": "off-topic"
+      },
+      {
+        "url": "https://originality.ai/blog/originality-ai-updated-website-scanner",
+        "reason": "off-topic"
+      },
+      {
+        "url": "https://originality.ai/blog/predictive-seo-content-optimization-accuracy",
+        "reason": "off-topic"
+      },
+      {
+        "url": "https://originality.ai/blog/writer-checker",
+        "reason": "off-topic"
+      },
+      {
+        "url": "https://originality.ai/categories/ai-studies",
+        "reason": "off-topic"
+      },
+      {
+        "url": "https://thestacc.com/es/resenas/clearscope/",
+        "reason": "off-topic"
+      },
+      {
+        "url": "https://thestacc.com/it/blog/content-score-rankings-study/",
+        "reason": "off-topic"
+      },
+      {
+        "url": "https://www.getapp.co.uk/reviews/112125/clearscope",
+        "reason": "off-topic"
+      },
+      {
+        "url": "https://www.quora.com/%E2%80%9CWhat-is-the-best-service-for-monitoring-online-reviews-and-getting%E2%80%9D",
+        "reason": "off-topic"
+      },
+      {
+        "url": "https://www.quora.com/What-are-alternatives-to-market-Muse-for-content-optimization",
+        "reason": "off-topic"
+      },
+      {
+        "url": "https://www.quora.com/What-are-some-Quora-alternatives-in-2024-What-are-10-sites-like-Quora",
+        "reason": "off-topic"
+      },
+      {
+        "url": "https://www.quora.com/What-are-some-alternatives-to-Quora-1?top_ans=31911045",
+        "reason": "off-topic"
+      },
+      {
+        "url": "https://www.quora.com/What-are-the-best-AI-powered-SEO-tools-available-in-2024",
+        "reason": "off-topic"
+      },
+      {
+        "url": "https://www.quora.com/What-other-sites-are-better-than-Quora-since-Quora-is-now-limiting-questions-to-starting-with-only-3-interrogatives-and-does-not-believe-in-transparency-or-a-satisfactory-user-experience-How-should-we-start-a-competitor?top_ans=64305356",
+        "reason": "off-topic"
+      },
+      {
+        "url": "https://www.quora.com/Which-AI-tools-are-best-for-SEO-content-generation",
+        "reason": "off-topic"
+      },
+      {
+        "url": "https://www.quora.com/Which-tool-is-better-for-SEO-content-optimization-Content-Raptor-SurferSEO-or-Clearscope",
+        "reason": "off-topic"
+      },
+      {
+        "url": "https://aischool.lillytechsystems.com/ai-content-optimization/clearscope.html",
+        "reason": "undated"
+      },
+      {
+        "url": "https://gp.demandcurve.com/lessons/clearscope",
+        "reason": "undated"
+      },
+      {
+        "url": "https://www.copy.ai/go-to-market-tools/clearscope-review",
+        "reason": "undated"
+      },
+      {
+        "url": "https://www.demandcurve.com/lessons/clearscope",
+        "reason": "undated"
+      },
+      {
+        "url": "https://www.scripted.com/tool-review/clearscope-tool-review-scripted",
+        "reason": "undated"
+      },
+      {
+        "url": "https://www.tooljunction.io/ai-tools/clearscope",
+        "reason": "undated"
+      },
+      {
+        "url": "https://letterdrop.com/blog/clearscope-vs-surfer-seo",
+        "reason": "unverifiable-this-run"
+      },
+      {
+        "url": "https://marketbetter.ai/blog/tags/clearscope-vs-surfer-seo/",
+        "reason": "unverifiable-this-run"
+      },
+      {
+        "url": "https://marketbetter.ai/blog/tags/seo-content-tools/",
+        "reason": "unverifiable-this-run"
+      },
+      {
+        "url": "https://searchatlas.com/clearscope-review",
+        "reason": "unverifiable-this-run"
+      },
+      {
+        "url": "https://www.reddit.com/r/SEO/search/?q=clearscope&restrict_sr=1",
+        "reason": "unverifiable-this-run"
+      }
+    ],
+    "reporting_lock": "Defined-sample counts only, with denominator and date window. No population percentages. Traffic lifts stay self-reported anecdotes. Ahrefs figures are correlations.",
+    "live_price_result": {
+      "essentials": "$129/month",
+      "business": "$399/month",
+      "enterprise": "Custom",
+      "source": "https://www.clearscope.io/pricing",
+      "read_on": "2026-11-01",
+      "read_via": "WebFetch and raw HTML",
+      "conflict_note": "$189 was the vendor price through at least 2025-09-10 and survives in the vendor's own add-on help article and third-party pages."
+    },
+    "coder_note_regeneration_1": "Entries 37-41 are single-pass, not double-coded.",
+    "publish_day_recapture": {
+      "date": "2026-11-10",
+      "method": "WebFetch only",
+      "re_read_unchanged": [
+        "EV-clearscope-review-01",
+        "EV-clearscope-review-02",
+        "EV-clearscope-review-03",
+        "EV-clearscope-review-04",
+        "EV-clearscope-review-05",
+        "EV-clearscope-review-13",
+        "EV-clearscope-review-34 (inputs)",
+        "EV-clearscope-review-36",
+        "EV-clearscope-review-37",
+        "EV-clearscope-review-38",
+        "EV-clearscope-review-39",
+        "EV-clearscope-review-40",
+        "EV-clearscope-review-41"
+      ],
+      "not_re_read": [
+        "EV-clearscope-review-23 Capterra (HTTP 403)",
+        "EV-clearscope-review-30 G2 (HTTP 403)",
+        "linkedin.com/company/clearscope sameAs (HTTP 403)",
+        "all other entries (not attempted on this day)"
+      ],
+      "surfer_row": "Surfer Discovery input now cites the 2026-11-02 recapture on EV-surfer-seo-review-01 ($49 billed yearly / 120 documents); see the recapture on EV-clearscope-review-34.",
+      "affiliate_check": "No affiliate, partner or referral link on the pricing page or homepage footer; /affiliates and /partners returned HTTP 404."
+    }
+  },
+  "entries": [
+    {
+      "id": "EV-clearscope-review-01",
+      "claim": "On 2026-11-01 Clearscope's own pricing page prints Essentials at $129/month with 50 tracked queries, 50 pages, 20 monthly Discoveries and 20 monthly Drafts. This settles the $129 vs $189 conflict for the entry plan: the vendor page says $129. Vendor-stated, self-interested.",
+      "source_url": "https://www.clearscope.io/pricing",
+      "source_date": "2026-11-01",
+      "quote": "Essentials Everything you need to get started optimizing content. $129 /month Start for free 50 Tracked Queries 50 Pages 20 monthly Discoveries 20 monthly Drafts",
+      "platform": "clearscope.io (vendor page, self-interested)",
+      "target_slug": "/tools/clearscope",
+      "collected_at": "2026-11-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "clearscope-review-2026-11-01",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "coder-A",
+        "coder-B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Clearscope",
+        "aspect": "pricing: Essentials list price and allowances",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Essentials",
+        "item_date": "2026-11-01"
+      },
+      "verification": "WebFetch and curl raw HTML 2026-11-01",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-10",
+          "source_url": "https://www.clearscope.io/pricing",
+          "claim": "MATCH with 2026-11-01. Essentials $129/month with 50 Tracked Queries, 50 Pages, 20 monthly Discoveries and 20 monthly Drafts.",
+          "quote": "Essentials $129/month ... 50 Tracked Queries, 50 Pages, 20 monthly Discoveries, 20 monthly Drafts",
+          "supersedes": "nothing (confirmed)",
+          "collector": "phase-5-publish-recapture-2026-11-10 (WebFetch only; quotes are the page text as extracted by the fetch tool)"
+        }
+      ]
+    },
+    {
+      "id": "EV-clearscope-review-02",
+      "claim": "On 2026-11-01 the pricing page prints Business at $399/month with 300 tracked queries, 300 pages, 50 monthly Discoveries and the same 20 monthly Drafts as Essentials, plus a dedicated account manager; Enterprise is custom-priced. The Draft allowance does not rise from Essentials to Business. Vendor-stated, self-interested.",
+      "source_url": "https://www.clearscope.io/pricing",
+      "source_date": "2026-11-01",
+      "quote": "Business Advanced functionality for productive content teams. $399 /month Start for free 300 Tracked Queries 300 Pages 50 monthly Discoveries 20 monthly Drafts Dedicated Account Manager",
+      "platform": "clearscope.io (vendor page, self-interested)",
+      "target_slug": "/tools/clearscope",
+      "collected_at": "2026-11-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "clearscope-review-2026-11-01",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "coder-A",
+        "coder-B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Clearscope",
+        "aspect": "pricing: Business and Enterprise, flat Draft allowance",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Business",
+        "item_date": "2026-11-01"
+      },
+      "verification": "WebFetch and curl raw HTML 2026-11-01",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-10",
+          "source_url": "https://www.clearscope.io/pricing",
+          "claim": "MATCH with 2026-11-01. Business $399/month with 300 Tracked Queries, 300 Pages, 50 monthly Discoveries, 20 monthly Drafts and a Dedicated Account Manager; Enterprise is Custom.",
+          "quote": "Business $399/month ... 300 Tracked Queries, 300 Pages, 50 monthly Discoveries, 20 monthly Drafts, Dedicated Account Manager ... Enterprise Custom",
+          "supersedes": "nothing (confirmed)",
+          "collector": "phase-5-publish-recapture-2026-11-10 (WebFetch only; quotes are the page text as extracted by the fetch tool)"
+        }
+      ]
+    },
+    {
+      "id": "EV-clearscope-review-03",
+      "claim": "The pricing page add-on table prints additional Drafts at $50 (Essentials) and $20 (Business) with the selector defaulting to 10, tracked queries at $6.50/mo and $5.50/mo, and pages at $25/mo and $15/mo. The Draft row, unlike the other two, prints no /mo period. The page and query selectors start at 100 and 10; EV-clearscope-review-05 gives the pages unit as per additional 100, and the query unit is not spelled out. Vendor-stated, self-interested.",
+      "source_url": "https://www.clearscope.io/pricing",
+      "source_date": "2026-11-01",
+      "quote": "Additional Drafts: 10 20 30 50 100 200 500 $50 $20 Custom",
+      "platform": "clearscope.io (vendor page, self-interested)",
+      "target_slug": "/tools/clearscope",
+      "collected_at": "2026-11-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "clearscope-review-2026-11-01",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "coder-A",
+        "coder-B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Clearscope",
+        "aspect": "pricing: add-on rates",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Essentials, Business",
+        "item_date": "2026-11-01"
+      },
+      "verification": "WebFetch and curl raw HTML 2026-11-01",
+      "ambiguity_flag": "Reading the $50/$20 as the price of 10 Drafts rests on the selector's first option; the static HTML does not show other tiers.",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-10",
+          "source_url": "https://www.clearscope.io/pricing",
+          "claim": "MATCH with 2026-11-01 on every printed rate. Additional Drafts $50 (Essentials) and $20 (Business) with no /mo period on that row; Additional Tracked Queries $6.50/mo and $5.50/mo; Additional Pages $25/mo and $15/mo; Enterprise Custom. Selector option lists start at 10 (queries), 100 (pages) and 10 (Drafts). The text extraction used on this day does not show which option is preselected, so the 2026-11-01 reading of the defaults stands unchecked.",
+          "quote": "Additional Tracked Queries: 10 20 30 50 100 200 500 $6.50/mo $5.50/mo Custom ... Additional Pages: 100 200 300 500 1,000 2,000 5,000 $25/mo $15/mo Custom ... Additional Drafts: 10 20 30 50 100 200 500 $50 $20 Custom",
+          "supersedes": "nothing (confirmed)",
+          "collector": "phase-5-publish-recapture-2026-11-10 (WebFetch only; quotes are the page text as extracted by the fetch tool)"
+        }
+      ]
+    },
+    {
+      "id": "EV-clearscope-review-04",
+      "claim": "On 2026-11-01 the pricing page advertises a 14-day free trial and no contracts, with 'Start for free' on every plan, and says monthly plans can be cancelled without penalty. Vendor-stated, self-interested.",
+      "source_url": "https://www.clearscope.io/pricing",
+      "source_date": "2026-11-01",
+      "quote": "Simple, transparent pricing for SEO and AI search visibility. No contracts. No hidden costs. 14 day free trial.",
+      "platform": "clearscope.io (vendor page, self-interested)",
+      "target_slug": "/tools/clearscope",
+      "collected_at": "2026-11-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "clearscope-review-2026-11-01",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "coder-A",
+        "coder-B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Clearscope",
+        "aspect": "free trial and contract terms as advertised",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-11-01"
+      },
+      "verification": "WebFetch and curl raw HTML 2026-11-01",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-10",
+          "source_url": "https://www.clearscope.io/pricing",
+          "claim": "MATCH with 2026-11-01. The page subtitle prints a 14 day free trial, plan buttons read Start for free, and the FAQ says monthly plans have no minimum contract and can be cancelled anytime without penalty.",
+          "quote": "14 day free trial ... Start for free ... There's no minimum contract with our monthly plans. Cancel anytime without penalty or hassle.",
+          "supersedes": "nothing (confirmed)",
+          "collector": "phase-5-publish-recapture-2026-11-10 (WebFetch only; quotes are the page text as extracted by the fetch tool)"
+        }
+      ]
+    },
+    {
+      "id": "EV-clearscope-review-05",
+      "claim": "Clearscope's own help article on add-ons still uses a worked example of an Essentials plan at $189/month with 100 Content Inventory pages, which disagrees with the $129 / 50 pages on the live pricing page. A vendor document still printing $189 is one traceable source of the conflicting figure; the article itself sends readers to the Pricing page for current rates.",
+      "source_url": "https://www.clearscope.io/support/how-do-plan-addons-work",
+      "source_date": "2026-11-01",
+      "quote": "$189 per month 20 Drafts 100 Content Inventory pages (+$25 per additional 100 pages)",
+      "platform": "clearscope.io (vendor page, self-interested)",
+      "target_slug": "/tools/clearscope",
+      "collected_at": "2026-11-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "clearscope-review-2026-11-01",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "coder-A",
+        "coder-B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Clearscope",
+        "aspect": "pricing: stale figure inside vendor docs",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Essentials",
+        "item_date": "2026-11-01"
+      },
+      "verification": "curl raw HTML + text extraction 2026-11-01",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-10",
+          "source_url": "https://www.clearscope.io/support/how-do-plan-addons-work",
+          "claim": "MATCH with 2026-11-01. The add-on help article still uses a worked example of Essentials at $189 per month with 20 Drafts and 100 Content Inventory pages (+$25 per additional 100 pages), rising to $239 per month after 200 extra pages, and still points to the Pricing page for current add-on rates. No last-updated date on the page.",
+          "quote": "$189 per month ... 20 Drafts ... 100 Content Inventory pages (+$25 per additional 100 pages) ... $189 per month + $50 for an additional 200 pages ... You can find the current addon rates on our Pricing page.",
+          "supersedes": "nothing (confirmed)",
+          "collector": "phase-5-publish-recapture-2026-11-10 (WebFetch only; quotes are the page text as extracted by the fetch tool)"
+        }
+      ]
+    },
+    {
+      "id": "EV-clearscope-review-06",
+      "claim": "Archived captures of clearscope.io/pricing print Essentials at $170/mo (2023-03-01), $199/month with Business $599 (2024-02-05), $189 with Business $399 (2024-10-04 through 2025-09-10) and $129 (2025-10-14 onward, including 2026-10-05). The move to $129 therefore falls between the 2025-09-10 and 2025-10-14 captures; the exact day is not known. Allowances changed too: 100 Inventory pages at $189, 50 pages at $129. Vendor pages, self-interested, read through the Internet Archive. The 2023-03-01 capture prints Business as Custom pricing.",
+      "source_url": "https://web.archive.org/web/20251014140246/https://www.clearscope.io/pricing",
+      "source_date": "2025-10-14",
+      "quote": "Essentials Everything you need to get started optimizing content. $129 /month Start now 20 AI Tracked Topics 20 monthly Topic Explorations 20 monthly AI Drafts 50 Content Inventory",
+      "platform": "web.archive.org capture of clearscope.io/pricing (vendor page, self-interested)",
+      "target_slug": "/tools/clearscope",
+      "collected_at": "2026-11-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "clearscope-review-2026-11-01",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "coder-A",
+        "coder-B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Clearscope",
+        "aspect": "price history",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Essentials",
+        "item_date": "2025-10-14"
+      },
+      "verification": "Wayback Machine id_ capture fetched 2026-11-01",
+      "captures": {
+        "2023-03-01": "https://web.archive.org/web/20230301062718/https://www.clearscope.io/pricing",
+        "2024-02-05": "https://web.archive.org/web/20240205030042/https://www.clearscope.io/pricing",
+        "2024-10-04": "https://web.archive.org/web/20241004183957/https://www.clearscope.io/pricing",
+        "2025-05-22": "https://web.archive.org/web/20250522004952/https://www.clearscope.io/pricing",
+        "2025-09-10": "https://web.archive.org/web/20250910083717/https://www.clearscope.io/pricing",
+        "2025-10-14": "https://web.archive.org/web/20251014140246/https://www.clearscope.io/pricing",
+        "2026-05-05": "https://web.archive.org/web/20260505143925/https://www.clearscope.io/pricing",
+        "2026-10-05": "https://web.archive.org/web/20261005085106/https://www.clearscope.io/pricing"
+      },
+      "add_on_history": "Draft/report add-on on the same captures: $100 Essentials and $30 Business on 2025-05-22; $50 and $20 on 2025-10-14."
+    },
+    {
+      "id": "EV-clearscope-review-07",
+      "claim": "The trial is recent on the pricing page: the 2026-07-10 capture shows 'Start now' and no trial wording, the 2026-09-01 capture shows '14 day free trial'. Reviews stating 'no free trial' may simply predate this; TechRadar's is dated 2026-02-21 (see EV-clearscope-review-22).",
+      "source_url": "https://web.archive.org/web/20260901104415/https://www.clearscope.io/pricing",
+      "source_date": "2026-09-01",
+      "quote": "No contracts. No hidden costs. 14 day free trial.",
+      "platform": "web.archive.org capture of clearscope.io/pricing (vendor page, self-interested)",
+      "target_slug": "/tools/clearscope",
+      "collected_at": "2026-11-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "clearscope-review-2026-11-01",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "coder-A",
+        "coder-B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Clearscope",
+        "aspect": "free trial: when it appeared",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-09-01"
+      },
+      "verification": "Wayback Machine id_ capture fetched 2026-11-01",
+      "captures": {
+        "2026-07-10": "https://web.archive.org/web/20260710170255/https://www.clearscope.io/pricing",
+        "2026-09-01": "https://web.archive.org/web/20260901104415/https://www.clearscope.io/pricing"
+      }
+    },
+    {
+      "id": "EV-clearscope-review-08",
+      "claim": "Clearscope's support centre defines the Content Grade as a measure of relevance and comprehensiveness, expressed as inclusion of the most relevant terms. Vendor-stated, self-interested.",
+      "source_url": "https://www.clearscope.io/support/how-does-clearscope-grade-your-content",
+      "source_date": "2026-11-01",
+      "quote": "Content Grades are Clearscope’s measure of content relevance and comprehensiveness. The higher the grade, the more your content included the most relevant terms necessary to cover a topic.",
+      "platform": "clearscope.io (vendor page, self-interested)",
+      "target_slug": "/tools/clearscope",
+      "collected_at": "2026-11-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "clearscope-review-2026-11-01",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "coder-A",
+        "coder-B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Clearscope",
+        "aspect": "what the grade measures",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-11-01"
+      },
+      "verification": "curl raw HTML + text extraction 2026-11-01"
+    },
+    {
+      "id": "EV-clearscope-review-09",
+      "claim": "Vendor docs say term importance comes from scraping top-ranking content and how much a keyword appears in competitors' articles, on a 1 to 10 scale. So the grade is built from what already ranks; the page describes no input from rankings achieved after publishing. Vendor-stated, self-interested.",
+      "source_url": "https://www.clearscope.io/support/how-does-clearscope-grade-your-content",
+      "source_date": "2026-11-01",
+      "quote": "Clearscope scrapes the top-ranking content on the search engine results page (SERP) and calculates the importance of each term by how much the keyword appears in the competitors’ articles.",
+      "platform": "clearscope.io (vendor page, self-interested)",
+      "target_slug": "/tools/clearscope",
+      "collected_at": "2026-11-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "clearscope-review-2026-11-01",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "coder-A",
+        "coder-B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Clearscope",
+        "aspect": "how term importance is calculated",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-11-01"
+      },
+      "verification": "curl raw HTML + text extraction 2026-11-01"
+    },
+    {
+      "id": "EV-clearscope-review-10",
+      "claim": "The vendor's Editor guide says adding suggested terms raises the grade and A++ is the top score. It does not, on this page, publish the formula or the term share behind each letter. Vendor-stated, self-interested.",
+      "source_url": "https://www.clearscope.io/support/getting-started-editor",
+      "source_date": "2026-11-01",
+      "quote": "Including more of these suggested terms will increase your Content Grade, with the highest score being an A++.",
+      "platform": "clearscope.io (vendor page, self-interested)",
+      "target_slug": "/tools/clearscope",
+      "collected_at": "2026-11-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "clearscope-review-2026-11-01",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "coder-A",
+        "coder-B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Clearscope",
+        "aspect": "grade scale and how to raise it",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-11-01"
+      },
+      "verification": "curl raw HTML + text extraction 2026-11-01"
+    },
+    {
+      "id": "EV-clearscope-review-11",
+      "claim": "Vendor docs say Content Inventory grades run daily against the original SERP, with a fresh SERP fetched 30 days after initial grading, while a Draft is a snapshot from its creation moment, so the same page can carry two grades. Vendor-stated, self-interested.",
+      "source_url": "https://www.clearscope.io/support/why-is-there-sometimes-a-difference-between-grades",
+      "source_date": "2026-11-01",
+      "quote": "Clearscope will fetch an updated SERP for each query 30 days after the initial grading and then reevaluates your content against this latest SERP.",
+      "platform": "clearscope.io (vendor page, self-interested)",
+      "target_slug": "/tools/clearscope",
+      "collected_at": "2026-11-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "clearscope-review-2026-11-01",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "coder-A",
+        "coder-B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Clearscope",
+        "aspect": "Inventory vs Draft grade differences",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-11-01"
+      },
+      "verification": "curl raw HTML + text extraction 2026-11-01"
+    },
+    {
+      "id": "EV-clearscope-review-12",
+      "claim": "Vendor docs say Topic Exploration and Draft credits arrive each billing cycle; one credit per Draft or exploration run; unused credits do not roll over on monthly plans; annual plans get all credits upfront; Inventory pages stay in place while a customer. Vendor-stated, self-interested.",
+      "source_url": "https://www.clearscope.io/support/how-do-clearscope-credits-work",
+      "source_date": "2026-11-01",
+      "quote": "For monthly subscriptions, you receive a set of new Topic Exploration and Draft credits, but any unused ones don't rollover from month to month.",
+      "platform": "clearscope.io (vendor page, self-interested)",
+      "target_slug": "/tools/clearscope",
+      "collected_at": "2026-11-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "clearscope-review-2026-11-01",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "coder-A",
+        "coder-B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Clearscope",
+        "aspect": "credits: consumption and rollover",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-11-01"
+      },
+      "verification": "curl raw HTML + text extraction 2026-11-01"
+    },
+    {
+      "id": "EV-clearscope-review-13",
+      "claim": "Vendor docs say add-ons are billed automatically when a customer exceeds an included credit type. Vendor-stated, self-interested.",
+      "source_url": "https://www.clearscope.io/support/how-do-plan-addons-work",
+      "source_date": "2026-11-01",
+      "quote": "Plan addons are automatically billed to your subscription if you exceed your included credit type.",
+      "platform": "clearscope.io (vendor page, self-interested)",
+      "target_slug": "/tools/clearscope",
+      "collected_at": "2026-11-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "clearscope-review-2026-11-01",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "coder-A",
+        "coder-B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Clearscope",
+        "aspect": "add-ons: automatic billing",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-11-01"
+      },
+      "verification": "curl raw HTML + text extraction 2026-11-01",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-10",
+          "source_url": "https://www.clearscope.io/support/how-do-plan-addons-work",
+          "claim": "MATCH with 2026-11-01. Add-ons are billed automatically when an included credit type is exceeded.",
+          "quote": "Plan addons are automatically billed to your subscription if you exceed your included credit type.",
+          "supersedes": "nothing (confirmed)",
+          "collector": "phase-5-publish-recapture-2026-11-10 (WebFetch only; quotes are the page text as extracted by the fetch tool)"
+        }
+      ]
+    },
+    {
+      "id": "EV-clearscope-review-14",
+      "claim": "Clearscope's Terms of Service say subscriptions renew automatically unless either party requests termination at least 30 days before the end of the current term. The pricing FAQ says monthly plans can be cancelled anytime. The page does not reconcile the two; Mimo reports both and does not infer how they are applied.",
+      "source_url": "https://www.clearscope.io/legal/tos",
+      "source_date": "2026-11-01",
+      "quote": "shall be automatically renewed for additional periods of the same duration as the initial subscription period, unless either party requests termination at least thirty (30) days prior to the end of the then-current term.",
+      "platform": "clearscope.io (vendor page, self-interested)",
+      "target_slug": "/tools/clearscope",
+      "collected_at": "2026-11-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "clearscope-review-2026-11-01",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "coder-A",
+        "coder-B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Clearscope",
+        "aspect": "terms: renewal and notice",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-11-01"
+      },
+      "verification": "curl raw HTML + text extraction 2026-11-01",
+      "faq_quote": "There's no minimum contract with our monthly plans. Cancel anytime without penalty or hassle.",
+      "ambiguity_flag": "ToS 30-day notice vs 'Cancel anytime' FAQ: coder should mark tension, not a finding of practice."
+    },
+    {
+      "id": "EV-clearscope-review-15",
+      "claim": "Vendor docs say there is no pause option; cancelling removes platform access including Drafts at the end of the period, and monthly customers who reactivate within 12 months regain data and Drafts. Vendor-stated, self-interested.",
+      "source_url": "https://www.clearscope.io/support/can-i-pause-my-clearscope-subscription",
+      "source_date": "2026-11-01",
+      "quote": "When you cancel your subscription, you lose access to the Clearscope platform, including any Drafts you've created.",
+      "platform": "clearscope.io (vendor page, self-interested)",
+      "target_slug": "/tools/clearscope",
+      "collected_at": "2026-11-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "clearscope-review-2026-11-01",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "coder-A",
+        "coder-B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Clearscope",
+        "aspect": "cancellation: data access",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-11-01"
+      },
+      "verification": "curl raw HTML + text extraction 2026-11-01"
+    },
+    {
+      "id": "EV-clearscope-review-16",
+      "claim": "Vendor's refund article gives no fixed window: refunds are explored case by case by emailing support. Vendor-stated, self-interested.",
+      "source_url": "https://www.clearscope.io/support/what-is-your-refund-policy",
+      "source_date": "2026-11-01",
+      "quote": "we will explore refund options with you based on your situation.",
+      "platform": "clearscope.io (vendor page, self-interested)",
+      "target_slug": "/tools/clearscope",
+      "collected_at": "2026-11-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "clearscope-review-2026-11-01",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "coder-A",
+        "coder-B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Clearscope",
+        "aspect": "refund policy",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-11-01"
+      },
+      "verification": "curl raw HTML + text extraction 2026-11-01"
+    },
+    {
+      "id": "EV-clearscope-review-17",
+      "claim": "Vendor docs say the Readability score is based on Flesch Reading Ease, English only, and the typical word count is the median of front-page results. Vendor-stated, self-interested.",
+      "source_url": "https://www.clearscope.io/support/how-does-the-readability-score-work",
+      "source_date": "2026-11-01",
+      "quote": "Clearscope bases this metric on the Flesch Reading Ease score",
+      "platform": "clearscope.io (vendor page, self-interested)",
+      "target_slug": "/tools/clearscope",
+      "collected_at": "2026-11-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "clearscope-review-2026-11-01",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "coder-A",
+        "coder-B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Clearscope",
+        "aspect": "readability and word count metrics",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-11-01"
+      },
+      "verification": "curl raw HTML + text extraction 2026-11-01",
+      "word_count_url": "https://www.clearscope.io/support/how-does-the-typical-word-count-get-calculated"
+    },
+    {
+      "id": "EV-clearscope-review-18",
+      "claim": "Vendor docs list five supported languages: English, French, German, Italian and Spanish. Vendor-stated, self-interested.",
+      "source_url": "https://www.clearscope.io/support/what-languages-does-clearscope-support",
+      "source_date": "2026-11-01",
+      "quote": "Clearscope currently supports five languages",
+      "platform": "clearscope.io (vendor page, self-interested)",
+      "target_slug": "/tools/clearscope",
+      "collected_at": "2026-11-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "clearscope-review-2026-11-01",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "coder-A",
+        "coder-B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Clearscope",
+        "aspect": "language support",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-11-01"
+      },
+      "verification": "curl raw HTML + text extraction 2026-11-01"
+    },
+    {
+      "id": "EV-clearscope-review-19",
+      "claim": "Ahrefs' live results table (read from the study's chart image) gives Clearscope Spearman 0.16, Kendall 0.12, average 0.14, ranked #3 of 5; Surfer and Frase 0.10 average (#4), NeuronWriter and Ahrefs' own AI Content Helper 0.24 (#1). 20 random keywords. Clearscope's letter grades were converted to numbers with ChatGPT, a step only Clearscope's data went through. Ahrefs sells one of the tested tools. Correlation, not causation; no result for a page's change after optimizing. Extends registered entries EV-neuronwriter-review-06 and EV-surfer-seo-review-08 with the Clearscope row rather than duplicating them.",
+      "source_url": "https://ahrefs.com/blog/seo-content-score-study/",
+      "source_date": "2025-05-21",
+      "quote": "Clearscope was the only tool that graded the SERPs, rather than showing a numerical score. I used ChatGPT to convert those grades into numbers.",
+      "platform": "ahrefs.com/blog (published study with disclosed method; publisher sells a tested tool, self-interested)",
+      "target_slug": "/tools/clearscope",
+      "collected_at": "2026-11-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "clearscope-review-2026-11-01",
+      "screening": "included",
+      "label": "independent-test",
+      "coders": [
+        "coder-A",
+        "coder-B"
+      ],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "Clearscope",
+        "aspect": "grade-to-ranking correlation",
+        "stance": "mixed",
+        "plan_tier_if_stated": null,
+        "item_date": "2025-05-21"
+      },
+      "verification": "curl raw HTML plus chart PNG viewed 2026-11-01",
+      "chart_url": "https://ahrefs.com/blog/wp-content/uploads/2025/05/correlations-between-google-rankings-and-content-s.png",
+      "reused_entries": [
+        "EV-neuronwriter-review-06",
+        "EV-surfer-seo-review-08"
+      ],
+      "ambiguity_flag": "Label independent-test is qualified: Ahrefs ranks its own tool joint first."
+    },
+    {
+      "id": "EV-clearscope-review-20",
+      "claim": "Clearscope's founder wrote on 2025-06-26 that Ahrefs found Clearscope ahead of Surfer '.30 vs .27' and called Ahrefs a party with no skin in the game. Those figures do not appear in the Ahrefs table live on 2026-11-01 (0.14 vs 0.10 average; Spearman 0.16 vs 0.12), though the direction matches. Ahrefs sells a tested tool. The post also argues correlation this low does not meaningfully predict rankings. Vendor-stated, self-interested. The full-size Ahrefs chart has been byte-identical since at least 2025-06-12, 14 days before the post, so the mismatch is not explained by a later edit; the source of .30/.27 is unknown and no motive is stated.",
+      "source_url": "https://www.clearscope.io/blog/clearscope-vs-surferseo",
+      "source_date": "2025-06-26",
+      "quote": "Ahrefs , a third-party platform with no skin in the game, ran its own study and found Clearscope outperforming Surfer in both correlation models: .30 vs .27.",
+      "platform": "clearscope.io/blog (vendor post, founder byline, self-interested)",
+      "target_slug": "/tools/clearscope",
+      "collected_at": "2026-11-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "clearscope-review-2026-11-01",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "coder-A",
+        "coder-B"
+      ],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "Clearscope",
+        "aspect": "correlation claim vs source",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2025-06-26"
+      },
+      "verification": "curl raw HTML + text extraction 2026-11-01",
+      "related": [
+        "EV-clearscope-review-19"
+      ],
+      "ambiguity_flag_resolved": "Closed 2026-11-01: https://ahrefs.com/blog/wp-content/uploads/2025/05/correlations-between-google-rankings-and-content-s.png live and https://web.archive.org/web/20250612180510id_/ (same file) both returned 60,147 bytes with SHA-256 41978e5ff95de3a162e84aac2756b1d563a88e9b1325bb44ed48724da908e62b; live Last-Modified 2025-05-21. Source of .30/.27 remains unknown."
+    },
+    {
+      "id": "EV-clearscope-review-21",
+      "claim": "Tested.media (published 2026-04-07, modified 2026-06-13) says it tested tools in live client accounts over 12 months and calls Clearscope the most accurate scorer in its tests, but publishes no numbers, sample or per-tool data, so the verdict cannot be audited. The same page prints Essentials at $189 and 'Demo only', both out of line with archived vendor pages at that date ($129 since October 2025).",
+      "source_url": "https://tested.media/ai-seo-tools/",
+      "source_date": "2026-04-07",
+      "quote": "Clearscope is the most accurate scoring engine in our tests. The recommendations match what actually ranks more often than Surfer or Frase. The downside is price.",
+      "platform": "tested.media (third-party roundup; method stated in outline, no data published)",
+      "target_slug": "/tools/clearscope",
+      "collected_at": "2026-11-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "clearscope-review-2026-11-01",
+      "screening": "included",
+      "label": "community-report",
+      "coders": [
+        "coder-A",
+        "coder-B"
+      ],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "Clearscope",
+        "aspect": "scoring accuracy, unaudited verdict",
+        "stance": "mixed",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-04-07"
+      },
+      "verification": "curl raw HTML + text extraction 2026-11-01",
+      "ambiguity_flag": "Labelled independent-test because the method is stated, but no data is shown; a second coder may label it community-report."
+    },
+    {
+      "id": "EV-clearscope-review-22",
+      "claim": "TechRadar's review (modified 2026-02-21) lists Essentials at $129 and says no free trial is available and a demo is required. The archived pricing page still lacked trial wording in July 2026, so this fits its date; the vendor page has advertised a 14-day trial since at least 2026-09-01. Published 2024-04-17; the source discloses affiliate commissions. Used only to explain conflicting statements, not as a current fact.",
+      "source_url": "https://www.techradar.com/pro/clearscope-review",
+      "source_date": "2026-02-21",
+      "quote": "Clearscope also has no free trial available. Instead, you must first request a demo",
+      "platform": "techradar.com (publisher review; contains affiliate wording; no test data)",
+      "target_slug": "/tools/clearscope",
+      "collected_at": "2026-11-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "clearscope-review-2026-11-01",
+      "screening": "included",
+      "label": "community-report",
+      "coders": [
+        "coder-A",
+        "coder-B"
+      ],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "Clearscope",
+        "aspect": "free trial claim in third-party review",
+        "stance": "negative",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-02-21"
+      },
+      "verification": "curl raw HTML + text extraction 2026-11-01",
+      "ambiguity_flag": "Published review rather than first-person community post; closest label in the set."
+    },
+    {
+      "id": "EV-clearscope-review-23",
+      "claim": "Capterra shows 4.9 from 60 reviews (page 'last updated' 2026-10-21). All 60 were read on 2026-11-01; dates run 2018-01-31 to 2022-11-06, so no displayed review is newer than November 2022 and none reflects today's plans. Mimo's count: 12 of 60 name price or cost as a drawback; 4 others raise credit or report mechanics; 4 raise term or grade quality. Defined-sample counts, not user-base rates. Review-platform sample with its own incentive structure. Borderlines: 9 of the 12 price mentions are firm and 3 of the 4 term or grade mentions are firm; 4 other reviews praise price or value.",
+      "source_url": "https://www.capterra.com/p/161003/Clearscope/reviews/",
+      "source_date": "2022-11-06",
+      "quote": "Showing 1-25 of 60 Reviews",
+      "platform": "capterra.com (review platform, own incentive structure)",
+      "target_slug": "/tools/clearscope",
+      "collected_at": "2026-11-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "clearscope-review-2026-11-01",
+      "screening": "included",
+      "label": "community-report",
+      "coders": [
+        "coder-A",
+        "coder-B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Clearscope",
+        "aspect": "review sample: rating, date window, complaint counts",
+        "stance": "mixed",
+        "plan_tier_if_stated": null,
+        "item_date": "2022-11-06"
+      },
+      "verification": "rendered in Chrome 2026-11-01 (curl/WebFetch not used for this page), pages 1-3",
+      "count_definition": {
+        "denominator": 60,
+        "window": "2018-01-31 to 2022-11-06",
+        "price_or_cost_drawback": {
+          "count": 12,
+          "reviewers": [
+            "Maddy O. 2021-03-16",
+            "Zahra H. 2021-08-11",
+            "Matt L. growth marketer 2020-04-16",
+            "Lucinda H. 2018-11-19",
+            "Verified Reviewer producer 2018-03-07",
+            "Jason C. 2018-05-31",
+            "Pascal C. 2018-03-28",
+            "Nat E. 2018-02-21",
+            "Pat A. 2018-05-31",
+            "Verified Reviewer blogger 2022-10-31",
+            "Nneka O. 2021-07-31",
+            "Brett H. 2018-03-09"
+          ]
+        },
+        "credit_or_report_mechanics": {
+          "count": 4,
+          "reviewers": [
+            "Alex L. 2018-05-30",
+            "Andrew S. 2018-01-31",
+            "brett G. 2019-02-28",
+            "Quinton H. 2019-04-30"
+          ]
+        },
+        "term_or_grade_quality": {
+          "count": 4,
+          "reviewers": [
+            "Rainie O. 2019-07-18",
+            "Jenny M. 2018-07-20",
+            "Verified Reviewer freelance writer 2018-02-15",
+            "Morgan B. 2019-10-23"
+          ]
+        }
+      },
+      "source_pages": [
+        "https://www.capterra.com/p/161003/Clearscope/reviews/",
+        "https://www.capterra.com/p/161003/Clearscope/reviews/?page=2",
+        "https://www.capterra.com/p/161003/Clearscope/reviews/?page=3"
+      ],
+      "ambiguity_flag": "Counts are curator-assigned. Borderline price cases: a 2021 'not cheap' but justified, a 2018 garbled 'pricing structure' sentence, and a 2018 overview line with no Cons field.",
+      "recapture_attempts": [
+        {
+          "attempted_at": "2026-11-10",
+          "source_url": "https://www.capterra.com/p/161003/Clearscope/reviews/",
+          "result": "NOT RE-READ. WebFetch returned HTTP 403 Forbidden; no other route was tried. The 2026-11-01 capture and its date stand."
+        }
+      ]
+    },
+    {
+      "id": "EV-clearscope-review-24",
+      "claim": "One Capterra reviewer (instructor, under 6 months' use, 3.0 rating, 2019-07-18) reports reaching A++ by stuffing keywords. A single anecdote, not a test; no third-party test of this was found in this run.",
+      "source_url": "https://www.capterra.com/p/161003/Clearscope/reviews/",
+      "source_date": "2019-07-18",
+      "quote": "The grading system is not transparent or smart. It's possible to get an A++ just by stuffing keywords. The word count can often be wrong as well.",
+      "platform": "capterra.com (review platform, own incentive structure)",
+      "target_slug": "/tools/clearscope",
+      "collected_at": "2026-11-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "clearscope-review-2026-11-01",
+      "screening": "included",
+      "label": "community-report",
+      "coders": [
+        "coder-A",
+        "coder-B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Clearscope",
+        "aspect": "grade gaming report",
+        "stance": "negative",
+        "plan_tier_if_stated": null,
+        "item_date": "2019-07-18"
+      },
+      "verification": "rendered in Chrome 2026-11-01 (curl/WebFetch not used for this page)"
+    },
+    {
+      "id": "EV-clearscope-review-25",
+      "claim": "One Capterra reviewer (freelance copywriter, 4.0 rating, 2018-07-20) reports the grade withheld until irrelevant terms and competitor names were added. A single anecdote from 2018. No test was run.",
+      "source_url": "https://www.capterra.com/p/161003/Clearscope/reviews/?page=2",
+      "source_date": "2018-07-20",
+      "quote": "Some keywords aren't relevant to the post you're writing but it's pretty merciless and won't give you a good grade until you include them. [...] Clearscope insisted I include the names of competitors",
+      "platform": "capterra.com (review platform, own incentive structure)",
+      "target_slug": "/tools/clearscope",
+      "collected_at": "2026-11-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "clearscope-review-2026-11-01",
+      "screening": "included",
+      "label": "community-report",
+      "coders": [
+        "coder-A",
+        "coder-B"
+      ],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "Clearscope",
+        "aspect": "term relevance vs grade",
+        "stance": "negative",
+        "plan_tier_if_stated": null,
+        "item_date": "2018-07-20"
+      },
+      "verification": "rendered in Chrome 2026-11-01 (curl/WebFetch not used for this page); re-read in Chrome 2026-11-01 for the competitor-names sentence"
+    },
+    {
+      "id": "EV-clearscope-review-26",
+      "claim": "One Capterra reviewer (founder, 2018-02-21) calls the price per report high while saying the tool paid back. A single 2018 anecdote at older prices.",
+      "source_url": "https://www.capterra.com/p/161003/Clearscope/reviews/?page=2",
+      "source_date": "2018-02-21",
+      "quote": "The price per report feels high. I understand that it's complicated technology, but I think most businesses would have a hard time justifying the price point for SEO software that limits their use this much. It's ROI positive for us, though.",
+      "platform": "capterra.com (review platform, own incentive structure)",
+      "target_slug": "/tools/clearscope",
+      "collected_at": "2026-11-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "clearscope-review-2026-11-01",
+      "screening": "included",
+      "label": "community-report",
+      "coders": [
+        "coder-A",
+        "coder-B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Clearscope",
+        "aspect": "cost per report",
+        "stance": "mixed",
+        "plan_tier_if_stated": null,
+        "item_date": "2018-02-21"
+      },
+      "verification": "rendered in Chrome 2026-11-01 (curl/WebFetch not used for this page)"
+    },
+    {
+      "id": "EV-clearscope-review-27",
+      "claim": "One Capterra reviewer (SEO director, 2019-12-18) says it stops being valuable without high output, while valuing the lack of contract. A single anecdote about fit by volume.",
+      "source_url": "https://www.capterra.com/p/161003/Clearscope/reviews/?page=2",
+      "source_date": "2019-12-18",
+      "quote": "It isn't valuable ongoing if you don't create a ton of content, however, you aren't locked into a contract, which is nice.",
+      "platform": "capterra.com (review platform, own incentive structure)",
+      "target_slug": "/tools/clearscope",
+      "collected_at": "2026-11-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "clearscope-review-2026-11-01",
+      "screening": "included",
+      "label": "community-report",
+      "coders": [
+        "coder-A",
+        "coder-B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Clearscope",
+        "aspect": "fit by publishing volume",
+        "stance": "mixed",
+        "plan_tier_if_stated": null,
+        "item_date": "2019-12-18"
+      },
+      "verification": "rendered in Chrome 2026-11-01 (curl/WebFetch not used for this page)"
+    },
+    {
+      "id": "EV-clearscope-review-28",
+      "claim": "Positive anecdote on the workflow: a Capterra reviewer (co-founder, 2020-02-04) praises live scoring in Google Docs for writers. A single anecdote.",
+      "source_url": "https://www.capterra.com/p/161003/Clearscope/reviews/",
+      "source_date": "2020-02-04",
+      "quote": "The live Google Docs plugin streamlines a process my writers used to HATE",
+      "platform": "capterra.com (review platform, own incentive structure)",
+      "target_slug": "/tools/clearscope",
+      "collected_at": "2026-11-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "clearscope-review-2026-11-01",
+      "screening": "included",
+      "label": "community-report",
+      "coders": [
+        "coder-A",
+        "coder-B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Clearscope",
+        "aspect": "Google Docs workflow",
+        "stance": "positive",
+        "plan_tier_if_stated": null,
+        "item_date": "2020-02-04"
+      },
+      "verification": "rendered in Chrome 2026-11-01 (curl/WebFetch not used for this page)"
+    },
+    {
+      "id": "EV-clearscope-review-29",
+      "claim": "Of the 60 Capterra reviews, 6 state a percentage traffic or readership lift after using Clearscope (30% month to month, 50%, 50%+, 187%, 300%, 500%). All are self-reported, 2018 to 2021, with no control group or method; a further 2 report ranking gains. They remain anecdotes and do not show the grade caused the lift. No dated before/after with a disclosed method turned up in this run. The 2 ranking gains counts only numeric or page-move claims; other reviews mention rankings without numbers.",
+      "source_url": "https://www.capterra.com/p/161003/Clearscope/reviews/?page=2",
+      "source_date": "2021-11-17",
+      "quote": "Clearscope has helped Flytographer reach a 187% increase in page views on our blog compared to 2020.",
+      "platform": "capterra.com (review platform, own incentive structure)",
+      "target_slug": "/tools/clearscope",
+      "collected_at": "2026-11-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "clearscope-review-2026-11-01",
+      "screening": "included",
+      "label": "community-report",
+      "coders": [
+        "coder-A",
+        "coder-B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Clearscope",
+        "aspect": "self-reported outcomes, uncontrolled",
+        "stance": "positive",
+        "plan_tier_if_stated": null,
+        "item_date": "2021-11-17"
+      },
+      "verification": "rendered in Chrome 2026-11-01 (curl/WebFetch not used for this page)",
+      "count_definition": {
+        "denominator": 60,
+        "pct_lift": 6,
+        "rank_gain_only": 2
+      }
+    },
+    {
+      "id": "EV-clearscope-review-30",
+      "claim": "G2's Clearscope page shows 4.9/5 from 92 reviews, on a seller-claimed profile. The default view on 2026-11-01 rendered 11 dated reviews (2023-01-24 to 2026-01-16), 10 with parseable dislike text, and 4 of those 10 carrying an Incentivized badge. Mimo read only this view, not all 92. A fifth Incentivized badge sits on a review with no dislike text, so 5 of the 11 rendered reviews carry the badge.",
+      "source_url": "https://www.g2.com/products/clearscope/reviews",
+      "source_date": "2026-01-16",
+      "quote": "Clearscope By Clearscope 4.9/5 (92)",
+      "platform": "g2.com (review platform, own incentive structure; some reviews incentivized)",
+      "target_slug": "/tools/clearscope",
+      "collected_at": "2026-11-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "clearscope-review-2026-11-01",
+      "screening": "included",
+      "label": "community-report",
+      "coders": [
+        "coder-A",
+        "coder-B"
+      ],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "Clearscope",
+        "aspect": "review sample: rating and visible sample",
+        "stance": "mixed",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-01-16"
+      },
+      "verification": "rendered in Chrome 2026-11-01 (curl/WebFetch not used for this page)",
+      "recapture_attempts": [
+        {
+          "attempted_at": "2026-11-10",
+          "source_url": "https://www.g2.com/products/clearscope/reviews",
+          "result": "NOT RE-READ. WebFetch returned HTTP 403 Forbidden; no other route was tried. The 2026-11-01 capture and its date stand."
+        }
+      ]
+    },
+    {
+      "id": "EV-clearscope-review-31",
+      "claim": "The newest review G2 displayed (2026-01-16) raises cost against credits for small teams and asks for more explanation of recommendations. A single anecdote, and the newest dated user statement found in this run.",
+      "source_url": "https://www.g2.com/products/clearscope/reviews",
+      "source_date": "2026-01-16",
+      "quote": "For smaller teams or occasional users, the cost feels a bit high considering the number of credits or reports included. Sometimes I also wish the platform gave more detailed explanation around why certain recommendations are made",
+      "platform": "g2.com (review platform, own incentive structure)",
+      "target_slug": "/tools/clearscope",
+      "collected_at": "2026-11-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "clearscope-review-2026-11-01",
+      "screening": "included",
+      "label": "community-report",
+      "coders": [
+        "coder-A",
+        "coder-B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Clearscope",
+        "aspect": "cost vs credits; recommendation explanation",
+        "stance": "mixed",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-01-16"
+      },
+      "verification": "rendered in Chrome 2026-11-01 (curl/WebFetch not used for this page)"
+    },
+    {
+      "id": "EV-clearscope-review-32",
+      "claim": "One incentivized G2 reviewer (2024-03-27) says keyword suggestions sometimes fall short of MarketMuse's for top rankings. A single anecdote, no test.",
+      "source_url": "https://www.g2.com/products/clearscope/reviews",
+      "source_date": "2024-03-27",
+      "quote": "Compared to certain competing tools like MarketMuse, Clearscope's KW suggestions sometimes aren't optimal for ranking at the top of Google SERPs.",
+      "platform": "g2.com (review platform; review carries Incentivized badge)",
+      "target_slug": "/tools/clearscope",
+      "collected_at": "2026-11-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "clearscope-review-2026-11-01",
+      "screening": "included",
+      "label": "community-report",
+      "coders": [
+        "coder-A",
+        "coder-B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Clearscope",
+        "aspect": "term suggestions vs a rival",
+        "stance": "negative",
+        "plan_tier_if_stated": null,
+        "item_date": "2024-03-27"
+      },
+      "verification": "rendered in Chrome 2026-11-01 (curl/WebFetch not used for this page)"
+    },
+    {
+      "id": "EV-clearscope-review-33",
+      "claim": "Clearscope has a claimed Trustpilot profile with 0 reviews on 2026-11-01, so Trustpilot offers no evidence either way.",
+      "source_url": "https://www.trustpilot.com/review/clearscope.io",
+      "source_date": "2026-11-01",
+      "quote": "This company hasn't received any reviews yet.",
+      "platform": "trustpilot.com (review platform)",
+      "target_slug": "/tools/clearscope",
+      "collected_at": "2026-11-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "clearscope-review-2026-11-01",
+      "screening": "included",
+      "label": "community-report",
+      "coders": [
+        "coder-A",
+        "coder-B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Clearscope",
+        "aspect": "review coverage",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-11-01"
+      },
+      "verification": "WebFetch 2026-11-01"
+    },
+    {
+      "id": "EV-clearscope-review-34",
+      "claim": "MIMO'S OWN ARITHMETIC, built from registered entries. Clearscope: Essentials $129 / 20 Drafts = $6.45 per Draft; Business $399 / 20 = $19.95; add-on Drafts $50 / 10 = $5.00 and $20 / 10 = $2.00 if the selector's default of 10 is the unit. Rivals' lowest listed plans: Frase Starter $49 billed monthly / 10 articles = $4.90 (recaptured 2026-11-01); NeuronWriter Bronze $23 / 25 documents = $0.92 (recaptured 2026-11-01); Surfer Discovery $49 billed yearly / 120 = about $0.41 (captured 2026-07-16). Units differ and allowances beyond the draft are ignored, so this is list-price division, not value. Rival inputs must be re-checked before publishing. By Draft volume: 5 Drafts $25.80 and $79.80; 10 Drafts $12.90 and $39.90; 30 Drafts with one add-on pack of 10 ($179 and $419) about $5.97 and $13.97. Break-even: 129+5(n-20) = 399+2(n-20) at n = 110 Drafts, $579 either way, assuming add-on packs scale evenly.",
+      "source_url": "https://www.clearscope.io/pricing",
+      "source_date": "2026-11-01",
+      "quote": "$129 /month Start for free 50 Tracked Queries 50 Pages 20 monthly Discoveries 20 monthly Drafts",
+      "platform": "Mimo calculation from registered vendor pricing entries",
+      "target_slug": "/tools/clearscope",
+      "collected_at": "2026-11-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "clearscope-review-2026-11-01",
+      "screening": "included",
+      "label": "research-finding",
+      "coders": [
+        "coder-A",
+        "coder-B"
+      ],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "Clearscope",
+        "aspect": "cost per Draft/article (Mimo arithmetic)",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-11-01"
+      },
+      "verification": "computed 2026-11-01 from entries",
+      "inputs": [
+        "EV-clearscope-review-01",
+        "EV-clearscope-review-02",
+        "EV-clearscope-review-03",
+        "EV-frase-review-01",
+        "EV-neuronwriter-review-01",
+        "EV-surfer-seo-review-01",
+        "EV-clearscope-review-39",
+        "EV-clearscope-review-40"
+      ],
+      "derived": true,
+      "ambiguity_flag": "Non-equivalent units; the Surfer capture is dated 2026-07; add-on unit rests on the selector default.",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-10",
+          "source_url": "https://www.clearscope.io/pricing",
+          "claim": "Inputs re-read 2026-11-10 and unchanged: Clearscope Essentials $129 / 20 Drafts and Business $399 / 20 Drafts, add-on Drafts $50 and $20, Frase Starter was-price $49 / 10 articles, NeuronWriter Bronze $23 / 25 documents. Every derived figure stands ($6.45, $19.95, $5.00, $2.00, $4.90, $0.92, the volume rows and the 110-Draft break-even). SURFER INPUT: the 2026-07-16 capture is replaced by the 2026-11-02 recapture registered on EV-surfer-seo-review-01 (surferseo.com/pricing, now served at surfer.ai): Discovery $49 a month billed yearly, Create or Optimize 120 Documents, so $49 / 120 is still about $0.41. That Surfer page was not read again on 2026-11-10.",
+          "quote": "Essentials $129/month ... 20 monthly Drafts ... Business $399/month ... 20 monthly Drafts",
+          "supersedes": "Surfer input date 2026-07-16 (value unchanged, capture day now 2026-11-02)",
+          "collector": "phase-5-publish-recapture-2026-11-10 (WebFetch only; quotes are the page text as extracted by the fetch tool)"
+        }
+      ]
+    },
+    {
+      "id": "EV-clearscope-review-35",
+      "claim": "Clearscope's case-study page headlines Pipedrive doubling website traffic; the body limits that to sessions doubling in the French and German markets within a year, with English up 50%. The page shows no date. A vendor-selected success story, self-interested; it does not isolate the grade's effect.",
+      "source_url": "https://www.clearscope.io/customers/pipedrive",
+      "source_date": "2026-11-01",
+      "quote": "How Pipedrive Doubled Their Website Traffic with Clearscope",
+      "platform": "clearscope.io (vendor page, self-interested)",
+      "target_slug": "/tools/clearscope",
+      "collected_at": "2026-11-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "clearscope-review-2026-11-01",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "coder-A",
+        "coder-B"
+      ],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "Clearscope",
+        "aspect": "vendor case study",
+        "stance": "positive",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-11-01"
+      },
+      "verification": "curl raw HTML + text extraction 2026-11-01"
+    },
+    {
+      "id": "EV-clearscope-review-36",
+      "claim": "Clearscope's homepage now positions the product around the full content lifecycle across Google and AI answers, and the pricing page lists query tracking across ChatGPT and Gemini, so grading is one part of what the plan price buys. Vendor-stated, self-interested. The positioning line is the page meta description; the visible body says similar things in other words.",
+      "source_url": "https://www.clearscope.io/",
+      "source_date": "2026-11-01",
+      "quote": "Clearscope runs your whole content lifecycle in one place: discover what buyers ask, track who Google and AI mention, write the page, and monitor it.",
+      "platform": "clearscope.io (vendor page, self-interested)",
+      "target_slug": "/tools/clearscope",
+      "collected_at": "2026-11-01",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "clearscope-review-2026-11-01",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "coder-A",
+        "coder-B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Clearscope",
+        "aspect": "product positioning",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-11-01"
+      },
+      "verification": "curl raw HTML meta description 2026-11-01",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-10",
+          "source_url": "https://www.clearscope.io/",
+          "claim": "MATCH with 2026-11-01, now read from the visible page body instead of the meta description. Headline: Write what Google ranks and AI mentions. Subheadline: Clearscope runs your whole content lifecycle in one place. The body describes tracking whether Google, ChatGPT, Gemini and Claude mention you or a competitor. The footer lists no affiliate, partner or referral programme; clearscope.io/affiliates and clearscope.io/partners both returned HTTP 404 on this day. Footer social links: linkedin.com/company/18083139/ and x.com/clearscope.",
+          "quote": "Clearscope runs your whole content lifecycle in one place. ... track whether Google, ChatGPT, Gemini and Claude mention you or a competitor",
+          "supersedes": "nothing (confirmed)",
+          "collector": "phase-5-publish-recapture-2026-11-10 (WebFetch only; quotes are the page text as extracted by the fetch tool)"
+        }
+      ]
+    },
+    {
+      "id": "EV-clearscope-review-37",
+      "claim": "The pricing page's add-on table prints Users as Unlimited and Projects as Unlimited on Essentials, Business and Enterprise. Vendor-stated, self-interested.",
+      "source_url": "https://www.clearscope.io/pricing",
+      "source_date": "2026-11-01",
+      "quote": "Users Unlimited Unlimited Unlimited Projects Unlimited Unlimited Unlimited",
+      "platform": "clearscope.io (vendor page, self-interested)",
+      "target_slug": "/tools/clearscope",
+      "collected_at": "2026-11-01",
+      "collector": "seo-content-writer (regeneration 1)",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "clearscope-review-2026-11-01",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "coder-A",
+        "editorial-gate-run2"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Clearscope",
+        "aspect": "plan limits: users and projects",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Essentials, Business, Enterprise",
+        "item_date": "2026-11-01"
+      },
+      "verification": "curl raw HTML 2026-11-01",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-10",
+          "source_url": "https://www.clearscope.io/pricing",
+          "claim": "MATCH with 2026-11-01. Users Unlimited and Projects Unlimited on Essentials, Business and Enterprise.",
+          "quote": "Users: Unlimited ... Projects: Unlimited",
+          "supersedes": "nothing (confirmed)",
+          "collector": "phase-5-publish-recapture-2026-11-10 (WebFetch only; quotes are the page text as extracted by the fetch tool)"
+        }
+      ]
+    },
+    {
+      "id": "EV-clearscope-review-38",
+      "claim": "Clearscope's integrations page lists Google Docs, Microsoft Word, WordPress and Google Search Console as connections, and describes Google Search, ChatGPT, Gemini and Claude as built in. The pricing page's navigation summarizes the list as Google Docs, Word, WordPress and Search Console. Vendor-stated, self-interested; no independent test in this record.",
+      "source_url": "https://www.clearscope.io/integrations",
+      "source_date": "2026-11-01",
+      "quote": "Google Search, ChatGPT, Gemini and Claude come built in.",
+      "platform": "clearscope.io (vendor page, self-interested)",
+      "target_slug": "/tools/clearscope",
+      "collected_at": "2026-11-01",
+      "collector": "seo-content-writer (regeneration 1)",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "clearscope-review-2026-11-01",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "coder-A",
+        "editorial-gate-run2"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Clearscope",
+        "aspect": "integrations list",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-11-01"
+      },
+      "verification": "curl raw HTML 2026-11-01 (integrations page and pricing navigation)",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-10",
+          "source_url": "https://www.clearscope.io/integrations",
+          "claim": "MATCH with 2026-11-01. Editor integrations: Google Docs, Microsoft Word, WordPress. Data connection: Google Search Console. Built in: Google Search, ChatGPT, Gemini, Claude.",
+          "quote": "Google Docs, Microsoft Word, WordPress ... Google Search Console ... Google Search, ChatGPT, Gemini, Claude",
+          "supersedes": "nothing (confirmed)",
+          "collector": "phase-5-publish-recapture-2026-11-10 (WebFetch only; quotes are the page text as extracted by the fetch tool)"
+        }
+      ]
+    },
+    {
+      "id": "EV-clearscope-review-39",
+      "claim": "RECAPTURE of the NeuronWriter plan row used in EV-clearscope-review-34. The pricing page (neuronwriter.com/pricing redirects to /pricing-neuron/) prints Bronze at $23/mo or $230/year with 2 projects, 25 documents and 15,000 AI credits. The 13 July capture (EV-neuronwriter-review-01) called the same allowance 25 content writer analyses. Vendor-stated, self-interested.",
+      "source_url": "https://neuronwriter.com/pricing-neuron/",
+      "source_date": "2026-11-01",
+      "quote": "Bronze plan for business owner improving SEO & AI rankings $ 23 /mo $276 $ 230 /year 2 projects 25 documents",
+      "platform": "neuronwriter.com (vendor pricing page, self-interested)",
+      "target_slug": "/tools/clearscope",
+      "collected_at": "2026-11-01",
+      "collector": "seo-content-writer (regeneration 1)",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "clearscope-review-2026-11-01",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "coder-A",
+        "editorial-gate-run2"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "NeuronWriter",
+        "aspect": "pricing recapture: Bronze",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Bronze",
+        "item_date": "2026-11-01"
+      },
+      "verification": "curl raw HTML 2026-11-01",
+      "related": [
+        "EV-neuronwriter-review-01"
+      ],
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-10",
+          "source_url": "https://neuronwriter.com/pricing-neuron/",
+          "claim": "MATCH with 2026-11-01. Bronze $23/mo with 2 projects, 25 documents and 15,000 AI credits (Silver $45, Gold $69, Platinum $93, Diamond $117).",
+          "quote": "Bronze plan: $ 23 /mo ... 2 projects, 25 documents, 15,000 AI credits",
+          "supersedes": "nothing (confirmed)",
+          "collector": "phase-5-publish-recapture-2026-11-10 (WebFetch only; quotes are the page text as extracted by the fetch tool)"
+        }
+      ]
+    },
+    {
+      "id": "EV-clearscope-review-40",
+      "claim": "RECAPTURE of the Frase plan rows used in EV-clearscope-review-34. The pricing page opens on Yearly and prints Starter $39 (was $49) and Professional $103 (was $129); its structured data says $49/month and $129/month if billed monthly. Starter: 10 articles, 50 audit pages, 1 seat. Professional: 40 articles, 250 audit pages, 3 seats. Unchanged from EV-frase-review-01. Vendor-stated, self-interested.",
+      "source_url": "https://www.frase.io/pricing",
+      "source_date": "2026-11-01",
+      "quote": "$49/month if billed monthly.",
+      "platform": "frase.io/pricing (vendor pricing page, self-interested)",
+      "target_slug": "/tools/clearscope",
+      "collected_at": "2026-11-01",
+      "collector": "seo-content-writer (regeneration 1)",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "clearscope-review-2026-11-01",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "coder-A",
+        "editorial-gate-run2"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Frase",
+        "aspect": "pricing recapture: Starter, Professional",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Starter, Professional",
+        "item_date": "2026-11-01"
+      },
+      "verification": "curl raw HTML 2026-11-01, including structured data; the Monthly tab was not clicked",
+      "related": [
+        "EV-frase-review-01"
+      ],
+      "ambiguity_flag": "Monthly figures come from the printed 'was' price and structured data, not from the inactive Monthly tab's own view; recheck on publish day.",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-10",
+          "source_url": "https://www.frase.io/pricing",
+          "claim": "MATCH with 2026-11-01. The page opens on yearly billing and prints Starter $39 (was $49), $468 billed yearly, 10 articles, 1 seat; Professional $103 (was $129), $1,236 billed yearly, 40 articles, 3 seats; Scale $239 (was $299). The monthly-billing figures of $49 and $129 are again read from the printed was price; the structured data and the Monthly tab were not read on this day.",
+          "quote": "Starter $39 was $49 /mo, $468 billed yearly ... Professional $103 was $129 /mo, $1,236 billed yearly",
+          "supersedes": "nothing (confirmed)",
+          "collector": "phase-5-publish-recapture-2026-11-10 (WebFetch only; quotes are the page text as extracted by the fetch tool)"
+        }
+      ]
+    },
+    {
+      "id": "EV-clearscope-review-41",
+      "claim": "The pricing page's FAQ says any subscription can be paid by credit card and that a yearly custom plan can be invoiced, with details on request. No annual price is printed. Vendor-stated, self-interested.",
+      "source_url": "https://www.clearscope.io/pricing",
+      "source_date": "2026-11-01",
+      "quote": "if you purchase a yearly custom plan, we can invoice you",
+      "platform": "clearscope.io (vendor page, self-interested)",
+      "target_slug": "/tools/clearscope",
+      "collected_at": "2026-11-01",
+      "collector": "seo-content-writer (regeneration 1)",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "clearscope-review-2026-11-01",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "coder-A",
+        "editorial-gate-run2"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Clearscope",
+        "aspect": "billing: invoiced yearly custom plan",
+        "stance": "n/a",
+        "plan_tier_if_stated": "custom",
+        "item_date": "2026-11-01"
+      },
+      "verification": "curl raw HTML 2026-11-01",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-10",
+          "source_url": "https://www.clearscope.io/pricing",
+          "claim": "MATCH with 2026-11-01. The FAQ says a yearly custom plan can be invoiced, details on request; credit card accepted for any subscription. No annual price printed.",
+          "quote": "Or if you purchase a yearly custom plan, we can invoice you. Please contact us for more details.",
+          "supersedes": "nothing (confirmed)",
+          "collector": "phase-5-publish-recapture-2026-11-10 (WebFetch only; quotes are the page text as extracted by the fetch tool)"
+        }
+      ]
+    }
+  ]
+}

@@ -70,6 +70,23 @@
       { "id": "EV-surfer-seo-review-07", "shard": "registry-surfer-seo-review.json", "source": "medium.com/@contact_39605/why-i-cancelled-my-surfer-seo-subscription-in-2026-the-roi-reality-check-b1168455a2fc", "axis": "CHURN ACCOUNT — named author (2026-01-06) cancelled Surfer's $89/mo Essential plan over workflow slowness/rigidity, switched to Frase (~$45/mo), cites ~$900/yr saving. Shows the premium-price-driven-switch pattern (to a different budget tool, not NeuronWriter specifically) that recurs across the SERP." },
       { "id": "EV-surfer-seo-review-08", "shard": "registry-surfer-seo-review.json", "source": "ahrefs.com/blog/seo-content-score-study", "axis": "INDEPENDENT TEST — same Ahrefs 5-tool study, Surfer-side framing: Surfer grouped among 'the other three' tools with 'very weak' correlations, NOT among the two best-correlated. The Surfer-side framing of the central head-to-head data point (pairs with EV-neuronwriter-review-06)." },
       { "id": "EV-surfer-seo-review-09", "shard": "registry-surfer-seo-review.json", "source": "getspike.ai/blog/surfer-seo-vs-frase", "axis": "DEFINED-SAMPLE TEST (COI-flagged) — a rival vendor's disclosed first-person test (2026, 3-person team, 6 months): 9 of 15 articles rewritten to Surfer scores of 80+ saw ranking gains, 6 stayed flat. Surfer-specific outcome data, publisher conflict of interest disclosed." }
+    ],
+    "refreshes": [
+      {
+        "date": "2026-11-03",
+        "batch": "B5",
+        "note": "Refresh of /vs/neuronwriter-vs-surfer-seo. NeuronWriter pricing re-captured live by this page's run (see recaptures below). Surfer values reused from the 2026-11-02 B4 recapture on EV-surfer-seo-review-01 (registry-surfer-seo-review.json), not re-fetched: Discovery $49 / 120 documents, Standard $99 / 360, Pro $182 / 360, Peace of Mind $299 / unlimited, Enterprise custom (no $999 figure), new AI Search Analytics $82/mo billed yearly, no trial length or refund terms stated. Observation only, not used as a page claim: on 2026-11-03 https://surferseo.com/pricing/ answered HTTP 301 to https://surfer.ai/pricing/ and https://surferseo.com resolved to https://surfer.ai/ (title 'Surfer - AI Visibility Platform'). Entry count unchanged: 2 entries in this shard; page total 23 entries from 21 included sources."
+      }
+    ],
+    "recaptures": [
+      {
+        "recaptured_at": "2026-11-03",
+        "applies_to": "EV-neuronwriter-review-01 (N-01 on this page; entry lives in registry-neuronwriter-review.json)",
+        "source_url": "https://neuronwriter.com/pricing/",
+        "claim": "Live pricing page (redirects to https://neuronwriter.com/pricing-neuron/, HTTP 200) lists five tiers, monthly price / yearly price: Bronze $23/mo ($230/yr), Silver $45/mo ($450/yr), Gold $69/mo ($690/yr), Platinum $93/mo ($930/yr), Diamond $117/mo ($1,170/yr); yearly toggle labelled '2 months free'. Allowances per month: 25 / 50 / 75 / 100 / 150 documents; 15,000 / 30,000 / 45,000 / 60,000 / 75,000 AI credits; 5 / 7 / 10 / 15 / 20 AI-monitored questions; 2 / 5 / 10 / 25 / 50 projects. FAQ: 7-day free trial after creating an account, under Gold plan terms; refund on the first plan purchased within the first 30 days. MATCH vs 2026-07-13: all five monthly prices, the 25-150 allowance counts, AI-credit pools, project counts, the Gold-terms 7-day trial and the 30-day first-plan refund. CHANGED vs 2026-07-13: the allowance is now labelled 'documents' (July: 'content writer analyses'), same counts; 'AI-monitored questions' (5-20 per tier) are new on the plan cards; yearly prices are now shown. Vendor-stated, self-interested.",
+        "quote": "Bronze plan ... $ 23 /mo $276 $ 230 /year 2 projects 25 documents 5 AI-monitored questions 15,000 AI credits ... Diamond plan ... $ 117 /mo ... 150 documents 20 AI-monitored questions 75,000 AI credits ... You can test the tool for free after creating an account for 7 days under the Gold plan terms ... request a refund for the first plan purchased on your account within the first 30 days.",
+        "method": "curl with a desktop Chrome user-agent (HTTP 200, server-rendered HTML), plan cards and FAQ read as text"
+      }
     ]
   },
   "entries": [

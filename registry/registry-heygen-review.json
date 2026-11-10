@@ -139,7 +139,23 @@
       "EV-best-ai-video-generators-09 (Matthew F.C., Capterra, 2026-05-05, 4 stars, multi-language/multi-audience versioning praise) -- cited by original ID, NOT re-registered.",
       "EV-best-ai-video-generators-10 (Elena M., Capterra, 2026-05-06, 1 star, 'no way to get a human being' support complaint) -- cited by original ID, NOT re-registered. This run's EV-heygen-review-09 (Amaury S., 2026-06-25, positive support experience) is presented alongside it for balance, not as a replacement.",
       "EV-best-ai-video-generators-11 (Luis V., Capterra, 2026-06-16, 4 stars, mixed review noting slower processing on large footage) -- cited by original ID, NOT re-registered."
-    ]
+    ],
+    "refresh_2026_11_06": {
+      "date": "2026-11-06",
+      "scope": "targeted delta refresh B7: Trustpilot opened on a direct read (refused in August); EvidenceBox count label and closing note updated on /tools/heygen",
+      "entries_added": [
+        "EV-heygen-review-18"
+      ],
+      "flow_counter_note": "The August flow_counter (116 identified, 102 excluded, 14 included sources, 17 new entries, 4 reused) is unchanged; the 2026-11-06 Trustpilot read sits outside that census and adds one entry. Page entry count after: 17 + 4 reused + 1 = 22.",
+      "page_counts": {
+        "entries_logged": 22,
+        "entries_own": 18,
+        "entries_reused": 4,
+        "from_august_sweep": 21,
+        "added_2026_11_06": 1
+      },
+      "note": "Second coding pass run 2026-11-06 by a separate agent (live re-read before seeing the first coding); agreement recorded on the entry."
+    }
   },
   "entries": [
     {
@@ -616,6 +632,15 @@
           "source_url": "https://www.liveavatar.com/pricing",
           "claim": "LiveAvatar pricing page read 2026-10-31: SUPERSEDES the $19/mo Starter with 200 credits. Lists Free $0 with 10 credits/mo, a $99 tier with 1,100 credits/mo, a $475 tier with 6,000 credits/mo, and custom Enterprise. No $19 tier on this page.",
           "quote": "10 credits / mo ... ### $99 ... 1,100 credits / mo ... ### $475 ... 6,000 credits / mo"
+        },
+        {
+          "recaptured_at": "2026-11-06",
+          "source_url": "https://www.liveavatar.com/",
+          "status": "read",
+          "claim": "CHANGED. LiveAvatar's price block (liveavatar.com/pricing now 404s; the block sits on the home page) lists Free $0 with 10 credits / mo (watermark, 1 concurrency, 2 min per session), Essential $99 with 1,100 credits / mo, Business $475 with 6,000 credits / mo, Enterprise custom. No $19 tier. Billing period is not printed beside the prices; only the credit allowances carry '/ mo'. Still billed apart from HeyGen Creator/Pro/Business credits.",
+          "quote": "$0 10 credits / mo ... $99 1,100 credits / mo ... $475 6,000 credits / mo ... Enterprise ... Custom",
+          "supersedes": "2026-08-15 help-center capture: Starter tier at $19 a month with 200 credits",
+          "collector": "B7 sibling sweep"
         }
       ],
       "claim": "HeyGen Live (branded LiveAvatar) is a separately-priced real-time conversational-avatar product on its own subscription ladder, not covered by the core HeyGen credit pool: a $19/month Starter tier provides 200 credits, with a stated max session duration of 5 minutes and unlimited concurrent sessions (billed per minute streamed).",
@@ -773,6 +798,55 @@
         "This specific page rendered in Turkish on fetch (likely locale-detection on the request) rather than English -- the 175+ figure repeats consistently across the page in that language; the number itself matches independent third-party coverage (perso.ai, a rival dubbing vendor's blog, and an unaffiliated Medium post) but this entry relies on the vendor's own page, not those secondary mentions.",
         "This figure describes OUTPUT/translation-target languages; input/source-language support is narrower (roughly 29 languages per third-party coverage, not independently vendor-verified this run) -- do not conflate the two numbers on the page."
       ]
+    },
+    {
+      "id": "EV-heygen-review-18",
+      "claim": "HeyGen's Trustpilot profile, opened directly on 2026-11-06, shows a TrustScore of 4.2 out of 5 ('Great') across 5,170 reviews; star split 5-star 70%, 4-star 9%, 3-star 4%, 2-star 4%, 1-star 13%.",
+      "source_url": "https://www.trustpilot.com/review/heygen.com",
+      "source_date": "2026-11-06",
+      "quote": "4.2 ... All reviews (5,170)",
+      "platform": "trustpilot.com (open review platform; anyone can post)",
+      "target_slug": "/tools/heygen",
+      "collected_at": "2026-11-06",
+      "collector": "B7 sibling sweep",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "heygen-review-refresh-2026-11-06",
+      "screening": "included",
+      "label": "aggregate-rating",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "HeyGen",
+        "aspect": "Trustpilot score and review count",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-11-06"
+      },
+      "related": [
+        "EV-synthesia-vs-heygen-18"
+      ],
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-06",
+          "source_url": "https://www.trustpilot.com/review/heygen.com",
+          "status": "read",
+          "claim": "TrustScore 4.2/5 on 5,170 reviews (WebFetch, live). Matches EV-synthesia-vs-heygen-18 read the same day.",
+          "quote": "4.2 ... All reviews (5,170)",
+          "supersedes": "2026-08-15 sweep: Trustpilot refused automated capture (HTTP 403); page carried a relayed, unverified 'about 2.3/5, roughly 80% negative'",
+          "collector": "B7 sibling sweep"
+        }
+      ],
+      "honesty_notes": [
+        "A one-day snapshot of an open review platform, never a satisfaction rate for the user base."
+      ],
+      "second_pass": {
+        "date": "2026-11-06",
+        "method": "independent live re-read by a separate agent before seeing the first coding",
+        "reading": "Agrees: TrustScore 4.2/5, 5,170 reviews, star split 70/9/4/4/13, read 2026-11-06; dated aggregate snapshot only."
+      }
     }
   ]
 }

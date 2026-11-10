@@ -64,7 +64,14 @@
       "unverifiable-this-run (2): trustpilot.com/review/frase.io returned HTTP 403 Forbidden on direct fetch (same intermittent Trustpilot bot-wall documented in the Surfer shard 4 days earlier — no Trustpilot quote is registered for Frase this run); g2.com/products/frase-io/reviews returned HTTP 403 Forbidden on direct fetch. No claim from either is registered; the widely-repeated secondhand figure of a 'G2 4.8/5 vs Trustpilot 1.4/5' rating gap appeared only in WebSearch summary text, never in a live fetch this run, and is therefore NOT registered as evidence — flagged in evidence_gaps instead.",
       "OWNED-BORDER held (0 registered): no AI-humanizer/AI-detector/paraphraser claim was found, registered, or cited as fact anywhere in this sweep — Frase's category (AI SEO research/briefs/content-optimization) does not touch that border. Originality.ai (EV-frase-review-09) is itself an AI-detection vendor, but it is cited here only for its disclosed hands-on TEST of Frase's writing feature, not as an owned-product or detector-category claim about Frase."
     ],
-    "entries_reused": []
+    "entries_reused": [],
+    "refreshes": [
+      {
+        "date": "2026-11-02",
+        "batch": "B4",
+        "note": "Live recapture of https://www.frase.io/pricing (browser-UA curl, server-rendered HTML, HTTP 200). All four plan prices, annual rates and article / audit / AI-generation allowances MATCH the 2026-07-20 capture; no price on /tools/frase changed. New vendor-stated items read the same day and logged as recaptures on EV-frase-review-01: a 7-day free trial with no credit card (Professional features, capped at 5 articles, 50 audit pages, 25 AI prompts, up to 3 seats), optional pay-as-you-go overages on Professional and Scale, AI Visibility on ChatGPT and Google AI and Content Guard decay watching listed in the plan cards. No refund terms appear on the page. Entry count unchanged: 12 entries from 11 sources."
+      }
+    ]
   },
   "entries": [
     {
@@ -90,6 +97,32 @@
         "plan_tier_if_stated": "Starter $49/mo – Enterprise custom (4 tiers)",
         "item_date": "2026-07-20"
       },
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-02",
+          "source_url": "https://www.frase.io/pricing",
+          "claim": "MATCH. Pricing page re-read 2026-11-02 (browser-UA curl, server-rendered HTML): Starter $49/mo or $39/mo billed yearly ($468/yr), 10 articles, 50 audit pages, 25 AI generations, 1 seat, 1 site; Professional $129/mo or $103/mo yearly ($1,236/yr), 40 / 250 / 100, 3 seats, 5 sites, 'Most popular'; Scale $299/mo or $239/mo yearly ($2,868/yr), 100 / 1,000 / 350, 5 seats, up to 10 domains; Enterprise custom. Every figure used on /tools/frase is unchanged from the 2026-07-20 capture. Vendor-stated, self-interested.",
+          "quote": "Starter ... $39 was $49 /mo, $468 billed yearly ... 10 articles and 50 audit pages each month ... Professional Most popular ... $103 was $129 /mo, $1,236 billed yearly ... 40 articles and 250 audit pages each month ... Scale ... $239 was $299 /mo, $2,868 billed yearly ... 100 articles and 1,000 audit pages each month ... AI generations ... 25 100 350 Custom",
+          "supersedes": "nothing (prices confirmed)",
+          "collector": "refresh-B4-2026-11-02 (live curl)"
+        },
+        {
+          "recaptured_at": "2026-11-02",
+          "source_url": "https://www.frase.io/pricing",
+          "claim": "NEW vendor-stated trial terms, read 2026-11-02 in the pricing-page FAQ: a 7-day free trial, no credit card, with Professional's feature set but capped at 5 articles, 50 audit pages, 25 AI prompts and up to 3 seats. No refund terms appear on the page.",
+          "quote": "What do I get in the 7-day free trial? Professional's full feature set ... Quantities are capped at 5 articles, 50 audit pages, 25 AI prompts and up to 3 seats. No credit card to start.",
+          "supersedes": "the page's 2026-07-20 note that current trial terms could not be tied to a dated vendor capture",
+          "collector": "refresh-B4-2026-11-02 (live curl)"
+        },
+        {
+          "recaptured_at": "2026-11-02",
+          "source_url": "https://www.frase.io/pricing",
+          "claim": "NEW vendor-stated features in the plan cards, read 2026-11-02: every plan lists 'AI Visibility on ChatGPT and Google AI' and Content Guard watching pages for Google decay (10 pages on Starter, 300 on Scale). Vendor listing only; no independent test of either feature exists in this registry. Overages are optional and off by default on Professional ($5 per extra article) and Scale ($4); Starter holds at its limit.",
+          "quote": "SEO and GEO scores, plus AI Visibility on ChatGPT and Google AI Content Guard watches 10 pages for Google decay ... Scale ... Content Guard watches 300 pages ... Professional adds $5 per extra article, $0.50 per audit page, and $0.25 per AI prompt. Scale adds $4, $0.40, and $0.20.",
+          "supersedes": "nothing; read alongside EV-frase-review-03 (no post-publish monitoring, practitioner test 2026-06) and EV-frase-review-04 (no AI-visibility tracking, practitioner test 2026-04), which describe the product at their own dates",
+          "collector": "refresh-B4-2026-11-02 (live curl)"
+        }
+      ],
       "honesty_notes": [
         "This 'Starter/Professional/Scale' naming and these prices do NOT match three independent dated sources from earlier in 2026: tested.media (2026-04-07) reports 'Basic $45/mo' (10 articles); kripeshadwani.com (2026-06-25) reports 'Basic $45/mo (30 documents), Growth $120/mo (unlimited)'; originality.ai (2025-08-20) reports a 'Team Plan $115/month'. Frase's plan NAMES and PRICES appear to have shifted at least once between mid-2025 and this Jul-2026 capture — treat any older community complaint about a specific price point as dated to its own month, never as describing current pricing (the same drift pattern documented for Surfer's Essential-to-Discovery rename in EV-surfer-seo-review-01/07).",
         "Cheaper than Surfer's ladder (Discovery $49-Enterprise $999+, EV-surfer-seo-review-01) at the entry tier but the SAME $49/mo starting price; more expensive than NeuronWriter's $23/mo Bronze entry (EV-neuronwriter-review-01) — a factual three-way pricing contrast, not an adopted value judgment."

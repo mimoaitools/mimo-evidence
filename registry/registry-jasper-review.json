@@ -28,18 +28,66 @@
     "coder_agreement_resolved_by": "resolver",
     "coder_agreement_resolved_note": "AUTHORITATIVE — supersedes the curator's provisional coder_agreement_rate above. Orchestrated dual-independent coding (MEP §5): the resolver compared coders A's and B's ACTUAL per-entry outputs and found IDENTICAL stance vectors on all 3 included entries — EV-jasper-review-01 n/a (vendor-primary pricing capture), EV-jasper-review-02 n/a (vendor-primary Brand Voice capture), EV-jasper-review-03 negative (fritz.ai long-form-depth). tool (Jasper), plan_tier_if_stated, and item_date also matched entry-for-entry; the only A/B delta was aspect WORDING granularity on EV-01 (B additionally enumerated the 5-Knowledge/3-Audiences caps alongside the 2-Brand-Voice cap both coders recorded) — same substance, not a coding split. Inter-coder agreement = 3/3 = 1.0; ambiguous_count = 0; 0 resolver-forced resolutions. Because the coders agreed on every entry, NO per-entry resolved_by is set (per §8, resolved_by is reserved for a genuine A/B disagreement; cf. jasper-alternatives EV-01 where it IS set). The EV-03 low-provenance concern (generic byline, undisclosed sample) is a screening/inclusion-label caveat preserved in that entry's platform label + honesty_notes, NOT a stance disagreement, and does not lower the rate. Parallels the writesonic-review EV-03 / seowriting-ai-review EV-08 / koala-ai-vs-seowriting-ai false-flag convergences.",
     "query_census": [
-      { "q": "WebFetch https://www.jasper.ai/pricing (vendor pricing — FRESH re-capture pinned to this review's build)", "candidates": 1, "note": "INCLUDED → EV-jasper-review-01. NET-NEW value beyond banked EV-evidence-ai-writing-tools-12 (2026-07-10): the tier ladder is now a two-tier Pro/Business structure — Pro $69/mo/seat ($59 annual, 1 seat) with 'Smart customization with 2 Brand Voices, 5 Knowledge assets and 3 Audiences', Canvas, Agents, plagiarism checker, browser extension, 7-day history/backups; Business = custom pricing with 'Unlimited IQ customization'. 7-day free trial; no money-back window stated. The '2 Brand Voices on the $69 Pro seat' plan cap is the sweep-pending Brand Voice count AND a documented contradiction-flavored plan limit on the marquee feature." },
-      { "q": "WebFetch https://www.g2.com/products/jasper-ai/reviews (OPEN-GATE dated rating capture)", "candidates": 1, "note": "unverifiable-this-run — HTTP 403 bot-wall (prior-run-confirmed). The circulating G2 4.7/1,270 figure is NOT registerable (snippet-only; MEP bars unfetched numbers)." },
-      { "q": "WebFetch https://www.trustpilot.com/review/jasper.ai (OPEN-GATE dated rating capture)", "candidates": 1, "note": "unverifiable-this-run — HTTP 403 bot-wall. The circulating Trustpilot 3.3/4,146 figure is NOT registerable." },
-      { "q": "WebSearch: jasper ai review 2026 hands-on test long-form article output sample quality methodology", "candidates": 9, "note": "fritz.ai (fetched → EV-03). g2 (dup → 403). demandsage.com, compareaitools.org, pullnova.com, getsearchengine.com, computertech.co, roborhythms.com (fetched → excluded no-method), nenawow.com (fetched → 404 dead) → excluded. compareaitools.org is the persona-flagged anti-pattern (an 8.5/10 tracing to nothing) — NEVER cite." },
-      { "q": "WebSearch: jasper ai g2 trustpilot rating reviews score 2026", "candidates": 10, "note": "Surfaced the circulating cross-platform numbers as SEARCH-SNIPPET SYNTHESIS ONLY — G2 4.7/1,270 · Trustpilot 3.3/4,146 · TrustRadius 7.9/47 · Gartner 4.4/95. Every underlying page 403s on direct fetch (below), so ALL FOUR are barred from the page (MEP: snippet-only numbers are not evidence). New distinct URLs: eyesift.com (affiliate blog paraphrasing G2 '4.7/1,270' — no-method, NOT primary), getaitopia.io, dlcuration.com, amrytt.com → excluded no-method; capterra.com/p/217242 (rating already banked EV-jasper-alternatives-03/04 → duplicate-of-banked, reused not re-registered); g2/trustpilot/demandsage/roborhythms = dups." },
-      { "q": "WebFetch https://www.gartner.com/reviews/product/jasper (rating fallback)", "candidates": 1, "note": "unverifiable-this-run — HTTP 403 bot-wall (prior-run-confirmed). Gartner 4.4/95 snippet NOT registerable." },
-      { "q": "WebFetch https://nenawow.com/blog/jasper-review (candidate disclosed-method long-form test)", "candidates": 1, "note": "dead — HTTP 404 Not Found. Dead-domain hygiene: any 'difference appears during editing' claim circulating from its title is NEVER repeated or laundered." },
-      { "q": "WebFetch https://www.roborhythms.com/jasper-ai-review-2026/ (candidate first-person test)", "candidates": 1, "note": "excluded no-methodology-affiliate — first-person (Noah Albert, 2026-04-08) but NO disclosed sample/dates/criteria, affiliate program 'pending', and the only quotable long-form finding ('Output still requires editing. Jasper generates starting points, not finished copy') merely restates the banked EV-jasper-alternatives-06 (Birkett) 'starting point' theme — adds no distinct, verifiable finding." },
-      { "q": "WebFetch https://fritz.ai/jasper-ai-review/ (candidate first-person long-form test)", "candidates": 1, "note": "INCLUDED → EV-jasper-review-03. First-person ('used Jasper AI across three paid projects — email campaigns, landing pages, blog content'; Pro plan), affiliate-disclosed, updated 2025-12-15, with a specific dated long-form finding. CAVEAT: generic/anonymous byline 'Fritz Author' + no disclosed sample size → labeled community-report with a persona/anonymity screening caveat, on the writesonic-review aigeniusoptimizer precedent." },
-      { "q": "WebFetch https://www.trustradius.com/products/jasper/reviews (rating fallback)", "candidates": 1, "note": "unverifiable-this-run — HTTP 403 bot-wall. TrustRadius 7.9/47 snippet NOT registerable." },
-      { "q": "WebFetch https://www.jasper.ai/products/brand-voice (current Brand Voice vendor wording)", "candidates": 1, "note": "INCLUDED → EV-jasper-review-02. Vendor feature wording captured ('AI that sounds like you'; 'ensuring every output reflects your unique brand voice'; flags off-brand tone; Brand IQ). No template/app/language COUNT stated on this page — the old '50+/103 templates' figure could NOT be confirmed (Jasper has repositioned around Canvas/Agents/Brand IQ); see evidence_gaps." },
-      { "q": "DIRECT: reddit.com search for Jasper review/complaint threads", "candidates": 0, "note": "Reddit remained unreachable this run — search surfaced ZERO reddit.com URLs and direct reddit.com fetch is blocked in this environment (same limit hit in every prior Mimo run). Not counted in identified." }
+      {
+        "q": "WebFetch https://www.jasper.ai/pricing (vendor pricing — FRESH re-capture pinned to this review's build)",
+        "candidates": 1,
+        "note": "INCLUDED → EV-jasper-review-01. NET-NEW value beyond banked EV-evidence-ai-writing-tools-12 (2026-07-10): the tier ladder is now a two-tier Pro/Business structure — Pro $69/mo/seat ($59 annual, 1 seat) with 'Smart customization with 2 Brand Voices, 5 Knowledge assets and 3 Audiences', Canvas, Agents, plagiarism checker, browser extension, 7-day history/backups; Business = custom pricing with 'Unlimited IQ customization'. 7-day free trial; no money-back window stated. The '2 Brand Voices on the $69 Pro seat' plan cap is the sweep-pending Brand Voice count AND a documented contradiction-flavored plan limit on the marquee feature."
+      },
+      {
+        "q": "WebFetch https://www.g2.com/products/jasper-ai/reviews (OPEN-GATE dated rating capture)",
+        "candidates": 1,
+        "note": "unverifiable-this-run — HTTP 403 bot-wall (prior-run-confirmed). The circulating G2 4.7/1,270 figure is NOT registerable (snippet-only; MEP bars unfetched numbers)."
+      },
+      {
+        "q": "WebFetch https://www.trustpilot.com/review/jasper.ai (OPEN-GATE dated rating capture)",
+        "candidates": 1,
+        "note": "unverifiable-this-run — HTTP 403 bot-wall. The circulating Trustpilot 3.3/4,146 figure is NOT registerable."
+      },
+      {
+        "q": "WebSearch: jasper ai review 2026 hands-on test long-form article output sample quality methodology",
+        "candidates": 9,
+        "note": "fritz.ai (fetched → EV-03). g2 (dup → 403). demandsage.com, compareaitools.org, pullnova.com, getsearchengine.com, computertech.co, roborhythms.com (fetched → excluded no-method), nenawow.com (fetched → 404 dead) → excluded. compareaitools.org is the persona-flagged anti-pattern (an 8.5/10 tracing to nothing) — NEVER cite."
+      },
+      {
+        "q": "WebSearch: jasper ai g2 trustpilot rating reviews score 2026",
+        "candidates": 10,
+        "note": "Surfaced the circulating cross-platform numbers as SEARCH-SNIPPET SYNTHESIS ONLY — G2 4.7/1,270 · Trustpilot 3.3/4,146 · TrustRadius 7.9/47 · Gartner 4.4/95. Every underlying page 403s on direct fetch (below), so ALL FOUR are barred from the page (MEP: snippet-only numbers are not evidence). New distinct URLs: eyesift.com (affiliate blog paraphrasing G2 '4.7/1,270' — no-method, NOT primary), getaitopia.io, dlcuration.com, amrytt.com → excluded no-method; capterra.com/p/217242 (rating already banked EV-jasper-alternatives-03/04 → duplicate-of-banked, reused not re-registered); g2/trustpilot/demandsage/roborhythms = dups."
+      },
+      {
+        "q": "WebFetch https://www.gartner.com/reviews/product/jasper (rating fallback)",
+        "candidates": 1,
+        "note": "unverifiable-this-run — HTTP 403 bot-wall (prior-run-confirmed). Gartner 4.4/95 snippet NOT registerable."
+      },
+      {
+        "q": "WebFetch https://nenawow.com/blog/jasper-review (candidate disclosed-method long-form test)",
+        "candidates": 1,
+        "note": "dead — HTTP 404 Not Found. Dead-domain hygiene: any 'difference appears during editing' claim circulating from its title is NEVER repeated or laundered."
+      },
+      {
+        "q": "WebFetch https://www.roborhythms.com/jasper-ai-review-2026/ (candidate first-person test)",
+        "candidates": 1,
+        "note": "excluded no-methodology-affiliate — first-person (Noah Albert, 2026-04-08) but NO disclosed sample/dates/criteria, affiliate program 'pending', and the only quotable long-form finding ('Output still requires editing. Jasper generates starting points, not finished copy') merely restates the banked EV-jasper-alternatives-06 (Birkett) 'starting point' theme — adds no distinct, verifiable finding."
+      },
+      {
+        "q": "WebFetch https://fritz.ai/jasper-ai-review/ (candidate first-person long-form test)",
+        "candidates": 1,
+        "note": "INCLUDED → EV-jasper-review-03. First-person ('used Jasper AI across three paid projects — email campaigns, landing pages, blog content'; Pro plan), affiliate-disclosed, updated 2025-12-15, with a specific dated long-form finding. CAVEAT: generic/anonymous byline 'Fritz Author' + no disclosed sample size → labeled community-report with a persona/anonymity screening caveat, on the writesonic-review aigeniusoptimizer precedent."
+      },
+      {
+        "q": "WebFetch https://www.trustradius.com/products/jasper/reviews (rating fallback)",
+        "candidates": 1,
+        "note": "unverifiable-this-run — HTTP 403 bot-wall. TrustRadius 7.9/47 snippet NOT registerable."
+      },
+      {
+        "q": "WebFetch https://www.jasper.ai/products/brand-voice (current Brand Voice vendor wording)",
+        "candidates": 1,
+        "note": "INCLUDED → EV-jasper-review-02. Vendor feature wording captured ('AI that sounds like you'; 'ensuring every output reflects your unique brand voice'; flags off-brand tone; Brand IQ). No template/app/language COUNT stated on this page — the old '50+/103 templates' figure could NOT be confirmed (Jasper has repositioned around Canvas/Agents/Brand IQ); see evidence_gaps."
+      },
+      {
+        "q": "DIRECT: reddit.com search for Jasper review/complaint threads",
+        "candidates": 0,
+        "note": "Reddit remained unreachable this run — search surfaced ZERO reddit.com URLs and direct reddit.com fetch is blocked in this environment (same limit hit in every prior Mimo run). Not counted in identified."
+      }
     ],
     "reddit_access_note": "PRIMARY Reddit threads were NOT obtainable this run (zero reddit.com URLs surfaced; direct fetch blocked — the inherited environment limit documented in the evidence-ai-writing-tools / jasper-alternatives / writesonic-review shards). CONSEQUENCE for title_policy: the social-proof archetype remains BANNED for /tools/jasper — the page carries ZERO live-verified Reddit/Quora EV entries. Community sentiment must route ONLY through the dated, linked Capterra + Medium + named-blog accounts already banked (EV-jasper-alternatives-02/03/04/06); no 'what Reddit says' framing is permitted.",
     "rating_gate_status": "OPEN-GATE NOT CLEARED (hard-closed this run). The semantic/persona phases gated the 'arbitrated G2-4.7-vs-Trustpilot-3.4 rating split' H2 and the evidence-verdict archetype's signature claim on a live-VERIFIED third-party rating pair. All four candidate platforms — G2, Trustpilot, TrustRadius, Gartner Peer Insights — returned HTTP 403 on direct fetch; their numbers exist ONLY as search-snippet synthesis and are barred by MEP. The ONLY verified third-party rating for Jasper is Capterra 4.8/5 (n=1,855), already banked as EV-jasper-alternatives-03. RECOMMENDATION to seo-schema-technical: do NOT select evidence-verdict on a rating-split premise (uncashable). The two titleable, EV-backed archetypes on this run's evidence are (a) number-anchor — '$69 a Seat' (EV-jasper-review-01 / reused EV-...-12), framed as a documented capture, and (b) contradiction — the NET-NEW 'the $69 Pro seat caps the marquee Brand Voice feature at just 2 voices' (EV-jasper-review-01 plan limit vs EV-jasper-review-02 unlimited-brand-voice marketing). Gate-8b diversification: legit-check-question and open-questions-record are already spent on live review-class pages (koala-ai / seowriting-ai).",
@@ -51,22 +99,91 @@
       "OWNED-BORDER held (0 registered): no humanizer/detector/paraphraser source registered or cited. Jasper's own 'AI Detector' / plagiarism-checker feature is described only as a labeled vendor feature line inside the pricing capture (EV-jasper-review-01) — it is NOT scored, NOT compared to any detector, and no detection-accuracy claim is made (that whole category is structurally out of scope; QuillBot/Wordtune never named)."
     ],
     "entries_reused": [
-      { "id": "EV-evidence-ai-writing-tools-12", "shard": "registry-evidence-ai-writing-tools.json", "source": "jasper.ai/pricing", "why": "The 2026-07-10 pricing anchor — carries the cancellation wording ('you will no longer be charged … access until the end of your billing cycle') and the 'no money-back window' reading. Reuse for the switching-logistics / refund row; the FRESH 2026-07-12 re-capture EV-jasper-review-01 supersedes it for the current tier structure and the Brand Voice plan cap." },
-      { "id": "EV-evidence-ai-writing-tools-07", "shard": "registry-evidence-ai-writing-tools.json", "source": "neuraltoolhub.com/jasper-vs-writesonic-vs-copy-ai", "why": "THE one disclosed-method test rating Jasper's long-form drafts HIGHEST of Jasper/Writesonic/Copy.ai (2025, pseudonymous, year-only date, coding-ambiguous) — Jasper's single evidenced strength and the anchor of the long-form-quality subscore + the 'when Jasper is still right' section. Cite as one dated test, never a ranking." },
-      { "id": "EV-evidence-ai-writing-tools-08", "shard": "registry-evidence-ai-writing-tools.json", "source": "neuraltoolhub.com/jasper-vs-writesonic-vs-copy-ai", "why": "Same test rated Writesonic best of the three for short-form social/ad copy — the honest 'different tools win different jobs' nuance for the use-case-fit section." },
-      { "id": "EV-jasper-alternatives-02", "shard": "registry-jasper-alternatives.json", "source": "mithunsrivastava.medium.com", "why": "First-person paid EXIT — 'The output sounded like everyone else' after >$800 across 8 months (2026-04-16). The generic-output complaint (the #2 switching driver) as a dated first-person account; feeds the limitations + verdict polarity." },
-      { "id": "EV-jasper-alternatives-03", "shard": "registry-jasper-alternatives.json", "source": "capterra.com/p/217242/Jasper/reviews/", "why": "THE mandatory positive counter-signal AND the only verified third-party rating: Capterra 4.8/5 (n=1,855) with dated price-driven exit reviews inside it (Bruce S. 5-star 2025-01-21; VR 4-star 2026-02-12). Coded mixed. Prevents the page reading as 'widely disliked'; reported in prose, NEVER as aggregateRating schema." },
-      { "id": "EV-jasper-alternatives-04", "shard": "registry-jasper-alternatives.json", "source": "capterra.com/p/217242/Jasper/reviews/", "why": "Dated Capterra review (Nishant T., Sr Analyst, 4 stars, 2025-07-12): 'Sometimes generate generic or repetitive content' — one dated report of the output-quality complaint; independently corroborates fritz.ai (EV-jasper-review-03) and Mithun (EV-...-02) on the depth/generic axis." },
-      { "id": "EV-jasper-alternatives-06", "shard": "registry-jasper-alternatives.json", "source": "alexbirkett.com/jasper-vs-writer", "why": "The honest STAY counterweight: an independent named user (updated 2025-06-27) whose raw Jasper output is 'usually not great' BUT gives a ~2-5x speed multiplier and who keeps using it heavily. Coded mixed. Hardens the 'when Jasper is still right' section from a non-vendor voice; corroborates the field-wide editing-obligation theme." },
-      { "id": "EV-evidence-ai-writing-tools-01", "shard": "registry-evidence-ai-writing-tools.json", "source": "arxiv.org/abs/2510.06265", "why": "Field-wide LLM hallucination definition — grounds the accuracy subscore + limitations 'fact-check pass required' point. NOT a Jasper-specific rate." },
-      { "id": "EV-evidence-ai-writing-tools-02", "shard": "registry-evidence-ai-writing-tools.json", "source": "pmc.ncbi.nlm.nih.gov/articles/PMC12365265", "why": "Peer-reviewed user-reported hallucination study (factual incorrectness = 38% of 350 confirmed instances, DEFINED sample) — the documented factual-error risk behind the accuracy caveat. Denominator-anchored; never presented as a Jasper population rate." },
-      { "id": "EV-evidence-ai-writing-tools-03", "shard": "registry-evidence-ai-writing-tools.json", "source": "pmc.ncbi.nlm.nih.gov/articles/PMC11074943", "why": "ChatGPT reference-fabrication test (65% non-existent; dated GPT-3.5/4-era, must be labeled dated) — the accuracy caveat for the 'jasper vs chatgpt' baseline aside (a top cluster term)." },
-      { "id": "EV-evidence-ai-writing-tools-15", "shard": "registry-evidence-ai-writing-tools.json", "source": "claude.com/pricing", "why": "Claude Pro $17/mo — the no-affiliate baseline scored on the same rubric; the 'chat subscription you already pay for' answer to the 'jasper ai vs chatgpt' (480/mo) intent and the no-commission-bias proof." },
-      { "id": "EV-evidence-ai-writing-tools-09", "shard": "registry-evidence-ai-writing-tools.json", "source": "koala.sh/pricing", "why": "Koala $9/mo = 15,000 words — a real cheaper alternative price for the cost-context aside (bridges to /alternatives/jasper without dual-targeting the switching intent)." },
-      { "id": "EV-evidence-ai-writing-tools-10", "shard": "registry-evidence-ai-writing-tools.json", "source": "rytr.me/pricing", "why": "Rytr free 10K chars/mo + $7.50 Unlimited — the free-tier contrast to Jasper's no-permanent-free-tier wall (the price-wall driver bites hardest for the solo-blogger primary persona)." }
+      {
+        "id": "EV-evidence-ai-writing-tools-12",
+        "shard": "registry-evidence-ai-writing-tools.json",
+        "source": "jasper.ai/pricing",
+        "why": "The 2026-07-10 pricing anchor — carries the cancellation wording ('you will no longer be charged … access until the end of your billing cycle') and the 'no money-back window' reading. Reuse for the switching-logistics / refund row; the FRESH 2026-07-12 re-capture EV-jasper-review-01 supersedes it for the current tier structure and the Brand Voice plan cap."
+      },
+      {
+        "id": "EV-evidence-ai-writing-tools-07",
+        "shard": "registry-evidence-ai-writing-tools.json",
+        "source": "neuraltoolhub.com/jasper-vs-writesonic-vs-copy-ai",
+        "why": "THE one disclosed-method test rating Jasper's long-form drafts HIGHEST of Jasper/Writesonic/Copy.ai (2025, pseudonymous, year-only date, coding-ambiguous) — Jasper's single evidenced strength and the anchor of the long-form-quality subscore + the 'when Jasper is still right' section. Cite as one dated test, never a ranking."
+      },
+      {
+        "id": "EV-evidence-ai-writing-tools-08",
+        "shard": "registry-evidence-ai-writing-tools.json",
+        "source": "neuraltoolhub.com/jasper-vs-writesonic-vs-copy-ai",
+        "why": "Same test rated Writesonic best of the three for short-form social/ad copy — the honest 'different tools win different jobs' nuance for the use-case-fit section."
+      },
+      {
+        "id": "EV-jasper-alternatives-02",
+        "shard": "registry-jasper-alternatives.json",
+        "source": "mithunsrivastava.medium.com",
+        "why": "First-person paid EXIT — 'The output sounded like everyone else' after >$800 across 8 months (2026-04-16). The generic-output complaint (the #2 switching driver) as a dated first-person account; feeds the limitations + verdict polarity."
+      },
+      {
+        "id": "EV-jasper-alternatives-03",
+        "shard": "registry-jasper-alternatives.json",
+        "source": "capterra.com/p/217242/Jasper/reviews/",
+        "why": "THE mandatory positive counter-signal AND the only verified third-party rating: Capterra 4.8/5 (n=1,855) with dated price-driven exit reviews inside it (Bruce S. 5-star 2025-01-21; VR 4-star 2026-02-12). Coded mixed. Prevents the page reading as 'widely disliked'; reported in prose, NEVER as aggregateRating schema."
+      },
+      {
+        "id": "EV-jasper-alternatives-04",
+        "shard": "registry-jasper-alternatives.json",
+        "source": "capterra.com/p/217242/Jasper/reviews/",
+        "why": "Dated Capterra review (Nishant T., Sr Analyst, 4 stars, 2025-07-12): 'Sometimes generate generic or repetitive content' — one dated report of the output-quality complaint; independently corroborates fritz.ai (EV-jasper-review-03) and Mithun (EV-...-02) on the depth/generic axis."
+      },
+      {
+        "id": "EV-jasper-alternatives-06",
+        "shard": "registry-jasper-alternatives.json",
+        "source": "alexbirkett.com/jasper-vs-writer",
+        "why": "The honest STAY counterweight: an independent named user (updated 2025-06-27) whose raw Jasper output is 'usually not great' BUT gives a ~2-5x speed multiplier and who keeps using it heavily. Coded mixed. Hardens the 'when Jasper is still right' section from a non-vendor voice; corroborates the field-wide editing-obligation theme."
+      },
+      {
+        "id": "EV-evidence-ai-writing-tools-01",
+        "shard": "registry-evidence-ai-writing-tools.json",
+        "source": "arxiv.org/abs/2510.06265",
+        "why": "Field-wide LLM hallucination definition — grounds the accuracy subscore + limitations 'fact-check pass required' point. NOT a Jasper-specific rate."
+      },
+      {
+        "id": "EV-evidence-ai-writing-tools-02",
+        "shard": "registry-evidence-ai-writing-tools.json",
+        "source": "pmc.ncbi.nlm.nih.gov/articles/PMC12365265",
+        "why": "Peer-reviewed user-reported hallucination study (factual incorrectness = 38% of 350 confirmed instances, DEFINED sample) — the documented factual-error risk behind the accuracy caveat. Denominator-anchored; never presented as a Jasper population rate."
+      },
+      {
+        "id": "EV-evidence-ai-writing-tools-03",
+        "shard": "registry-evidence-ai-writing-tools.json",
+        "source": "pmc.ncbi.nlm.nih.gov/articles/PMC11074943",
+        "why": "ChatGPT reference-fabrication test (65% non-existent; dated GPT-3.5/4-era, must be labeled dated) — the accuracy caveat for the 'jasper vs chatgpt' baseline aside (a top cluster term)."
+      },
+      {
+        "id": "EV-evidence-ai-writing-tools-15",
+        "shard": "registry-evidence-ai-writing-tools.json",
+        "source": "claude.com/pricing",
+        "why": "Claude Pro $17/mo — the no-affiliate baseline scored on the same rubric; the 'chat subscription you already pay for' answer to the 'jasper ai vs chatgpt' (480/mo) intent and the no-commission-bias proof."
+      },
+      {
+        "id": "EV-evidence-ai-writing-tools-09",
+        "shard": "registry-evidence-ai-writing-tools.json",
+        "source": "koala.sh/pricing",
+        "why": "Koala $9/mo = 15,000 words — a real cheaper alternative price for the cost-context aside (bridges to /alternatives/jasper without dual-targeting the switching intent)."
+      },
+      {
+        "id": "EV-evidence-ai-writing-tools-10",
+        "shard": "registry-evidence-ai-writing-tools.json",
+        "source": "rytr.me/pricing",
+        "why": "Rytr free 10K chars/mo + $7.50 Unlimited — the free-tier contrast to Jasper's no-permanent-free-tier wall (the price-wall driver bites hardest for the solo-blogger primary persona)."
+      }
     ],
     "entries_routed_out": [
-      { "id": "EV-jasper-alternatives-01", "shard": "registry-jasper-alternatives.json", "why_not_reused": "juliety's 'I no longer recommend Jasper for solopreneurs … the only AI writer I currently like is Koala' is the SIGNATURE migration/switch-to evidence for /alternatives/jasper (semantic phase routed it OUT of this review page). Reusing it here would cannibalize the switching page's differentiator and drift this single-tool VERDICT toward switching intent (canonical-intent line). The review page uses the same authors' JASPER-scoped complaints via EV-...-02/04/06 instead, without the switch-to recommendation." }
+      {
+        "id": "EV-jasper-alternatives-01",
+        "shard": "registry-jasper-alternatives.json",
+        "why_not_reused": "juliety's 'I no longer recommend Jasper for solopreneurs … the only AI writer I currently like is Koala' is the SIGNATURE migration/switch-to evidence for /alternatives/jasper (semantic phase routed it OUT of this review page). Reusing it here would cannibalize the switching page's differentiator and drift this single-tool VERDICT toward switching intent (canonical-intent line). The review page uses the same authors' JASPER-scoped complaints via EV-...-02/04/06 instead, without the switch-to recommendation."
+      }
     ]
   },
   "entries": [
@@ -84,7 +201,10 @@
       "flow_id": "jasper-review-2026-07-12",
       "screening": "included",
       "label": "vendor-claim",
-      "coders": ["A", "B"],
+      "coders": [
+        "A",
+        "B"
+      ],
       "coder_agreement": true,
       "coding": {
         "tool": "Jasper",
@@ -98,6 +218,24 @@
         "CONTRADICTION-GRADE FACT: the $69 Pro seat caps the flagship Brand Voice feature at 2 voices while the vendor markets Brand Voice as the differentiator (EV-jasper-review-02) — a documented primary-source plan limit, titleable as a contradiction archetype. Frame as 'the $69 plan includes 2 Brand Voices; unlimited requires custom-priced Business', never as a value judgement.",
         "'no money-back window' is a documented ABSENCE on the pricing page, not a vendor denial of refunds — the help-center refund page was not fetched this run (help.jasper.ai 403 in prior runs). Frame as absence, not a stated no-refund policy.",
         "Jasper's plagiarism-checker line is a labeled vendor FEATURE only — it is NOT a detector/humanizer claim and must not be scored or compared (owned-border)."
+      ],
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-05",
+          "source_url": "https://www.jasper.ai/pricing",
+          "claim": "MATCH. Pro is $69 a month per seat billed monthly or $59 a month billed yearly, includes 1 seat, 2 Brand Voices, 5 Knowledge assets and 3 Audiences; Business is custom-priced and begins with a 12-month commitment; 7-day free trial on Pro. No word cap stated; credits apply to usage-based features (GEO Hub, Agents) on Business.",
+          "quote": "$59/month billed yearly or $69/month billed monthly (cancel anytime)",
+          "supersedes": "nothing (confirmed)",
+          "collector": "refresh-B6-2026-11-05 (live curl, browser UA, r.jina.ai; Writesonic monthly toggle read in a browser)"
+        },
+        {
+          "recaptured_at": "2026-11-05",
+          "source_url": "https://help.jasper.ai/hc/en-us/articles/18618674196891-Free-Trial",
+          "claim": "NEW DETAIL. Jasper's help center (article shown as updated about a year before the read) says a credit card is required to start the trial. The pricing page itself does not mention a card.",
+          "quote": "We do require a credit card during our trial sign-ups right now.",
+          "supersedes": "nothing (adds the card requirement)",
+          "collector": "refresh-B6-2026-11-05 (live curl, browser UA, r.jina.ai; Writesonic monthly toggle read in a browser)"
+        }
       ]
     },
     {
@@ -114,7 +252,10 @@
       "flow_id": "jasper-review-2026-07-12",
       "screening": "included",
       "label": "vendor-claim",
-      "coders": ["A", "B"],
+      "coders": [
+        "A",
+        "B"
+      ],
       "coder_agreement": true,
       "coding": {
         "tool": "Jasper",
@@ -143,7 +284,10 @@
       "flow_id": "jasper-review-2026-07-12",
       "screening": "included",
       "label": "community-report",
-      "coders": ["A", "B"],
+      "coders": [
+        "A",
+        "B"
+      ],
       "coder_agreement": true,
       "coding": {
         "tool": "Jasper",
