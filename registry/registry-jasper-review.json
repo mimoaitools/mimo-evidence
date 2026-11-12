@@ -235,6 +235,30 @@
           "quote": "We do require a credit card during our trial sign-ups right now.",
           "supersedes": "nothing (adds the card requirement)",
           "collector": "refresh-B6-2026-11-05 (live curl, browser UA, r.jina.ai; Writesonic monthly toggle read in a browser)"
+        },
+        {
+          "recaptured_at": "2026-11-04",
+          "source_url": "https://www.jasper.ai/pricing",
+          "claim": "Re-read 2026-11-04: Pro $59/month billed yearly or $69/month billed monthly, per seat; 2 Brand Voices, 5 Knowledge assets, 3 Audiences; Business custom; 7-day free trial of Pro. Unchanged.",
+          "quote": "Pro: $59/month billed yearly or $69/month billed monthly (cancel anytime).",
+          "supersedes": "none",
+          "collector": "evidence-curator (curl + WebFetch)"
+        },
+        {
+          "recaptured_at": "2026-11-11",
+          "source_url": "https://www.jasper.ai/pricing",
+          "claim": "Publish-day re-read 2026-11-11: unchanged from the 2026-11-04 recapture.",
+          "quote": "Pro: $59/month billed yearly or $69/month billed monthly (cancel anytime).",
+          "supersedes": "none (no change)",
+          "collector": "orchestrator (publish-day recheck)"
+        },
+        {
+          "recaptured_at": "2026-11-12",
+          "source_url": "https://www.jasper.ai/pricing",
+          "claim": "Publish-day re-read 2026-11-12 (actual publish day): page text identical to the 2026-11-11 read.",
+          "quote": "Pro: $59/month billed yearly or $69/month billed monthly (cancel anytime).",
+          "supersedes": "none (no change)",
+          "collector": "orchestrator (publish-day recheck)"
         }
       ]
     },

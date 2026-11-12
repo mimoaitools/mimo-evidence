@@ -24,35 +24,150 @@
     },
     "coder_agreement_rate": "CURATOR-PROVISIONAL single-pass coding across all 12 included entries (dual-independent coding + resolver pass is orchestrated above this run). Stance calls: 2 n/a (vendor-primary, no sentiment to code), 5 mixed, 3 negative, 2 positive-leaning-mixed. FLAGGED FOR ORCHESTRATED DUAL-CODING / RESOLVER ATTENTION: (1) EV-frase-review-02 (Ahrefs study) — coded 'negative' for the specific keyword-stuffing example but the study's group-level finding (grouped among 'the other three' weak-correlated tools) could be softened to 'mixed' by the same logic flagged in the sibling neuronwriter/surfer entries — even the best-correlated tools showed only weak correlation; (2) EV-frase-review-03 (getspike.ai test) — same rival-vendor COI already flagged in EV-surfer-seo-review-09, PLUS this run found the article's headline ('200+ Articles') is NOT supported by its own body text (which describes a 15-article test) — a headline-vs-methodology mismatch a resolver should weigh when deciding how much confidence the piece deserves; (3) EV-frase-review-07 (AppSumo defined-sample) — coded 'negative' from 3 dated reviews out of 166 total; a resolver should confirm the denominator-anchored framing survives rewriting and is never rounded to a rate.",
     "query_census": [
-      { "q": "WebSearch: site:reddit.com frase.io review", "candidates": 0, "note": "No links found." },
-      { "q": "WebSearch: frase seo reddit worth it 2026", "candidates": 1, "note": "diyai.io/ai-tools/seo/reviews/frase-review/. Zero reddit.com URLs." },
-      { "q": "WebSearch: frase seo reddit r/juststart", "candidates": 2, "note": "skipblast.com/best-subreddits-awesome-seo-discussions/, ibeamconsulting.com/blog/reddit-seo-topics-questions-answers/ — both generic 'which subreddits exist' pages, not Frase-specific, zero reddit.com URLs." },
-      { "q": "WebSearch: frase seo reddit r/bigseo", "candidates": 0, "note": "No links found." },
-      { "q": "WebSearch: \"frase\" content brief site:reddit.com", "candidates": 0, "note": "No links found." },
-      { "q": "WebSearch: frase seo credits ran out reddit complaint", "candidates": 1, "note": "frase.io/blog/content-optimization-is-dead — surfaced because the post itself references an unlinked r/seogrowth thread. Zero reddit.com URLs." },
-      { "q": "WebSearch: reddit r/seogrowth \"still using content optimization tools\" Frase Surfer Scalenut", "candidates": 0, "note": "Same frase.io blog post resurfaced (duplicate, not counted again). Response paraphrased alleged Reddit top-comments ('make content less readable', 'don't account for LLMs', 'lack a LLM/Rankbrain/Gemini friendliness metric') but NO reddit.com URL was ever produced — confirmed via a direct fetch of the blog post itself (see verification note below). NOT registered." },
-      { "q": "WebSearch: frase cancelled subscription reddit", "candidates": 0, "note": "No links found." },
-      { "q": "WebSearch: frase vs surfer reddit switched", "candidates": 0, "note": "No links found." },
-      { "q": "WebSearch: frase vs neuronwriter reddit switched", "candidates": 5, "note": "eesel.ai/blog/frase-ai-vs-neuronwriter, kripeshadwani.com/neuronwriter-review/, neuronwriter.com/neuronwriter-vs-frase-io/, neuronwriter.com/neuronwriter-vs-frase/, neuronwriterreview.com/frase-vs-neuronwriter-key-differences/. Zero reddit.com URLs." },
-      { "q": "WebSearch: frase quora review experience", "candidates": 10, "note": "demandsage.com/frase-review/, smartcustomer.com/reviews/quora.com, quorablog.quora.com/Reviews-on-Quora, kripeshadwani.com/frase-review/, nichepursuits.com/frase-review/, quora.com/How-do-you-write-a-review-based-on-a-given-topic, quora.com/Reviews-Quora-feature-How-do-I-create-a-review-question, quora.com/How-do-I-give-a-review, quorareview.com/, thedoublethink.com/frase-review/. No genuine quora.com Q&A about Frase — only generic 'how Quora works' meta pages." },
-      { "q": "WebSearch: frase seo scam overpriced reddit", "candidates": 0, "note": "No links found." },
-      { "q": "DIRECT: WebFetch https://www.reddit.com/search/?q=frase%20seo", "candidates": 0, "note": "Blocked — 'Claude Code is unable to fetch from www.reddit.com'. Confirms the inherited environment limitation from every prior Mimo shard." },
-      { "q": "DIRECT: WebFetch https://old.reddit.com/search.json?q=frase.io", "candidates": 0, "note": "Blocked — 'Claude Code is unable to fetch from old.reddit.com'." },
-      { "q": "WebSearch: frase seo capterra reviews", "candidates": 10, "note": "capterra.com/p/197955/Frase/reviews/, capterra.com/p/197955/Frase/, frase.io/reviews, youraisoft.com/frase-review/, frase.io/, amrytt.com/frase-review/, capterra.com/compare/197955-231656/Frase-vs-Outranking, capterra.com/compare/197955-212333/Frase-vs-Contentpace, capterra.com/p/197955/Frase/reviews/?page=2, capterra.com/compare/197955-217242/Frase-vs-Jasper." },
-      { "q": "WebSearch: frase seo g2 reviews", "candidates": 6, "note": "g2.com/products/frase-io/reviews, frase.io/features/seo-content-optimization, compareaitools.org/frase-review/, vettedthis.com/software/marketing/seo-tools/frase-io-review-details-pricing-features/, computertech.co/frase-review/, seoptimer.com/blog/frase-vs-surfer-seo/." },
-      { "q": "DIRECT: WebFetch https://www.trustpilot.com/review/frase.io", "candidates": 1, "note": "HTTP 403 Forbidden — unverifiable-this-run." },
-      { "q": "WebSearch: getspike.ai frase review test", "candidates": 10, "note": "getspike.ai/blog/frase-vs-clearscope/, getspike.ai/blog/frase-vs-marketmuse/, getspike.ai/, getspike.ai/blog/frase-alternatives/, getspike.ai/casestudies/, getspike.ai/blog/writesonic-alternatives/, getspike.ai/about, getspike.ai/blog/author/shrestha/, getspike.ai/blog/surfer-seo-vs-frase/, getspike.ai/pricing." },
-      { "q": "WebSearch: frase review hands-on test months using", "candidates": 7, "note": "dailyaireviews.com/frase-io-review-2026/, geekflare.com/reviews/frase-review/, searchendurance.com/frase-review/, fahimai.com/frase, aitoolblaze.com/blog/frase-review-2026, aiflowreview.com/frase-review-2025/, originality.ai/blog/frase-io-review." },
-      { "q": "WebSearch: tested.media ai seo tools frase budget pick research", "candidates": 10, "note": "tested.media/ai-seo-tools/, rankability.com/blog/best-seo-content-optimization-tools/, onelittleweb.com/top-tools/best-ai-seo-tools/, vezadigital.com/post/best-ai-seo-tools, xseek.io/blogs/articles/which-ai-tool-is-best-for-seo-optimization, contextrankings.com/rankings/2026-06-17-the-best-ai-seo-content-optimization-tools/, atlasmarketing.ai/seo-tools/best-ai-seo-tools/, whatagraph.com/blog/articles/ai-seo-tools, cited.so/blog/best-ai-seo-tools-for-small-business, indiehackers.com/post/best-ai-seo-software-2026-i-burned-900-and-six-weeks-testing-tools-so-you-dont-have-to-519ffecae1." },
-      { "q": "DIRECT: WebFetch https://ahrefs.com/blog/seo-content-score-study/ (targeted re-fetch of a study already known from registry-neuronwriter-review.json and registry-surfer-seo-review.json, this run extracting Frase's own data point)", "candidates": 1, "note": "INCLUDED → EV-frase-review-02. Confirmed this run the study names Frase as one of the 5 tools tested and includes a Frase-specific illustrative screenshot/example about gaming the content score." },
-      { "q": "WebSearch: \"frase.io\" reddit content_marketing", "candidates": 3, "note": "firdaussyazwani.com/reviews/frase-review, frase.io/blog/frase-vs-copy-ai-the-best-ai-for-content-marketing-and-copywriting, frase.io/content-marketing/. Zero reddit.com URLs." },
-      { "q": "WebSearch: frase ai writer generic reddit", "candidates": 1, "note": "seoptimer.com/blog/frase-review/. Zero reddit.com URLs." },
-      { "q": "WebSearch: Is Frase worth it quora", "candidates": 4, "note": "passiveincomesuperstars.com/frase-review/, bloggingwizard.com/frase-review/, contentellect.com/frase-ai-review/, ddiy.co/frase-ai-review/. No genuine quora.com URL." },
-      { "q": "WebSearch: frase seo alternative switched reddit r/SEO", "candidates": 1, "note": "rankup.so/academy/frase-alternatives. Zero reddit.com URLs." },
-      { "q": "WebSearch: frase.io trustpilot rating reviews", "candidates": 5, "note": "trustpilot.com/review/www.frase.io, uk.trustpilot.com/review/www.frase.io?page=3, behindrankings.com/frase-io-review/, trustpilot.com/review/www.frase.io?page=2, linkedin.com/pulse/frase-ai-reviews-pros-cons-verdict-holly-inna. Search summary reported a 4.8/5 (G2) vs 1.4/5 (Trustpilot) rating gap and AppSumo-LTD billing complaints — NOT registered on its own (secondhand search-snippet, not a this-run live fetch); the same underlying complaint pattern is independently corroborated by the directly-fetched AppSumo page (EV-frase-review-07)." },
-      { "q": "WebSearch: demandsage frase review rating verdict", "candidates": 7, "note": "demandsage.com/category/reviews/, slashdot.org/software/p/Demand-Sage/, demandsage.com/frase-alternatives/, demandsage.com/frase-io-vs-jasper-ai/, demandsage.com/surfer-seo-vs-frase/, demandsage.com/surfer-seo-review/, appsumo.com/products/frase-black-friday-2020/reviews/." },
-      { "q": "DIRECT: WebFetch https://www.frase.io/pricing", "candidates": 1, "note": "INCLUDED → EV-frase-review-01. Not surfaced by any search query this run; fetched directly as the vendor primary source for current pricing." },
-      { "q": "VERIFICATION FETCHES (not new discovery queries): frase.io/blog/content-optimization-is-dead, capterra.com/p/197955/Frase/reviews/ (x2 passes), g2.com/products/frase-io/reviews, trustpilot.com/review/www.frase.io, getspike.ai/blog/surfer-seo-vs-frase/ (x2 passes), kripeshadwani.com/frase-review/, tested.media/ai-seo-tools/, indiehackers.com/post/best-ai-seo-software-2026-...-519ffecae1, originality.ai/blog/frase-io-review, ahrefs.com/blog/seo-content-score-study/, behindrankings.com/frase-io-review/, appsumo.com/products/frase-black-friday-2020/reviews/", "candidates": 0, "note": "Direct verification/screening fetches of already-identified URLs — not counted again in 'identified' (no new distinct URLs surfaced). A second capterra.com/p/197955/Frase/reviews/ pass (requesting 2026-dated reviews specifically) failed with a transient 529 upstream error on two attempts and was not retried further; the two Capterra reviews registered below are from the FIRST successful pass this run, both live-fetched and quote-verified."
+      {
+        "q": "WebSearch: site:reddit.com frase.io review",
+        "candidates": 0,
+        "note": "No links found."
+      },
+      {
+        "q": "WebSearch: frase seo reddit worth it 2026",
+        "candidates": 1,
+        "note": "diyai.io/ai-tools/seo/reviews/frase-review/. Zero reddit.com URLs."
+      },
+      {
+        "q": "WebSearch: frase seo reddit r/juststart",
+        "candidates": 2,
+        "note": "skipblast.com/best-subreddits-awesome-seo-discussions/, ibeamconsulting.com/blog/reddit-seo-topics-questions-answers/ — both generic 'which subreddits exist' pages, not Frase-specific, zero reddit.com URLs."
+      },
+      {
+        "q": "WebSearch: frase seo reddit r/bigseo",
+        "candidates": 0,
+        "note": "No links found."
+      },
+      {
+        "q": "WebSearch: \"frase\" content brief site:reddit.com",
+        "candidates": 0,
+        "note": "No links found."
+      },
+      {
+        "q": "WebSearch: frase seo credits ran out reddit complaint",
+        "candidates": 1,
+        "note": "frase.io/blog/content-optimization-is-dead — surfaced because the post itself references an unlinked r/seogrowth thread. Zero reddit.com URLs."
+      },
+      {
+        "q": "WebSearch: reddit r/seogrowth \"still using content optimization tools\" Frase Surfer Scalenut",
+        "candidates": 0,
+        "note": "Same frase.io blog post resurfaced (duplicate, not counted again). Response paraphrased alleged Reddit top-comments ('make content less readable', 'don't account for LLMs', 'lack a LLM/Rankbrain/Gemini friendliness metric') but NO reddit.com URL was ever produced — confirmed via a direct fetch of the blog post itself (see verification note below). NOT registered."
+      },
+      {
+        "q": "WebSearch: frase cancelled subscription reddit",
+        "candidates": 0,
+        "note": "No links found."
+      },
+      {
+        "q": "WebSearch: frase vs surfer reddit switched",
+        "candidates": 0,
+        "note": "No links found."
+      },
+      {
+        "q": "WebSearch: frase vs neuronwriter reddit switched",
+        "candidates": 5,
+        "note": "eesel.ai/blog/frase-ai-vs-neuronwriter, kripeshadwani.com/neuronwriter-review/, neuronwriter.com/neuronwriter-vs-frase-io/, neuronwriter.com/neuronwriter-vs-frase/, neuronwriterreview.com/frase-vs-neuronwriter-key-differences/. Zero reddit.com URLs."
+      },
+      {
+        "q": "WebSearch: frase quora review experience",
+        "candidates": 10,
+        "note": "demandsage.com/frase-review/, smartcustomer.com/reviews/quora.com, quorablog.quora.com/Reviews-on-Quora, kripeshadwani.com/frase-review/, nichepursuits.com/frase-review/, quora.com/How-do-you-write-a-review-based-on-a-given-topic, quora.com/Reviews-Quora-feature-How-do-I-create-a-review-question, quora.com/How-do-I-give-a-review, quorareview.com/, thedoublethink.com/frase-review/. No genuine quora.com Q&A about Frase — only generic 'how Quora works' meta pages."
+      },
+      {
+        "q": "WebSearch: frase seo scam overpriced reddit",
+        "candidates": 0,
+        "note": "No links found."
+      },
+      {
+        "q": "DIRECT: WebFetch https://www.reddit.com/search/?q=frase%20seo",
+        "candidates": 0,
+        "note": "Blocked — 'Claude Code is unable to fetch from www.reddit.com'. Confirms the inherited environment limitation from every prior Mimo shard."
+      },
+      {
+        "q": "DIRECT: WebFetch https://old.reddit.com/search.json?q=frase.io",
+        "candidates": 0,
+        "note": "Blocked — 'Claude Code is unable to fetch from old.reddit.com'."
+      },
+      {
+        "q": "WebSearch: frase seo capterra reviews",
+        "candidates": 10,
+        "note": "capterra.com/p/197955/Frase/reviews/, capterra.com/p/197955/Frase/, frase.io/reviews, youraisoft.com/frase-review/, frase.io/, amrytt.com/frase-review/, capterra.com/compare/197955-231656/Frase-vs-Outranking, capterra.com/compare/197955-212333/Frase-vs-Contentpace, capterra.com/p/197955/Frase/reviews/?page=2, capterra.com/compare/197955-217242/Frase-vs-Jasper."
+      },
+      {
+        "q": "WebSearch: frase seo g2 reviews",
+        "candidates": 6,
+        "note": "g2.com/products/frase-io/reviews, frase.io/features/seo-content-optimization, compareaitools.org/frase-review/, vettedthis.com/software/marketing/seo-tools/frase-io-review-details-pricing-features/, computertech.co/frase-review/, seoptimer.com/blog/frase-vs-surfer-seo/."
+      },
+      {
+        "q": "DIRECT: WebFetch https://www.trustpilot.com/review/frase.io",
+        "candidates": 1,
+        "note": "HTTP 403 Forbidden — unverifiable-this-run."
+      },
+      {
+        "q": "WebSearch: getspike.ai frase review test",
+        "candidates": 10,
+        "note": "getspike.ai/blog/frase-vs-clearscope/, getspike.ai/blog/frase-vs-marketmuse/, getspike.ai/, getspike.ai/blog/frase-alternatives/, getspike.ai/casestudies/, getspike.ai/blog/writesonic-alternatives/, getspike.ai/about, getspike.ai/blog/author/shrestha/, getspike.ai/blog/surfer-seo-vs-frase/, getspike.ai/pricing."
+      },
+      {
+        "q": "WebSearch: frase review hands-on test months using",
+        "candidates": 7,
+        "note": "dailyaireviews.com/frase-io-review-2026/, geekflare.com/reviews/frase-review/, searchendurance.com/frase-review/, fahimai.com/frase, aitoolblaze.com/blog/frase-review-2026, aiflowreview.com/frase-review-2025/, originality.ai/blog/frase-io-review."
+      },
+      {
+        "q": "WebSearch: tested.media ai seo tools frase budget pick research",
+        "candidates": 10,
+        "note": "tested.media/ai-seo-tools/, rankability.com/blog/best-seo-content-optimization-tools/, onelittleweb.com/top-tools/best-ai-seo-tools/, vezadigital.com/post/best-ai-seo-tools, xseek.io/blogs/articles/which-ai-tool-is-best-for-seo-optimization, contextrankings.com/rankings/2026-06-17-the-best-ai-seo-content-optimization-tools/, atlasmarketing.ai/seo-tools/best-ai-seo-tools/, whatagraph.com/blog/articles/ai-seo-tools, cited.so/blog/best-ai-seo-tools-for-small-business, indiehackers.com/post/best-ai-seo-software-2026-i-burned-900-and-six-weeks-testing-tools-so-you-dont-have-to-519ffecae1."
+      },
+      {
+        "q": "DIRECT: WebFetch https://ahrefs.com/blog/seo-content-score-study/ (targeted re-fetch of a study already known from registry-neuronwriter-review.json and registry-surfer-seo-review.json, this run extracting Frase's own data point)",
+        "candidates": 1,
+        "note": "INCLUDED → EV-frase-review-02. Confirmed this run the study names Frase as one of the 5 tools tested and includes a Frase-specific illustrative screenshot/example about gaming the content score."
+      },
+      {
+        "q": "WebSearch: \"frase.io\" reddit content_marketing",
+        "candidates": 3,
+        "note": "firdaussyazwani.com/reviews/frase-review, frase.io/blog/frase-vs-copy-ai-the-best-ai-for-content-marketing-and-copywriting, frase.io/content-marketing/. Zero reddit.com URLs."
+      },
+      {
+        "q": "WebSearch: frase ai writer generic reddit",
+        "candidates": 1,
+        "note": "seoptimer.com/blog/frase-review/. Zero reddit.com URLs."
+      },
+      {
+        "q": "WebSearch: Is Frase worth it quora",
+        "candidates": 4,
+        "note": "passiveincomesuperstars.com/frase-review/, bloggingwizard.com/frase-review/, contentellect.com/frase-ai-review/, ddiy.co/frase-ai-review/. No genuine quora.com URL."
+      },
+      {
+        "q": "WebSearch: frase seo alternative switched reddit r/SEO",
+        "candidates": 1,
+        "note": "rankup.so/academy/frase-alternatives. Zero reddit.com URLs."
+      },
+      {
+        "q": "WebSearch: frase.io trustpilot rating reviews",
+        "candidates": 5,
+        "note": "trustpilot.com/review/www.frase.io, uk.trustpilot.com/review/www.frase.io?page=3, behindrankings.com/frase-io-review/, trustpilot.com/review/www.frase.io?page=2, linkedin.com/pulse/frase-ai-reviews-pros-cons-verdict-holly-inna. Search summary reported a 4.8/5 (G2) vs 1.4/5 (Trustpilot) rating gap and AppSumo-LTD billing complaints — NOT registered on its own (secondhand search-snippet, not a this-run live fetch); the same underlying complaint pattern is independently corroborated by the directly-fetched AppSumo page (EV-frase-review-07)."
+      },
+      {
+        "q": "WebSearch: demandsage frase review rating verdict",
+        "candidates": 7,
+        "note": "demandsage.com/category/reviews/, slashdot.org/software/p/Demand-Sage/, demandsage.com/frase-alternatives/, demandsage.com/frase-io-vs-jasper-ai/, demandsage.com/surfer-seo-vs-frase/, demandsage.com/surfer-seo-review/, appsumo.com/products/frase-black-friday-2020/reviews/."
+      },
+      {
+        "q": "DIRECT: WebFetch https://www.frase.io/pricing",
+        "candidates": 1,
+        "note": "INCLUDED → EV-frase-review-01. Not surfaced by any search query this run; fetched directly as the vendor primary source for current pricing."
+      },
+      {
+        "q": "VERIFICATION FETCHES (not new discovery queries): frase.io/blog/content-optimization-is-dead, capterra.com/p/197955/Frase/reviews/ (x2 passes), g2.com/products/frase-io/reviews, trustpilot.com/review/www.frase.io, getspike.ai/blog/surfer-seo-vs-frase/ (x2 passes), kripeshadwani.com/frase-review/, tested.media/ai-seo-tools/, indiehackers.com/post/best-ai-seo-software-2026-...-519ffecae1, originality.ai/blog/frase-io-review, ahrefs.com/blog/seo-content-score-study/, behindrankings.com/frase-io-review/, appsumo.com/products/frase-black-friday-2020/reviews/",
+        "candidates": 0,
+        "note": "Direct verification/screening fetches of already-identified URLs — not counted again in 'identified' (no new distinct URLs surfaced). A second capterra.com/p/197955/Frase/reviews/ pass (requesting 2026-dated reviews specifically) failed with a transient 529 upstream error on two attempts and was not retried further; the two Capterra reviews registered below are from the FIRST successful pass this run, both live-fetched and quote-verified."
       }
     ],
     "reddit_access_note": "PRIMARY Reddit threads were NOT obtainable this run across 8 dedicated reddit-targeted WebSearch queries + 2 direct reddit.com/old.reddit.com WebFetch attempts — zero real reddit.com URLs surfaced, and both direct fetches were blocked outright by the tool. One WebSearch result surfaced a SECONDHAND, UNLINKED paraphrase of an alleged r/seogrowth thread via Frase's own blog post (frase.io/blog/content-optimization-is-dead, published 2026-04-02); a direct fetch of that blog post confirmed it names the subreddit and paraphrases 'top answers' but contains NO reddit.com URL anywhere on the page — per protocol this is NOT registered as Reddit evidence (unlinkable secondhand paraphrase); only the blog post's own directly-fetched, self-interested content is registered (EV-frase-review-12), labeled vendor-claim. Quora was ALSO unreachable: no genuine quora.com question/answer URL about Frase surfaced from any of the queries run (only generic 'how Quora works' meta pages appeared, logged off-topic). This matches the same environment-level block documented in every prior 2026-07 Mimo shard (NeuronWriter, Surfer). CONSEQUENCE: community sentiment for /tools/frase must route through Capterra (2 verified entries) and AppSumo (1 defined-sample entry) instead of Reddit or Quora this run.",
@@ -88,7 +203,10 @@
       "flow_id": "frase-review-2026-07-20",
       "screening": "included",
       "label": "vendor-claim",
-      "coders": ["A", "B"],
+      "coders": [
+        "A",
+        "B"
+      ],
       "coder_agreement": true,
       "coding": {
         "tool": "Frase",
@@ -121,6 +239,30 @@
           "quote": "SEO and GEO scores, plus AI Visibility on ChatGPT and Google AI Content Guard watches 10 pages for Google decay ... Scale ... Content Guard watches 300 pages ... Professional adds $5 per extra article, $0.50 per audit page, and $0.25 per AI prompt. Scale adds $4, $0.40, and $0.20.",
           "supersedes": "nothing; read alongside EV-frase-review-03 (no post-publish monitoring, practitioner test 2026-06) and EV-frase-review-04 (no AI-visibility tracking, practitioner test 2026-04), which describe the product at their own dates",
           "collector": "refresh-B4-2026-11-02 (live curl)"
+        },
+        {
+          "recaptured_at": "2026-11-04",
+          "source_url": "https://www.frase.io/pricing",
+          "claim": "Re-read 2026-11-04: Starter $39/mo billed yearly ($468/yr; $49/month if billed monthly), 10 articles and 50 audit pages; Professional $103/mo yearly ($129 monthly), 40 articles; Scale $239/mo yearly ($299 monthly), 100 articles. Unchanged.",
+          "quote": "Billed annually ($468/year). $49/month if billed monthly.",
+          "supersedes": "none",
+          "collector": "evidence-curator (curl raw HTML JSON-LD + WebFetch)"
+        },
+        {
+          "recaptured_at": "2026-11-11",
+          "source_url": "https://www.frase.io/pricing",
+          "claim": "Publish-day re-read 2026-11-11: unchanged from the 2026-11-04 recapture.",
+          "quote": "Starter For solos and freelancers running one site. $39 was $49 /mo, $468 billed yearly Start free trial 7-day free trial No credit card 1 seat, 1 site 10 articles and 50 audit pages each month",
+          "supersedes": "none (no change)",
+          "collector": "orchestrator (publish-day recheck)"
+        },
+        {
+          "recaptured_at": "2026-11-12",
+          "source_url": "https://www.frase.io/pricing",
+          "claim": "Publish-day re-read 2026-11-12 (actual publish day): page text identical to the 2026-11-11 read.",
+          "quote": "Starter For solos and freelancers running one site. $39 was $49 /mo, $468 billed yearly Start free trial 7-day free trial No credit card 1 seat, 1 site 10 articles and 50 audit pages each month",
+          "supersedes": "none (no change)",
+          "collector": "orchestrator (publish-day recheck)"
         }
       ],
       "honesty_notes": [
@@ -142,7 +284,10 @@
       "flow_id": "frase-review-2026-07-20",
       "screening": "included",
       "label": "independent-test",
-      "coders": ["A", "B"],
+      "coders": [
+        "A",
+        "B"
+      ],
       "coder_agreement": false,
       "coding": {
         "tool": "Frase",
@@ -172,7 +317,10 @@
       "flow_id": "frase-review-2026-07-20",
       "screening": "included",
       "label": "independent-test",
-      "coders": ["A", "B"],
+      "coders": [
+        "A",
+        "B"
+      ],
       "coder_agreement": false,
       "coding": {
         "tool": "Frase",
@@ -202,7 +350,10 @@
       "flow_id": "frase-review-2026-07-20",
       "screening": "included",
       "label": "independent-test",
-      "coders": ["A", "B"],
+      "coders": [
+        "A",
+        "B"
+      ],
       "coder_agreement": true,
       "coding": {
         "tool": "Frase",
@@ -231,7 +382,10 @@
       "flow_id": "frase-review-2026-07-20",
       "screening": "included",
       "label": "community-report",
-      "coders": ["A", "B"],
+      "coders": [
+        "A",
+        "B"
+      ],
       "coder_agreement": true,
       "coding": {
         "tool": "Frase",
@@ -259,7 +413,10 @@
       "flow_id": "frase-review-2026-07-20",
       "screening": "included",
       "label": "community-report",
-      "coders": ["A", "B"],
+      "coders": [
+        "A",
+        "B"
+      ],
       "coder_agreement": true,
       "coding": {
         "tool": "Frase",
@@ -287,7 +444,10 @@
       "flow_id": "frase-review-2026-07-20",
       "screening": "included",
       "label": "community-report",
-      "coders": ["A", "B"],
+      "coders": [
+        "A",
+        "B"
+      ],
       "coder_agreement": true,
       "coding": {
         "tool": "Frase",
@@ -316,7 +476,10 @@
       "flow_id": "frase-review-2026-07-20",
       "screening": "included",
       "label": "community-report",
-      "coders": ["A", "B"],
+      "coders": [
+        "A",
+        "B"
+      ],
       "coder_agreement": true,
       "coding": {
         "tool": "Frase",
@@ -346,7 +509,10 @@
       "flow_id": "frase-review-2026-07-20",
       "screening": "included",
       "label": "independent-test",
-      "coders": ["A", "B"],
+      "coders": [
+        "A",
+        "B"
+      ],
       "coder_agreement": false,
       "coding": {
         "tool": "Frase",
@@ -375,7 +541,10 @@
       "flow_id": "frase-review-2026-07-20",
       "screening": "included",
       "label": "independent-test",
-      "coders": ["A", "B"],
+      "coders": [
+        "A",
+        "B"
+      ],
       "coder_agreement": false,
       "coding": {
         "tool": "Frase",
@@ -404,7 +573,10 @@
       "flow_id": "frase-review-2026-07-20",
       "screening": "included",
       "label": "independent-test",
-      "coders": ["A", "B"],
+      "coders": [
+        "A",
+        "B"
+      ],
       "coder_agreement": true,
       "coding": {
         "tool": "Frase",
@@ -433,7 +605,10 @@
       "flow_id": "frase-review-2026-07-20",
       "screening": "included",
       "label": "vendor-claim",
-      "coders": ["A", "B"],
+      "coders": [
+        "A",
+        "B"
+      ],
       "coder_agreement": true,
       "coding": {
         "tool": "Frase",

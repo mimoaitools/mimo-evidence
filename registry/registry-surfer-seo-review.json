@@ -24,28 +24,116 @@
     },
     "coder_agreement_rate": "CURATOR-PROVISIONAL single-pass coding across all 9 included entries (dual-independent coding + resolver pass is orchestrated above this run). Stance calls: 3 n/a (vendor-primary, no sentiment to code), 1 positive-leaning n/a, 4 mixed, 1 negative. FLAGGED FOR ORCHESTRATED DUAL-CODING / RESOLVER ATTENTION: (1) EV-surfer-seo-review-08 (Ahrefs study) — coded 'negative' here (Surfer grouped among the 3 weakest-correlated tools) but a coder could reasonably call this 'mixed' if a weak-but-present correlation is treated as still meaningful; (2) EV-surfer-seo-review-09 (getspike.ai test) — coded 'mixed' (9/15 articles improved, 6 flat) but the publisher's own competing product (Spike AI) creates a framing incentive to make Surfer+Frase look effortful, which could shift a resolver toward discounting the positive half. Both should be independently coded by coders A/B and resolved before publish.",
     "query_census": [
-      { "q": "WebSearch: site:reddit.com surfer seo review", "candidates": 0, "note": "No links found." },
-      { "q": "WebSearch: surfer seo reddit worth it 2026", "candidates": 10, "note": "rankability.com/blog/surfer-seo-review, firebearstudio.com/blog/surfer-seo-review.html, arvow.com/blog/surferseo-review-2026, eesel.ai/blog/surfer-seo-pricing, aiwithit.com/ai-tools/surfer-seo, hackceleration.com/labs/review/surfer, roborhythms.com/surfer-seo-review-2026, quora.com/Is-Surfer-SEO-worth-it-in-2026, diyai.io/ai-tools/seo/reviews/surfer-seo-review, ecommerceparadise.com/surfer-seo-pricing-2026. Zero reddit.com URLs." },
-      { "q": "WebSearch: surfer seo reddit r/SEO price increase", "candidates": 1, "note": "searchatlas.com/blog/surfer-seo-review (competitor-vendor, no method). Search summary paraphrased alleged 'Reddit users' price-increase sentiment with NO reddit.com URL attached — NOT registered." },
-      { "q": "WebSearch: surfer seo reddit r/juststart", "candidates": 0, "note": "No links found." },
-      { "q": "WebSearch: surfer seo reddit r/bigseo", "candidates": 0, "note": "No links found." },
-      { "q": "WebSearch: \"surfer seo\" site:reddit.com", "candidates": 0, "note": "No links found; response claimed generic Reddit discussion exists but produced zero real reddit.com URLs." },
-      { "q": "WebSearch: surfer seo credits ran out reddit", "candidates": 3, "note": "trustpilot.com/review/surferseo.com, docs.surferseo.com/en/articles/6758676-annual-plans-credits-allocation, medium.com/@contact_39605/why-i-cancelled-my-surfer-seo-subscription-in-2026-the-roi-reality-check-b1168455a2fc. Zero reddit.com URLs." },
-      { "q": "WebSearch: surfer seo cancelled subscription reddit complaint", "candidates": 3, "note": "medium.com/@contact_39605/... (dup), docs.surferseo.com/en/articles/5700345-how-can-i-cancel-my-subscription, docs.surferseo.com/en/articles/5700327-what-happens-after-i-cancel. Zero reddit.com URLs." },
-      { "q": "WebSearch: surfer seo vs neuronwriter reddit switched", "candidates": 2, "note": "getspike.ai/blog/surfer-seo-vs-neuronwriter-comparison, neuronwriter.com/neuronwriter-vs-surfer-seo-a-complete-comparison-for-content-creators-in-2026. Zero reddit.com URLs." },
-      { "q": "WebSearch: surfer seo quora review experience", "candidates": 9, "note": "quora.com/What-are-your-experiences-with-Surfer-SEO, quora.com/Has-anyone-used-Rankability-and-Surfer-SEO-Which-ones-better-for-content-optimizing, quora.com/Is-Surfer-SEO-worth-the-price, kristian-larsen.com/reviews/surferseo-review, quora.com/Is-Surfer-SEO-worth-it-in-2026 (dup), webmatros.com/surfer-seo-review, trustpilot.com/review/surferseo.com (dup), demandsage.com/surfer-seo-review, brandonleuangpaseuth.com/blog/is-surfer-seo-worth-it." },
-      { "q": "WebSearch: Ahrefs content score correlation study Surfer ranking 2025", "candidates": 8, "note": "getspike.ai/blog/surfer-seo-vs-frase, knowara.com/ai-tools/writing/surfer-seo-review, surferseo.com/blog/surfer-content-score-study, crystalwebeasy.com/surfer-seo-vs-ahrefs-which-tool-should-you-choose-in-2025, brandonleuangpaseuth.com/blog/surfer-seo-vs-ahrefs, nenawow.com/blog/artificial-intelligence/surfer-seo-vs-ahrefs, arvow.com/blog/surfer-seo-vs-ahrefs-guide, ninepeaks.io/surfer-seo-vs-ahrefs. NOTE: this query's own result list did not surface ahrefs.com directly — the Ahrefs study URL was reached via a separate DIRECT targeted fetch (below), reusing knowledge of its URL from the registry-neuronwriter-review.json shard." },
-      { "q": "WebSearch: surfer seo content score study disclosed methodology test", "candidates": 6, "note": "seothisweek.com/cracking-the-seo-code-surfer-study-reveals-how-comprehensive-content-drives-rankings (dup topic of surferseo.com study), smartpubtools.com/surfer-seo-review-2026-content-score-rankings-analysis, aiflowreview.com/surfer-seo-content-score-review, docs.surferseo.com/en/articles/5700317-what-is-content-score, solounicorn.club/blog/b-44, toolstackvault.com/seo/surferseo-review-2026-90-day-test. knowara.com and surferseo.com/blog/surfer-content-score-study were dups of the prior query." },
-      { "q": "WebSearch: surfer seo g2 reviews", "candidates": 7, "note": "g2.com/products/surfer-surfer/reviews, thestacc.com/reviews/surfer-seo, madx.digital/learn/surfer-seo-reviews, baytechconsulting.com/blog/surfer-seo-an-analytical-review-2025, mavlers.com/blog/surfer-seo, g2.com/products/surfer-surfer/features, findstack.com/products/surfer-seo/reviews. hackceleration.com, searchatlas.com, kristian-larsen.com were dups." },
-      { "q": "WebSearch: surfer seo capterra reviews", "candidates": 7, "note": "capterra.com/p/218703/Surfer/reviews, capterra.com/p/218703/Surfer, capterra.co.uk/reviews/218703/surfer, capterra.com/compare/218703-219202/Surfer-vs-Yoast-SEO, max-productive.ai/ai-tools/surfer-seo, capterra.com/compare/176340-218703/Ahrefs-vs-Surfer, capterra.com/p/218703/Surfer/pricing. searchatlas.com, baytechconsulting.com, mavlers.com were dups." },
-      { "q": "WebSearch: tested.media ai seo tools surfer benchmark", "candidates": 10, "note": "surferseo.com (homepage), seattlenewmedia.com/blog/best-ai-seo-tools, freddiechatt.com/ai-seo-tools, whatagraph.com/blog/articles/ai-seo-tools, get-ryze.ai/blog/ai-content-optimization-vs-surfer-seo-honest-comparison, ratethetool.com/jasper-vs-surfer-seo-vs-marketmuse-2026, semrush.com/blog/best-ai-seo-tools, gtmsignalstudio.com/blog/surfer-seo-review-content-scoring-ai-citation, surferseo.com/blog/best-ai-seo-tools, trysight.ai/blog/surfer-seo-vs-ai-content-tools. tested.media itself did NOT resurface this run (unlike the NeuronWriter shard's sweep) — no Surfer-specific Tested.media claim is registered as a result." },
-      { "q": "DIRECT: WebFetch https://www.reddit.com/search/?q=surfer%20seo", "candidates": 0, "note": "Blocked — 'Claude Code is unable to fetch from www.reddit.com'. Confirms the inherited environment limitation from every prior Mimo shard." },
-      { "q": "DIRECT: WebFetch https://old.reddit.com/search.json?q=surfer+seo", "candidates": 0, "note": "Blocked — 'Claude Code is unable to fetch from old.reddit.com'." },
-      { "q": "WebSearch: \"Surfer AI\" factual errors hallucination content", "candidates": 0, "note": "Zero Surfer-specific results; all results were generic AI-hallucination background pages (Wikipedia, Originality.ai general blog, Galileo, HKS Misinformation Review, Nature, Google Cloud, MIT Sloan, Bloomfire) with no Surfer-specific claim — off-topic, not counted as Surfer candidates." },
-      { "q": "WebSearch: surfer seo scam overpriced reddit", "candidates": 0, "note": "searchatlas.com and trustpilot.com resurfaced (both dups). Search summary again paraphrased unlinked 'Reddit users' sentiment about pricing/quality — NOT registered (no reddit.com URL)." },
-      { "q": "WebSearch: surfer seo switched to frase or neuronwriter reddit alternative", "candidates": 2, "note": "themarketingagency.ca/blog/surfer-seo-alternatives, rankup.so/academy/surferseo-alternatives. getspike.ai/blog/surfer-seo-vs-neuronwriter-comparison was a dup. Search summary once more paraphrased unlinked 'Reddit SEO communities' sentiment — NOT registered." },
-      { "q": "DIRECT: WebFetch https://ahrefs.com/blog/seo-content-score-study/ (targeted re-fetch of a study already known from registry-neuronwriter-review.json, this run extracting Surfer's own data point rather than NeuronWriter's)", "candidates": 1, "note": "INCLUDED → EV-surfer-seo-review-08. Confirmed this run that the study's 5 tested tools are 'Surfer, Frase, NeuronWriter, Clearscope, and our own AI Content Helper' and that Surfer is one of 'the other three' tools the study says had only 'very weak correlations' (NeuronWriter and Ahrefs' own AI Content Helper 'fared the best')." },
-      { "q": "VERIFICATION FETCHES (not new discovery queries): surferseo.com/pricing, surferseo.com/blog/surfer-content-score-study, docs.surferseo.com/en/articles/5700317-what-is-content-score, docs.surferseo.com/en/articles/6758676-annual-plans-credits-allocation, capterra.com/p/218703/Surfer/reviews, medium.com/@contact_39605/..., kristian-larsen.com/reviews/surferseo-review, brandonleuangpaseuth.com/blog/is-surfer-seo-worth-it, hackceleration.com/labs/review/surfer, getspike.ai/blog/surfer-seo-vs-frase, roborhythms.com/surfer-seo-review-2026, trustpilot.com/review/surferseo.com (x2 URL variants), g2.com/products/surfer-surfer/reviews (x2 URL variants), quora.com/Is-Surfer-SEO-worth-it-in-2026, quora.com/What-are-your-experiences-with-Surfer-SEO, toolstackvault.com/seo/surferseo-review-2026-90-day-test", "candidates": 0, "note": "Direct verification/screening fetches of already-identified URLs — not counted again in 'identified' (no new distinct URLs surfaced)." }
+      {
+        "q": "WebSearch: site:reddit.com surfer seo review",
+        "candidates": 0,
+        "note": "No links found."
+      },
+      {
+        "q": "WebSearch: surfer seo reddit worth it 2026",
+        "candidates": 10,
+        "note": "rankability.com/blog/surfer-seo-review, firebearstudio.com/blog/surfer-seo-review.html, arvow.com/blog/surferseo-review-2026, eesel.ai/blog/surfer-seo-pricing, aiwithit.com/ai-tools/surfer-seo, hackceleration.com/labs/review/surfer, roborhythms.com/surfer-seo-review-2026, quora.com/Is-Surfer-SEO-worth-it-in-2026, diyai.io/ai-tools/seo/reviews/surfer-seo-review, ecommerceparadise.com/surfer-seo-pricing-2026. Zero reddit.com URLs."
+      },
+      {
+        "q": "WebSearch: surfer seo reddit r/SEO price increase",
+        "candidates": 1,
+        "note": "searchatlas.com/blog/surfer-seo-review (competitor-vendor, no method). Search summary paraphrased alleged 'Reddit users' price-increase sentiment with NO reddit.com URL attached — NOT registered."
+      },
+      {
+        "q": "WebSearch: surfer seo reddit r/juststart",
+        "candidates": 0,
+        "note": "No links found."
+      },
+      {
+        "q": "WebSearch: surfer seo reddit r/bigseo",
+        "candidates": 0,
+        "note": "No links found."
+      },
+      {
+        "q": "WebSearch: \"surfer seo\" site:reddit.com",
+        "candidates": 0,
+        "note": "No links found; response claimed generic Reddit discussion exists but produced zero real reddit.com URLs."
+      },
+      {
+        "q": "WebSearch: surfer seo credits ran out reddit",
+        "candidates": 3,
+        "note": "trustpilot.com/review/surferseo.com, docs.surferseo.com/en/articles/6758676-annual-plans-credits-allocation, medium.com/@contact_39605/why-i-cancelled-my-surfer-seo-subscription-in-2026-the-roi-reality-check-b1168455a2fc. Zero reddit.com URLs."
+      },
+      {
+        "q": "WebSearch: surfer seo cancelled subscription reddit complaint",
+        "candidates": 3,
+        "note": "medium.com/@contact_39605/... (dup), docs.surferseo.com/en/articles/5700345-how-can-i-cancel-my-subscription, docs.surferseo.com/en/articles/5700327-what-happens-after-i-cancel. Zero reddit.com URLs."
+      },
+      {
+        "q": "WebSearch: surfer seo vs neuronwriter reddit switched",
+        "candidates": 2,
+        "note": "getspike.ai/blog/surfer-seo-vs-neuronwriter-comparison, neuronwriter.com/neuronwriter-vs-surfer-seo-a-complete-comparison-for-content-creators-in-2026. Zero reddit.com URLs."
+      },
+      {
+        "q": "WebSearch: surfer seo quora review experience",
+        "candidates": 9,
+        "note": "quora.com/What-are-your-experiences-with-Surfer-SEO, quora.com/Has-anyone-used-Rankability-and-Surfer-SEO-Which-ones-better-for-content-optimizing, quora.com/Is-Surfer-SEO-worth-the-price, kristian-larsen.com/reviews/surferseo-review, quora.com/Is-Surfer-SEO-worth-it-in-2026 (dup), webmatros.com/surfer-seo-review, trustpilot.com/review/surferseo.com (dup), demandsage.com/surfer-seo-review, brandonleuangpaseuth.com/blog/is-surfer-seo-worth-it."
+      },
+      {
+        "q": "WebSearch: Ahrefs content score correlation study Surfer ranking 2025",
+        "candidates": 8,
+        "note": "getspike.ai/blog/surfer-seo-vs-frase, knowara.com/ai-tools/writing/surfer-seo-review, surferseo.com/blog/surfer-content-score-study, crystalwebeasy.com/surfer-seo-vs-ahrefs-which-tool-should-you-choose-in-2025, brandonleuangpaseuth.com/blog/surfer-seo-vs-ahrefs, nenawow.com/blog/artificial-intelligence/surfer-seo-vs-ahrefs, arvow.com/blog/surfer-seo-vs-ahrefs-guide, ninepeaks.io/surfer-seo-vs-ahrefs. NOTE: this query's own result list did not surface ahrefs.com directly — the Ahrefs study URL was reached via a separate DIRECT targeted fetch (below), reusing knowledge of its URL from the registry-neuronwriter-review.json shard."
+      },
+      {
+        "q": "WebSearch: surfer seo content score study disclosed methodology test",
+        "candidates": 6,
+        "note": "seothisweek.com/cracking-the-seo-code-surfer-study-reveals-how-comprehensive-content-drives-rankings (dup topic of surferseo.com study), smartpubtools.com/surfer-seo-review-2026-content-score-rankings-analysis, aiflowreview.com/surfer-seo-content-score-review, docs.surferseo.com/en/articles/5700317-what-is-content-score, solounicorn.club/blog/b-44, toolstackvault.com/seo/surferseo-review-2026-90-day-test. knowara.com and surferseo.com/blog/surfer-content-score-study were dups of the prior query."
+      },
+      {
+        "q": "WebSearch: surfer seo g2 reviews",
+        "candidates": 7,
+        "note": "g2.com/products/surfer-surfer/reviews, thestacc.com/reviews/surfer-seo, madx.digital/learn/surfer-seo-reviews, baytechconsulting.com/blog/surfer-seo-an-analytical-review-2025, mavlers.com/blog/surfer-seo, g2.com/products/surfer-surfer/features, findstack.com/products/surfer-seo/reviews. hackceleration.com, searchatlas.com, kristian-larsen.com were dups."
+      },
+      {
+        "q": "WebSearch: surfer seo capterra reviews",
+        "candidates": 7,
+        "note": "capterra.com/p/218703/Surfer/reviews, capterra.com/p/218703/Surfer, capterra.co.uk/reviews/218703/surfer, capterra.com/compare/218703-219202/Surfer-vs-Yoast-SEO, max-productive.ai/ai-tools/surfer-seo, capterra.com/compare/176340-218703/Ahrefs-vs-Surfer, capterra.com/p/218703/Surfer/pricing. searchatlas.com, baytechconsulting.com, mavlers.com were dups."
+      },
+      {
+        "q": "WebSearch: tested.media ai seo tools surfer benchmark",
+        "candidates": 10,
+        "note": "surferseo.com (homepage), seattlenewmedia.com/blog/best-ai-seo-tools, freddiechatt.com/ai-seo-tools, whatagraph.com/blog/articles/ai-seo-tools, get-ryze.ai/blog/ai-content-optimization-vs-surfer-seo-honest-comparison, ratethetool.com/jasper-vs-surfer-seo-vs-marketmuse-2026, semrush.com/blog/best-ai-seo-tools, gtmsignalstudio.com/blog/surfer-seo-review-content-scoring-ai-citation, surferseo.com/blog/best-ai-seo-tools, trysight.ai/blog/surfer-seo-vs-ai-content-tools. tested.media itself did NOT resurface this run (unlike the NeuronWriter shard's sweep) — no Surfer-specific Tested.media claim is registered as a result."
+      },
+      {
+        "q": "DIRECT: WebFetch https://www.reddit.com/search/?q=surfer%20seo",
+        "candidates": 0,
+        "note": "Blocked — 'Claude Code is unable to fetch from www.reddit.com'. Confirms the inherited environment limitation from every prior Mimo shard."
+      },
+      {
+        "q": "DIRECT: WebFetch https://old.reddit.com/search.json?q=surfer+seo",
+        "candidates": 0,
+        "note": "Blocked — 'Claude Code is unable to fetch from old.reddit.com'."
+      },
+      {
+        "q": "WebSearch: \"Surfer AI\" factual errors hallucination content",
+        "candidates": 0,
+        "note": "Zero Surfer-specific results; all results were generic AI-hallucination background pages (Wikipedia, Originality.ai general blog, Galileo, HKS Misinformation Review, Nature, Google Cloud, MIT Sloan, Bloomfire) with no Surfer-specific claim — off-topic, not counted as Surfer candidates."
+      },
+      {
+        "q": "WebSearch: surfer seo scam overpriced reddit",
+        "candidates": 0,
+        "note": "searchatlas.com and trustpilot.com resurfaced (both dups). Search summary again paraphrased unlinked 'Reddit users' sentiment about pricing/quality — NOT registered (no reddit.com URL)."
+      },
+      {
+        "q": "WebSearch: surfer seo switched to frase or neuronwriter reddit alternative",
+        "candidates": 2,
+        "note": "themarketingagency.ca/blog/surfer-seo-alternatives, rankup.so/academy/surferseo-alternatives. getspike.ai/blog/surfer-seo-vs-neuronwriter-comparison was a dup. Search summary once more paraphrased unlinked 'Reddit SEO communities' sentiment — NOT registered."
+      },
+      {
+        "q": "DIRECT: WebFetch https://ahrefs.com/blog/seo-content-score-study/ (targeted re-fetch of a study already known from registry-neuronwriter-review.json, this run extracting Surfer's own data point rather than NeuronWriter's)",
+        "candidates": 1,
+        "note": "INCLUDED → EV-surfer-seo-review-08. Confirmed this run that the study's 5 tested tools are 'Surfer, Frase, NeuronWriter, Clearscope, and our own AI Content Helper' and that Surfer is one of 'the other three' tools the study says had only 'very weak correlations' (NeuronWriter and Ahrefs' own AI Content Helper 'fared the best')."
+      },
+      {
+        "q": "VERIFICATION FETCHES (not new discovery queries): surferseo.com/pricing, surferseo.com/blog/surfer-content-score-study, docs.surferseo.com/en/articles/5700317-what-is-content-score, docs.surferseo.com/en/articles/6758676-annual-plans-credits-allocation, capterra.com/p/218703/Surfer/reviews, medium.com/@contact_39605/..., kristian-larsen.com/reviews/surferseo-review, brandonleuangpaseuth.com/blog/is-surfer-seo-worth-it, hackceleration.com/labs/review/surfer, getspike.ai/blog/surfer-seo-vs-frase, roborhythms.com/surfer-seo-review-2026, trustpilot.com/review/surferseo.com (x2 URL variants), g2.com/products/surfer-surfer/reviews (x2 URL variants), quora.com/Is-Surfer-SEO-worth-it-in-2026, quora.com/What-are-your-experiences-with-Surfer-SEO, toolstackvault.com/seo/surferseo-review-2026-90-day-test",
+        "candidates": 0,
+        "note": "Direct verification/screening fetches of already-identified URLs — not counted again in 'identified' (no new distinct URLs surfaced)."
+      }
     ],
     "reddit_access_note": "PRIMARY Reddit threads were NOT obtainable this run across 8 dedicated reddit-targeted WebSearch queries + 2 direct reddit.com/old.reddit.com WebFetch attempts — zero real reddit.com URLs surfaced. Several WebSearch summaries PARAPHRASED alleged Reddit sentiment ('Reddit users are vocal about... unjustified costs', 'Reddit SEO communities consistently flag Frase') with no attached reddit.com link — these are NOT registered; MEP bars unlinkable/unverified secondhand paraphrase. Quora was ALSO unreachable: 4 distinct Quora question URLs surfaced but both direct-fetch attempts this run returned HTTP 403 (logged unverifiable-this-run). This matches the same environment-level block documented in every prior 2026-07 Mimo shard. CONSEQUENCE for title_policy: the social-proof archetype (requires live-verified Reddit/Quora EV entries) is NOT available for /tools/surfer-seo from Reddit or Quora this run — community sentiment must route through the two verified Capterra reviews and the two named-blogger first-person accounts (Kristian Larsen, Barry Wang) instead.",
     "astroturf_note": "The astroturf screen (§3.1: templated look-alike threads, recurring fresh personas, all funneling to one vendor) was applied to every Quora/low-trust-forum/listicle candidate surfaced this run. UNLIKE the NeuronWriter sweep (which found a 7-URL persona-branded Quora 'Space' cluster promoting a NeuronWriter lifetime deal), no comparable astroturf pattern was detected for Surfer this run — the Quora candidates here were generic Q&A-format questions (not persona-branded promotional Spaces), and none were reachable for content verification anyway (see reddit_access_note). Zero astroturf exclusions this run; documented per protocol regardless of the null result.",
@@ -80,7 +168,10 @@
       "flow_id": "surfer-seo-review-2026-07-16",
       "screening": "included",
       "label": "vendor-claim",
-      "coders": ["A", "B"],
+      "coders": [
+        "A",
+        "B"
+      ],
       "coder_agreement": true,
       "coding": {
         "tool": "Surfer",
@@ -100,6 +191,30 @@
           "claim": "Live pricing page (yearly billing default) lists Discovery $49/mo (Create or Optimize 120 Documents), Standard $99/mo (360 Documents), Pro $182/mo (360 Documents), Peace of Mind $299/mo (Unlimited* Documents), AI Search Analytics $82/mo (AI-visibility tracking: 50 AI prompts refreshed daily, 5 Brand Spaces; no document allowance listed) and Enterprise 'Custom' (tailored packages, custom limits). Month-to-month prices from the billing toggle: Discovery $59, Standard $119, Pro $219, Peace of Mind $359, AI Search Analytics $95. MATCH vs 2026-07-16: Discovery, Standard, Pro and Peace of Mind yearly prices and the 120/360/unlimited allowances. CHANGED vs 2026-07-16: Pro now states 360 documents; Enterprise no longer shows a $999 figure (custom only); AI Search Analytics plan is new. Same page FAQ: annual plan charged upfront for the year, 'a discount of up to 17%' vs monthly; annual credits 'reset yearly or after changing your plan'; plans auto-renew, auto-renewal can be turned off at any point via the in-app Billing page, access continues until the end of the already-paid period. Every plan button reads 'Start for Free'; no trial length, free allowance or refund terms are stated on the page. Old values kept above.",
           "quote": "Discovery 49 USD per month Billed yearly ... Create or Optimize 120 Documents ... Standard 99 USD per month ... Create or Optimize 360 Documents ... Pro 182 USD per month ... Create or Optimize 360 Documents ... Peace of Mind 299 USD per month ... Create or Optimize Unlimited* Documents ... AI Search Analytics 82 USD per month ... Enterprise Custom Tailored packages ... You'll have access to the app until the end of the already-paid billing period",
           "method": "curl with a desktop Chrome user-agent (HTTP 200, server-rendered HTML); plan cards read as text, month-to-month prices from the data-monthly attributes of the price toggle"
+        },
+        {
+          "recaptured_at": "2026-11-04",
+          "source_url": "https://surfer.ai/pricing",
+          "claim": "Re-read 2026-11-04 (surferseo.com/pricing now 301-redirects to surfer.ai/pricing): Discovery 49 USD/month billed yearly with 120 documents, Standard 99 (360), Pro 182, Peace of Mind 299 (unlimited, fair use). Same prices as 2026-07-16. A separate 'AI Search Analytics' plan at 82 USD/month is also listed.",
+          "quote": "Discovery 49 USD per month Billed yearly Save $120 Draft and optimize content to establish a baseline presence in Google and AI search results. Start for Free Create or Optimize 120 Documents",
+          "supersedes": "source URL only (surferseo.com -> surfer.ai)",
+          "collector": "evidence-curator (curl + WebFetch)"
+        },
+        {
+          "recaptured_at": "2026-11-11",
+          "source_url": "https://surfer.ai/pricing",
+          "claim": "Publish-day re-read 2026-11-11: unchanged from the 2026-11-04 recapture.",
+          "quote": "Discovery 49 USD per month Billed yearly ... Create or Optimize 120 Documents",
+          "supersedes": "none (no change)",
+          "collector": "orchestrator (publish-day recheck)"
+        },
+        {
+          "recaptured_at": "2026-11-12",
+          "source_url": "https://surfer.ai/pricing",
+          "claim": "Publish-day re-read 2026-11-12 (actual publish day): page text identical to the 2026-11-11 read.",
+          "quote": "Discovery 49 USD per month Billed yearly ... Create or Optimize 120 Documents",
+          "supersedes": "none (no change)",
+          "collector": "orchestrator (publish-day recheck)"
         }
       ]
     },
@@ -117,7 +232,10 @@
       "flow_id": "surfer-seo-review-2026-07-16",
       "screening": "included",
       "label": "vendor-claim",
-      "coders": ["A", "B"],
+      "coders": [
+        "A",
+        "B"
+      ],
       "coder_agreement": true,
       "coding": {
         "tool": "Surfer",
@@ -145,7 +263,10 @@
       "flow_id": "surfer-seo-review-2026-07-16",
       "screening": "included",
       "label": "vendor-claim",
-      "coders": ["A", "B"],
+      "coders": [
+        "A",
+        "B"
+      ],
       "coder_agreement": true,
       "coding": {
         "tool": "Surfer",
@@ -173,7 +294,10 @@
       "flow_id": "surfer-seo-review-2026-07-16",
       "screening": "included",
       "label": "community-report",
-      "coders": ["A", "B"],
+      "coders": [
+        "A",
+        "B"
+      ],
       "coder_agreement": false,
       "coding": {
         "tool": "Surfer",
@@ -186,6 +310,12 @@
         "FLAGGED for resolver: a coder could reasonably call this 'positive' if the 4.9/5 aggregate context is treated as controlling over the specific gripe quoted.",
         "Aggregate 4.9/5 (n=422) is a platform-specific sample, not a population rate — report only as 'Surfer's 422 Capterra reviews average 4.9/5 as of 2026-07-16', never generalized further.",
         "The '$99 plan' named here does not match this run's captured current pricing (Discovery $49, Standard $99 — so this complaint likely refers to the Standard tier); plan names/prices may have shifted between review date and capture date."
+      ],
+      "recaptures": [
+        {
+          "date": "2026-11-04",
+          "note": "Review text verbatim; Capterra shows May 15, 2025 (registry 2025-05-14, likely timezone). The 30 editors on the $99 plan reflects an older Surfer plan; do not present it as current pricing."
+        }
       ]
     },
     {
@@ -202,7 +332,10 @@
       "flow_id": "surfer-seo-review-2026-07-16",
       "screening": "included",
       "label": "community-report",
-      "coders": ["A", "B"],
+      "coders": [
+        "A",
+        "B"
+      ],
       "coder_agreement": true,
       "coding": {
         "tool": "Surfer",
@@ -230,7 +363,10 @@
       "flow_id": "surfer-seo-review-2026-07-16",
       "screening": "included",
       "label": "community-report",
-      "coders": ["A", "B"],
+      "coders": [
+        "A",
+        "B"
+      ],
       "coder_agreement": true,
       "coding": {
         "tool": "Surfer",
@@ -258,7 +394,10 @@
       "flow_id": "surfer-seo-review-2026-07-16",
       "screening": "included",
       "label": "community-report",
-      "coders": ["A", "B"],
+      "coders": [
+        "A",
+        "B"
+      ],
       "coder_agreement": true,
       "coding": {
         "tool": "Surfer",
@@ -286,7 +425,10 @@
       "flow_id": "surfer-seo-review-2026-07-16",
       "screening": "included",
       "label": "independent-test",
-      "coders": ["A", "B"],
+      "coders": [
+        "A",
+        "B"
+      ],
       "coder_agreement": false,
       "coding": {
         "tool": "Surfer",
@@ -316,7 +458,10 @@
       "flow_id": "surfer-seo-review-2026-07-16",
       "screening": "included",
       "label": "independent-test",
-      "coders": ["A", "B"],
+      "coders": [
+        "A",
+        "B"
+      ],
       "coder_agreement": false,
       "coding": {
         "tool": "Surfer",

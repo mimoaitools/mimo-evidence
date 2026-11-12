@@ -207,6 +207,30 @@
           "quote": "Starter $25 /month ... 45,000 words per month",
           "supersedes": "nothing (confirmed)",
           "collector": "refresh-B6-2026-11-05 (live curl, browser UA, r.jina.ai; Writesonic monthly toggle read in a browser)"
+        },
+        {
+          "recaptured_at": "2026-11-04",
+          "source_url": "https://koala.sh/pricing",
+          "claim": "Re-read 2026-11-04: Starter $25/month, 45,000 KoalaWriter words and 500 credits per month; Professional $49 (100,000 words); annual billing 'Save 20%'. Unchanged from the 2026-10-21 recapture.",
+          "quote": "Starter $25 /month Get Started MCP server for your AI assistant KoalaWriter: 45,000 words per month 500 credits per month",
+          "supersedes": "none (no change since 2026-10-21)",
+          "collector": "evidence-curator (curl + WebFetch)"
+        },
+        {
+          "recaptured_at": "2026-11-11",
+          "source_url": "https://koala.sh/pricing",
+          "claim": "Publish-day re-read 2026-11-11: unchanged from the 2026-11-04 recapture.",
+          "quote": "Starter $25 /month ... KoalaWriter: 45,000 words per month 500 credits per month",
+          "supersedes": "none (no change)",
+          "collector": "orchestrator (publish-day recheck)"
+        },
+        {
+          "recaptured_at": "2026-11-12",
+          "source_url": "https://koala.sh/pricing",
+          "claim": "Publish-day re-read 2026-11-12 (actual publish day): page text identical to the 2026-11-11 read.",
+          "quote": "Starter $25 /month ... KoalaWriter: 45,000 words per month 500 credits per month",
+          "supersedes": "none (no change)",
+          "collector": "orchestrator (publish-day recheck)"
         }
       ]
     },
@@ -252,6 +276,30 @@
           "quote": "GPT-6.1 Sol and Claude Sonnet 5 count words at 2x, and Claude Opus 5.5 counts at 3x.",
           "supersedes": "nothing (confirmed)",
           "collector": "refresh-B6-2026-11-05 (live curl, browser UA, r.jina.ai; Writesonic monthly toggle read in a browser)"
+        },
+        {
+          "recaptured_at": "2026-11-04",
+          "source_url": "https://koala.sh/pricing",
+          "claim": "Re-read 2026-11-04: word counts based on GPT-6 Luna; GPT-6.1 Sol and Claude Sonnet 5 count at 2x, Claude Opus 5.5 at 3x. Unchanged since 2026-10-21.",
+          "quote": "The word count is based on using GPT-6 Luna. GPT-6.1 Sol and Claude Sonnet 5 count words at 2x, and Claude Opus 5.5 counts at 3x.",
+          "supersedes": "none",
+          "collector": "evidence-curator (curl + WebFetch)"
+        },
+        {
+          "recaptured_at": "2026-11-11",
+          "source_url": "https://koala.sh/pricing",
+          "claim": "Publish-day re-read 2026-11-11: unchanged from the 2026-11-04 recapture.",
+          "quote": "GPT-6.1 Sol and Claude Sonnet 5.5 count words at 2x, and Claude Opus 5.5 counts at 3x.",
+          "supersedes": "none (no change)",
+          "collector": "orchestrator (publish-day recheck)"
+        },
+        {
+          "recaptured_at": "2026-11-12",
+          "source_url": "https://koala.sh/pricing",
+          "claim": "Publish-day re-read 2026-11-12 (actual publish day): page text identical to the 2026-11-11 read.",
+          "quote": "GPT-6.1 Sol and Claude Sonnet 5.5 count words at 2x, and Claude Opus 5.5 counts at 3x.",
+          "supersedes": "none (no change)",
+          "collector": "orchestrator (publish-day recheck)"
         }
       ]
     },
@@ -298,6 +346,30 @@
           "quote": "Banked words and credits don't expire. They are spent after your monthly allowance runs out.",
           "supersedes": "2026-07-10 capture: 'credits from monthly subscriptions expire after a month' (no rollover)",
           "collector": "B7 sibling sweep"
+        },
+        {
+          "recaptured_at": "2026-11-04",
+          "source_url": "https://koala.sh/pricing",
+          "claim": "CHANGED. The vendor now states unused words and credits on monthly plans move to a rollover bank at each renewal, up to 3 months of the plan's allowance, and banked words and credits do not expire; annual plans still grant the year's words and credits up front for 12 months.",
+          "quote": "On monthly plans, the words and credits you don't use in a month are saved in your rollover bank, up to 3 months of your plan's allowance. Banked words and credits don't expire.",
+          "supersedes": "2026-07-10 claim that monthly credits expire after a month with no rollover",
+          "collector": "evidence-curator (curl + WebFetch)"
+        },
+        {
+          "recaptured_at": "2026-11-11",
+          "source_url": "https://koala.sh/pricing",
+          "claim": "Publish-day re-read 2026-11-11: unchanged from the 2026-11-04 recapture.",
+          "quote": "On monthly plans, the words and credits you don't use in a month are saved in your rollover bank, up to 3 months of your plan's allowance. Banked words and credits don't expire.",
+          "supersedes": "none (no change)",
+          "collector": "orchestrator (publish-day recheck)"
+        },
+        {
+          "recaptured_at": "2026-11-12",
+          "source_url": "https://koala.sh/pricing",
+          "claim": "Publish-day re-read 2026-11-12 (actual publish day): page text identical to the 2026-11-11 read.",
+          "quote": "On monthly plans, the words and credits you don't use in a month are saved in your rollover bank, up to 3 months of your plan's allowance. Banked words and credits don't expire.",
+          "supersedes": "none (no change)",
+          "collector": "orchestrator (publish-day recheck)"
         }
       ]
     },
@@ -343,6 +415,30 @@
           "quote": "Every new account gets 5,000 free words and 25 credits, no credit card required.",
           "supersedes": "nothing (confirmed)",
           "collector": "refresh-B6-2026-11-05 (live curl, browser UA, r.jina.ai; Writesonic monthly toggle read in a browser)"
+        },
+        {
+          "recaptured_at": "2026-11-04",
+          "source_url": "https://koala.sh/pricing",
+          "claim": "Re-read 2026-11-04: every new account gets 5,000 free words and 25 credits, no credit card required. Unchanged.",
+          "quote": "Yes. Every new account gets 5,000 free words and 25 credits, no credit card required.",
+          "supersedes": "none",
+          "collector": "evidence-curator (curl + WebFetch)"
+        },
+        {
+          "recaptured_at": "2026-11-11",
+          "source_url": "https://koala.sh/pricing",
+          "claim": "Publish-day re-read 2026-11-11: unchanged from the 2026-11-04 recapture.",
+          "quote": "Free $0 One-time allowance. No credit card required. KoalaWriter: 5,000 words 25 credits",
+          "supersedes": "none (no change)",
+          "collector": "orchestrator (publish-day recheck)"
+        },
+        {
+          "recaptured_at": "2026-11-12",
+          "source_url": "https://koala.sh/pricing",
+          "claim": "Publish-day re-read 2026-11-12 (actual publish day): page text identical to the 2026-11-11 read.",
+          "quote": "Free $0 One-time allowance. No credit card required. KoalaWriter: 5,000 words 25 credits",
+          "supersedes": "none (no change)",
+          "collector": "orchestrator (publish-day recheck)"
         }
       ]
     },

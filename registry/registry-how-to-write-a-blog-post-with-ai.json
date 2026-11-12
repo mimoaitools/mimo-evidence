@@ -1,0 +1,1057 @@
+{
+  "_meta": {
+    "flow_id": "how-to-write-a-blog-post-with-ai-2026-11-04",
+    "protocol_version": "MEP-1.0",
+    "target_slug": "/guides/how-to-write-a-blog-post-with-ai",
+    "target_keyword": "how to write a blog post with ai",
+    "run_date": "2026-11-04",
+    "collector": "evidence-curator",
+    "flow_counter": {
+      "identified": 71,
+      "screened": 71,
+      "excluded": 52,
+      "excluded_by_reason": {
+        "unverifiable-this-run": 26,
+        "no-methodology-affiliate": 12,
+        "duplicate": 8,
+        "off-topic": 4,
+        "undated": 2
+      },
+      "included_items": 19,
+      "included_items_breakdown": {
+        "vendor_pricing_pages": 8,
+        "google_policy_pages": 3,
+        "first_person_practitioner_posts": 5,
+        "forum_posts": 1,
+        "industry_survey": 1,
+        "peer_reviewed_study": 1
+      },
+      "registry_entries_new": 19,
+      "registry_entries_reused": 12,
+      "unit_note": "Unit = one page, post or study. Several entries quote the same page (Google gen-AI page EV-01..04, HubSpot EV-10/11, Wagtail EV-12/13), so entry and item counts differ; 6 of the 8 vendor pricing pages are included only as recaptures of existing EV ids (Frase and Claude pages also yield new entries EV-09/EV-07). astroturf: 0 detected.",
+      "sources_cited_total": 21,
+      "sources_cited_note": "Recount 2026-11-08 (gate run 2 blocker): the guide cites 21 sources, the 19 this sweep kept plus the two pages behind reused entries EV-surfer-seo-review-04 (SS-04, Capterra review of Surfer) and EV-neuronwriter-review-02 (NW-02, NeuronWriter AI-credit FAQ). The census counts (71 identified, 52 excluded, 19 included) are unchanged; the EvidenceBox shows 21 with that split in its label."
+    },
+    "coder_agreement_rate": 1.0,
+    "coder_note": "Two independent coding passes (A and B, 2026-11-04) coded all 31 entries; label and claim_match agreed on 31 of 31; resolution in Data/seo/phases/how-to-write-a-blog-post-with-ai/coding-resolution.json.",
+    "query_log": [
+      {
+        "id": "Q1",
+        "query": "curl + WebFetch https://koala.sh/pricing",
+        "candidates": 1,
+        "result": "included -> recaptures on EV-koala-ai-review-01..04"
+      },
+      {
+        "id": "Q2",
+        "query": "curl + WebFetch https://surferseo.com/pricing (301 -> https://surfer.ai/pricing)",
+        "candidates": 1,
+        "result": "included -> recapture EV-surfer-seo-review-01"
+      },
+      {
+        "id": "Q3",
+        "query": "curl + WebFetch https://www.frase.io/pricing",
+        "candidates": 1,
+        "result": "included -> recapture EV-frase-review-01; new EV-09 (trial caps)"
+      },
+      {
+        "id": "Q4",
+        "query": "curl + WebFetch https://neuronwriter.com/pricing-neuron/",
+        "candidates": 1,
+        "result": "included -> recapture EV-neuronwriter-review-01"
+      },
+      {
+        "id": "Q5",
+        "query": "curl https://www.jasper.ai/pricing",
+        "candidates": 1,
+        "result": "included -> recapture EV-jasper-review-01"
+      },
+      {
+        "id": "Q6",
+        "query": "curl https://rytr.me/pricing",
+        "candidates": 1,
+        "result": "included -> recapture EV-rytr-review-03"
+      },
+      {
+        "id": "Q7",
+        "query": "curl https://claude.com/pricing",
+        "candidates": 1,
+        "result": "included -> new EV-07 + recapture EV-evidence-ai-writing-tools-15"
+      },
+      {
+        "id": "Q8",
+        "query": "curl + WebFetch https://chatgpt.com/pricing and https://openai.com/chatgpt/pricing/ (403), then Chrome chatgpt.com/pricing + /en-US/pricing/",
+        "candidates": 2,
+        "result": "chatgpt.com included -> EV-08 (tr-TR locale); openai.com/chatgpt/pricing duplicate of same plan table (excluded: duplicate)"
+      },
+      {
+        "id": "Q9",
+        "query": "curl https://developers.google.com/search/docs/fundamentals/using-gen-ai-content",
+        "candidates": 1,
+        "result": "included -> EV-01..04"
+      },
+      {
+        "id": "Q10",
+        "query": "curl https://developers.google.com/search/blog/2023/02/google-search-and-ai-content",
+        "candidates": 1,
+        "result": "included -> EV-05"
+      },
+      {
+        "id": "Q11",
+        "query": "curl https://developers.google.com/search/docs/essentials/spam-policies",
+        "candidates": 1,
+        "result": "included -> EV-06"
+      },
+      {
+        "id": "Q12",
+        "query": "WebSearch: site:reddit.com AI blog post editing takes longer than writing",
+        "candidates": 16,
+        "result": "0 reddit.com URLs returned; 9 reddit.sentinel-team.org snapshot mirrors + 1 lr.ggtyler.dev mirror (excluded: unverifiable-this-run, mirror of a thread reddit.com blocks us from verifying); eesel.ai (no-methodology-affiliate, vendor listicle); j77-bbm.pages.dev (undated); botany.one (off-topic); wonderingaboutai.substack.com comments page (off-topic: copywriting comments, no blog-post outcome); hubspot.com -> EV-10/11; wagtail.org -> EV-12/13"
+      },
+      {
+        "id": "Q13",
+        "query": "WebSearch: site:reddit.com ChatGPT made up sources blog post citations fake",
+        "candidates": 19,
+        "result": "8 reddit.sentinel-team.org mirror URLs (one is a second snapshot of 1qhjles = duplicate) + lr.eu.psf.lt mirror + scribe.disroot.org mirror (unverifiable-this-run x9); kristabradford.substack.com -> EV-15; taxresearch.org.uk post -> EV-16 (its PDF copy and ?p= URL = duplicate x2); community.openai.com -> EV-14; geotoolbox.ai x2 (no-methodology-affiliate, GEO vendor explainer; .md copy duplicate); noahpinion.blog (off-topic: opinion on why LLMs lie, no blog-workflow outcome); linkedin.com/in/dan-devine (off-topic, profile)"
+      },
+      {
+        "id": "Q14",
+        "query": "WebSearch: site:reddit.com r/blogging using AI to write blog posts workflow experience",
+        "candidates": 19,
+        "result": "6 reddit.sentinel-team.org mirrors (1t4b72o = duplicate of Q12) + cal1.lr.ggtyler.dev mirror (unverifiable-this-run x6); eesel.ai x2, wpfastestcache.com, rightblogger.com, blog.lots.blog, il.ly x2, lilachbullock.com, travelpayouts.com (no-methodology-affiliate: vendor/affiliate how-tos without disclosed tests); andrewchen.com + /amp (undated: no publish date on page; amp = duplicate); dev.to/ofodile (no-methodology-affiliate: '5x faster' self-promo with no timing method)"
+      },
+      {
+        "id": "Q15",
+        "query": "WebSearch with allowed_domains=[reddit.com] x3 ('AI written blog post editing takes longer than writing it myself'; 'ChatGPT invented sources statistics in my blog post'; 'how do you use AI to write blog posts r/Blogging')",
+        "candidates": 0,
+        "result": "search tool refused reddit.com (400: domain not accessible to the crawler user agent)"
+      },
+      {
+        "id": "Q16",
+        "query": "curl https://www.reddit.com/search.json (3 queries); Chrome old.reddit.com/search",
+        "candidates": 0,
+        "result": "403 from reddit.com; Chrome blocked reddit.com by safety restriction"
+      },
+      {
+        "id": "Q17",
+        "query": "Direct fetch of AI Overview-cited / brief-named sources: orbitmedia.com/blog/blogging-statistics, nature.com s41598-023-41032-5, contentrules.com/using-ai-write-blog, andrewchen.com/ai-blogging, reddit r/content_marketing 1i9l44l (from 1-serp.yaml)",
+        "candidates": 5,
+        "result": "orbitmedia -> EV-18; nature -> EV-19; contentrules -> EV-17; andrewchen counted in Q14 (duplicate); reddit 1i9l44l unverifiable-this-run"
+      }
+    ],
+    "reddit_access_note": "reddit.com could not be verified this run by any channel (WebSearch domain refusal, curl 403, Chrome safety block). Every Reddit hit came back as a third-party mirror and was excluded as unverifiable-this-run, not cited. The page therefore has no Reddit evidence; community reports come from a forum (community.openai.com) and first-person blog posts.",
+    "chatgpt_locale_note": "chatgpt.com/pricing forced tr-TR from this machine; prices in EV-08 may be regional.",
+    "recapture_sync_note": "Recaptures of existing ids are recorded in this shard only (reused_entries). Home shards and registry.json were NOT edited; the orchestrator should append these recaptures blocks to the home shards and sync. EV-koala-ai-review-03 is now STALE (rollover bank) and is still stated on live /tools/koala-ai, /tools/writesonic and lib/tools.ts.",
+    "publish_day_recheck": "2026-11-11: seven pricing pages re-read by curl, all figures unchanged; EV-14/16/17 recapture quotes added (gate run-3 warnings). 2026-11-12 (actual publish day, the 11-11 run stopped before deploy): the seven pricing pages re-read by curl, extracted text identical to the 11-11 read."
+  },
+  "entries": [
+    {
+      "id": "EV-how-to-write-a-blog-post-with-ai-01",
+      "claim": "Google's Search Central guidance on generative AI content (page last updated 2026-10-01) says generative AI is particularly useful for researching a topic and adding structure to original content, and that generating many pages without adding value for users may violate its scaled content abuse spam policy.",
+      "source_url": "https://developers.google.com/search/docs/fundamentals/using-gen-ai-content",
+      "source_date": "2026-10-01",
+      "quote": "Generative AI can be particularly useful when researching a topic, and to add structure to original content. However, using generative AI tools or other similar tools to generate many pages without adding value for users may violate Google's spam policy on scaled content abuse.",
+      "platform": "developers.google.com (Google Search Central, primary policy source; Google is the platform, not a tool vendor)",
+      "target_slug": "/guides/how-to-write-a-blog-post-with-ai",
+      "collected_at": "2026-11-04",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "how-to-write-a-blog-post-with-ai-2026-11-04",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Google Search",
+        "aspect": "guidance: where AI helps (research, structure) vs scaled content abuse",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-10-01"
+      },
+      "verification": "curl raw HTML (200) + text extraction 2026-11-04; page footer 'Last updated 2026-10-01 UTC.'"
+    },
+    {
+      "id": "EV-how-to-write-a-blog-post-with-ai-02",
+      "claim": "The same Google page tells site owners to manually fact-check and review all AI-generated content for accuracy before publishing, and extends that review to titles, meta descriptions, structured data and image alt text.",
+      "source_url": "https://developers.google.com/search/docs/fundamentals/using-gen-ai-content",
+      "source_date": "2026-10-01",
+      "quote": "It is critical to manually factcheck and review all AI-generated content for accuracy and trustworthiness before publishing. This review also applies to metadata like <title> elements , meta description elements , structured data , and alternate texts for images , which can appear in Search results.",
+      "platform": "developers.google.com (Google Search Central, primary policy source; Google is the platform, not a tool vendor)",
+      "target_slug": "/guides/how-to-write-a-blog-post-with-ai",
+      "collected_at": "2026-11-04",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "how-to-write-a-blog-post-with-ai-2026-11-04",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Google Search",
+        "aspect": "fact-check step: required before publishing, includes metadata",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-10-01"
+      },
+      "verification": "curl raw HTML + text extraction 2026-11-04"
+    },
+    {
+      "id": "EV-how-to-write-a-blog-post-with-ai-03",
+      "claim": "The same Google page explains why: generative models predict likely word sequences rather than retrieving facts, so outputs may contain inaccuracies (hallucinations).",
+      "source_url": "https://developers.google.com/search/docs/fundamentals/using-gen-ai-content",
+      "source_date": "2026-10-01",
+      "quote": "Keep in mind that generative models don't retrieve facts, but predict a likely sequence of words based on their training data. Because of this, generative AI outputs may contain inaccuracies (also known as hallucinations).",
+      "platform": "developers.google.com (Google Search Central, primary policy source; Google is the platform, not a tool vendor)",
+      "target_slug": "/guides/how-to-write-a-blog-post-with-ai",
+      "collected_at": "2026-11-04",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "how-to-write-a-blog-post-with-ai-2026-11-04",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Google Search",
+        "aspect": "why fact-checking is needed (hallucination mechanism, Google-stated)",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-10-01"
+      },
+      "verification": "curl raw HTML + text extraction 2026-11-04"
+    },
+    {
+      "id": "EV-how-to-write-a-blog-post-with-ai-04",
+      "claim": "The same Google page suggests that when content is automatically generated, the site consider telling readers how it was created (background on how automation was used).",
+      "source_url": "https://developers.google.com/search/docs/fundamentals/using-gen-ai-content",
+      "source_date": "2026-10-01",
+      "quote": "If you're automatically generating content, consider adding information on how your content was created in a way that makes sense for your audience, such as by providing more background information on how automation was used and adding image metadata",
+      "platform": "developers.google.com (Google Search Central, primary policy source; Google is the platform, not a tool vendor)",
+      "target_slug": "/guides/how-to-write-a-blog-post-with-ai",
+      "collected_at": "2026-11-04",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "how-to-write-a-blog-post-with-ai-2026-11-04",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Google Search",
+        "aspect": "publish step: optional disclosure of how content was made",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-10-01"
+      },
+      "verification": "curl raw HTML + text extraction 2026-11-04"
+    },
+    {
+      "id": "EV-how-to-write-a-blog-post-with-ai-05",
+      "claim": "Google's Search Central blog post of 2023-02-08 states that appropriate use of AI or automation is not against its guidelines, and that using AI gives content no special ranking gains: it is judged as content.",
+      "source_url": "https://developers.google.com/search/blog/2023/02/google-search-and-ai-content",
+      "source_date": "2023-02-08",
+      "quote": "Appropriate use of AI or automation is not against our guidelines. ... Using AI doesn't give content any special gains. It's just content. If it is useful, helpful, original, and satisfies aspects of E-E-A-T , it might do well in Search.",
+      "platform": "developers.google.com (Google Search Central, primary policy source; Google is the platform, not a tool vendor)",
+      "target_slug": "/guides/how-to-write-a-blog-post-with-ai",
+      "collected_at": "2026-11-04",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "how-to-write-a-blog-post-with-ai-2026-11-04",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Google Search",
+        "aspect": "policy baseline: AI use allowed, no special gains",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2023-02-08"
+      },
+      "verification": "curl raw HTML + text extraction 2026-11-04; post dated 'Wednesday, February 8, 2023'",
+      "note": "Ellipsis joins two FAQ answers on the same page. Do not build an H2 on 'does Google penalize AI content' (slot fence, metegpt secondary)."
+    },
+    {
+      "id": "EV-how-to-write-a-blog-post-with-ai-06",
+      "claim": "Google's spam policies page (last updated 2026-08-28) defines scaled content abuse as generating many pages primarily to manipulate rankings rather than help users.",
+      "source_url": "https://developers.google.com/search/docs/essentials/spam-policies",
+      "source_date": "2026-08-28",
+      "quote": "Scaled content abuse is when many pages are generated for the primary purpose of manipulating search rankings and not helping users. This abusive practice is typically focused on creating large amounts of unoriginal content that provides little to no value to users",
+      "platform": "developers.google.com (Google Search Central, primary policy source; Google is the platform, not a tool vendor)",
+      "target_slug": "/guides/how-to-write-a-blog-post-with-ai",
+      "collected_at": "2026-11-04",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "how-to-write-a-blog-post-with-ai-2026-11-04",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Google Search",
+        "aspect": "definition of scaled content abuse",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-08-28"
+      },
+      "verification": "curl raw HTML + text extraction 2026-11-04; footer 'Last updated 2026-08-28 UTC.'"
+    },
+    {
+      "id": "EV-how-to-write-a-blog-post-with-ai-07",
+      "claim": "Anthropic's pricing page lists a Claude Free plan at $0 with usage limited every 5 hours and every week; the page gives no message or word number for the free limit.",
+      "source_url": "https://claude.com/pricing",
+      "source_date": "2026-11-04",
+      "quote": "Free Try Claude $0 Free for everyone Try Claude Limited usage every 5 hours and every week *",
+      "platform": "claude.com (vendor page, self-interested)",
+      "target_slug": "/guides/how-to-write-a-blog-post-with-ai",
+      "collected_at": "2026-11-04",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "how-to-write-a-blog-post-with-ai-2026-11-04",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Claude",
+        "aspect": "free-chatbot baseline: $0, limits stated only qualitatively",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Free",
+        "item_date": "2026-11-04"
+      },
+      "verification": "curl raw HTML (200) + text extraction 2026-11-04",
+      "note": "No numeric free-tier limit is published, so the page must not state one."
+    },
+    {
+      "id": "EV-how-to-write-a-blog-post-with-ai-08",
+      "claim": "OpenAI's ChatGPT pricing page lists a Free plan at $0 with 'limited' messages and file uploads (no number given), Go at $6/month, Plus at $20/month and Pro from $120/month. Captured in a browser that the site forced to the tr-TR locale, so the Go price may be a regional price; the free plan's context window is listed as 27,000.",
+      "source_url": "https://chatgpt.com/pricing",
+      "source_date": "2026-11-04",
+      "quote": "Free ... $0 / ay ... GPT-6 ile sınırsız metin sohbeti · Sınırlı mesaj ve dosya yükleme hakkı ... Go ... $6 / ay ... Plus ... $20 / ay ... Pro ... Başlangıç fiyatı $120 / ay",
+      "platform": "chatgpt.com (vendor page, self-interested)",
+      "target_slug": "/guides/how-to-write-a-blog-post-with-ai",
+      "collected_at": "2026-11-04",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "how-to-write-a-blog-post-with-ai-2026-11-04",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "ChatGPT",
+        "aspect": "free-chatbot baseline: $0, limits stated only as 'limited'",
+        "stance": "n/a",
+        "plan_tier_if_stated": "Free / Go / Plus / Pro",
+        "item_date": "2026-11-04"
+      },
+      "verification": "curl and WebFetch both 403; read in Chrome 2026-11-04 (chatgpt.com/pricing and /en-US/pricing/ both redirected to /tr-TR/pricing/). Turkish verbatim; translation: 'unlimited text chat with GPT-6 · limited messages and file uploads'; 'ay' = month; 'Başlangıç fiyatı' = starting price.",
+      "note": "Regional-locale capture. Safe to use: Free = $0 and limits are not numerically stated. Do not quote the $6 Go price as a US price without a US-locale re-capture; Plus $20 matches the long-standing US list price but was read in the tr-TR view."
+    },
+    {
+      "id": "EV-how-to-write-a-blog-post-with-ai-09",
+      "claim": "Frase's pricing page offers a 7-day free trial with no credit card and states the trial is capped at 5 articles, 50 audit pages, 25 AI prompts and up to 3 seats.",
+      "source_url": "https://www.frase.io/pricing",
+      "source_date": "2026-11-04",
+      "quote": "Quantities are capped at 5 articles, 50 audit pages, 25 AI prompts and up to 3 seats. No credit card to start.",
+      "platform": "frase.io (vendor page, self-interested)",
+      "target_slug": "/guides/how-to-write-a-blog-post-with-ai",
+      "collected_at": "2026-11-04",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "how-to-write-a-blog-post-with-ai-2026-11-04",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Frase",
+        "aspect": "trial limits (try-before-pay for the optimize step)",
+        "stance": "n/a",
+        "plan_tier_if_stated": "7-day trial",
+        "item_date": "2026-11-04"
+      },
+      "verification": "curl raw HTML + text extraction 2026-11-04"
+    },
+    {
+      "id": "EV-how-to-write-a-blog-post-with-ai-10",
+      "claim": "A HubSpot blog-team manager (Jamie Juviler, post dated 2026-10-19) reports that after the team moved to AI-first drafting in June 2025, fact-checking became a distinct phase and in some cases AI drafting took longer than manual drafting; his own estimate is that fact-checking adds 30 to 60 minutes to a typical post. One manager's estimate, not a measurement.",
+      "source_url": "https://blog.hubspot.com/marketing/how-ai-changed-our-editorial-process",
+      "source_date": "2026-10-19",
+      "quote": "In some cases, AI drafting took longer than manual drafting because writers had to spend time verifying what the AI got wrong. ... For a typical post, I estimate it adds around 30 to 60 minutes to the process.",
+      "platform": "blog.hubspot.com (first-person practitioner account; HubSpot sells AI writing features, so self-interested)",
+      "target_slug": "/guides/how-to-write-a-blog-post-with-ai",
+      "collected_at": "2026-11-04",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "how-to-write-a-blog-post-with-ai-2026-11-04",
+      "screening": "included",
+      "label": "community-report",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "general AI drafting (unnamed)",
+        "aspect": "fact-check step: time cost, drafting can take longer",
+        "stance": "negative",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-10-19"
+      },
+      "verification": "curl raw HTML (200) + text extraction 2026-11-04; datePublished/dateModified 2026-10-19 in page JSON-LD"
+    },
+    {
+      "id": "EV-how-to-write-a-blog-post-with-ai-11",
+      "claim": "The same HubSpot account reports seeing fabricated statistics, misattributed quotes and incorrect terminology in AI drafts, delivered in a confident tone.",
+      "source_url": "https://blog.hubspot.com/marketing/how-ai-changed-our-editorial-process",
+      "source_date": "2026-10-19",
+      "quote": "we were seeing fabricated statistics, misattributed quotes, and incorrect terminology, all delivered with the same confident, authoritative tone. AI doesn't know what it doesn't know.",
+      "platform": "blog.hubspot.com (first-person practitioner account; self-interested)",
+      "target_slug": "/guides/how-to-write-a-blog-post-with-ai",
+      "collected_at": "2026-11-04",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "how-to-write-a-blog-post-with-ai-2026-11-04",
+      "screening": "included",
+      "label": "community-report",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "general AI drafting (unnamed)",
+        "aspect": "fact-check step: invented statistics and quotes",
+        "stance": "negative",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-10-19"
+      },
+      "verification": "curl raw HTML + text extraction 2026-11-04"
+    },
+    {
+      "id": "EV-how-to-write-a-blog-post-with-ai-12",
+      "claim": "Wagtail's community manager (Meagen Voss, 2025-12-03) timed one blog post both ways: about 110 minutes generate-and-edit with Claude versus 120 minutes writing from scratch, and calls her own timing method imperfect. Single self-timed comparison by one writer.",
+      "source_url": "https://wagtail.org/blog/ai-saved-me-10-minutes-on-a-blog-post-was-it-worth-it/",
+      "source_date": "2025-12-03",
+      "quote": "The time I recorded for the generate-and-edit approach was approximately 110 minutes . The time I recorded for my traditional write-from-scratch approach was 120 minutes . These, I found out, were imperfect approaches",
+      "platform": "wagtail.org (first-person blog post, open-source CMS project; not an AI vendor)",
+      "target_slug": "/guides/how-to-write-a-blog-post-with-ai",
+      "collected_at": "2026-11-04",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "how-to-write-a-blog-post-with-ai-2026-11-04",
+      "screening": "included",
+      "label": "community-report",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Claude",
+        "aspect": "draft + edit step: time saved small",
+        "stance": "mixed",
+        "plan_tier_if_stated": null,
+        "item_date": "2025-12-03"
+      },
+      "verification": "curl raw HTML (200) + text extraction 2026-11-04; byline date '3 Dec 2025'"
+    },
+    {
+      "id": "EV-how-to-write-a-blog-post-with-ai-13",
+      "claim": "In the same post the author says she would have had to rewrite whole sections of the Claude draft anyway and concludes the small time saving was not worth it for blog drafts.",
+      "source_url": "https://wagtail.org/blog/ai-saved-me-10-minutes-on-a-blog-post-was-it-worth-it/",
+      "source_date": "2025-12-03",
+      "quote": "What I found with the Claude-generated text was that I was going to have to rewrite whole sections of the post anyway. ... For the tiny amount of time the AI process (maybe) saved me, it's not worth it right now to turn to Claude for blog post drafts.",
+      "platform": "wagtail.org (first-person blog post)",
+      "target_slug": "/guides/how-to-write-a-blog-post-with-ai",
+      "collected_at": "2026-11-04",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "how-to-write-a-blog-post-with-ai-2026-11-04",
+      "screening": "included",
+      "label": "community-report",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Claude",
+        "aspect": "edit step: whole-section rewrites",
+        "stance": "negative",
+        "plan_tier_if_stated": null,
+        "item_date": "2025-12-03"
+      },
+      "verification": "curl raw HTML + text extraction 2026-11-04"
+    },
+    {
+      "id": "EV-how-to-write-a-blog-post-with-ai-14",
+      "claim": "A user on OpenAI's own developer forum (2025-05-05) reports ChatGPT inserted a quote from a non-existent expert attributed to a non-existent Vox article during a longform editorial meant for publication; it was caught only by manual checking.",
+      "source_url": "https://community.openai.com/t/critical-false-citation-of-nonexistent-article-fabricated-expert-quote-hallucinations/1252568",
+      "source_date": "2025-05-05",
+      "quote": "The assistant claimed a Vox article existed and quoted “Dr. John Sullivan” discussing AI’s impact on speech patterns. No such article exists. No such expert exists in this context. The quote was entirely fabricated, yet inserted as if it were a verified source.",
+      "platform": "community.openai.com (forum post, Bugs category)",
+      "target_slug": "/guides/how-to-write-a-blog-post-with-ai",
+      "collected_at": "2026-11-04",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "how-to-write-a-blog-post-with-ai-2026-11-04",
+      "screening": "included",
+      "label": "community-report",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "ChatGPT",
+        "aspect": "fact-check step: invented source + quote",
+        "stance": "negative",
+        "plan_tier_if_stated": null,
+        "item_date": "2025-05-05"
+      },
+      "verification": "Discourse JSON endpoint /t/1252568.json fetched 2026-11-04 (created_at 2025-05-05T19:13:47Z); WebFetch of HTML page same day",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-11",
+          "source_url": "https://community.openai.com/t/1252568.json",
+          "claim": "Unchanged. Re-read 2026-11-11 by curl; added quote carries the wording the claim relies on.",
+          "quote": "This occurred during a longform editorial project intended for possible public release—meaning the assistant nearly contributed to the publication of false information under a real journalistic brand.",
+          "supersedes": "none",
+          "collector": "orchestrator (publish-day recheck)"
+        }
+      ]
+    },
+    {
+      "id": "EV-how-to-write-a-blog-post-with-ai-15",
+      "claim": "Krista Bradford (Substack, 2026-04-11) asked ChatGPT to cite the sources behind a blog post it generated; it returned more than half a dozen citations, then admitted when asked that they were not real, and she found every one was fake.",
+      "source_url": "https://kristabradford.substack.com/cp/147394690",
+      "source_date": "2026-04-11",
+      "quote": "I recently asked the AI chatbot to cite the sources it used to generate a blog post. The LLM returned more than a half-dozen citations. I then asked whether those citations were real. ... So I checked. Every single citation generated by ChatGPT was fake",
+      "platform": "kristabradford.substack.com (first-person newsletter post)",
+      "target_slug": "/guides/how-to-write-a-blog-post-with-ai",
+      "collected_at": "2026-11-04",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "how-to-write-a-blog-post-with-ai-2026-11-04",
+      "screening": "included",
+      "label": "community-report",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "ChatGPT (version not named in the quote)",
+        "aspect": "fact-check step: invented citations in a blog post",
+        "stance": "negative",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-04-11"
+      },
+      "verification": "curl raw HTML (200) + text extraction 2026-11-04; post shows Apr 11, 2026 (2024-05-24 is the newsletter first-post date in page data)",
+      "note": "Dated example (post 2026-04-11); model version not stated in the quote; not a measure of current behaviour.",
+      "honesty_notes": [],
+      "resolution_note": "Date corrected 2026-11-04 by coding resolution: post shows Apr 11, 2026; 2024-05-24 was the newsletter first-post date (both coders)."
+    },
+    {
+      "id": "EV-how-to-write-a-blog-post-with-ai-16",
+      "claim": "Richard Murphy (Tax Research UK blog, 2025-06-02) reports ChatGPT produced references that did not exist when he asked for references to his own blog, and warns readers to ask explicitly for sources that exist.",
+      "source_url": "https://www.taxresearch.org.uk/Blog/2025/06/02/chat-gpt-a-word-of-warning/",
+      "source_date": "2025-06-02",
+      "quote": "So, a warning. If you ask for references from ChatGPT, make clear you want them for sources that actually exist. Otherwise, it just makes stuff up.",
+      "platform": "taxresearch.org.uk (first-person blog post)",
+      "target_slug": "/guides/how-to-write-a-blog-post-with-ai",
+      "collected_at": "2026-11-04",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "how-to-write-a-blog-post-with-ai-2026-11-04",
+      "screening": "included",
+      "label": "community-report",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "ChatGPT",
+        "aspect": "fact-check step: invented references",
+        "stance": "negative",
+        "plan_tier_if_stated": null,
+        "item_date": "2025-06-02"
+      },
+      "verification": "curl raw HTML (200) + text extraction 2026-11-04; date in URL and comment timestamps 'June 2 2025'",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-11",
+          "source_url": "https://www.taxresearch.org.uk/Blog/2025/06/02/chat-gpt-a-word-of-warning/",
+          "claim": "Unchanged. Re-read 2026-11-11 by curl; added quote carries the wording the claim relies on.",
+          "quote": "I was trying to find an old blog post of mine yesterday and could not do so. As a result, I enlisted the help of ChatGPT. ... I checked three. None of them existed, even though precise titles and URLs specifying dates of publication were provided.",
+          "supersedes": "none",
+          "collector": "orchestrator (publish-day recheck)"
+        }
+      ]
+    },
+    {
+      "id": "EV-how-to-write-a-blog-post-with-ai-17",
+      "claim": "Content Rules founder Val Swisher (2025-08-25, modified 2026-04-15) drafted one post with Jasper and says editing remained entirely her job; she estimates AI cut her time on that post by 40%. Author's own estimate for one post, not a measured rate.",
+      "source_url": "https://contentrules.com/using-ai-write-blog/",
+      "source_date": "2025-08-25",
+      "quote": "Editing is still 100% on me, but having a strong starting draft allowed me to focus on polishing rather than creating from scratch. ... I estimate that my digital twin reduced the overall time spent on this post by 40%.",
+      "platform": "contentrules.com (first-person post on a content-services firm's blog; cited in the Google AI Overview for the target query)",
+      "target_slug": "/guides/how-to-write-a-blog-post-with-ai",
+      "collected_at": "2026-11-04",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "how-to-write-a-blog-post-with-ai-2026-11-04",
+      "screening": "included",
+      "label": "community-report",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "Jasper",
+        "aspect": "edit step stays human; self-estimated time saving",
+        "stance": "mixed",
+        "plan_tier_if_stated": null,
+        "item_date": "2025-08-25"
+      },
+      "verification": "curl raw HTML (200) + text extraction 2026-11-04; JSON-LD datePublished 2025-08-25, modified 2026-04-15",
+      "note": "Do not repeat the 40% as a general saving; it is one writer's estimate for one post.",
+      "resolution_note": "Author named per byline (Val Swisher, founder of the content-services firm Content Rules); stance resolved mixed (editing stays fully human, self-estimated saving).",
+      "stance": "mixed",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-11",
+          "source_url": "https://contentrules.com/using-ai-write-blog/",
+          "claim": "Unchanged. Re-read 2026-11-11 by curl; added quote carries the wording the claim relies on.",
+          "quote": "I landed on Jasper as my primary tool. ... For this post, Jasper generated sections like “What Is a Digital Twin?” with precise language and clear definitions.",
+          "supersedes": "none",
+          "collector": "orchestrator (publish-day recheck)"
+        }
+      ]
+    },
+    {
+      "id": "EV-how-to-write-a-blog-post-with-ai-18",
+      "claim": "Orbit Media's 2026 blogger survey (Andy Crestodina, published 2026-09-08; 1,042 respondents, self-reported) finds 92% of respondents use AI, that none of the AI use cases it asked about correlate with performance, and that the average post takes 3 hours 20 minutes to write.",
+      "source_url": "https://www.orbitmedia.com/blog/blogging-statistics/",
+      "source_date": "2026-09-08",
+      "quote": "Today, 92% of marketers use AI. 8% of marketers do not. ... None of the use cases for AI in the survey correlate with performance. Marketers just got faster at making the same things. ... 3 hours, 20 minutes – The average time to write one",
+      "platform": "orbitmedia.com (annual industry survey, self-reported answers; agency publisher)",
+      "target_slug": "/guides/how-to-write-a-blog-post-with-ai",
+      "collected_at": "2026-11-04",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "how-to-write-a-blog-post-with-ai-2026-11-04",
+      "screening": "included",
+      "label": "research-finding",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "AI use in general",
+        "aspect": "survey: AI use vs results; time per post",
+        "stance": "n/a",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-09-08"
+      },
+      "verification": "WebFetch 2026-11-04 (quote extracted verbatim by WebFetch); curl 403 and Chrome showed a bot check, which was not bypassed, so this is a single-channel verification",
+      "note": "Survey sample of respondents, not the population of bloggers: cite as 'of 1,042 respondents'. Recruitment/sampling not described on the page."
+    },
+    {
+      "id": "EV-how-to-write-a-blog-post-with-ai-19",
+      "claim": "A peer-reviewed study in Scientific Reports (Walters & Wilder, 2023-09-07) had ChatGPT-3.5 and GPT-4 write 84 short literature reviews; of the 636 citations, 55% of GPT-3.5's and 18% of GPT-4's were fabricated. Older models; the rate does not describe current chatbots.",
+      "source_url": "https://www.nature.com/articles/s41598-023-41032-5",
+      "source_date": "2023-09-07",
+      "quote": "We used ChatGPT-3.5 and ChatGPT-4 to produce short literature reviews on 42 multidisciplinary topics, compiling data on the 636 bibliographic citations (references) found in the 84 papers. ... Within this set of documents, 55% of the GPT-3.5 citations but just 18% of the GPT-4 citations are fabricated.",
+      "platform": "nature.com / Scientific Reports 13:14045 (peer-reviewed, open access)",
+      "target_slug": "/guides/how-to-write-a-blog-post-with-ai",
+      "collected_at": "2026-11-04",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "how-to-write-a-blog-post-with-ai-2026-11-04",
+      "screening": "included",
+      "label": "research-finding",
+      "coders": [
+        "A",
+        "B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "ChatGPT (GPT-3.5, GPT-4)",
+        "aspect": "fact-check step: fabricated citations rate in a defined sample",
+        "stance": "negative",
+        "plan_tier_if_stated": null,
+        "item_date": "2023-09-07"
+      },
+      "verification": "curl raw HTML (200) + citation meta tags 2026-11-04",
+      "doi": "10.1038/s41598-023-41032-5",
+      "note": "Rate applies only to that 2023 sample and those models; never generalise to 'AI invents X% of sources'."
+    }
+  ],
+  "reused_entries": [
+    {
+      "id": "EV-koala-ai-review-01",
+      "home_shard": "registry-koala-ai-review.json",
+      "status": "accurate (confirmed)",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-04",
+          "source_url": "https://koala.sh/pricing",
+          "claim": "Re-read 2026-11-04: Starter $25/month, 45,000 KoalaWriter words and 500 credits per month; Professional $49 (100,000 words); annual billing 'Save 20%'. Unchanged from the 2026-10-21 recapture.",
+          "quote": "Starter $25 /month Get Started MCP server for your AI assistant KoalaWriter: 45,000 words per month 500 credits per month",
+          "supersedes": "none (no change since 2026-10-21)",
+          "collector": "evidence-curator (curl + WebFetch)"
+        },
+        {
+          "recaptured_at": "2026-11-11",
+          "source_url": "https://koala.sh/pricing",
+          "claim": "Publish-day re-read 2026-11-11: unchanged from the 2026-11-04 recapture.",
+          "quote": "Starter $25 /month ... KoalaWriter: 45,000 words per month 500 credits per month",
+          "supersedes": "none (no change)",
+          "collector": "orchestrator (publish-day recheck)"
+        },
+        {
+          "recaptured_at": "2026-11-12",
+          "source_url": "https://koala.sh/pricing",
+          "claim": "Publish-day re-read 2026-11-12 (actual publish day): page text identical to the 2026-11-11 read.",
+          "quote": "Starter $25 /month ... KoalaWriter: 45,000 words per month 500 credits per month",
+          "supersedes": "none (no change)",
+          "collector": "orchestrator (publish-day recheck)"
+        }
+      ]
+    },
+    {
+      "id": "EV-koala-ai-review-02",
+      "home_shard": "registry-koala-ai-review.json",
+      "status": "accurate (confirmed)",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-04",
+          "source_url": "https://koala.sh/pricing",
+          "claim": "Re-read 2026-11-04: word counts based on GPT-6 Luna; GPT-6.1 Sol and Claude Sonnet 5 count at 2x, Claude Opus 5.5 at 3x. Unchanged since 2026-10-21.",
+          "quote": "The word count is based on using GPT-6 Luna. GPT-6.1 Sol and Claude Sonnet 5 count words at 2x, and Claude Opus 5.5 counts at 3x.",
+          "supersedes": "none",
+          "collector": "evidence-curator (curl + WebFetch)"
+        },
+        {
+          "recaptured_at": "2026-11-11",
+          "source_url": "https://koala.sh/pricing",
+          "claim": "Publish-day re-read 2026-11-11: unchanged from the 2026-11-04 recapture.",
+          "quote": "GPT-6.1 Sol and Claude Sonnet 5.5 count words at 2x, and Claude Opus 5.5 counts at 3x.",
+          "supersedes": "none (no change)",
+          "collector": "orchestrator (publish-day recheck)"
+        },
+        {
+          "recaptured_at": "2026-11-12",
+          "source_url": "https://koala.sh/pricing",
+          "claim": "Publish-day re-read 2026-11-12 (actual publish day): page text identical to the 2026-11-11 read.",
+          "quote": "GPT-6.1 Sol and Claude Sonnet 5.5 count words at 2x, and Claude Opus 5.5 counts at 3x.",
+          "supersedes": "none (no change)",
+          "collector": "orchestrator (publish-day recheck)"
+        }
+      ]
+    },
+    {
+      "id": "EV-koala-ai-review-03",
+      "home_shard": "registry-koala-ai-review.json",
+      "status": "STALE: claim no longer accurate",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-04",
+          "source_url": "https://koala.sh/pricing",
+          "claim": "CHANGED. The vendor now states unused words and credits on monthly plans move to a rollover bank at each renewal, up to 3 months of the plan's allowance, and banked words and credits do not expire; annual plans still grant the year's words and credits up front for 12 months.",
+          "quote": "On monthly plans, the words and credits you don't use in a month are saved in your rollover bank, up to 3 months of your plan's allowance. Banked words and credits don't expire.",
+          "supersedes": "2026-07-10 claim that monthly credits expire after a month with no rollover",
+          "collector": "evidence-curator (curl + WebFetch)"
+        },
+        {
+          "recaptured_at": "2026-11-11",
+          "source_url": "https://koala.sh/pricing",
+          "claim": "Publish-day re-read 2026-11-11: unchanged from the 2026-11-04 recapture.",
+          "quote": "On monthly plans, the words and credits you don't use in a month are saved in your rollover bank, up to 3 months of your plan's allowance. Banked words and credits don't expire.",
+          "supersedes": "none (no change)",
+          "collector": "orchestrator (publish-day recheck)"
+        },
+        {
+          "recaptured_at": "2026-11-12",
+          "source_url": "https://koala.sh/pricing",
+          "claim": "Publish-day re-read 2026-11-12 (actual publish day): page text identical to the 2026-11-11 read.",
+          "quote": "On monthly plans, the words and credits you don't use in a month are saved in your rollover bank, up to 3 months of your plan's allowance. Banked words and credits don't expire.",
+          "supersedes": "none (no change)",
+          "collector": "orchestrator (publish-day recheck)"
+        }
+      ]
+    },
+    {
+      "id": "EV-koala-ai-review-04",
+      "home_shard": "registry-koala-ai-review.json",
+      "status": "accurate (confirmed)",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-04",
+          "source_url": "https://koala.sh/pricing",
+          "claim": "Re-read 2026-11-04: every new account gets 5,000 free words and 25 credits, no credit card required. Unchanged.",
+          "quote": "Yes. Every new account gets 5,000 free words and 25 credits, no credit card required.",
+          "supersedes": "none",
+          "collector": "evidence-curator (curl + WebFetch)"
+        },
+        {
+          "recaptured_at": "2026-11-11",
+          "source_url": "https://koala.sh/pricing",
+          "claim": "Publish-day re-read 2026-11-11: unchanged from the 2026-11-04 recapture.",
+          "quote": "Free $0 One-time allowance. No credit card required. KoalaWriter: 5,000 words 25 credits",
+          "supersedes": "none (no change)",
+          "collector": "orchestrator (publish-day recheck)"
+        },
+        {
+          "recaptured_at": "2026-11-12",
+          "source_url": "https://koala.sh/pricing",
+          "claim": "Publish-day re-read 2026-11-12 (actual publish day): page text identical to the 2026-11-11 read.",
+          "quote": "Free $0 One-time allowance. No credit card required. KoalaWriter: 5,000 words 25 credits",
+          "supersedes": "none (no change)",
+          "collector": "orchestrator (publish-day recheck)"
+        }
+      ]
+    },
+    {
+      "id": "EV-surfer-seo-review-01",
+      "home_shard": "registry-surfer-seo-review.json",
+      "status": "accurate (confirmed); URL moved",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-04",
+          "source_url": "https://surfer.ai/pricing",
+          "claim": "Re-read 2026-11-04 (surferseo.com/pricing now 301-redirects to surfer.ai/pricing): Discovery 49 USD/month billed yearly with 120 documents, Standard 99 (360), Pro 182, Peace of Mind 299 (unlimited, fair use). Same prices as 2026-07-16. A separate 'AI Search Analytics' plan at 82 USD/month is also listed.",
+          "quote": "Discovery 49 USD per month Billed yearly Save $120 Draft and optimize content to establish a baseline presence in Google and AI search results. Start for Free Create or Optimize 120 Documents",
+          "supersedes": "source URL only (surferseo.com -> surfer.ai)",
+          "collector": "evidence-curator (curl + WebFetch)"
+        },
+        {
+          "recaptured_at": "2026-11-11",
+          "source_url": "https://surfer.ai/pricing",
+          "claim": "Publish-day re-read 2026-11-11: unchanged from the 2026-11-04 recapture.",
+          "quote": "Discovery 49 USD per month Billed yearly ... Create or Optimize 120 Documents",
+          "supersedes": "none (no change)",
+          "collector": "orchestrator (publish-day recheck)"
+        },
+        {
+          "recaptured_at": "2026-11-12",
+          "source_url": "https://surfer.ai/pricing",
+          "claim": "Publish-day re-read 2026-11-12 (actual publish day): page text identical to the 2026-11-11 read.",
+          "quote": "Discovery 49 USD per month Billed yearly ... Create or Optimize 120 Documents",
+          "supersedes": "none (no change)",
+          "collector": "orchestrator (publish-day recheck)"
+        }
+      ]
+    },
+    {
+      "id": "EV-frase-review-01",
+      "home_shard": "registry-frase-review.json",
+      "status": "accurate (confirmed); also see EV-clearscope-review-40",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-04",
+          "source_url": "https://www.frase.io/pricing",
+          "claim": "Re-read 2026-11-04: Starter $39/mo billed yearly ($468/yr; $49/month if billed monthly), 10 articles and 50 audit pages; Professional $103/mo yearly ($129 monthly), 40 articles; Scale $239/mo yearly ($299 monthly), 100 articles. Unchanged.",
+          "quote": "Billed annually ($468/year). $49/month if billed monthly.",
+          "supersedes": "none",
+          "collector": "evidence-curator (curl raw HTML JSON-LD + WebFetch)"
+        },
+        {
+          "recaptured_at": "2026-11-11",
+          "source_url": "https://www.frase.io/pricing",
+          "claim": "Publish-day re-read 2026-11-11: unchanged from the 2026-11-04 recapture.",
+          "quote": "Starter For solos and freelancers running one site. $39 was $49 /mo, $468 billed yearly Start free trial 7-day free trial No credit card 1 seat, 1 site 10 articles and 50 audit pages each month",
+          "supersedes": "none (no change)",
+          "collector": "orchestrator (publish-day recheck)"
+        },
+        {
+          "recaptured_at": "2026-11-12",
+          "source_url": "https://www.frase.io/pricing",
+          "claim": "Publish-day re-read 2026-11-12 (actual publish day): page text identical to the 2026-11-11 read.",
+          "quote": "Starter For solos and freelancers running one site. $39 was $49 /mo, $468 billed yearly Start free trial 7-day free trial No credit card 1 seat, 1 site 10 articles and 50 audit pages each month",
+          "supersedes": "none (no change)",
+          "collector": "orchestrator (publish-day recheck)"
+        }
+      ]
+    },
+    {
+      "id": "EV-neuronwriter-review-01",
+      "home_shard": "registry-neuronwriter-review.json",
+      "status": "accurate for Bronze/Silver (confirmed); also see EV-clearscope-review-39",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-04",
+          "source_url": "https://neuronwriter.com/pricing-neuron/",
+          "claim": "Re-read 2026-11-04: Bronze $23/mo or $230/year, 2 projects, 25 documents, 15,000 AI credits; Silver $45/mo or $450/year; 7-day free trial under Gold-plan terms. Unchanged from 2026-11-01.",
+          "quote": "Bronze plan For business owner improving SEO & AI rankings $ 23 /mo $276 $ 230 /year 2 projects 25 documents 5 AI-monitored questions 15,000 AI credits",
+          "supersedes": "none",
+          "collector": "evidence-curator (curl + WebFetch)"
+        },
+        {
+          "recaptured_at": "2026-11-11",
+          "source_url": "https://neuronwriter.com/pricing-neuron/",
+          "claim": "Publish-day re-read 2026-11-11: unchanged from the 2026-11-04 recapture.",
+          "quote": "Bronze plan ... $ 23 /mo $276 $ 230 /year 2 projects 25 documents 5 AI-monitored questions 15,000 AI credits",
+          "supersedes": "none (no change)",
+          "collector": "orchestrator (publish-day recheck)"
+        },
+        {
+          "recaptured_at": "2026-11-12",
+          "source_url": "https://neuronwriter.com/pricing-neuron/",
+          "claim": "Publish-day re-read 2026-11-12 (actual publish day): page text identical to the 2026-11-11 read.",
+          "quote": "Bronze plan ... $ 23 /mo $276 $ 230 /year 2 projects 25 documents 5 AI-monitored questions 15,000 AI credits",
+          "supersedes": "none (no change)",
+          "collector": "orchestrator (publish-day recheck)"
+        }
+      ]
+    },
+    {
+      "id": "EV-jasper-review-01",
+      "home_shard": "registry-jasper-review.json",
+      "status": "accurate (confirmed)",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-04",
+          "source_url": "https://www.jasper.ai/pricing",
+          "claim": "Re-read 2026-11-04: Pro $59/month billed yearly or $69/month billed monthly, per seat; 2 Brand Voices, 5 Knowledge assets, 3 Audiences; Business custom; 7-day free trial of Pro. Unchanged.",
+          "quote": "Pro: $59/month billed yearly or $69/month billed monthly (cancel anytime).",
+          "supersedes": "none",
+          "collector": "evidence-curator (curl + WebFetch)"
+        },
+        {
+          "recaptured_at": "2026-11-11",
+          "source_url": "https://www.jasper.ai/pricing",
+          "claim": "Publish-day re-read 2026-11-11: unchanged from the 2026-11-04 recapture.",
+          "quote": "Pro: $59/month billed yearly or $69/month billed monthly (cancel anytime).",
+          "supersedes": "none (no change)",
+          "collector": "orchestrator (publish-day recheck)"
+        },
+        {
+          "recaptured_at": "2026-11-12",
+          "source_url": "https://www.jasper.ai/pricing",
+          "claim": "Publish-day re-read 2026-11-12 (actual publish day): page text identical to the 2026-11-11 read.",
+          "quote": "Pro: $59/month billed yearly or $69/month billed monthly (cancel anytime).",
+          "supersedes": "none (no change)",
+          "collector": "orchestrator (publish-day recheck)"
+        }
+      ]
+    },
+    {
+      "id": "EV-rytr-review-03",
+      "home_shard": "registry-rytr-review.json",
+      "status": "accurate (confirmed)",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-04",
+          "source_url": "https://rytr.me/pricing",
+          "claim": "Re-read 2026-11-04: Free $0 (10,000 characters/month), Lite $9/mo (unlimited characters), Personal $19/mo, Pro $49/mo, monthly billing; 'Save 20% with yearly billing'. Unchanged. Yearly-toggle prices (EV-rytr-review-04) not re-rendered this run.",
+          "quote": "Free forever Free 10,000 characters per month ... Lite Unlimited content creation $9 /mo Everything in Free Unlimited characters per month",
+          "supersedes": "none",
+          "collector": "evidence-curator (curl + WebFetch)"
+        },
+        {
+          "recaptured_at": "2026-11-11",
+          "source_url": "https://rytr.me/pricing",
+          "claim": "Publish-day re-read 2026-11-11: unchanged from the 2026-11-04 recapture.",
+          "quote": "Free 10,000 characters per month ... Lite Unlimited content creation $9 /mo Everything in Free Unlimited characters per month",
+          "supersedes": "none (no change)",
+          "collector": "orchestrator (publish-day recheck)"
+        },
+        {
+          "recaptured_at": "2026-11-12",
+          "source_url": "https://rytr.me/pricing",
+          "claim": "Publish-day re-read 2026-11-12 (actual publish day): page text identical to the 2026-11-11 read.",
+          "quote": "Free 10,000 characters per month ... Lite Unlimited content creation $9 /mo Everything in Free Unlimited characters per month",
+          "supersedes": "none (no change)",
+          "collector": "orchestrator (publish-day recheck)"
+        }
+      ]
+    },
+    {
+      "id": "EV-evidence-ai-writing-tools-15",
+      "home_shard": "registry-evidence-ai-writing-tools.json",
+      "status": "accurate (confirmed)",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-04",
+          "source_url": "https://claude.com/pricing",
+          "claim": "Re-read 2026-11-04: Claude Pro $17/month with annual discount ($200 billed up front), $20 billed monthly. Unchanged. Free plan now registered separately as EV-how-to-write-a-blog-post-with-ai-07.",
+          "quote": "$17 Per month with annual subscription discount ( $200 billed up front). $20 if billed monthly.",
+          "supersedes": "none",
+          "collector": "evidence-curator (curl + WebFetch)"
+        },
+        {
+          "recaptured_at": "2026-11-11",
+          "source_url": "https://claude.com/pricing",
+          "claim": "Publish-day re-read 2026-11-11: unchanged from the 2026-11-04 recapture.",
+          "quote": "Pro For everyday work $17 Per month with annual subscription discount ( $200 billed up front). $20 if billed monthly.",
+          "supersedes": "none (no change)",
+          "collector": "orchestrator (publish-day recheck)"
+        },
+        {
+          "recaptured_at": "2026-11-12",
+          "source_url": "https://claude.com/pricing",
+          "claim": "Publish-day re-read 2026-11-12 (actual publish day): page text identical to the 2026-11-11 read.",
+          "quote": "Pro For everyday work $17 Per month with annual subscription discount ( $200 billed up front). $20 if billed monthly.",
+          "supersedes": "none (no change)",
+          "collector": "orchestrator (publish-day recheck)"
+        }
+      ]
+    },
+    {
+      "id": "EV-surfer-seo-review-04",
+      "home_shard": "registry-surfer-seo-review.json",
+      "status": "re-read 2026-11-04 in Chrome by both coding passes: match",
+      "recaptures": [
+        {
+          "date": "2026-11-04",
+          "note": "Review text verbatim; Capterra shows May 15, 2025 (registry 2025-05-14, likely timezone). The 30 editors on the $99 plan reflects an older Surfer plan; do not present it as current pricing."
+        }
+      ]
+    },
+    {
+      "id": "EV-neuronwriter-review-02",
+      "home_shard": "registry-neuronwriter-review.json",
+      "status": "re-read 2026-11-04 by both coding passes: quote partial",
+      "recaptures": [
+        {
+          "date": "2026-11-04",
+          "quote": "The usage of AI credits depends on the specific AI-powered features you use. In the AI Templates, it also varies based on the number of words you generate using specific LLM model.",
+          "note": "Live FAQ scopes word-based variation to AI Templates only; the July quote stitched two sentences. Use this 2026-11-04 wording on any page."
+        }
+      ]
+    }
+  ]
+}

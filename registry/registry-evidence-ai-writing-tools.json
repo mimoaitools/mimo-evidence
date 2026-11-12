@@ -790,6 +790,30 @@
           "status": "read",
           "claim": "Free plan $0; Pro $17/month with annual subscription ($200 billed up front), $20 billed monthly. Unchanged.",
           "collector": "B7 /best/ai-writing-tools agent"
+        },
+        {
+          "recaptured_at": "2026-11-04",
+          "source_url": "https://claude.com/pricing",
+          "claim": "Re-read 2026-11-04: Claude Pro $17/month with annual discount ($200 billed up front), $20 billed monthly. Unchanged. Free plan now registered separately as EV-how-to-write-a-blog-post-with-ai-07.",
+          "quote": "$17 Per month with annual subscription discount ( $200 billed up front). $20 if billed monthly.",
+          "supersedes": "none",
+          "collector": "evidence-curator (curl + WebFetch)"
+        },
+        {
+          "recaptured_at": "2026-11-11",
+          "source_url": "https://claude.com/pricing",
+          "claim": "Publish-day re-read 2026-11-11: unchanged from the 2026-11-04 recapture.",
+          "quote": "Pro For everyday work $17 Per month with annual subscription discount ( $200 billed up front). $20 if billed monthly.",
+          "supersedes": "none (no change)",
+          "collector": "orchestrator (publish-day recheck)"
+        },
+        {
+          "recaptured_at": "2026-11-12",
+          "source_url": "https://claude.com/pricing",
+          "claim": "Publish-day re-read 2026-11-12 (actual publish day): page text identical to the 2026-11-11 read.",
+          "quote": "Pro For everyday work $17 Per month with annual subscription discount ( $200 billed up front). $20 if billed monthly.",
+          "supersedes": "none (no change)",
+          "collector": "orchestrator (publish-day recheck)"
         }
       ]
     }
