@@ -1,0 +1,1107 @@
+{
+  "_meta": {
+    "flow_id": "hailuo-ai-review-2026-11-08",
+    "protocol_version": "MEP-1.0",
+    "target_slug": "/tools/hailuo-ai",
+    "target_keyword": "hailuo ai review",
+    "run_date": "2026-11-08",
+    "collector": "evidence-curator",
+    "query_set": [
+      "[Chrome] hailuoai.video/subscribe (plan grid + FAQ answers from page source)",
+      "[Chrome] hailuoai.video/ (homepage banner)",
+      "[Chrome] hailuoai.video/doc/terms-of-service.html",
+      "[Chrome+WebFetch] minimax.io/blog/minimax-h3",
+      "[WebFetch] minimax.io/news/minimax-hailuo-23",
+      "[Chrome] trustpilot.com/review/hailuoai.video (+ ?sort=recency)",
+      "[Chrome] trustpilot.com/review/hailuo-ai.com (collision check)",
+      "[Chrome] play.google.com search 'hailuo ai' (US) -> details?id=ai.hailuo.video",
+      "[Chrome+iTunes Search API] apps.apple.com id6741675037; itunes search 'hailuo ai'/'hailuo' country us,gb,sg,ca; 'nanonoble'",
+      "[WebSearch] apps.apple.com Hailuo AI MiniMax video app",
+      "[WebSearch] site:reddit.com r/HailuoAiOfficial credits subscription",
+      "[WebSearch] hailuo ai review reddit 2026",
+      "[WebSearch] MiniMax H3 video model launch Hailuo news",
+      "[WebFetch/Chrome] scmp.com H3 article",
+      "[WebFetch] atlascloud.ai minimax-h3-credits-per-video",
+      "[WebFetch] costbench hidden-costs",
+      "[WebFetch] vijaytalksai review",
+      "[WebFetch] techpresso is-hailuo-worth-it",
+      "[WebFetch] diyai.io hailuo review",
+      "[Reddit direct] reddit.com thread 1lmjz48 via WebFetch (blocked), Chrome old.reddit (blocked by extension safety list), curl (403)"
+    ],
+    "flow_counter": {
+      "identified": 50,
+      "screened": 50,
+      "excluded": 38,
+      "excluded_by_reason": {
+        "no-methodology-affiliate": 17,
+        "duplicate": 11,
+        "unverifiable-this-run": 7,
+        "off-topic": 3
+      },
+      "included_sources": 12,
+      "included_entries": 23,
+      "sub_sample": "Trustpilot hailuoai.video: 20 most recent reviews coded (2025-12-25..2026-11-05) inside included source #6; Google Play: 3 'most relevant' reviews read, 2 registered."
+    },
+    "included_sources": [
+      "hailuoai.video/subscribe",
+      "hailuoai.video/",
+      "hailuoai.video/doc/terms-of-service.html",
+      "minimax.io/blog/minimax-h3",
+      "minimax.io/news/minimax-hailuo-23",
+      "trustpilot.com/review/hailuoai.video",
+      "play.google.com ai.hailuo.video",
+      "scmp.com 3362540",
+      "atlascloud.ai h3 credits",
+      "costbench hidden-costs",
+      "vijaytalksai",
+      "techpresso"
+    ],
+    "excluded": [
+      {
+        "url": "https://www.trustpilot.com/review/hailuo-ai.com",
+        "reason": "off-topic",
+        "detail": "brand collision: look-alike domain (1.8/16 reviews, category 'Adult Entertainment Store'), not among the ToS-named official services"
+      },
+      {
+        "url": "https://apps.apple.com/ca/app/hailuo-ai-video-maker/id6788651472",
+        "reason": "off-topic",
+        "detail": "brand collision: 'Hailuo AI - Video Maker' by Colonial Cars, Inc."
+      },
+      {
+        "url": "https://apps.apple.com/us/app/hailuopic-ai-image-maker/id6761998570",
+        "reason": "off-topic",
+        "detail": "brand collision: 'HailuoPic' by Malik Noman"
+      },
+      {
+        "url": "https://apps.apple.com/us/app/hailuo-video/id6741675037",
+        "reason": "unverifiable-this-run",
+        "detail": "linked from hailuoai.video; US store page reads 'The page you're looking for can't be found.' on 2026-11-08; iTunes lookup returns 0 results (us/hn/jp)"
+      },
+      {
+        "url": "https://www.reddit.com/r/HailuoAiOfficial/comments/1lmjz48/disappointed_and_moving_on/",
+        "reason": "unverifiable-this-run",
+        "detail": "reddit blocked for WebFetch, Chrome extension and curl; no mirror/proxy used"
+      },
+      {
+        "url": "reddit r/HailuoAiOfficial 1g0lv80 are_you_ok_with_prices",
+        "reason": "unverifiable-this-run",
+        "detail": "seen only as a Redlib mirror search hit; not fetched"
+      },
+      {
+        "url": "reddit r/HailuoAiOfficial 1g3tpql when_do_we_get_free_daily_credits_and_how_many",
+        "reason": "unverifiable-this-run",
+        "detail": "mirror search hit only"
+      },
+      {
+        "url": "reddit r/HailuoAiOfficial 1g8suqp question_about_subscription",
+        "reason": "unverifiable-this-run",
+        "detail": "mirror search hit only"
+      },
+      {
+        "url": "reddit r/HailuoAiOfficial 1g3avtj so_i_tried_creating_videos_earlier_today",
+        "reason": "unverifiable-this-run",
+        "detail": "mirror search hit only"
+      },
+      {
+        "url": "https://reddit.sentinel-team.org/posts/1r0np3f/",
+        "reason": "unverifiable-this-run",
+        "detail": "third-party snapshot of a reddit post; not fetched"
+      },
+      {
+        "url": "https://diyai.io/ai-tools/video-generation/reviews/hailuo-review/",
+        "reason": "no-methodology-affiliate",
+        "detail": "commission disclosure; 9 sub-scores with no prompts, sample size or model version"
+      },
+      {
+        "url": "aireiter.com, costbench.com (plans, vs-kling), autogpt.net, atlascloud.ai/blog/guides, toksta, tekpon, subscribed.fyi, plisio, pippit.capcut, dupple (x2), flowjam, aitoolsatlas, toolcolumn",
+        "reason": "no-methodology-affiliate",
+        "detail": "14 pricing aggregators / affiliate listicles; screened on title+snippet, not fetched; vendor primary source captured instead",
+        "reconciliation_note_2026_11_13": "Publish gate run 1 noted the URL list names 15 page paths if costbench.com 'plans' and 'vs-kling' count as two. The 2026-11-08 screening log counted 14 candidates (costbench screened as one search-result row). The count is kept as screened; flagged, not re-screened."
+      },
+      {
+        "url": "lifestyle.kbew98country.com hailuo review july 2026",
+        "reason": "no-methodology-affiliate",
+        "detail": "syndicated promotional release"
+      },
+      {
+        "url": "sites.google.com/view/aitoolfree/hailuo-ai-review",
+        "reason": "no-methodology-affiliate",
+        "detail": "income-claim promo page"
+      },
+      {
+        "url": "https://magichour.ai/blog/hailuo-23-pricing",
+        "reason": "duplicate",
+        "detail": "= EV-best-ai-video-generators-16 (2026-05-27, self-interested); superseded by today's vendor capture EV-01"
+      },
+      {
+        "url": "datanorth.ai, segmind, rits.shanghai.nyu.edu, digitalapplied, renderforest, comfyui-wiki, mer.vin, orcarouter, howaiworks",
+        "reason": "duplicate",
+        "detail": "9 secondary H3 launch recaps restating the MiniMax blog (primary registered as EV-10); not fetched"
+      },
+      {
+        "url": "https://apps.apple.com/hn/app/hailuo-ai-official-by-minimax/id6741675037",
+        "reason": "duplicate",
+        "detail": "same app id as the US listing; lookup returns 0 results"
+      }
+    ],
+    "reused": [
+      {
+        "id": "EV-best-ai-video-generators-16",
+        "use": "historical only - shows a May 2026 third-party price ladder ($9.99 Standard) that today's vendor capture (EV-01) supersedes; not re-fetched"
+      }
+    ],
+    "coding_status": "dual-independent coding done 2026-11-08 (coding-pass-A, coding-pass-B), disagreements resolved by mep-resolver; see Data/seo/phases/hailuo-ai-review/coding-resolution.json.",
+    "limitations": [
+      "Reddit census could not run: reddit.com refused every allowed access path this run; 0 threads read.",
+      "Monthly-billing plan prices could not be captured (subscribe page redirects signed-out visitors); only the monthly per-second H3 labels were read from page source (EV-02).",
+      "No official iOS listing reachable in the US App Store on capture date.",
+      "Trustpilot and Play reviews are self-selected; complaint bias."
+    ],
+    "coder_agreement": {
+      "definition": "agreed = same label and same claim_match verdict",
+      "coded": 23,
+      "agreed": 20,
+      "rate": 0.87,
+      "disagreements": [
+        "EV-hailuo-ai-review-02",
+        "EV-hailuo-ai-review-19",
+        "EV-hailuo-ai-review-21"
+      ],
+      "coding_ambiguous_after_resolution": 0,
+      "resolved_by": "mep-resolver",
+      "resolved_at": "2026-11-08"
+    }
+  },
+  "entries": [
+    {
+      "id": "EV-hailuo-ai-review-01",
+      "claim": "The vendor's subscribe page, read live on 2026-11-08 in its default yearly-billing view, lists Standard at $8.40/month billed $100.80 yearly (44% off a struck $14.99) with 1,000 credits monthly, and Pro at $30.40/month billed $364.80 yearly (45% off a struck $54.99) with 4,500 credits monthly.",
+      "source_url": "https://hailuoai.video/subscribe",
+      "source_date": "2026-11-08",
+      "quote": "Standard $14.99 44% OFF $ 8.40 /month $100.80 billed yearly Subscribe 1000 credits monthly ... Pro $54.99 45% OFF $ 30.40 /month $364.80 billed yearly Subscribe 4500 credits monthly",
+      "platform": "hailuoai.video (vendor primary source, self-interested; read live in Chrome 2026-11-08)",
+      "target_slug": "/tools/hailuo-ai",
+      "collected_at": "2026-11-08",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "hailuo-ai-review-2026-11-08",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "coding-pass-A",
+        "coding-pass-B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "MiniMax Hailuo AI (hailuoai.video)",
+        "aspect": "plan prices (yearly view) and monthly credits",
+        "stance": "neutral",
+        "plan_tier_if_stated": "Standard, Pro",
+        "item_date": "2026-11-08"
+      },
+      "quote_supplementary": "Same page, same view: \"Master $119.99 41% OFF $ 71.20 /month $854.40 billed yearly Subscribe 10500 credits monthly\" and \"Max $ 184.00 /month $2208.00 billed yearly Subscribe 27000 credits monthly\". Site header: \"From $9.99 /mo\".",
+      "honesty_notes": [
+        "The monthly-billing toggle could not be captured: the subscribe page redirected to the homepage within ~2 s for a signed-out visitor every time. The struck prices ($14.99/$54.99/$119.99) are shown as the pre-discount figure in the yearly view; the writer may call them the list price shown, NOT a confirmed monthly-billing price.",
+        "Header 'From $9.99/mo' is not reconciled with any card in the yearly view; do not state $9.99 as a plan price without this caveat.",
+        "Third-party prices disagree (EV-best-ai-video-generators-16 magichour $9.99 Standard; techpresso cites $124.99 Ultra and $199.99 Max). Today's vendor capture supersedes them."
+      ],
+      "resolved_by": "mep-resolver",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-13",
+          "collector": "mimo-auto-content 2026-11-13 publish",
+          "source_url": "https://hailuoai.video/subscribe",
+          "status": "ok",
+          "matched": true,
+          "method": "Chrome get_page_text (signed out, default yearly view)",
+          "claim": "Plan grid re-read 2026-11-13: unchanged. Standard $8.40/mo, $100.80 billed yearly, struck $14.99, 1000 credits; Pro $30.40/$364.80, struck $54.99, 4500; Master $71.20/$854.40, struck $119.99, 10500; Max $184.00/$2208.00, 27000. Header 'From /mo' rendered without a figure this time.",
+          "quote": "Standard $14.99 44% OFF $ 8.40 /month $100.80 billed yearly Subscribe 1000 credits monthly"
+        }
+      ]
+    },
+    {
+      "id": "EV-hailuo-ai-review-02",
+      "claim": "On yearly billing, the vendor prices MiniMax H3 by the second: on Standard, H3 at 2K costs $0.101/sec (about 84 seconds of video per month) and H3 at 768p $0.059/sec (about 143 seconds); on Pro, Master and Max the 2K rate is $0.081/sec. The same page's monthly-billing labels are higher: Standard 2K $0.126/sec, Pro and Master 2K $0.102/sec, Max 2K $0.096/sec (same seconds per plan).",
+      "source_url": "https://hailuoai.video/subscribe",
+      "source_date": "2026-11-08",
+      "quote": "1000 credits monthly MiniMax H3(2K), $0.101/sec ~84s Video Generation MiniMax H3(768P), $0.059/sec ~143s Video Generation MiniMax H3 Max(768P), $0.059/sec ~143s Video Generation MiniMax H3 Max(480P), $0.034/sec ~250s Video Generation",
+      "platform": "hailuoai.video (vendor primary source, self-interested; read live in Chrome 2026-11-08)",
+      "target_slug": "/tools/hailuo-ai",
+      "collected_at": "2026-11-08",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "hailuo-ai-review-2026-11-08",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "coding-pass-A",
+        "coding-pass-B"
+      ],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "MiniMax Hailuo AI (hailuoai.video)",
+        "aspect": "H3 per-second price and seconds per plan",
+        "stance": "neutral",
+        "plan_tier_if_stated": "Standard",
+        "item_date": "2026-11-08"
+      },
+      "quote_supplementary": "Pro (4500 credits): \"MiniMax H3(2K), $0.081/sec ~375s Video Generation MiniMax H3(768P), $0.047/sec ~643s Video Generation ... MiniMax H3 Max(480P), $0.027/sec ~1125s\". Master: ~875s at 2K. Max: ~2250s at 2K, plus \"Hailuo 2.0/2.3 models Unlimited\". Comparison grid: H3 \"4s-15s: 768p, 2K\"; H3 Max \"5s-15s: 480p, 768p\".",
+      "honesty_notes": [
+        "Implied credits per second (1000 credits / ~84 s = ~12 credits/s at 2K on Standard) is OUR arithmetic, not a vendor figure; label it as derived if used.",
+        "A 6-second H3 2K clip on Standard = 6 x $0.101 = ~$0.61 (derived). Keep the derivation visible.",
+        "Resolver 2026-11-08: the rendered grid (default yearly view) shows the $0.101/$0.081 figures; the monthly figures come from the page-source label table (keys *_month_*), read by curl 2026-11-08, not from a rendered monthly view. Say 'on yearly billing' for the first set and 'on monthly billing, per the page's monthly labels' for the second."
+      ],
+      "resolved_by": "mep-resolver",
+      "quote_monthly_billing": "MiniMax H3(2K), $0.126/sec ~84s Video Generation [h3_video_duration_label_std_month_2K] ... MiniMax H3(768P), $0.074/sec ~143s Video Generation [std_month_768] ... MiniMax H3(2K), $0.102/sec ~375s Video Generation [pro_month_2K] ... MiniMax H3(2K), $0.102/sec ~875s Video Generation [mst_month_2K] ... MiniMax H3(2K), $0.096/sec ~2250s Video Generation [max_month_2K]",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-13",
+          "collector": "mimo-auto-content 2026-11-13 publish",
+          "source_url": "https://hailuoai.video/subscribe",
+          "status": "ok",
+          "matched": true,
+          "method": "Chrome get_page_text + page source",
+          "claim": "H3 per-second rates and seconds re-read 2026-11-13: unchanged (Standard 2K $0.101/sec ~84s, 768P $0.059 ~143s; Pro/Master/Max 2K $0.081, ~375s/~875s/~2250s; monthly labels 0.126/0.102/0.102/0.096 in source). Max still lists 'Hailuo 2.0/2.3 models Unlimited'.",
+          "quote": "MiniMax H3(2K), $0.101/sec ~84s Video Generation [Standard] ... MiniMax H3(2K), $0.081/sec ~375s Video Generation [Pro] ... MiniMax H3(2K), $0.081/sec ~875s Video Generation [Master] ... MiniMax H3(2K), $0.081/sec ~2250s Video Generation ... Hailuo 2.0/2.3 models Unlimited [Max]"
+        }
+      ]
+    },
+    {
+      "id": "EV-hailuo-ai-review-03",
+      "claim": "The vendor's paid-plan FAQ lists credits per clip for the older models: Hailuo 2.3 / 2.0 cost 25 credits for a 6-second 768p clip, 80 credits for 6s 1080p and 50 for 10s 768p; Hailuo 2.3-Fast costs 15 / 50 / 30; and failed generations are not charged.",
+      "source_url": "https://hailuoai.video/subscribe",
+      "source_date": "2026-11-08",
+      "quote": "Hailuo 2.3 / Hailuo 2.0 6s, 768p: 25 Credits 6s, 1080p: 80 Credits 10s, 768p: 50 Credits Hailuo 2.3-Fast 6s, 768p: 15 Credits 6s, 1080p: 50 Credits 10s, 768p: 30 Credits",
+      "platform": "hailuoai.video (vendor primary source, self-interested; read live in Chrome 2026-11-08); FAQ 'How many credits does it cost to generate one video?' answer text read from the page source",
+      "target_slug": "/tools/hailuo-ai",
+      "collected_at": "2026-11-08",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "hailuo-ai-review-2026-11-08",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "coding-pass-A",
+        "coding-pass-B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "MiniMax Hailuo AI (hailuoai.video)",
+        "aspect": "credits per clip by model/length/resolution",
+        "stance": "neutral",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-11-08"
+      },
+      "quote_supplementary": "Same answer continues: \"Hailuo 1.0 / Director / Live 6s, 720p: 25 Credits Sora 2.0 4s, 720p: 40 Credits 8s, 720p: 80 Credits 12s, 720p: 120 Credits Veo3.1 8s, 720p/1080p: 120 Credits (Regular 320, Promotion) ... No credits will be charged for failed generations\"",
+      "honesty_notes": [
+        "The FAQ gives NO per-clip credit figure for H3; H3 is priced per second (EV-02).",
+        "Derived example for the writer (label as derived): Standard 1,000 credits / 25 = 40 six-second 768p Hailuo 2.3 clips; / 80 = 12 at 1080p."
+      ],
+      "resolved_by": "mep-resolver",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-13",
+          "collector": "mimo-auto-content 2026-11-13 publish",
+          "source_url": "https://hailuoai.video/subscribe",
+          "status": "ok",
+          "matched": true,
+          "method": "page source (video_faq_answer_3)",
+          "claim": "Credit table re-read 2026-11-13: unchanged (Hailuo 2.3/2.0 25/80/50; 2.3-Fast 15/50/30; Sora 2.0, Veo3.1 listed; no Seedance row; failed generations not charged).",
+          "quote": "Hailuo 2.3 / Hailuo 2.0 6s, 768p: 25 Credits 6s, 1080p: 80 Credits 10s, 768p: 50 Credits"
+        }
+      ]
+    },
+    {
+      "id": "EV-hailuo-ai-review-04",
+      "claim": "On the vendor's plan grid the Free tier shows $0.00/month, 0 credits monthly, 'One-time free trial credits' and 'Hailuo models only'; no standing daily free credit allowance is listed.",
+      "source_url": "https://hailuoai.video/subscribe",
+      "source_date": "2026-11-08",
+      "quote": "Free $ 0.00 /month Current 0 credits monthly One-time free trial credits Hailuo models only",
+      "platform": "hailuoai.video (vendor primary source, self-interested; read live in Chrome 2026-11-08)",
+      "target_slug": "/tools/hailuo-ai",
+      "collected_at": "2026-11-08",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "hailuo-ai-review-2026-11-08",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "coding-pass-A",
+        "coding-pass-B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "MiniMax Hailuo AI (hailuoai.video)",
+        "aspect": "free tier",
+        "stance": "neutral",
+        "plan_tier_if_stated": "Free",
+        "item_date": "2026-11-08"
+      },
+      "honesty_notes": [
+        "The MiniMax Hailuo 2.3 announcement (EV-11, 2025-10-28) offered 'daily free trial credits during the launch period'; that was time-limited. Do not describe daily free credits as current.",
+        "The amount of the one-time trial credit is not printed on the plan grid."
+      ],
+      "resolved_by": "mep-resolver",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-13",
+          "collector": "mimo-auto-content 2026-11-13 publish",
+          "source_url": "https://hailuoai.video/subscribe",
+          "status": "ok",
+          "matched": true,
+          "method": "Chrome get_page_text",
+          "claim": "Free card re-read 2026-11-13: unchanged.",
+          "quote": "Free $ 0.00 /month Current 0 credits monthly One-time free trial credits Hailuo models only"
+        }
+      ]
+    },
+    {
+      "id": "EV-hailuo-ai-review-05",
+      "claim": "The hailuoai.video homepage banner, read 2026-11-08, offers 3,000 free credits for downloading MiniMax Design, a separate promotion from the plan grid's one-time trial credits.",
+      "source_url": "https://hailuoai.video/",
+      "source_date": "2026-11-08",
+      "quote": "MiniMax H3 & Wan 3.0 Is Live | Download MiniMax Design and Get 3,000 Free Credits to Start Creating!",
+      "platform": "hailuoai.video (vendor primary source, self-interested; read live in Chrome 2026-11-08)",
+      "target_slug": "/tools/hailuo-ai",
+      "collected_at": "2026-11-08",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "hailuo-ai-review-2026-11-08",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "coding-pass-A",
+        "coding-pass-B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "MiniMax Hailuo AI (hailuoai.video)",
+        "aspect": "promotional free credits",
+        "stance": "neutral",
+        "plan_tier_if_stated": "Free",
+        "item_date": "2026-11-08"
+      },
+      "honesty_notes": [
+        "Promotion terms (which product the 3,000 credits apply to, expiry) were not visible to a signed-out visitor; treat as a dated banner, not a standing free allowance."
+      ],
+      "resolved_by": "mep-resolver",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-13",
+          "collector": "mimo-auto-content 2026-11-13 publish",
+          "source_url": "https://hailuoai.video/",
+          "status": "ok",
+          "matched": true,
+          "method": "curl",
+          "claim": "Homepage still carries the '3,000 Free Credits' MiniMax Design offer on 2026-11-13.",
+          "quote": "3,000 Free Credits"
+        }
+      ]
+    },
+    {
+      "id": "EV-hailuo-ai-review-06",
+      "claim": "The vendor's FAQ says paid customers may use any video they can download without a watermark commercially and keep full rights to it; the same FAQ says previous works can be downloaded watermark-free after subscribing.",
+      "source_url": "https://hailuoai.video/subscribe",
+      "source_date": "2026-11-08",
+      "quote": "Yes! Any videos you can download without watermarks are yours :) . Please feel free to use them for commercial purposes and you retain full rights to the asset.",
+      "platform": "hailuoai.video (vendor primary source, self-interested; read live in Chrome 2026-11-08); FAQ 'Do I have full commercial rights if I am a paid customer?'",
+      "target_slug": "/tools/hailuo-ai",
+      "collected_at": "2026-11-08",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "hailuo-ai-review-2026-11-08",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "coding-pass-A",
+        "coding-pass-B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "MiniMax Hailuo AI (hailuoai.video)",
+        "aspect": "commercial rights / watermark",
+        "stance": "positive",
+        "plan_tier_if_stated": "paid plans",
+        "item_date": "2026-11-08"
+      },
+      "quote_supplementary": "FAQ 'Do I get to remove watermarks on my previous assets if I become a subscriber?': \"Yes! Upon popular requests from our community, we added this feature right before we launched the plan. You can download your previous works without watermarks!\" Page source string: \"Paid plans include monthly credits, watermark-free video downloads, and priority video generation.\"",
+      "honesty_notes": [
+        "Free-tier watermark is implied (watermark-free download is framed as a paid benefit) but the plan-grid 'Watermarks removal' row renders as icons that could not be read; say 'the vendor frames watermark-free downloads as a paid-plan benefit', not 'free videos carry watermark X'."
+      ],
+      "resolved_by": "mep-resolver"
+    },
+    {
+      "id": "EV-hailuo-ai-review-07",
+      "claim": "The vendor's FAQ states refunds are not currently supported and that videos which fail to generate cost no credits.",
+      "source_url": "https://hailuoai.video/subscribe",
+      "source_date": "2026-11-08",
+      "quote": "Unfortunately, refund is not currently supported. ... No. Videos that fail to generate will not cost any credit.",
+      "platform": "hailuoai.video (vendor primary source, self-interested; read live in Chrome 2026-11-08); FAQ answers 'Can I cancel a paid plan and get a refund?' and 'Do I get charged if a video failed to generate?'",
+      "target_slug": "/tools/hailuo-ai",
+      "collected_at": "2026-11-08",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "hailuo-ai-review-2026-11-08",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "coding-pass-A",
+        "coding-pass-B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "MiniMax Hailuo AI (hailuoai.video)",
+        "aspect": "refund policy, failed-generation billing",
+        "stance": "mixed",
+        "plan_tier_if_stated": "paid plans",
+        "item_date": "2026-11-08"
+      },
+      "quote_supplementary": "Refund answer continues: \"If you have an ongoing subscription and choose to downgrade to the free plan, your account will switch authomatically to the free plan once the current plan expires.\" Pay-as-you-go answer: \"You can purchase additional credits at anytime. The credits are valid for 1 year.\"",
+      "honesty_notes": [
+        "Conflicts with third-party claim EV-21 (costbench: failed attempts consume credits) - the vendor says failures are free; 'unusable but completed' output is a different case. Present both, attributed."
+      ],
+      "resolved_by": "mep-resolver",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-13",
+          "collector": "mimo-auto-content 2026-11-13 publish",
+          "source_url": "https://hailuoai.video/subscribe",
+          "status": "ok",
+          "matched": true,
+          "method": "page source (video_faq_answer_7/9, credits FAQ)",
+          "claim": "Refund, downgrade, failed-generation and 1-year purchased-credit lines re-read 2026-11-13: unchanged.",
+          "quote": "Unfortunately, refund is not currently supported."
+        }
+      ]
+    },
+    {
+      "id": "EV-hailuo-ai-review-08",
+      "claim": "Hailuo's Terms of Service (last modified 2026-08-19) say the company does not claim ownership of user content but takes a royalty-free, perpetual, irrevocable, worldwide licence to use, modify, distribute and derive revenue from it, surviving termination.",
+      "source_url": "https://hailuoai.video/doc/terms-of-service.html",
+      "source_date": "2026-08-19",
+      "quote": "We do not claim ownership of User Contributions or User Generated Content. By using the Services, you grant to us, our affiliates, successors, and assigns a royalty-free, perpetual, irrevocable, worldwide, non-exclusive right (including any moral rights) and license to use, license, reproduce, modify, adapt, publish, translate, create derivative works from, distribute, derive revenue",
+      "platform": "hailuoai.video Terms of Service (vendor primary legal text, 'Last Modified: 08/19/2026'; read live 2026-11-08)",
+      "target_slug": "/tools/hailuo-ai",
+      "collected_at": "2026-11-08",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "hailuo-ai-review-2026-11-08",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "coding-pass-A",
+        "coding-pass-B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "MiniMax Hailuo AI (hailuoai.video)",
+        "aspect": "output ownership and licence granted to vendor",
+        "stance": "negative",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-08-19"
+      },
+      "quote_supplementary": "Continues: \"...or other remuneration from, and communicate to the public, perform and display your User Contributions and User Generated Content ... This license survives termination of this Agreement by any party, for any reason.\"",
+      "resolved_by": "mep-resolver"
+    },
+    {
+      "id": "EV-hailuo-ai-review-09",
+      "claim": "The Terms of Service are with Nanonoble Pte. Ltd., cover hailuo.ai/audio, hailuoai.video and hailuo.ai, and put any personal, business or commercial use of generated content at the user's own risk.",
+      "source_url": "https://hailuoai.video/doc/terms-of-service.html",
+      "source_date": "2026-08-19",
+      "quote": "If you use any User Generated Content for any personal, business, or commercial purpose, whether or not such use is permitted under these Terms of Use, you do so at your own risk.",
+      "platform": "hailuoai.video Terms of Service (vendor primary legal text; read live 2026-11-08)",
+      "target_slug": "/tools/hailuo-ai",
+      "collected_at": "2026-11-08",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "hailuo-ai-review-2026-11-08",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "coding-pass-A",
+        "coding-pass-B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "MiniMax Hailuo AI (hailuoai.video)",
+        "aspect": "contracting entity, commercial-use risk, covered domains",
+        "stance": "negative",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-08-19"
+      },
+      "quote_supplementary": "Opening: \"These terms of use are entered into by and between you and Nanonoble Pte. Ltd. (\\\"Company,\\\" \\\"we,\\\" or \\\"us\\\") ... services offered on or through the hailuo.ai/audio, hailuoai.video, and hailuo.ai (collectively, the \\\"Services\\\").\" Also in page source: \"we may add labels or watermarks to it\" (Marking, Watermarks, and Disclaimers).",
+      "honesty_notes": [
+        "Brand-collision guard: the ToS names hailuo.ai/audio, hailuoai.video and hailuo.ai as the official services. hailuo-ai.com is NOT among them (see excluded Trustpilot listing)."
+      ],
+      "resolved_by": "mep-resolver"
+    },
+    {
+      "id": "EV-hailuo-ai-review-10",
+      "claim": "MiniMax announced H3 on 2026-07-31 as a general multimodal model generating video with native stereo sound up to 15 seconds at 2K, claiming its 2K per-second price is under a third of mainstream models and promising open weights.",
+      "source_url": "https://www.minimax.io/blog/minimax-h3",
+      "source_date": "2026-07-31",
+      "quote": "Today, we're launching MiniMax H3, a general-purpose multimodal generation model. H3 understands unified context across text, images, video, and audio, generating video with native stereo sound, up to 15 seconds at 2K resolution.",
+      "platform": "minimax.io blog (vendor primary source, self-interested; read live 2026-11-08)",
+      "target_slug": "/tools/hailuo-ai",
+      "collected_at": "2026-11-08",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "hailuo-ai-review-2026-11-08",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "coding-pass-A",
+        "coding-pass-B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "MiniMax Hailuo AI (hailuoai.video)",
+        "aspect": "H3 capabilities, price positioning, open weights",
+        "stance": "positive",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-07-31"
+      },
+      "quote_supplementary": "\"At 2K, H3's per-second price is less than a third of mainstream models, and at 768p, it's less than half the price of mainstream models' 720p.\" \"we plan to open up the model weights in the coming days, subject to applicable laws and regulations.\" Self-assessed limits: \"Visual detail can still be improved in certain scenarios.\"",
+      "honesty_notes": [
+        "Price-vs-mainstream claim is the vendor's, unbenchmarked; attribute it.",
+        "Open-weights status after launch NOT verified this run (secondary sources disagree); do not state weights are released."
+      ],
+      "resolved_by": "mep-resolver"
+    },
+    {
+      "id": "EV-hailuo-ai-review-11",
+      "claim": "MiniMax's Hailuo 2.3 announcement (2025-10-28) says the model improved motion, stylisation and micro-expressions at the same price as Hailuo 02, with a Fast variant cutting batch costs by up to 50%, and daily free trial credits during the launch period.",
+      "source_url": "https://www.minimax.io/news/minimax-hailuo-23",
+      "source_date": "2025-10-28",
+      "quote": "It boosts performance while maintaining the same pricing as Hailuo 02 ... reducing costs for batch creation by up to 50%. ... We are also offering daily free trial credits during the launch period",
+      "platform": "minimax.io news (vendor primary source, self-interested; fetched live 2026-11-08 via WebFetch)",
+      "target_slug": "/tools/hailuo-ai",
+      "collected_at": "2026-11-08",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "hailuo-ai-review-2026-11-08",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "coding-pass-A",
+        "coding-pass-B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "MiniMax Hailuo AI (hailuoai.video)",
+        "aspect": "Hailuo 2.3 release, pricing parity, launch-period free credits",
+        "stance": "positive",
+        "plan_tier_if_stated": null,
+        "item_date": "2025-10-28"
+      },
+      "honesty_notes": [
+        "Quote captured by WebFetch excerpt (fragments joined with '...'); the Chrome read of this URL served a cached H3 page, so verbatim fidelity rests on WebFetch. Flag for dual-coder re-read.",
+        "'daily free trial credits' was launch-period only; see EV-04 for today's free tier.",
+        "Coding pass A re-read by curl 2026-11-08 and found the quote verbatim; the WebFetch-only flag is cleared."
+      ],
+      "resolved_by": "mep-resolver"
+    },
+    {
+      "id": "EV-hailuo-ai-review-12",
+      "claim": "Trustpilot's listing for hailuoai.video (unclaimed, no review invitations) showed a TrustScore of 1.4 from 95 reviews on 2026-11-08.",
+      "source_url": "https://www.trustpilot.com/review/hailuoai.video",
+      "source_date": "2026-11-08",
+      "quote": "Unclaimed profile Hailuoai Reviews 95 • 1.4 ... hailuoai.video 1.4 Bad 95 reviews ... No history of asking for reviews This company hasn't invited their customers, so reviews may not be representative",
+      "platform": "trustpilot.com (review platform; unsolicited reviews skew negative; read live 2026-11-08)",
+      "target_slug": "/tools/hailuo-ai",
+      "collected_at": "2026-11-08",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "hailuo-ai-review-2026-11-08",
+      "screening": "included",
+      "label": "community-report",
+      "coders": [
+        "coding-pass-A",
+        "coding-pass-B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "MiniMax Hailuo AI (hailuoai.video)",
+        "aspect": "aggregate rating snapshot",
+        "stance": "negative",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-11-08"
+      },
+      "honesty_notes": [
+        "Listing domain = hailuoai.video (the official domain per ToS EV-09). Do NOT mix with trustpilot.com/review/hailuo-ai.com (1.8/16, filed under 'Adult Entertainment Store') - excluded as brand collision.",
+        "Trustpilot's own warning ('may not be representative') must accompany the score."
+      ],
+      "resolved_by": "mep-resolver",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-13",
+          "collector": "mimo-auto-content 2026-11-13 publish",
+          "source_url": "https://www.trustpilot.com/review/hailuoai.video",
+          "status": "changed",
+          "matched": false,
+          "method": "Chrome screenshot",
+          "claim": "Trustpilot listing for hailuoai.video re-read 2026-11-13: TrustScore 1.4 from 96 reviews (was 95 on 2026-11-08); still unclaimed with the 'hasn't invited their customers' notice. The 20-review coded sample (EV-13) stays as dated.",
+          "quote": "Hailuoai Reviews 96 1.4 ... 1.4 Bad 96 reviews ... This company hasn't invited their customers, so reviews may not be representative"
+        }
+      ]
+    },
+    {
+      "id": "EV-hailuo-ai-review-13",
+      "claim": "Defined sample: of the 20 most recent hailuoai.video Trustpilot reviews (published 2025-12-25 to 2026-11-05, read 2026-11-08), 19 are 1-star and 1 is 2-star; on a resolver close read of all 20, 9 describe billing, renewal or refund problems, 9 describe unresponsive or unhelpful support, 7 describe failed or poor-quality generations and 2 describe content-moderation refusals (themes overlap; 2 reviews fit none).",
+      "source_url": "https://www.trustpilot.com/review/hailuoai.video?sort=recency",
+      "source_date": "2026-11-05",
+      "quote": "I had a yearly subscription with hailuoai.video that I canceled before the renewal date and received written confirmation that it would not renew.",
+      "platform": "trustpilot.com (review platform; 20-review defined sample, recency sort page 1; read live 2026-11-08; quote from the review published 2026-01-18)",
+      "target_slug": "/tools/hailuo-ai",
+      "collected_at": "2026-11-08",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "hailuo-ai-review-2026-11-08",
+      "screening": "included",
+      "label": "community-report",
+      "coders": [
+        "coding-pass-A",
+        "coding-pass-B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "MiniMax Hailuo AI (hailuoai.video)",
+        "aspect": "defined-sample theme count",
+        "stance": "negative",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-11-05"
+      },
+      "quote_supplementary": "Mixed counter-example in the same sample (review published 2026-07-01): \"The AI video generator itself worked. My complaint is not about the product.\"",
+      "honesty_notes": [
+        "Denominator 20, window 2025-12-25..2026-11-05. Never convert to 'X% of users'.",
+        "Coding superseded by resolver theme_coding (2026-11-08); the single-pass counts 6/6/4/2 understated billing and support. Borderline calls: 09-30 mentions a refund form but its complaint is generation + support (not counted billing); 01-18 mentions slow servers (not counted generation); 01-02 is title-only ('Does not follow instruction precisely', counted generation); 03-21 mentions money but its complaint is Community Standards (counted moderation only).",
+        "Complaint bias: unsolicited Trustpilot reviews over-represent unhappy users."
+      ],
+      "resolved_by": "mep-resolver",
+      "quote_source_date": "2026-01-18",
+      "theme_coding": {
+        "method": "resolver close read of all 20 review texts from the page's __NEXT_DATA__ review list in Chrome, signed out, 2026-11-08; keyed by published date",
+        "definitions": {
+          "billing": "a charge, renewal, cancellation or refund problem the reviewer experienced",
+          "support": "support unreachable, slow, ignoring messages or not resolving the issue",
+          "generation": "generations failing, stuck, low quality or not following the prompt",
+          "moderation": "content-policy refusals"
+        },
+        "per_review": {
+          "2026-11-05": [
+            "billing",
+            "support"
+          ],
+          "2026-09-30": [
+            "generation",
+            "support"
+          ],
+          "2026-08-22": [
+            "other: UI submitted prompt early, 105 of 200 trial credits used"
+          ],
+          "2026-07-01": [
+            "billing",
+            "support"
+          ],
+          "2026-05-18": [
+            "billing",
+            "support"
+          ],
+          "2026-04-15": [
+            "billing",
+            "support"
+          ],
+          "2026-03-31": [
+            "generation"
+          ],
+          "2026-03-27": [
+            "generation"
+          ],
+          "2026-03-23": [
+            "billing",
+            "support"
+          ],
+          "2026-03-21": [
+            "moderation"
+          ],
+          "2026-03-18": [
+            "billing",
+            "support"
+          ],
+          "2026-03-15 (2-star)": [
+            "generation"
+          ],
+          "2026-03-14": [
+            "other: site layout change"
+          ],
+          "2026-03-03": [
+            "billing"
+          ],
+          "2026-03-02": [
+            "billing"
+          ],
+          "2026-02-11": [
+            "generation",
+            "support"
+          ],
+          "2026-01-24": [
+            "generation"
+          ],
+          "2026-01-18": [
+            "billing",
+            "support"
+          ],
+          "2026-01-02": [
+            "generation (prompt adherence; title-only review)"
+          ],
+          "2025-12-25": [
+            "moderation"
+          ]
+        },
+        "counts": {
+          "billing": 9,
+          "support": 9,
+          "generation": 7,
+          "moderation": 2,
+          "none_of_four": 2
+        },
+        "denominator": 20
+      }
+    },
+    {
+      "id": "EV-hailuo-ai-review-14",
+      "claim": "One Trustpilot reviewer (2026-11-05) reports paying $2,399.99 for a yearly Max plan on 2025-12-19 mainly for Seedance 2.0, which they say disappeared from their paid plan on 2026-08-18 with four months left and no notice.",
+      "source_url": "https://www.trustpilot.com/review/hailuoai.video?sort=recency",
+      "source_date": "2026-11-05",
+      "quote": "On 19 December 2025 I paid Hailuo AI USD 2,399.99 for a yearly Max plan. I bought it for one reason: Seedance 2.0. On 6 August 2026 Hailuo was still promoting it as its \"flagship video model\". On 18 August 2026 it vanished from my paid plan, with four months still left.",
+      "platform": "trustpilot.com (single first-person review; read live 2026-11-08)",
+      "target_slug": "/tools/hailuo-ai",
+      "collected_at": "2026-11-08",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "hailuo-ai-review-2026-11-08",
+      "screening": "included",
+      "label": "community-report",
+      "coders": [
+        "coding-pass-A",
+        "coding-pass-B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "MiniMax Hailuo AI (hailuoai.video)",
+        "aspect": "third-party model removed from paid plan",
+        "stance": "negative",
+        "plan_tier_if_stated": "Max (yearly)",
+        "item_date": "2026-11-05"
+      },
+      "honesty_notes": [
+        "Single anecdote. Consistent with today's plan grid, which lists Veo3.1 and Sora2 as third-party models and no Seedance (EV-01/02 page); the writer may say third-party model line-ups change, citing this as one report."
+      ],
+      "resolved_by": "mep-resolver"
+    },
+    {
+      "id": "EV-hailuo-ai-review-15",
+      "claim": "One Trustpilot reviewer (2025-12-25) reports eight content-violation refusals, including Santa Claus being treated as a celebrity.",
+      "source_url": "https://www.trustpilot.com/review/hailuoai.video?sort=recency",
+      "source_date": "2025-12-25",
+      "quote": "THIS one gave me 8 \"content violations\" saying that \"santa claus\" is a celebrity and cannot be generated.",
+      "platform": "trustpilot.com (single first-person review; read live 2026-11-08)",
+      "target_slug": "/tools/hailuo-ai",
+      "collected_at": "2026-11-08",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "hailuo-ai-review-2026-11-08",
+      "screening": "included",
+      "label": "community-report",
+      "coders": [
+        "coding-pass-A",
+        "coding-pass-B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "MiniMax Hailuo AI (hailuoai.video)",
+        "aspect": "content moderation false positives",
+        "stance": "negative",
+        "plan_tier_if_stated": null,
+        "item_date": "2025-12-25"
+      },
+      "honesty_notes": [
+        "Single anecdote; pair with the 2026-03-21 review in the same sample also blaming 'Community Standards'."
+      ],
+      "resolved_by": "mep-resolver"
+    },
+    {
+      "id": "EV-hailuo-ai-review-16",
+      "claim": "Google Play listing 'Hailuo AI: Image&Video Maker' by MiniMax AI (ai.hailuo.video) showed 3.7 stars from 93.9K reviews and 10M+ downloads on 2026-11-08, last updated 2026-11-05 with 'MiniMax H3 is live'.",
+      "source_url": "https://play.google.com/store/apps/details?id=ai.hailuo.video&hl=en_US&gl=US",
+      "source_date": "2026-11-05",
+      "quote": "Hailuo AI: Image&Video Maker MiniMax AI In-app purchases 3.7 star 93.9K reviews 10M+ Downloads ... Updated on Nov 5, 2026",
+      "platform": "play.google.com (app store, US English; read live 2026-11-08)",
+      "target_slug": "/tools/hailuo-ai",
+      "collected_at": "2026-11-08",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "hailuo-ai-review-2026-11-08",
+      "screening": "included",
+      "label": "community-report",
+      "coders": [
+        "coding-pass-A",
+        "coding-pass-B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "MiniMax Hailuo AI (hailuoai.video)",
+        "aspect": "aggregate rating snapshot",
+        "stance": "mixed",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-11-05"
+      },
+      "quote_supplementary": "Ratings panel on the same page (phone): \"3.8 92.3K reviews\". What's new: \"MiniMax H3 is live\".",
+      "honesty_notes": [
+        "Two figures on one page (3.7/93.9K header vs 3.8/92.3K phone-filtered panel); cite the header figure with the date.",
+        "Developer on Play = 'MiniMax AI'; ToS counterparty = Nanonoble Pte. Ltd. Both belong to the official product (app links to hailuoai.video socials)."
+      ],
+      "resolved_by": "mep-resolver",
+      "recaptures": [
+        {
+          "recaptured_at": "2026-11-13",
+          "collector": "mimo-auto-content 2026-11-13 publish",
+          "source_url": "https://play.google.com/store/apps/details?id=ai.hailuo.video&hl=en_US&gl=US",
+          "status": "changed",
+          "matched": false,
+          "method": "curl (US English)",
+          "claim": "Google Play header re-read 2026-11-13: 4.3 stars from 101K reviews, 10M+ downloads (was 3.7 from 93.9K on 2026-11-08); the phone ratings panel on the same page shows 4.4 from 99.5K. The page cites the header figure with its date.",
+          "quote": "Hailuo AI: Image&Video Maker MiniMax AI In-app purchases 4.3 star 101K reviews Teen info 10M+ Downloads"
+        }
+      ]
+    },
+    {
+      "id": "EV-hailuo-ai-review-17",
+      "claim": "A Google Play reviewer (2026-08-02, 144 found helpful) reports their first prompt was rejected and the app then demanded credits or a membership before any video was produced.",
+      "source_url": "https://play.google.com/store/apps/details?id=ai.hailuo.video&hl=en_US&gl=US",
+      "source_date": "2026-08-02",
+      "quote": "Not worth the time. I downloaded it and my first prompt got rejected and then the second I try to make another it says I need to buy credits and tried to force a membership down my throat.",
+      "platform": "play.google.com (single first-person review, 'most relevant' sort; read live 2026-11-08)",
+      "target_slug": "/tools/hailuo-ai",
+      "collected_at": "2026-11-08",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "hailuo-ai-review-2026-11-08",
+      "screening": "included",
+      "label": "community-report",
+      "coders": [
+        "coding-pass-A",
+        "coding-pass-B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "MiniMax Hailuo AI (hailuoai.video)",
+        "aspect": "free trial exhausted / paywall, prompt rejection",
+        "stance": "negative",
+        "plan_tier_if_stated": "Free",
+        "item_date": "2026-08-02"
+      },
+      "resolved_by": "mep-resolver"
+    },
+    {
+      "id": "EV-hailuo-ai-review-18",
+      "claim": "A Google Play reviewer (2026-05-11) reports being charged the full monthly rate before a 3-day trial ended; the developer replied that memberships renew automatically and fees are charged 2 days before expiry.",
+      "source_url": "https://play.google.com/store/apps/details?id=ai.hailuo.video&hl=en_US&gl=US",
+      "source_date": "2026-05-11",
+      "quote": "They charge you the full monthly rate before the trial is over and still end the trial on the 3 day trial date when you canceled your subscription.",
+      "platform": "play.google.com (single first-person review with developer reply; read live 2026-11-08)",
+      "target_slug": "/tools/hailuo-ai",
+      "collected_at": "2026-11-08",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "hailuo-ai-review-2026-11-08",
+      "screening": "included",
+      "label": "community-report",
+      "coders": [
+        "coding-pass-A",
+        "coding-pass-B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "MiniMax Hailuo AI (hailuoai.video)",
+        "aspect": "trial billing timing",
+        "stance": "negative",
+        "plan_tier_if_stated": "3-day trial",
+        "item_date": "2026-05-11"
+      },
+      "quote_supplementary": "Developer reply (MiniMax AI, 2026-05-15): \"Your membership renews automatically, and fees will be charged 2 days before expiry.You may cancel anytime by switching to the free plan.\"",
+      "honesty_notes": [
+        "The developer reply is a vendor statement - label it self-interested but it independently confirms the 2-days-before-expiry billing timing."
+      ],
+      "resolved_by": "mep-resolver"
+    },
+    {
+      "id": "EV-hailuo-ai-review-19",
+      "claim": "South China Morning Post (2026-07-31) reported that MiniMax launched H3 with low pricing and pledged open weights (a pledge at launch, not a release of weights), citing Artificial Analysis rankings: top in video editing but behind Google's Gemini Omni Flash in text-to-video and behind Seedance 2.0 and Gemini Omni Flash in image-to-video.",
+      "source_url": "https://www.scmp.com/tech/article/3362540/video-ai-minimax-challenges-bytedance-low-price-open-weights-new-h3-model",
+      "source_date": "2026-07-31",
+      "quote": "H3 was currently the world's most powerful AI model in video editing, according to benchmark platform Artificial Analysis. However, it trailed Google's Gemini Omni Flash in text-to-video tasks, and ranked behind both ByteDance's Seedance 2.0 and Gemini Omni Flash in image-to-video capabilities.",
+      "platform": "scmp.com (news, Xinmei Shen; read live in Chrome 2026-11-08 after WebFetch 403)",
+      "target_slug": "/tools/hailuo-ai",
+      "collected_at": "2026-11-08",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "hailuo-ai-review-2026-11-08",
+      "screening": "included",
+      "label": "research-finding",
+      "coders": [
+        "coding-pass-A",
+        "coding-pass-B"
+      ],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "MiniMax Hailuo AI (hailuoai.video)",
+        "aspect": "independent benchmark standing at launch",
+        "stance": "mixed",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-07-31"
+      },
+      "honesty_notes": [
+        "Leaderboard positions are a launch-day snapshot relayed by SCMP; say 'at launch, per Artificial Analysis as reported by SCMP'.",
+        "Typographic apostrophes normalised to straight quotes in the stored quote.",
+        "Resolver re-read SCMP in Chrome 2026-11-08: body says 'pledging ... through open weights'; do not write that weights were released at launch (consistent with EV-10 'promising open weights'). Label research-finding: SCMP relays a third-party leaderboard, it ran no test."
+      ],
+      "resolved_by": "mep-resolver",
+      "quote_supplementary": "Chinese AI firm MiniMax has launched H3, its newest multimodal video generation model, pledging to break closed-source \"dominance\" through open weights and competitive pricing"
+    },
+    {
+      "id": "EV-hailuo-ai-review-20",
+      "claim": "Atlas Cloud, which sells H3 API access, wrote on 2026-08-03 that Hailuo publishes no credits-per-video table for H3 and estimated a 15-second 2K clip at roughly 15% of an entry plan's month.",
+      "source_url": "https://www.atlascloud.ai/blog/tips/minimax-h3-credits-per-video",
+      "source_date": "2026-08-03",
+      "quote": "There is no published credits-per-video table for H3. ... Short version: one 15-second 2K clip is roughly 15% of an entry-plan month.",
+      "platform": "atlascloud.ai blog (self-interested: sells competing H3 API endpoints at $0.14/s 2K; fetched 2026-11-08)",
+      "target_slug": "/tools/hailuo-ai",
+      "collected_at": "2026-11-08",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "hailuo-ai-review-2026-11-08",
+      "screening": "included",
+      "label": "vendor-claim",
+      "coders": [
+        "coding-pass-A",
+        "coding-pass-B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "MiniMax Hailuo AI (hailuoai.video)",
+        "aspect": "H3 cost per clip estimate",
+        "stance": "negative",
+        "plan_tier_if_stated": "Standard",
+        "item_date": "2026-08-03"
+      },
+      "quote_supplementary": "\"about $0.073 to $0.120 per second, depending on plan\"",
+      "honesty_notes": [
+        "Its $/s range is older than today's vendor capture ($0.081-$0.101 at 2K, EV-02). Today's figures supersede; cite Atlas only for 'no official per-clip table' and label self-interested.",
+        "Today's vendor figure gives ~84 s of 2K per Standard month, so a 15 s clip is ~18% (derived, ours).",
+        "Resolver: label stays vendor-claim (self-interested competing H3 reseller), both coders agree."
+      ],
+      "resolved_by": "mep-resolver"
+    },
+    {
+      "id": "EV-hailuo-ai-review-21",
+      "claim": "Costbench's Hailuo hidden-costs page (verified 2026-06-13, one source, medium confidence) states there is no free tier, which the vendor's 2026-11-08 plan grid contradicts (one-time free trial credits), and says that 30-50% of subscription generations may produce unusable output (morphing, ignored prompts) that still consumes credits. That second point concerns finished-but-unusable clips; the vendor FAQ's no-charge rule covers only generations that fail outright, so the two do not contradict each other.",
+      "source_url": "https://www.costbench.com/software/ai-video-generators/minimax-video/hidden-costs/",
+      "source_date": "2026-06-13",
+      "quote": "For subscription users, 30-50% of generations may produce unusable output due to issues like morphing artifacts or prompt ignorance, and these failed attempts still consume credits.",
+      "platform": "costbench.com (third-party price aggregator; self-declared 'pricing was verified on June 13, 2026 from 1 independent source with medium confidence'; fetched 2026-11-08)",
+      "target_slug": "/tools/hailuo-ai",
+      "collected_at": "2026-11-08",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "hailuo-ai-review-2026-11-08",
+      "screening": "included",
+      "label": "research-finding",
+      "coders": [
+        "coding-pass-A",
+        "coding-pass-B"
+      ],
+      "coder_agreement": false,
+      "coding": {
+        "tool": "MiniMax Hailuo AI (hailuoai.video)",
+        "aspect": "third-party cost claims (conflicting)",
+        "stance": "negative",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-06-13"
+      },
+      "quote_supplementary": "\"Free tier: No free tier available\"",
+      "honesty_notes": [
+        "Use the free-tier line only as a conflicting third-party claim (vendor grid EV-04 shows one-time trial credits). The unusable-output line is Costbench's estimate from one source, not a test; do not present '30-50%' as a measured rate, and do not say the vendor contradicts it (EV-07 covers failed generations only).",
+        "Page also carries an internal date conflict ('as of November 2026' vs 'Last verified: June 13, 2026').",
+        "Page shows 'High confidence' in its Quick Answer box and 'medium confidence' in the sourcing line (internally inconsistent)."
+      ],
+      "resolved_by": "mep-resolver"
+    },
+    {
+      "id": "EV-hailuo-ai-review-22",
+      "claim": "Vijay Chauhan's hands-on review (2026-05-09, weeks of testing, plan not stated) found Hailuo can make polished clips from simple visual prompts but sometimes ignores parts of the prompt, and advises trying it free before paying.",
+      "source_url": "https://vijaytalksai.com/my-honest-hailuoai-review/",
+      "source_date": "2026-05-09",
+      "quote": "HailuoAI can create surprisingly polished clips when the prompt is simple and visual. ... Sometimes the scene looked great but ignored part of the prompt. ... try HailuoAI for free if you want fast AI video clips, but don't pay for it blindly.",
+      "platform": "vijaytalksai.com (independent blog, first-person hands-on, no affiliate disclosure found; fetched 2026-11-08)",
+      "target_slug": "/tools/hailuo-ai",
+      "collected_at": "2026-11-08",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "hailuo-ai-review-2026-11-08",
+      "screening": "included",
+      "label": "independent-test",
+      "coders": [
+        "coding-pass-A",
+        "coding-pass-B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "MiniMax Hailuo AI (hailuoai.video)",
+        "aspect": "output quality, prompt adherence, verdict",
+        "stance": "mixed",
+        "plan_tier_if_stated": null,
+        "item_date": "2026-05-09"
+      },
+      "honesty_notes": [
+        "No disclosed prompt set or scoring rubric; treat as a dated first-person review, not a benchmark.",
+        "Pre-dates H3 (2026-07-31); applies to Hailuo 2.x."
+      ],
+      "resolved_by": "mep-resolver"
+    },
+    {
+      "id": "EV-hailuo-ai-review-23",
+      "claim": "Techpresso's price-only comparison (updated 2026-10-25, no hands-on testing) says Hailuo sells credits and seconds rather than videos and that Standard's 1,000 credits cannot cover forty 1080p clips that need 3,200 credits.",
+      "source_url": "https://academy.techpresso.co/reviews/is-hailuo-worth-it",
+      "source_date": "2026-10-25",
+      "quote": "Hailuo sells credits and seconds rather than videos, so what a plan produces depends on the model and resolution you pick. ... Forty such clips need 3,200 credits. Standard cannot cover that.",
+      "platform": "academy.techpresso.co (editorial comparison, methodology: pricing pages + archived subscribe pages + Trustpilot; explicitly not a quality test; fetched 2026-11-08)",
+      "target_slug": "/tools/hailuo-ai",
+      "collected_at": "2026-11-08",
+      "collector": "evidence-curator",
+      "protocol_version": "MEP-1.0",
+      "flow_id": "hailuo-ai-review-2026-11-08",
+      "screening": "included",
+      "label": "research-finding",
+      "coders": [
+        "coding-pass-A",
+        "coding-pass-B"
+      ],
+      "coder_agreement": true,
+      "coding": {
+        "tool": "MiniMax Hailuo AI (hailuoai.video)",
+        "aspect": "plan math",
+        "stance": "neutral",
+        "plan_tier_if_stated": "Standard",
+        "item_date": "2026-10-25"
+      },
+      "quote_supplementary": "\"The newest model, Hailuo 3.0 (MiniMax H3), counts in seconds.\" \"For a creator who needs watermark-free clips every month, yes.\"",
+      "honesty_notes": [
+        "Its arithmetic matches today's FAQ (80 credits per 6s 1080p Hailuo 2.3 clip x 40 = 3,200).",
+        "'Hailuo 3.0' is a label it uses; the vendor brands the model 'MiniMax H3'.",
+        "Resolver: research-finding (price-only desk comparison; the page says it is not a quality test), not independent-test."
+      ],
+      "resolved_by": "mep-resolver"
+    }
+  ]
+}
