@@ -158,6 +158,21 @@
           "quote": "Biggest Black Friday Early Access Deal 2026: 65% Off + 3X Limits ... Starter ... $59/mo 65% OFF Early Access $21 /month ... Plus ... $89/mo 65% OFF Early Access $31 /month ... Professional ... $199/mo 65% OFF Early Access $70 /month ... Starter ... $59 /mo Try 7 days For free",
           "supersedes": "the 2026-09-19 promotional figures ($24 to $80, 60% off), kept above for history",
           "collector": "refresh-B5-2026-11-03 (live curl, desktop Chrome user-agent, read-only)"
+        },
+        {
+          "recaptured_at": "2026-11-12",
+          "source_url": "https://www.scalenut.com/pricing",
+          "collector": "evidence-curator scalenut-review-2026-11-12 (see EV-scalenut-review-01, -02)",
+          "claim": "List prices MATCH ($59, $89, $199). CHANGED: the annual promo is back to 60% off with double limits at $24, $36 and $80, labelled 'Limited Offer' (was 65% off with 3X limits at $21, $31 and $70 on 2026-11-03).",
+          "quote": "Starter $59/mo 60% OFF Limited Offer $24 /mo ... Plus $89/mo 60% OFF Limited Offer $36 /mo ... Professional $199/mo 60% OFF Limited Offer $80 /mo"
+        },
+        {
+          "recaptured_at": "2026-11-14",
+          "source_url": "https://www.scalenut.com/pricing",
+          "collector": "mimo-auto-content 2026-11-14 publish",
+          "method": "curl, desktop Chrome user-agent, read-only; extracted text",
+          "claim": "Publish-day re-read: MATCH with 2026-11-12 (list $59/$89/$199, 60% off promo $24/$36/$80, 7-day trial buttons). Hub /best/ai-seo-writing-tools now carries the list range dated 2026-11-14 and points the promo record to /tools/scalenut.",
+          "quote": "Starter $59/mo Try 7 days For free Plus $89/mo Try 7 days For free Professional $199/mo Try 7 days For free"
         }
       ],
       "claim": "Scalenut's pricing page (captured 2026-09-19) lists three self-serve annual plans at a stated '60% off' promotional rate — Starter (regular $59/mo, promotional $24/mo, 5-10 articles/month), Plus (regular $89/mo, promotional $36/mo, 30-60 articles/month), Professional (regular $199/mo, promotional $80/mo, 75-150 articles/month, unlimited team members, bundled ChatGPT/Google AIO/Perplexity prompt tracking) — plus a custom-priced VIP done-for-you service tier. At its un-discounted regular price, Scalenut's $59/mo floor sits above NeuronWriter's $23/mo entry and close to Surfer/Frase's $49/mo entry, positioning it as a peer-tier competitor to the reviewed trio rather than an enterprise-tier tool like Clearscope or MarketMuse. Vendor-stated, self-interested.",
