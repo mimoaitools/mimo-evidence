@@ -1,0 +1,3471 @@
+{
+ "_meta": {
+  "flow_id": "ai-video-cost-per-minute-2026-11-16",
+  "protocol_version": "MEP-1.0",
+  "target_slug": "/guides/ai-video-cost-per-minute",
+  "target_keyword": "ai video cost per minute",
+  "run_date": "2026-11-16",
+  "collector": "evidence-curator",
+  "page_class": "cross-tool cost reference (derived arithmetic on vendor inputs)",
+  "query_set": [
+   "[curl] https://www.synthesia.io/pricing",
+   "[curl] https://help.synthesia.io/en/articles/11972627-what-are-credits-and-how-do-they-work",
+   "[curl] https://help.synthesia.io/en/articles/8850453",
+   "[curl] https://help.synthesia.io/en/articles/17217419",
+   "[curl + browser, yearly toggle] https://www.heygen.com/pricing",
+   "[curl] https://help.heygen.com/en/articles/15125761",
+   "[curl] https://help.heygen.com/en/articles/15126059",
+   "[curl] https://help.heygen.com/en/articles/9655503",
+   "[curl] https://help.heygen.com/en/articles/15544929",
+   "[curl] https://help.heygen.com/en/?q=avatar+6+credits (help-centre search for an Avatar 6 credit rate; none found)",
+   "[curl] https://runway.com/pricing",
+   "[curl] https://docs.dev.runwayml.com/guides/pricing/",
+   "[browser] https://help.runwayml.com/hc/en-us/articles/15124877443219",
+   "[browser] https://help.runwayml.com/hc/en-us/articles/34266159290003-Can-I-have-credits-refunded",
+   "[curl page source + browser] https://hailuoai.video/subscribe",
+   "[browser] https://hailuoai.video/",
+   "[browser, monthly + yearly toggles, FAQ expanded, comparison expanded] https://kling.ai/app/membership/membership-plan",
+   "[browser] https://kling.ai/dev/pricing",
+   "[curl] https://kling.ai/document-api/pricing/base/video.md",
+   "[curl] https://kling.ai/blog/kling-video-3-0-credit-cost-guide",
+   "[curl] https://kling.ai/docs/point-policy",
+   "[curl] https://kling.ai/docs/user-policy",
+   "[browser] https://www.trustpilot.com/review/kling.ai?sort=recency",
+   "[curl] https://www.trustpilot.com/review/runwayml.com?sort=recency (HTTP 403)",
+   "[curl] https://old.reddit.com/search?q=credits+per+usable+clip+kling+runway&sort=new (login wall)",
+   "[curl] https://www.reddit.com/r/KLINGAIVideo/search.json?q=credits+usable&restrict_sr=1&sort=new (HTTP 403)",
+   "[WebSearch] Kling AI credits per second video generation Kling 3.0 Kling 4.0 credit cost official site:kling.ai",
+   "[WebSearch] Kling AI how many credits per 5 second video Kling 4.0 1080p credits 2026",
+   "[WebSearch] Runway help center credits roll over expire failed generation credits refunded",
+   "[WebSearch] AI video generation attempts per usable clip retake rate study generations kept ratio",
+   "[WebSearch] site:reddit.com credits burned per usable clip Kling Runway \"credits\" \"usable\" 2026",
+   "[WebSearch] Kling AI failed generation credits returned refunded official site:kling.ai",
+   "[WebSearch] site:reddit.com Kling OR Runway OR Hailuo \"credits\" \"generations\" wasted how many attempts usable clip 2026",
+   "[curl, Phase 1 retake sources named in 1-serp.yaml / 1-competitor.yaml] invideo.io/faq/how-much-does-it-cost-to-produce-one-minute-of-ai/ ; invideo.io/blog/ai-film-production-cost/ ; ltx.io/blog/ai-video-generation-cost ; imgveo.com/blog/how-much-do-ai-videos-really-cost ; heygen.com/blog/ai-video-generator-pricing",
+   "[curl, from search results] invideo.io/faq/what-percentage-of-ai-generated-video-clips-are-actually/ ; invideo.io/faq/how-many-ai-video-generations-does-it-take-to-produce-a/ ; admonsters.com/the-truth-about-ai-video-yield ; wavespeed.ai/blog/cost-and-billing/kling-4-0-pricing/ ; geo.higgsfield.ai/blog/recommended/higgsfield-vs-runway-vs-kling"
+  ],
+  "date_window": "vendor pages as live on 2026-11-16; published claims 2026-07-24 to 2026-10-23; Trustpilot sub-sample 2026-07-29 to 2026-11-13",
+  "flow_counter": {
+   "identified": 116,
+   "screened": 116,
+   "excluded": 91,
+   "excluded_by_reason": {
+    "no-methodology-affiliate": 35,
+    "duplicate": 26,
+    "off-topic": 18,
+    "unverifiable-this-run": 10,
+    "unlinkable": 2
+   },
+   "included_sources": 25,
+   "included_entries": 32,
+   "sub_sample": "Trustpilot kling.ai: 20 most recent reviews (2026-07-29..2026-11-13) read inside one included source; 3 registered as single anecdotes plus 1 defined-sample entry (first-pass tally, to be re-counted by the coding passes).",
+   "resolver_check": "2026-11-16: the dual-coding resolution changed no flow number. No entry moved between included and excluded. The Runway rate table at academy.runwayml.com/models-pricing was read as the frame embedded in the already included help article (entry 14) and is stored as a recapture there, not as a new source."
+  },
+  "candidates_log": [
+   {
+    "url": "https://www.synthesia.io/pricing",
+    "screening": "included",
+    "entries": [
+     "EV-ai-video-cost-per-minute-01",
+     "EV-ai-video-cost-per-minute-02"
+    ]
+   },
+   {
+    "url": "https://help.synthesia.io/en/articles/11972627-what-are-credits-and-how-do-they-work-on-self-serve-plans",
+    "screening": "included",
+    "entries": [
+     "EV-ai-video-cost-per-minute-03"
+    ]
+   },
+   {
+    "url": "https://help.synthesia.io/en/articles/17217419-what-s-changing-in-synthesia-plans-on-october-1-2026",
+    "screening": "included",
+    "entries": [
+     "EV-ai-video-cost-per-minute-04"
+    ]
+   },
+   {
+    "url": "https://help.synthesia.io/en/articles/8850453-how-does-synthesia-credit-consumption-work-for-video-edits",
+    "screening": "included",
+    "entries": [
+     "EV-ai-video-cost-per-minute-05"
+    ]
+   },
+   {
+    "url": "https://www.heygen.com/pricing",
+    "screening": "included",
+    "entries": [
+     "EV-ai-video-cost-per-minute-06"
+    ]
+   },
+   {
+    "url": "https://help.heygen.com/en/articles/15125761-heygen-credit-based-pricing-plans-subscriptions-explained",
+    "screening": "included",
+    "entries": [
+     "EV-ai-video-cost-per-minute-07",
+     "EV-ai-video-cost-per-minute-08"
+    ]
+   },
+   {
+    "url": "https://help.heygen.com/en/articles/15126059-how-to-use-credits-on-heygen",
+    "screening": "included",
+    "entries": [
+     "EV-ai-video-cost-per-minute-09"
+    ]
+   },
+   {
+    "url": "https://help.heygen.com/en/articles/9655503-heygen-video-processing-times",
+    "screening": "included",
+    "entries": [
+     "EV-ai-video-cost-per-minute-10"
+    ]
+   },
+   {
+    "url": "https://help.heygen.com/en/articles/15544929-avatar-voice-faq-troubleshooting-best-practices-and-credits",
+    "screening": "included",
+    "entries": [
+     "EV-ai-video-cost-per-minute-11"
+    ]
+   },
+   {
+    "url": "https://runway.com/pricing",
+    "screening": "included",
+    "entries": [
+     "EV-ai-video-cost-per-minute-12"
+    ]
+   },
+   {
+    "url": "https://docs.dev.runwayml.com/guides/pricing/",
+    "screening": "included",
+    "entries": [
+     "EV-ai-video-cost-per-minute-13"
+    ]
+   },
+   {
+    "url": "https://help.runwayml.com/hc/en-us/articles/15124877443219-How-do-credits-work",
+    "screening": "included",
+    "entries": [
+     "EV-ai-video-cost-per-minute-14"
+    ]
+   },
+   {
+    "url": "https://help.runwayml.com/hc/en-us/articles/34266159290003-Can-I-have-credits-refunded",
+    "screening": "included",
+    "entries": [
+     "EV-ai-video-cost-per-minute-15"
+    ]
+   },
+   {
+    "url": "https://hailuoai.video/subscribe",
+    "screening": "included",
+    "entries": [
+     "EV-ai-video-cost-per-minute-16",
+     "EV-ai-video-cost-per-minute-17"
+    ]
+   },
+   {
+    "url": "https://hailuoai.video/",
+    "screening": "included",
+    "entries": [
+     "EV-ai-video-cost-per-minute-18"
+    ]
+   },
+   {
+    "url": "https://kling.ai/app/membership/membership-plan",
+    "screening": "included",
+    "entries": [
+     "EV-ai-video-cost-per-minute-19",
+     "EV-ai-video-cost-per-minute-20"
+    ]
+   },
+   {
+    "url": "https://kling.ai/docs/point-policy",
+    "screening": "included",
+    "entries": [
+     "EV-ai-video-cost-per-minute-21"
+    ]
+   },
+   {
+    "url": "https://kling.ai/blog/kling-video-3-0-credit-cost-guide",
+    "screening": "included",
+    "entries": [
+     "EV-ai-video-cost-per-minute-22"
+    ]
+   },
+   {
+    "url": "https://kling.ai/document-api/pricing/base/video.md",
+    "screening": "included",
+    "entries": [
+     "EV-ai-video-cost-per-minute-23"
+    ]
+   },
+   {
+    "url": "https://wavespeed.ai/blog/cost-and-billing/kling-4-0-pricing/",
+    "screening": "included",
+    "entries": [
+     "EV-ai-video-cost-per-minute-24"
+    ]
+   },
+   {
+    "url": "https://invideo.io/faq/how-much-does-it-cost-to-produce-one-minute-of-ai/",
+    "screening": "included",
+    "entries": [
+     "EV-ai-video-cost-per-minute-25"
+    ]
+   },
+   {
+    "url": "https://www.heygen.com/blog/ai-video-generator-pricing",
+    "screening": "included",
+    "entries": [
+     "EV-ai-video-cost-per-minute-26"
+    ]
+   },
+   {
+    "url": "https://ltx.io/blog/ai-video-generation-cost",
+    "screening": "included",
+    "entries": [
+     "EV-ai-video-cost-per-minute-27"
+    ]
+   },
+   {
+    "url": "https://imgveo.com/blog/how-much-do-ai-videos-really-cost",
+    "screening": "included",
+    "entries": [
+     "EV-ai-video-cost-per-minute-28"
+    ]
+   },
+   {
+    "url": "https://www.trustpilot.com/review/kling.ai?sort=recency",
+    "screening": "included",
+    "entries": [
+     "EV-ai-video-cost-per-minute-29",
+     "EV-ai-video-cost-per-minute-30",
+     "EV-ai-video-cost-per-minute-31",
+     "EV-ai-video-cost-per-minute-32"
+    ]
+   },
+   {
+    "url": "https://kling.ai/dev/pricing",
+    "screening": "excluded:duplicate",
+    "detail": "same Kling 4.0 API rows as the developer pricing document (entry 23); read in a browser and cited there"
+   },
+   {
+    "url": "https://kling.ai/docs/user-policy",
+    "screening": "excluded:off-topic",
+    "detail": "Terms of Service fetched; no credit rate or failed-generation rule"
+   },
+   {
+    "url": "https://invideo.io/blog/ai-film-production-cost/",
+    "screening": "excluded:duplicate",
+    "detail": "same 164 / 41 production data as the invideo FAQ (entry 25); fetched, quoted as supplementary"
+   },
+   {
+    "url": "https://invideo.io/faq/what-percentage-of-ai-generated-video-clips-are-actually/",
+    "screening": "excluded:duplicate",
+    "detail": "fetched; same publisher, same dataset"
+   },
+   {
+    "url": "https://invideo.io/faq/how-many-ai-video-generations-does-it-take-to-produce-a/",
+    "screening": "excluded:duplicate",
+    "detail": "fetched; same publisher, same dataset"
+   },
+   {
+    "url": "https://invideo.io/faq/what-percentage-of-ai-generated-video-clips-are-actually-2/",
+    "screening": "excluded:duplicate",
+    "detail": "same publisher FAQ series; screened on search-result title, not fetched"
+   },
+   {
+    "url": "https://invideo.io/faq/why-do-ai-video-creators-generate-far-more-clips-than/",
+    "screening": "excluded:duplicate",
+    "detail": "same publisher FAQ series; screened on search-result title, not fetched"
+   },
+   {
+    "url": "https://invideo.io/faq/what-is-a-realistic-clip-discard-rate-when-making-an-ai/",
+    "screening": "excluded:duplicate",
+    "detail": "same publisher FAQ series; screened on search-result title, not fetched"
+   },
+   {
+    "url": "https://invideo.io/faq/how-do-you-know-when-an-ai-generated-video-clip-is-good/",
+    "screening": "excluded:duplicate",
+    "detail": "same publisher FAQ series; screened on search-result title, not fetched"
+   },
+   {
+    "url": "https://www.admonsters.com/the-truth-about-ai-video-yield",
+    "screening": "excluded:no-methodology-affiliate",
+    "detail": "fetched; contributed article (Adam Hua, 2025-08-12) that promotes a named video platform; its 'nearly 400 generations, 15 usable clips' figure is second-hand with no link or method, so it fails the first-person / disclosed-method test"
+   },
+   {
+    "url": "https://geo.higgsfield.ai/blog/recommended/higgsfield-vs-runway-vs-kling",
+    "screening": "excluded:no-methodology-affiliate",
+    "detail": "competitor-authored comparison; the Runway and Kling refund rules were captured from the vendors' own pages instead"
+   },
+   {
+    "url": "https://help.runwayml.com/hc/en-us/articles/24343363554067",
+    "screening": "excluded:unverifiable-this-run",
+    "detail": "HTTP 403 to a plain fetch; not opened in the browser"
+   },
+   {
+    "url": "https://help.runwayml.com/hc/en-us/articles/23987639973267",
+    "screening": "excluded:unverifiable-this-run",
+    "detail": "HTTP 403 to a plain fetch; not opened in the browser"
+   },
+   {
+    "url": "https://old.reddit.com/search?q=credits+per+usable+clip+kling+runway&sort=new",
+    "screening": "excluded:unverifiable-this-run",
+    "detail": "redirected to a login wall; no sign-in performed"
+   },
+   {
+    "url": "https://www.reddit.com/r/KLINGAIVideo/search.json?q=credits+usable&restrict_sr=1&sort=new",
+    "screening": "excluded:unverifiable-this-run",
+    "detail": "HTTP 403"
+   },
+   {
+    "url": "https://lr.in.psf.lt/r/KLINGAIVideo/comments/1fhzjk2/24hrs_delay_after_purchasing_credits/lngfhnl/",
+    "screening": "excluded:unlinkable",
+    "detail": "Reddit mirror hit only; mirrors are not used as sources"
+   },
+   {
+    "url": "https://nyc1.lr.ggtyler.dev/r/aivideo/comments/1i1hz83/joust_official_trailer/m774rox/",
+    "screening": "excluded:unlinkable",
+    "detail": "Reddit mirror hit only; mirrors are not used as sources"
+   },
+   {
+    "url": "https://www.trustpilot.com/review/runwayml.com?sort=recency",
+    "screening": "excluded:unverifiable-this-run",
+    "detail": "HTTP 403 to a plain fetch; not re-read in the browser this run (existing EV-runway-review-17 keeps its own date)"
+   },
+   {
+    "url": "https://www.sikayetvar.com/en/kling-ai-us/i-was-charged-for-kling-ai-credits-but-my-video-never-generated-what-should-i-do-q-35929",
+    "screening": "excluded:unverifiable-this-run",
+    "detail": "complaint-site result, not fetched this run"
+   },
+   {
+    "url": "https://www.sikayetvar.com/en/kling-ai-us/kling-ai-keeps-charging-credits-for-failed-renders-how-can-i-stop-losing-credits-q-35923",
+    "screening": "excluded:unverifiable-this-run",
+    "detail": "complaint-site result, not fetched this run"
+   },
+   {
+    "url": "https://www.sikayetvar.com/en/kling-ai-us/kling-ai-refund-request-after-prompt-errors-and-wasted-credits",
+    "screening": "excluded:unverifiable-this-run",
+    "detail": "complaint-site result, not fetched this run"
+   },
+   {
+    "url": "https://about.getcoai.com/?p=61316",
+    "screening": "excluded:unverifiable-this-run",
+    "detail": "search snippet only ('about 90% of outputs unusable' from one unnamed tester); not fetched, service unnamed"
+   },
+   {
+    "url": "https://m.getcoai.com/?p=61316",
+    "screening": "excluded:unverifiable-this-run",
+    "detail": "search snippet only ('about 90% of outputs unusable' from one unnamed tester); not fetched, service unnamed"
+   },
+   {
+    "url": "https://magichour.ai/blog/kling-ai-pricing",
+    "screening": "excluded:no-methodology-affiliate",
+    "detail": "third-party pricing guide, vendor blog or aggregator; screened on search-result title and snippet, not fetched; vendor primary pages captured directly"
+   },
+   {
+    "url": "https://eesel.ai/blog/kling-ai-pricing",
+    "screening": "excluded:no-methodology-affiliate",
+    "detail": "third-party pricing guide, vendor blog or aggregator; screened on search-result title and snippet, not fetched; vendor primary pages captured directly"
+   },
+   {
+    "url": "https://flexprice.io/pricing-index/kling-ai",
+    "screening": "excluded:no-methodology-affiliate",
+    "detail": "third-party pricing guide, vendor blog or aggregator; screened on search-result title and snippet, not fetched; vendor primary pages captured directly"
+   },
+   {
+    "url": "https://tessl.io/registry/skills/github/jeremylongshore/claude-code-plugins-plus-skills/klingai-pricing-basics",
+    "screening": "excluded:no-methodology-affiliate",
+    "detail": "third-party pricing guide, vendor blog or aggregator; screened on search-result title and snippet, not fetched; vendor primary pages captured directly"
+   },
+   {
+    "url": "https://discuss.huggingface.co/t/kling-video-generation-cost-analysis-pricing-tiers-model-tradeoffs-and-production-cost-modeling-for-kling-3-0-o3-o1-and-motion-control/175107",
+    "screening": "excluded:no-methodology-affiliate",
+    "detail": "third-party pricing guide, vendor blog or aggregator; screened on search-result title and snippet, not fetched; vendor primary pages captured directly"
+   },
+   {
+    "url": "https://www.wireflow.ai/blog/kling-ai-pricing",
+    "screening": "excluded:no-methodology-affiliate",
+    "detail": "third-party pricing guide, vendor blog or aggregator; screened on search-result title and snippet, not fetched; vendor primary pages captured directly"
+   },
+   {
+    "url": "https://www.costbench.com/software/ai-media-apis/kling-api/hidden-costs/",
+    "screening": "excluded:no-methodology-affiliate",
+    "detail": "third-party pricing guide, vendor blog or aggregator; screened on search-result title and snippet, not fetched; vendor primary pages captured directly"
+   },
+   {
+    "url": "https://sagnikbhattacharya.com/blog/kling-ai-cost-usable-clip-credits",
+    "screening": "excluded:no-methodology-affiliate",
+    "detail": "third-party pricing guide, vendor blog or aggregator; screened on search-result title and snippet, not fetched; vendor primary pages captured directly"
+   },
+   {
+    "url": "https://fluxnote.io/guides/kling-ai-pricing-2026",
+    "screening": "excluded:no-methodology-affiliate",
+    "detail": "third-party pricing guide, vendor blog or aggregator; screened on search-result title and snippet, not fetched; vendor primary pages captured directly"
+   },
+   {
+    "url": "https://www.test.atlascloud.ai/blog/tips/kling-ai-api-pricing",
+    "screening": "excluded:no-methodology-affiliate",
+    "detail": "third-party pricing guide, vendor blog or aggregator; screened on search-result title and snippet, not fetched; vendor primary pages captured directly"
+   },
+   {
+    "url": "https://www.atlascloud.ai/blog/guides/kling-ai-pricing",
+    "screening": "excluded:no-methodology-affiliate",
+    "detail": "third-party pricing guide, vendor blog or aggregator; screened on search-result title and snippet, not fetched; vendor primary pages captured directly"
+   },
+   {
+    "url": "https://www.atlascloud.ai/hi/blog/tips/kling-ai-pricing",
+    "screening": "excluded:no-methodology-affiliate",
+    "detail": "third-party pricing guide, vendor blog or aggregator; screened on search-result title and snippet, not fetched; vendor primary pages captured directly"
+   },
+   {
+    "url": "https://shhots.ai/blog/kling-ai-pricing/",
+    "screening": "excluded:no-methodology-affiliate",
+    "detail": "third-party pricing guide, vendor blog or aggregator; screened on search-result title and snippet, not fetched; vendor primary pages captured directly"
+   },
+   {
+    "url": "https://marcandrews.com/kling-ai-credits-explained/",
+    "screening": "excluded:no-methodology-affiliate",
+    "detail": "third-party pricing guide, vendor blog or aggregator; screened on search-result title and snippet, not fetched; vendor primary pages captured directly"
+   },
+   {
+    "url": "https://www.seedance.tv/ru/blog/kling-ai-credits-per-video",
+    "screening": "excluded:no-methodology-affiliate",
+    "detail": "third-party pricing guide, vendor blog or aggregator; screened on search-result title and snippet, not fetched; vendor primary pages captured directly"
+   },
+   {
+    "url": "https://www.seedance.tv/blog/runway-failed-generation-credits-refund",
+    "screening": "excluded:no-methodology-affiliate",
+    "detail": "third-party pricing guide, vendor blog or aggregator; screened on search-result title and snippet, not fetched; vendor primary pages captured directly"
+   },
+   {
+    "url": "https://www.gofaceless.ai/en/blog/ai-video-credit-refund-unusable-clips",
+    "screening": "excluded:no-methodology-affiliate",
+    "detail": "third-party pricing guide, vendor blog or aggregator; screened on search-result title and snippet, not fetched; vendor primary pages captured directly"
+   },
+   {
+    "url": "https://dreamina.capcut.com/ai-video/ai-video-credit-efficiency",
+    "screening": "excluded:no-methodology-affiliate",
+    "detail": "third-party pricing guide, vendor blog or aggregator; screened on search-result title and snippet, not fetched; vendor primary pages captured directly"
+   },
+   {
+    "url": "https://www.roborhythms.com/kling-ai-review-2026/",
+    "screening": "excluded:no-methodology-affiliate",
+    "detail": "third-party pricing guide, vendor blog or aggregator; screened on search-result title and snippet, not fetched; vendor primary pages captured directly"
+   },
+   {
+    "url": "https://hackernoon.com/the-same-10-seconds-of-ai-video-can-cost-$075-or-$4-track-which-model-is-burning-your-budget",
+    "screening": "excluded:no-methodology-affiliate",
+    "detail": "third-party pricing guide, vendor blog or aggregator; screened on search-result title and snippet, not fetched; vendor primary pages captured directly"
+   },
+   {
+    "url": "https://higgsfield.ai/blog/best-affordable-ai-video-generators",
+    "screening": "excluded:no-methodology-affiliate",
+    "detail": "third-party pricing guide, vendor blog or aggregator; screened on search-result title and snippet, not fetched; vendor primary pages captured directly"
+   },
+   {
+    "url": "https://diyai.io/ai-tools/video-generation/ai-video-generator-pricing/",
+    "screening": "excluded:no-methodology-affiliate",
+    "detail": "third-party pricing guide, vendor blog or aggregator; screened on search-result title and snippet, not fetched; vendor primary pages captured directly"
+   },
+   {
+    "url": "https://www.mindstudio.ai/blog/runway-ml-pricing-credits-explained",
+    "screening": "excluded:no-methodology-affiliate",
+    "detail": "third-party pricing guide, vendor blog or aggregator; screened on search-result title and snippet, not fetched; vendor primary pages captured directly"
+   },
+   {
+    "url": "https://www.atlascloud.ai/it/blog/tips/kling-4-credit-burn-rate-workflow",
+    "screening": "excluded:no-methodology-affiliate",
+    "detail": "third-party pricing guide, vendor blog or aggregator; screened on search-result title and snippet, not fetched; vendor primary pages captured directly"
+   },
+   {
+    "url": "https://aumiqx.com/ai-tools/kling-ai-pricing-video-generator-plans-2026/",
+    "screening": "excluded:no-methodology-affiliate",
+    "detail": "third-party pricing guide, vendor blog or aggregator; screened on search-result title and snippet, not fetched; vendor primary pages captured directly"
+   },
+   {
+    "url": "https://www.toolcolumn.com/learn/kling-ai-credits-explained",
+    "screening": "excluded:no-methodology-affiliate",
+    "detail": "third-party pricing guide, vendor blog or aggregator; screened on search-result title and snippet, not fetched; vendor primary pages captured directly"
+   },
+   {
+    "url": "https://stacksheriff.com/ai-tools/kling-ai-pricing/",
+    "screening": "excluded:no-methodology-affiliate",
+    "detail": "third-party pricing guide, vendor blog or aggregator; screened on search-result title and snippet, not fetched; vendor primary pages captured directly"
+   },
+   {
+    "url": "https://sozee.ai/resources/best-credit-based-ai-video-generators",
+    "screening": "excluded:no-methodology-affiliate",
+    "detail": "third-party pricing guide, vendor blog or aggregator; screened on search-result title and snippet, not fetched; vendor primary pages captured directly"
+   },
+   {
+    "url": "https://www.zemith.com/en/learn/kling-review",
+    "screening": "excluded:no-methodology-affiliate",
+    "detail": "third-party pricing guide, vendor blog or aggregator; screened on search-result title and snippet, not fetched; vendor primary pages captured directly"
+   },
+   {
+    "url": "https://higgsfield.ai/blog/ai-video-credits-explained",
+    "screening": "excluded:no-methodology-affiliate",
+    "detail": "third-party pricing guide, vendor blog or aggregator; screened on search-result title and snippet, not fetched; vendor primary pages captured directly"
+   },
+   {
+    "url": "https://higgsfield.ai/blog/why-ai-video-credits-run-out",
+    "screening": "excluded:no-methodology-affiliate",
+    "detail": "third-party pricing guide, vendor blog or aggregator; screened on search-result title and snippet, not fetched; vendor primary pages captured directly"
+   },
+   {
+    "url": "https://aliteq.com/kling-ai-not-working",
+    "screening": "excluded:no-methodology-affiliate",
+    "detail": "third-party pricing guide, vendor blog or aggregator; screened on search-result title and snippet, not fetched; vendor primary pages captured directly"
+   },
+   {
+    "url": "https://www.directline.pro/service/kling-2/otzyvy/",
+    "screening": "excluded:no-methodology-affiliate",
+    "detail": "third-party pricing guide, vendor blog or aggregator; screened on search-result title and snippet, not fetched; vendor primary pages captured directly"
+   },
+   {
+    "url": "https://kling.ai/blog/kling-video-3-0-credit-cost-guide?tab=all",
+    "screening": "excluded:duplicate",
+    "detail": "URL or locale variant of a candidate already logged"
+   },
+   {
+    "url": "https://home.kling.ai/blog/kling-video-3-0-credit-cost-guide",
+    "screening": "excluded:duplicate",
+    "detail": "URL or locale variant of a candidate already logged"
+   },
+   {
+    "url": "https://kling.ai/es/blog/kling-video-3-0-credit-cost-guide",
+    "screening": "excluded:duplicate",
+    "detail": "URL or locale variant of a candidate already logged"
+   },
+   {
+    "url": "https://kling.ai/blog/kling-video-3-0-credit-cost-guide?tab=product-features",
+    "screening": "excluded:duplicate",
+    "detail": "URL or locale variant of a candidate already logged"
+   },
+   {
+    "url": "https://www.eesel.ai/en/blog/kling-ai-pricing",
+    "screening": "excluded:duplicate",
+    "detail": "URL or locale variant of a candidate already logged"
+   },
+   {
+    "url": "https://www.atlascloud.ai/vi/blog/tips/kling-ai-pricing",
+    "screening": "excluded:duplicate",
+    "detail": "URL or locale variant of a candidate already logged"
+   },
+   {
+    "url": "https://www.atlascloud.ai/sv/blog/tips/kling-ai-pricing",
+    "screening": "excluded:duplicate",
+    "detail": "URL or locale variant of a candidate already logged"
+   },
+   {
+    "url": "https://www.atlascloud.ai/th/blog/guides/kling-ai-pricing",
+    "screening": "excluded:duplicate",
+    "detail": "URL or locale variant of a candidate already logged"
+   },
+   {
+    "url": "https://www.atlascloud.ai/vi/blog/guides/kling-ai-pricing",
+    "screening": "excluded:duplicate",
+    "detail": "URL or locale variant of a candidate already logged"
+   },
+   {
+    "url": "https://www.atlascloud.ai/nl/blog/guides/kling-ai-pricing",
+    "screening": "excluded:duplicate",
+    "detail": "URL or locale variant of a candidate already logged"
+   },
+   {
+    "url": "https://www.atlascloud.ai/es/blog/guides/kling-ai-pricing",
+    "screening": "excluded:duplicate",
+    "detail": "URL or locale variant of a candidate already logged"
+   },
+   {
+    "url": "https://www.seedance.tv/pt/blog/runway-failed-generation-credits-refund",
+    "screening": "excluded:duplicate",
+    "detail": "URL or locale variant of a candidate already logged"
+   },
+   {
+    "url": "https://www.roborhythms.com/?p=31036",
+    "screening": "excluded:duplicate",
+    "detail": "URL or locale variant of a candidate already logged"
+   },
+   {
+    "url": "https://hackernoon.com/the-same-10-seconds-of-ai-video-can-cost-%24075-or-%244-track-which-model-is-burning-your-budget?source=rss",
+    "screening": "excluded:duplicate",
+    "detail": "URL or locale variant of a candidate already logged"
+   },
+   {
+    "url": "https://www.zemith.com/de/learn/kling-review",
+    "screening": "excluded:duplicate",
+    "detail": "URL or locale variant of a candidate already logged"
+   },
+   {
+    "url": "https://www.zemith.com/zh/learn/kling-review",
+    "screening": "excluded:duplicate",
+    "detail": "URL or locale variant of a candidate already logged"
+   },
+   {
+    "url": "https://help.runwayml.com/hc/en-us/articles/34266159290003",
+    "screening": "excluded:duplicate",
+    "detail": "URL or locale variant of a candidate already logged"
+   },
+   {
+    "url": "https://es.trustpilot.com/review/kling.ai",
+    "screening": "excluded:duplicate",
+    "detail": "URL or locale variant of a candidate already logged"
+   },
+   {
+    "url": "https://invideo.io/help/billing/video-model-pricing/",
+    "screening": "excluded:off-topic",
+    "detail": "another vendor's product or billing (not one of the five reviewed tools on its own plans)"
+   },
+   {
+    "url": "https://flixier.com/help/understanding-video-generation-models",
+    "screening": "excluded:off-topic",
+    "detail": "another vendor's product or billing (not one of the five reviewed tools on its own plans)"
+   },
+   {
+    "url": "https://www.magnific.com/ai/docs/ai-video-generator-credits",
+    "screening": "excluded:off-topic",
+    "detail": "another vendor's product or billing (not one of the five reviewed tools on its own plans)"
+   },
+   {
+    "url": "https://higgsfield.ai/creator-hub/help-center/credits/how-credits-work",
+    "screening": "excluded:off-topic",
+    "detail": "another vendor's product or billing (not one of the five reviewed tools on its own plans)"
+   },
+   {
+    "url": "https://higgsfield.ai/creator-hub/help-center/credits-and-usage/how-credits-work",
+    "screening": "excluded:off-topic",
+    "detail": "another vendor's product or billing (not one of the five reviewed tools on its own plans)"
+   },
+   {
+    "url": "https://higgsfield.ai/enterprise-help-center/manage-account/buy-credits",
+    "screening": "excluded:off-topic",
+    "detail": "another vendor's product or billing (not one of the five reviewed tools on its own plans)"
+   },
+   {
+    "url": "https://dev.to/feed/johrdan_blaack_0b818db70a",
+    "screening": "excluded:off-topic",
+    "detail": "another vendor's product or billing (not one of the five reviewed tools on its own plans)"
+   },
+   {
+    "url": "https://ocdevel.com/podcaster/ai-video-generation/5e2f6714-3ee0-4ae2-a888-81b8e5caab28",
+    "screening": "excluded:off-topic",
+    "detail": "another vendor's product or billing (not one of the five reviewed tools on its own plans)"
+   },
+   {
+    "url": "https://appsumo.com/products/phygital/questions/credits-1500396/",
+    "screening": "excluded:off-topic",
+    "detail": "another vendor's product or billing (not one of the five reviewed tools on its own plans)"
+   },
+   {
+    "url": "https://help.neuralframes.com/en/articles/10507175-how-are-credits-used-for-each-model",
+    "screening": "excluded:off-topic",
+    "detail": "another vendor's product or billing (not one of the five reviewed tools on its own plans)"
+   },
+   {
+    "url": "https://community.adobe.com/questions-404/i-tried-to-create-an-ai-video-1559937",
+    "screening": "excluded:off-topic",
+    "detail": "another vendor's product or billing (not one of the five reviewed tools on its own plans)"
+   },
+   {
+    "url": "https://community.adobe.com/questions-404/video-creation-got-stuck-and-lots-of-credits-are-lost-1626030",
+    "screening": "excluded:off-topic",
+    "detail": "another vendor's product or billing (not one of the five reviewed tools on its own plans)"
+   },
+   {
+    "url": "https://community.adobe.com/bug-reports-403/attempt-failures-generating-video-w-kling-3-0-omni-1641306",
+    "screening": "excluded:off-topic",
+    "detail": "another vendor's product or billing (not one of the five reviewed tools on its own plans)"
+   },
+   {
+    "url": "https://community.adobe.com/bug-reports-403/video-creation-got-stuck-and-lots-of-credits-are-lost-1626030",
+    "screening": "excluded:off-topic",
+    "detail": "another vendor's product or billing (not one of the five reviewed tools on its own plans)"
+   },
+   {
+    "url": "https://community.adobe.com/bug-reports-403/firefly-generating-video-since-5-hours-and-my-credits-have-been-used-and-no-video-showing-in-my-generation-history-please-get-me-my-credit-back-im-currently-left-with-0-1630536",
+    "screening": "excluded:off-topic",
+    "detail": "another vendor's product or billing (not one of the five reviewed tools on its own plans)"
+   },
+   {
+    "url": "https://community.adobe.com/questions-404/i-have-tried-generating-video-using-different-model-like-kling-veo-but-its-repeatedly-going-in-error-and-now-its-4th-time-and-my-credits-got-deducted-without-any-video-1627008",
+    "screening": "excluded:off-topic",
+    "detail": "another vendor's product or billing (not one of the five reviewed tools on its own plans)"
+   },
+   {
+    "url": "https://community.adobe.com/bug-reports-403/selected-kling-3-0-100-credits-but-a-different-model-ran-and-used-all-my-credits-with-a-pre-filled-prompt-i-never-wrote-1630657",
+    "screening": "excluded:off-topic",
+    "detail": "another vendor's product or billing (not one of the five reviewed tools on its own plans)"
+   }
+  ],
+  "reused_per_table_input": {
+   "synthesia_plan_price_and_credits": {
+    "today": [
+     "EV-ai-video-cost-per-minute-01"
+    ],
+    "prior": [
+     "EV-how-to-make-an-ai-avatar-video-06 (2026-10-28, same figures)",
+     "EV-synthesia-review-01, EV-best-ai-video-generators-04, EV-synthesia-vs-heygen-02 (pre 2026-10-01 plans: historical only)"
+    ]
+   },
+   "synthesia_minutes_included_and_credits_per_minute": {
+    "today": [
+     "EV-ai-video-cost-per-minute-02",
+     "EV-ai-video-cost-per-minute-03",
+     "EV-ai-video-cost-per-minute-04",
+     "EV-ai-video-cost-per-minute-05"
+    ],
+    "prior": [
+     "EV-how-to-make-an-ai-avatar-video-01, -03, -05",
+     "EV-synthesia-review-03 (old per-minute calculation: superseded)"
+    ]
+   },
+   "synthesia_rollover": {
+    "today": [
+     "EV-ai-video-cost-per-minute-03"
+    ],
+    "prior": [
+     "EV-how-to-make-an-ai-avatar-video-01",
+     "EV-how-to-make-an-ai-avatar-video-37 (single Trustpilot anecdote, not recaptured today)"
+    ]
+   },
+   "synthesia_edit_regeneration_charge": {
+    "today": [
+     "EV-ai-video-cost-per-minute-05"
+    ],
+    "prior": [
+     "EV-how-to-make-an-ai-avatar-video-02, -04"
+    ]
+   },
+   "heygen_plan_price_and_credits": {
+    "today": [
+     "EV-ai-video-cost-per-minute-06"
+    ],
+    "prior": [
+     "EV-how-to-make-an-ai-avatar-video-29",
+     "EV-heygen-review-01",
+     "EV-synthesia-vs-heygen-01",
+     "EV-best-ai-video-generators-08"
+    ]
+   },
+   "heygen_credits_per_minute_by_engine": {
+    "today": [
+     "EV-ai-video-cost-per-minute-07"
+    ],
+    "prior": [
+     "EV-how-to-make-an-ai-avatar-video-19, EV-synthesia-vs-heygen-14 (same 16 / 31 / 48)",
+     "EV-heygen-review-04 (20 credits, $0.97: superseded)"
+    ]
+   },
+   "heygen_rollover": {
+    "today": [
+     "EV-ai-video-cost-per-minute-08"
+    ],
+    "prior": [
+     "EV-how-to-make-an-ai-avatar-video-21",
+     "EV-heygen-review-10 (single Capterra anecdote, not recaptured today)"
+    ]
+   },
+   "heygen_rate_varies_by_account": {
+    "today": [
+     "EV-ai-video-cost-per-minute-09"
+    ],
+    "prior": [
+     "EV-how-to-make-an-ai-avatar-video-22"
+    ]
+   },
+   "heygen_failed_not_charged": {
+    "today": [
+     "EV-ai-video-cost-per-minute-10"
+    ],
+    "prior": [
+     "EV-how-to-make-an-ai-avatar-video-24"
+    ]
+   },
+   "heygen_re_render_charged": {
+    "today": [
+     "EV-ai-video-cost-per-minute-11"
+    ],
+    "prior": [
+     "EV-how-to-make-an-ai-avatar-video-23",
+     "EV-how-to-make-an-ai-avatar-video-35, -36 (single Trustpilot anecdotes, not recaptured today)"
+    ]
+   },
+   "runway_plan_price_and_credits": {
+    "today": [
+     "EV-ai-video-cost-per-minute-12"
+    ],
+    "prior": [
+     "EV-runway-review-01",
+     "EV-best-ai-video-generators-01"
+    ]
+   },
+   "runway_credits_per_second": {
+    "today": [
+     "EV-ai-video-cost-per-minute-12",
+     "EV-ai-video-cost-per-minute-13",
+     "EV-ai-video-cost-per-minute-14"
+    ],
+    "prior": [
+     "EV-runway-review-06",
+     "EV-runway-review-07 (third-party 25 credits: contradicted)",
+     "EV-kling-ai-vs-runway-01 (Mimo calculation on the same inputs; figures still hold)"
+    ]
+   },
+   "runway_rollover_and_expiry": {
+    "today": [
+     "EV-ai-video-cost-per-minute-14"
+    ],
+    "prior": []
+   },
+   "runway_failed_vs_unsatisfactory": {
+    "today": [
+     "EV-ai-video-cost-per-minute-15"
+    ],
+    "prior": [
+     "EV-runway-review-17 (Trustpilot complaints, not recaptured today)"
+    ]
+   },
+   "hailuo_plan_price_credits_per_second": {
+    "today": [
+     "EV-ai-video-cost-per-minute-16"
+    ],
+    "prior": [
+     "EV-hailuo-ai-review-01, -02, -04"
+    ]
+   },
+   "hailuo_credits_per_clip_failed_refund": {
+    "today": [
+     "EV-ai-video-cost-per-minute-17"
+    ],
+    "prior": [
+     "EV-hailuo-ai-review-03, -07"
+    ]
+   },
+   "hailuo_h3_clip_credit_cost": {
+    "today": [
+     "EV-ai-video-cost-per-minute-18"
+    ],
+    "prior": [
+     "EV-hailuo-ai-review-20 (reseller said no H3 credit table exists)"
+    ]
+   },
+   "kling_plan_price_and_credits": {
+    "today": [
+     "EV-ai-video-cost-per-minute-19"
+    ],
+    "prior": [
+     "EV-best-ai-video-generators-03, EV-kling-ai-review-02, -03, -05, -06, -08, -09 (third-party, superseded by today's vendor read)"
+    ]
+   },
+   "kling_credit_validity": {
+    "today": [
+     "EV-ai-video-cost-per-minute-20",
+     "EV-ai-video-cost-per-minute-21"
+    ],
+    "prior": []
+   },
+   "kling_failed_generation": {
+    "today": [
+     "EV-ai-video-cost-per-minute-21"
+    ],
+    "prior": []
+   },
+   "kling_per_second_rate": {
+    "today": [
+     "EV-ai-video-cost-per-minute-22",
+     "EV-ai-video-cost-per-minute-23",
+     "EV-ai-video-cost-per-minute-24"
+    ],
+    "prior": [
+     "EV-best-ai-video-generators-19 (third-party $0.10 per second: stays an estimate)"
+    ]
+   },
+   "retake_factor_published_claims": {
+    "today": [
+     "EV-ai-video-cost-per-minute-25",
+     "EV-ai-video-cost-per-minute-26",
+     "EV-ai-video-cost-per-minute-27",
+     "EV-ai-video-cost-per-minute-28"
+    ],
+    "prior": [
+     "EV-hailuo-ai-review-21 (costbench '30-50% may be unusable', one source, not recaptured today)"
+    ]
+   },
+   "credits_burned_per_usable_clip_reports": {
+    "today": [
+     "EV-ai-video-cost-per-minute-29",
+     "EV-ai-video-cost-per-minute-30",
+     "EV-ai-video-cost-per-minute-31",
+     "EV-ai-video-cost-per-minute-32"
+    ],
+    "prior": [
+     "EV-runway-review-17",
+     "EV-hailuo-ai-review-13",
+     "EV-how-to-make-an-ai-avatar-video-35, -36, -40"
+    ]
+   }
+  },
+  "conflicts_for_writer": [
+   "HeyGen Avatar IV: RESOLVED from the vendor's help table read today: 31 credits per minute (Video Look), 16 (Photo Look). The 20-credit figure is retired (August pricing-page wording, no longer on any HeyGen page read). Hub text and EV-heygen-review-04's $0.97 need the same-deploy update.",
+   "Synthesia per-minute: today's inputs are Starter $19 monthly / $168 yearly and Pro $89 monthly / $708 yearly; 10 included minutes plus about 12 (Starter) or about 60 (Pro) extra minutes a month on the pricing page's own basis. Older figures ($1.80 to $2.90 Starter; $0.79 to $1.19 Pro) are superseded. Vendor-internal spread remains: about 100 vs 120 credits per minute, and 12 vs 17 extra Starter minutes.",
+   "Kling per second: NOT resolved to a vendor number below 4K. Vendor-own: 30 credits per second at native 4K. Everything else is third-party or a single user report (450 credits for 30 seconds).",
+   "Runway Gen-4.5: 12 credits per second confirmed on three vendor pages (pricing page 60 credits per 5 s, help centre, developer document).",
+   "Runway Gen-4 Turbo: NOT resolved to one vendor number. Plan cards imply 6 credits per second on Standard and Pro; rate table, API document and Max card say 5. See vendor_inconsistencies and WR-01."
+  ],
+  "evidence_gaps": [
+   "RETAKE FACTOR: no independent, dated measurement of generations per usable clip exists in what was found. The four registered figures (entries 25-28) are vendor-authored: one vendor's single production (164 generated, 41 used), one vendor's unsourced summary of its own test (about three in ten discarded), and two unsourced rules of thumb (3 to 10 attempts; 1.3 to 1.5 times). None measures any tool in the table. The page must keep the multiplier reader-set and may quote these only as each source's claim.",
+   "KLING PER-SECOND RATE (subscription plans): the vendor states one rate only, 30 credits per second for native 4K on the VIDEO 3.0 series (entry 22). No vendor page read states a 720p or 1080p per-second credit rate, or any Kling 4.0 rate, for subscription plans; the vendor's per-second dollar prices are for its API (entry 23). The Kling row must either show the 4K rate and the plan's dollar per 100 credits, or carry an 'estimate, not vendor-confirmed' label. The in-app generation panel (sign-in required) was not opened.",
+   "KLING FREE ALLOWANCE: the vendor names monthly free credits for non-subscribers but prints no amount; the comparison table shows '-'. No vendor-confirmed free figure.",
+   "HEYGEN AVATAR 6: the pricing page now names Avatar 6 Turbo and Avatar 6 Pro; no vendor page gives their credits per minute. Rows must use Avatar III / IV / V as the help table names them.",
+   "HEYGEN BUSINESS yearly price not read.",
+   "SYNTHESIA failed generations: no vendor statement on whether a failed generation is charged.",
+   "SYNTHESIA exact credits per minute: vendor says 'about 100' (credits and plan-change articles, pricing page) and '2 credits per second = 120' (edits article). Not an exact rate.",
+   "HAILUO monthly-billing plan prices: not capturable signed out (page redirects). Only yearly prices and monthly per-second labels from page source.",
+   "HAILUO rollover of unused monthly credits: not stated on the rendered subscribe page.",
+   "RUNWAY top-up credit pack price: not captured.",
+   "REDDIT: 0 threads read. reddit.com returned a login wall or HTTP 403 to every allowed path; no sign-in, no mirrors. The writer must not cite or paraphrase any Reddit thread.",
+   "COMMUNITY REPORTS on credits per usable clip exist only for Kling this run (Trustpilot, 20 most recent reviews). Runway, Hailuo, HeyGen and Synthesia community entries from earlier shards were not recaptured today and keep their own capture dates."
+  ],
+  "astroturf_screen": "No templated look-alike thread network seen. Trustpilot kling.ai reviews are varied in wording, dated and country-tagged; treated as self-selected complaints, not astroturf.",
+  "coding_status": "dual-independent coding done 2026-11-16 (coding-pass-A, coding-pass-B), disagreements resolved by mep-resolver; 27 of 32 agreed; 0 coding-ambiguous",
+  "curator_ambiguity_flags": [
+   "EV-ai-video-cost-per-minute-02",
+   "EV-ai-video-cost-per-minute-05",
+   "EV-ai-video-cost-per-minute-17",
+   "EV-ai-video-cost-per-minute-18",
+   "EV-ai-video-cost-per-minute-22",
+   "EV-ai-video-cost-per-minute-25",
+   "EV-ai-video-cost-per-minute-30",
+   "EV-ai-video-cost-per-minute-32"
+  ],
+  "limitations": [
+   "Vendor pricing is a one-day capture and vendor-authored (self-interested); HeyGen says rates can vary by account and region.",
+   "Derived examples in honesty_notes are the curator's arithmetic for the writer's convenience; the writer must recompute and label every figure as calculated.",
+   "No sign-in anywhere: in-app credit quotes (Kling, HeyGen, Hailuo generation panels behind login) were not read.",
+   "Reddit unreadable this run; community evidence is Trustpilot only, all 1-star in the Kling sample (complaint bias).",
+   "Help-centre articles show relative dates ('Updated this week'); exact update dates are not printed."
+  ],
+  "merge_note": "Page shard only. Not merged into registry.json; no other shard edited.",
+  "coder_agreement": {
+   "definition": "agreed = same label, same stance and same include verdict (the MEP section 5 fields). Coder A's 'neutral' is the protocol's n/a.",
+   "coded": 32,
+   "agreed": 27,
+   "rate": 0.844,
+   "disagreements": [
+    "EV-ai-video-cost-per-minute-05",
+    "EV-ai-video-cost-per-minute-08",
+    "EV-ai-video-cost-per-minute-14",
+    "EV-ai-video-cost-per-minute-20",
+    "EV-ai-video-cost-per-minute-24"
+   ],
+   "by_field": {
+    "label": 1,
+    "stance": 5,
+    "include": 0
+   },
+   "secondary_checks": {
+    "item_date_written_differently": [
+     "EV-ai-video-cost-per-minute-03",
+     "EV-ai-video-cost-per-minute-04",
+     "EV-ai-video-cost-per-minute-05",
+     "EV-ai-video-cost-per-minute-07",
+     "EV-ai-video-cost-per-minute-08",
+     "EV-ai-video-cost-per-minute-09",
+     "EV-ai-video-cost-per-minute-10",
+     "EV-ai-video-cost-per-minute-11",
+     "EV-ai-video-cost-per-minute-14",
+     "EV-ai-video-cost-per-minute-15",
+     "EV-ai-video-cost-per-minute-21",
+     "EV-ai-video-cost-per-minute-26"
+    ],
+    "quote_alone_carries_less_than_claim_per_either_coder": [
+     "EV-ai-video-cost-per-minute-01",
+     "EV-ai-video-cost-per-minute-02",
+     "EV-ai-video-cost-per-minute-03",
+     "EV-ai-video-cost-per-minute-04",
+     "EV-ai-video-cost-per-minute-05",
+     "EV-ai-video-cost-per-minute-06",
+     "EV-ai-video-cost-per-minute-08",
+     "EV-ai-video-cost-per-minute-12",
+     "EV-ai-video-cost-per-minute-13",
+     "EV-ai-video-cost-per-minute-14",
+     "EV-ai-video-cost-per-minute-16",
+     "EV-ai-video-cost-per-minute-17",
+     "EV-ai-video-cost-per-minute-18",
+     "EV-ai-video-cost-per-minute-19",
+     "EV-ai-video-cost-per-minute-20",
+     "EV-ai-video-cost-per-minute-22",
+     "EV-ai-video-cost-per-minute-23",
+     "EV-ai-video-cost-per-minute-32"
+    ],
+    "note": "item dates differed only in precision (relative versus exact) and were settled from the pages; quote fit is a secondary check, reported beside the rate."
+   },
+   "coding_ambiguous_after_resolution": 0,
+   "resolved_by": "mep-resolver",
+   "resolved_at": "2026-11-16"
+  },
+  "vendor_inconsistencies": [
+   {
+    "key": "runway-gen4-turbo-credits-per-second",
+    "status": "documented vendor inconsistency (not settled by the resolver; both figures registered)",
+    "read_at": "2026-11-16",
+    "pages": [
+     {
+      "url": "https://runway.com/pricing",
+      "note": "runwayml.com/pricing redirects here; curl HTTP 200",
+      "states": [
+       "Standard card: '625 credits monthly = 52s of Gen-4.5, 104s of Gen-4 Turbo, or 78 Gen-4 Images (1080p).'",
+       "Pro card: '2250 credits monthly = 187s of Gen-4.5, 375s of Gen-4 Turbo, or 281 Gen-4 Images (1080p).'",
+       "Max card: '9500 credits = 791s of Gen-4.5, 791s of Gen-4, 1900s of Gen-4 Turbo, 1187 Gen-4 Images (1080p), or 475 Nano Banana Pro images (2K).'",
+       "Model table on the page lists Gen-4.5 at 60 credits/5s; it has no Gen-4 Turbo row.",
+       "Unrendered strings in the same page's data (not shown on the cards): '125 credits = 25s of Gen-4 Turbo', '625 credits = ... 125s of Gen-4 Turbo', '2250 credits = ... 450s of Gen-4 Turbo'."
+      ],
+      "implies": "Standard 625/104 = 6.01 and Pro 2250/375 = 6.00 credits per second; Max 9500/1900 = 5.00. The unrendered strings imply 5.00 on every plan."
+     },
+     {
+      "url": "https://help.runwayml.com/hc/en-us/articles/15124877443219-How-do-credits-work",
+      "note": "plain fetch 403; read in a browser, signed out",
+      "states": [
+       "'Gen-4.5 uses 12 credits per second of generated video.'",
+       "The article prints no Gen-4 Turbo figure in its own text; its rate table is an embedded frame from academy.runwayml.com/models-pricing."
+      ]
+     },
+     {
+      "url": "https://academy.runwayml.com/models-pricing",
+      "note": "the rate table embedded in the help article; opened directly in a browser",
+      "states": [
+       "'Gen-4 Video Turbo ... Image to Video ... 5/sec'",
+       "'Gen-4.5 ... 12/sec'",
+       "'Gen-4 Video ... 12/sec'"
+      ]
+     },
+     {
+      "url": "https://docs.dev.runwayml.com/guides/pricing/",
+      "note": "API document, separate credit wallet; curl HTTP 200",
+      "states": [
+       "'gen4_turbo 5 credits per second'",
+       "'gen4.5 12 credits per second'",
+       "'Credits can be purchased for $0.01 per credit'"
+      ]
+     }
+    ],
+    "finding": "Runway's own pages disagree on Gen-4 Turbo. The app rate table and the API document both say 5 credits per second, and the Max card's seconds agree with 5. The Standard and Pro cards print seconds (104 and 375) that work out to 6 credits per second. Coder A's reading of the cards is correct; the shard's 5 is also a vendor figure. Neither is picked.",
+    "derived_gen4_turbo_dollars_full_allowance": [
+     {
+      "plan": "Standard",
+      "credits": 625,
+      "card_seconds_gen4_turbo": 104,
+      "credits_per_second_implied_by_card": "625 / 104 = 6.01",
+      "basis_card_seconds": {
+       "monthly": "$15 / 104 s = $0.144 per second (x 60 = $8.65 per minute)",
+       "annual": "$12 / 104 s = $0.115 per second (x 60 = $6.92 per minute)"
+      },
+      "basis_rate_table_5_credits": {
+       "seconds": "625 / 5 = 125 s",
+       "monthly": "$15 / 125 s = $0.12 per second (x 60 = $7.2 per minute)",
+       "annual": "$12 / 125 s = $0.096 per second (x 60 = $5.76 per minute)"
+      }
+     },
+     {
+      "plan": "Pro",
+      "credits": 2250,
+      "card_seconds_gen4_turbo": 375,
+      "credits_per_second_implied_by_card": "2250 / 375 = 6.0",
+      "basis_card_seconds": {
+       "monthly": "$35 / 375 s = $0.093 per second (x 60 = $5.6 per minute)",
+       "annual": "$28 / 375 s = $0.075 per second (x 60 = $4.48 per minute)"
+      },
+      "basis_rate_table_5_credits": {
+       "seconds": "2250 / 5 = 450 s",
+       "monthly": "$35 / 450 s = $0.078 per second (x 60 = $4.67 per minute)",
+       "annual": "$28 / 450 s = $0.062 per second (x 60 = $3.73 per minute)"
+      }
+     },
+     {
+      "plan": "Max",
+      "credits": 9500,
+      "card_seconds_gen4_turbo": 1900,
+      "credits_per_second_implied_by_card": "9500 / 1900 = 5.0",
+      "basis_card_seconds": {
+       "monthly": "$95 / 1900 s = $0.05 per second (x 60 = $3.0 per minute)",
+       "annual": "$76 / 1900 s = $0.04 per second (x 60 = $2.4 per minute)"
+      },
+      "basis_rate_table_5_credits": {
+       "seconds": "9500 / 5 = 1900 s",
+       "monthly": "$95 / 1900 s = $0.05 per second (x 60 = $3.0 per minute)",
+       "annual": "$76 / 1900 s = $0.04 per second (x 60 = $2.4 per minute)"
+      }
+     }
+    ],
+    "shard_figures_checked": "The shard's $0.12 / $0.096 (Standard) and $0.078 / $0.062 (Pro) are the 5-credit basis and are arithmetically right on that basis; on the cards' printed seconds they are $0.144 / $0.115 and $0.093 / $0.075. Max is $0.05 / $0.04 on both. Gen-4.5 figures are unaffected (12 credits per second on every page read).",
+    "side_note": "Same pair of pages, Kling 4.0 at 1080p inside Runway: pricing page '118 credits/5s' (89 under the promotion to November 30), rate table '24/sec' (120 per 5 s). Not a table input for this page; flagged only."
+   },
+   {
+    "key": "synthesia-credits-per-minute-100-vs-120",
+    "status": "documented vendor inconsistency; current figure is about 100",
+    "pages": [
+     {
+      "url": "https://help.synthesia.io/en/articles/8850453-how-does-synthesia-credit-consumption-work-for-video-edits",
+      "states": [
+       "'Each second of a video uses 2 credits. Ex: A one-minute video will consume 120 credits.' (last updated 2026-07-22)"
+      ]
+     },
+     {
+      "url": "https://help.synthesia.io/en/articles/11972627-what-are-credits-and-how-do-they-work-on-self-serve-plans",
+      "states": [
+       "about 100 credits per minute (article updated 2026-11-11); see entry 03"
+      ]
+     }
+    ]
+   }
+  ],
+  "writer_restrictions": [
+   {
+    "id": "WR-01",
+    "entries": [
+     "EV-ai-video-cost-per-minute-12",
+     "EV-ai-video-cost-per-minute-13",
+     "EV-ai-video-cost-per-minute-14"
+    ],
+    "rule": "Runway Gen-4 Turbo: do not print one credits-per-second figure as settled. Either leave Gen-4 Turbo out of the table, or give a range that names both bases: the plan card's printed seconds (Standard 104 s, Pro 375 s, Max 1,900 s) and the rate table's 5 credits per second, each with its page. Say that Runway's pages disagree. Any dollar figure is labelled calculated and names its basis."
+   },
+   {
+    "id": "WR-02",
+    "entries": [
+     "EV-ai-video-cost-per-minute-12",
+     "EV-ai-video-cost-per-minute-13",
+     "EV-ai-video-cost-per-minute-14"
+    ],
+    "rule": "Runway app credits and API credits are separate wallets with separate prices. Never use $0.01 per credit (API) for subscription arithmetic, and never use the API document as the source for an app plan row. Plan rows use plan price, plan credits and the app's own pages."
+   },
+   {
+    "id": "WR-03",
+    "entries": [
+     "EV-ai-video-cost-per-minute-06"
+    ],
+    "rule": "HeyGen Pro yearly: the vendor prints '$41 / mo' and '$488 billed yearly'. Yearly arithmetic uses $488 (488 / 12 = $40.67 a month). Do not print $492, and do not multiply $41 by 12. Creator yearly is $24 a month, $288 billed yearly (24 x 12 = 288)."
+   },
+   {
+    "id": "WR-04",
+    "entries": [
+     "EV-ai-video-cost-per-minute-26"
+    ],
+    "rule": "HeyGen blog post: give the date as shown on the page, 'Last updated 20 October 2026'. The page's metadata says published and modified 2026-10-09; do not call 20 October the publication date."
+   },
+   {
+    "id": "WR-05",
+    "entries": [
+     "EV-ai-video-cost-per-minute-26"
+    ],
+    "rule": "HeyGen 'about a third': quote the vendor's sentence in its own words and attribute it. Do not restate 'a third' as arithmetic and do not adopt it as Mimo's figure. If the page does the sum itself, three discarded in ten is 10 generated / 7 kept = 1.43, about 43% more per kept clip, labelled as Mimo's calculation from the vendor's 'three in ten'. The test has no published sample size, tool list or method: say so."
+   },
+   {
+    "id": "WR-06",
+    "entries": [
+     "EV-ai-video-cost-per-minute-05",
+     "EV-ai-video-cost-per-minute-02",
+     "EV-ai-video-cost-per-minute-03",
+     "EV-ai-video-cost-per-minute-04"
+    ],
+    "rule": "Synthesia 120 credits a minute comes from an article last updated 2026-07-22, before the 2026-10-01 plan change. The current pages say 'about 100'. Use about 100 for the table, with the vendor's 'up to ~' wording kept. Mention 120 only as an older vendor article that still says so; never as the current rate or as a second live rate, and never as exact."
+   },
+   {
+    "id": "WR-07",
+    "entries": [
+     "EV-ai-video-cost-per-minute-16",
+     "EV-ai-video-cost-per-minute-18"
+    ],
+    "rule": "Hailuo: plan prices were read in the yearly-billing view only ($8.40, $30.40, $71.20, $184.00 a month, billed yearly). Every Hailuo price is labelled yearly billing. Print no monthly-billing plan price. The struck $14.99 / $54.99 / $119.99 are not confirmed monthly prices; 'From $9.99 /mo' and the old FAQ string ($14.99, offer $7.99) are not used. The monthly per-second labels ($0.126, $0.074, $0.102, $0.096, $0.056) were seen only in the page source: do not print them as rendered prices."
+   },
+   {
+    "id": "WR-08",
+    "entries": [
+     "EV-ai-video-cost-per-minute-08"
+    ],
+    "rule": "HeyGen extra credits: word it as the help article does. One-time credit packs are for Business ($0.05 a credit, blocks of 100 for $5); Creator 'does not support one-time credit purchases'; 'Pro does not use one-time credit packs' and gets more credits by moving to a higher Pro tier. Do not write that Creator and Pro have no way to get more credits."
+   },
+   {
+    "id": "WR-09",
+    "entries": [
+     "EV-ai-video-cost-per-minute-06",
+     "EV-ai-video-cost-per-minute-07"
+    ],
+    "rule": "HeyGen engine names: the pricing page says Avatar 6 / Turbo / Pro, the credit table says Avatar III / IV / V, and no page read maps one to the other. Name the engine exactly as the credit table does and give no rate for Avatar 6."
+   },
+   {
+    "id": "WR-10",
+    "entries": [
+     "EV-ai-video-cost-per-minute-17"
+    ],
+    "rule": "Hailuo 'refund is not supported' answers a question about cancelling a plan. Do not use it as a statement about credits for a poor result."
+   },
+   {
+    "id": "WR-11",
+    "entries": [
+     "EV-ai-video-cost-per-minute-20",
+     "EV-ai-video-cost-per-minute-21"
+    ],
+    "rule": "Kling monthly credit validity: the membership FAQ says 31 days, the Credits Policy says 1 month. Use the FAQ wording and name the page. 'Does not carry into a second cycle' is an inference: state the 31-day rule instead."
+   },
+   {
+    "id": "WR-12",
+    "entries": [
+     "EV-ai-video-cost-per-minute-22"
+    ],
+    "rule": "Kling blog '$1.33 per 100 Credits' (July 2026) differs from today's membership page; do not use it as a current price."
+   },
+   {
+    "id": "WR-13",
+    "entries": [
+     "EV-ai-video-cost-per-minute-23"
+    ],
+    "rule": "Kling API: dollar value per unit differs by row; quote dollars per row and keep API prices apart from subscription plans."
+   },
+   {
+    "id": "WR-14",
+    "entries": [
+     "EV-ai-video-cost-per-minute-24"
+    ],
+    "rule": "WaveSpeed sentence: use only as a second voice beside this run's own read of Kling's pages, attributed and dated 2026-10-23, with the note that the publisher sells access to video models. Not a price input."
+   },
+   {
+    "id": "WR-15",
+    "entries": [
+     "EV-ai-video-cost-per-minute-25",
+     "EV-ai-video-cost-per-minute-27",
+     "EV-ai-video-cost-per-minute-28"
+    ],
+    "rule": "Retake figures from invideo, LTX and Imgveo are vendor-authored, single-case or unsourced: attributed opinion only, never a measured rate, never averaged into a retake factor."
+   },
+   {
+    "id": "WR-16",
+    "entries": [
+     "EV-ai-video-cost-per-minute-29",
+     "EV-ai-video-cost-per-minute-30",
+     "EV-ai-video-cost-per-minute-31",
+     "EV-ai-video-cost-per-minute-32"
+    ],
+    "rule": "Kling Trustpilot: each review is one person's account. The count is 20 most recent reviews (2026-07-29 to 2026-11-13), all 1-star; 9 of 20 mention credits (8 if the review that only mentions buying a credit package is left out); 6 of 20 describe credits spent on unusable output. Print with the denominator, the date window and the link; no percentage of users. The 405 and 450 credits for 30 seconds in entry 30 are one user's numbers and appear on no vendor page read."
+   },
+   {
+    "id": "WR-17",
+    "entries": [
+     "EV-ai-video-cost-per-minute-02"
+    ],
+    "rule": "Synthesia minutes: say which basis a row uses (pricing page: 10 included + about 12 or about 60 extra minutes; help article: about 17 extra on Starter). Every dollar-per-minute figure is a best case with the full allowance used."
+   },
+   {
+    "id": "WR-18",
+    "entries": "all",
+    "rule": "Each entry's claim_narrowed is the widest sentence the short quote carries. Figures in quote_supplementary that both passes found on the live page stay usable as the vendor's own figures with the read date 2026-11-16."
+   }
+  ],
+  "recapture_2026_11_19": "Publish-day re-read of the five vendor pricing pages. Synthesia: two price sets served (rendered $29/$216/$768 vs page HTML $19/$168/$708); HeyGen and Runway unchanged; Kling standing prices unchanged, intro offer changed; Hailuo subscribe page redirected signed-out visitors, per-second labels and credit rules re-read in source. Help-centre, policy, blog and Trustpilot entries other than C-07 and C-08 were not re-read and keep their 2026-11-16 capture."
+ },
+ "entries": [
+  {
+   "id": "EV-ai-video-cost-per-minute-01",
+   "claim": "Synthesia's pricing page, read live on 2026-11-16, lists Basic at $0 with 500 credits a month, Starter at $19 a month ($9 for the first month) with 1,250 credits a month, and Pro at $89 a month ($49 for the first month) with 6,000 credits a month. In the yearly view Starter is $14 a month ($168 billed yearly, 15,000 credits a year) and Pro is $59 a month ($708 billed yearly, 72,000 credits a year).",
+   "source_url": "https://www.synthesia.io/pricing",
+   "source_date": "2026-11-16",
+   "quote": "Starter First month for $9 $19 $9 first month per month then $19 per month 1,250 credits / month ... Pro Most popular First month for $49 $89 $49 first month per month then $89 per month 6,000 credits / month",
+   "platform": "synthesia.io (vendor primary source, self-interested; page HTML fetched 2026-11-16, monthly and yearly views both present in the served page)",
+   "target_slug": "/guides/ai-video-cost-per-minute",
+   "collected_at": "2026-11-16",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "ai-video-cost-per-minute-2026-11-16",
+   "screening": "included",
+   "label": "vendor-claim",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "Synthesia",
+    "aspect": "plan prices and credits, monthly and yearly views",
+    "stance": "neutral",
+    "plan_tier_if_stated": "Basic, Starter, Pro (monthly + yearly)",
+    "item_date": "2026-11-16"
+   },
+   "coding_status": "dual-independent coding done 2026-11-16; resolved by mep-resolver",
+   "quote_supplementary": "Yearly view, same page: \"Starter 3 months free $19 $14 per month $168 billed yearly 15,000 credits / year\" and \"Pro Most popular 4 months free $89 $59 per month $708 billed yearly 72,000 credits / year\". Basic: \"$0 per month 500 credits / month ... 10 minutes of Studio video creation or dubbing 3 survey responses 500 credits to spend on anything ... Videos carry a Synthesia watermark\". Pro credit slider (monthly view): \"6,000 / mo $89 ... 12,000 / mo -1.25% $176 ... 24,000 / mo -2.5% $347 ... 36,000 / mo -3.75% $514 ... 48,000 / mo -5% $676\".",
+   "honesty_notes": [
+    "The plan cards print the EXTRA credits (1,250 / 6,000). The vendor's help article counts the 500 credits included on every plan as well (1,750 / 6,500 a month), see the next entry.",
+    "Unchanged against the 2026-10-28 capture (EV-how-to-make-an-ai-avatar-video-06). The August figures (Starter $18 annual / $29 monthly, Creator $64 / $89, 10 and 30 minutes) in EV-synthesia-review-01 and EV-best-ai-video-generators-04 predate the 2026-10-01 plan change and must not be used for this page.",
+    "First-month promo prices ($9, $49) are not the standing price; use $19 and $89 for monthly arithmetic."
+   ],
+   "related_prior_entries": [
+    "EV-how-to-make-an-ai-avatar-video-06",
+    "EV-synthesia-review-01",
+    "EV-best-ai-video-generators-04",
+    "EV-synthesia-vs-heygen-02"
+   ],
+   "resolved_by": "mep-resolver",
+   "coder_codes": {
+    "A": {
+     "label": "vendor-claim",
+     "stance": "neutral",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "claim_match": "match"
+    },
+    "B": {
+     "label": "vendor-claim",
+     "stance": "neutral",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "support_level": "partial"
+    }
+   },
+   "citable": true,
+   "claim_narrowed": "On 2026-11-16 Synthesia's pricing page listed these plan prices and credit amounts.",
+   "coder_notes": {
+    "A": "All figures found in the served page text today, including the Pro slider steps ($176, $347, $514, $676) and the Basic watermark line. 14 x 12 = 168 and 59 x 12 = 708 check. The card credits are the extra credits; the 500 included on every plan are counted separately in entry 03.",
+    "B": "Quote covers the monthly Starter and Pro cards only; Basic and the yearly figures were confirmed on the page but sit outside the quote. Pro also has larger credit steps (12,000 to 48,000 a month) not in the claim."
+   },
+   "recaptures": [
+    {
+     "recaptured_at": "2026-11-19",
+     "collector": "mimo-auto-content 2026-11-19 publish",
+     "status": "ok",
+     "method": "browser render in two separate browser profiles (monthly and yearly toggles) + curl of the page HTML, read-only",
+     "source_url": "https://www.synthesia.io/pricing",
+     "matched": false,
+     "claim": "Publish-day re-read 2026-11-19: TWO PRICE SETS SERVED. The page as rendered in a browser (two separate profiles) shows Starter at $29 a month ($14 first month) and $216 billed yearly ($18 a month), Pro at $89 a month ($49 first month) and $768 billed yearly ($64 a month). The page HTML fetched by curl the same day still carries Starter $19 ($9 first month), $168 billed yearly, and Pro $89, $708 billed yearly, as captured on 2026-11-16 (that capture was a curl of the page HTML). Credits unchanged in both: Starter 1,250 a month / 15,000 a year, Pro 6,000 a month / 72,000 a year. The page loads Optimizely and Intellimize experiment scripts; which price a given buyer is charged was not established (no sign-in, no checkout).",
+     "quote": "Rendered, monthly view: \"Starter $29 $14 first month then $29 per month 1,250 CREDITS / MONTH\"; \"Pro MOST POPULAR $89 $49 first month then $89 per month 6,000 CREDITS / MONTH\". Rendered, yearly view: \"Starter $29 $18 /month $216 billed yearly 15,000 CREDITS / YEAR\"; \"Pro MOST POPULAR $89 $64 /month $768 billed yearly 72,000 CREDITS / YEAR\". Page HTML (curl): \"$9 first month\", \"$19\", \"$168\", \"$708\" still present."
+    }
+   ]
+  },
+  {
+   "id": "EV-ai-video-cost-per-minute-02",
+   "claim": "Synthesia's pricing page states the usage each plan buys in minutes: the free allowance is 10 minutes of video a month on every plan, Starter's credits add up to about 12 more minutes a month and Pro's up to about 60 more (yearly view: about 150 and about 720 minutes a year on top of the free allowance).",
+   "source_url": "https://www.synthesia.io/pricing",
+   "source_date": "2026-11-16",
+   "quote": "The free allowance includes 10 minutes of video a month. Paid plans add credits on top, and the number shown is the most extra video those credits can make. ... 10 minutes of video / month Up to ~12 minutes of video / month, on top of the free allowance",
+   "platform": "synthesia.io (vendor primary source, self-interested; compare-plans table, 'Usage limits' row, fetched 2026-11-16)",
+   "target_slug": "/guides/ai-video-cost-per-minute",
+   "collected_at": "2026-11-16",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "ai-video-cost-per-minute-2026-11-16",
+   "screening": "included",
+   "label": "vendor-claim",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "Synthesia",
+    "aspect": "minutes each plan buys ('Usage limits' row)",
+    "stance": "neutral",
+    "plan_tier_if_stated": "Basic, Starter, Pro, Enterprise",
+    "item_date": "2026-11-16"
+   },
+   "coding_status": "dual-independent coding done 2026-11-16; resolved by mep-resolver",
+   "quote_supplementary": "Pro, same row, monthly view: \"Up to ~60 minutes of video / month, on top of the free allowance\". Yearly view of the same row: \"Up to ~150 minutes of video / year, on top of the free allowance\" (Starter) and \"Up to ~720 minutes of video / year, on top of the free allowance\" (Pro). Enterprise: \"Unlimited minutes of video\".",
+   "honesty_notes": [
+    "CONFLICT INSIDE THE VENDOR'S OWN PAGES: the pricing page says Starter's credits make about 12 extra minutes (1,250 credits at about 100 per minute); the help article (next entry) says Starter's 1,750 credits cover about 17 minutes in addition to the 10 included. The difference is the 500 credits included on every plan. The writer should state which basis a row uses; the pricing-page figure is the conservative one.",
+    "Derived examples for the writer (Mimo arithmetic, label as calculated, standing prices, full allowance used, video only). Pricing-page basis: Starter monthly $19 / (10 + 12) min = $0.86 per finished minute; Pro monthly $89 / (10 + 60) = $1.27; Starter yearly $168 / (120 + 150) = $0.62; Pro yearly $708 / (120 + 720) = $0.84. Help-article basis: Starter monthly $19 / (10 + 17.5) = $0.69; Pro monthly $89 / (10 + 65) = $1.19.",
+    "The older site figures (EV-synthesia-review-03: $1.80 to $2.90 per minute on Starter; hub text $0.79 to $1.19 on Pro) were computed on earlier plan terms. They do not match today's inputs and must be replaced by one dated calculation site-wide."
+   ],
+   "related_prior_entries": [
+    "EV-synthesia-review-03",
+    "EV-how-to-make-an-ai-avatar-video-01"
+   ],
+   "curator_ambiguity_flag": "12 vs 17 extra minutes on Starter depends on whether the 500 included credits are counted; both figures are the vendor's own.",
+   "resolved_by": "mep-resolver",
+   "coder_codes": {
+    "A": {
+     "label": "vendor-claim",
+     "stance": "neutral",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "claim_match": "match"
+    },
+    "B": {
+     "label": "vendor-claim",
+     "stance": "neutral",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "support_level": "partial"
+    }
+   },
+   "citable": true,
+   "claim_narrowed": "Synthesia itself states the free allowance as 10 minutes a month and paid credits as 'up to ~12' (Starter) and 'up to ~60' (Pro) extra minutes a month.",
+   "coder_notes": {
+    "A": "Quote and all four minute figures (~12, ~60, ~150, ~720, 'Unlimited minutes of video') are in the page text today. Vendor wording is 'up to ~', so every derived dollar-per-minute figure is a best case. Curator's derived figures re-computed and they hold: 19/22 = 0.86, 89/70 = 1.27, 168/270 = 0.62, 708/840 = 0.84; help-article basis 19/27.5 = 0.69, 89/75 = 1.19. The 12 versus 17 extra minutes is a basis difference inside the vendor's own pages (500 included credits), not a coding conflict; a row must say which basis it uses.",
+    "B": "The figures are the vendor's 'up to' maxima with a tilde; they must keep that wording. 1,250 credits for ~12 minutes implies roughly 104 credits a minute, consistent with 'about 100'."
+   },
+   "writer_restrictions": [
+    "WR-06",
+    "WR-17"
+   ],
+   "recaptures": [
+    {
+     "recaptured_at": "2026-11-19",
+     "collector": "mimo-auto-content 2026-11-19 publish",
+     "status": "ok",
+     "method": "browser render, monthly and yearly toggles",
+     "source_url": "https://www.synthesia.io/pricing",
+     "matched": true,
+     "claim": "Publish-day re-read 2026-11-19: MATCH on usage. 10 minutes of video a month on every plan; Starter 'Studio video up to ~12 min' monthly and '~150 min' yearly, Pro '~60 min' monthly and '~720 min' yearly, on top of the free allowance. Enterprise block now reads 'Unlimited Videos' (the earlier 'Unlimited minutes of video' wording was not on the rendered page).",
+     "quote": "Usage limits 10 minutes of video / month | Up to ~12 minutes of video / month, on top of the free allowance | Up to ~60 minutes of video / month, on top of the free allowance ... Unlimited Videos No need to worry about usage restrictions and quotas"
+    }
+   ]
+  },
+  {
+   "id": "EV-ai-video-cost-per-minute-03",
+   "claim": "Synthesia's self-serve credits article (marked 'Updated this week' on 2026-11-16) says video creation uses about 100 credits per minute of finished video, that every plan includes 10 minutes of video and 500 credits a month (Starter 1,750 and Pro 6,500 credits a month in total), that annual plans receive the full year's credits at once, and that unused credits reset each billing period with no accumulation.",
+   "source_url": "https://help.synthesia.io/en/articles/11972627-what-are-credits-and-how-do-they-work-on-self-serve-plans",
+   "source_date": "2026-11 (article marked 'Updated this week' on 2026-11-16)",
+   "quote": "Video creation uses about 100 credits per minute of finished video. Ex: On the Starter plan, 1,750 credits cover about 17 minutes of finished video, in addition to the 10 minutes of video included every month.",
+   "platform": "help.synthesia.io (vendor primary source, self-interested; fetched 2026-11-16)",
+   "target_slug": "/guides/ai-video-cost-per-minute",
+   "collected_at": "2026-11-16",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "ai-video-cost-per-minute-2026-11-16",
+   "screening": "included",
+   "label": "vendor-claim",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "Synthesia",
+    "aspect": "credits per finished minute; plan credit totals; no rollover",
+    "stance": "neutral",
+    "plan_tier_if_stated": "self-serve plans",
+    "item_date": "2026-11-11"
+   },
+   "coding_status": "dual-independent coding done 2026-11-16; resolved by mep-resolver",
+   "quote_supplementary": "Same article: \"Do my Synthesia credits roll over the next billing period? No, credits for usage are reset at the start of the billing period and there is no accumulation of unused credit.\" and \"Your unused credits from your previous plan do not carry over when you upgrade.\" and \"Monthly plans receive credits each month. Annual plans receive the full year's credits when the plan starts or renews.\" Plan table: \"Starter Plan 1,750 credits per month 21,000 credits per year ... Pro Plan 6,500 credits per month 78,000 credits per year\". Other rates listed: \"1 minute of API usage = 160 credits\", \"1 min of AI Dubbing with lip sync = 80 Credits\".",
+   "honesty_notes": [
+    "'About 100 credits per minute' is the vendor's typical figure: the article adds that a video with more on-screen avatar time uses a little more and one with less uses a little less.",
+    "The article does not say whether a failed generation is charged. No Synthesia statement on failed generations was found this run (gap).",
+    "API usage is now listed at 160 credits per minute; EV-synthesia-vs-heygen-04 recorded 75 on 2026-09-22. API pricing is out of scope for this page; noted only so the old figure is not reused."
+   ],
+   "related_prior_entries": [
+    "EV-how-to-make-an-ai-avatar-video-01",
+    "EV-how-to-make-an-ai-avatar-video-02",
+    "EV-synthesia-vs-heygen-04"
+   ],
+   "resolved_by": "mep-resolver",
+   "coder_codes": {
+    "A": {
+     "label": "vendor-claim",
+     "stance": "neutral",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "claim_match": "match"
+    },
+    "B": {
+     "label": "vendor-claim",
+     "stance": "neutral",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "support_level": "partial"
+    }
+   },
+   "citable": true,
+   "claim_narrowed": "Synthesia's help article says video creation uses about 100 credits per minute of finished video and that unused credits do not carry over.",
+   "coder_notes": {
+    "A": "Every quoted sentence found today; the article is marked 'Updated this week'. 1,750 x 12 = 21,000 and 6,500 x 12 = 78,000 check. API 160 and dubbing 80 credits per minute are on the page. The word 'fail' does not occur in the article, so the 'no statement on failed generations' gap is confirmed for this article only. 'About 100' is an approximation by the vendor's own wording.",
+    "B": "'About 100' is an approximation by the vendor, not a fixed rate."
+   },
+   "writer_restrictions": [
+    "WR-06"
+   ]
+  },
+  {
+   "id": "EV-ai-video-cost-per-minute-04",
+   "claim": "Synthesia's plan-change article says that from 2026-10-01 the 10 included minutes of video are used first and credits are spent only after they run out, and it lists video creation at about 100 credits per minute of finished video.",
+   "source_url": "https://help.synthesia.io/en/articles/17217419-what-s-changing-in-synthesia-plans-on-october-1-2026",
+   "source_date": "2026-09-29 (date carried from the 2026-10-28 capture; the page shows no date in the text fetched 2026-11-16)",
+   "quote": "Your 10 minutes of included video and 3 survey responses are used first. Credits are only used once those run out.",
+   "platform": "help.synthesia.io (vendor primary source, self-interested; fetched 2026-11-16)",
+   "target_slug": "/guides/ai-video-cost-per-minute",
+   "collected_at": "2026-11-16",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "ai-video-cost-per-minute-2026-11-16",
+   "screening": "included",
+   "label": "vendor-claim",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "Synthesia",
+    "aspect": "included 10 minutes are used before credits",
+    "stance": "neutral",
+    "plan_tier_if_stated": "self-serve plans from 2026-10-01",
+    "item_date": "2026-09-29"
+   },
+   "coding_status": "dual-independent coding done 2026-11-16; resolved by mep-resolver",
+   "quote_supplementary": "Same article: \"For video creation: Credits are based on the length of avatar footage generated. A typical finished video uses about 100 credits per minute; a video with more on-screen avatar time will use a little more, one with less will use a little less.\" and \"Annual plans receive the full year's credits when the plan starts or renews. Monthly plans receive credits each month.\"",
+   "related_prior_entries": [
+    "EV-how-to-make-an-ai-avatar-video-05"
+   ],
+   "resolved_by": "mep-resolver",
+   "coder_codes": {
+    "A": {
+     "label": "vendor-claim",
+     "stance": "neutral",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "claim_match": "match"
+    },
+    "B": {
+     "label": "vendor-claim",
+     "stance": "neutral",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "support_level": "partial"
+    }
+   },
+   "citable": true,
+   "claim_narrowed": "Synthesia's plan-change article says the 10 included minutes are used first and credits only after they run out.",
+   "coder_notes": {
+    "A": "Quote and both supplementary sentences found today. The page source carries 'Updated over 2 months ago', which is consistent with the carried date 2026-09-29 but does not confirm the exact day; the shard's remark that the page shows no date is not quite right (a relative date is served). The 2026-10-01 effective date comes from the article title/URL.",
+    "B": "The shard says the page shows no date; this pass found 2026-09-29 in the page's own data, which confirms the carried date. The article adds that a video with more on-screen avatar time uses a little more than 100 credits a minute."
+   },
+   "writer_restrictions": [
+    "WR-06"
+   ]
+  },
+  {
+   "id": "EV-ai-video-cost-per-minute-05",
+   "claim": "A second Synthesia help article, on credit use for edits, still states 2 credits per second (120 credits for a one-minute video) on 2026-11-16, which conflicts with the 'about 100 credits per minute' figure in the vendor's credits and plan-change articles; it also shows that adding words to a script and regenerating costs credits for the added duration.",
+   "source_url": "https://help.synthesia.io/en/articles/8850453-how-does-synthesia-credit-consumption-work-for-video-edits",
+   "source_date": "2026-07-22 (shown on the page and in its data, re-read 2026-11-16)",
+   "quote": "Each second of a video uses 2 credits. Ex: A one-minute video will consume 120 credits.",
+   "platform": "help.synthesia.io (vendor primary source, self-interested; fetched 2026-11-16)",
+   "target_slug": "/guides/ai-video-cost-per-minute",
+   "collected_at": "2026-11-16",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "ai-video-cost-per-minute-2026-11-16",
+   "screening": "included",
+   "label": "vendor-claim",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": false,
+   "coding": {
+    "tool": "Synthesia",
+    "aspect": "older edit article still states 2 credits per second (120 a minute)",
+    "stance": "neutral",
+    "plan_tier_if_stated": "self-serve plans",
+    "item_date": "2026-07-22"
+   },
+   "coding_status": "dual-independent coding done 2026-11-16; resolved by mep-resolver",
+   "quote_supplementary": "Worked example on the same page: \"Count duration of new words. It's +1 seconds to the script. You have spent 2 additional credits. Total: 322 credits\".",
+   "honesty_notes": [
+    "RESOLUTION FOR THIS PAGE: two vendor articles disagree (100 vs 120 credits per finished minute). The credits article is the one marked updated this week and matches the pricing page's own minute figures (1,250 credits = about 12 minutes), so 'about 100' is the current vendor figure; 120 is the older article's figure and may be shown as the vendor's higher stated rate. The writer must not present either as exact."
+   ],
+   "related_prior_entries": [
+    "EV-how-to-make-an-ai-avatar-video-03",
+    "EV-how-to-make-an-ai-avatar-video-04"
+   ],
+   "curator_ambiguity_flag": "Vendor-internal conflict 100 vs 120 credits per minute; curator's reading is that 100 is current, coders should confirm.",
+   "resolved_by": "mep-resolver",
+   "coder_codes": {
+    "A": {
+     "label": "vendor-claim",
+     "stance": "neutral",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "claim_match": "match"
+    },
+    "B": {
+     "label": "vendor-claim",
+     "stance": "mixed",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "support_level": "partial"
+    }
+   },
+   "citable": true,
+   "resolution_note": "neutral: the entry is a rate statement (2 credits a second) and an edit-charging rule in a vendor help article. That it differs from the newer 'about 100' article is a documented inconsistency between vendor pages, not a stance. Re-opened by curl 2026-11-16 (HTTP 200): quote verbatim; page shows 'July 22, 2026' and lastUpdatedDate 2026-07-22T16:50:38Z.",
+   "claim_narrowed": "A Synthesia help article last updated 2026-07-22 still says each second of video uses 2 credits (120 for a one-minute video), which differs from the 'about 100 per minute' in the vendor's newer articles.",
+   "coder_notes": {
+    "A": "Quote and the 322-credit worked example found today. The page source carries 'Updated over 4 months ago', consistent with the carried 2026-07-22. I agree with the reading that 'about 100' is the current vendor figure (newer article, matches the pricing page's 1,250 credits = about 12 minutes); 120 may be shown only as the older article's stated rate. Neither is exact.",
+    "B": "The shard says no date was visible; this pass saw the date on the page. The article predates the 2026-10-01 plan change, so it may be stale rather than a second live rate; the page must not present 120 as the current rate."
+   },
+   "writer_restrictions": [
+    "WR-06"
+   ],
+   "recaptures": [
+    {
+     "recaptured_at": "2026-11-16",
+     "collector": "mep-resolver",
+     "status": "ok",
+     "method": "curl, read-only",
+     "source_url": "https://help.synthesia.io/en/articles/8850453-how-does-synthesia-credit-consumption-work-for-video-edits",
+     "matched": true,
+     "claim": "Quote verbatim. The page shows 'July 22, 2026' (lastUpdatedDate 2026-07-22T16:50:38Z), so the date is confirmed on the page, not only carried.",
+     "quote": "Each second of a video uses 2 credits. Ex: A one-minute video will consume 120 credits."
+    }
+   ],
+   "vendor_inconsistency": "synthesia-credits-per-minute-100-vs-120"
+  },
+  {
+   "id": "EV-ai-video-cost-per-minute-06",
+   "claim": "HeyGen's pricing page, read live on 2026-11-16, lists Free at $0 (3 watermarked videos a month, up to 1 minute each), Creator at $29 a month with 600 credits, Pro from $49 a month with 1,000 credits and Business at $149 a month with 1,500 credits plus $20 per seat. In the yearly view Creator is $24 a month ($288 billed yearly) and Pro $41 a month ($488 billed yearly).",
+   "source_url": "https://www.heygen.com/pricing",
+   "source_date": "2026-11-16",
+   "quote": "Creator $24 / mo Original price: $29 $288 billed yearly For publishing video ... 600 credits ... Credits accumulate until the end of your annual plan ... Pro Most Popular $41 / mo Original price: $49 $488 billed yearly For high volume, best quality creations ... 1,000 credits",
+   "platform": "heygen.com (vendor primary source, self-interested; HTML fetched and the yearly toggle read in a browser on 2026-11-16, signed out)",
+   "target_slug": "/guides/ai-video-cost-per-minute",
+   "collected_at": "2026-11-16",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "ai-video-cost-per-minute-2026-11-16",
+   "screening": "included",
+   "label": "vendor-claim",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "HeyGen",
+    "aspect": "plan prices and credits, monthly and yearly",
+    "stance": "neutral",
+    "plan_tier_if_stated": "Free, Creator, Pro, Business",
+    "item_date": "2026-11-16"
+   },
+   "coding_status": "dual-independent coding done 2026-11-16; resolved by mep-resolver",
+   "quote_supplementary": "Monthly view: \"$29 / mo ... 600 credits ... Credits roll over one month\"; \"$49 / mo ... 1,000 credits ... Raise your monthly credits any time, with rollover\"; \"$149 / mo ... 1,500 credits ... Add team members for $20/seat/month\". Page FAQ: \"the Creator plan costs $29/month (or $24/month if you pay annually)\" and \"Tiers range from 1,000 credits/mo at $49 to 100,000 credits/mo at $4,300.\"",
+   "honesty_notes": [
+    "Monthly prices and credit counts are unchanged against the 2026-10-28 capture (EV-how-to-make-an-ai-avatar-video-29). The yearly figures ($24 / $288 and $41 / $488) are new to the registry.",
+    "The pricing page does NOT print credits per minute for any avatar engine. It now names the engines 'Avatar 6 Turbo' and 'Avatar 6 Pro', while the help-centre credit table (next entry) still lists Avatar III, IV and V. No vendor credit rate for 'Avatar 6' was found this run (gap): the writer must name the engine exactly as the help table does and must not assign a rate to Avatar 6.",
+    "Business yearly price was not read (the For Businesses tab was not opened).",
+    "RESOLVER 2026-11-16: the vendor's billed figure for Pro yearly is $488 (488 / 12 = $40.67 a month); $41 x 12 = $492 is not a vendor figure. Use $488 for yearly arithmetic."
+   ],
+   "related_prior_entries": [
+    "EV-how-to-make-an-ai-avatar-video-29",
+    "EV-heygen-review-01",
+    "EV-synthesia-vs-heygen-01",
+    "EV-best-ai-video-generators-08"
+   ],
+   "resolved_by": "mep-resolver",
+   "coder_codes": {
+    "A": {
+     "label": "vendor-claim",
+     "stance": "neutral",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "claim_match": "match"
+    },
+    "B": {
+     "label": "vendor-claim",
+     "stance": "neutral",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "support_level": "partial"
+    }
+   },
+   "citable": true,
+   "claim_narrowed": "On 2026-11-16 HeyGen's pricing page listed Creator at $29 a month ($24 on yearly billing, $288) with 600 credits and Pro from $49 ($41 yearly, $488) with 1,000 credits.",
+   "coder_notes": {
+    "A": "Monthly figures are in the rendered text. The yearly figures ($24, $288, $41, $488) and 'Credits accumulate until the end of your annual plan' are in the page's served data (the yearly toggle was not clicked in this pass). Arithmetic note: 41 x 12 = 492, but the vendor prints $488 billed yearly (40.67 a month); use $488 for yearly arithmetic and quote $41 as the vendor's rounded label. The page names 'Avatar 6', 'Avatar 6 Turbo' and 'Avatar 6 Pro' and prints no credits-per-minute rate: confirmed.",
+    "B": "Pro has higher credit steps (for example 1,500 credits at $74 / $62). Business yearly showed '$1,428 billed yearly'. The pricing page names engines 'Avatar 6', 'Avatar 6 Turbo', 'Avatar 6 Pro' and 'Avatar Lipsync', which are not the names in the help table of entry 07."
+   },
+   "writer_restrictions": [
+    "WR-03",
+    "WR-09"
+   ],
+   "recaptures": [
+    {
+     "recaptured_at": "2026-11-16",
+     "collector": "mep-resolver",
+     "status": "ok",
+     "method": "curl, read-only; yearly figures read in the served page data, toggle not clicked",
+     "source_url": "https://www.heygen.com/pricing",
+     "matched": true,
+     "claim": "Pro 1,000-credit tier: '$41 / mo' yearly, '$488 billed yearly'. Creator: '$24 / mo', '$288 billed yearly'. The string 492 is not on the page.",
+     "quote": "priceMonthly: $49 / mo, priceYearly: $41 / mo, yearlyBilledTotal: $488 billed yearly"
+    },
+    {
+     "recaptured_at": "2026-11-19",
+     "collector": "mimo-auto-content 2026-11-19 publish",
+     "status": "ok",
+     "method": "browser render, monthly and yearly toggles",
+     "source_url": "https://www.heygen.com/pricing",
+     "matched": true,
+     "claim": "Publish-day re-read 2026-11-19: MATCH. Free $0 (3 videos a month, watermarked, up to 1 minute each); Creator $29 a month, $24 a month / $288 billed yearly, 600 credits; Pro $49 a month, $41 a month / $488 billed yearly, 1,000 credits. Avatar 6 Turbo and Avatar 6 Pro named, no credit rate on the page.",
+     "quote": "Creator $29 / mo ... 600 credits ... Credits roll over one month ... Pro Most Popular $49 / mo ... 1,000 credits ; yearly: $24 / mo $288 billed yearly ; $41 / mo $488 billed yearly"
+    }
+   ]
+  },
+  {
+   "id": "EV-ai-video-cost-per-minute-07",
+   "claim": "HeyGen's credit-plan help article, as read on 2026-11-16, lists credits per minute of avatar video by engine and look type: Avatar III Photo Look 7, Avatar III Video Look 4, Avatar IV Photo Look 16, Avatar IV Video Look 31, and Avatar V 48. It contains no 20-credit rate for Avatar IV.",
+   "source_url": "https://help.heygen.com/en/articles/15125761-heygen-credit-based-pricing-plans-subscriptions-explained",
+   "source_date": "2026-10 (article marked 'Updated over 2 weeks ago' on 2026-11-16)",
+   "quote": "Avatar III Photo Look 1 minute = 7 credits Avatar III Video Look 1 minute = 4 credits Avatar IV Photo Look 1 minute = 16 credits Avatar IV Video Look 1 minute = 31 credits Avatar V (Photo Look & Video Look) 1 minute = 48 credits Custom Expressive Motion 1 minute = 40 credits",
+   "platform": "help.heygen.com (vendor primary source, self-interested; fetched 2026-11-16)",
+   "target_slug": "/guides/ai-video-cost-per-minute",
+   "collected_at": "2026-11-16",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "ai-video-cost-per-minute-2026-11-16",
+   "screening": "included",
+   "label": "vendor-claim",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "HeyGen",
+    "aspect": "credits per minute by avatar engine and look type",
+    "stance": "neutral",
+    "plan_tier_if_stated": "credit-based plans",
+    "item_date": "2026-10-28"
+   },
+   "coding_status": "dual-independent coding done 2026-11-16; resolved by mep-resolver",
+   "quote_supplementary": "Same table: \"Video Translation (Speed mode) 1 minute = 6 credits ... Video Agent - standard mode 1 minute= 80 credits ... Video Agent - Seedance mode 1 minute= 240 credits\". Same article: \"Creator includes 600 credits per month for $29/month.\" and \"Note: Credit usage may vary based on the feature, model, duration, or generation type selected. When available, HeyGen will show the credit cost in-product before you generate.\" The sibling article 'How to Use Credits on HeyGen' repeats the same rates: \"Avatar IV Photo Look: 16 credits per minute Avatar IV Video Look: 31 credits per minute\".",
+   "honesty_notes": [
+    "CONFLICT RESOLVED (20 vs 31): the vendor's own table today gives Avatar IV at 31 credits per minute for a Video Look and 16 for a Photo Look. The 20-credit figure in EV-heygen-review-04 and EV-best-ai-video-generators-08 came from the August 2026 pricing page ('studio avatar minute') and no longer appears on the pricing page or in either help article. Use 31 (Video Look) and 16 (Photo Look) site-wide, each named with its look type; do not print a bare 'Avatar IV rate'.",
+    "Derived examples for the writer (Mimo arithmetic, label as calculated, full 600 credits used on one engine). Creator monthly $29: Avatar IV Video Look 600 / 31 = 19.4 min, $1.5 per finished minute; Avatar IV Photo Look 600 / 16 = 37.5 min, $0.77; Avatar V 600 / 48 = 12.5 min, $2.32; Avatar III Video Look $0.19. Creator yearly $24 a month: Avatar IV Video Look $1.24, Photo Look $0.64, Avatar V $1.92. Pro monthly $49 / 1,000 credits: Avatar IV Video Look $1.52, Avatar V $2.35.",
+    "EV-heygen-review-04's '$0.97 per finished minute' rests on the retired 20-credit rate and must not be reused.",
+    "Custom Expressive Motion (40 credits per minute) is charged on top of the Avatar IV rate when used."
+   ],
+   "related_prior_entries": [
+    "EV-heygen-review-04",
+    "EV-best-ai-video-generators-08",
+    "EV-synthesia-vs-heygen-14",
+    "EV-how-to-make-an-ai-avatar-video-19"
+   ],
+   "resolved_by": "mep-resolver",
+   "coder_codes": {
+    "A": {
+     "label": "vendor-claim",
+     "stance": "neutral",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "claim_match": "match"
+    },
+    "B": {
+     "label": "vendor-claim",
+     "stance": "neutral",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "support_level": "full"
+    }
+   },
+   "citable": true,
+   "coder_notes": {
+    "A": "All six rates found verbatim today; article marked 'Updated over 2 weeks ago'. The string '20 credits' does not occur anywhere in the article, so the absence statement holds for this article. Derived figures re-computed and they hold (Creator monthly: 600/31 = 19.4 min, $1.50; 600/16 = 37.5 min, $0.77; 600/48 = 12.5 min, $2.32; Avatar III Video Look $0.19; yearly $1.24, $0.64, $1.92; Pro $1.52 and $2.35). These assume all 600 credits go to one engine and that the account sees the standard rate (entry 09). No rate may be attached to 'Avatar 6'.",
+    "B": "The table uses 'Avatar III / IV / V' while the pricing page read the same day uses 'Avatar 6' names; this pass found nothing on either page that maps one set of names to the other, so a per-minute cost should name the engine exactly as the help table does."
+   },
+   "writer_restrictions": [
+    "WR-09"
+   ],
+   "recaptures": [
+    {
+     "recaptured_at": "2026-11-19",
+     "collector": "mimo-auto-content 2026-11-19 publish",
+     "status": "ok",
+     "method": "browser render",
+     "source_url": "https://help.heygen.com/en/articles/15125761-heygen-credit-based-pricing-plans-subscriptions-explained",
+     "matched": true,
+     "claim": "Publish-day re-read 2026-11-19: MATCH. Article marked 'Updated over 3 weeks ago'. Avatar III Photo Look 7, Avatar III Video Look 4, Avatar IV Photo Look 16, Avatar IV Video Look 31, Avatar V 48 credits per minute.",
+     "quote": "Avatar III Photo Look 1 minute = 7 credits | Avatar III Video Look 1 minute = 4 credits | Avatar IV Photo Look 1 minute = 16 credits | Avatar IV Video Look 1 minute = 31 credits | Avatar V (Photo Look & Video Look) 1 minute = 48 credits"
+    }
+   ]
+  },
+  {
+   "id": "EV-ai-video-cost-per-minute-08",
+   "claim": "HeyGen's credit-plan article states that monthly subscribers' unused credits roll over for one additional billing cycle, annual subscribers receive a monthly allocation that accumulates until the annual renewal date, and unused credits do not roll over when a paid plan is cancelled to Free. In this article one-time credit packs are for Business ($0.05 each, in blocks of 100 for $5); Creator does not support them and Pro 'does not use one-time credit packs'.",
+   "source_url": "https://help.heygen.com/en/articles/15125761-heygen-credit-based-pricing-plans-subscriptions-explained",
+   "source_date": "2026-10 (article marked 'Updated over 2 weeks ago' on 2026-11-16)",
+   "quote": "Monthly subscribers: Unused credits roll over for one additional billing cycle. ... Annual subscribers: Annual subscription does not provide all the annual credits at once. You receive monthly allocation of your credits ... Unused credits accumulate until your annual renewal date. If you cancel your paid plan and move to Free, unused credits do not roll over.",
+   "platform": "help.heygen.com (vendor primary source, self-interested; fetched 2026-11-16)",
+   "target_slug": "/guides/ai-video-cost-per-minute",
+   "collected_at": "2026-11-16",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "ai-video-cost-per-minute-2026-11-16",
+   "screening": "included",
+   "label": "vendor-claim",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": false,
+   "coding": {
+    "tool": "HeyGen",
+    "aspect": "rollover rules and extra-credit purchase",
+    "stance": "neutral",
+    "plan_tier_if_stated": "monthly, annual, Business",
+    "item_date": "2026-10-28"
+   },
+   "coding_status": "dual-independent coding done 2026-11-16; resolved by mep-resolver",
+   "quote_supplementary": "Same article: \"Creator does not support one-time credit purchases.\" and \"Extra credits cost $0.05 per credit and are purchased in blocks of 100 credits for $5\" (Business only). Pricing-page FAQ, same day: \"Monthly subscribers' unused credits roll over for one more month. Annual subscribers' credits accumulate until their annual renewal date.\"",
+   "related_prior_entries": [
+    "EV-how-to-make-an-ai-avatar-video-21",
+    "EV-heygen-review-10",
+    "EV-heygen-review-16"
+   ],
+   "resolved_by": "mep-resolver",
+   "coder_codes": {
+    "A": {
+     "label": "vendor-claim",
+     "stance": "neutral",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "claim_match": "partial"
+    },
+    "B": {
+     "label": "vendor-claim",
+     "stance": "mixed",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "support_level": "partial"
+    }
+   },
+   "citable": true,
+   "resolution_note": "neutral: plan rules (rollover, monthly allocation, who can buy credits) stated by the vendor; a rule list with both favourable and unfavourable parts is a rule list, the same call the resolver made on earlier shards. Re-opened by curl 2026-11-16 (HTTP 200): all quote parts verbatim; lastUpdatedDate 2026-10-28.",
+   "claim_narrowed": "HeyGen's credit-plan article says monthly subscribers' unused credits roll over for one additional billing cycle, annual subscribers receive credits month by month until renewal, and unused credits do not roll over on cancelling to Free. In this article one-time credit packs are for Business ($0.05 a credit, blocks of 100 for $5); Creator does not support them and Pro 'does not use one-time credit packs'.",
+   "coder_notes": {
+    "A": "All sentences found today, including 'Creator does not support one-time credit purchases'. 'Only Business' is the entry's reading: the article states the $0.05 price in the Business context and says Creator cannot buy; I did not see a sentence about Pro one-time purchases, so the narrowest wording is 'Creator cannot; Business can at $0.05'.",
+    "B": "The help article says 'Business users can purchase additional credits'; the pricing-page FAQ begins 'Creator and Pro users c...' on getting more credits, so 'only Business' should be worded as what this article states, not as an absolute."
+   },
+   "writer_restrictions": [
+    "WR-08"
+   ],
+   "recaptures": [
+    {
+     "recaptured_at": "2026-11-16",
+     "collector": "mep-resolver",
+     "status": "ok",
+     "method": "curl, read-only",
+     "source_url": "https://help.heygen.com/en/articles/15125761-heygen-credit-based-pricing-plans-subscriptions-explained",
+     "matched": true,
+     "claim": "Article also says 'Pro does not use one-time credit packs', so one-time packs are Business only in this article. Pricing-page FAQ, same day: 'Creator and Pro users can upgrade to a higher plan or tier for more credits. Business users can purchase one-time credit packs or enable auto-reload.'",
+     "quote": "Pro users can get more credits by upgrading to a higher Pro tier. Pro does not use one-time credit packs."
+    },
+    {
+     "recaptured_at": "2026-11-19",
+     "collector": "mimo-auto-content 2026-11-19 publish",
+     "status": "ok",
+     "method": "browser render",
+     "source_url": "https://help.heygen.com/en/articles/15125761-heygen-credit-based-pricing-plans-subscriptions-explained",
+     "matched": true,
+     "claim": "Publish-day re-read 2026-11-19: MATCH on rollover (monthly: one additional billing cycle), Creator 'does not support one-time credit purchases', Pro 'does not use one-time credit packs', Business extra credits $0.05 each in blocks of 100 for $5.",
+     "quote": "Monthly subscribers: Unused credits roll over for one additional billing cycle. ... Extra credits cost $0.05 per credit and are purchased in blocks of 100 credits for $5."
+    }
+   ]
+  },
+  {
+   "id": "EV-ai-video-cost-per-minute-09",
+   "claim": "HeyGen's how-to-use-credits article warns that credit rates and plan limits can differ by account creation date and region, and says the credit cost shown in the product before generating is the cost that will be charged.",
+   "source_url": "https://help.heygen.com/en/articles/15126059-how-to-use-credits-on-heygen",
+   "source_date": "2026-10 (article marked 'Updated over 2 weeks ago' on 2026-11-16)",
+   "quote": "Some accounts may see different credit costs or limits for certain features depending on account creation date and region. The credit cost shown in HeyGen before you generate is always the cost that will be charged for that generation, so check it in-product if you want to confirm your exact rate.",
+   "platform": "help.heygen.com (vendor primary source, self-interested; fetched 2026-11-16)",
+   "target_slug": "/guides/ai-video-cost-per-minute",
+   "collected_at": "2026-11-16",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "ai-video-cost-per-minute-2026-11-16",
+   "screening": "included",
+   "label": "vendor-claim",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "HeyGen",
+    "aspect": "rates can differ by account creation date and region",
+    "stance": "neutral",
+    "plan_tier_if_stated": "all plans",
+    "item_date": "2026-10-29"
+   },
+   "coding_status": "dual-independent coding done 2026-11-16; resolved by mep-resolver",
+   "honesty_notes": [
+    "This is the caveat every HeyGen row needs: the table figures are the vendor's 'standard rates that apply to most accounts', not a guarantee for every account."
+   ],
+   "related_prior_entries": [
+    "EV-how-to-make-an-ai-avatar-video-22"
+   ],
+   "resolved_by": "mep-resolver",
+   "coder_codes": {
+    "A": {
+     "label": "vendor-claim",
+     "stance": "neutral",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "claim_match": "match"
+    },
+    "B": {
+     "label": "vendor-claim",
+     "stance": "neutral",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "support_level": "full"
+    }
+   },
+   "citable": true,
+   "coder_notes": {
+    "A": "Quote found verbatim today, with the 16 and 31 credits-per-minute lines repeated in the same article.",
+    "B": ""
+   }
+  },
+  {
+   "id": "EV-ai-video-cost-per-minute-10",
+   "claim": "HeyGen's processing-times article states that a video cancelled mid-way or failed is not charged any credits.",
+   "source_url": "https://help.heygen.com/en/articles/9655503-heygen-video-processing-times",
+   "source_date": "2026-10 (article marked 'Updated over 2 weeks ago' on 2026-11-16; the 2026-10-28 capture recorded 2026-06-18)",
+   "quote": "To clarify- if a video is cancelled mid-way or failed- you will not be charged any Credits under any circumstances.",
+   "platform": "help.heygen.com (vendor primary source, self-interested; fetched 2026-11-16)",
+   "target_slug": "/guides/ai-video-cost-per-minute",
+   "collected_at": "2026-11-16",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "ai-video-cost-per-minute-2026-11-16",
+   "screening": "included",
+   "label": "vendor-claim",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "HeyGen",
+    "aspect": "failed or cancelled video is not charged",
+    "stance": "positive",
+    "plan_tier_if_stated": "all plans",
+    "item_date": "2026-10-29"
+   },
+   "coding_status": "dual-independent coding done 2026-11-16; resolved by mep-resolver",
+   "related_prior_entries": [
+    "EV-how-to-make-an-ai-avatar-video-24"
+   ],
+   "resolved_by": "mep-resolver",
+   "coder_codes": {
+    "A": {
+     "label": "vendor-claim",
+     "stance": "positive",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "claim_match": "match"
+    },
+    "B": {
+     "label": "vendor-claim",
+     "stance": "positive",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "support_level": "full"
+    }
+   },
+   "citable": true,
+   "coder_notes": {
+    "A": "Quote found verbatim today; article marked 'Updated over 2 weeks ago'. It is a vendor promise, not an observed outcome.",
+    "B": "A policy statement by the vendor; no user report in this set tests it."
+   }
+  },
+  {
+   "id": "EV-ai-video-cost-per-minute-11",
+   "claim": "HeyGen's Avatar and Voice FAQ (marked 'Updated this week' on 2026-11-16) states that changing an A-Roll scene requires the scene to be re-rendered and that the re-render consumes credits.",
+   "source_url": "https://help.heygen.com/en/articles/15544929-avatar-voice-faq-troubleshooting-best-practices-and-credits",
+   "source_date": "2026-11 (article marked 'Updated this week' on 2026-11-16)",
+   "quote": "Making changes to A-Roll scenes requires the scene to be re-rendered, which consumes credits.",
+   "platform": "help.heygen.com (vendor primary source, self-interested; fetched 2026-11-16)",
+   "target_slug": "/guides/ai-video-cost-per-minute",
+   "collected_at": "2026-11-16",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "ai-video-cost-per-minute-2026-11-16",
+   "screening": "included",
+   "label": "vendor-claim",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "HeyGen",
+    "aspect": "re-render after an edit consumes credits",
+    "stance": "negative",
+    "plan_tier_if_stated": "all plans",
+    "item_date": "2026-11-10"
+   },
+   "coding_status": "dual-independent coding done 2026-11-16; resolved by mep-resolver",
+   "quote_supplementary": "Same article: \"Because each fix changes the avatar result, preview before re-rendering whenever possible to avoid unnecessary credit usage.\"",
+   "honesty_notes": [
+    "Together with the previous entry this gives HeyGen's own split: a failed or cancelled render is not charged; a re-render after an edit is."
+   ],
+   "related_prior_entries": [
+    "EV-how-to-make-an-ai-avatar-video-23"
+   ],
+   "resolved_by": "mep-resolver",
+   "coder_codes": {
+    "A": {
+     "label": "vendor-claim",
+     "stance": "negative",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "claim_match": "match"
+    },
+    "B": {
+     "label": "vendor-claim",
+     "stance": "negative",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "support_level": "full"
+    }
+   },
+   "citable": true,
+   "coder_notes": {
+    "A": "Both sentences found verbatim today; article marked 'Updated this week'. Stance is 'negative' only in the sense that it is a cost to the user; a second coder may reasonably code it neutral.",
+    "B": "The article does not say how many credits a re-render costs."
+   }
+  },
+  {
+   "id": "EV-ai-video-cost-per-minute-12",
+   "claim": "Runway's pricing page, read live on 2026-11-16, lists Free with 125 one-time credits, Standard at $15 a month ($12 billed annually) with 625 credits a month, Pro at $35 ($28 annually) with 2,250 credits and Max at $95 ($76 annually) with 9,500 credits. The page itself converts credits to footage: 625 credits equal 52 seconds of Gen-4.5 or 104 seconds of Gen-4 Turbo.",
+   "source_url": "https://runway.com/pricing",
+   "source_date": "2026-11-16",
+   "quote": "Standard Billed annually. Save $36/year. For curious creators trying AI video $15 $12 /month 625 credits /mo 625 credits monthly = 52s of Gen-4.5, 104s of Gen-4 Turbo, or 78 Gen-4 Images (1080p).",
+   "platform": "runway.com (vendor primary source, self-interested; page HTML fetched 2026-11-16)",
+   "target_slug": "/guides/ai-video-cost-per-minute",
+   "collected_at": "2026-11-16",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "ai-video-cost-per-minute-2026-11-16",
+   "screening": "included",
+   "label": "vendor-claim",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "Runway",
+    "aspect": "plan prices, credits, and the vendor's own credits-to-seconds conversion",
+    "stance": "neutral",
+    "plan_tier_if_stated": "Free, Standard, Pro, Max",
+    "item_date": "2026-11-16"
+   },
+   "coding_status": "dual-independent coding done 2026-11-16; resolved by mep-resolver",
+   "quote_supplementary": "Same page: \"Free ... $0 /month 125 credits 125 one-time credits to explore Runway's AI tools.\"; \"Pro Billed annually. Save $84/year. ... $35 $28 /month 2250 credits /mo 2250 credits monthly = 187s of Gen-4.5, 375s of Gen-4 Turbo\"; \"Max Credits roll over 1 mo. Billed annually. Save $228/year. ... $95 $76 /month 9500 credits /mo 9500 credits = 791s of Gen-4.5, 791s of Gen-4, 1900s of Gen-4 Turbo\". Model table: \"Gen-4.5 60 credits/5s ... Aleph 2.0 140 credits/5s ... Kling 4.0 1080p 118 credits/5s 89 credits/5s 25% off 25% off Kling 4.0 generations until November 30. ... Seedance 2.0 Pro 1080p 160 credits/4s\". Yearly table: \"Standard $12 /month 7,500 credits/year ... Pro $28 /month 27,000 credits/year ... Max $76 /month 114,000 credits/year\".",
+   "honesty_notes": [
+    "Plan prices and credits are unchanged against the 2026-08-29 and 2026-10-31 captures (EV-runway-review-01, EV-best-ai-video-generators-01).",
+    "The vendor's own '60 credits/5s' and '52s of Gen-4.5 per 625 credits' both give 12 credits per second for Gen-4.5 on subscription plans, so the per-second rate no longer rests on the developer-API document alone.",
+    "Runway sells Kling 4.0 inside its own plans at 118 credits per 5 seconds at 1080p (89 until 2026-11-30 under a dated promotion). That is Runway's price for Kling footage, not Kling's own plan price; keep the two apart in the table.",
+    "Only Max is marked 'Credits roll over 1 mo.' on the plan cards.",
+    "RESOLVER 2026-11-16, CORRECTED DERIVATION (Mimo arithmetic, label as calculated, full allowance used). Gen-4.5 at 12 credits per second: Standard $15 / 52 s = $0.288 ($12 annual = $0.231), Pro $35 / 187 s = $0.187 ($28 = $0.150), Max $95 / 791 s = $0.120 ($76 = $0.096). Gen-4 Turbo has two vendor bases. Plan card seconds: Standard $15 / 104 s = $0.144 ($12 = $0.115), Pro $35 / 375 s = $0.093 ($28 = $0.075), Max $95 / 1,900 s = $0.050 ($76 = $0.040). Rate table at 5 credits per second: Standard $15 / 125 s = $0.120 ($12 = $0.096), Pro $35 / 450 s = $0.078 ($28 = $0.062), Max the same as the card.",
+    "DOCUMENTED VENDOR INCONSISTENCY: the Standard and Pro cards imply 6 credits per second for Gen-4 Turbo (625 / 104, 2,250 / 375); Runway's rate table (academy.runwayml.com/models-pricing, embedded in the help article), its API document and the Max card say 5. See _meta.vendor_inconsistencies."
+   ],
+   "related_prior_entries": [
+    "EV-runway-review-01",
+    "EV-best-ai-video-generators-01",
+    "EV-kling-ai-vs-runway-01",
+    "EV-kling-ai-vs-runway-06"
+   ],
+   "resolved_by": "mep-resolver",
+   "coder_codes": {
+    "A": {
+     "label": "vendor-claim",
+     "stance": "neutral",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "claim_match": "match"
+    },
+    "B": {
+     "label": "vendor-claim",
+     "stance": "neutral",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "support_level": "partial"
+    }
+   },
+   "citable": true,
+   "claim_narrowed": "On 2026-11-16 Runway's pricing page lists Standard at $15 a month ($12 billed annually) with 625 credits, which the card equates to 52 seconds of Gen-4.5 or 104 seconds of Gen-4 Turbo. The card's Gen-4 Turbo seconds do not match the 5 credits per second in Runway's own rate table (documented vendor inconsistency).",
+   "coder_notes": {
+    "A": "Every plan figure, the model table (Gen-4.5 60 credits/5s, Aleph 2.0 140/5s, Kling 4.0 1080p 118/5s, 89 until November 30, Seedance 2.0 Pro 160/4s) and the yearly table found today. Gen-4.5 arithmetic holds (625/12 = 52; 2,250/12 = 187; 9,500/12 = 791). NUMBER THAT DIFFERS FROM THE SHARD'S DERIVATION: the vendor's own Gen-4 Turbo seconds are not consistent with 5 credits per second on two of three plans: 625/104 = 6.0 and 2,250/375 = 6.0, while 9,500/1,900 = 5.0. The curator's Gen-4 Turbo dollar figures ($0.12, $0.096, $0.078, $0.062) use 5 credits per second (developer document). On the plan cards' own seconds Standard is $15/104 = $0.144 a second ($0.115 annual) and Pro $35/375 = $0.093 ($0.075 annual); Max agrees at $0.05 / $0.04. A Gen-4 Turbo row must state which basis it uses, or use the card's printed seconds. Gen-4.5 figures are unaffected.",
+    "B": "The page prints 2250 and 9500 without thousands separators. 625 / 12 = 52.08 and 625 / 5 = 125, so the page's '104s of Gen-4 Turbo' implies about 6 credits a second in the app, not the 5 a second of the developer document in entry 13; the two must not be mixed."
+   },
+   "writer_restrictions": [
+    "WR-01",
+    "WR-02"
+   ],
+   "recaptures": [
+    {
+     "recaptured_at": "2026-11-16",
+     "collector": "mep-resolver",
+     "status": "ok",
+     "method": "curl, desktop Chrome user agent, read-only (runwayml.com/pricing redirects to runway.com/pricing)",
+     "source_url": "https://runway.com/pricing",
+     "matched": true,
+     "claim": "Plan cards re-read: Standard 104 s, Pro 375 s, Max 1,900 s of Gen-4 Turbo for 625, 2,250 and 9,500 credits. Unrendered strings in the page data say 125 s and 450 s for Standard and Pro.",
+     "quote": "625 credits monthly = 52s of Gen-4.5, 104s of Gen-4 Turbo, or 78 Gen-4 Images (1080p). ... 2250 credits monthly = 187s of Gen-4.5, 375s of Gen-4 Turbo ... 9500 credits = 791s of Gen-4.5, 791s of Gen-4, 1900s of Gen-4 Turbo"
+    },
+    {
+     "recaptured_at": "2026-11-19",
+     "collector": "mimo-auto-content 2026-11-19 publish",
+     "status": "ok",
+     "method": "browser render",
+     "source_url": "https://runway.com/pricing",
+     "matched": true,
+     "claim": "Publish-day re-read 2026-11-19: MATCH. Free 125 one-time credits; Standard $15 ($12 billed annually) 625 credits; Pro $35 ($28) 2,250; Max $95 ($76) 9,500; Gen-4.5 60 credits per 5 s; cards still print 52 s of Gen-4.5 and 104 s of Gen-4 Turbo on Standard, 187 s and 375 s on Pro, 1,900 s of Gen-4 Turbo on Max. Kling 4.0 promotion still shown as ending 30 November.",
+     "quote": "625 credits monthly = 52s of Gen-4.5, 104s of Gen-4 Turbo ... 2250 credits monthly = 187s of Gen-4.5, 375s of Gen-4 Turbo ... Gen-4.5 60 credits/5s"
+    }
+   ],
+   "vendor_inconsistency": "runway-gen4-turbo-credits-per-second"
+  },
+  {
+   "id": "EV-ai-video-cost-per-minute-13",
+   "claim": "Runway's developer pricing document, read 2026-11-16, lists Gen-4.5 at 12 credits per second, Gen-4 Turbo at 5, Act-Two at 5 and Aleph 2.0 at 28 credits per second, with API credits sold at $0.01 each.",
+   "source_url": "https://docs.dev.runwayml.com/guides/pricing/",
+   "source_date": "2026-11-16",
+   "quote": "Each generation you run on Runway Dev costs credits. Credits can be purchased for $0.01 per credit in the developer portal for a project.",
+   "platform": "docs.dev.runwayml.com (vendor primary source, self-interested; fetched 2026-11-16)",
+   "target_slug": "/guides/ai-video-cost-per-minute",
+   "collected_at": "2026-11-16",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "ai-video-cost-per-minute-2026-11-16",
+   "screening": "included",
+   "label": "vendor-claim",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "Runway",
+    "aspect": "developer API credit rates and $0.01 credit price",
+    "stance": "neutral",
+    "plan_tier_if_stated": "API (separate wallet)",
+    "item_date": "2026-11-16"
+   },
+   "coding_status": "dual-independent coding done 2026-11-16; resolved by mep-resolver",
+   "quote_supplementary": "Rate table rows: \"aleph2 28 credits per second (56 credit minimum per generation) gen4.5 12 credits per second gen4_turbo 5 credits per second act_two 5 credits per second veo3.1 (audio) 40 credits per second\". Kling through the Runway API: \"kling3.0_standard (no audio) 9 credits per second ... kling3.0_pro (audio) 17 credits per second ... kling3.0_4k 43 credits per second\".",
+   "honesty_notes": [
+    "API credits ($0.01 each) are a separate wallet from subscription credits (see the help-centre entry). The subscription dollar-per-second figures must be computed from plan price and plan credits, not from $0.01.",
+    "Gen-4.5 at 12 and Gen-4 Turbo at 5 credits per second match the 2026-08-29 capture (EV-runway-review-06). A third-party figure of 25 credits per second for Gen-4.5 (EV-runway-review-07, and repeated in a vendor blog read this run) is contradicted by Runway's own pages."
+   ],
+   "related_prior_entries": [
+    "EV-runway-review-06",
+    "EV-runway-review-07"
+   ],
+   "resolved_by": "mep-resolver",
+   "coder_codes": {
+    "A": {
+     "label": "vendor-claim",
+     "stance": "neutral",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "claim_match": "match"
+    },
+    "B": {
+     "label": "vendor-claim",
+     "stance": "neutral",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "support_level": "partial"
+    }
+   },
+   "citable": true,
+   "claim_narrowed": "Runway's developer document prices API credits at $0.01 each and lists Gen-4.5 at 12 credits per second.",
+   "coder_notes": {
+    "A": "Quote and all rows found today, including veo3.1 (audio) 40 and the Kling rows 9, 17 and 43. API credits are a separate product from plan credits (entry 14 says so), so $0.01 must not be used for subscription arithmetic. The rows read here use the identifiers aleph2 and act_two rather than the product names.",
+    "B": "The page writes the model as 'aleph2', not 'Aleph 2.0', and gives it a 56-credit minimum. API credits are separate from app plan credits (the help article in entry 14 says so), so $0.01 a credit is an API price only."
+   },
+   "writer_restrictions": [
+    "WR-01",
+    "WR-02"
+   ],
+   "recaptures": [
+    {
+     "recaptured_at": "2026-11-16",
+     "collector": "mep-resolver",
+     "status": "ok",
+     "method": "curl, read-only",
+     "source_url": "https://docs.dev.runwayml.com/guides/pricing/",
+     "matched": true,
+     "claim": "API document re-read: gen4_turbo 5 credits per second, gen4.5 12, $0.01 per API credit.",
+     "quote": "gen4.5 12 credits per second gen4_turbo 5 credits per second"
+    }
+   ],
+   "vendor_inconsistency": "runway-gen4-turbo-credits-per-second"
+  },
+  {
+   "id": "EV-ai-video-cost-per-minute-14",
+   "claim": "Runway's help-centre credits article states that Gen-4.5 uses 12 credits per second of generated video (60 or 120 credits for a 5 or 10 second generation), that monthly credits on Standard, Pro and Unlimited expire on the billing date, that Max and Team may roll over up to one month of unused credits, and that purchased credits and the Free plan's one-time 125 credits do not expire.",
+   "source_url": "https://help.runwayml.com/hc/en-us/articles/15124877443219-How-do-credits-work",
+   "source_date": "2026-11-16 (read live; the article text shows no date)",
+   "quote": "Standard, Pro and Unlimited: Monthly credits expire on your billing date. Max: Up to one month of unused credits may roll over to the following month. Team: Up to one month of unused pooled credits may roll over to the following month. Purchased credits: Do not expire. Free plan (one-time deposit): Does not expire.",
+   "platform": "help.runwayml.com (vendor primary source, self-interested; read in a browser 2026-11-16, plain fetch returned HTTP 403)",
+   "target_slug": "/guides/ai-video-cost-per-minute",
+   "collected_at": "2026-11-16",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "ai-video-cost-per-minute-2026-11-16",
+   "screening": "included",
+   "label": "vendor-claim",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": false,
+   "coding": {
+    "tool": "Runway",
+    "aspect": "12 credits per second for Gen-4.5; expiry and rollover by plan",
+    "stance": "neutral",
+    "plan_tier_if_stated": "Free, Standard, Pro, Unlimited, Max, Team",
+    "item_date": "2026-11-16 (read live; no date on the page)"
+   },
+   "coding_status": "dual-independent coding done 2026-11-16; resolved by mep-resolver",
+   "quote_supplementary": "Same article: \"For example, Gen-4.5 uses 12 credits per second of generated video. This means your total cost per generation would be either 60 or 120 credits, depending on if you chose a 5 or 10 second duration.\" and \"The minimum amount of credits users may purchase is 1000. Credit purchases are not available to Free plan users.\" and \"Credits or plans purchased in Runway are completely separate from credits purchased for the Runway API.\"",
+   "honesty_notes": [
+    "The price of a top-up credit pack is not stated in the article and was not captured this run."
+   ],
+   "related_prior_entries": [
+    "EV-runway-review-01",
+    "EV-runway-review-06"
+   ],
+   "resolved_by": "mep-resolver",
+   "coder_codes": {
+    "A": {
+     "label": "vendor-claim",
+     "stance": "neutral",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "claim_match": "match"
+    },
+    "B": {
+     "label": "vendor-claim",
+     "stance": "mixed",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "support_level": "partial"
+    }
+   },
+   "citable": true,
+   "resolution_note": "neutral: a rate (12 credits a second) and expiry and rollover rules listed by plan. Re-opened in a browser 2026-11-16 (plain fetch 403): every quoted sentence is on the page.",
+   "claim_narrowed": "Runway says monthly credits on Standard, Pro and Unlimited expire on the billing date, Max and Team may roll over up to one month, and purchased credits do not expire.",
+   "coder_notes": {
+    "A": "Plain fetch returned 403; read in a browser today and every quoted sentence is on the page, including the 1,000-credit minimum purchase and the separation from API credits. The article's rate table did not come through as text in this read, so no Gen-4 Turbo rate was taken from it.",
+    "B": "Datable only by read date. The article also says the minimum credit purchase is 1000 and Free users cannot buy credits."
+   },
+   "writer_restrictions": [
+    "WR-01",
+    "WR-02"
+   ],
+   "recaptures": [
+    {
+     "recaptured_at": "2026-11-16",
+     "collector": "mep-resolver",
+     "status": "ok",
+     "method": "browser, signed out, read-only (plain fetch 403)",
+     "source_url": "https://help.runwayml.com/hc/en-us/articles/15124877443219-How-do-credits-work",
+     "matched": true,
+     "claim": "Article re-read: all quoted sentences present. Its own text gives no Gen-4 Turbo figure; the rate table is an embedded frame from academy.runwayml.com/models-pricing.",
+     "quote": "For example, Gen-4.5 uses 12 credits per second of generated video."
+    },
+    {
+     "recaptured_at": "2026-11-16",
+     "collector": "mep-resolver",
+     "status": "ok",
+     "method": "browser, signed out, read-only; the frame embedded in the help article opened at its own address",
+     "source_url": "https://academy.runwayml.com/models-pricing",
+     "matched": null,
+     "claim": "Runway's app rate table lists Gen-4 Video Turbo at 5 credits per second, Gen-4.5 at 12 and Gen-4 Video at 12. New reading, not in the curator's capture.",
+     "quote": "Gen-4 Video Turbo Budget-friendly video generation Image to Video 5/sec"
+    }
+   ],
+   "vendor_inconsistency": "runway-gen4-turbo-credits-per-second"
+  },
+  {
+   "id": "EV-ai-video-cost-per-minute-15",
+   "claim": "Runway's help centre states that credits are returned automatically only when a generation ends in a generation error; a generation that completes is charged even if the result does not match the prompt or is otherwise unsatisfactory.",
+   "source_url": "https://help.runwayml.com/hc/en-us/articles/34266159290003-Can-I-have-credits-refunded",
+   "source_date": "2026-11-16 (read live; the article text shows no date)",
+   "quote": "Credits are only automatically returned when a generation ends in a generation error. If a generation completes — even if the result doesn't match your prompt, doesn't preserve likeness, or is otherwise unsatisfactory — credits are consumed and cannot be automatically reinstated. Credits power the generation process itself, not the quality of the output.",
+   "platform": "help.runwayml.com (vendor primary source, self-interested; read in a browser 2026-11-16, plain fetch returned HTTP 403)",
+   "target_slug": "/guides/ai-video-cost-per-minute",
+   "collected_at": "2026-11-16",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "ai-video-cost-per-minute-2026-11-16",
+   "screening": "included",
+   "label": "vendor-claim",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "Runway",
+    "aspect": "credits returned only on a generation error; completed but unsatisfactory output is charged",
+    "stance": "negative",
+    "plan_tier_if_stated": "all plans",
+    "item_date": "2026-11-16 (read live; no date on the page)"
+   },
+   "coding_status": "dual-independent coding done 2026-11-16; resolved by mep-resolver",
+   "quote_supplementary": "Same article: \"Prompting is an iterative process — it's completely normal to refine your approach as you go.\"",
+   "honesty_notes": [
+    "This is the clearest vendor statement of the retake rule in the set: a take the reader discards is paid for; a generation error is not."
+   ],
+   "related_prior_entries": [
+    "EV-runway-review-17"
+   ],
+   "resolved_by": "mep-resolver",
+   "coder_codes": {
+    "A": {
+     "label": "vendor-claim",
+     "stance": "negative",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "claim_match": "match"
+    },
+    "B": {
+     "label": "vendor-claim",
+     "stance": "negative",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "support_level": "full"
+    }
+   },
+   "citable": true,
+   "coder_notes": {
+    "A": "Plain fetch returned 403; read in a browser today, quote verbatim (the page uses a curly apostrophe). The page adds that this also covers generations started through an AI assistant via Runway MCP.",
+    "B": "Datable only by read date."
+   }
+  },
+  {
+   "id": "EV-ai-video-cost-per-minute-16",
+   "claim": "Hailuo's subscribe page, read live on 2026-11-16 in its default yearly view, lists Standard at $8.40 a month ($100.80 billed yearly) with 1,000 credits monthly, Pro at $30.40 ($364.80 yearly) with 4,500, Master at $71.20 ($854.40 yearly) with 10,500 and Max at $184.00 ($2,208.00 yearly) with 27,000. The vendor prints a per-second price for MiniMax H3 on each card: on Standard $0.101 per second at 2K and $0.059 at 768p; on Pro, Master and Max $0.081 at 2K and $0.047 at 768p.",
+   "source_url": "https://hailuoai.video/subscribe",
+   "source_date": "2026-11-16",
+   "quote": "Standard $14.99 44% OFF $ 8.40 /month $100.80 billed yearly Subscribe 1000 credits monthly MiniMax H3(2K), $0.101/sec ~84s Video Generation MiniMax H3(768P), $0.059/sec ~143s Video Generation MiniMax H3 Max(768P), $0.059/sec ~143s Video Generation MiniMax H3 Max(480P), $0.034/sec ~250s Video Generation",
+   "platform": "hailuoai.video (vendor primary source, self-interested; plan grid read in a browser 2026-11-16, signed out, before the page redirected to the homepage)",
+   "target_slug": "/guides/ai-video-cost-per-minute",
+   "collected_at": "2026-11-16",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "ai-video-cost-per-minute-2026-11-16",
+   "screening": "included",
+   "label": "vendor-claim",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "Hailuo",
+    "aspect": "yearly-view plan prices, credits and the vendor's printed per-second prices for MiniMax H3",
+    "stance": "neutral",
+    "plan_tier_if_stated": "Standard, Pro, Master, Max (yearly billing)",
+    "item_date": "2026-11-16"
+   },
+   "coding_status": "dual-independent coding done 2026-11-16; resolved by mep-resolver",
+   "quote_supplementary": "Same grid: \"Pro $54.99 45% OFF $ 30.40 /month $364.80 billed yearly Subscribe 4500 credits monthly MiniMax H3(2K), $0.081/sec ~375s Video Generation MiniMax H3(768P), $0.047/sec ~643s Video Generation\"; \"Master $119.99 41% OFF $ 71.20 /month $854.40 billed yearly Subscribe 10500 credits monthly\"; \"Max $ 184.00 /month $2208.00 billed yearly Subscribe 27000 credits monthly MiniMax H3(2K), $0.081/sec ~2250s Video Generation\"; \"Free $ 0.00 /month ... 0 credits monthly One-time free trial credits Hailuo models only\". Monthly-billing labels present in the page source (not in the rendered view): Standard \"MiniMax H3(2K), $0.126/sec\" and \"MiniMax H3(768P), $0.074/sec\"; Pro and Master \"MiniMax H3(2K), $0.102/sec\" and \"$0.059/sec\" at 768p; Max \"$0.096/sec\" and \"$0.056/sec\".",
+   "honesty_notes": [
+    "Unchanged against the 2026-11-08 and 2026-11-13 captures (EV-hailuo-ai-review-01, -02, -04).",
+    "The monthly-billing plan PRICES were again not capturable: the subscribe page redirects a signed-out visitor to the homepage within about two seconds. Only the monthly per-second labels in the page source are evidenced. The struck figures ($14.99, $54.99, $119.99) are the pre-discount price shown in the yearly view, not a confirmed monthly-billing price; the header 'From $9.99 /mo' is not reconciled with any card.",
+    "The per-second figures are the vendor's own, so the Hailuo H3 rows need no Mimo arithmetic for the best case. A 60-second figure is 60 times the per-second rate, labelled as calculated.",
+    "The grid's seconds match 12 credits per second at 2K (1,000 credits = about 84 s) and 7 at 768p (about 143 s); those per-second credit rates are inferred, not printed."
+   ],
+   "related_prior_entries": [
+    "EV-hailuo-ai-review-01",
+    "EV-hailuo-ai-review-02",
+    "EV-hailuo-ai-review-04"
+   ],
+   "resolved_by": "mep-resolver",
+   "coder_codes": {
+    "A": {
+     "label": "vendor-claim",
+     "stance": "neutral",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "claim_match": "match"
+    },
+    "B": {
+     "label": "vendor-claim",
+     "stance": "neutral",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "support_level": "partial"
+    }
+   },
+   "citable": true,
+   "claim_narrowed": "In its yearly view on 2026-11-16 Hailuo listed Standard at $8.40 a month ($100.80 a year) with 1,000 credits and printed $0.101 per second for MiniMax H3 at 2K on that plan.",
+   "coder_notes": {
+    "A": "Rendered grid captured in a browser before the page redirected a signed-out visitor to the homepage; every figure in the claim and quote is in that text. The monthly-billing per-second labels ($0.126, $0.074, $0.102, $0.096, $0.056) are in the page source only; monthly plan prices were not seen, so the claim must stay a yearly-billing claim. 1,000 credits = about 84 s at 2K implies about 12 credits a second (inferred, not printed).",
+    "B": "Yearly view only; this pass did not read the monthly view. The page prints '$2208.00' without a comma. The page source still holds an older FAQ string ('Standard Plan Price: $14.99/month, limited-time offer at $7.99') that disagrees with the grid; the grid is what a visitor sees. The header on the homepage shows 'From $9.99 /mo'."
+   },
+   "writer_restrictions": [
+    "WR-07"
+   ],
+   "recaptures": [
+    {
+     "recaptured_at": "2026-11-19",
+     "collector": "mimo-auto-content 2026-11-19 publish",
+     "status": "partial",
+     "method": "curl of the page source + two browser attempts",
+     "source_url": "https://hailuoai.video/subscribe",
+     "matched": null,
+     "claim": "Publish-day re-read 2026-11-19: PARTIAL. In two browsers the subscribe page sent a signed-out visitor to the homepage, so the plan cards ($8.40 / $30.40 a month on yearly billing) could not be re-read and stand as captured 2026-11-16. The page source still carries the H3 per-second labels: Standard yearly $0.101 (2K) and $0.059 (768P), Pro yearly $0.081 and $0.047. The source also carries monthly-billing labels (Standard $0.126 and $0.074), not used on the page.",
+     "quote": "h3_video_duration_label_std_year_2K: MiniMax H3(2K), $0.101/sec ~84s Video Generation ; std_year_768: MiniMax H3(768P), $0.059/sec ~143s ; pro_year_2K: $0.081/sec ~375s ; pro_year_768: $0.047/sec ~643s"
+    }
+   ]
+  },
+  {
+   "id": "EV-ai-video-cost-per-minute-17",
+   "claim": "Hailuo's paid-plan FAQ, read from the subscribe page source on 2026-11-16, lists credits per clip for the older models (Hailuo 2.3 and 2.0: 25 credits for a 6-second 768p clip, 80 for 6 seconds at 1080p, 50 for 10 seconds at 768p; Hailuo 2.3-Fast: 15, 50 and 30) and states that failed generations are not charged and that refunds are not supported.",
+   "source_url": "https://hailuoai.video/subscribe",
+   "source_date": "2026-11-16",
+   "quote": "Hailuo 2.3 / Hailuo 2.0 6s, 768p: 25 Credits 6s, 1080p: 80 Credits 10s, 768p: 50 Credits Hailuo 2.3-Fast 6s, 768p: 15 Credits 6s, 1080p: 50 Credits 10s, 768p: 30 Credits",
+   "platform": "hailuoai.video (vendor primary source, self-interested; FAQ answer text read from the page source 2026-11-16)",
+   "target_slug": "/guides/ai-video-cost-per-minute",
+   "collected_at": "2026-11-16",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "ai-video-cost-per-minute-2026-11-16",
+   "screening": "included",
+   "label": "vendor-claim",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "Hailuo",
+    "aspect": "credits per clip for older models; failed generations not charged; no refunds",
+    "stance": "mixed",
+    "plan_tier_if_stated": "paid plans (FAQ)",
+    "item_date": "2026-11-16"
+   },
+   "coding_status": "dual-independent coding done 2026-11-16; resolved by mep-resolver",
+   "quote_supplementary": "Same FAQ: \"No credits will be charged for failed generations\"; \"Do I get charged if a video failed to generate? ... No. Videos that fail to generate will not cost any credit.\"; \"Unfortunately, refund is not currently supported.\"; \"You can purchase additional credits at anytime. The credits are valid for 1 year.\"; on an upgrade, \"any unused credits from the previous plan will be converted to Purchased Credits and will expire on December 31 of the following year.\" Other models in the same answer: \"Sora 2.0 4s, 720p: 40 Credits 8s, 720p: 80 Credits 12s, 720p: 120 Credits Veo3.1 8s, 720p/1080p: 120 Credits (Regular 320, Promotion)\".",
+   "honesty_notes": [
+    "Unchanged against the 2026-11-08 and 2026-11-13 captures (EV-hailuo-ai-review-03, -07).",
+    "Derived examples for the writer (Mimo arithmetic, label as calculated, Standard yearly at $8.40 for 1,000 credits = $0.0084 per credit): Hailuo 2.3 6 s 768p = 25 credits = $0.21 a clip, $0.035 per second; 6 s 1080p = 80 credits = $0.67, $0.112 per second; 2.3-Fast 6 s 768p = 15 credits = $0.126, $0.021 per second.",
+    "The first FAQ answer on the same page still describes an older ladder (Standard '$14.99/month, limited-time offer at $7.99'; Master 10,000 credits; Ultra $124.99; Max $199.99 with 20,000 credits) that does not match today's plan grid. The grid is the live offer; the FAQ text is stale vendor copy and must not be quoted as current prices.",
+    "ROLLOVER GAP: the rendered FAQ says nothing about unused monthly credits. A string in the page's language bundle reads 'Subscription credits are valid for one month and do not roll over. Additional credits purchased separately have their own expiration date.', but it belongs to a checkout landing flow and is not shown on the subscribe page. Treat rollover on Hailuo as not stated on the pricing page; do not print the bundle string as the page's statement."
+   ],
+   "related_prior_entries": [
+    "EV-hailuo-ai-review-03",
+    "EV-hailuo-ai-review-07"
+   ],
+   "curator_ambiguity_flag": "Whether the unrendered bundle string may support a 'no rollover' cell is a coder/resolver call; curator's default is no.",
+   "resolved_by": "mep-resolver",
+   "coder_codes": {
+    "A": {
+     "label": "vendor-claim",
+     "stance": "mixed",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "claim_match": "match"
+    },
+    "B": {
+     "label": "vendor-claim",
+     "stance": "mixed",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "support_level": "partial"
+    }
+   },
+   "citable": true,
+   "claim_narrowed": "Hailuo's FAQ lists 25 credits for a 6-second 768p clip on Hailuo 2.3 / 2.0 and says failed generations are not charged and refunds are not supported.",
+   "coder_notes": {
+    "A": "All strings are in the page source today as FAQ answer fields (video_faq_answer_2, _3, _7, _8, _9); the FAQ questions render on the page but the answers were not expanded in this pass. Derived figures hold (0.0084 x 25 = $0.21, $0.035 a second; 80 = $0.67, $0.112; 15 = $0.126, $0.021). The first FAQ answer still carries the old ladder ($14.99 / $7.99): stale, not citable as price. The 'do not roll over' sentence exists only under an 'ad_landing_' key in the language bundle; I agree it must not be cited as the pricing page's statement. Rollover on Hailuo: not stated on the page.",
+    "B": "The refund sentence answers 'Can I cancel a paid plan and get a refund?', so it is about subscription refunds, not credit refunds for a poor result. The same answer lists other models (Sora 2.0, Veo3.1) not in the claim."
+   },
+   "writer_restrictions": [
+    "WR-10"
+   ],
+   "recaptures": [
+    {
+     "recaptured_at": "2026-11-19",
+     "collector": "mimo-auto-content 2026-11-19 publish",
+     "status": "ok",
+     "method": "curl of the page source",
+     "source_url": "https://hailuoai.video/subscribe",
+     "matched": true,
+     "claim": "Publish-day re-read 2026-11-19: MATCH in the page source. 2.3 and 2.0 models: 768p 6s = 25 credits, 768p 10s = 50, 1080p 6s = 80; 2.3 Fast: 768p 6s = 15. 'Videos that fail to generate will not cost any credit.'",
+     "quote": "2.3 and 2.0 models: 768p 6s = 25 credits; 768p 10s = 50 credits; 1080p 6s = 80 credits. 2.3 Fast model: 768p 6s = 15 credits ... No. Videos that fail to generate will not cost any credit."
+    }
+   ]
+  },
+  {
+   "id": "EV-ai-video-cost-per-minute-18",
+   "claim": "On the hailuoai.video homepage on 2026-11-16 the signed-out generation panel, set to MiniMax H3 at 2K and 5 seconds, shows a cost of 60 credits beside the Create button.",
+   "source_url": "https://hailuoai.video/",
+   "source_date": "2026-11-16",
+   "quote": "MiniMax H3 Omni Reference 2K 5s 21:9 1 60 Create",
+   "platform": "hailuoai.video (vendor primary source, self-interested; homepage panel read in a browser and by screenshot 2026-11-16, signed out)",
+   "target_slug": "/guides/ai-video-cost-per-minute",
+   "collected_at": "2026-11-16",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "ai-video-cost-per-minute-2026-11-16",
+   "screening": "included",
+   "label": "vendor-claim",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "Hailuo",
+    "aspect": "generation panel shows 60 for MiniMax H3, 2K, 5 seconds",
+    "stance": "neutral",
+    "plan_tier_if_stated": "signed-out default panel",
+    "item_date": "2026-11-16"
+   },
+   "coding_status": "dual-independent coding done 2026-11-16; resolved by mep-resolver",
+   "quote_supplementary": "Homepage banner, same read: \"MiniMax H3 Image is live — 4K in 10 seconds. Download MiniMax Design for 3,000 free credits\". Header: \"From $9.99 /mo\".",
+   "honesty_notes": [
+    "60 credits for 5 seconds is 12 credits per second at 2K, which agrees with the plan grid (1,000 credits = about 84 seconds at 2K). This is the only place a credit figure for an H3 clip was seen; the FAQ credit table has no H3 row.",
+    "It is a default panel state for a signed-out visitor, not a published rate table. The writer may cite it as 'the cost the panel showed on 2026-11-16', not as a guaranteed rate."
+   ],
+   "related_prior_entries": [
+    "EV-hailuo-ai-review-05",
+    "EV-hailuo-ai-review-02"
+   ],
+   "curator_ambiguity_flag": "UI-state reading (five tokens of panel text plus a screenshot); coders may prefer to treat it as corroboration only.",
+   "resolved_by": "mep-resolver",
+   "coder_codes": {
+    "A": {
+     "label": "vendor-claim",
+     "stance": "neutral",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "claim_match": "partial"
+    },
+    "B": {
+     "label": "vendor-claim",
+     "stance": "neutral",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "support_level": "full"
+    }
+   },
+   "citable": true,
+   "claim_narrowed": "On 2026-11-16 the signed-out generation panel on hailuoai.video, set to MiniMax H3 at 2K and 5 seconds, showed 60 beside the Create button.",
+   "coder_notes": {
+    "A": "Read in a browser today: the panel text is 'MiniMax H3 Omni Reference 2K 5s 21:9 1 60 Create', with the banner and 'From $9.99 /mo' header. The number carries no 'credits' label in the text; that it is a credit cost is an inference supported by the grid (about 12 credits a second at 2K). Citable only as a dated panel reading and as corroboration, not as a published rate.",
+    "B": "A single default setting read signed out; the page does not label the 60 as 'credits' in the text, the reading rests on its position beside Create. 60 / 5 = 12 credits a second, and 1,000 / 12 = 83 seconds, which fits the '~84s' on the Standard card."
+   },
+   "writer_restrictions": [
+    "WR-07"
+   ],
+   "recaptures": [
+    {
+     "recaptured_at": "2026-11-19",
+     "collector": "mimo-auto-content 2026-11-19 publish",
+     "status": "ok",
+     "method": "browser render",
+     "source_url": "https://hailuoai.video/",
+     "matched": true,
+     "claim": "Publish-day re-read 2026-11-19: MATCH. Signed-out panel at MiniMax H3, 2K, 5s shows 60 beside Create.",
+     "quote": "MiniMax H3 | Omni Reference | 2K | 5s | 21:9 | 1 | 60 | Create"
+    }
+   ]
+  },
+  {
+   "id": "EV-ai-video-cost-per-minute-19",
+   "claim": "Kling's own membership page, read live on 2026-11-16, lists Standard at $6.99 for the first month then $8.80 a month (660 credits a month), Pro at $25.99 then $32.56 (3,000 credits), Premier at $144.99 then $181.99 (18,000 credits at the selected step) and Ultra+ at $432.99 then $544.99 (57,000 credits). In the yearly view Standard is $79.20 a year, Pro $293.04, Premier $1,639.99 and Ultra+ $4,902.99, with the same monthly credits.",
+   "source_url": "https://kling.ai/app/membership/membership-plan",
+   "source_date": "2026-11-16",
+   "quote": "Standard $ 6.99 / 1st mo $10 30% Off 1st Then $8.8/month First-purchase offer available once. Monthly subscription can be canceled anytime. 660 Credits/month 100 Credits = $1.06 ... Pro $ 25.99 / 1st mo $37 30% Off 1st Then $32.56/month ... 3000 Credits/month 100 Credits = $0.87",
+   "platform": "kling.ai (vendor primary source, self-interested; plan grid read in a browser 2026-11-16, signed out, monthly and yearly toggles both read)",
+   "target_slug": "/guides/ai-video-cost-per-minute",
+   "collected_at": "2026-11-16",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "ai-video-cost-per-minute-2026-11-16",
+   "screening": "included",
+   "label": "vendor-claim",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "Kling",
+    "aspect": "plan prices and credits, monthly and yearly",
+    "stance": "neutral",
+    "plan_tier_if_stated": "Standard, Pro, Premier (18K step), Ultra+",
+    "item_date": "2026-11-16"
+   },
+   "coding_status": "dual-independent coding done 2026-11-16; resolved by mep-resolver",
+   "quote_supplementary": "Yearly view: \"Standard $ 79.2 / Year $120 34% Off Then $79.2/year. Save $26.4 vs. monthly Auto-renews. Cancel anytime. 660 Credits/month 100 Credits = $1.00\"; \"Pro $ 293.04 / Year $444 34% Off Then $293.04/year. Save $97.68 vs. monthly ... 3000 Credits/month 100 Credits = $0.81\"; \"Premier $ 1639.99 / Year $2484 ... 18000 Credits/month 100 Credits = $0.76\"; \"Ultra+ ... $ 4902.99 / Year $7428 ... 57000 Credits/month 100 Credits = $0.72\". Monthly view, upper tiers: \"Premier $ 144.99 / 1st mo $207 30% Off 1st Then $181.99/month ... 8K 18K 28K 38K 18000 Credits/month 100 Credits = $0.81\"; \"Ultra+ ... $ 432.99 / 1st mo $619 ... Then $544.99/month ... 57000 Credits/month 100 Credits = $0.76\". Comparison table: Basic \"$ 0 Free\", \"Monthly Credits included -\".",
+   "honesty_notes": [
+    "FIRST VENDOR-DIRECT KLING PRICE CAPTURE IN THE REGISTRY. Earlier Kling prices (EV-best-ai-video-generators-03, EV-kling-ai-review-01, -02, -03, -05, -06, -08, -09) were all third-party pages because Kling's site returned errors to a plain fetch; today's read in a browser supersedes them.",
+    "The monthly cards' '100 Credits = $1.06 / $0.87' is the FIRST-MONTH price divided by the credits ($6.99 / 660). At the renewal price the same division gives Standard $1.33 per 100 credits, Pro $1.09 per 100 credits (Mimo arithmetic). Yearly: Standard $1.0 per 100 credits, Pro $0.81 per 100 credits, matching the vendor's yearly labels.",
+    "Premier has a credit-step selector (8K / 18K / 28K / 38K); the prices captured are for the 18K step the page showed by default. Prices for the other steps were not read.",
+    "The page prints no credits-per-second or credits-per-clip figure for any model. The plan grid alone cannot produce a Kling per-second cost.",
+    "The first-month discount is a one-time new-subscriber offer; use the renewal price for standing arithmetic."
+   ],
+   "related_prior_entries": [
+    "EV-best-ai-video-generators-03",
+    "EV-kling-ai-review-02",
+    "EV-kling-ai-review-03",
+    "EV-kling-ai-review-08",
+    "EV-kling-ai-review-09"
+   ],
+   "resolved_by": "mep-resolver",
+   "coder_codes": {
+    "A": {
+     "label": "vendor-claim",
+     "stance": "neutral",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "claim_match": "match"
+    },
+    "B": {
+     "label": "vendor-claim",
+     "stance": "neutral",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "support_level": "partial"
+    }
+   },
+   "citable": true,
+   "claim_narrowed": "On 2026-11-16 Kling's membership page listed Standard at $8.80 a month after a $6.99 first month with 660 credits a month, and Pro at $32.56 with 3,000.",
+   "coder_notes": {
+    "A": "Read in a browser today, signed out, both toggles: every figure matches. Re-computed: renewal price per 100 credits is $1.33 (Standard) and $1.09 (Pro); the vendor's monthly labels ($1.06, $0.87) are first-month prices; yearly labels $1.00, $0.81, $0.76, $0.72 hold. No credits-per-second figure on the page: confirmed for the plan grid, comparison table and the FAQ answers opened.",
+    "B": "Premier has four steps (8K, 18K, 28K, 38K); the claim's figures are for 18K. In the yearly view the page's own price per 100 credits is $1.00, $0.81, $0.76, $0.72. The page prints $8.8 and $79.2."
+   },
+   "recaptures": [
+    {
+     "recaptured_at": "2026-11-19",
+     "collector": "mimo-auto-content 2026-11-19 publish",
+     "status": "ok",
+     "method": "browser render, monthly and yearly toggles",
+     "source_url": "https://kling.ai/app/membership/membership-plan",
+     "matched": false,
+     "claim": "Publish-day re-read 2026-11-19: standing prices MATCH, promotion CHANGED. Standard renews at $8.80 a month, 660 credits; Pro at $32.56, 3,000 credits; yearly 'Then $79.2/year' and 'Then $293.04/year'. The introductory offer is now 35% off the first 3 months on monthly billing (Standard $6.5, Pro $24 a month for the first 3 months; on 2026-11-16 it was $6.99 and $25.99 for the first month) and 50% off the first year on yearly billing (Standard $60, Pro $222). Still no credits per second or per clip on the page.",
+     "quote": "Standard $6.5 / First 3 Months $10 35% Off $6.5/month for the First 3 Months, then $8.8/month. 660 Credits/month ... Pro $24 / First 3 Months $37 35% Off $24/month for the First 3 Months, then $32.56/month. 3000 Credits/month ; yearly: Standard $60 / First Year ... Then $79.2/year ; Pro $222 / First Year ... Then $293.04/year"
+    }
+   ]
+  },
+  {
+   "id": "EV-ai-video-cost-per-minute-20",
+   "claim": "The FAQ on Kling's membership page states that monthly credits are valid for 31 days from issue, purchased credits for 2 years, that credits expiring soonest are used first, and that unused monthly credits expire when a subscription ends. Credits are deducted according to the number of outputs, model type, duration and resolution.",
+   "source_url": "https://kling.ai/app/membership/membership-plan",
+   "source_date": "2026-11-16",
+   "quote": "Monthly Credits: Valid for 31 days from the date they are issued. Purchased Credits: Valid for 2 years from the date of purchase. 7-Day Trial Credits: Valid for 7 days from the date they are issued.",
+   "platform": "kling.ai (vendor primary source, self-interested; FAQ answers expanded and read in a browser 2026-11-16, signed out)",
+   "target_slug": "/guides/ai-video-cost-per-minute",
+   "collected_at": "2026-11-16",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "ai-video-cost-per-minute-2026-11-16",
+   "screening": "included",
+   "label": "vendor-claim",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": false,
+   "coding": {
+    "tool": "Kling",
+    "aspect": "credit validity and expiry rules",
+    "stance": "neutral",
+    "plan_tier_if_stated": "all plans",
+    "item_date": "2026-11-16"
+   },
+   "coding_status": "dual-independent coding done 2026-11-16; resolved by mep-resolver",
+   "quote_supplementary": "Same FAQ: \"When you generate images or videos, the required number of Credits is automatically deducted based on factors such as the number of outputs, model type, duration, and resolution.\"; \"Any unused Monthly Credits in your account will expire and can no longer be used.\" (on subscription expiry); \"Monthly Free Credits for Non-Subscribers: Claimed upon login each month and valid for 31 days.\"; \"Credits that expire sooner are used first.\"",
+   "honesty_notes": [
+    "The FAQ names 'Monthly Free Credits for Non-Subscribers' but gives no amount, and the comparison table shows '-' for the Basic plan's monthly credits. The free allowance figure is therefore NOT vendor-confirmed today; the registry's earlier free-tier numbers (66 a day, 166 a month, about 1,980) are third-party and mutually inconsistent (EV-kling-ai-vs-runway-05).",
+    "In practice a 31-day validity means monthly credits do not carry into a second cycle."
+   ],
+   "related_prior_entries": [
+    "EV-kling-ai-vs-runway-05",
+    "EV-kling-ai-review-06"
+   ],
+   "resolved_by": "mep-resolver",
+   "coder_codes": {
+    "A": {
+     "label": "vendor-claim",
+     "stance": "neutral",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "claim_match": "match"
+    },
+    "B": {
+     "label": "vendor-claim",
+     "stance": "mixed",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "support_level": "partial"
+    }
+   },
+   "citable": true,
+   "resolution_note": "neutral: validity periods listed by credit type. Re-opened in a browser 2026-11-16 with Q2, Q5, Q6 and Q10 expanded: '31 days', '2 years', 'expire sooner are used first' and 'will expire and can no longer be used' all on the page.",
+   "claim_narrowed": "Kling says monthly credits are valid for 31 days from issue and purchased credits for 2 years.",
+   "coder_notes": {
+    "A": "FAQ answers Q2, Q5, Q6 and Q10 expanded in a browser today; all quoted sentences are there. No amount is given for 'Monthly Free Credits for Non-Subscribers': confirmed. 'Does not carry into a second cycle' is the curator's inference from 31 days and should be worded as the 31-day rule.",
+    "B": "The Credits Policy (entry 21) says 'Valid for 1 month'; the FAQ says 31 days. Use the FAQ wording and name the page."
+   },
+   "writer_restrictions": [
+    "WR-11"
+   ],
+   "recaptures": [
+    {
+     "recaptured_at": "2026-11-16",
+     "collector": "mep-resolver",
+     "status": "ok",
+     "method": "browser, signed out, read-only; Q2, Q5, Q6, Q10 expanded",
+     "source_url": "https://kling.ai/app/membership/membership-plan",
+     "matched": true,
+     "claim": "FAQ re-read: all quoted sentences present.",
+     "quote": "Monthly Credits: Valid for 31 days from the date they are issued."
+    }
+   ]
+  },
+  {
+   "id": "EV-ai-video-cost-per-minute-21",
+   "claim": "Kling's Credits Policy states that credits are deducted immediately upon generation and refunded if the generation fails, and that membership subscription credits are valid for one month from distribution.",
+   "source_url": "https://kling.ai/docs/point-policy",
+   "source_date": "2026-11-16 (read live; no date captured from the page)",
+   "quote": "1. The corresponding Credits will be deducted immediately upon generation. 2. If the generation fails, the corresponding Credits will be refunded.",
+   "platform": "kling.ai (vendor primary source, self-interested; fetched 2026-11-16)",
+   "target_slug": "/guides/ai-video-cost-per-minute",
+   "collected_at": "2026-11-16",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "ai-video-cost-per-minute-2026-11-16",
+   "screening": "included",
+   "label": "vendor-claim",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "Kling",
+    "aspect": "credits refunded if a generation fails",
+    "stance": "positive",
+    "plan_tier_if_stated": "all plans",
+    "item_date": "2026-11-16 (read live; no date on the page)"
+   },
+   "coding_status": "dual-independent coding done 2026-11-16; resolved by mep-resolver",
+   "quote_supplementary": "Same policy: \"Membership's subscription credits are valid for 1 month from the date of distribution.\" and \"Credits are non-refundable and cannot be redeemed for cash.\"",
+   "honesty_notes": [
+    "The policy says nothing about a completed generation the user does not like; the membership FAQ and this policy only cover failure. One dated user report of a refused credit refund for a completed clip is registered separately as an anecdote."
+   ],
+   "resolved_by": "mep-resolver",
+   "coder_codes": {
+    "A": {
+     "label": "vendor-claim",
+     "stance": "positive",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "claim_match": "match"
+    },
+    "B": {
+     "label": "vendor-claim",
+     "stance": "positive",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "support_level": "full"
+    }
+   },
+   "citable": true,
+   "coder_notes": {
+    "A": "All four sentences found today. The policy is silent on completed but unwanted output. Small vendor inconsistency worth knowing: this policy says 1 month, the membership FAQ says 31 days.",
+    "B": "Does not define 'fails'; entry 31 is one user's report that a completed but wrong result was not refunded, which is consistent with, not contrary to, this wording."
+   },
+   "writer_restrictions": [
+    "WR-11"
+   ]
+  },
+  {
+   "id": "EV-ai-video-cost-per-minute-22",
+   "claim": "Kling's own blog guide to credit cost (dated 2026-07-28) gives one per-second credit figure: native 4K output on the Kling VIDEO 3.0 series at 30 credits per second. For lower resolutions it gives no per-second rate, only a plan-card reference that 660 credits equal 33 videos at 720p, and it tells readers to confirm the cost in the live generation panel.",
+   "source_url": "https://kling.ai/blog/kling-video-3-0-credit-cost-guide",
+   "source_date": "2026-07-28",
+   "quote": "The 4K release introduced cinema-grade native 4K video output for the Kling VIDEO 3.0 series at 30 credits per second. Use that figure as a 4K planning reference, then confirm the live generation panel before production because product rules and access can change.",
+   "platform": "kling.ai blog (vendor primary source, self-interested; fetched 2026-11-16)",
+   "target_slug": "/guides/ai-video-cost-per-minute",
+   "collected_at": "2026-11-16",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "ai-video-cost-per-minute-2026-11-16",
+   "screening": "included",
+   "label": "vendor-claim",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "Kling",
+    "aspect": "one per-second credit figure: native 4K, VIDEO 3.0 series, 30 credits a second",
+    "stance": "neutral",
+    "plan_tier_if_stated": "subscription plans (July 2026 ladder)",
+    "item_date": "2026-07-28"
+   },
+   "coding_status": "dual-independent coding done 2026-11-16; resolved by mep-resolver",
+   "quote_supplementary": "Plan table in the same post: \"Standard $6.99 / Month ($10 shown); next monthly renewal: $8.8; first-subscription discount only 660 Credits per month As low as $1.33 per 100 Credits; 660 images / 33 720p videos\" and \"Pro ... 3000 Credits per month As low as $1.09 per 100 Credits; 3000 images / 150 720p videos\". Also: \"When planning a budget, treat reference setup, retries, and review cycles as part of the production process.\"",
+   "honesty_notes": [
+    "KLING PER-SECOND RATE, STATUS: the vendor's own pages give exactly one per-second credit rate for subscription plans (30 credits per second, native 4K, VIDEO 3.0 series). No vendor page read this run states a per-second credit rate at 720p or 1080p, or any rate for Kling 4.0, on subscription plans. The '33 videos at 720p per 660 credits' reference works out to 20 credits per video, but the post does not say how long that video is, so it cannot be turned into a per-second figure.",
+    "Derived example for the writer (Mimo arithmetic, label as calculated): native 4K at 30 credits per second costs $0.4 per second on Standard at the $8.80 renewal price and $0.3 on Standard yearly; $0.326 on Pro monthly and $0.244 on Pro yearly.",
+    "The $0.10 per second figure used so far (EV-best-ai-video-generators-19) is a third-party estimate from June 2026 with no stated plan or resolution. It stays an estimate; it is not confirmed by any vendor page.",
+    "The post's ladder (Premier $64.99 / 8,000 credits, Ultra $127.99 / 26,000) is the July 2026 ladder; today's grid differs (Premier steps from 8K to 38K, Ultra replaced by Ultra+)."
+   ],
+   "related_prior_entries": [
+    "EV-best-ai-video-generators-19",
+    "EV-kling-ai-review-09"
+   ],
+   "curator_ambiguity_flag": "Whether '660 credits = 33 720p videos' may be shown at all (as credits per video of unstated length) is a writer/gate call.",
+   "resolved_by": "mep-resolver",
+   "coder_codes": {
+    "A": {
+     "label": "vendor-claim",
+     "stance": "neutral",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "claim_match": "match"
+    },
+    "B": {
+     "label": "vendor-claim",
+     "stance": "neutral",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "support_level": "partial"
+    }
+   },
+   "citable": true,
+   "claim_narrowed": "Kling's own blog (2026-07-28) gives 30 credits per second for native 4K on the Kling VIDEO 3.0 series and tells readers to confirm in the generation panel.",
+   "coder_notes": {
+    "A": "Quote, the plan-table lines (660 credits, '33 720p videos', $1.33 and $1.09 per 100 credits) and the retries sentence found today; date 'Jul 28, 2026' on the page and in its metadata. Derived figures hold (30 credits: $0.40 Standard monthly, $0.30 yearly, $0.326 Pro monthly, $0.244 Pro yearly). 'Gives no per-second rate for lower resolutions' is an absence statement about a long post; I saw none, but it is noted, not proven. '33 videos per 660 credits' has no stated clip length, so it supports only 'about 20 credits a 720p video of unstated length' and I would keep it out of any per-second cell. The post's Premier and Ultra prices are the July ladder and are stale.",
+    "B": "The same post lists Standard 'as low as $1.33 per 100 Credits', while the membership page read today prints $1.06 (monthly) and $1.00 (yearly); the post is older than the current plan grid. 660 credits for 33 videos is 20 credits a video with no stated length, so it cannot be turned into a per-second or per-minute rate."
+   },
+   "writer_restrictions": [
+    "WR-12"
+   ]
+  },
+  {
+   "id": "EV-ai-video-cost-per-minute-23",
+   "claim": "Kling's developer pricing document, read 2026-11-16, prices its API by the second in units: Kling 4.0 at 1.0 unit ($0.157) per second at 720p and 1.5 units ($0.235) at 1080p with no input video; Kling 3.0 at 0.6 units ($0.084) per second at 720p and 0.8 ($0.112) at 1080p without native audio, 0.9 ($0.126) and 1.2 ($0.168) with native audio, and 3.0 units ($0.42) at 4K.",
+   "source_url": "https://kling.ai/document-api/pricing/base/video.md",
+   "source_date": "2026-11-16",
+   "quote": "| Kling 3.0 | No Native Audio | Per second (Total duration = Output duration) | 0.6 Units ($0.084) /s | 0.8 Units ($0.112) /s | 3.0 Units ($0.42) /s |",
+   "platform": "kling.ai developer documentation (vendor primary source, self-interested; fetched 2026-11-16; the same Kling 4.0 rows were read on kling.ai/dev/pricing in a browser)",
+   "target_slug": "/guides/ai-video-cost-per-minute",
+   "collected_at": "2026-11-16",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "ai-video-cost-per-minute-2026-11-16",
+   "screening": "included",
+   "label": "vendor-claim",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "Kling",
+    "aspect": "API per-second prices in units and dollars",
+    "stance": "neutral",
+    "plan_tier_if_stated": "developer API (prepaid packages)",
+    "item_date": "2026-11-16"
+   },
+   "coding_status": "dual-independent coding done 2026-11-16; resolved by mep-resolver",
+   "quote_supplementary": "\"| Kling 3.0 | With Native Audio | Per second (Total duration = Output duration) | 0.9 Units ($0.126) /s | 1.2 Units ($0.168) /s | 3.0 Units ($0.42) /s |\" and \"| Kling 4.0 | No Input Video ... | Per second (Total duration = Output duration) | 1.0 Unit ($0.157) /s | 1.5 Units ($0.235) /s | - |\" and \"| Kling 4.0 Flash | No Input Video ... | 0.6 Units ($0.094) /s | - | - |\". Prepaid packages on kling.ai/dev/pricing: \"Standard Package 1 $500 $510 2% off, discounted unit price $0.15386 3250 units 180-day validity, no rollover or extension\".",
+   "honesty_notes": [
+    "API ONLY. These are prepaid developer packages (from $500), a different product from the consumer subscription, and the topical brief keeps API per-second pricing out of the table. Registered so the page can say truthfully that the vendor publishes per-second dollar prices for its API but not for its subscription plans. Do not put these figures in a subscription row.",
+    "The API ratios (0.6 / 0.8 / 0.9 / 1.2 / 3.0 units) are the same proportions as the 6 / 8 / 9 / 12 / 30 credits per second that third-party pages quote for Kling 3.0 on subscription plans. That resemblance is noted for the coders; it is not vendor confirmation of the subscription rates."
+   ],
+   "resolved_by": "mep-resolver",
+   "coder_codes": {
+    "A": {
+     "label": "vendor-claim",
+     "stance": "neutral",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "claim_match": "match"
+    },
+    "B": {
+     "label": "vendor-claim",
+     "stance": "neutral",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "support_level": "partial"
+    }
+   },
+   "citable": true,
+   "claim_narrowed": "Kling's developer pricing lists Kling 4.0 at $0.157 per second at 720p and $0.235 at 1080p with no input video.",
+   "coder_notes": {
+    "A": "All rows found in the .md document today. On kling.ai/dev/pricing in a browser I confirmed the prepaid packages ('Standard Package 1 $500 $510 2% off, discounted unit price $0.15386 3250 units 180-day validity, no rollover or extension') but the per-second rows were not in the tab that rendered, so the 'same rows on dev/pricing' remark is not re-confirmed by this pass. API only; not usable in a subscription row. The proportional resemblance to third-party subscription rates is not evidence of those rates.",
+    "B": "API price, not the subscription app. Unit value is not constant in the table (1.0 Unit = $0.157 for 4.0, 0.6 Units = $0.084 for 3.0, which is $0.14 a unit), so dollars must be quoted per row, never derived from units. With an input video the billed duration is doubled or summed. This pass did not open kling.ai/dev/pricing."
+   },
+   "writer_restrictions": [
+    "WR-13"
+   ]
+  },
+  {
+   "id": "EV-ai-video-cost-per-minute-24",
+   "claim": "A third-party page from an API reseller (WaveSpeed, dated 2026-10-23) reports the same gap this run found: the official public Kling pages it reviewed did not give a complete, account-independent Kling 4.0 subscription cost and credit schedule.",
+   "source_url": "https://wavespeed.ai/blog/cost-and-billing/kling-4-0-pricing/",
+   "source_date": "2026-10-23",
+   "quote": "As of October 23, 2026, the official public pages reviewed did not provide a complete, account-independent Kling 4.0 subscription cost and 4.0/Flash credit schedule.",
+   "platform": "wavespeed.ai blog (third party that sells model API access, self-interested; fetched 2026-11-16)",
+   "target_slug": "/guides/ai-video-cost-per-minute",
+   "collected_at": "2026-11-16",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "ai-video-cost-per-minute-2026-11-16",
+   "screening": "included",
+   "label": "vendor-claim",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": false,
+   "coding": {
+    "tool": "Kling",
+    "aspect": "Kling 4.0 subscription credit schedule not published in full",
+    "stance": "negative",
+    "plan_tier_if_stated": "subscription plans",
+    "item_date": "2026-10-23"
+   },
+   "coding_status": "dual-independent coding done 2026-11-16; resolved by mep-resolver",
+   "quote_supplementary": "Same page: \"Let C be the displayed credit charge for one fixed setup. If two completed drafts fail review and the third passes, that usable clip costs 3C credits. This is an arithmetic example, not a published Kling rate or predicted success rate.\"",
+   "honesty_notes": [
+    "Corroboration of the Kling per-second gap only. The publisher sells competing access to the same models."
+   ],
+   "resolved_by": "mep-resolver",
+   "coder_codes": {
+    "A": {
+     "label": "research-finding",
+     "stance": "neutral",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "claim_match": "match"
+    },
+    "B": {
+     "label": "vendor-claim",
+     "stance": "negative",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "support_level": "full"
+    }
+   },
+   "citable": true,
+   "resolution_note": "label vendor-claim: the publisher is a company blog with its own Pricing, Enterprise and Contact Sales navigation, it gives no list of the pages it reviewed and no method, so it is a self-interested statement and not a finding with a method (the registry already had vendor-claim; coder A flagged the label as a judgement call). stance negative: the sentence says Kling's public pages lack a complete cost and credit schedule, which is a shortcoming from the buyer's cost view. Re-opened by curl 2026-11-16 (HTTP 200): quote verbatim, datePublished 2026-10-23.",
+   "coder_notes": {
+    "A": "Quote found verbatim today; datePublished 2026-10-23. The '3C credits' example is on the page (with invisible spacing characters around '3C credits'). Label is a judgement call: it is a self-interested third party describing what it found on another vendor's pages, with no disclosed method beyond 'pages reviewed'. Usable only as corroboration that the gap exists, beside this run's own read of Kling's pages.",
+    "B": "The membership page read today also shows no per-model credit table, which is this pass's own observation and separate from the quote. The page gives no list of which pages were reviewed."
+   },
+   "writer_restrictions": [
+    "WR-14"
+   ],
+   "recaptures": [
+    {
+     "recaptured_at": "2026-11-16",
+     "collector": "mep-resolver",
+     "status": "ok",
+     "method": "curl, read-only",
+     "source_url": "https://wavespeed.ai/blog/cost-and-billing/kling-4-0-pricing/",
+     "matched": true,
+     "claim": "Quote verbatim; datePublished 2026-10-23.",
+     "quote": "As of October 23, 2026, the official public pages reviewed did not provide a complete, account-independent Kling 4.0 subscription cost and 4.0/Flash credit schedule."
+    }
+   ]
+  },
+  {
+   "id": "EV-ai-video-cost-per-minute-25",
+   "claim": "invideo, which sells an AI video tool, reports from its own documented productions that one 3-minute animated episode generated 164 clips and used 41 (a 25% selection rate), kept about 5 seconds from each 15-second clip on average, and advises planning on roughly 3 generations per usable shot.",
+   "source_url": "https://invideo.io/faq/how-much-does-it-cost-to-produce-one-minute-of-ai/",
+   "source_date": "2026-07-27",
+   "quote": "The animated episode generated 164 clips and used 41 — a 25% selection rate — with an average of only 5 seconds kept from each 15-second clip. Plan on roughly 3 generations per usable shot",
+   "platform": "invideo.io FAQ (vendor-authored, self-interested; page marked 'Last updated July 27, 2026'; fetched 2026-11-16)",
+   "target_slug": "/guides/ai-video-cost-per-minute",
+   "collected_at": "2026-11-16",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "ai-video-cost-per-minute-2026-11-16",
+   "screening": "included",
+   "label": "vendor-claim",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "invideo (retake evidence, not a table tool)",
+    "aspect": "one production: 164 clips generated, 41 used; about 3 generations per usable shot",
+    "stance": "neutral",
+    "plan_tier_if_stated": "n/a",
+    "item_date": "2026-07-27"
+   },
+   "coding_status": "dual-independent coding done 2026-11-16; resolved by mep-resolver",
+   "quote_supplementary": "The same publisher's blog post (invideo.io/blog/ai-film-production-cost/, 'By Invideo', July 15, 2026) repeats it: \"Budget for a 25% editorial yield (164 clips generated to land 41) at roughly three generations per usable shot.\"",
+   "honesty_notes": [
+    "ONE production on ONE vendor's own tool, reported by that vendor. It is a single documented case, not a rate for any tool in Mimo's table, and must be quoted as that source's claim with the 164 and 41 beside it.",
+    "The page's own numbers do not reduce to one multiplier: 41 of 164 is one clip kept in four, while the advice given is about three generations per usable shot. The writer should quote the figures and not derive a single 'retake factor' from them.",
+    "No independent or peer-reviewed measurement of retakes per usable clip was found this run."
+   ],
+   "curator_ambiguity_flag": "Vendor self-report of its own projects: label vendor-claim vs independent-test is for the coders; curator's reading is vendor-claim.",
+   "resolved_by": "mep-resolver",
+   "coder_codes": {
+    "A": {
+     "label": "vendor-claim",
+     "stance": "neutral",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "claim_match": "match"
+    },
+    "B": {
+     "label": "vendor-claim",
+     "stance": "neutral",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "support_level": "full"
+    }
+   },
+   "citable": true,
+   "coder_notes": {
+    "A": "Quote found verbatim today; 'Last updated July 27, 2026' on the page. The blog repeat ('25% editorial yield (164 clips generated to land 41)') is on the second page, published 2026-07-15 and modified 2026-11-13. 41/164 = 25.0%. The '3-minute' length is not in the quote but is on the same page ('A 3-minute animated episode cost ~$950 ($315/min) with a 2-person team in 2 days'); that the 164-clip episode is that same episode is the natural reading, not stated in one sentence. I code it vendor-claim, not independent-test: the publisher sells the tool and no protocol is disclosed. One case; must not be turned into a retake factor for any tool in the table.",
+    "B": "41 / 164 = 25.0%, the arithmetic holds. One production; the page title refers to 2025 productions. '25%' may be quoted only as this episode's figure."
+   },
+   "writer_restrictions": [
+    "WR-15"
+   ]
+  },
+  {
+   "id": "EV-ai-video-cost-per-minute-26",
+   "claim": "HeyGen's own pricing-comparison blog post (last updated 2026-10-20) says a HeyGen photo-to-video test in August 2026 discarded roughly three clips in every ten across generative tools, and advises a buffer of about a third on per-second rates.",
+   "source_url": "https://www.heygen.com/blog/ai-video-generator-pricing",
+   "source_date": "2026-10-20 (displayed \"Last Updated October 20th, 2026\"); page metadata datePublished and dateModified 2026-10-09",
+   "quote": "HeyGen's August 2026 photo-to-video test discarded roughly three clips in every ten across generative tools, which pushes real cost up by about a third. Plan for that buffer when you compare per-second rates.",
+   "platform": "heygen.com blog (vendor-authored, self-interested: HeyGen's products sit in the comparison; fetched 2026-11-16)",
+   "target_slug": "/guides/ai-video-cost-per-minute",
+   "collected_at": "2026-11-16",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "ai-video-cost-per-minute-2026-11-16",
+   "screening": "included",
+   "label": "vendor-claim",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "HeyGen (retake evidence)",
+    "aspect": "roughly three clips in ten discarded; buffer of about a third",
+    "stance": "neutral",
+    "plan_tier_if_stated": "n/a",
+    "item_date": "2026-10-20 (displayed on the page); 2026-10-09 (page metadata datePublished and dateModified)"
+   },
+   "coding_status": "dual-independent coding done 2026-11-16; resolved by mep-resolver",
+   "quote_supplementary": "Same post: \"Cinematic figures assume every generation is kept; in practice, budget for re-rolls.\"",
+   "honesty_notes": [
+    "The post links no test protocol, sample size or tool list for the August test in the text read; it is the vendor's summary of its own test.",
+    "Arithmetic check for the writer: three discarded in ten means ten generated for seven kept, a multiplier of about 1.43, which is more than 'about a third'. Quote the sentence as written and attribute it; do not correct it silently and do not adopt it as Mimo's figure.",
+    "The same post states Runway Gen-4.5 at 25 credits per second, which Runway's own pages contradict (12). Nothing else from this post should be used as a price input."
+   ],
+   "resolved_by": "mep-resolver",
+   "coder_codes": {
+    "A": {
+     "label": "vendor-claim",
+     "stance": "neutral",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "claim_match": "match"
+    },
+    "B": {
+     "label": "vendor-claim",
+     "stance": "neutral",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "support_level": "full"
+    }
+   },
+   "citable": true,
+   "claim_narrowed": "HeyGen's blog post (page shows 'Last Updated October 20th, 2026'; metadata 2026-10-09) says its own August 2026 photo-to-video test discarded roughly three clips in every ten and suggests a buffer of about a third.",
+   "coder_notes": {
+    "A": "Quote and the re-rolls sentence found verbatim today. DATE NOTE: the page shows 'Last Updated October 20th, 2026', while its metadata gives datePublished and dateModified 2026-10-09; 2026-10-20 is supportable as the displayed date. 3 discarded in 10 means 10 generated for 7 kept = 1.43, not 'about a third' more; quote as written. The same post says Gen-4.5 costs 25 credits a second (confirmed on the page), which Runway's own pages contradict, so nothing else from the post is a price input.",
+    "B": "The post gives no sample size or tool list for the test. Discarding 3 in 10 raises cost per kept clip by 10/7, about 43%, not 'about a third'; the page may quote the vendor's sentence but must not present 'a third' as arithmetic."
+   },
+   "writer_restrictions": [
+    "WR-04",
+    "WR-05"
+   ],
+   "recaptures": [
+    {
+     "recaptured_at": "2026-11-16",
+     "collector": "mep-resolver",
+     "status": "ok",
+     "method": "curl, read-only",
+     "source_url": "https://www.heygen.com/blog/ai-video-generator-pricing",
+     "matched": true,
+     "claim": "Page shows 'Last Updated October 20th, 2026'; its metadata gives datePublished 2026-10-09 and dateModified 2026-10-09T00:00:00Z. Quote verbatim.",
+     "quote": "Last Updated October 20th, 2026"
+    }
+   ]
+  },
+  {
+   "id": "EV-ai-video-cost-per-minute-27",
+   "claim": "LTX, a video-model vendor, writes in its cost guide (2026-08-16) that every finished shot needs several generations and gives 'three to ten attempts per usable shot' as an industry-observed range, with a formula of per-second cost times shot duration times attempts per usable shot and a suggested 30% exploration buffer. It cites no source for the range.",
+   "source_url": "https://ltx.io/blog/ai-video-generation-cost",
+   "source_date": "2026-08-16",
+   "quote": "Every finished shot in production requires multiple generations. The industry-observed range is three to ten attempts per usable shot, depending on prompt complexity, the model, and whether the workflow supports iteration primitives like Retake and directorial refinement.",
+   "platform": "ltx.io blog (vendor-authored, self-interested; fetched 2026-11-16)",
+   "target_slug": "/guides/ai-video-cost-per-minute",
+   "collected_at": "2026-11-16",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "ai-video-cost-per-minute-2026-11-16",
+   "screening": "included",
+   "label": "vendor-claim",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "LTX (retake evidence)",
+    "aspect": "three to ten attempts per usable shot",
+    "stance": "neutral",
+    "plan_tier_if_stated": "n/a",
+    "item_date": "2026-08-16"
+   },
+   "coding_status": "dual-independent coding done 2026-11-16; resolved by mep-resolver",
+   "quote_supplementary": "Same post: \"per-second cost × shot duration × attempts per usable shot\" and \"Add a 30% buffer for prompt exploration and experiment shots that don't make the final cut.\"",
+   "honesty_notes": [
+    "Unsourced planning assumption by a vendor whose product is positioned as needing fewer attempts. May be quoted only as that source's claim, with 'no source given' stated."
+   ],
+   "resolved_by": "mep-resolver",
+   "coder_codes": {
+    "A": {
+     "label": "vendor-claim",
+     "stance": "neutral",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "claim_match": "match"
+    },
+    "B": {
+     "label": "vendor-claim",
+     "stance": "neutral",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "support_level": "full"
+    }
+   },
+   "citable": true,
+   "coder_notes": {
+    "A": "Quote, the formula and the 30% buffer sentence found verbatim today; 'August 16, 2026' on the page (one metadata block also carries dateModified 2026-11-03). A search of the page text for 'study', 'survey' and 'according to' returned nothing, which supports 'no source given'.",
+    "B": "Not evidence of a rate; usable only to show that vendors themselves tell buyers to budget for retries."
+   },
+   "writer_restrictions": [
+    "WR-15"
+   ]
+  },
+  {
+   "id": "EV-ai-video-cost-per-minute-28",
+   "claim": "Imgveo, an AI video platform, tells readers in its cost guide (2026-07-24) to multiply every estimate by 1.3 to 1.5 for retries, and separates a technical failure (which some platforms refund) from a creative miss (which is paid for). It gives no data for the multiplier.",
+   "source_url": "https://imgveo.com/blog/how-much-do-ai-videos-really-cost",
+   "source_date": "2026-07-24",
+   "quote": "Nobody's first roll is always a keeper. Budgeting without a retake factor is how a \"$20 month\" becomes a $32 month. Multiply every estimate by 1.3–1.5 — or better, use platforms where failed generations refund automatically so retries only apply to creative re-rolls, not technical failures.",
+   "platform": "imgveo.com blog (vendor-authored, self-interested; fetched 2026-11-16)",
+   "target_slug": "/guides/ai-video-cost-per-minute",
+   "collected_at": "2026-11-16",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "ai-video-cost-per-minute-2026-11-16",
+   "screening": "included",
+   "label": "vendor-claim",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "Imgveo (retake evidence)",
+    "aspect": "multiply estimates by 1.3 to 1.5; failed versus creative retries",
+    "stance": "neutral",
+    "plan_tier_if_stated": "n/a",
+    "item_date": "2026-07-24"
+   },
+   "coding_status": "dual-independent coding done 2026-11-16; resolved by mep-resolver",
+   "quote_supplementary": "Same post: \"At a 70% success rate, your true cost is sticker ÷ 0.7 — about 1.43× the advertised price, before a single creative retry.\"",
+   "honesty_notes": [
+    "Unsourced rule of thumb. The 70% figure is the post's illustrative assumption, not a measured success rate. Quote only as that source's claim."
+   ],
+   "resolved_by": "mep-resolver",
+   "coder_codes": {
+    "A": {
+     "label": "vendor-claim",
+     "stance": "neutral",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "claim_match": "match"
+    },
+    "B": {
+     "label": "vendor-claim",
+     "stance": "neutral",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "support_level": "full"
+    }
+   },
+   "citable": true,
+   "coder_notes": {
+    "A": "Quote and the '70% success rate ... 1.43x' sentence found today; date 2026/07/24 on the page. The post promotes its own automatic refunds ('Here: yes'), so it is self-interested. The 70% is an illustration, not a measurement.",
+    "B": "The post promotes its own refund-on-failure policy in the same passage."
+   },
+   "writer_restrictions": [
+    "WR-15"
+   ]
+  },
+  {
+   "id": "EV-ai-video-cost-per-minute-29",
+   "claim": "One Kling reviewer on Trustpilot (Thomas Standish, 1 star, 2026-08-24) reports that of 3,000 credits spent, about 10% of the output was usable.",
+   "source_url": "https://www.trustpilot.com/review/kling.ai?sort=recency",
+   "source_date": "2026-08-24",
+   "quote": "The hype is fake on Kling, for 3000 credits, i maybe got 10% usuable.",
+   "platform": "Trustpilot (review platform, self-selected reviewers; kling.ai listing read in a browser 2026-11-16)",
+   "target_slug": "/guides/ai-video-cost-per-minute",
+   "collected_at": "2026-11-16",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "ai-video-cost-per-minute-2026-11-16",
+   "screening": "included",
+   "label": "community-report",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "Kling",
+    "aspect": "one reviewer: about 10% usable for 3,000 credits",
+    "stance": "negative",
+    "plan_tier_if_stated": "not stated (names Kling 3.0)",
+    "item_date": "2026-08-24"
+   },
+   "coding_status": "dual-independent coding done 2026-11-16; resolved by mep-resolver",
+   "quote_supplementary": "Same review: \"You have to premake everything and word it very carefully to hope for a usuable scene, or it just messes simple things up.\" The reviewer names Kling 3.0.",
+   "honesty_notes": [
+    "Single anecdote. Plan, resolution and what counted as usable are not stated. It cannot be turned into a rate or a multiplier and must never be printed as a percentage of Kling output in general."
+   ],
+   "resolved_by": "mep-resolver",
+   "coder_codes": {
+    "A": {
+     "label": "community-report",
+     "stance": "negative",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "claim_match": "match"
+    },
+    "B": {
+     "label": "community-report",
+     "stance": "negative",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "support_level": "full"
+    }
+   },
+   "citable": true,
+   "coder_notes": {
+    "A": "Read in a browser today; quote verbatim including the reviewer's spelling. Timestamp 2026-08-24T02:58Z, experience date August 23, 2026. Single anecdote; never a rate.",
+    "B": "The reviewer's own estimate ('maybe'). The same review says results on people are good 'most of the time'."
+   },
+   "writer_restrictions": [
+    "WR-16"
+   ]
+  },
+  {
+   "id": "EV-ai-video-cost-per-minute-30",
+   "claim": "One Kling reviewer on Trustpilot (Volt Dizni, 1 star, posted 2026-11-01, experience dated 2026-10-26) reports that since the switch to Kling 4.0 a 30-second video rose from 405 to 450 credits and that the 26,000-credit Ultra plan was removed.",
+   "source_url": "https://www.trustpilot.com/review/kling.ai?sort=recency",
+   "source_date": "2026-11-01",
+   "quote": "Since the switch to Kling 4.0, the service has become extremely expensive. The old 26,000-credit Ultra plan was removed, subscription options now offer much worse value, and the cost of generating a 30-second video has increased from 405 to 450 credits.",
+   "platform": "Trustpilot (review platform, self-selected reviewers; kling.ai listing read in a browser 2026-11-16)",
+   "target_slug": "/guides/ai-video-cost-per-minute",
+   "collected_at": "2026-11-16",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "ai-video-cost-per-minute-2026-11-16",
+   "screening": "included",
+   "label": "community-report",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "Kling",
+    "aspect": "one reviewer: 30-second video rose from 405 to 450 credits after Kling 4.0; Ultra plan removed",
+    "stance": "negative",
+    "plan_tier_if_stated": "not stated",
+    "item_date": "2026-11-01"
+   },
+   "coding_status": "dual-independent coding done 2026-11-16; resolved by mep-resolver",
+   "honesty_notes": [
+    "Single user report, not a vendor rate. 450 credits for 30 seconds would be 15 credits per second, but the review does not state the resolution, model variant or audio setting, so it does not fix a Kling per-second rate. It may be cited only as one user's reported charge.",
+    "The removal of the Ultra tier is consistent with today's vendor grid (Ultra+ at 57,000 credits; the FAQ says Ultra is no longer available to new subscribers)."
+   ],
+   "curator_ambiguity_flag": "Useful as the only dated first-person Kling 4.0 credit figure; coders should decide whether it may appear beside the Kling row at all.",
+   "resolved_by": "mep-resolver",
+   "coder_codes": {
+    "A": {
+     "label": "community-report",
+     "stance": "negative",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "claim_match": "match"
+    },
+    "B": {
+     "label": "community-report",
+     "stance": "negative",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "support_level": "full"
+    }
+   },
+   "citable": true,
+   "coder_notes": {
+    "A": "Read in a browser today; quote verbatim. Timestamp 2026-11-01T23:56Z, so the listing shows 'Nov 2, 2026' in some time zones; say '1 November 2026 (UTC)' or 'early November'. 450/30 = 15 credits a second, but resolution, model variant and audio are not stated. My view on the curator's question: it may appear in prose as one user's reported charge, not in or beside the Kling table row.",
+    "B": "405 and 450 credits for 30 seconds are 13.5 and 15 credits a second; no vendor page read in this pass states either figure, so they stay a user report. The membership page today shows no 26,000-credit plan, which fits the report but does not prove a removal."
+   },
+   "writer_restrictions": [
+    "WR-16"
+   ]
+  },
+  {
+   "id": "EV-ai-video-cost-per-minute-31",
+   "claim": "One Kling reviewer on Trustpilot (Kevin Lowman, 1 star, 2026-11-13) reports asking for the credits back after a generated video did not follow the instruction, and being refused because a video had been created.",
+   "source_url": "https://www.trustpilot.com/review/kling.ai?sort=recency",
+   "source_date": "2026-11-13",
+   "quote": "I requested a refund or credit of the \"AI Credits\" it charged my account, but Kling AI refused. They said if even the generated video is not what I specified that as long as a video was created they will not credit me back.",
+   "platform": "Trustpilot (review platform, self-selected reviewers; kling.ai listing read in a browser 2026-11-16)",
+   "target_slug": "/guides/ai-video-cost-per-minute",
+   "collected_at": "2026-11-16",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "ai-video-cost-per-minute-2026-11-16",
+   "screening": "included",
+   "label": "community-report",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "Kling",
+    "aspect": "one reviewer: credit refund refused for a completed clip that ignored the instruction",
+    "stance": "negative",
+    "plan_tier_if_stated": "not stated",
+    "item_date": "2026-11-13"
+   },
+   "coding_status": "dual-independent coding done 2026-11-16; resolved by mep-resolver",
+   "honesty_notes": [
+    "Single anecdote, the reviewer's account of a support reply. It is consistent with the vendor's written policy, which promises a refund only when a generation fails."
+   ],
+   "resolved_by": "mep-resolver",
+   "coder_codes": {
+    "A": {
+     "label": "community-report",
+     "stance": "negative",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "claim_match": "match"
+    },
+    "B": {
+     "label": "community-report",
+     "stance": "negative",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "support_level": "full"
+    }
+   },
+   "citable": true,
+   "coder_notes": {
+    "A": "Read in a browser today; quote verbatim. The review also pastes a support reply saying credits for completed generations are generally non-refundable; that is the reviewer's copy of the reply, not a vendor document. Consistent with entry 21.",
+    "B": "The review pastes what it says is Kling's reply ('credits deducted for successfully processed and completed generations are generally non-refundable'); that is the reviewer's transcription, not a vendor page."
+   },
+   "writer_restrictions": [
+    "WR-16"
+   ]
+  },
+  {
+   "id": "EV-ai-video-cost-per-minute-32",
+   "claim": "Defined sample, Kling on Trustpilot: of the 20 reviews on page 1 of the most-recent sort as read on 2026-11-16 (dated 2026-07-29 to 2026-11-13; 20 of 20 are 1-star), 9 mention credits, and 6 of those describe credits spent on output the reviewer says was unusable or not what was asked for (Kevin Lowman, Alber, Chris Horst, Darren Vickers, Thomas Standish, Renne).",
+   "source_url": "https://www.trustpilot.com/review/kling.ai?sort=recency",
+   "source_date": "2026-07-29 to 2026-11-13",
+   "quote": "The program is full of problems, and you keep spending credits even when the results are completely unusable. You end up paying again and again without getting anything useful in return.",
+   "platform": "Trustpilot (review platform, self-selected reviewers; kling.ai listing, page 1 of the recency sort, read in a browser 2026-11-16)",
+   "target_slug": "/guides/ai-video-cost-per-minute",
+   "collected_at": "2026-11-16",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "ai-video-cost-per-minute-2026-11-16",
+   "screening": "included",
+   "label": "community-report",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "Kling",
+    "aspect": "defined sample of 20 most recent reviews: 9 mention credits, 6 describe credits spent on unusable output",
+    "stance": "negative",
+    "plan_tier_if_stated": "mixed / not stated",
+    "item_date": "2026-07-29 to 2026-11-13"
+   },
+   "coding_status": "dual-independent coding done 2026-11-16; resolved by mep-resolver",
+   "quote_supplementary": "The quote is from Alber (2026-10-04). Darren Vickers (2026-09-02): \"in less than 45 minutes, all of the credits for an entire month was wasted.\" Renne (2026-07-29): \"After generating just two unusable videos, I requested a refund for my remaining credits. Customer support immediately refused\". A further review (Iryna Hugler, 2026-10-29) reports 387 credits expiring: \"a staggering 387 credits simply disappeared from my account.\"",
+   "honesty_notes": [
+    "The 9 and the 6 are the curator's first-pass tally from a keyword screen plus a read of the review text returned by the page (several long reviews were read only to about 900 characters, and one is in Dutch). The two coding passes must re-count; the page may print the count only after that.",
+    "Denominator and window must travel with the number: 20 most recent reviews, 2026-07-29 to 2026-11-13, read 2026-11-16. Never a share of Kling users.",
+    "Complaint bias: all 20 are 1-star; unhappy users post more. The page also showed a 4-card carousel that repeats reviews from the list plus one older review (Richard, 2026-05-26), which is outside the sample."
+   ],
+   "curator_ambiguity_flag": "First-pass tally, not a coded count.",
+   "resolved_by": "mep-resolver",
+   "coder_codes": {
+    "A": {
+     "label": "community-report",
+     "stance": "negative",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "claim_match": "match"
+    },
+    "B": {
+     "label": "community-report",
+     "stance": "negative",
+     "include": true,
+     "claim_supported_by_quote": true,
+     "support_level": "partial"
+    }
+   },
+   "citable": true,
+   "claim_narrowed": "Of the 20 most recent Trustpilot reviews of kling.ai as read on 2026-11-16 (2026-07-29 to 2026-11-13), 9 mention credits and 6 of those describe credits spent on output the reviewer calls unusable or not as asked.",
+   "coder_notes": {
+    "A": "RE-COUNTED INDEPENDENTLY from the full review texts in a browser today (24 cards on the page: 4 carousel cards, 3 of them repeats plus Richard 2026-05-26, and 20 list reviews). 20 of 20 are 1-star; oldest Renne 2026-07-29, newest Kevin Lowman 2026-11-13. Mention credits (9): Kevin Lowman, Volt Dizni, Iryna Hugler, yusuf tekin, Alber, Chris Horst, Darren Vickers, Thomas Standish, Renne. Credits spent on unusable or off-instruction output (6): Kevin Lowman, Alber, Chris Horst, Darren Vickers, Thomas Standish, Renne. The other three are a price rise (Volt Dizni), expiry (Iryna Hugler) and billing (yusuf tekin, whose only mention is 'a one-time credit package'; if a coder excludes him the first number is 8). My count matches the shard: 9 and 6. Boundary cases left out by the definition: Evgeniia and Anita Kargård describe unusable output without the word credits. All four quoted sentences are verbatim. Page 1 of a recency sort changes as reviews arrive, so the read date must travel with the count.",
+    "B": "Independent re-count agrees with the shard: 20 / 20 / 9 / 6. The 9: Lowman, Dizni, Hugler, yusuf tekin, Alber, Horst, Vickers, Standish, Renne. The 6: Lowman, Alber, Horst, Vickers, Standish, Renne. Borderline: yusuf tekin mentions only buying a 'one-time credit package' in a billing complaint; if 'mentions credits' is read as credits in use, the count is 8, and the 6 is unchanged. Three more reviews (Evgeniia, Werner Eidinger, Anita Kargard) call the output unusable without mentioning credits and are rightly outside the 6. The quote is one reviewer's words and supports the count only as an example. A separate listing, klingai.com, exists on Trustpilot (446 reviews) and was not read."
+   },
+   "writer_restrictions": [
+    "WR-16"
+   ]
+  }
+ ]
+}

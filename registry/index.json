@@ -1,7 +1,7 @@
 {
   "protocol": "MEP-1.0",
   "site": "mimoaitools.com",
-  "updated": "2026-11-12",
+  "updated": "2026-11-19",
   "note": "Per-page evidence shards. Each EV id is cited inline in the matching Mimo article. See README.",
   "shards": [
     {
@@ -158,7 +158,12 @@
       "file": "registry-writesonic-review.json",
       "page": "/writesonic-review",
       "entries": 6
+    },
+    {
+      "file": "registry-ai-video-cost-per-minute.json",
+      "page": "/guides/ai-video-cost-per-minute",
+      "entries": 32
     }
   ],
-  "total_entries": 505
+  "total_entries": 556
 }
