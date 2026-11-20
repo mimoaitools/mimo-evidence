@@ -510,6 +510,16 @@
           "quote": "$6.99 / 1st mo $10 30% Off 1st Then $8.8/month First-purchase offer available once. ... 660 Credits/month 100 Credits = $1.06 ... Generated content is for commercial use ... Offer valid until Dec.31, 2026, UTC-8",
           "supersedes": "third-party Standard price spread as the current price; those figures stay as dated history",
           "method": "r.jina.ai render plus live browser read of Monthly and Yearly tabs, signed out"
+        },
+        {
+          "recaptured_at": "2026-11-20",
+          "collector": "mimo-auto-content 2026-11-20 refresh",
+          "status": "ok",
+          "matched": false,
+          "method": "browser render (built-in browser, signed out, monthly and yearly toggles), read-only",
+          "source_url": "https://kling.ai/app/membership/membership-plan",
+          "claim": "Refresh re-read 2026-11-20: standing prices unchanged (Standard list $10, renews $8.80/month, 660 credits; Pro list $37, renews $32.56, 3,000; Premier $181.99, 18,000; Ultra+ $544.99, 57,000; yearly Standard $79.20, Pro $293.04 after the first year). Monthly tab 'Limited-Time 35% Off' the first 3 months: Standard $6.5, Pro $24, Premier $135, Ultra+ $402 a month for the first 3 months; printed per-100-credit rates $0.98, $0.80, $0.75, $0.71. Yearly tab 'Limited-Time 50% Off' the first year: Standard $60, Pro $222 for the first year. A countdown (12 days 21 hours) ran on the page. Supersedes the 2026-10-31 first-month offer ($6.99 / $25.99 / $144.99 / $432.99, 30% off the first month).",
+          "quote": "Standard $ 6.5 / First 3 Months $10 35% Off $6.5/month for the First 3 Months, then $8.8/month. ... Pro $ 24 / First 3 Months $37 ... then $32.56/month ... Standard $ 60 / First Year $120 50% Off Then $79.2/year"
         }
       ]
     },

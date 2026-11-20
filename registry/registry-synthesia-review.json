@@ -248,6 +248,16 @@
           "quote": "AI dubbing ... 70+ languages ... Enterprise ... 140+ languages",
           "supersedes": "2026-08-13 page reading that the dubbing count was 140+ without a per-plan split (this recapture only adds the dubbing split; tier names and prices are tracked in EV-synthesia-vs-heygen-02)",
           "collector": "B7 sibling sweep"
+        },
+        {
+          "recaptured_at": "2026-11-20",
+          "collector": "mimo-auto-content 2026-11-20 refresh",
+          "status": "ok",
+          "matched": false,
+          "method": "browser render (built-in browser, signed out, monthly and yearly toggles) + curl of the page HTML, read-only",
+          "source_url": "https://www.synthesia.io/pricing",
+          "claim": "Refresh re-read 2026-11-20: the TWO PRICE SETS first seen 2026-11-19 HOLD. Rendered in a browser: Starter monthly $29 ($14 first month, then $29), 1,250 credits/month (Studio video up to ~12 min); Starter yearly $18/month, $216 billed yearly, 15,000 credits/year (~150 min); Pro monthly $89 ($49 first month, then $89), 6,000 credits/month (~60 min); Pro yearly $64/month, $768 billed yearly, 72,000 credits/year (~720 min); Basic $0, 500 credits/month, 10 minutes of video/month; FAQ: a typical finished minute uses about 100 credits. The page HTML fetched by curl the same day still carries Starter $19 ($9 first month), $14/mo yearly ($168) and Pro $59/mo yearly ($708) alongside the rendered set. The rendered dollar figures equal the pre-2026-10-01 minute-plan prices (Starter $29/$18, Creator $89/$64). Which set a buyer is charged was not established. Mimo arithmetic at ~100 credits/min with 10 included minutes: Starter 27.5 min -> $18/27.5=$0.65, $29/27.5=$1.05; Pro 75 min -> $64/75=$0.85; 50 min on Pro yearly $64/50=$1.28; API minute at 160 credits $768/78,000x160=$1.58.",
+          "quote": "Starter $29 $14 first month then $29 per month 1,250 CREDITS / MONTH ... Starter $29 $18 /month $216 billed yearly 15,000 CREDITS / YEAR ... Pro $89 $64 /month $768 billed yearly 72,000 CREDITS / YEAR"
         }
       ]
     },
@@ -320,6 +330,16 @@
           "quote": "A typical finished video uses about 100 credits per minute. A video with more on-screen avatar time uses a little more, and a video with less on-screen avatar time uses a little less.",
           "supersedes": "2026-08-13 derived figures ($1.80-$2.90 Starter, $2.13-$2.97 Creator)",
           "collector": "refresh-2026-10-31 (live r.jina.ai + curl)"
+        },
+        {
+          "recaptured_at": "2026-11-20",
+          "collector": "mimo-auto-content 2026-11-20 refresh",
+          "status": "ok",
+          "matched": false,
+          "method": "browser render (built-in browser, signed out, monthly and yearly toggles) + curl of the page HTML, read-only",
+          "source_url": "https://www.synthesia.io/pricing",
+          "claim": "Refresh re-read 2026-11-20: the TWO PRICE SETS first seen 2026-11-19 HOLD. Rendered in a browser: Starter monthly $29 ($14 first month, then $29), 1,250 credits/month (Studio video up to ~12 min); Starter yearly $18/month, $216 billed yearly, 15,000 credits/year (~150 min); Pro monthly $89 ($49 first month, then $89), 6,000 credits/month (~60 min); Pro yearly $64/month, $768 billed yearly, 72,000 credits/year (~720 min); Basic $0, 500 credits/month, 10 minutes of video/month; FAQ: a typical finished minute uses about 100 credits. The page HTML fetched by curl the same day still carries Starter $19 ($9 first month), $14/mo yearly ($168) and Pro $59/mo yearly ($708) alongside the rendered set. The rendered dollar figures equal the pre-2026-10-01 minute-plan prices (Starter $29/$18, Creator $89/$64). Which set a buyer is charged was not established. Mimo arithmetic at ~100 credits/min with 10 included minutes: Starter 27.5 min -> $18/27.5=$0.65, $29/27.5=$1.05; Pro 75 min -> $64/75=$0.85; 50 min on Pro yearly $64/50=$1.28; API minute at 160 credits $768/78,000x160=$1.58.",
+          "quote": "Starter $29 $14 first month then $29 per month 1,250 CREDITS / MONTH ... Starter $29 $18 /month $216 billed yearly 15,000 CREDITS / YEAR ... Pro $89 $64 /month $768 billed yearly 72,000 CREDITS / YEAR"
         }
       ]
     },
