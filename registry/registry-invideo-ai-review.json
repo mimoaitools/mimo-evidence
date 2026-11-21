@@ -1,0 +1,1755 @@
+{
+ "_meta": {
+  "flow_id": "invideo-ai-review-2026-11-20",
+  "protocol_version": "MEP-1.0",
+  "target_slug": "/tools/invideo-ai",
+  "target_keyword": "invideo ai review",
+  "run_date": "2026-11-20",
+  "collector": "evidence-curator",
+  "capture_method": "Built-in browser (mcp__Claude_Browser) for invideo.io pricing (both toggles), terms, help pages (in-page fetch of same-origin help URLs and help.invideo.io .md files), Trustpilot (page __NEXT_DATA__ JSON, pages 1-2), Quora (signed out) and marcandrews.com; WebSearch for discovery; WebFetch once (marcandrews, re-verified in browser). Videos muted with the owner's mute patch before reading invideo.io. No sign-in, no forms.",
+  "query_census": [
+   "[Browser] invideo.io/pricing (annual default + Monthly toggle + FAQ JSON-LD)",
+   "[Browser] invideo.io/terms-and-conditions/ -> /terms-of-service/ (effective 19 Nov 2026)",
+   "[Browser] invideo.io/legal/terms-of-service-19-11-2026/ (Previous version link; effective 6 Nov 2026)",
+   "[WebSearch] help.invideo.io free plan watermark credits failed generation",
+   "[Browser] invideo.io/help/billing/plan-limits/ + linked billing pages (how-do-credits-work, extra-credits, video-model-pricing, subscriptions-and-refunds, payments-invoices-and-errors)",
+   "[Browser] invideo.io/robots.txt, /sitemap.xml, /llms.txt",
+   "[Browser] help.invideo.io/llms.txt -> filtered lines (free|fail|refund|watermark|credit|commercial|plan|error|stuck|retry) -> 8 .md articles + account/refunds.md",
+   "[Browser] invideo.io/make/affiliate-program/",
+   "[Browser] trustpilot.com/review/ai.invideo.io?sort=recency (page 1) + &page=2",
+   "[Browser] reddit.com/search?q=invideo+ai (blocked) ; [Chrome] old.reddit.com/search?q=invideo+ai (blocked) ; [WebSearch allowed_domains reddit.com] invideo ai reddit credits review 2026 (refused) ; [curl] old.reddit.com/search.json + r/videography search.json (403)",
+   "[Browser] quora.com/search?q=invideo ai (login wall)",
+   "[WebSearch allowed_domains quora.com] quora \"invideo ai\" good any experience",
+   "[Browser] Quora: Has-anyone-tried-Invideo-AI-Is-it-any-good (+ Ramin-Abdollahi-5 answer), Is-anything-better-than-InVideo-AI, Is-Invideo-AI-worth-it, Is-InVideo-AI-good-for-beginners-making-YouTube-videos",
+   "[Browser] g2.com/products/invideo/reviews (403)",
+   "[WebSearch] invideo ai review tested credits per video methodology 2026",
+   "[WebFetch+Browser] marcandrews.com/invideo-ai-credits-explained/ ; [Browser] marcandrews.com/invideo-ai-free-plan-review-2026-what-you-get-for-free/",
+   "[Phase-1 handoff] 1-competitor.yaml + 1-serp.yaml review pages (techpoint, cut-the-saas, fast.io, unite.ai, motiontheagency, leadde, maxaeo)"
+  ],
+  "inclusion_rule": "MEP-1.0 §3: dated or datable, publicly linkable, first-person experience OR disclosed-method test OR vendor primary source, codable tool+outcome. Vendor items labelled self-interested.",
+  "exclusion_codes_used": {
+   "unverifiable-this-run": 8,
+   "duplicate": 12,
+   "off-topic": 6,
+   "no-methodology-affiliate": 24
+  },
+  "flow_counter": {
+   "identified": 71,
+   "screened": 71,
+   "excluded": 50,
+   "excluded_by_reason": {
+    "unverifiable-this-run": 8,
+    "duplicate": 12,
+    "off-topic": 6,
+    "no-methodology-affiliate": 24
+   },
+   "included_sources": 21,
+   "included_entries": 34,
+   "sub_sample": "Trustpilot ai.invideo.io: 40 most recent English reviews (sort=recency, pages 1-2, 2026-09-08..2026-11-20) coded inside one included source; Quora: 1 thread, 4 answers registered (thread shows 21 answers; 'All related (51)')."
+  },
+  "included_sources": [
+   "https://help.invideo.io/account/commercial-use.md",
+   "https://help.invideo.io/billing/refunds-how-to-request-one-and-what-s-covered.md",
+   "https://help.invideo.io/credits-and-plans/how-credits-are-charged-when-using-ai-agents.md",
+   "https://invideo.io/help/billing/extra-credits/",
+   "https://invideo.io/help/billing/how-do-credits-work/",
+   "https://invideo.io/help/billing/payments-invoices-and-errors/",
+   "https://invideo.io/help/billing/plan-limits/",
+   "https://invideo.io/help/billing/subscriptions-and-refunds/",
+   "https://invideo.io/help/billing/video-model-pricing/",
+   "https://invideo.io/legal/terms-of-service-19-11-2026/",
+   "https://invideo.io/llms.txt",
+   "https://invideo.io/make/affiliate-program/",
+   "https://invideo.io/pricing/",
+   "https://invideo.io/terms-of-service/",
+   "https://marcandrews.com/invideo-ai-credits-explained/",
+   "https://marcandrews.com/invideo-ai-free-plan-review-2026-what-you-get-for-free/",
+   "https://www.quora.com/Has-anyone-tried-Invideo-AI-Is-it-any-good/answer/Just-Incompetence",
+   "https://www.quora.com/Has-anyone-tried-Invideo-AI-Is-it-any-good/answer/Ramin-Abdollahi-5",
+   "https://www.quora.com/Has-anyone-tried-Invideo-AI-Is-it-any-good/answer/Shaheed-Shoulars",
+   "https://www.quora.com/Has-anyone-tried-Invideo-AI-Is-it-any-good/answer/Yakub-92",
+   "https://www.trustpilot.com/review/ai.invideo.io"
+  ],
+  "excluded": [
+   {
+    "url": "https://www.reddit.com/r/videography/ (InVideo thread, SERP organic 1)",
+    "reason": "unverifiable-this-run",
+    "detail": "reddit.com blocked in built-in browser (safety list), Claude in Chrome (safety list), WebSearch (domain refused) and curl (HTTP 403); no mirror used"
+   },
+   {
+    "url": "reddit thread 'Invideo.ai. What a SCAM!!! read this before you sign ...' (2025-10-31, 79 posts)",
+    "reason": "unverifiable-this-run",
+    "detail": "reddit blocked; same author text read on Quora (EV-28)"
+   },
+   {
+    "url": "reddit r/AI_Agents 'My honest experience with invideo - Things I wish I knew...' (~2 months old per SERP)",
+    "reason": "unverifiable-this-run",
+    "detail": "reddit blocked"
+   },
+   {
+    "url": "reddit 'I tried the AI that turns prompts into video (Invideo AI ...' (2024-06-02)",
+    "reason": "unverifiable-this-run",
+    "detail": "reddit blocked"
+   },
+   {
+    "url": "reddit r/generativeAI credit-burn thread (SERP 'what people are saying')",
+    "reason": "unverifiable-this-run",
+    "detail": "reddit blocked; top comment labelled a bot per phase-1 snapshot"
+   },
+   {
+    "url": "https://www.g2.com/products/invideo/reviews",
+    "reason": "unverifiable-this-run",
+    "detail": "HTTP 403 bot check in built-in browser; not bypassed"
+   },
+   {
+    "url": "https://www.quora.com/Is-anything-better-than-InVideo-AI",
+    "reason": "duplicate",
+    "detail": "shows merged answers from 'Has anyone tried Invideo AI?' (same answers, same authors)"
+   },
+   {
+    "url": "https://www.quora.com/unanswered/Is-Invideo-AI-worth-it",
+    "reason": "duplicate",
+    "detail": "unanswered; displays the same merged answers"
+   },
+   {
+    "url": "https://www.quora.com/unanswered/Is-InVideo-AI-good-for-beginners-making-YouTube-videos",
+    "reason": "off-topic",
+    "detail": "unanswered; only unrelated related-question answers"
+   },
+   {
+    "url": "https://www.quora.com/Is-InVideo-AI-worth-it-for-a-faceless-channel-or-does-Kyncept-fit-daily-story-Shorts-better",
+    "reason": "unverifiable-this-run",
+    "detail": "not opened this run; title pattern pairs invideo with a second vendor (possible seeding), flagged for astroturf check if reopened"
+   },
+   {
+    "url": "https://www.quora.com/Is-InVideo-a-better-purchase-option-than-Lumen5",
+    "reason": "unverifiable-this-run",
+    "detail": "not opened this run (Studio-era comparison)"
+   },
+   {
+    "url": "https://www.quora.com/Are-there-any-tutorials-or-guides-available-to-help-new-users-get-started-with-creating-videos-using-InVideo-AI",
+    "reason": "off-topic",
+    "detail": "how-to question, no experience outcome"
+   },
+   {
+    "url": "https://aisuccessdigitaldollardynamos.quora.com/Is-invideo-worth-it",
+    "reason": "no-methodology-affiliate",
+    "detail": "Quora Space 'Before You Buy', promotional"
+   },
+   {
+    "url": "https://aisuccessdigitaldollardynamos.quora.com/Whats-your-review-of-Invideo",
+    "reason": "no-methodology-affiliate",
+    "detail": "same Space"
+   },
+   {
+    "url": "https://affiliatesuccesshub.quora.com/InVideo-The-Ultimate-AI-Video-Editor-for-Small-Businesses",
+    "reason": "no-methodology-affiliate",
+    "detail": "affiliate Space"
+   },
+   {
+    "url": "https://showyourart.quora.com/You-can-create-art-from-your-drawings-...",
+    "reason": "off-topic",
+    "detail": "promotional post, no codable outcome"
+   },
+   {
+    "url": "https://www.quora.com/What-are-some-AI-video-generator-tools-that-can-create-stunning-videos-with-minimal-effort",
+    "reason": "off-topic",
+    "detail": "generic listicle question"
+   },
+   {
+    "url": "https://creatify.ai/blog/invideo-pricing-(2026)-plans-credits-and-what-you-ll-actually-pay",
+    "reason": "no-methodology-affiliate",
+    "detail": "rival vendor marketing page (+ pt/ja/zh locales counted as duplicates)"
+   },
+   {
+    "url": "https://creatify.ai/pt/blog/... ; /ja/ ; /zh/",
+    "reason": "duplicate",
+    "detail": "3 locale copies"
+   },
+   {
+    "url": "https://magichour.ai/blog/invideo-ai-pricing",
+    "reason": "no-methodology-affiliate",
+    "detail": "rival vendor pricing explainer"
+   },
+   {
+    "url": "https://fluxnote.io/alternative/invideo-credit-system",
+    "reason": "no-methodology-affiliate",
+    "detail": "rival vendor marketing"
+   },
+   {
+    "url": "https://fluxnote.io/alternative/invideo-credits-gone",
+    "reason": "no-methodology-affiliate",
+    "detail": "rival vendor marketing"
+   },
+   {
+    "url": "https://fluxnote.io/guides/invideo-ai-free-2026",
+    "reason": "no-methodology-affiliate",
+    "detail": "rival vendor marketing"
+   },
+   {
+    "url": "https://pexo.ai/blog/invideo-ai-pricing-3880",
+    "reason": "no-methodology-affiliate",
+    "detail": "rival vendor"
+   },
+   {
+    "url": "https://www.seedance.tv/blog/invideo-ai-video-generator-free",
+    "reason": "no-methodology-affiliate",
+    "detail": "rival/model-brand blog"
+   },
+   {
+    "url": "https://novoads.ai/en/blog/best-free-ai-video-generators",
+    "reason": "no-methodology-affiliate",
+    "detail": "rival listicle"
+   },
+   {
+    "url": "https://dev.to/futurestackreviews/invideo-ai-review-fast-finished-3eg3",
+    "reason": "no-methodology-affiliate",
+    "detail": "review blog, no disclosed test inputs"
+   },
+   {
+    "url": "https://academy.techpresso.co/reviews/is-invideo-ai-worth-it",
+    "reason": "no-methodology-affiliate",
+    "detail": "no test method"
+   },
+   {
+    "url": "https://aireiter.com/blog/invideo-ai-review",
+    "reason": "no-methodology-affiliate",
+    "detail": "no test method (+ de/tw locales)"
+   },
+   {
+    "url": "https://aireiter.com/de/... ; /tw/",
+    "reason": "duplicate",
+    "detail": "2 locale copies"
+   },
+   {
+    "url": "https://www.lilachbullock.com/?p=185891",
+    "reason": "no-methodology-affiliate",
+    "detail": "affiliate review"
+   },
+   {
+    "url": "https://usagepricing.com/blueprint/invideo-ai",
+    "reason": "no-methodology-affiliate",
+    "detail": "secondary pricing aggregator"
+   },
+   {
+    "url": "https://aliteq.com/invideo-not-working",
+    "reason": "no-methodology-affiliate",
+    "detail": "troubleshooting blog citing no vendor page for failed-generation charges"
+   },
+   {
+    "url": "https://invideo.io/blog/free-image-to-video-ai/",
+    "reason": "off-topic",
+    "detail": "vendor marketing blog, no plan/credit rule"
+   },
+   {
+    "url": "https://help.atlabs.ai/en-us/article/troubleshooting-faqs-zw28ij",
+    "reason": "off-topic",
+    "detail": "different product"
+   },
+   {
+    "url": "https://marcandrews.com/?p=3499 (InVideo AI Review 2026)",
+    "reason": "duplicate",
+    "detail": "same author/test sessions as EV-32/33"
+   },
+   {
+    "url": "https://marcandrews.com/?p=4680",
+    "reason": "duplicate",
+    "detail": "same page as invideo-ai-credits-explained"
+   },
+   {
+    "url": "https://ie.trustpilot.com/review/ai.invideo.io?page=3 ; ca. ?page=5 ; au. ?page=3",
+    "reason": "duplicate",
+    "detail": "regional mirrors of the same Trustpilot profile"
+   },
+   {
+    "url": "phase-1 SERP pages: techpoint, cut-the-saas, fast.io, unite.ai, motiontheagency, leadde, maxaeo",
+    "reason": "no-methodology-affiliate",
+    "detail": "7 review/AEO pages from 1-competitor/1-serp; no disclosed inputs or outputs; fast.io '30+ prompts' unpublished; invideo pays 50%/25% affiliate commission (EV-17)"
+   }
+  ],
+  "trustpilot_sample": {
+   "url": "https://www.trustpilot.com/review/ai.invideo.io?sort=recency",
+   "language_filter": "en (Trustpilot default)",
+   "n": 40,
+   "date_span": "2026-09-08..2026-11-20",
+   "stars": {
+    "1": 31,
+    "2": 1,
+    "3": 1,
+    "4": 1,
+    "5": 6
+   },
+   "themes_multilabel": {
+    "credits run out fast / more credits demanded / unexpected credit use": 21,
+    "  of which credits spent on AI errors, retries, loops or fixes": 7,
+    "billing or refund dispute (at least)": 6,
+    "  refund refused or unanswered (at least)": 4,
+    "  unintended annual charge": 2,
+    "  automatic credit top-up charge": 2,
+    "  billed after cancelling": 1,
+    "output quality / prompt-following (at least)": 6,
+    "slow rendering": 3,
+    "free tier ends before a usable video / cannot try first": 3,
+    "support praised": 4,
+    "paid stock watermarked": 1,
+    "advertised feature missing": 1,
+    "no codable detail": 3
+   },
+   "five_star_sources": "5 of 6 BasicLink (Trustpilot invitation link), 1 Organic",
+   "company_replies": 5,
+   "coded_reviews": [
+    {
+     "id": "6affc9c5c88c7cdb18a87135",
+     "stars": 1,
+     "date": "2026-11-20",
+     "code": "billing after cancel; refund denied"
+    },
+    {
+     "id": "6af87ea426774bc85ddb5b66",
+     "stars": 1,
+     "date": "2026-11-14",
+     "code": "unintended annual $126; refund unanswered"
+    },
+    {
+     "id": "6af4683bdacfc12dd0a30874",
+     "stars": 3,
+     "date": "2026-11-11",
+     "code": "paid iStock watermarked"
+    },
+    {
+     "id": "6af2b93c872a1684db4d80d8",
+     "stars": 5,
+     "date": "2026-11-10",
+     "code": "positive product + support (BasicLink)"
+    },
+    {
+     "id": "6aefa41178667b4162a96622",
+     "stars": 1,
+     "date": "2026-11-08",
+     "code": "asked to buy more credits mid-project"
+    },
+    {
+     "id": "6aef9a8a502ec6f3487da8ae",
+     "stars": 1,
+     "date": "2026-11-07",
+     "code": "refund refused within an hour"
+    },
+    {
+     "id": "6aecfffc4d1ae1fd826e2e4a",
+     "stars": 1,
+     "date": "2026-11-06",
+     "code": "free tier ends in minutes"
+    },
+    {
+     "id": "6aec2ac6863d6198208937ab",
+     "stars": 1,
+     "date": "2026-11-05",
+     "code": "credits out on 15-s video; unintended annual; refund refused"
+    },
+    {
+     "id": "6ae9d82a3b517d92776ffb63",
+     "stars": 1,
+     "date": "2026-11-03",
+     "code": "auto top-up $150; credits"
+    },
+    {
+     "id": "6ae1498556f9ea0e948dd462",
+     "stars": 1,
+     "date": "2026-10-28",
+     "code": "output quality"
+    },
+    {
+     "id": "6ade77314c4adccd230a6297",
+     "stars": 1,
+     "date": "2026-10-25",
+     "code": "quality declined"
+    },
+    {
+     "id": "6ad48d7bb7a36f9d7b36f4eb",
+     "stars": 1,
+     "date": "2026-10-18",
+     "code": "credits charged for AI mistakes; unrequested elements added (prompt-following)"
+    },
+    {
+     "id": "6ad364d845990c722dedbb62",
+     "stars": 4,
+     "date": "2026-10-17",
+     "code": "Ultra mode burn; credits back"
+    },
+    {
+     "id": "6ad30a74dc5ce30e59876661",
+     "stars": 1,
+     "date": "2026-10-17",
+     "code": "cannot try before paying"
+    },
+    {
+     "id": "6ad2ce648ee939f0de121303",
+     "stars": 1,
+     "date": "2026-10-17",
+     "code": "free credits gone in 5 min"
+    },
+    {
+     "id": "6ad19745b5b3763673b3534c",
+     "stars": 1,
+     "date": "2026-10-16",
+     "code": "prompt-following; credits eaten by errors"
+    },
+    {
+     "id": "6ad0ba33a70ab7f0f9af781f",
+     "stars": 1,
+     "date": "2026-10-15",
+     "code": "advertised captions missing"
+    },
+    {
+     "id": "6ad045a33137e1b2380e51e3",
+     "stars": 5,
+     "date": "2026-10-15",
+     "code": "positive; support (BasicLink)"
+    },
+    {
+     "id": "6ace3cb10b2944ff74d51c88",
+     "stars": 1,
+     "date": "2026-10-13",
+     "code": "unexpected credit charges against instruction"
+    },
+    {
+     "id": "6aca6e0cbd84d55b17b6e0c2",
+     "stars": 1,
+     "date": "2026-10-10",
+     "code": "credits + quality"
+    },
+    {
+     "id": "6ac92883dcdd323a77463cf3",
+     "stars": 1,
+     "date": "2026-10-09",
+     "code": "rendering loop; $411 auto-charge"
+    },
+    {
+     "id": "6ac8606c5250647a096a9c5f",
+     "stars": 1,
+     "date": "2026-10-09",
+     "code": "2,000 credits gone on two videos; slow"
+    },
+    {
+     "id": "6ac455769e46cc2826ce6597",
+     "stars": 1,
+     "date": "2026-10-06",
+     "code": "no codable detail (Spanish)"
+    },
+    {
+     "id": "6ac3970afd3f4d2fd39257db",
+     "stars": 1,
+     "date": "2026-10-05",
+     "code": "94% credits in 15 min"
+    },
+    {
+     "id": "6ac1a22f5ba38cd9d5c78dd3",
+     "stars": 5,
+     "date": "2026-10-04",
+     "code": "positive via ChatGPT (BasicLink)"
+    },
+    {
+     "id": "6ac1549b201910cdbc3ee240",
+     "stars": 1,
+     "date": "2026-10-03",
+     "code": "$200, no finished video; generation problems; slow"
+    },
+    {
+     "id": "6ac1098c81f7416a675a2bc7",
+     "stars": 1,
+     "date": "2026-10-03",
+     "code": "Starter not enough for 3-min video"
+    },
+    {
+     "id": "6abbc415c2bebe04ae500e49",
+     "stars": 1,
+     "date": "2026-09-29",
+     "code": "crash/retry loop drained credits; no reply"
+    },
+    {
+     "id": "6ab31d16e98142472a589b4d",
+     "stars": 1,
+     "date": "2026-09-23",
+     "code": "more credits needed to fix mistakes"
+    },
+    {
+     "id": "6ab2f8c0b7ac12b7c909009f",
+     "stars": 1,
+     "date": "2026-09-22",
+     "code": "credit cost hidden; <2 videos"
+    },
+    {
+     "id": "6ab17324b1cbafc67d3ec01a",
+     "stars": 5,
+     "date": "2026-09-21",
+     "code": "support praised (BasicLink)"
+    },
+    {
+     "id": "6ab0ea5b97d07eea237ee9f0",
+     "stars": 5,
+     "date": "2026-09-21",
+     "code": "support handled credit issue (BasicLink)"
+    },
+    {
+     "id": "6aad34846e9fa37c7670d8aa",
+     "stars": 1,
+     "date": "2026-09-18",
+     "code": "no codable detail"
+    },
+    {
+     "id": "6aab8944fcd42961bfd2eca7",
+     "stars": 5,
+     "date": "2026-09-17",
+     "code": "positive output (Organic)"
+    },
+    {
+     "id": "6aaae8dd824574bb1df26196",
+     "stars": 1,
+     "date": "2026-09-16",
+     "code": "$1,174 burned; hallucinations; credits returned then repeated"
+    },
+    {
+     "id": "6aa9af70905f75939f5a03a3",
+     "stars": 1,
+     "date": "2026-09-15",
+     "code": "two days frustration (BasicLink)"
+    },
+    {
+     "id": "6aa3a02f8d0b19f62bea8bbb",
+     "stars": 1,
+     "date": "2026-09-11",
+     "code": "57% credits even after stopping"
+    },
+    {
+     "id": "6aa2b2dad9139b719402acac",
+     "stars": 1,
+     "date": "2026-09-10",
+     "code": "400 credits gone on 20-s TikTok"
+    },
+    {
+     "id": "6aa0eb1bc979f07ef9d7dfd4",
+     "stars": 1,
+     "date": "2026-09-09",
+     "code": "no codable detail"
+    },
+    {
+     "id": "6a9fe68a08aa530de42c30a6",
+     "stars": 2,
+     "date": "2026-09-08",
+     "code": "stops mid-project for extra credits; slow"
+    }
+   ],
+   "coding": "dual-independent (coding-pass-A live re-read of all 40; coding-pass-B tally check, Trustpilot 403); resolved by mep-resolver 2026-11-20",
+   "themes_note": "Multi-label; sub-codes overlap (billing sub-codes 4+2+2+1 exceed the parent 6). 'At least' counts are the lower figure the shard's own review codes and quotes support; coder A's live reading gives billing 8, refused/unanswered refunds 7, quality/prompt-following 9, slow rendering 5, staff named 3 of 4. See phases/invideo-ai-review/coding-resolution.json."
+  },
+  "reused_entries": [
+   {
+    "id": "EV-ai-video-cost-per-minute-25",
+    "use": "vendor-labelled context: invideo's own FAQ, 164 clips generated / 41 used, ~3 generations per usable shot"
+   }
+  ],
+  "coding_status": "dual-independent coding done 2026-11-20; resolved by mep-resolver",
+  "coder_agreement": {
+   "definition": "agreed = coders A and B give the same label and stance and do not conflict on facts or counts (A vs B, not vs curator)",
+   "entries_coded": 34,
+   "agreed": 28,
+   "rate": 0.824,
+   "label_agreement": "34/34",
+   "stance_agreement": "29/34",
+   "count_conflicts": [
+    "EV-invideo-ai-review-21"
+   ],
+   "claim_supported_verdict_agreement": "18/34 (B used a stricter rule: false when any figure is outside the quote)",
+   "coding_ambiguous_after_resolution": 0,
+   "resolution_file": "Data/seo/phases/invideo-ai-review/coding-resolution.json"
+  }
+ },
+ "entries": [
+  {
+   "id": "EV-invideo-ai-review-01",
+   "claim": "The vendor's pricing page, read on 2026-11-20 in its default annual view during a Black Friday promotion, lists three individual plans: Basic 190 credits/month, Pro 1,000 credits/month at $15/seat/month billed annually ($180 for the year, struck $30), and Ultra 6,000 credits/month at $40/month for 2 years ($960 up front for 2 years, then $1,920/year, struck $160). The page is inconsistent on Basic: the card shows '$4 per seat/mo, billed annually' (struck $9) but charges '$54 today for 1 year' ($4 x 12 would be $48), and the Compare-features table lower on the same page lists Basic at $5/seat/month billed annually (and Ultra at $80). No Free card is shown in the grid.",
+   "source_url": "https://invideo.io/pricing/",
+   "source_date": "2026-11-20",
+   "quote": "BASIC 50% OFF For first-time AI creators 190 credits/mo. ... $9 $4 per seat/mo, billed annually $54 today for 1 year. ... PRO 50% OFF MOST POPULAR ... 1,000 credits/mo. ... $30 $15 per seat/mo, billed annually $180 today for 1 year.",
+   "platform": "invideo.io (vendor primary source, self-interested; read live in the built-in browser 2026-11-20)",
+   "target_slug": "/tools/invideo-ai",
+   "collected_at": "2026-11-20",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "invideo-ai-review-2026-11-20",
+   "screening": "included",
+   "label": "vendor-claim",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "invideo (InVideo AI / invideo Editor)",
+    "aspect": "plan prices (annual view, promo) and monthly credits",
+    "stance": "neutral",
+    "plan_tier_if_stated": "Basic, Pro, Ultra",
+    "item_date": "2026-11-20"
+   },
+   "quote_supplementary": "ULTRA 75% OFF LIMITED OFFER ... 6,000 credits/mo. ... Pay for 12 months, get 24 $160 $40 per seat/mo for 2 years $960 today for 2 years. Then $1,920/year. Compare table: BASIC $5 / PRO $15 / ULTRA $80 per seat/mo, billed annually.",
+   "honesty_notes": [
+    "Promotional state: banner '75% OFF BLACK FRIDAY SALE Pay for 12 months, get 24' with a countdown (about 5 days 20 hours left at capture). Prices will change when the promo ends; state the capture date.",
+    "The Compare-features table lower on the same page shows different annual figures (Basic $5, Pro $15, Ultra $80 per seat/month billed annually). Do not reconcile; quote whichever block you cite.",
+    "Pro card has a 1,000 / 2,000 / 3,000 credit selector; Ultra 6,000 / 9,000. Prices shown are for the lowest step only.",
+    "Credits replace the older 'AI minutes / iStock / generative credits' model that several 2025 reviews describe; plan names Basic/Pro/Ultra replace Plus/Max/Generative (see EV for July 2026 ladder).",
+    "Resolver 2026-11-20: claim now states the Basic $4 card / $54 charge / $5 compare-table inconsistency instead of picking one figure (coder B flag). Pages must not print $4 and $54 together without saying the page itself disagrees."
+   ],
+   "coding_status": "dual-independent coding done 2026-11-20; resolved by mep-resolver",
+   "resolved_by": "mep-resolver",
+   "recaptures": [
+    {
+     "recaptured_at": "2026-11-21",
+     "collector": "mimo-auto-content (publish-day re-read)",
+     "status": "ok",
+     "method": "built-in browser, signed out, read-only (rendered text)",
+     "matched": true,
+     "source_url": "https://invideo.io/pricing/",
+     "claim": "Annual view unchanged from 2026-11-20: Basic card $4 per seat a month (struck $9), '$54 today for 1 year. Then $54/year'; Pro $15 (struck $30), '$180 today for 1 year. Then $180/year'; Ultra $40 (struck $160), '$960 today for 2 years. Then $1,920/year'. Compare-features table in annual view still lists Basic $5, Pro $15, Ultra $80 per seat a month, billed annually, so the three Basic figures ($4 card, $54 charge, $5 table) are all still on the page. Banner 'UP TO 75% OFF BLACK FRIDAY SALE', 'Pay for 12 months, get 24', countdown about 4 days 21 hours.",
+     "quote": "BASIC 50% OFF For first-time AI creators $9 $4 /seat/mo. 190 credits/mo. ... Save $54 per seat compared to monthly, $54 today for 1 year. Then $54/year ... Compare features ... BASIC $5 per seat/mo, billed annually ... PRO MOST POPULAR $15 per seat/mo, billed annually ... ULTRA BEST VALUE $80 per seat/mo, billed annually"
+    }
+   ]
+  },
+  {
+   "id": "EV-invideo-ai-review-02",
+   "claim": "In the monthly-billing view of the same page (2026-11-20), Basic is $9/seat/month, Pro $30/seat/month, and Ultra $141/seat/month (12% off, renews at $160).",
+   "source_url": "https://invideo.io/pricing/",
+   "source_date": "2026-11-20",
+   "quote": "$9 per seat/mo, billed monthly Get Basic ... $30 per seat/mo, billed monthly Get Pro ... ULTRA 12% OFF BEST VALUE ... $160 $141 per seat/mo, billed monthly Get Ultra Renews at $160",
+   "platform": "invideo.io (vendor primary source, self-interested; read live in the built-in browser 2026-11-20)",
+   "target_slug": "/tools/invideo-ai",
+   "collected_at": "2026-11-20",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "invideo-ai-review-2026-11-20",
+   "screening": "included",
+   "label": "vendor-claim",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "invideo (InVideo AI / invideo Editor)",
+    "aspect": "plan prices (monthly view)",
+    "stance": "neutral",
+    "plan_tier_if_stated": "Basic, Pro, Ultra",
+    "item_date": "2026-11-20"
+   },
+   "honesty_notes": [
+    "Captured by clicking the Monthly toggle in the built-in browser; signed out, US-looking visitor. The help center says plans and prices differ by region (help.invideo.io/credits-and-plans/do-prices-vary-by-country...), not read."
+   ],
+   "coding_status": "dual-independent coding done 2026-11-20; resolved by mep-resolver",
+   "resolved_by": "mep-resolver",
+   "recaptures": [
+    {
+     "recaptured_at": "2026-11-21",
+     "collector": "mimo-auto-content (publish-day re-read)",
+     "status": "ok",
+     "method": "built-in browser, signed out, read-only (rendered text)",
+     "matched": true,
+     "source_url": "https://invideo.io/pricing/",
+     "claim": "Monthly view unchanged from 2026-11-20: Basic $9, Pro $30, Ultra $141 (12% off, renews at $160) per seat a month, billed monthly; credits 190 / 1,000 / 6,000 a month. Page title read as 'Pricing | invideo AI'. Plan cards list '45 Premium stock footage' (Basic), '150 Premium stock footage' (Pro) and '360 Premium stock footage' (Ultra); the cards do not name iStock. This stock line was not recorded in the 2026-11-20 capture.",
+     "quote": "BASIC ... 190 credits per seat/mo $9 per seat/mo, billed monthly Get Basic ... Included: 45 Premium stock footage ... PRO MOST POPULAR ... $30 per seat/mo, billed monthly Get Pro ... Included: 150 Premium stock footage ... ULTRA 12% OFF BEST VALUE ... $160 $141 per seat/mo, billed monthly Get Ultra Renews at $160 ... Included: 360 Premium stock footage"
+    }
+   ]
+  },
+  {
+   "id": "EV-invideo-ai-review-03",
+   "claim": "The pricing page FAQ (2026-11-20) says credits are charged for every generation, unused plan credits do not roll over, credit costs can change without prior notice, and after a downgrade or cancellation the account falls to the Free plan at cycle end and unused paid credits expire.",
+   "source_url": "https://invideo.io/pricing/",
+   "source_date": "2026-11-20",
+   "quote": "If you downgrade or cancel your subscription, your subscription will remain active until the end of the current billing cycle. After that, your account will be downgraded to the Free plan and any unused paid credits will expire.",
+   "platform": "invideo.io (vendor primary source, self-interested; read live in the built-in browser 2026-11-20)",
+   "target_slug": "/tools/invideo-ai",
+   "collected_at": "2026-11-20",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "invideo-ai-review-2026-11-20",
+   "screening": "included",
+   "label": "vendor-claim",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "invideo (InVideo AI / invideo Editor)",
+    "aspect": "credit rules: rollover, expiry, cancellation",
+    "stance": "neutral",
+    "plan_tier_if_stated": null,
+    "item_date": "2026-11-20"
+   },
+   "quote_supplementary": "Same FAQ: \"Am I charged for every generation? Yes! Credits are charged differently for video creation, generative models and other features as per their pricing.\" / \"We reserve the right to update credit costs at any time, without prior notice.\" / \"Unused credits don't roll over to the next month.\" / \"Your credit allowance resets every month, on the day of the month you subscribed — on annual plans too\".",
+   "coding_status": "dual-independent coding done 2026-11-20; resolved by mep-resolver",
+   "resolved_by": "mep-resolver",
+   "honesty_notes": [
+    "Resolver: 'an upgrade carries unused credits over' removed from the claim; both coders found it in neither quote nor supplementary."
+   ]
+  },
+  {
+   "id": "EV-invideo-ai-review-04",
+   "claim": "The vendor's 'Subscriptions and Refunds' help page (read 2026-11-20) lists a Free plan at $0 with 'Limited' credits and paid tiers Basic $9 (190), Pro $30 (1,000), Pro 2x $60 (2,000), Pro 3x $80 (3,000), Ultra $160 (6,000), Ultra 3x $240 (9,000), with annual prices equal to twelve months (e.g. Pro $360/yr). It opens with 'The refunds are pro-rated and usage based' and says refunds are reviewed case by case. VENDOR-INTERNAL CONTRADICTION: the Terms of Service (EV-05) say the opposite ('We do not offer pro-rata or partial refunds'); both are reported, neither is treated as the policy.",
+   "source_url": "https://invideo.io/help/billing/subscriptions-and-refunds/",
+   "source_date": "2026-11-20",
+   "quote": "The refunds are pro-rated and usage based. Individual Plans Plan Price (Monthly) Price (Annual) Credits/mo Free $0 — Limited Basic $9/mo $108/yr (~$9/mo) 190 Pro $30/mo $360/yr (~$30/mo) 1,000",
+   "platform": "invideo.io (vendor primary source, self-interested; read live in the built-in browser 2026-11-20)",
+   "target_slug": "/tools/invideo-ai",
+   "collected_at": "2026-11-20",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "invideo-ai-review-2026-11-20",
+   "screening": "included",
+   "label": "vendor-claim",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "invideo (InVideo AI / invideo Editor)",
+    "aspect": "plan table, refund wording",
+    "stance": "neutral",
+    "plan_tier_if_stated": "Free, Basic, Pro, Pro 2x, Pro 3x, Ultra, Ultra 3x",
+    "item_date": "2026-11-20"
+   },
+   "quote_supplementary": "\"Refund eligibility depends on the usage, eligibility and the time since purchase. Contact support@invideo.io with your invoice and we'll review on a case-by-case basis.\" / \"Cancelling does NOT trigger a refund. It only prevents the next charge.\" / \"Unused credits: Any remaining credits from your previous plan expire, including any add-on credits you've purchased. Extra credits can't be used on the Free plan.\"",
+   "honesty_notes": [
+    "CONTRADICTION (vendor vs vendor): this help page says refunds are 'pro-rated and usage based'; the Terms of Service (EV-05) say 'We do not offer pro-rata or partial refunds'. Both read 2026-11-20. The help center itself says the terms are 'the final word'. Report the contradiction, do not resolve it.",
+    "The help page's annual prices (12 x monthly) differ from the pricing page's annual view (EV-01). The same page also says annual billing gives 'up to 40% off on Max', a plan name not on the current grid. Treat as stale help copy; cite the pricing page for prices."
+   ],
+   "coding_status": "dual-independent coding done 2026-11-20; resolved by mep-resolver",
+   "resolved_by": "mep-resolver"
+  },
+  {
+   "id": "EV-invideo-ai-review-05",
+   "claim": "The current Terms of Service (effective 19 November 2026) make fees non-refundable for the period purchased, with one exception: a refund may be requested within 24 hours of an initial purchase or renewal (or longer where law requires) only if no credits or premium features were used; no pro-rata or partial refunds; credits, free or paid, are non-refundable. EEA/UK consumers have a separate 14-day withdrawal section. VENDOR-INTERNAL CONTRADICTION: the vendor's 'Subscriptions and Refunds' help page (EV-04) says refunds are 'pro-rated and usage based'; both are reported, neither is treated as the policy.",
+   "source_url": "https://invideo.io/terms-of-service/",
+   "source_date": "2026-11-19",
+   "quote": "d. Refunds. Subject to Section 3(f), all fees are non-refundable for the billing period purchased. As an exception, you may request a refund within 24 hours of an initial purchase or renewal, or such longer period as required by applicable law in your jurisdiction, provided you have not used any Credits or premium features during that period.",
+   "platform": "invideo.io (vendor primary source, self-interested; read live in the built-in browser 2026-11-20)",
+   "target_slug": "/tools/invideo-ai",
+   "collected_at": "2026-11-20",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "invideo-ai-review-2026-11-20",
+   "screening": "included",
+   "label": "vendor-claim",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "invideo (InVideo AI / invideo Editor)",
+    "aspect": "refund terms",
+    "stance": "neutral",
+    "plan_tier_if_stated": null,
+    "item_date": "2026-11-19"
+   },
+   "quote_supplementary": "Same section: \"We do not offer pro-rata or partial refunds for unused portions of a subscription period. ... Except as stated in Sections 3(f) and 9(b), Credits, whether free or paid, are non-refundable, non-redeemable and non-transferable.\"",
+   "honesty_notes": [
+    "Terms page reads 'Effective 19 November 2026 ... Last updated November 19, 2026' (one day before capture). 1-competitor.yaml's 'fast.io: 7-day money-back' is NOT supported by either terms version read today.",
+    "CONTRADICTION (vendor vs vendor) with EV-04, kept and labelled on both entries by the resolver. A Trustpilot reviewer (6af87ea426774bc85ddb5b66, 2026-11-14) also cites the ToS as allowing seven days, matching neither version read this run (coder A); a third vendor-sourced window, not resolvable here."
+   ],
+   "coding_status": "dual-independent coding done 2026-11-20; resolved by mep-resolver",
+   "resolved_by": "mep-resolver",
+   "recaptures": [
+    {
+     "recaptured_at": "2026-11-21",
+     "collector": "mimo-auto-content (publish-day re-read)",
+     "status": "ok",
+     "method": "built-in browser, signed out, read-only (rendered text)",
+     "matched": true,
+     "source_url": "https://invideo.io/terms-of-service/",
+     "claim": "Terms unchanged from 2026-11-20: 'Effective 19 November 2026', 'Last updated November 19, 2026'; section 3(d) refund wording (24 hours, no credits or premium features used, no pro-rata or partial refunds, credits non-refundable) and the credit expiry list (plan credits expire at period end, extra credits after twelve months) read the same.",
+     "quote": "Refunds. Subject to Section 3(f), all fees are non-refundable for the billing period purchased. As an exception, you may request a refund within 24 hours of an initial purchase or renewal, or such longer period as required by applicable law in your jurisdiction, provided you have not used any Credits or premium features during that period. We do not offer pro-rata or partial refunds for unused portions of a subscription period."
+    }
+   ]
+  },
+  {
+   "id": "EV-invideo-ai-review-06",
+   "claim": "The previous Terms of Service version (effective 6 November 2026, linked from the current terms as 'Previous version') already carried the same 24-hour, unused-only refund exception, so the rule is not new with the 19 November revision.",
+   "source_url": "https://invideo.io/legal/terms-of-service-19-11-2026/",
+   "source_date": "2026-11-06",
+   "quote": "d. Refunds. All fees are non-refundable for the billing period purchased. As an exception, you may request a refund within 24 hours of an initial purchase or renewal, or such longer period as required by applicable law in your jurisdiction, provided you have not used any credits or premium features during that period.",
+   "platform": "invideo.io (vendor primary source, self-interested; read live in the built-in browser 2026-11-20)",
+   "target_slug": "/tools/invideo-ai",
+   "collected_at": "2026-11-20",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "invideo-ai-review-2026-11-20",
+   "screening": "included",
+   "label": "vendor-claim",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "invideo (InVideo AI / invideo Editor)",
+    "aspect": "refund terms history",
+    "stance": "neutral",
+    "plan_tier_if_stated": null,
+    "item_date": "2026-11-06"
+   },
+   "honesty_notes": [
+    "The archive URL slug says 19-11-2026 but the page header reads 'Effective 6 November 2026 ... Last updated November 6, 2026'. Versions before 6 Nov were not read; do not claim when the 24-hour rule started."
+   ],
+   "coding_status": "dual-independent coding done 2026-11-20; resolved by mep-resolver",
+   "resolved_by": "mep-resolver"
+  },
+  {
+   "id": "EV-invideo-ai-review-07",
+   "claim": "The current terms say plan credits expire at the end of each billing period, separately bought credits expire 12 months after purchase, free or promotional credits may expire whenever stated, and invideo may change how many credits a feature uses on a prospective basis.",
+   "source_url": "https://invideo.io/terms-of-service/",
+   "source_date": "2026-11-19",
+   "quote": "(i) Credits included in a plan are allocated per billing period and expire at its end (they do not roll over); (ii) extra Credits you buy separately expire twelve (12) months after the date of purchase; ... (v) we may change how many Credits a feature uses, and the Credits included in a plan, on a prospective basis",
+   "platform": "invideo.io (vendor primary source, self-interested; read live in the built-in browser 2026-11-20)",
+   "target_slug": "/tools/invideo-ai",
+   "collected_at": "2026-11-20",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "invideo-ai-review-2026-11-20",
+   "screening": "included",
+   "label": "vendor-claim",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "invideo (InVideo AI / invideo Editor)",
+    "aspect": "credit expiry and change rights",
+    "stance": "neutral",
+    "plan_tier_if_stated": null,
+    "item_date": "2026-11-19"
+   },
+   "honesty_notes": [
+    "The help center (EV-04, payments page) adds that purchased extra credits also expire when a paid plan ends; the terms say credits expire 'if your account is closed'. Minor wording gap; cite each as the vendor states."
+   ],
+   "coding_status": "dual-independent coding done 2026-11-20; resolved by mep-resolver",
+   "resolved_by": "mep-resolver"
+  },
+  {
+   "id": "EV-invideo-ai-review-08",
+   "claim": "The terms grant users a perpetual, worldwide, royalty-free, non-exclusive licence to commercialise outputs, surviving cancellation; outputs made without a paid plan may carry a visible watermark or other usage restrictions.",
+   "source_url": "https://invideo.io/terms-of-service/",
+   "source_date": "2026-11-19",
+   "quote": "we also grant you a perpetual, irrevocable, worldwide, royalty-free, non-exclusive licence to use, reproduce, modify, distribute, perform, display and commercialise Outputs you generate through the Services. Outputs generated without a Paid Plan may carry a visible watermark or other usage restrictions described where you generate or export them",
+   "platform": "invideo.io (vendor primary source, self-interested; read live in the built-in browser 2026-11-20)",
+   "target_slug": "/tools/invideo-ai",
+   "collected_at": "2026-11-20",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "invideo-ai-review-2026-11-20",
+   "screening": "included",
+   "label": "vendor-claim",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": false,
+   "coding": {
+    "tool": "invideo (InVideo AI / invideo Editor)",
+    "aspect": "commercial use, free-plan watermark",
+    "stance": "neutral",
+    "plan_tier_if_stated": "Free vs paid",
+    "item_date": "2026-11-19"
+   },
+   "honesty_notes": [
+    "Section 4(j): invideo 'may apply visible or invisible watermarks, metadata or other content-provenance signals (for example content credentials based on the C2PA standard) to Outputs'. That applies to all plans; do not say paid exports carry no provenance marks.",
+    "Resolver: stance conflict (A positive / B neutral) resolved to neutral: plain vendor terms/help statement, shard convention for n/a."
+   ],
+   "coding_status": "dual-independent coding done 2026-11-20; resolved by mep-resolver",
+   "resolved_by": "mep-resolver"
+  },
+  {
+   "id": "EV-invideo-ai-review-09",
+   "claim": "The terms name three contracting entities by user location: Invideo Innovation Pte. Ltd. (Singapore, rest of world), Invideo Inc. (Delaware; US, Canada, Mexico) and Whitesheep Technology Private Limited (Mumbai; India). US users fall under Delaware law and AAA arbitration with a 30-day opt-out.",
+   "source_url": "https://invideo.io/terms-of-service/",
+   "source_date": "2026-11-19",
+   "quote": "Singapore and anywhere in the world other than India, United States, Canada and Mexico Invideo Innovation Pte. Ltd. 9 Raffles Place, #15-06 Republic Plaza, Singapore 048619 United States, Canada and Mexico Invideo Inc. 131 Continental Drive, Suite 301, Newark, New Castle County, Delaware 19713",
+   "platform": "invideo.io (vendor primary source, self-interested; read live in the built-in browser 2026-11-20)",
+   "target_slug": "/tools/invideo-ai",
+   "collected_at": "2026-11-20",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "invideo-ai-review-2026-11-20",
+   "screening": "included",
+   "label": "vendor-claim",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "invideo (InVideo AI / invideo Editor)",
+    "aspect": "operator / legal entity",
+    "stance": "neutral",
+    "plan_tier_if_stated": null,
+    "item_date": "2026-11-19"
+   },
+   "coding_status": "dual-independent coding done 2026-11-20; resolved by mep-resolver",
+   "resolved_by": "mep-resolver",
+   "honesty_notes": [
+    "Resolver: India entity, Delaware law, AAA arbitration and the 30-day opt-out are outside the captured quote; coder B string-matched all four on the live page 2026-11-20. Extend the quote before citing those parts verbatim."
+   ]
+  },
+  {
+   "id": "EV-invideo-ai-review-10",
+   "claim": "The vendor's plan-limits help page (2026-11-20) says video models are priced per second, a quick Kling 2.6 Standard video may cost 5 credits while a Veo 3.1 4K video with audio can cost 100+, unused plan credits do not roll over, downloads cost no credits, and a Free account that hits its limit must 'wait for the next weekly reset or upgrade'.",
+   "source_url": "https://invideo.io/help/billing/plan-limits/",
+   "source_date": "2026-11-20",
+   "quote": "Different models cost different amounts. A quick Kling 2.6 Standard video might cost 5 credits, while a Veo 3.1 4K video with audio can cost 100+ credits. Video models are priced per second. Total cost = credits/sec × video duration.",
+   "platform": "invideo.io (vendor primary source, self-interested; read live in the built-in browser 2026-11-20)",
+   "target_slug": "/tools/invideo-ai",
+   "collected_at": "2026-11-20",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "invideo-ai-review-2026-11-20",
+   "screening": "included",
+   "label": "vendor-claim",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "invideo (InVideo AI / invideo Editor)",
+    "aspect": "credit cost per model, free weekly limit",
+    "stance": "neutral",
+    "plan_tier_if_stated": "Free, all paid",
+    "item_date": "2026-11-20"
+   },
+   "quote_supplementary": "Table rows: \"Free | Weekly limit reached | Wait for the next weekly reset or upgrade\" / \"Do I need credits to download content? No. You can download all your generated content without paying any credit.\" Plan table also lists Team 1,600/seat and Scale 4,000/seat (5-30 seats).",
+   "honesty_notes": [
+    "The Free plan's weekly credit amount is NOT stated on any vendor page read today (help table says only 'Limited'). Marc Andrews measured 5 free credits in July 2026 (EV-33); that is a single third-party reading, not a current vendor figure.",
+    "Same page: 'invideo reserves the right to update credit costs at any time, without prior notice.'"
+   ],
+   "coding_status": "dual-independent coding done 2026-11-20; resolved by mep-resolver",
+   "resolved_by": "mep-resolver"
+  },
+  {
+   "id": "EV-invideo-ai-review-11",
+   "claim": "The vendor's 'How Do Credits Work?' page says users are not charged credits for downloading or for editing existing videos, see the credit cost before confirming each generation, and that bought extra credits last 12 months.",
+   "source_url": "https://invideo.io/help/billing/how-do-credits-work/",
+   "source_date": "2026-11-20",
+   "quote": "You're not charged credits for downloading content you've already generated, for editing existing videos, or for image generations on plans that include Unlimited.",
+   "platform": "invideo.io (vendor primary source, self-interested; read live in the built-in browser 2026-11-20)",
+   "target_slug": "/tools/invideo-ai",
+   "collected_at": "2026-11-20",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "invideo-ai-review-2026-11-20",
+   "screening": "included",
+   "label": "vendor-claim",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": false,
+   "coding": {
+    "tool": "invideo (InVideo AI / invideo Editor)",
+    "aspect": "what consumes credits",
+    "stance": "neutral",
+    "plan_tier_if_stated": null,
+    "item_date": "2026-11-20"
+   },
+   "quote_supplementary": "\"Am I charged per generation? Yes. ... The cost depends on the model, the output length, and the resolution. You can see the credit cost before you confirm each generation.\"",
+   "honesty_notes": [
+    "COMMUNITY TENSION: two community items describe credits deducted for edits inside a project (EV-28 Quora 2025-10-31: 'deducted credits every time we edited a frame'; EV-25 Trustpilot: credits charged to fix the AI's mistakes). The vendor page today says editing is free and generation is charged; an AI re-generation triggered by an edit request is generation. Report both; do not adjudicate.",
+    "Resolver: stance conflict (A neutral / B positive) resolved to neutral: plain vendor terms/help statement, shard convention for n/a."
+   ],
+   "coding_status": "dual-independent coding done 2026-11-20; resolved by mep-resolver",
+   "resolved_by": "mep-resolver"
+  },
+  {
+   "id": "EV-invideo-ai-review-12",
+   "claim": "The vendor's Extra Credits page says extra credits are a pre-paid balance billed separately from the subscription, can be set to auto-reload, have a $5 minimum purchase, and that turning the feature on is permanent for the workspace (each person can pause their own spending or set a monthly cap).",
+   "source_url": "https://invideo.io/help/billing/extra-credits/",
+   "source_date": "2026-11-20",
+   "quote": "Turning on extra credits is permanent for the workspace — it can't be switched off for everyone later. Each person can still pause their own spending and set a monthly credit limit.",
+   "platform": "invideo.io (vendor primary source, self-interested; read live in the built-in browser 2026-11-20)",
+   "target_slug": "/tools/invideo-ai",
+   "collected_at": "2026-11-20",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "invideo-ai-review-2026-11-20",
+   "screening": "included",
+   "label": "vendor-claim",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "invideo (InVideo AI / invideo Editor)",
+    "aspect": "top-ups and auto-reload",
+    "stance": "neutral",
+    "plan_tier_if_stated": null,
+    "item_date": "2026-11-20"
+   },
+   "quote_supplementary": "\"Note: Extra credits are charged separately from your paid invideo subscription and appear as additional charges on your bill.\" / \"Pick an amount or enter a custom one (minimum $5).\"",
+   "honesty_notes": [
+    "Relevant to EV-23 (Trustpilot reviewer says auto top-up was on by default). The vendor page does not say whether auto-reload is on by default; it says an owner/admin switches extra credits on, and 'Making your first extra credits purchase also turns the feature on.' Do not claim either way."
+   ],
+   "coding_status": "dual-independent coding done 2026-11-20; resolved by mep-resolver",
+   "resolved_by": "mep-resolver"
+  },
+  {
+   "id": "EV-invideo-ai-review-13",
+   "claim": "The vendor's video-model price list (2026-11-20) gives credit ranges per clip that vary widely by model, resolution and length; the widest range read is about 35-fold within one model: Seedance 2.0 19.20-672.00 credits (480p-4K, 4-15 s, about 35x), Kling 4.0 22.61-406.08 (720p-1080p, 3-30 s, about 18x), Veo 3.1 Fast 12.80-96.00 (720p-4K, 4-8 s, 7.5x).",
+   "source_url": "https://invideo.io/help/billing/video-model-pricing/",
+   "source_date": "2026-11-20",
+   "quote": "Video credits scale with resolution, duration, audio, and mode. Each row below shows the total credits range from the cheapest tier at the shortest supported duration to the most expensive tier at the longest supported duration.",
+   "platform": "invideo.io (vendor primary source, self-interested; read live in the built-in browser 2026-11-20)",
+   "target_slug": "/tools/invideo-ai",
+   "collected_at": "2026-11-20",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "invideo-ai-review-2026-11-20",
+   "screening": "included",
+   "label": "vendor-claim",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "invideo (InVideo AI / invideo Editor)",
+    "aspect": "per-model credit cost",
+    "stance": "neutral",
+    "plan_tier_if_stated": null,
+    "item_date": "2026-11-20"
+   },
+   "quote_supplementary": "Rows: \"Seedance 2.0 480p – 4k 4s – 15s 19.20 – 672.00\" / \"VEO 3.1 Fast 720p – 4k 4s – 8s 12.80 – 96.00\" / \"Kling 4.0 720p – 1080p 3s – 30s 22.61 – 406.08\".",
+   "honesty_notes": [
+    "Any $ per finished minute is OUR arithmetic from EV-01/02 and this table; label it derived. Does not cover retries or failed generations.",
+    "Resolver: 'span orders of magnitude' replaced with the measured ratios (both coders flagged it as too strong)."
+   ],
+   "coding_status": "dual-independent coding done 2026-11-20; resolved by mep-resolver",
+   "resolved_by": "mep-resolver",
+   "recaptures": [
+    {
+     "recaptured_at": "2026-11-21",
+     "collector": "mimo-auto-content (publish-day re-read)",
+     "status": "ok",
+     "method": "built-in browser, signed out, read-only (rendered text)",
+     "matched": true,
+     "source_url": "https://invideo.io/help/billing/video-model-pricing/",
+     "claim": "Model price rows unchanged from 2026-11-20: Seedance 2.0 480p to 4k, 4s to 15s, 19.20 to 672.00 credits; VEO 3.1 Fast 720p to 4k, 4s to 8s, 12.80 to 96.00; Kling 4.0 720p to 1080p, 3s to 30s, 22.61 to 406.08.",
+     "quote": "Seedance 2.0 480p - 4k 4s - 15s 19.20 - 672.00 ... VEO 3.1 Fast 720p - 4k 4s - 8s 12.80 - 96.00 ... Kling 4.0 720p - 1080p 3s - 30s 22.61 - 406.08"
+    }
+   ]
+  },
+  {
+   "id": "EV-invideo-ai-review-14",
+   "claim": "The vendor's help article on agent credits says Agent Two's own work and the media it makes use credits, its Lite/Pro/Ultra modes cost progressively more, exports are 1080p MP4 in every mode, and by default the agent is set to 'Always allow', generating without asking; users can switch to ask-before-generating.",
+   "source_url": "https://help.invideo.io/credits-and-plans/how-credits-are-charged-when-using-ai-agents.md",
+   "source_date": "2026-11-20",
+   "quote": "By default, the agent is set to **Always allow**. It generates without asking for permission. For more control, click the permission toggle in the chat box and select one of these:",
+   "platform": "help.invideo.io (vendor help center markdown, self-interested; read live in the built-in browser 2026-11-20)",
+   "target_slug": "/tools/invideo-ai",
+   "collected_at": "2026-11-20",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "invideo-ai-review-2026-11-20",
+   "screening": "included",
+   "label": "vendor-claim",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "invideo (InVideo AI / invideo Editor)",
+    "aspect": "agent defaults, mode cost, export resolution",
+    "stance": "negative",
+    "plan_tier_if_stated": null,
+    "item_date": "2026-11-20"
+   },
+   "quote_supplementary": "\"Exports are 1080p MP4 in every mode. In Pro and Ultra, Agent Two can upscale the exported file for a higher resolution. Lite does not upscale.\"",
+   "honesty_notes": [
+    "Directly relevant to the community 'credits drained without asking' theme (EV-21, EV-28). The default is the vendor's own statement; whether a given reviewer had it on is not knowable.",
+    "Resolver: stance set negative on the cost-control aspect only (both coders): by default the agent spends credits without asking. As a vendor statement it remains self-interested. Mode cost ordering is outside the quote; coder B found it live."
+   ],
+   "coding_status": "dual-independent coding done 2026-11-20; resolved by mep-resolver",
+   "resolved_by": "mep-resolver"
+  },
+  {
+   "id": "EV-invideo-ai-review-15",
+   "claim": "The vendor's licensing help page says users own their uploads, may use, change, share and sell generated media worldwide with no royalty (subject to third-party rights), stock stays under its own licence, and an active plan includes a monthly iStock licence allowance that resets and does not roll over.",
+   "source_url": "https://help.invideo.io/account/commercial-use.md",
+   "source_date": "2026-11-20",
+   "quote": "You own what you upload to invideo. You can use the videos you make, including for commercial work, under the invideo terms of service. Stock media inside a video stays under its own license.",
+   "platform": "help.invideo.io (vendor help center markdown, self-interested; read live in the built-in browser 2026-11-20)",
+   "target_slug": "/tools/invideo-ai",
+   "collected_at": "2026-11-20",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "invideo-ai-review-2026-11-20",
+   "screening": "included",
+   "label": "vendor-claim",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "invideo (InVideo AI / invideo Editor)",
+    "aspect": "commercial use, stock licensing, iStock allowance",
+    "stance": "positive",
+    "plan_tier_if_stated": null,
+    "item_date": "2026-11-20"
+   },
+   "quote_supplementary": "\"An active plan includes a monthly allowance of iStock licenses. The allowance resets each month and does not roll over.\" Help title: 'Will my credits and iStock roll over...? Plan credits and iStock reset every month ... Anything unused is lost at that point.'",
+   "coding_status": "dual-independent coding done 2026-11-20; resolved by mep-resolver",
+   "resolved_by": "mep-resolver",
+   "honesty_notes": [
+    "Resolver: stance positive (both coders; licence grant favours the user). The 'sell worldwide, no royalty' wording is outside this quote; coder B found it live on the same help page."
+   ]
+  },
+  {
+   "id": "EV-invideo-ai-review-16",
+   "claim": "invideo's own llms.txt (last_updated 2026-11-11) describes three product eras: invideo Studio (2017-2022, template editor, now grandfathered for existing users), invideo AI (August 2022 to April 2026, AI video from stock media and generative models), and invideo Editor (April 2026 to now, timeline editor with agents).",
+   "source_url": "https://invideo.io/llms.txt",
+   "source_date": "2026-11-11",
+   "quote": "invideo Studio (2017 to 2022): template-based video editing in the browser, built on HTML. - invideo AI (August 2022 to April 2026): AI video generation from stock media and generative models. - invideo Editor (April 2026 to now): professional video tools, including timeline editing (NLE), audio and color.",
+   "platform": "invideo.io (vendor primary source, self-interested; read live in the built-in browser 2026-11-20)",
+   "target_slug": "/tools/invideo-ai",
+   "collected_at": "2026-11-20",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "invideo-ai-review-2026-11-20",
+   "screening": "included",
+   "label": "vendor-claim",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "invideo (InVideo AI / invideo Editor)",
+    "aspect": "product history: Studio vs AI vs Editor",
+    "stance": "neutral",
+    "plan_tier_if_stated": null,
+    "item_date": "2026-11-11"
+   },
+   "quote_supplementary": "\"[invideo Studio](https://studio.invideo.io/): Grandfathered template-based online video editor that remains accessible to existing Studio users.\"",
+   "honesty_notes": [
+    "Explains why 2024-2025 reviews (and EV-30) describe a Studio/AI split and AI minutes: those describe earlier eras. The vendor still titles pages 'invideo AI'."
+   ],
+   "coding_status": "dual-independent coding done 2026-11-20; resolved by mep-resolver",
+   "resolved_by": "mep-resolver"
+  },
+  {
+   "id": "EV-invideo-ai-review-17",
+   "claim": "invideo runs an affiliate program paying 50% commission on monthly plans and 25% on annual plans bought through an affiliate link (the help center adds that commissions are for the first billing cycle only). Any review page linking to invideo may therefore earn a commission; whether a given page does must be checked on that page's own disclosure.",
+   "source_url": "https://invideo.io/make/affiliate-program/",
+   "source_date": "2026-11-20",
+   "quote": "Make 50% commissions on every monthly plan and 25% commissions on every annual plan that gets purchased via your affiliate link.",
+   "platform": "invideo.io (vendor primary source, self-interested; read live in the built-in browser 2026-11-20)",
+   "target_slug": "/tools/invideo-ai",
+   "collected_at": "2026-11-20",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "invideo-ai-review-2026-11-20",
+   "screening": "included",
+   "label": "vendor-claim",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "invideo (InVideo AI / invideo Editor)",
+    "aspect": "affiliate program",
+    "stance": "neutral",
+    "plan_tier_if_stated": null,
+    "item_date": "2026-11-20"
+   },
+   "honesty_notes": [
+    "The help article (help.invideo.io/billing/is-there-a-referral-program-or-affiliate-rewards.md) adds 'Commissions are for the first billing cycle only.' The 'Join 1000+ affiliates ... upwards of $5000' line is vendor marketing; do not repeat as fact. Mimo's own affiliate status must be disclosed per /affiliate-disclosure.",
+    "Resolver: removed 'which means many review pages ranking for this query are paid referrers' (inference not in the source, both coders). Impact.com dropped from the claim (not in the quote; coder B found it live). Never state how many ranking pages are affiliates."
+   ],
+   "coding_status": "dual-independent coding done 2026-11-20; resolved by mep-resolver",
+   "resolved_by": "mep-resolver"
+  },
+  {
+   "id": "EV-invideo-ai-review-18",
+   "claim": "The vendor's payments help page says that if a renewal payment keeps failing the account is downgraded to Free and unused paid credits expire, and that iOS/Google Play subscribers must cancel and request refunds through Apple/Google.",
+   "source_url": "https://invideo.io/help/billing/payments-invoices-and-errors/",
+   "source_date": "2026-11-20",
+   "quote": "If a renewal payment fails, we'll retry a few times over the following days. If it still fails, your account is downgraded to the Free plan and any unused paid credits expire.",
+   "platform": "invideo.io (vendor primary source, self-interested; read live in the built-in browser 2026-11-20)",
+   "target_slug": "/tools/invideo-ai",
+   "collected_at": "2026-11-20",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "invideo-ai-review-2026-11-20",
+   "screening": "included",
+   "label": "vendor-claim",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": false,
+   "coding": {
+    "tool": "invideo (InVideo AI / invideo Editor)",
+    "aspect": "failed payment, app-store billing",
+    "stance": "neutral",
+    "plan_tier_if_stated": null,
+    "item_date": "2026-11-20"
+   },
+   "quote_supplementary": "\"Cancellation must be done through the App Store/Play Store. Refund requests must be submitted to Apple/Google directly\"",
+   "honesty_notes": [
+    "The help center's refunds article says Google Play users should start with support@invideo.io; this page says Google Play refunds go to Google. Vendor-internal inconsistency; cite with attribution.",
+    "Resolver: stance conflict (A negative / B neutral) resolved to neutral: plain vendor terms/help statement, shard convention for n/a."
+   ],
+   "coding_status": "dual-independent coding done 2026-11-20; resolved by mep-resolver",
+   "resolved_by": "mep-resolver"
+  },
+  {
+   "id": "EV-invideo-ai-review-19",
+   "claim": "The vendor's refunds help article says invideo reviews each refund request individually 'at its own discretion', a refund is possible only within the terms' window and only if the plan is unused, and any use of credits or premium features makes the plan count as used.",
+   "source_url": "https://help.invideo.io/billing/refunds-how-to-request-one-and-what-s-covered.md",
+   "source_date": "2026-11-20",
+   "quote": "invideo reviews each refund request on its own and decides at its own discretion. ... A plan counts as used if you used any credits or premium features in that period. A used plan cannot get a refund.",
+   "platform": "help.invideo.io (vendor help center markdown, self-interested; read live in the built-in browser 2026-11-20)",
+   "target_slug": "/tools/invideo-ai",
+   "collected_at": "2026-11-20",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "invideo-ai-review-2026-11-20",
+   "screening": "included",
+   "label": "vendor-claim",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": false,
+   "coding": {
+    "tool": "invideo (InVideo AI / invideo Editor)",
+    "aspect": "refund process",
+    "stance": "neutral",
+    "plan_tier_if_stated": null,
+    "item_date": "2026-11-20"
+   },
+   "coding_status": "dual-independent coding done 2026-11-20; resolved by mep-resolver",
+   "resolved_by": "mep-resolver",
+   "honesty_notes": [
+    "Resolver: stance conflict (A neutral / B negative) resolved to neutral: plain vendor terms/help statement, shard convention for n/a."
+   ]
+  },
+  {
+   "id": "EV-invideo-ai-review-20",
+   "claim": "On 2026-11-20 the Trustpilot profile for ai.invideo.io (claimed by the company, Jul 2024) shows a 2.8 TrustScore from 920 reviews, split 551 five-star, 43 four-star, 20 three-star, 25 two-star and 281 one-star; 806 of the 872 text reviews are in English.",
+   "source_url": "https://www.trustpilot.com/review/ai.invideo.io",
+   "source_date": "2026-11-20",
+   "quote": "Claimed profile • Jul 2024 invideo Reviews 920 • 2.8 Software Company",
+   "platform": "Trustpilot trustpilot.com/review/ai.invideo.io (review platform, claimed profile; read live 2026-11-20 via built-in browser, page JSON)",
+   "target_slug": "/tools/invideo-ai",
+   "collected_at": "2026-11-20",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "invideo-ai-review-2026-11-20",
+   "screening": "included",
+   "label": "community-report",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "invideo (InVideo AI / invideo Editor)",
+    "aspect": "aggregate rating",
+    "stance": "mixed",
+    "plan_tier_if_stated": null,
+    "item_date": "2026-11-20"
+   },
+   "honesty_notes": [
+    "Distribution read from the page's own data ('ratings':{'total':920,'one':281,'two':25,'three':20,'four':43,'five':551}). The bimodal split (60% five-star vs 31% one-star of ratings) is Trustpilot's own count, a defined population on that platform, not a sample of all users.",
+    "Trustpilot's AI summary on the page ('most reviewers were somewhat happy') is Trustpilot-generated; do not cite as evidence.",
+    "Phase-1 noted a regional page showing ~327; same profile, other locale filters. Use 920 (2026-11-20)."
+   ],
+   "coding_status": "dual-independent coding done 2026-11-20; resolved by mep-resolver",
+   "resolved_by": "mep-resolver"
+  },
+  {
+   "id": "EV-invideo-ai-review-21",
+   "claim": "Defined sample: the 40 most recent English-language Trustpilot reviews of ai.invideo.io (sort=recency, pages 1-2, posted 2026-09-08 to 2026-11-20) split 31 one-star, 1 two-star, 1 three-star, 1 four-star, 6 five-star. 21 of 40 describe credits running out fast, more credits being demanded mid-video or unexpected credit use; 7 of those 21 say credits went on the AI's own errors, retries, loops or fixes. At least 6 of 40 describe billing or refund disputes; themes are multi-label, so the sub-codes overlap: at least 4 refused or unanswered refunds, 2 unintended annual charges, 2 automatic credit top-up charges, 1 billing after cancelling. At least 6 of 40 criticise output quality or prompt-following; 3 of 40 say the free tier ends before anything usable; 3 of 40 describe slow rendering. 4 of 40 praise support; 5 of the 6 five-star reviews came through Trustpilot's invitation link (BasicLink).",
+   "source_url": "https://www.trustpilot.com/review/ai.invideo.io?sort=recency",
+   "source_date": "2026-11-20",
+   "quote": "Before it was even finished, I was told I had run out of credits and needed to pay MORE!",
+   "platform": "Trustpilot trustpilot.com/review/ai.invideo.io (review platform, claimed profile; read live 2026-11-20 via built-in browser, page JSON)",
+   "target_slug": "/tools/invideo-ai",
+   "collected_at": "2026-11-20",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "invideo-ai-review-2026-11-20",
+   "screening": "included",
+   "label": "community-report",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": false,
+   "coding": {
+    "tool": "invideo (InVideo AI / invideo Editor)",
+    "aspect": "complaint pattern (coded sample)",
+    "stance": "negative",
+    "plan_tier_if_stated": "Starter, Plus, Pro (as named by reviewers)",
+    "item_date": "2026-11-20"
+   },
+   "quote_supplementary": "Quote is from review 6aec2ac6863d6198208937ab (2026-11-05, 1 star, KR). Coded review ids, stars and resolved theme codes are in _meta.trustpilot_sample.",
+   "honesty_notes": [
+    "Themes are multi-label; counts do not sum to 40, and the billing sub-codes (4+2+2+1) exceed the parent 6 because one review can carry several. 3 of 40 had no codable detail ('SCAM Be Careful', 'Scam don't waste...', a one-line Spanish review under the English filter).",
+    "Complaint bias: Trustpilot over-represents unhappy buyers; the sample is the 40 newest English reviews, not a random sample. Never write 'X% of users'. Allowed: '21 of the 40 newest English reviews (8 Sep to 20 Nov 2026)'.",
+    "Reviewers name plans that are not on today's grid ('Starter' $20/EUR 20/EUR 24.60; 'Plus' $60 with 2,000 credits; a plan with '400 credits per month' at $20). Either plans changed during Sep-Nov 2026 or regional pricing differs; do not use reviewer prices as current prices.",
+    "Company replied publicly to 5 of the 40.",
+    "Resolver count rule 2026-11-20: counts are re-derived from the review codes and quotes held in this shard; where the shard text cannot settle a count the lower defensible figure is used and printed as 'at least'. Billing/refund: shard supports 6 (6affc9c5, 6af87ea4, 6aef9a8a, 6aec2ac6, 6ae9d82a, 6ac92883); coder A's live reading adds 6ad0ba33 and 6aa9af70 (8) and a refused refund in 6ac92883 (refused/unanswered 7), but those words are not in the shard, so 6 and 4 stand as 'at least'. Quality/prompt-following: shard supports 6 (6ae14985, 6ade7731, 6ad19745, 6aca6e0c, 6aaae8dd, plus 6ad48d7b whose quoted text 'put things in your video you didn't ask for' is a prompt-following complaint); coder A's broader reading gives 9. Slow rendering: shard 3 (6ac8606c, 6ac1549b, 6a9fe68a); coder A up to 5. Support praise: 4 in the shard codes; coder A's live reading found only 3 name a staff member, so 'named' was dropped. Credits 21 and errors 7 agreed by coder A within range (20+2 borderline, 6+1 borderline); coder B did not re-open Trustpilot (403).",
+    "Privacy: review 6af87ea426774bc85ddb5b66 contains the reviewer's full name; never quote that part (coder A)."
+   ],
+   "coding_status": "dual-independent coding done 2026-11-20; resolved by mep-resolver",
+   "resolved_by": "mep-resolver"
+  },
+  {
+   "id": "EV-invideo-ai-review-22",
+   "claim": "A Trustpilot reviewer (US, 2026-11-20, 1 star) says invideo kept billing their card for September, October and November 2026 after they cancelled in August 2026, and that a refund request with the cancellation email attached was denied.",
+   "source_url": "https://www.trustpilot.com/review/ai.invideo.io?sort=recency",
+   "source_date": "2026-11-20",
+   "quote": "I cancelled my subscription back in August 2026. They continue to bill my credit card for Sept, Oct, and November 2026. I sent a request for refund as I did not authorize the charges and they denied it, even though I attached the email from back in August canceling any and all subscriptions with their Company.",
+   "platform": "Trustpilot trustpilot.com/review/ai.invideo.io (review platform, claimed profile; read live 2026-11-20 via built-in browser, page JSON)",
+   "target_slug": "/tools/invideo-ai",
+   "collected_at": "2026-11-20",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "invideo-ai-review-2026-11-20",
+   "screening": "included",
+   "label": "community-report",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "invideo (InVideo AI / invideo Editor)",
+    "aspect": "billing after cancellation",
+    "stance": "negative",
+    "plan_tier_if_stated": null,
+    "item_date": "2026-11-20"
+   },
+   "honesty_notes": [
+    "Single anecdote, unverified by us; the reviewer also says they filed an FTC report. Report as the reviewer states; no accusation in our voice."
+   ],
+   "coding_status": "dual-independent coding done 2026-11-20; resolved by mep-resolver",
+   "resolved_by": "mep-resolver"
+  },
+  {
+   "id": "EV-invideo-ai-review-23",
+   "claim": "A Trustpilot reviewer (US, 2026-11-03, 1 star) on a $60/month plan with 2,000 credits says automatic credit top-up was on by default and charged $150 for 2,500 extra credits without asking.",
+   "source_url": "https://www.trustpilot.com/review/ai.invideo.io?sort=recency",
+   "source_date": "2026-11-03",
+   "quote": "What they don’t tell you when you sign up and pay is that the option to automatically re up on credits once you run low isn’t something you agree to or opt into it’s turned on by default the moment you start your membership",
+   "platform": "Trustpilot trustpilot.com/review/ai.invideo.io (review platform, claimed profile; read live 2026-11-20 via built-in browser, page JSON)",
+   "target_slug": "/tools/invideo-ai",
+   "collected_at": "2026-11-20",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "invideo-ai-review-2026-11-20",
+   "screening": "included",
+   "label": "community-report",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "invideo (InVideo AI / invideo Editor)",
+    "aspect": "auto top-up charges",
+    "stance": "negative",
+    "plan_tier_if_stated": "Plus ($60, as named by reviewer)",
+    "item_date": "2026-11-03"
+   },
+   "quote_supplementary": "Review 6ac92883dcdd323a77463cf3 (2026-10-09): \"The software locked up in a rendering loop, froze my screen, and auto-charged my card $411 for \\\"extra credits\\\" without my clear consent.\"",
+   "honesty_notes": [
+    "A second review (2026-10-09, US) reports a $411 auto-charge for extra credits during a rendering loop. The vendor's extra-credits page (EV-12) does not state the default. Anecdotes; do not generalise."
+   ],
+   "coding_status": "dual-independent coding done 2026-11-20; resolved by mep-resolver",
+   "resolved_by": "mep-resolver"
+  },
+  {
+   "id": "EV-invideo-ai-review-24",
+   "claim": "A Trustpilot reviewer (AU, 2026-11-11, 3 stars) producing a documentary on a paid plan says six iStock clips still carried Getty/iStock watermarks in the export, a support-announced bug fix did not cure it, while their account showed 7 of 200 iStock assets used.",
+   "source_url": "https://www.trustpilot.com/review/ai.invideo.io?sort=recency",
+   "source_date": "2026-11-11",
+   "quote": "Despite written confirmation that my intended iStock use is covered, six stock clips showed Getty/iStock watermarks in the downloaded documentary. After nearly a week of correspondence, support said Engineering had identified a bug and deployed a fix. My fresh full export still contained watermarks",
+   "platform": "Trustpilot trustpilot.com/review/ai.invideo.io (review platform, claimed profile; read live 2026-11-20 via built-in browser, page JSON)",
+   "target_slug": "/tools/invideo-ai",
+   "collected_at": "2026-11-20",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "invideo-ai-review-2026-11-20",
+   "screening": "included",
+   "label": "community-report",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "invideo (InVideo AI / invideo Editor)",
+    "aspect": "paid stock watermark bug",
+    "stance": "negative",
+    "plan_tier_if_stated": "Plus (as named by reviewer)",
+    "item_date": "2026-11-11"
+   },
+   "honesty_notes": [
+    "Single report; '200 iStock assets' is the reviewer's account figure, not a vendor plan figure."
+   ],
+   "coding_status": "dual-independent coding done 2026-11-20; resolved by mep-resolver",
+   "resolved_by": "mep-resolver"
+  },
+  {
+   "id": "EV-invideo-ai-review-25",
+   "claim": "Trustpilot reviewers describe credits spent on the AI's own mistakes: one (AU, 2026-10-18) says it added unrequested elements and then charged credits to remove them; another (AU, 2026-09-29) says the app crashed into a retry loop until credits ran out and a ticket went unanswered.",
+   "source_url": "https://www.trustpilot.com/review/ai.invideo.io?sort=recency",
+   "source_date": "2026-10-18",
+   "quote": "they charge you credits for their mistakes they put things in your video you didn’t ask for then charge you credits to remove their mistakes",
+   "platform": "Trustpilot trustpilot.com/review/ai.invideo.io (review platform, claimed profile; read live 2026-11-20 via built-in browser, page JSON)",
+   "target_slug": "/tools/invideo-ai",
+   "collected_at": "2026-11-20",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "invideo-ai-review-2026-11-20",
+   "screening": "included",
+   "label": "community-report",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "invideo (InVideo AI / invideo Editor)",
+    "aspect": "credits spent on errors / retries",
+    "stance": "negative",
+    "plan_tier_if_stated": null,
+    "item_date": "2026-10-18"
+   },
+   "quote_supplementary": "Review 6abbc415c2bebe04ae500e49 (2026-09-29): \"Started crashing on me, went into retry loop crashing again and again, until eventually run out of credits. Raised a ticket, they didn't even bother to respond.\"",
+   "honesty_notes": [
+    "These are 2 of the 7 'credits on errors' reviews in EV-21. No vendor page read today states whether failed or errored generations are charged or refunded; the vendor's credits page (EV-11) says only that each generation is charged. Do NOT write 'failed renders always cost credits' as fact."
+   ],
+   "coding_status": "dual-independent coding done 2026-11-20; resolved by mep-resolver",
+   "resolved_by": "mep-resolver"
+  },
+  {
+   "id": "EV-invideo-ai-review-26",
+   "claim": "A 4-star Trustpilot update (US, 2026-10-17) says a first video cost about 4,500 credits over two to three weeks and a second burned 5,000 credits in one day on generated bridge images in Ultra mode; the title says the credits were returned.",
+   "source_url": "https://www.trustpilot.com/review/ai.invideo.io?sort=recency",
+   "source_date": "2026-10-17",
+   "quote": "Update — credits back, but the ultra-mode trap is real. My first video cost about 4,500 credits and took two to three weeks to produce. Then a second video burned 5,000 credits in a single day — all on images, no actual editing work.",
+   "platform": "Trustpilot trustpilot.com/review/ai.invideo.io (review platform, claimed profile; read live 2026-11-20 via built-in browser, page JSON)",
+   "target_slug": "/tools/invideo-ai",
+   "collected_at": "2026-11-20",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "invideo-ai-review-2026-11-20",
+   "screening": "included",
+   "label": "community-report",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "invideo (InVideo AI / invideo Editor)",
+    "aspect": "Ultra mode credit burn, credits refunded",
+    "stance": "mixed",
+    "plan_tier_if_stated": "Ultra mode",
+    "item_date": "2026-10-17"
+   },
+   "honesty_notes": [
+    "Shows support returning credits in at least one case. Anecdote."
+   ],
+   "coding_status": "dual-independent coding done 2026-11-20; resolved by mep-resolver",
+   "resolved_by": "mep-resolver"
+  },
+  {
+   "id": "EV-invideo-ai-review-27",
+   "claim": "A Trustpilot reviewer (GB, 2026-11-07, 1 star) says they bought a $20 plan they call 'Starter', asked for cancellation and refund within an hour without exporting any video, and were refused. No plan named 'Starter' appears on the vendor ladders read this run (July 2026 per EV-34, November 2026 per EV-01/02); the plan name is the reviewer's and is unverified.",
+   "source_url": "https://www.trustpilot.com/review/ai.invideo.io?sort=recency",
+   "source_date": "2026-11-07",
+   "quote": "I contacted customer support and requested a cancellation and refund within less than an hour of making the purchase. To be clear, I did not download or export any finished videos, and I had no intention of continuing with the service.",
+   "platform": "Trustpilot trustpilot.com/review/ai.invideo.io (review platform, claimed profile; read live 2026-11-20 via built-in browser, page JSON)",
+   "target_slug": "/tools/invideo-ai",
+   "collected_at": "2026-11-20",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "invideo-ai-review-2026-11-20",
+   "screening": "included",
+   "label": "community-report",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "invideo (InVideo AI / invideo Editor)",
+    "aspect": "refund refused inside window",
+    "stance": "negative",
+    "plan_tier_if_stated": "Starter ($20, as named by reviewer)",
+    "item_date": "2026-11-07"
+   },
+   "honesty_notes": [
+    "The vendor's rule (EV-05, EV-19) turns on whether any credits or premium features were used, not on downloads. The reviewer does not say whether credits were spent. Present both; do not judge the case.",
+    "Resolver: plan name flagged unverified (coder B). The refusal and the $20 price are in the full review (coder A confirmed live) but outside the captured quote."
+   ],
+   "coding_status": "dual-independent coding done 2026-11-20; resolved by mep-resolver",
+   "resolved_by": "mep-resolver"
+  },
+  {
+   "id": "EV-invideo-ai-review-28",
+   "claim": "A Quora answer (dated about late October 2025, approximate; 3.3K views) on the then 'Generative Plan' at $120/month with 100 credits says the team approved 21.4 credits in pop-ups but the usage history showed further deductions each time they edited a frame (11, 17, 9.6 credits), draining all 100 credits without a prompt; support pointed to the fine print.",
+   "source_url": "https://www.quora.com/Has-anyone-tried-Invideo-AI-Is-it-any-good/answer/Ramin-Abdollahi-5",
+   "source_date": "2025-10-31",
+   "quote": "When we checked the usage history, we saw that the system had deducted credits every time we edited a frame within the original project — 11 credits here, 17 credits there, 9.6 credits there, etc. None of these deductions were ever shown or prompted to us.",
+   "platform": "Quora (read live 2026-11-20 in the built-in browser, signed out; date from the page's creationTime field, order-mapped to the answer)",
+   "target_slug": "/tools/invideo-ai",
+   "collected_at": "2026-11-20",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "invideo-ai-review-2026-11-20",
+   "screening": "included",
+   "label": "community-report",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "invideo (InVideo AI / invideo Editor)",
+    "aspect": "hidden credit deductions on edits",
+    "stance": "negative",
+    "plan_tier_if_stated": "Generative ($120/mo, 100 credits, 2025)",
+    "item_date": "2025-10-31"
+   },
+   "honesty_notes": [
+    "Date from page creationTime mapped by answer order (displayed '1y'); matches the Reddit-indexed title 'What a SCAM!!! read this before you sign' dated 2025-10-31 in the SERP snapshot. Pre-dates the current plan grid and the April 2026 Editor era.",
+    "Resolver: date is APPROXIMATE (Quora shows relative dates; source_date is order-mapped from page metadata). Print as 'about <month year>', never as an exact day.",
+    "Resolver: plan price, 21.4 approved credits, all 100 credits drained and the support reply are outside the captured quote (both coders); Quora was not re-opened by either coder, so they rest on the curator's live read. Keep attributed to the answer."
+   ],
+   "coding_status": "dual-independent coding done 2026-11-20; resolved by mep-resolver",
+   "resolved_by": "mep-resolver",
+   "source_date_precision": "approximate (order-mapped from page creationTime, displayed '1y')"
+  },
+  {
+   "id": "EV-invideo-ai-review-29",
+   "claim": "A Quora answer (dated about December 2025, approximate; displayed '11mo') says the 'free trial' allowed hours of script and prompt work, but generating an 8-minute AI video required upgrading to a $100/month plan, which the writer estimated would cover only 2 or 3 such videos a month.",
+   "source_url": "https://www.quora.com/Has-anyone-tried-Invideo-AI-Is-it-any-good/answer/Just-Incompetence",
+   "source_date": "2025-12-15",
+   "quote": "took hours making the script and prompts etc on the supposed free trial. As soon as it came to generating an 8 minute Ai video, it wasn’t free and I would have had to upgrade to the 100 dollars a month subscription, just for this short video.",
+   "platform": "Quora (read live 2026-11-20 in the built-in browser, signed out; date from the page's creationTime field, order-mapped to the answer)",
+   "target_slug": "/tools/invideo-ai",
+   "collected_at": "2026-11-20",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "invideo-ai-review-2026-11-20",
+   "screening": "included",
+   "label": "community-report",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "invideo (InVideo AI / invideo Editor)",
+    "aspect": "free tier limits, price per video",
+    "stance": "negative",
+    "plan_tier_if_stated": "free trial / $100 plan (2025)",
+    "item_date": "2025-12-15"
+   },
+   "honesty_notes": [
+    "'2 possibly 3 Ai videos a month' is the writer's estimate, not a measurement.",
+    "Resolver: date is APPROXIMATE (Quora shows relative dates; source_date is order-mapped from page metadata). Print as 'about <month year>', never as an exact day."
+   ],
+   "coding_status": "dual-independent coding done 2026-11-20; resolved by mep-resolver",
+   "resolved_by": "mep-resolver",
+   "source_date_precision": "approximate (order-mapped from page creationTime, displayed '11mo')"
+  },
+  {
+   "id": "EV-invideo-ai-review-30",
+   "claim": "A Quora answer (dated about July 2024, approximate) says the free version only exported watermarked videos, and a paid 'business plan' turned out to be the Studio (template) product without prompt-to-video, which support explained as 'you paid for the studio version'.",
+   "source_url": "https://www.quora.com/Has-anyone-tried-Invideo-AI-Is-it-any-good/answer/Shaheed-Shoulars",
+   "source_date": "2024-07-23",
+   "quote": "I tried the free version and it will only let you download the videos with a watermark which is useless. So I upgraded to the paid “business plan” and you will NOT be able to use the prompt feature to create videos.",
+   "platform": "Quora (read live 2026-11-20 in the built-in browser, signed out; date from the page's creationTime field, order-mapped to the answer)",
+   "target_slug": "/tools/invideo-ai",
+   "collected_at": "2026-11-20",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "invideo-ai-review-2026-11-20",
+   "screening": "included",
+   "label": "community-report",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "invideo (InVideo AI / invideo Editor)",
+    "aspect": "Studio vs AI product confusion, free watermark",
+    "stance": "negative",
+    "plan_tier_if_stated": "Studio business plan (2024)",
+    "item_date": "2024-07-23"
+   },
+   "honesty_notes": [
+    "Historical: Studio-era plan (see EV-16 product eras). Use only as history of the Studio/AI split, not as a current fact.",
+    "Resolver: date is APPROXIMATE (Quora shows relative dates; source_date is order-mapped from page metadata). Print as 'about <month year>', never as an exact day."
+   ],
+   "coding_status": "dual-independent coding done 2026-11-20; resolved by mep-resolver",
+   "resolved_by": "mep-resolver",
+   "source_date_precision": "approximate (order-mapped from page creationTime)"
+  },
+  {
+   "id": "EV-invideo-ai-review-31",
+   "claim": "A Quora answer (dated about March 2024, approximate) says the writer paid for a month of InVideo AI, took a refund within a week, called it 'really bad', and said it only used the writer's text to pull stock media into a video.",
+   "source_url": "https://www.quora.com/Has-anyone-tried-Invideo-AI-Is-it-any-good/answer/Yakub-92",
+   "source_date": "2024-03-06",
+   "quote": "Paid for invideo AI for a month to try and immediately took a refund in a week. Its really bad. First off its not AI. They are just using your text to get some stock media to make a video.",
+   "platform": "Quora (read live 2026-11-20 in the built-in browser, signed out; date from the page's creationTime field, order-mapped to the answer)",
+   "target_slug": "/tools/invideo-ai",
+   "collected_at": "2026-11-20",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "invideo-ai-review-2026-11-20",
+   "screening": "included",
+   "label": "community-report",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "invideo (InVideo AI / invideo Editor)",
+    "aspect": "2024 output and refund experience",
+    "stance": "negative",
+    "plan_tier_if_stated": null,
+    "item_date": "2024-03-06"
+   },
+   "honesty_notes": [
+    "2024 experience under different terms (a refund inside a week was granted then; current terms allow 24 hours, unused only). Historical only.",
+    "Resolver: date is APPROXIMATE (Quora shows relative dates; source_date is order-mapped from page metadata). Print as 'about <month year>', never as an exact day.",
+    "Resolver: '29 upvotes' and 'little manual editing control' removed from the claim (not in the quote; Quora not re-opened by either coder)."
+   ],
+   "coding_status": "dual-independent coding done 2026-11-20; resolved by mep-resolver",
+   "resolved_by": "mep-resolver",
+   "source_date_precision": "approximate (order-mapped from page creationTime)"
+  },
+  {
+   "id": "EV-invideo-ai-review-32",
+   "claim": "An independent first-person test (Marc Andrews, July 2026; page 'Updated November 2026', affiliate links disclosed) bought one month of the then $20 Plus plan with 75 credits and spent it on a single 60-second Agent One Pro video: about 72.2 credits used, the meter read 78 of 75, and the video did not finish. The same tester's 60-second free-plan video (Lite agent, stock assembly) used 4.8 credits (that run is EV-33's source page).",
+   "source_url": "https://marcandrews.com/invideo-ai-credits-explained/",
+   "source_date": "2026-07-17",
+   "quote": "Twenty dollars of my own money buys a month of InVideo AI Plus, and a month of Plus comes with 75 credits. A little over an hour after I started spending them, the balance was zero, the meter read 78 of 75, and the single video I had asked for was still unfinished.",
+   "platform": "marcandrews.com (independent first-person test with disclosed method; page carries an affiliate-link disclosure; read live 2026-11-20)",
+   "target_slug": "/tools/invideo-ai",
+   "collected_at": "2026-11-20",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "invideo-ai-review-2026-11-20",
+   "screening": "included",
+   "label": "independent-test",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "invideo (InVideo AI / invideo Editor)",
+    "aspect": "credit consumption per video (measured)",
+    "stance": "negative",
+    "plan_tier_if_stated": "Plus (July 2026), Free",
+    "item_date": "2026-07-17"
+   },
+   "quote_supplementary": "\"One 60-second Agent One Pro video: 72.2 credits, and it still did not finish. That was July 2026, on Plus.\" / \"One 9-second Seedance 2.0 clip: about 16.4 credits. That figure is not my estimate, it is the agent’s own number\"",
+   "honesty_notes": [
+    "n = 1 run per plan; the author says so. The 72.2 total and the 78/75 meter are not fully reconciled on the page. July 2026 plan ladder no longer matches the 20 Nov grid; cite as dated history of credit burn, not current pricing.",
+    "Method disclosed ('two sessions on my own account'), so not excluded as no-methodology-affiliate; affiliate interest noted wherever cited."
+   ],
+   "coding_status": "dual-independent coding done 2026-11-20; resolved by mep-resolver",
+   "resolved_by": "mep-resolver"
+  },
+  {
+   "id": "EV-invideo-ai-review-33",
+   "claim": "The same tester's free-plan run (July 2026) found every free export watermarked and that one 60-second video used 4.8 of the 5 free credits.",
+   "source_url": "https://marcandrews.com/invideo-ai-free-plan-review-2026-what-you-get-for-free/",
+   "source_date": "2026-07",
+   "quote": "Every export on the InVideo AI free plan carries it, there is no setting or trick that removes it ... One 60-second video used 4.8 of the 5 free credits.",
+   "platform": "marcandrews.com (independent first-person test with disclosed method; page carries an affiliate-link disclosure; read live 2026-11-20)",
+   "target_slug": "/tools/invideo-ai",
+   "collected_at": "2026-11-20",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "invideo-ai-review-2026-11-20",
+   "screening": "included",
+   "label": "independent-test",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": false,
+   "coding": {
+    "tool": "invideo (InVideo AI / invideo Editor)",
+    "aspect": "free plan allowance and watermark (measured)",
+    "stance": "negative",
+    "plan_tier_if_stated": "Free (July 2026)",
+    "item_date": "2026-07"
+   },
+   "honesty_notes": [
+    "Single run, July 2026. The vendor now describes Free as a weekly limit (EV-10) with no amount stated; the 5-credit figure may be stale. Say 'in a July 2026 test'.",
+    "Resolver: stance negative kept (curator + coder A; coder B neutral): the coded aspect is a limitation, every free export watermarked."
+   ],
+   "coding_status": "dual-independent coding done 2026-11-20; resolved by mep-resolver",
+   "resolved_by": "mep-resolver"
+  },
+  {
+   "id": "EV-invideo-ai-review-34",
+   "claim": "Pricing history: the same tester recorded the pricing page in July 2026 as Plus 75 credits ($20/month, or $17/month billed as $200/year), Max 390 ($100/month, or $85 billed as $1,000/year), Generative 800 ($200), Elite 4,250 ($1,000). The annual saving is 15% on the rounded per-month figures ($17 vs $20, $85 vs $100) but 16.7% on the annual totals ($200 vs $240, $1,000 vs $1,200). By 2026-11-20 the vendor grid reads Basic 190 ($9), Pro 1,000 ($30), Ultra 6,000 ($160) (EV-01/02). The plan ladder therefore changed between July and November 2026.",
+   "source_url": "https://marcandrews.com/invideo-ai-credits-explained/",
+   "source_date": "2026-07",
+   "quote": "These are the allowances I read off InVideo’s pricing page in July 2026 ... Plus: 75 credits a month (20 dollars monthly, or 17 a month billed as 200 a year). Max: 390 credits a month (100 dollars monthly, or 85 billed as 1,000 a year).",
+   "platform": "marcandrews.com (independent first-person test with disclosed method; page carries an affiliate-link disclosure; read live 2026-11-20)",
+   "target_slug": "/tools/invideo-ai",
+   "collected_at": "2026-11-20",
+   "collector": "evidence-curator",
+   "protocol_version": "MEP-1.0",
+   "flow_id": "invideo-ai-review-2026-11-20",
+   "screening": "included",
+   "label": "independent-test",
+   "coders": [
+    "coding-pass-A",
+    "coding-pass-B"
+   ],
+   "coder_agreement": true,
+   "coding": {
+    "tool": "invideo (InVideo AI / invideo Editor)",
+    "aspect": "plan ladder history",
+    "stance": "neutral",
+    "plan_tier_if_stated": "Plus, Max, Generative, Elite (July 2026)",
+    "item_date": "2026-07"
+   },
+   "honesty_notes": [
+    "Third-party reading of a vendor page, not a vendor archive. No Wayback capture was read this run; the exact change date is unknown (Trustpilot reviewers in Sep-Oct 2026 still name 'Starter' and 'Plus').",
+    "Resolver: '15% annual discounts' replaced with both figures from the source's own numbers (coder A flag). Generative and Elite rows are outside the captured quote; coder B string-matched them on the live page 2026-11-20."
+   ],
+   "coding_status": "dual-independent coding done 2026-11-20; resolved by mep-resolver",
+   "resolved_by": "mep-resolver"
+  }
+ ]
+}
